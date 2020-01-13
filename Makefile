@@ -8,6 +8,8 @@ RPM_FILE=$(SOURCE)/$(RPM_NAME)
 TARGET_LANGS=cs ja zh ru de es ar hi he el
 TARGET_FILES=$(patsubst %,%.yml,$(TARGET_LANGS))
 
+export RUBYLIB=../asperalm/lib
+
 $(SOURCE):
 	mkdir $(SOURCE)
 $(OUT):
@@ -34,4 +36,4 @@ deploy: $(TARGET_FILES)
 clean:
 	echo rm -fr $(SOURCE)
 %.yml: $(WATSON_CREDS_FILE) $(SOURCE)/en.yml
-	./faspex_language.rb $(WATSON_CREDS_FILE) $(SOURCE) $(OUT) en $@
+	./faspex_language.rb $(WATSON_CREDS_FILE) $(SOURCE) $(OUT) en $(basename $@)
