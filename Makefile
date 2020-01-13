@@ -34,5 +34,4 @@ deploy: $(TARGET_FILES)
 clean:
 	echo rm -fr $(SOURCE)
 %.yml: $(WATSON_CREDS_FILE) $(SOURCE)/en.yml
-	#./faspex_language.rb $(WATSON_CREDS_FILE) $(SOURCE) $(OUT) en $@
-	cp $(SOURCE)/en.yml $@
+	./faspex_language.rb $(WATSON_CREDS_FILE) $(SOURCE) $(OUT) en $@
