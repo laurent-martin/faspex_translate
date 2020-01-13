@@ -23,11 +23,12 @@ Encoding.default_external = Encoding::UTF_8
 Asperalm::Log.instance.level=:info
 Asperalm::Rest.debug=true
 
-folder=ARGV[0]
-src_language=ARGV[1]
-dest_language=ARGV[2]
+src_folder=ARGV[0]
+dest_folder=ARGV[1]
+src_language=ARGV[2]
+dest_language=ARGV[3]
 YAML_EXT='.yml'
-faspex_strings_hash=YAML.load_file(File.join(folder,src_language)+YAML_EXT)[src_language]
+faspex_strings_hash=YAML.load_file(File.join(src_folder,src_language)+YAML_EXT)[src_language]
 
 SERVICE_CREDS=JSON.parse(File.read('my_translation_service_creds'))
 translator=IBMCloudWatsonTranslator.new(SERVICE_CREDS['url'],SERVICE_CREDS['apikey'],src_language,dest_language)
@@ -94,4 +95,5 @@ end
 # create new expected structure
 new_directionary={dest_language=>faspex_strings_hash}
 # write result
-File.write("#{dest_language}#{YAML_EXT}",new_directionary.to_yaml)
+dest_file=File.join(dest_folder,dest_language+YAML_EXT)
+File.write(dest_file,new_directionary.to_yaml)
