@@ -1,4 +1,4 @@
-#!/usr/bin/env ruby -I ../../asperalm/lib
+#!/usr/bin/env ruby
 # Laurent Martin 2014, updated jan 2020 Faspex 4.4.0
 require 'yaml'
 require 'json'
@@ -23,14 +23,15 @@ Encoding.default_external = Encoding::UTF_8
 Asperalm::Log.instance.level=:info
 Asperalm::Rest.debug=true
 
-src_folder=ARGV[0]
-dest_folder=ARGV[1]
-src_language=ARGV[2]
-dest_language=ARGV[3]
+watson_trans_creds_file=ARGV[0]
+src_folder=ARGV[1]
+dest_folder=ARGV[2]
+src_language=ARGV[3]
+dest_language=ARGV[4]
 YAML_EXT='.yml'
 faspex_strings_hash=YAML.load_file(File.join(src_folder,src_language)+YAML_EXT)[src_language]
 
-SERVICE_CREDS=JSON.parse(File.read('my_translation_service_creds'))
+SERVICE_CREDS=JSON.parse(File.read(watson_trans_creds_file))
 translator=IBMCloudWatsonTranslator.new(SERVICE_CREDS['url'],SERVICE_CREDS['apikey'],src_language,dest_language)
 
 skips=[

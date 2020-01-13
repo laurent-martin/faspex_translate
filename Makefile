@@ -1,38 +1,38 @@
 SOURCE=source
+OUT=.
+WATSON_CREDS_FILE=my_translation_service_creds
+DOWNLOAD_CREDS_FILE=download_creds
 RPM_NAME=ibm-aspera-faspex-4.4.0.176785-0.x86_64.rpm
 RPM_URL=https://download.asperasoft.com/download/sw/faspex/4.4.0/$(RPM_NAME)
 RPM_FILE=$(SOURCE)/$(RPM_NAME)
+TARGET_LANGS=cs ja zh ru de es ar hi he el
+TARGET_FILES=$(patsubst %,%.yml,$(TARGET_LANGS))
 
 $(SOURCE):
 	mkdir $(SOURCE)
-download_creds:
-	@echo "put download credentials for https://download.asperasoft.com in download_creds"
+$(OUT):
+	mkdir $(OUT)
+$(DOWNLOAD_CREDS_FILE):
+	@echo "put download credentials for https://download.asperasoft.com in $(DOWNLOAD_CREDS_FILE)"
 	@echo "Example:"
-	@echo "echo myusername:mypass > download_creds"
+	@echo "echo myusername:mypass > $(DOWNLOAD_CREDS_FILE)"
 	@exit 1
-# download RPM
-$(RPM_FILE): $(SOURCE) download_creds
-	curl --user $$(cat download_creds) -o $(RPM_FILE) $(RPM_URL)
+$(WATSON_CREDS_FILE):
+	@echo "put watson translation credentials in "$(WATSON_CREDS_FILE)
+	@exit 1
+# download RPM $(SOURCE) $(DOWNLOAD_CREDS_FILE)
+$(RPM_FILE): 
+	curl --user $$(cat $(DOWNLOAD_CREDS_FILE)) -o $(RPM_FILE) $(RPM_URL)
 # extract existing languages
 $(SOURCE)/en.yml: $(RPM_FILE)
-	rm -fr $(SOURCE)
-	mkdir -p $(SOURCE)
-	rpm2cpio $(RPM_NAME) | (cd $(SOURCE) && cpio -idv './opt/aspera/faspex/config/locales/*')
-	mv $(SOURCE) $(SOURCE)/* $(SOURCE)
+	cd $(SOURCE) && rpm2cpio $(RPM_NAME) | cpio -idv './opt/aspera/faspex/config/locales/*'
+	mv $(SOURCE)/opt/aspera/faspex/config/locales/* $(SOURCE)
 	rm -fr $(SOURCE)/opt
-deploy:
-	scp -P 33001 cs.yml ja.yml zh.yml ru.yml de.yml es.yml ar.yml hi.yml he.yml el.yml laurent@eudemo.asperademo.com:
-	ssh -p 33001 laurent@eudemo.asperademo.com "sudo cp cs.yml ja.yml zh.yml ru.yml de.yml es.yml ar.yml hi.yml he.yml el.yml /opt/aspera/faspex/config/locales;sudo asctl faspex:restart"
+deploy: $(TARGET_FILES)
+	#scp -P 33001 $(TARGET_FILES) laurent@eudemo.asperademo.com:
+	#ssh -p 33001 laurent@eudemo.asperademo.com "sudo cp $(TARGET_FILES) /opt/aspera/faspex/config/locales;sudo asctl faspex:restart"
 clean:
-	rm -fr $(SOURCE)
-t:
-	./faspex_language.rb $(SOURCE) $(SOURCE) en cs
-	./faspex_language.rb $(SOURCE) $(SOURCE) en ja
-	./faspex_language.rb $(SOURCE) $(SOURCE) en zh
-	./faspex_language.rb $(SOURCE) $(SOURCE) en ru
-	./faspex_language.rb $(SOURCE) $(SOURCE) en de
-	./faspex_language.rb $(SOURCE) $(SOURCE) en es
-	./faspex_language.rb $(SOURCE) $(SOURCE) en ar
-	./faspex_language.rb $(SOURCE) $(SOURCE) en hi
-	./faspex_language.rb $(SOURCE) $(SOURCE) en he
-	./faspex_language.rb $(SOURCE) $(SOURCE) en el
+	echo rm -fr $(SOURCE)
+%.yml: $(WATSON_CREDS_FILE) $(SOURCE)/en.yml
+	#./faspex_language.rb $(WATSON_CREDS_FILE) $(SOURCE) $(OUT) en $@
+	cp $(SOURCE)/en.yml $@
