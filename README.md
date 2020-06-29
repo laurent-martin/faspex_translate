@@ -36,6 +36,8 @@ faspex_language.rb <watson credential file> <in language file> <out language fil
 
 The language file shall be: <2 letters>.yml
 
+The 2 letters are based on watson model:
+https://cloud.ibm.com/docs/language-translator?topic=language-translator-translation-models
 
 # Example
 
