@@ -43,6 +43,14 @@ The language file shall be: <2 letters>.yml
 ./faspex_language.rb my_creds /opt/aspera/faspex/config/locales/en.yml /opt/aspera/faspex/config/locales/cs.yml
 ```
 
+So, for instance, to use pre-translated packs, copy them from this 
+repository, using the appropriate version, to: `<faspex install dir>/config/locales` , example on Linux:
+
+```
+cp ja.yml /opt/aspera/faspex/config/locales
+asctl faspex:restart
+```
+
 # Setup of IBM Cloud Watson translate
 
 * create a translation service on IBM Cloud
