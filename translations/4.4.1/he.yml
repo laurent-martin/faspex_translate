@@ -1,0 +1,2781 @@
+---
+he:
+  activerecord:
+    models:
+      node: צומת
+      share: אחסון קבצים
+      distribution_list: רשימת תפוצה
+      authorization_domain: שירות מדריך
+      metadata_profile: פרופיל מטה-נתונים
+      metadata_field: שדה מטה-נתונים
+    attributes:
+      authorization_domain:
+        host: כתובת שרת
+        port: פורט
+        treebase: בסיס עצים
+        login: התחברות
+        password: סיסמה
+      c_configuration:
+        encrypt_transfers: הצפנת העברות
+        c_ssh_tcp_port: יציאת TCP של SSH
+        c_fasp_udp_port: יציאת UDP של fasp
+        http_fallback_port: יציאת fallback HTTP
+        c_kbps_initial_target_upload_rate: שיעור העלאה ראשונית
+        c_kbps_initial_target_download_rate: שיעור הורדה ראשונית
+        c_kbps_max_target_upload_rate: שיעור העלאה מרבי
+        c_kbps_max_target_download_rate: קצב הורדה מרבי
+        c_lock_minrate_policy: נעילת תעריף ומדיניות של מינימום
+        c_relay_outgoing_bandwidth: רוחב פס יוצא
+        c_relay_incoming_bandwidth: החלפת רוחב פס נכנס
+        min_connect_version_major: גרסה מינימלית של חיבור
+        min_connect_version_minor: גרסה מינימלית של חיבור
+        min_connect_version_point: גרסה מינימלית של חיבור
+        http_fallback_enabled: הפעלת כשל HTTP
+        downloads_during_transfers_enabled: הפעלת הורדות במהלך העברות
+      m_configuration:
+        email_from_email: 'דוא "ל" From:: "'
+        m_smtp_server_port: יציאת שרת
+        m_smtp_auth_type: אימות SMTP
+        m_smtp_server: שרת דואר SMTP
+        use_tls: שימוש בTLS אם זמין
+        m_smtp_helo_domain: תחום
+        m_smtp_username: משתמש (הכללת מיתחם)
+        smtp_password: סיסמה
+        email_from: שם Faspex "From:"
+        package_received_notifications_from: חבילות מארזים "מאת"
+      e_configuration:
+        ad_proxy_host: מארח proxy של Active Directory
+        ad_proxy_port: יציאת proxy של Active Directory
+        announcement: הודעה
+        dbox_can_override_ear: לאפשר לקופסאות לעזוב את הגדרות ההצפנה שלהן.
+        can_override_ear_per_personal_invite: לאפשר הגדרות הצפנה מותאמות להזמנות שולח חיצוניות
+        e_http_port: יציאת HTTP
+        e_https_port: יציאת HTTPS
+        e_server_address: כתובת או שם החיצוני של השרת
+        e_server_enable_alternate_address: הפעלת כתובת חלופית
+        e_server_emails_include_alternate_address: הודעות דואל כוללות כתובת חלופית
+        email_passcode_expires: תוקף הקישור של החבילה פג
+        email_passcode_days_valid: התוקף פג לאחר
+        email_passcode_expire_after_download: התוקף פג אחרי הורדת החבילה המלאה.
+        registration_type: הרשמה עצמית
+        registration_approval_ccs: דיווח לאימיילים הבאים לאישור.
+        registration_external_use_default: שימוש במדיניות רישום המוגדרת כברירת מחדל עבור משתמשים חיצוניים
+        registration_type_external: מדיניות רישום עבור משתמשים חיצוניים
+        registration_approval_ccs_external: דיווח לאימיילים שלהלן כדי לאשר משתמשים חיצוניים
+        tos_external: תנאי שירות עבור משתמשים חיצוניים
+        package_instructions: הודעה
+        tos: תנאי שירות
+        use_strong_password: שימוש בסיסמאות חזקות
+        force_password_reset_for_new_users: לדרוש משתמשים חדשים לשינוי סיסמה בהתחברות הראשונה.
+        allow_users_to_unlock: לאפשר למשתמשים נעולים לשחרר את הנעילה שלהם.
+        session_timeout: מגבלת זמן של מהלכי עבודה אחרי
+        allow_send_to_email: לאפשר משלוח לכתובות דואל חיצוניות
+        allow_request_from_email: לאפשר הזמנות ל -
+        registered_users_have_mutual_scope: משתמשים רשומים בעצמם יכולים לשלוח אחד לשני.
+        inviting_allowed: לאפשר הזמנת שולחים חיצוניים
+        hide_user_dir_default: שמירת מדריך משתמש פרטי כברירת מחדל
+        public_url_allowed: לאפשר כתובות URL של הגשה ציבורית
+        dbox_can_override_public_url: לאפשר לקופסאות טיפות באופן יחידני/להשבית את כתובות ה-URL הציבוריות שלהם
+        public_url_home_server_id: שרת הבית עבור כתובות URL ציבוריות
+        automatically_login_using_saml_idp: התחברות באמצעות ספק זהות SAML
+        saml_idp_sso_target_url: URL התחברות בזהות יחידה של IdP
+        saml_idp_slo_target_url: URL של יציאה יחידה של IdP
+        saml_idp_cert_fingerprint: טביעת אצבע של תעודת הסמכה של IdP
+        saml_idp_cert: תעודת הסמכה של IdP
+        can_see_global_distribution_lists_default: משתמשים יכולים לראות רשימות תפוצה גלובליות כברירת מחדל
+        tos_for_sending: תנאי שירות לשליחה
+        remove_ds_users_on_inactivity: סילוק משתמשים של DS
+        remove_saml_users_on_inactivity: סילוק משתמשי SAML
+      e_workgroup:
+        e_wg_name: שם
+        e_wg_desc: תיאור
+        workgroup_received_notification_cc: משלוח עותק של דואל קבלה לכתובות אלה
+        destination_share_id: תיבת דואר נכנס '
+      invitation:
+        expires_at: ימים עד לתפוגה
+      node:
+        alternate_address: כתובת או שם משני
+        alternate_address_client_filter: שימוש ב-אם כתובת של מבקש מתאימה
+        alternate_address_server_filter: שימוש אם שם מארח של הדפדפן תואם
+        api_password: סיסמה
+        api_port: פורט
+        api_username: שם משתמש
+        enable_alternate_address: הפעלת כתובת משנית
+        encrypted_api_password: סיסמה
+        host: מארח
+        name: שם
+        primary_address: כתובת או שם של העברה ראשית
+        ssl: להשתמש ב-SSL?
+        verify_ssl: לאמת את אישור SSL?
+      share:
+        kbps_initial_target_upload_rate: שיעור העלאה ראשונית
+        kbps_initial_target_download_rate: שיעור הורדה ראשונית
+        lock_minrate_policy: נעילת תעריף ומדיניות של מינימום
+        kbps_max_target_upload_rate: שיעור העלאה מרבי
+        kbps_max_target_download_rate: קצב הורדה מרבי
+        relay_incoming_bandwidth: שיעור ממסר נכנס
+        relay_outgoing_bandwidth: שיעור ממסר יוצא
+      e_package:
+        e_package_name: כותרת
+      delivery:
+        metadata: 'מטה-נתונים לא חוקיים: '
+        sources: ''
+        ear_passphrase: סיסמה
+        tos_for_sending: תנאי שירות
+      registration:
+        name: התחברות
+        email: דוא " ל
+        first_name: שם פרטי
+        last_name: שם משפחה
+        tos_agreement: אני מקבל את תנאי השירות.
+      metadata_field:
+        label: תווית
+      post_process:
+        active: פעיל
+        name: שם
+        script_path: נתיב לתסריט בשרת
+        package_name: שם החבילה
+        sender_name: שם השולח
+        sender_email: שולח דוא " ל
+        recipient_name: רשימת נמענים
+        recipient_email: רשימת דואל נמענים
+        package_note: הערת חבילה
+      ad_group:
+        kbps_initial_target_upload_rate: שיעור העלאה ראשונית (kbps)
+        kbps_initial_target_download_rate: שיעור הורדה ראשונית (kbps)
+        kbps_max_target_upload_rate: קצב העלאה מרבי (kbps)
+        kbps_max_target_download_rate: קצב הורדה מרבי (kbps)
+        lock_minrate_policy: נעילת תעריף ומדיניות של מינימום
+        can_invite: לאפשר הזמנת שולחים חיצוניים
+        dn: DN של
+      directory_service_group:
+        kbps_initial_target_upload_rate: שיעור העלאה ראשונית (kbps)
+        kbps_initial_target_download_rate: שיעור הורדה ראשונית (kbps)
+        kbps_max_target_upload_rate: קצב העלאה מרבי (kbps)
+        kbps_max_target_download_rate: קצב הורדה מרבי (kbps)
+        lock_minrate_policy: נעילת תעריף ומדיניות של מינימום
+      user:
+        name: התחברות
+        email: דוא " ל
+        password: סיסמה
+        password_confirmation: אישור סיסמה
+        kbps_initial_target_upload_rate: שיעור העלאה ראשונית (kbps)
+        kbps_initial_target_download_rate: שיעור הורדה ראשונית (kbps)
+        kbps_max_target_upload_rate: קצב העלאה מרבי (kbps)
+        kbps_max_target_download_rate: קצב הורדה מרבי (kbps)
+        lock_minrate_policy: נעילת תעריף ומדיניות של מינימום
+        rows_per_page: מקסימום שורות בדף
+        disable_connect: השבתת תוסף Aspera Connect
+        account_activated: חשבון הופעל
+        account_expires: תוקף החשבון פג
+        self_destructs: אוטומטי של חשבון-מוחק
+        destruction_date: תאריך מחיקה
+        received_notification_cc: משלוח עותק של דואל קבלה לכתובות אלה
+        allow_receipt_cc_edit: לאפשר עריכה של כתובות קבלה ביצירת החבילה
+        uploads_allowed: טעינת מארזים
+        downloads_allowed: הורדת מארזים
+        forwarding_allowed: העברת מארזים
+        can_create_from_remote: יצירת מארזים ממקורות מרוחקים
+        can_send_to_all_faspex_users: יכול לשלוח לכל משתמשי Faspex
+        can_send_to_external_email: יכול לשלוח דוא " ל חיצוני
+        can_invite: לאפשר הזמנת שולחים חיצוניים
+        notify_on_receive: שלח לי דוא " ל כשאקבל חבילה.
+        notify_on_validation_failure_if_sender: שלחו לי דואל אם האימות נכשל בחבילות שנשלחו
+        notify_on_validation_failure_if_recipient: שלחו לי דואל אם האימות נכשל על מארזים שהתקבלו
+        notify_downloader_on_download: לשלוח לי דוא " ל כשאני מוריד חבילה
+        notify_on_workgroup_package_if_sender: הכללת אותי בהודעות של קבוצת עבודה עבור מארזים ששלחתי
+        suppress_connect_install_dialog: מניעת התקנה/שדרוג הנחיות
+        allowed_ip_addresses_for_login: כתובות IP מותשות להתחברות
+        allowed_ip_addresses_for_download: כתובות IP מותרות להורדה
+        allowed_ip_addresses_for_upload: כתובות IP מותשות לטעינה
+        last_remote_addr: כתובת לקוח התחברות אחרונה
+        last_server_addr: כתובת שרת התחברות אחרונה
+        override_transfer_parameters: עקיפת הגדרות ברירת מחדל
+        override_server_delete_after_download: עקיפת ברירת מחדל של המערכת
+        welcome_email: משלוח הודעת פתיחה
+        created_at: נוצר בתאריך
+        updated_at: עודכן ב -
+        type: סוג משתמש
+        description: הערות
+        allow_user_specified_delete_after_download: לאפשר למשתמש להגדיר את הגדרת המחיקה שלו על בסיס חבילה-לפי-חבילה
+        enable_public_url: הפעלת URL ציבורי
+        can_have_public_url: לאפשר כתובות URL של הגשה ציבורית
+      local_user:
+        password_expiration_interval: תוקף הסיסמה פג בכל
+      template_user:
+        days_til_expiration: תוקף חשבונות חדשים יפוג.
+        days_til_destruction: חשבונות חדשים יימחקו
+      home_server_rule:
+        email_pattern: כתובת דוא " ל regex
+        user_name_pattern: שם משתמש regex
+        ad_group_pattern: Regex של קבוצת שירות מדריך
+        ad_dn_pattern: Regex של שירות מדריך שירות
+        ldap_field_pattern1: Regex של שדה LDAP
+        ldap_field_pattern2: Regex של שדה LDAP
+        ldap_field_pattern3: Regex של שדה LDAP
+      send:
+        upload_cc: נמענים אלה יקבלו דיווח כאשר חבילה זו תסיים לטעון.
+        download_cc: נמענים אלה יקבלו הודעה כאשר הנמען הוריד חבילה זו.
+        receipt_cc: נמענים אלה יהיו Cc'd על חבילת המקבלים שהתקבלו בדוא " ל
+    errors:
+      format: "%{attribute} %{message}"
+      e_configuration:
+        idp_cert_and_idp_cert_fingerprint_blank: יש לספק אחת מ - "IdP תעודת הסמכה" או "IdP תעודת הסמכה".
+      models:
+        delivery:
+          attributes:
+            title:
+              blank: הכותרת לא יכולה להיות ריקה.
+        distribution_list:
+          attributes:
+            name:
+              blank: השם אינו יכול להיות ריק.
+            contacts:
+              blank: אנשי הקשר אינם יכולים להיות ריקים.
+        e_configuration:
+          attributes:
+            max_title_length_in_storage_paths:
+              not_a_number: אורך הכותרת המרבי בנתיבי אחסון אינו מספר.
+            days_until_packages_expire:
+              not_a_number: ימים עד שתוקף החבילה פג אינו מספר.
+        saml_configuration:
+          attributes:
+            allowed_clock_drift_in_ms:
+              not_a_number: דרישת שעון מקודשת היא לא מספר.
+      messages:
+        accepted: חייב להתקבל
+        blank: לא יכול להיות ריק
+        confirmation: אינו תואם ל-%{attribute}
+        empty: לא יכול להיות ריק.
+        equal_to: חייב להיות שווה ל-my_count_YM
+        even: חייב להיות אפילו
+        exclusion: שמור
+        greater_than: חייב להיות גדול מ-my_count_YM
+        greater_than_or_equal_to: חייב להיות גדול או שווה ל-my_count_YM
+        inclusion: אינו כלול ברשימה.
+        invalid: אינו חוקי
+        less_than: חייב להיות קטן מ-my_count_YM
+        less_than_or_equal_to: חייב להיות קטן או שווה ל-%{count}
+        model_invalid: 'האימות נכשל: my_errors_YM'
+        not_a_number: אינו מספר
+        not_an_integer: חייב להיות מספר שלם
+        odd: חייב להיות מוזר.
+        other_than: חייב להיות אחר מאשר %{count}
+        present: חייב להיות ריק
+        record_invalid: 'האימות נכשל: my_errors_YM'
+        restrict_dependent_destroy:
+          has_many: לא ניתן למחוק רשומה משום שתלויה my_record_YM קיים
+          has_one: לא ניתן למחוק את הרשומה מאחר ש-my_record_YM תלוי קיים
+        required: חייב להתקיים
+        taken: כבר נלקח.
+        too_long:
+          one: ארוך מדי (מקסימום הוא תו 1)
+          other: ארוך מדי (ערך מרבי הוא my_count_YM תווים)
+        too_short:
+          one: הוא קצר מדי (מינימום הוא תו 1)
+          other: הוא קצר מדי (מינימום הוא my_count_YM תווים)
+        wrong_length:
+          one: הוא האורך הלא נכון (צריך להיות 1 תווים)
+          other: הוא האורך הלא נכון (צריך להיות התווים my_count_YM)
+      template:
+        body: 'היו בעיות בשדות שלהלן:'
+        header:
+          one: שגיאה 1 מנעה שמירה של my_model_YM
+          other: שגיאות my_count_YM אסורות לכך שמאפיין my_model_YM יישמר
+      user:
+        groups_are_inactive: הקבוצות שאתם חברים בהן אינן פעילות.
+        user_is_inactive: המשתמש אינו פעיל.
+        username_conflicts_with_existing_user: שם משתמש מתנגש עם חשבון משתמש קיים.
+  admin:
+    saml:
+      edit:
+        saml: ססל
+        automatically_login_using_saml_idp_hint: התחברות אוטומטית באמצעות ספק ה-SAML.  ניתן להשתמש ב - _url_YM כדי להתחבר ישירות ל-Faspex גם כאשר התחברות אוטומטית
+          באמצעות SAML מופעלת.
+    saml_configurations:
+      edit:
+        domain_url_hint: "(אופציונלי) בעת גישה למיתחם פספקס זה, המשתמשים יופנו אוטומטית להתחבר באמצעות ספק SAML זה (עקיפת ברירת מחדל)"
+        publicly_visible_hint: לאפשר למשתמשים לגשת לתצורת SAML מדף ההתחברות המקומי
+      test_warning: |-
+        אזהרה: פעולה זו תסיים את מהלך העבודה הנוכחי של ה-Faspex ותכוון אתכם לדף ההתחברות עבור ספק SAML זה.
+
+        כדי למנוע סיום מהלך העבודה הנוכחי, תוכלו לפתוח קישור זה בחלון פרטי או בדפדפן אחר כדי לבדוק תצורה זו.
+  app:
+    controllers:
+      account:
+        ad_groups_controller:
+          added_group: Added IBM_group_name_YM לקבוצת עבודה
+          sync_group: סינכרון my_group_name_YM
+          updated_grp_prov: מדיניות אספקת השירות הקבוצבית.
+          updated_grp_import: מדיניות יבוא של קבוצה מעודכנת.
+          updated_error: שגיאה בשמירת התצורה של קבוצת my_group_name_YM:<br/>
+          removed_group: העבירו את קבוצת IBM_group_name_YM מקבוצת העבודה.
+          wg_not_found: קבוצת העבודה לא נמצאה.
+          no_groups_selected: לא נבחרו קבוצות
+          group_sched_activated: My_group_name_YM מתוכנן להפעלה
+          group_sched_deactivated: My_group_name_YM מתוכנן להיות מושבת
+          group_sched_removed: My_group_name_YM מתוכנן לסילוק
+        memberships_controller:
+          added_wg: משתמש תבנית נוסף לקבוצת עבודה-%{wg_name}
+          added_wg_fail: לא ניתן להוסיף משתמש תבנית לקבוצת עבודה-%{wg_name}
+          remove_wg: משתמש שכבר סולק מקבוצת העבודה-my_wg_name_YM
+          remove_wg_fail: לא ניתן לסלק את משתמש התבנית מקבוצת העבודה-%{wg_name}
+        saml_groups_controller:
+          added_group: 'קבוצה נוספת: %{group_name}'
+        users_controller:
+          no_wg_found: לא ניתן למצוא את קבוצת העבודה *%{wg_name}
+          add_to_wg_fail: 'שגיאה בהוספת לקבוצת עבודה: %{error}'
+          removed_from_wg: הועבר מקבוצת העבודה.
+          removed_from_wg_fail: 'שגיאה בסילוק משתמש מקבוצת עבודה: %{error}'
+          user_membership_updated: חברות המשתמש עודכנה.
+          error_editing_membership: 'שגיאה בעריכת חברות: %{error}'
+          created_user: המשתמש my_user_name_YM נוצר בהצלחה
+          created_user_fail: לא ניתן להוסיף משתמש.
+          updated_user: המשתמש my_user_name_YM עודכן בהצלחה
+          permission_error: אין לכם הרשאה לשנות את המשתמש my_user_name_YM
+          activated: הפעלה my_user_YM
+          disabled_saml_user_note: "<br>הערה: משתמשים המשויכים לתצורות של SAML מושבתים יישארו פעילים"
+          deactivated: My_user_YM
+          removed: מיתוג my_user_YM
+          removed_external: מיתוג my_user_YM
+          no_users_selected: לא נבחרו משתמשים
+          active_users: משתמשים פעילים
+          all_users: כל המשתמשים
+          inactive_users: משתמשים לא פעילים
+      admin:
+        authorization_domains_controller:
+          updated: התצורה עודכנה.
+        nodes_controller:
+          deleted: נמחק מ-my_name_YM
+          deleted_fail: אין הרשאה למחיקת my_name_YM
+          connection_fail: My_message_YM<br />%{status}<br />%{status_message}
+          connection_success: _message_YM <br /> חיבור הצליח!
+        notifications:
+          login_announcements_controller:
+            updated: הכרזה על התחברות מעודכנת
+          package_instructions_controller:
+            updated: הוראות של חבילה מעודכנת
+        packages_controller:
+          invalid_num_days: מספר ימים לא חוקי
+          no_older_pkgs: אין מארזים ישנים יותר מ-my_max_YM
+        post_processes_controller:
+          activated: הפעלת my_script_name_YM
+          activated_error: שגיאה בעת הפעלת my_script_name_YM
+          created: קובץ Script של עיבוד פרסום %{script_name} נוצר בהצלחה
+          deleted: קובץ תסריט שלאחר העיבוד מחדש %{script_name}
+          inactivated: הפעלת my_script_name_YM
+          inactivated_error: שגיאה במהלך הפעלת my_script_name_YM
+          updated: קובץ ה-Script my_script_name_YM עודכן בהצלחה
+        saml_configurations_controller:
+          create_success: 'תצורת SAML נוצרה בהצלחה<br>הערה: עליכם לעדכן את המטה-נתונים בשרת SAML לפני ההתחברות.'
+          update_success: 'תצורת SAML עודכנה בהצלחה<br>הערה: יתכן שתצטרכו לעדכן את המטה-נתונים בשרת SAML לפני ההתחברות.'
+        settings:
+          display_settings_controller:
+            file_too_large: הקובץ גדול מדי. גודל הקובץ המרבי הוא 5MB
+            remove_logo_fail: לא ניתן למחוק קובץ לוגו מותאם
+            remove_logo_success: קובץ לוגו מותאם סולק בהצלחה
+            unsupported_file_type: סוג קובץ לא נתמך עבור לוגו מותאם. הקובץ חייב להיות תמונת jpeg, gif או png.
+            updated_settings: הגדרות תצוגה מעודכנות
+          entitlement_controller:
+            invalid_license: רשיון זכאות לא חוקי
+            successful_entitlement: זכאות מוצלחת
+            unable_to_register: לא ניתן לרשום
+          global_distribution_lists_controller:
+            created: רשימת תפוצה גלובלית שנוצרה my_name_YM
+            deleted: רשימת תפוצה גלובלית שנמחקה
+            updated: רשימות תפוצה גלובלית מעודכן
+            updated_fail: שגיאה בעדכון רשימת הפצה גלובלית אחת או יותר
+          license_controller:
+            license_upload_fail: העלאת הרשיון נכשלה.
+            only_text_allowed: מותר רק קובצי תמליל.
+            updated_license: רישיון מעודכן
+          package_storage_controller:
+            updated_settings: הגדרות אחסון של חבילה מעודכנת
+          save_restore_config_controller:
+            config_restored: התצורה שוחזרה. הקפידו להפעיל מחדש את Faspex כדי להשלים תהליך זה.
+          security_controller:
+            updated_settings: הגדרות אבטחה מעודכנות
+          transfer_options_controller:
+            updated_settings: הגדרות ' אפשרויות העברה מעודכנות '
+          web_server_controller:
+            updated_settings: הגדרות של שרת אינטרנט מעודכן
+        share_membership_controller:
+          deleted: נמחק my_mem_name_YM
+          deleted_fail: לא ניתן למחוק את my_mem_name_YM
+        shares_controller:
+          add_term_fail: לא ניתן להוסיף my_term_YM
+          added_term: נוסף על my_term_YM
+          created: נוצר my_שיתו_YM %{שיתופי _name}
+          deleted: נמחק my_שיתו_YM
+          find_fail: לא ניתן למצוא את my_term_YM
+          updated: מעודכן ב-%{שיתו_} %{שיתופי }
+          updated_default: ברירת מחדל של תיבת הדואר הנכנס
+      authenticated_controller:
+        expired: פג תוקפו של מהלך העבודה שלך. נא להתחבר שוב כדי להמשיך.
+        new_session: מהלך עבודה נוסף עבור המשתמש %{username} הופעל מ - (%{remote})
+        timed_out: מהלך העבודה שלך חרג ממגבלת הזמן. נא להתחבר שוב כדי להמשיך.
+      entitlement_controller:
+        success: זכאות מוצלחת
+      external:
+        submissions_controller:
+          send_to_recipient: משלוח אל %{name}
+      invitations_controller:
+        invitation_failed: ההזמנה נכשלה. נא לנסות שוב מאוחר יותר.
+        invitation_created: הזמנה עבור my_email_YM נוצרה
+        reinvited: הזמנה מחדש להזמנה ל-%{name}
+        reinvited_fail: ההזמנה מחדש נכשלה. נא לנסות שוב מאוחר יותר.
+        resend_invitation_failed: ההזמנה מחדש נכשלה. נא לנסות שוב מאוחר יותר.
+        resent_invitation: הזמנה שנשלחו ל-my_name_YM
+        deleted_invitation: הזמנה שנמחקה
+        deleted_invitation_try_again: מחיקת ההזמנה נכשלה. נא לנסות שוב מאוחר יותר.
+      login_base_controller:
+        login_error_message: ההתחברות שלכם לא הצליחה. נא לנסות שוב. אם אתם חווים כשלים של התחברות חוזרת, עליכם ללחוץ על הקישור 'שכחתם את הסיסמה' כדי לאפס את הסיסמה.
+      login_controller:
+        connect_enabled: IBM Aspera Connect הופעל!
+        login_URL_change: URL ההתחברות השתנה. עדכנו את סימניית הדפדפן שלכם.
+        session_already_disconnected: מהלך עבודה זה כבר נותק.
+      m_configuration_controller:
+        updated: תצורת הדואר עודכנה.
+      m_template_controller:
+        loaded: הגדרות ברירת המחדל נטענו בהצלחה.
+        updated: ההודעה %{template} עודכנה בהצלחה
+      metadata_profiles_controller:
+        cannot_delete_profile: לא ניתן למחוק את הפרופיל, הוא נמצא בשימוש של חבילות רגילות.
+        cannot_delete_profile_dropbox: לא ניתן למחוק את הפרופיל, הוא נמצא בשימוש על-ידי תיבת נפתחת %{db_name}.
+        created: מטה-נתונים של נוצרו my_profile_YM
+        profile_deleted: הפרופיל נמחק.
+        save_success: פרופיל מטה-נתונים נשמר בהצלחה
+        updated: מעודכן
+      ms_admin_controller:
+        home_server_rules_changed: כללי שרת הבית השתנו. חישוב מחדש של שרתי בתים להחלת שינויים.
+        updated_rule: כלל מעודכן
+        deleted_rule: כלל שנמחק
+        added_new_rule: כלל חדש נוסף
+        error_finding_home_server: שגיאה באיתור שרת הבית למחיקה
+        removed_server: השרת סולק
+        updated_home_server_settings: הגדרות שרת הבית שעודכנו
+        updated_attributes: עודכן my_attribute_YM
+        access_denied: הגישה נחסמה.
+      pending_controller:
+        archived: חבילה "%{pkg_name}" שנגנז
+        archived_fail: שגיאה בגניזה של החבילה. נא לנסות שוב מאוחר יותר.
+        deleted: חבילה "%{pkg_name}" נמחק
+        deleted_fail: שגיאה במחיקת החבילה. נא לנסות שוב מאוחר יותר.
+      received_controller:
+        package_archived: חבילה my_p_name_YM נגנז
+        package_archived_fail: שגיאה בגניזה של החבילה. נא לנסות שוב מאוחר יותר.
+      registrations_controller:
+        failed_registration: הרישום נכשל. נא לנסות שוב מאוחר יותר.
+      reset_password_tokens_controller:
+        no_account_exists: חשבון זה אינו קיים יותר.
+        expired_pw_link: קישור איפוס הסיסמה שלכם כבר נמצא בשימוש או שפג תוקפו וכבר אינו חוקי.
+        reset_success: הסיסמה שלכם אופסה בהצלחה!
+        reset_submitted: בקשת איפוס הסיסמה הוגשה. אם אינכם מקבלים דואל תוך זמן קצר, פנו למנהלן לקבלת סיוע.
+      saml_controller:
+        does_not_exist: ספק SAML המבוקש אינו קיים
+        disabled: ספק SAML המבוקש הושבת
+        invalid_metadata: כתובת URL לא חוקית של מטה-נתונים
+      sent_controller:
+        archived: חבילה "%{pkg_name}" שנגנז
+        archived_fail: שגיאה בגניזה של החבילה. נא לנסות שוב מאוחר יותר.
+        deleted: חבילה "%{pkg_name}" נמחק
+        deleted_fail: שגיאה במחיקת החבילה. נא לנסות שוב מאוחר יותר.
+        relay: Relay לשיתוף my_שיתו_YM התחיל
+        relay_fail: שגיאה בהפעלה מחדש של ממסר. נא לנסות שוב מאוחר יותר.
+      settings:
+        distribution_lists_controller:
+          created: רשימת התפוצה שנוצרה my_מעוות _list_name_YM
+          deleted: רשימת תפוצה שנמחקה
+          updated: רשימות תפוצה מעודכנת
+          error_updating: שגיאה בעדכון רשימת תפוצה אחת או יותר
+        passwords_controller:
+          success: הסיסמה שונתה בהצלחה.
+        preferences_controller:
+          updated: ההעדפות עודכנו
+      user_profile_fields_controller:
+        max_field_check_fail: ייתכן שיש לכם רק עד שדות פרופיל המשתמש של my_max_YM
+        saved: שדות פרופיל משתמש נשמרו בהצלחה.
+      workgroup:
+        workgroups_controller:
+          activate: הפעלה
+          activated_members: הפעילו את my_counts_YM member%{plural}. __msg_YM
+          add_ds: לא ניתן להוסיף קבוצת DS. נא לנסות שוב מאוחר יותר.
+          add_ds_fail: נוסף קבוצת DS my_group_YM ל-Workgroup my_name_YM
+          add_member: נוסף על my_name_YM אל %{box}
+          add_member_fail: לא ניתן להוסיף חבר. נא לנסות שוב מאוחר יותר.
+          create_success: 'נוצר בהצלחה '
+          deactivate: השבתה
+          deactivated_success: השבתת my_counts_YM member_plural_YM. %{msg}%{admin}
+          deleted_success: נמחק my_type_YM %{name}
+          external_email_no_standard_access: לא ניתן להעניק למשתמשי דואל חיצוניים גישה רגילה. לא בוצעו שינויים.
+          external_email_deactivated_fail: לא ניתן להשבית את משתמשי הדואל מחוץ, רק סולק. לא בוצעו שינויים.
+          members_actions: פעולות חברים ...
+          no_ds_selected: לא נבחרו קבוצות של DS
+          no_members_selected: לא נבחרו חברים.
+          remove: הסר
+          remove_member: העבירו את %{member} מקבוצת העבודה.
+          remove_member_fail: לא ניתן לסלק את החבר. נא לנסות שוב מאוחר יותר.
+          remove_ds_group: העבירו את %{count} מקבוצת העבודה.
+          remove_ds_group_fail: לא ניתן לסלק את קבוצת DS. נא לנסות שוב מאוחר יותר.
+          set_admin: הגדירו את my_member_YM בתור מנהלן IBM_YM.
+          set_admin_fail: לא ניתן ליצור כתובות דוא " ל מחוץ למשתמשים. לא בוצעו שינויים.
+          set_ds_access: הגדירו את גישת my_group_YM בתור גישת my_level_YM.
+          set_ds_access_fail: לא ניתן להגדיר את הגישה my_level_YM על קבוצות DS. נא לנסות שוב מאוחר יותר.
+          set_regular_access: הגדירו את my_member_YM כגישה רגילה.
+          set_regular_access_fail: לא ניתן להגדיר גישה רגילה לחברים. נא לנסות שוב מאוחר יותר.
+          set_standard_access: הגדרת גישה סטנדרטית
+          set_submit_only: הגדירו את my_member_YM כהגשה בלבד.
+          set_submit_only_fail: לא ניתן להגדיר גישת הגשה לחברים בלבד. נא לנסות שוב מאוחר יותר.
+          set_submit_only_access: הגדרת גישת ' הגשה בלבד '
+          set_wg_admin: הגדרה כמנהלן IBM_wg_name_YM
+          skipped_sys_admin: דילוג על מנהלי המערכת של my_size_YM
+          updated_wg: עודכן my_type_YM
+          user_not_found: המשתמש לא נמצא
+    views:
+      account:
+        ad_groups:
+          ad_group:
+            error: שגיאה
+            invalid: לא חוקי
+            pending: ממתין %{methodop}
+          additional_permissions:
+            edit_add_perm: עריכת הרשאות נוספות
+          forms:
+            group_import:
+              save: שמירה
+            import_users:
+              full_name: שם מלא
+              import_date: תאריך יבוא
+              status: סטטוס
+              sync_now: סינכרון עכשיו
+              user_name: שם משתמש
+            wg_member:
+              actions: פעולות
+              add_to: הוספה אל ...
+              date_added: תאריך הוספה
+              remove: הסר
+              wg_name: שם קבוצת עבודה
+          user_ad_group:
+            active: פעיל
+            inactive: לא פעיל
+        directory_service_groups:
+          edit:
+            back: חזרה
+            edit_dir_group: 'עריכת קבוצת שירות מדריך: %{groupname}'
+            group_import: מדיניות יבוא קבוצה
+            imported_users: משתמשים מיובאים (%{mem_count})
+            workgroup_memberships: חברות בקבוצות עבודה (%{mem_count})
+          index:
+            activate: הפעלה
+            date_added: תאריך הוספה
+            deactivate: השבתה
+            directory_service: שירות מדריך
+            group_name: שם קבוצה
+            members: חברים
+            new_group: " קבוצה חדשה"
+            remove: הסר
+            status: סטטוס
+            sync: סינכרון
+            view_op_history: הצגת היסטוריית פעולות
+          new:
+            back: חזרה
+            cancel: ביטול
+            dir_services: 'שירות מדריך:'
+            import: יבוא
+            import_dir_serv: יבוא קבוצה משירות מדריכים
+            search_dir_service: 'חיפוש שירות במדריך:'
+        directory_service_users:
+          additional_permissions:
+            edit_add_perm: עריכת הרשאות נוספות
+          index:
+            back: חזרה
+            directory_service: 'שירות מדריך:'
+            import: יבוא
+            import_user_from_dir_serv: יבוא משתמש משירות מדריכים
+            search: חיפוש
+            search_term: 'מונח חיפוש:'
+            searches_limit: חיפושים מוגבלים לעשרים תוצאות.
+            searching: חיפוש
+            usr_not_found: לא נמצאו משתמשים
+        memberships:
+          actions: פעולות
+          add_to: הוספה אל ...
+          back: חזרה
+          name: שם
+          remove: הסר
+          self_reg_added: 'משתמשים רשומים עצמיים יתווספו לקבוצות העבודה הבאות:'
+          template_user_workgroups: קבוצות עבודה של משתמשי תבנית.
+        passwords:
+          back_to_edit: חזרה לעריכה
+          cancel: ביטול
+          password: שינוי סיסמה עבור %{local_name}
+          reset_confirm: אתם בטוחים שברצונכם לאפס את סיסמת המשתמש? הודעת דואל תישלח למשתמש זה ומאפשרת להם להתחבר ולשנות את הסיסמה שלהם.
+          reset_password: איפוס סיסמה
+          update_password: עדכון סיסמה
+        registrations:
+          form:
+            email: דוא " ל
+            first: ראשונה
+            last: אחרון
+            login: התחברות
+          index:
+            approve: אישור
+            deny: מניעה
+            faspex_reg_type: הפונקציה Faspex מוגדרת עם רישום %{type}.
+            new_message: משמעות הדבר היא שהחשבונות החדשים שנוצרו עבור my_not_YM דורשים אישור.
+            not: לא
+            self_reg_users: משתמשים רשומים עצמיים יירשו את ההרשאות של my_template_user_YM ויהפכו באופן אוטומטי לחברים של my_workgroups_YM.
+        saml_groups:
+          edit:
+            back: חזרה
+            edit_saml: 'עריכת קבוצת SAML: %{groupname}'
+            group_prov_policy: מדיניות אספקת שירות של קבוצה
+            users: משתמשים (%{mem_count})
+            workgroup_memberships: חברות בקבוצות עבודה (%{mem_count})
+          index:
+            activate: הפעלה
+            date_added: תאריך הוספה
+            deactivate: השבתה
+            group_name: שם קבוצה
+            members: חברים
+            new_group: " קבוצה חדשה"
+            remove: הסר
+            saml_config: תצורות SAML
+            status: סטטוס
+          new:
+            back: חזרה
+            cancel: ביטול
+            create: יצירה
+            create_new_saml: יצירת קבוצת SAML חדשה
+            group_name: 'שם קבוצה (DN):'
+            saml_config: תצורת SAML
+        template_users:
+          account_details: פרטי חשבון
+          cancel: ביטול
+          edit_template_user: עריכת משתמש תבנית
+          form:
+            workgroup_memberships:
+              date_added: תאריך הוספה
+              remove: הסר
+              workgroup_name: שם קבוצת עבודה
+              workgroups: קבוצות עבודה
+          update: עדכון
+        users:
+          add_permissions:
+            edit_add_perm: עריכת הרשאות נוספות
+          edit:
+            change_password: שינוי/איפוס סיסמה
+            edit_user: 'עריכת משתמש: %{user}'
+            return_to_user_list: חזרה לרשימת המשתמשים
+            type: "(סוג: my_user_type_YM)"
+            workgroup_memberships: חברות בקבוצת עבודה
+          edit_form:
+            cancel: ביטול
+            update_user: עדכון משתמש
+          edit_wg:
+            add_user: הוספת משתמש לקבוצת עבודה
+            back_to_edit: חזרה לעריכה
+            remove: הסר
+            workgroup_mem_for: חברות בקבוצת עבודה עבור %{user}
+            workgroup_name: שם קבוצת עבודה
+          external_users:
+            accounts: חשבונות
+            remove: הסר
+          fieldsets:
+            account_details:
+              account_details: פרטי חשבון
+              active: פעיל
+              admin_hint: מנהלנים יכולים להוסיף/לסלק משתמשים ולנהל את תצורת השרת.
+              inactive: לא פעיל
+              manager_hint: מנהלים יכולים להוסיף/לסלק משתמשים
+              never: לעולם לא
+              role: 'תפקיד:'
+              text_area_hint: ציינו פסיק -, נקודה-פסיק או תווי רווח-כתובות דואל מופרדות
+              user_hint: משתמשים רגילים יכולים לשלוח ולקבל חבילות Faspex
+            advanced_transfer:
+              adv_trans_setting: הגדרות העברה מתקדמות
+              checked: נבדק
+              initial_transfer: שיעור העברה ראשונית
+              max_rate: קצב מרבי מותר
+              minrate_hint: 'אם האפשרות מסומנת, הלקוחות לא יוכלו להתאים את מדיניות ההעברה או קצב ההעברה המינימלי (ברירת מחדל: %{config})'
+              server_to_user: 'שרת למשתמש (ברירת מחדל: %{config})'
+              transfer_alert: |-
+                פספקס ישתמש בהגדרות ההעברה מהחלק 'שרת Aspera המרכזי' כברירת מחדל.
+                עם זאת, תוכלו להגדיר הגדרות העברה ספציפיות למשתמש, שיקבלו קדימות על פני הגדרות שרת.
+              unchecked: לא מסומן
+              user_to_server: 'משתמש לשרת (ברירת מחדל: %{config})'
+            ds_history:
+              action: פעולה
+              ds_history: היסטוריית DS (%{dom_name})
+              notes: הערות
+              operation: פעולה
+              show_all: הצגת הכל
+              time: זמן
+            package_deletion:
+              after_download: 'לאחר ההורדה:'
+              allow_user_delete: 'לאפשר למשתמש להגדיר את הגדרת המחיקה שלו על בסיס חבילה-לפי-חבילה:'
+              delete_files_after: מחיקת קבצים אחרי <strong>כל נמען</strong> מוריד את כל הקבצים
+              delete_files_all: מחיקת קבצים אחרי <strong>כל הנמענים</strong> הורידו את כל הקבצים
+              do_nothing: לא לעשות דבר
+              package_deletion: מחיקת חבילה
+              server_delete: 'ברירת מחדל: %{config}'
+            password_policy:
+              custom_pw_policy: מדיניות סיסמאות מותאמת
+              pw_expires: תוקף הסיסמה פג.
+              prevent_pw_reuse: מניעת שימוש חוזר בסיסמה
+              every_x_days: כל ימי _x_YM
+              never: לעולם לא
+            permissions:
+              affirm: כן
+              allow_inviting_external: 'לאפשר הזמנת שולחים חיצוניים:'
+              allow_public_submission: 'לאפשר דחיפות הגשה ציבוריות:'
+              allowed_to: 'מורשה:'
+              can_see_global_dist_lists: 'יכול לראות רשימות תפוצה גלובלית:'
+              control_hint: אם לא מסומן, המשתמש לא יוכל לשלוח למשתמשים או לשלוח לקופסאות/קבוצות עבודה
+              create_drop_packages: אם אפשרות זו מושבתת, המשתמש יוכל ליצור מארזים נפתחת רק אם הם חברים בכל תיבות דואר.
+              create_normal: 'יכול ליצור מארזים רגילים:'
+              external_email: 'יכול לשלוח דוא " ל חיצוני:'
+              ip_addr_hint: ציון כתובות/טווחים מופרדים בפסיקים, לדוגמה <b>10.0. *, 192.168.1.1</b>
+              keep_dir_private: 'שמירת פרטי מדריך למשתמש:'
+              neg: לא
+              permissions: הרשאות
+              see_global_dis_list: 'יכול לראות רשימות תפוצה גלובלית:'
+              send_to_all: 'יכול לשלוח לכל משתמשי Faspex:'
+              send_to_all_send_to_wg: אם מותר, המשתמש יכול לשלוח לכל משתמשי Faspex. אחרת, המשתמש יכול לשלוח רק לחברי קבוצת עבודה אחרים.
+              user_server_def: 'ברירת מחדל של שרת משתמש (כיום: %{def})'
+            personal_details:
+              first_name: שם פרטי
+              last_name: שם משפחה
+              personal_details: פרטים אישיים
+            sender_quota:
+              sender_hint: עקיפת המגבלה של השולח המוגדר כברירת מחדל
+              sender_quota: השולח קואוטה
+              sender_quota_hint: גודל נתונים כולל שנשלח במהלך חלון מתגלגל
+              sender_quota_leg: 'מר קואוטה:'
+            user_history:
+              last_login_time: זמן התחברות אחרון
+              user_history: היסטוריית משתמשים
+            welcome_email:
+              welcome: דואל ברוכים הבאים
+          index:
+            accounts: חשבונות
+            activate: הפעלה
+            deactivate: השבתה
+            remove: הסר
+          menus:
+            add_account:
+              add_account: 'הוספת חשבון '
+              dir_serv_user: משתמש שירות של מדריך
+              faspex_user: משתמש פקס
+              new_user: " משתמש חדש"
+            toggle_users:
+              active_users: משתמשים פעילים
+              all_users: כל המשתמשים
+              inactive_users: משתמשים לא פעילים
+          new:
+            back: חזרה
+            user_account: חשבון משתמש חדש
+          new_form:
+            cancel: ביטול
+            confirm_password: אישור סיסמה
+            create_account: יצירת חשבון
+            first_name: שם פרטי
+            last_name: שם משפחה
+            or: " או "
+            password: סיסמה
+            set_password: הגדרת סיסמה
+          user:
+            invalid: לא חוקי
+            same_as_login: "(כמו התחברות)"
+          user_list:
+            check_all_users: בדיקת כל המשתמשים
+            check_user: בדיקת משתמש
+            date_added: תאריך הוספה
+            email: דוא " ל
+            first: ראשונה
+            home_server: שרת הבית
+            last: אחרון
+            last_login: התחברות אחרונה
+            login: התחברות
+            status: סטטוס
+            type: סוג
+      active: פעיל
+      ad_admin:
+        ad_users_list_rows:
+          active: פעיל
+          full_name: שם מלא
+          import_date: תאריך יבוא
+          inactive: לא פעיל
+          invalid: לא חוקי
+          user_name: שם משתמש
+        edit_config:
+          and_test: " ו-בחינה"
+          anonymous: אנונימי
+          dir_service_details: פרטי שירות מדריך
+          dir_service_type: 'סוג שירות מדריך:'
+          enable_dir_service: 'הפעלת שירות מדריך:'
+          ex_dir_service: שירות מדריך חיצוני
+          login: 'התחברות:'
+          login_method: 'שיטת התחברות:'
+          password: 'סיסמה:'
+          port: 'יציאה:'
+          provide_credentials: אספקת הסמכות
+          save: שמירה
+          save_and_test: שמירה ובדיקה
+          server: 'שרת:'
+          treebase: 'בסיס נתונים:'
+          use_tls: 'שימוש במצב מאובטח (TLS):'
+        operation_hist:
+          details: פרטים
+          dir_service_op_history: היסטוריית פעולה של שירות מדריכים
+          no_op: לא בוצעו פעולות
+          operation: פעולה
+          time: זמן
+          view: תצוגה
+        status: סטטוס
+      ad_group_membership:
+        active: פעיל
+        inactive: לא פעיל
+      ad_groups:
+        error: שגיאה
+        invalid: לא חוקי
+        pending: 'ממתין '
+      admin:
+        auth_domain:
+          edit:
+            edit_name: עריכת my_name_YM
+          form:
+            anonymous: אנונימי
+            dir_service_details: פרטי שירות מדריך
+            dir_service_name: 'שם שירות של מדריך:'
+            dir_service_type: 'סוג שירות מדריך:'
+            dn_message: בדרך כלל שם ייחודי (DN)
+            enable_dir_service: 'הפעלת שירות מדריך:'
+            login: 'התחברות:'
+            login_method: 'שיטת התחברות:'
+            password: 'סיסמה:'
+            port: 'יציאה:'
+            provide_cred: אספקת הסמכות
+            save: שמירה
+            save_and_test: שמירה ובדיקה
+            secure_tls: 'שימוש במצב מאובטח (TLS):'
+            server: 'שרת:'
+            treebase: 'בסיס נתונים:'
+            username_attr: 'מאפיין שם משתמש:'
+          index:
+            add_new: הוספת חדש my_name_YM
+            disabled: מושבת
+            enabled: מופעל
+            server: שרת
+            status: סטטוס
+            type: סוג
+          new: My_name_YM חדש
+        fasp_nodes:
+          fasp_nodes:
+            active_sessions: מהלכי עבודה פעילים
+            address: כתובת
+            errors: שגיאות
+            last_poll: זמן סקר מוצלח אחרון
+            node_id: זיהוי צומת
+            cluster_id: זיהוי אשכול
+            polling_strategy: פרסום אסטרטגיה
+            os: מערכת הפעלה
+            status: סטטוס
+        nodes:
+          edit:
+            cancel: ביטול
+            edit_name: עריכת my_user_YM-%{node}
+          form:
+            advanced_config: <i class="icon-plus"></i>תצורה מתקדמת
+            basic_config: תצורה בסיסית
+            config_message: >-
+              התצורה שלהלן חייבת להצביע על השרת המארח את ה-Aspera Enterprise Server. הכתובת נמצאת בשימוש של יישום האינטרנט לאיסוף סטטיסטיקת ההעברה. אם Aspera Enterprise
+              Server רץ באותה מכונה של יישום האינטרנט, הכתובת הנכונה היא 127.0.0.1.
+            sec_add_message: >-
+              הכתובת להלן היא מה שהמשתמשים יצטרכו כדי להתחיל העברות. אם יש לכם קבוצה של משתמשים שצריכים להשתמש בכתובת אחרת (לדוגמה, מפני תנאי רשת), השתמשו בשדות 'כתובת
+              משני' כדי לציין טווח IP. שימו לב, הכתובת המשנית אינה חלה על העברת מסרים.
+            storage_error: אחסון קובץ זה משמש כעת כתיבת הדואר הנכנס המוגדרת כברירת מחדל של המערכת. עריכה זו תגרום לכל המשתמשים הקיימים לא זמינים למשתמשים.
+            test_connect: בדיקת חיבור
+          index:
+            add_new: הוספת חדש my_name_YM
+            default_inbox: תיבת דואר נכנס '
+            location: מיקום
+            name: שם
+            source: מקור
+            shares: אחסון קבצים
+            status: סטטוס
+            update: עדכון
+          new:
+            cancel: ביטול
+            new_name: My_name_YM חדש
+          test: החיבור הצליח!
+        notifications:
+          login_announce:
+            edit:
+              ann_hint: הודעה זו תופיע על מסך ההתחברות.
+              update: עדכון
+          package_inst:
+            pkg_hint: הודעה זו תופיע על המסך.
+            update: עדכון
+        packages:
+          delete:
+            age_days: גיל<br/>(ימים)
+            cancel: ביטול
+            delete_confirm: |-
+              אתם בטוחים שברצונכם למחוק את הקבצים עבור מארזים אלה?
+              לא תוכלו לבטל פעולה זו.
+            delete_files: מחיקת קבצים
+            files: קבצים
+            files_on_server: קבצים בשרת<br/>?
+            full_downloads: הורדות<br/>מלאות
+            recipients: נמענים
+            sender: שולח
+            size: גודל
+            status: סטטוס
+            title: כותרת
+            upload_completion: העלאת השלמת<br/>
+            warning: 'פעולה זו תמחק קבצים עבור המארזים שלהלן:'
+          index:
+            action: פעולה
+            all_packages: כל מארזים
+            days_or_older: ימים או מבוגרים
+            delete_files: מחיקת קבצים ...
+            download: הורדת <br/מלאות/חלקית
+            for_packages: עבור מארזים
+            files: קבצים
+            files_on_server: קבצים בשרת?
+            package_created: חבילה<br>נוצרה
+            recipients: נמענים
+            relays: יחסי
+            search: חיפוש
+            sender: שולח
+            size: גודל
+            status: סטטוס
+            title: כותרת
+            upload_completed: טעינה<br>הושלמה
+          relays:
+            all_packages: כל מארזים
+            completed_relays: מסרים משותפים
+            failed_relays: יחסי גומלין שנכשלו
+            files: קבצים
+            incomplete_relays: מסרים לא מלאים
+            ip_relays: בממסרי התקדמות
+            package_created: חבילה<br>נוצרה
+            recipients: נמענים
+            relays: יחסי
+            search: חיפוש
+            sender: שולח
+            size: גודל
+            status: סטטוס
+            title: כותרת
+            upload_completed: טעינה<br>הושלמה
+          show_details:
+            full: מלא
+            full_partial: מלא/חלקית
+            ip_addr: כתובת IP
+            package_download_details: פרטי הורדת חבילה
+            partial: חלקית
+            start: שעת התחלה
+            stop: שעת עצירה
+            time_elapsed: זמן שחלף
+            username: שם משתמש
+        post_processes:
+          edit:
+            cancel: ביטול
+            edit_script: עריכת קובץ Script %{name}
+            update: עדכון
+          env_var_help:
+            description: תיאור
+            faspex_meta<field>: הערך של שדה המטה-נתונים ששמו &lt;field&gt; עם אותיות רישיות מוחלפים על-ידי לא-רישיות ורווחים מוחלפים בתווי קו תחתי.
+            faspex_metadata_fields: רשימה מופרדת בפסיקים של שדות המטה-נתונים המוגדרים עבור החבילה
+            faspex_pkg_delivery_id: זיהוי מסירה של החבילה (שונה מזיהוי חבילה וUUID של חבילה)
+            faspex_pkg_dir: נתיב לחבילה
+            faspex_pkg_id: זיהוי מארז
+            faspex_pkg_is_forward: 1 עבור חבילות שהועברו ו-0 עבור מארזים מקוריים
+            faspex_pkg_name: כותרת החבילה
+            faspex_pkg_note: הערת חבילה
+            faspex_pkg_total_bytes: גודל המארז בבתים
+            faspex_pkg_total_files: מספר הקבצים בחבילה
+            faspex_pkg_uuid: UUID של החבילה
+            faspex_recipient_count: מספר הנמענים (לדוגמה "3")
+            faspex_recipient_i: שם של נמען ה-th
+            faspex_recipient_list: רשימה מופרדת בפסיקים של נמענים (לדוגמה "admin, jdoe")
+            faspex_sender_email: דוא " ל של השולח
+            faspex_sender_id: זיהוי השולח
+            faspex_sender_name: שם השולח
+            variable: משתנה
+          form:
+            env_var_help: עזרה משתנה סביבה
+            exact_match: התאמת התאמה
+            execution_crit: קריטריון ביצוע
+            high: גבוה
+            low: נמוך
+            package_date_end: סיום תאריך החבילה
+            package_date_start: תאריך ההתחלה של החבילה
+            package_file_count: ספירת קובץ חבילה
+            package_file_hint: ציינו טווח עבור מספר הקבצים באריזה כאן.
+            package_name: שם חבילה
+            package_note: הערת חבילה
+            package_size: גודל חבילה
+            range_hint: ציינו טווח עבור גודל החבילה כאן.
+            recipient_email_list: רשימת דואל נמענים
+            recipient_list: רשימת נמענים
+            script_to_run: קובץ Script להרצה
+            sender_email: שולח דואל
+            sender_name: שם השולח
+          index:
+            action: פעולה
+            create_new: יצירת חדש
+            execution_criteria: קריטריון ביצוע
+            log: יומן
+            name: שם
+            post_processing: לאחר העיבוד
+            script: קובץ Script
+          new:
+            add_new_script: הוספת קובץ Script חדש
+            cancel: ביטול
+            create: יצירה
+          show_events:
+            back: חזרה
+            exec_criteria: קריטריון<br/>ביצוע
+            package_name: שם חבילה
+            package_sender: מארז<br/>שולח
+            package_uuid: UUID של חבילה
+            post_processing_exec_log: 'פרסום-עיבוד: יומן ביצוע עבור %{name}'
+            time_of_exec: שעת ביצוע <br/>
+        saml:
+          edit:
+            saml_integration: שילוב SAML
+            update: עדכון
+        saml_configurations:
+          edit:
+            allowable_clock_drift: דריסת שעון מותרת (מילישניות)
+            attribute_mapping: מיפוי מאפיינים
+            browse: עיון ...
+            certificate: תעודה
+            create_saml_config: יצירת תצורת SAML
+            default_saml_config: תצורת SAML המוגדרת כברירת מחדל
+            domain_url: URL של מיתחם
+            fingerprint: דיגיטאלי דיגיטלי
+            fingerprint_alg: אלגוריתם טביעת אצבע
+            hide: הסתרה
+            import_from_file: 'יבוא מקובץ: '
+            import_from_text: 'יבוא מתוך תמליל: '
+            import_from_url: 'יבוא מ-URL: '
+            import_metadata_settings: יבוא הגדרות מתמליל
+            import_metadata_settings_url: יבוא הגדרות מכתובת URL של מטה-נתונים
+            import_settings: יבוא הגדרות מתוך מטה-נתונים %{dir}
+            name: שם
+            name_id_format: מבנה זיהוי שם
+            new: חדש
+            public_login_inst: הוראות התחברות ציבוריות
+            publicly_visible: גלוי מפורסם
+            redirect_saml: ניתוב מחדש אל הדף יומן SAML על לוגים
+            restrict_login_groups: הגבלת גישה לקבוצות ידועות
+            restrict_login_groups_hint: אם האפשרות מסומנת, רק חברי קבוצות SAML נוספו ל-Faspex, יורשו להתחבר.
+            restrict_login_users: הגבלת גישה למשתמשים ידועים.
+            restrict_login_users_hint: אם האפשרות מסומנת, רק משתמשי SAML קיימים שנוספו ל-Faspex יורשו להתחבר.
+            saml_config: תצורת SAML
+            saml_config_details: פרטי תצורת SAML
+            SAML_metadata_server: מטה-נתונים של שרת SAML
+            SAML_metadata_server_url: כתובת URL של מטה-נתונים של שרת SAML ...
+            saml_settings: הגדרות SAML
+            show: הצגה
+            SSO_target_URL: 'URL יעד של SSO:'
+            update: עדכון
+            update_saml_config: עדכון תצורת SAML
+          index:
+            actions: פעולות
+            add_new_config: הוספת תצורת SAML חדשה
+            default: " (ברירת מחדל)"
+            disable: השבתה
+            disable_title: השבתה
+            disabled: " (מושבת)"
+            domain_url: URL של מיתחם
+            enable: הפעלה
+            enable_title: הפעלה
+            make_default: ברירת מחדל
+            metadata: מטה-נתונים
+            name: שם
+            remove_default: סילוק ברירת מחדל
+            saml_config: תצורות SAML
+            saml_confirm: אתם בטוחים שברצונכם להפעיל את תצורת SAML זו?
+            saml_confirm_disable: אתם בטוחים שברצונכם להשבית את תצורת SAML זו?
+            test: בדיקה
+          user_profile:
+            name: שם
+            remove: סילוק שדה פרופיל זה
+            remove_confirm: אתם בטוחים שברצונכם לסלק שדה פרופיל משתמש זה?
+          user_profile_fields:
+            add_local_field: הוספת שדה ' פרופיל מקומי '
+            default_profile_fields: שדות ' פרופיל ברירת מחדל '
+            enabled: מופעל
+            fields_required: שדות הדרושים עבור כל משתמשי Faspex
+            global_cust_message: שדות מותאמים המוגדרים בלשונית ' פרופיל משתמש '
+            global_cust_prof_fields: שדות פרופיל מותאם גלובלי
+            local_cust_message: שדות פרופיל משתמש ספציפיים לתצורת SAML זו
+            local_cust_prof_fields: שדות פרופיל מותאם מקומי
+            name: שם
+            required: נדרש
+            saml_name: שם SAML
+            save_note: 'הערה: לא יישמרו שינויים עד שתלחצו על '' עדכון תצורת SAML '''
+        settings:
+          display_settings:
+            date_format:
+              format: עיצוב
+              meaning: משמעות
+              perc_a: שם יום השבוע המקוצר (Sun)
+              perc_A: שם יום חול מלא (יום ראשון)
+              perc_b: שם החודש המקוצר (ג ' ן)
+              perc_B: שם החודש המלא (ינואר)
+              perc_d: יום החודש (01 ... 31)
+              perc_j: יום השנה (01 ... 366)
+              perc_m: חודש השנה (01 ... 12)
+              perc_Y: שנה עם מאה
+              perc_y: שנה ללא מאה (00 ... 99)
+            edit:
+              acc_display_format: מבנה שם להצגה של חשבון
+              custom_logo: 'לוגו מותאם:'
+              date_format: מבנה תאריך
+              date_formatting_help: תאריך ' עיצוב תאריך '
+              default_logo_help: 'לוגו ברירת המחדל הוא 295x51 '
+              display_settings: הגדרות תצוגה
+              examples: דוגמאות
+              local_login_inst: הוראות התחברות מקומיות
+              login_page_header: כותרת דף התחברות
+              remove_confirm: אתם בטוחים שברצונכם לסלק את הלוגו המותאם הנוכחי?
+              remove_logo: סילוק לוגו מותאם
+              update: עדכון
+          entitlement:
+            edit:
+              customer_id: 'זיהוי לקוח:'
+              entitlement_license: רשיון זכאות
+              faspex_enabled: 'פספקס מופעל:'
+              key: 'מפתח:'
+              max_active_users: 'מקסימום משתמשים פעילים:'
+              save: שמירה
+          global_dist_lists:
+            index:
+              add_new_list: הוספת רשימת תפוצה חדשה
+              contacts: אנשי קשר
+              global_dist: רשימות תפוצה גלובלית
+              name: שם
+              no_list_alert: אין רשימות הפצה גלובליות.
+              update_dist_lists: עדכון רשימות תפוצה
+            new:
+              new_global_list: רשימת תפוצה גלובלית חדשה
+          license:
+            edit:
+              OR: או
+          package_storage:
+            edit:
+              after_pkg_dl: לאחר הורדת מארזים.
+              after_upload_ends: לאחר שהטעינה תסתיים.
+              characters: תווים
+              days: ימים
+              delete_files_all: מחיקת קבצים אחרי <strong>כל הנמענים</strong> הורידו את כל הקבצים
+              delete_files_any: מחיקת קבצים אחרי <strong>כל נמען</strong> מוריד את כל הקבצים
+              do_nothing: לא לעשות דבר
+              max_pkg_title: אורך מרבי של כותרת חבילה בנתיבי אחסון
+              package_storage: אחסון חבילה
+              packages_expire: תפוגת מארזים
+              pkg_by_pkg_del: לאפשר לכל המשתמשים להגדיר את הגדרות המחיקה שלהם על בסיס חבילה-לפי-חבילה
+              update: עדכון
+          save_restore:
+            index:
+              dl: הורדה
+              dl_curr_config: הורדת תצורה נוכחית
+              faspex_config_help: תיקיית התצורה ומסד הנתונים של Faspex יישמרו
+              restore: שחזור
+              restore_config: שחזור תצורה
+              save_restore: שמירה/שחזור
+              upload_help: טעינה ולהחיל קובץ תצורה שמור (*.tar.gz)
+              version_help: 'הערה: שחזור גרסה צריך להתאים לגרסה הנוכחית של faspex'
+          security:
+            edit:
+              act_dir_hint: משתמשי שירות המדריכים לא יינעלו או מושבתים.
+              affirm: כן
+              after: אחרי
+              after_x_days: לאחר ימים _num_YM ימים
+              after_inactivity: לאחר ימים של חוסר פעילות _len_YM
+              after_one_success: לאחר העלאה מוצלחת אחת
+              allow_custom_link: לאפשר למשתמשים להגדיר מדיניות תפוגת קישור מותאמת.
+              allow_email_change: לאפשר למשתמשים לשנות את כתובת הדואל שלהם
+              allow_external_pkg_hint: אם אפשרות זו מסומנת, יוצגו מארזים שנשלחו למשתמשי Faspex עם דגל (חיצוני)
+              allow_external_pkg_to_faspex: לאפשר למארזים חיצוניים למשתמשי Faspex
+              allow_usrs_create: לאפשר למשתמשים ליצור מארזים רגילים.
+              allow_usrs_create_hint: אם האפשרות מושבתת, המשתמשים יוכלו ליצור מארזים נפתחת רק אם הם חברים בכל תיבות דואר.
+              allow_usrs_send: לאפשר לכל המשתמשים לשלוח לכל משתמשי Faspex אחרים
+              always: תמיד
+              allow_unlock: לאפשר למשתמשים נעולים לשחרר את הנעילה שלהם.
+              allow_send_email: לאפשר משלוח לכתובות דואל חיצוניות
+              appr_recipient_domains: מיתחמי נמענים
+              appr_sender_domains: מיתחמי שולח מאושרים
+              block_email_domain: חסימת מיתחמי הדואל הבאים מהרישום העצמי
+              can_override_ear_hint: המשתמש עשוי לבחור בעת הזמנת שולחים חיצוניים אם לאכוף הצפנה או לא
+              can_see_dist_list: משתמשים יכולים לראות רשימות תפוצה גלובליות כברירת מחדל
+              cipher: סייפר של FASP
+              days: ימים
+              dbox_override: לאפשר לקופסאות לעזוב את הגדרות ההצפנה שלהן.
+              def_pw_expire: מרווח תפוגת סיסמה המוגדרת כברירת מחדל
+              default: ברירת מחדל
+              disable: השבתה
+              disable_hint: חלון מתגלגל של מכסת השולח, משך שעות
+              ds_users: משתמשי DS אחרי my_int_YM ימים של חוסר פעילות
+              email_expire_after_download: התוקף פג אחרי הורדת החבילה המלאה.
+              enable: הפעלה
+              encrypt_hint: אם האפשרות מופעלת, העברות של HTTP לאחור יהיו מוצפנות גם
+              encrypt_transfers: הצפנת העברות
+              encryption: הצפנה
+              enforce_pw_hist: לא ניתן לעשות שימוש חוזר קודם
+              every: כל
+              faspex_acc: חשבונות פקס
+              force_pw_reset: לדרוש משתמשים חדשים לשינוי סיסמה בהתחברות הראשונה.
+              hours: שעות
+              inviting_allowed: לאפשר הזמנת שולחים חיצוניים
+              ignore_invalid_recipients: התעלמות מנמענים לא חוקיים.
+              ignore_invalid_recipients_hint: אם האפשרות מסומנת, משלוח החבילה לא ייכשל כאשר החבילה ממוענת לנמענים לא חוקיים
+              inv_link_expires: תוקפו של קישור הזמנה פג
+              inv_link_help: הגדירו מדיניות תפוגת קישור עבור הזמנות אישית ולקופסת שרתים.
+              keep_usr_dir: שמירת מדריך משתמש פרטי
+              list_hint: ציינו פסיק -, נקודה-פסיק או תווי רווח-כתובות דואל מופרדות
+              local_users: משתמשים מקומיים אחרי תקופת חוסר פעילות _int_YM.
+              lock_hint: לאחר נסיונות התחברות כושלים של my_login_count_YM בתוך
+              lock_users: נעילת משתמשים
+              minutes: דקות
+              neg: לא
+              never: לעולם לא
+              new_user_pw: סיסמת משתמש חדשה my_req_YM. סיסמאות קיימות יישארו חוקיות my_warn_YM
+              obfuscation: אופיקציה
+              optional: רשות
+              optional_hint: המשתמש עשוי לבחור בזמן משלוח או לא להצפין
+              otfv: אימות קובץ מתוך-העברת עותק (OTFV)
+              outside_email_add: כתובות דוא " ל מחוץ
+              package_link_expires: תוקף הקישור של החבילה פג
+              package_link_help: אם האפשרות מסומנת, החבילה ניתנת להורדה רק פעם אחת מתוך my_master_warn_YM
+              passwords: סיסמה (ים)
+              passwords_expire: תוקף הסיסמאות פג
+              public_url_allowed: לאפשר כתובות URL של הגשה ציבורית
+              prevent_pw_reuse: מניעת שימוש חוזר בסיסמה
+              prev_conc: מניעת התחברות בו-זמנית
+              pw_reset_hint: דואל איפוס סיסמה יישלח והחשבון לא יהיה נעול לאחר שינוי הסיסמה
+              quota_limit: גודל נתונים כולל שנשלח במהלך חלון מתגלגל
+              reg_hint: 'אופציונלי: אם מוגדר התמליל, המשתמשים יידרש לקבל את ההצהרה כדי לרשום'
+              reg_users_mutual: משתמשים רשומים בעצמם יכולים לשלוח אחד לשני.
+              registration_instructions: הוראות רישום
+              registration_type: הרשמה עצמית
+              registrations: איורים
+              remove_users: סילוק משתמשים
+              req_external_reg: לדרוש משתמשים חיצוניים לרישום
+              require_external_hint: אם האפשרות מסומנת, המשתמשים החיצוניים חייבים לרשום חשבון Faspex כדי להוריד מארזים.
+              saml_users: משתמשי SAML לאחר ימי חוסר פעילות _int_YM.
+              security: אבטחה
+              send_welcome_email: משלוח דוא " ל בברכה לכל המשתמשים החדשים
+              sender_quota: השולח קואוטה
+              sender_quota_hint: >-
+                מארזים שנשלחו למשתמשים במתחמים אלה אינם נחשבים למכסת שולח. השתמשו בפסיקים (,), נקודה-פסיק (;), או רווח לבן כדי להפריד בין עולמות דואל. לדוגמה: @aspera.com;
+                @ibm.com
+              sender_quota_option: אפשרות קיאוטה של השולח
+              sender_quota_duration: משך מכסת השולח
+              sender_quota_limit: מגבלת מכסת השולח
+              session_timeout: מגבלת זמן של מהלך עבודה לאחר
+              slave_hint: אם האפשרות מסומנת, המשתמשים יכולים להיות מחוברים רק בלקוח אחד בכל פעם.
+              strong_pw: שימוש בסיסמאות חזקות
+              timeout_hint: מהלכי עבודה יהיו מגבלת זמן אחרי מספר הדקות שצוין של חוסר פעילות.
+              tos: תנאי שירות לשליחה
+              tos_hint: 'אופציונלי: אם תמליל מוגדר משתמשים יידרש לקבל את ההצהרה על מנת לשלוח חבילה'
+              update: עדכון
+              use_encryption_at_rest: שימוש בהצפנה-ב-מנוחה
+              use_obf: שימוש בהפרעה בשמות קבצים
+              use_obf_hint: הכפשה של שם הקובץ היא בלתי הפיכה!
+              enforce_expiration_policy: תמיד לאכוף את משך הזמן המרבי עבור מדיניות תפוגה
+          transfer_options:
+            edit:
+              aspera_connect_sett: הגדרות חיבור Aspera
+              def_max_rate: שיעור ברירת מחדל מרבי המוגדר כברירת מחדל
+              dl_dur_trans: הורדות במהלך העברות
+              dl_over_http: הורדה של HTTP
+              http_gateway_hint: הכתובת להלן היא מה שהמשתמשים יצטרכו כדי להתחיל העברות דרך http.
+              http_gateway_url: URL של שער HTTP
+              initial_def_trans_rate: שיעור ברירת מחדל של העברת ברירת מחדל
+              local_host_connect: התחברות מקומית של התחברות
+              local_host_hint: אם אפשרות זו מסומנת, ה-Faspex לא ישתמש ב-Aspera CDN כדי לשרת את Connect, אך במקום זאת, ישתמש ה-SDK המקומי זמין ב-Faspex.
+              local_to_remote: שרת מקומי לשרת מרוחק
+              lock_connect_sdk: נעילת מהדורת SDK
+              lock_connect_sdk_hint: >-
+                מניעת עדכון של ה-SDK המקומי, אם גרסה חדשה תהיה זמינה. הגדרה זו נמשכת לאורך שדרוגים. הערה: פלטות מפעם לפעם בודק עדכונים ולא מוריד מיד גרסה חדשה אם
+                אפשרות זו מושבתת
+              min_connect_version: גרסה מינימלית של חיבור
+              minrate_hint: אם האפשרות מסומנת, הלקוחות לא יוכלו להתאים את מדיניות ההעברה שלהם או את שיעור ההעברה המינימלי שלהם.
+              prefer_http_connect: העדפת http על הרחבה
+              prefer_http_connect_hint: אם מסומן, Faspex יאכוף דפדפן לשימוש בשיטת http לתקשורת עם ה-Connect Desktop Client, במקום להשתמש בהרחבת דפדפן (זמין רק עם
+                דפדפן Chrome)
+              serv_to_serv_relay_trans_sett: הגדרות של העברת שרת אל שרת
+              server_to_user: שרת למשתמש
+              transfer_options: אפשרויות העברה
+              update: עדכון
+              user_to_server: משתמש לשרת
+              http_gwy_connection_success: החיבור הצליח
+              http_gwy_connection_error: שגיאה ביצירת חיבור עם IBM Aspera HTTP Gateway
+          web_server:
+            alt_address_fields:
+              remove_addr: סילוק כתובת חלופית זו
+            edit:
+              add_alt_address: הוספת כתובת חלופית
+              address_name: שם כתובת
+              alternate_addr_hint: שימוש אם אתם זקוקים לכתובות שרת שונות עבור משתמשים מסוימים
+              desc_email: תיאור עבור הודעות דואל
+              http_port_hint: נקבע על-ידי תצורת aפאצ ' י
+              https_port_hint: עבור תוכן מוצפן באמצעות SSL שנקבע על-ידי תצורת aפאצ ' י
+              remove: הסר
+              show_emails: הצגה באימיילים
+              update: עדכון
+              web_server: שרת אינטרנט
+        shares:
+          edit:
+            cancel: ביטול
+            custom_access_control: בקרת גישה מותאמת
+            edit: עריכת my_name_YM-%{שיתו}
+          edit_warning:
+            alert_error_1: |-
+              אחסון קבצים זה משמש כעת בתור תיבת הדואר הנכנס המותאמת ומיקום הממסר עבור קבוצות עבודה מסוימות.
+              עריכה זו תגרום לכל החבילות הקיימות בקבוצות עבודה אלה שלא יהיו זמינות למשתמשים ולשנות את יעד הממסר.
+            alert_error_2: |-
+              אחסון קבצים זה משמש כעת בתור מיקום תיבת הדואר הנכנס המותאמת עבור קבוצות עבודה מסוימות.
+              עריכה זו תגרום לכל המארזים הקיימים בקבוצות עבודה אלה לא זמינים למשתמשים.
+            alert_error_3: |-
+              אחסון קבצים זה משמש כעת כמיקום הממסר עבור קבוצות עבודה מסוימות.
+              עריכה זו תשנה את יעד הממסר.
+          form:
+            dir_serv_groups:
+              add_group: הוספת קבוצה
+              date_added: תאריך הוספה
+              dir_service_groups: קבוצות של שירות מדריך
+              DN: DN של
+              members: חברים
+              name: שם
+              status: סטטוס
+            dir_serv_group_member:
+              active: פעיל
+              delete: מחיקה
+              inactive: לא פעיל
+            users:
+              add_user: הוספת משתמש
+              full_name: שם מלא
+              member_since: חבר מאז
+              name: שם
+              status: סטטוס
+              type: סוג
+              users: משתמשים
+            user_membership:
+              delete: מחיקה
+          form_file:
+            browse: עיון ...
+            default_max_allowed_rate: שיעור ברירת מחדל מרבי המוגדר כברירת מחדל
+            directory: מדריך
+            enable_cloud_referencing: הפעלת הפניה לענן
+            enable_linking: הפעלת קישור
+            initial_default_rate: שיעור ברירת מחדל של העברת ברירת מחדל
+            limited: מוגבל
+            loading: טעינה
+            lock_minrate_hint: אם האפשרות מסומנת, הלקוחות לא יוכלו להתאים את מדיניות ההעברה שלהם או את שיעור ההעברה המינימלי שלהם.
+            name: שם
+            node: צומת
+            override_default: עקיפת הגדרות ברירת מחדל של העברה
+            private: פרטי
+            public: ציבורי
+            read_perm: הרשאת קריאה
+            relay_transfer_rate: שיעור העברה מחדש
+            server_to_user: שרת למשתמש
+            user_to_server: משתמש לשרת
+          new:
+            alert_no_node: לא יצרתם my_nodes_YM. _admin_node_YM לפני ביצוע my_name_YM.
+            cancel: ביטול
+            create_one: יצירת אחד
+            new: My_name_YM חדש
+      background_processes:
+        index:
+          action: פעולה
+          background_processes: תהליכי רקע
+          log_file: קובץ יומן
+          log_level: רמת יומן
+          name: שם
+          status: סטטוס
+        log:
+          lines: שורות
+          refresh: רענון כל
+          submit: הגשה
+      credits:
+        show:
+          java: Java תואם
+      directory_items:
+        file:
+          error: שגיאה
+      dropbox:
+        dropboxes:
+          metadata_profile: 'פרופיל מטה-נתונים: '
+          options:
+            after_pac_downl: 'לאחר הורדת מארזים:'
+            allow_submission_via_pub_URL: 'לאפשר הגשת באמצעות URL ציבורי:'
+            always: תמיד
+            custom_exp_policy: מדיניות תפוגת חבילה מותאמת
+            custom_inv_policy: מדיניות תפוגת קישור הזמנה מותאמת
+            day_after_sending_inv: ימים לאחר שליחת דואל הזמנה
+            day_after_upload: ימים לאחר שהטעינה מסתיימת
+            http_downloads_not_allowed: הורדות HTTP אינן מותרות עבור מארז זה.
+            delete_after_all: מחקו קבצים אחרי <strong>כל החברים בתיבת הטיפה</strong> הורידו את כל הקבצים.
+            delete_after_first: מחיקת קבצים לאחר <strong>כל חבר בתיבת הטיפה זו</strong> מוריד את כל הקבצים.
+            do_nothing: לא לעשות דבר
+            inv_link_expire: 'תוקפו של קישורי הזמנה פג:'
+            never: לעולם לא
+            optional: רשות
+            package_expires: 'תפוגת מארזים:'
+            require_encrypt: 'לדרוש הצפנה-במנוחה:'
+            save_message: Aspera-metadata.xml יישמר במדריך היסוד של כל מארז
+            save_metadata: 'שמירת מטה-נתונים לקובץ:'
+            success: לאחר העלאה מוצלחת אחת
+            use_server_default: 'שימוש בברירת המחדל של השרת (כרגע: %{server})'
+          perm:
+            add_rem_dir_serv_groups: הוספה/סילוק של קבוצות שירות מדריך כחברים
+            add_remove_users: הוספת משתמשים קיימים של Faspex/סילוק חברי מנהלן שאינם נפתחת
+            dropbox_admin_can: מנהלי תיבות סימון יכולים ...
+            invite_outside_submitters: הזמנת תת-מיתרים חיצוניים
+            invite_remove_users: הזמנה/סילוק של תת-מיתרים חיצוניים
+            member_manage: ניהול חברים
+            reg_users_as_mem: יצירה/עריכה/delete/סילוק משתמשים רשומים חדשים כחברים
+            standard_can: משתמשים סטנדרטיים יכולים ...
+        users:
+          cancel: ביטול
+          description: תיאור
+          email_address: כתובת דוא " ל
+          invite: 'הזמנת הגשה מחוץ לשליחה ל-Dropbox: %{wgname}'
+          invite_html:
+            require_encryption: 'לדרוש הצפנה במנוחה:'
+            yes_ear: כן
+            no_ear: לא
+            optional: רשות
+          submit_save: שמירה (שולח דואל להזמנה)
+      e_error:
+        default: השרת נתקל בבעיה במהלך ניסיון לעבד את בקשתכם. מצב זה עשוי להיות בשל הרשאות לא מספיקות, בעיית תצורה, הפרעת רשת, תקלה או כשל בחומרה.
+        default_2: פקודות אחרות מלבד זאת שניסיתם עדיין יכולות לעבוד. נסו ללחוץ על הלחצן "חזרה" או על אחת מהלשוניות האחרות.
+      external:
+        sub_stat:
+          show:
+            safe: |-
+              זה בטוח לסגור דף אינטרנט זה, ההעברה שלך לא תושפע.
+              דואל נשלח אליכם עם קישור כדי לחזור למסך זה.
+            send_to: משלוח אל %{enent}
+            send_to_dropbox: 'שליחה ל-Dropbox: %{dropname}'
+            status: דף זה מאפשר לכם לראות את מצב החבילה שהגשתם, וכן לבצע שוב את ההעברה אם היא נכשלת.
+          submission_stat:
+            date_submit: תאריך הגשה
+            files: קבצים
+            size: גודל
+            status: סטטוס
+            title: כותרת
+        to:
+          email_address: כתובת דוא " ל
+          please_enter_email: ציינו את כתובת הדואל כדי לקבל גישה.
+          request_access: בקשת גישה
+          send_to: משלוח אל my_resource_name_YM
+      inactive: לא פעיל
+      invitations:
+        edit:
+          cancel: ביטול
+          reinvite: הזמנה מחדש (שולח דואל להזמנה)
+          reinvite_sender: הזמנה מחדש של שולח
+        fieldsets:
+          sub_link_expires:
+            after: אחרי
+            after_one_success: לאחר העלאה מוצלחת אחת
+            after_one_up: לאחר העלאה אחת
+            custom_inv_policy: 'מדיניות תפוגת קישור הזמנה מותאמת:'
+            day_after_sending_inv: ימים לאחר שליחת דואל הזמנה
+            help: תוכלו להגביל את הגדרות אלה, אך לא תוכלו לחרוג מברירת המחדל.
+            inv_link_expires: תוקפו של קישור הזמנה פג
+          prevent_http_upload:
+            package_upload: העלאת חבילה
+            prevent_http_upload: מניעת טעינת HTTP עבור מארז זה
+        index:
+          access_url: הצגת URL של גישה
+          actions: פעולות
+          confirm: אתה בטוח?
+          delete: מחיקה
+          description: תיאור
+          email: דוא " ל
+          expiration: תפוגה
+          invitations: הזמנות
+          new: חדש
+          reinvite: הזמנה מחדש
+          resend: שליחה מחדש
+          status: סטטוס
+        new:
+          cancel: ביטול
+          description: תיאור
+          email_address: כתובת דוא " ל
+          invite_sender: הזמנת השולח
+          no_ear: לא
+          optional: רשות
+          require_encryption: 'לדרוש הצפנה במנוחה:'
+          save: שמירה (שולח דואל להזמנה)
+          yes_ear: כן
+      layouts:
+        aspera_faspex: Aspera Faנאומים
+        footer:
+          copyright: זכויות היוצרים שייכות לחברת IBM 2009,
+          credits: Credits והודעות
+          patch: רמת התיקון %{level}
+        header:
+          account: חשבון
+          enable_connect: הפעלת IBM Aspera Connect
+          help: עזרה
+          not_logged_in: לא מחובר.
+          sign_out: התנתקות
+          skip_to_main: דילוג אל ראשי
+        main_tabs:
+          accounts: חשבונות
+          new_package: חבילה חדשה
+          pending: ממתין
+          received: התקבל
+          sent: נשלח
+          server: שרת
+          view_package_options: לחצו כדי להציג אפשרויות חבילה חדשה.
+          workgroups: קבוצות עבודה
+        node_error:
+          warning: אזהרה!
+          errors_detected: התגלו שגיאות של שרת ההעברה, ייתכן שההעברות לא יפעלו כהלכה.
+      login:
+        entitlement:
+          customer_id: זיהוי לקוח
+          entitle_info: 'נא לציין את פרטי הזכאות שלכם כדי להתחיל:'
+          entitle_question: לשאלות או חששות לגבי זכאות, פנו אל %{aspera}
+          entitlement: זיהוי זכאות
+          submit: הגשה
+        new:
+          anouncement: הכרזה
+          enter_password: ציינו את סיסמת Faspex
+          enter_username: ציינו את שם המשתמש של Faspex
+          forgot_password: שכחתם את הסיסמה
+          password: סיסמה
+          username: שם משתמש
+          or_log: או התחברות עם
+      m_configuration:
+        edit:
+          faspex: פספקס
+          sender: שולח
+          sender_via_faspex: שולח באמצעות Faspex
+          sender_email: שולח דואל
+          mail_configuration: תצורת דואר
+          save: שמירה
+          savetest_email: שמירה ובדיקה של דואל
+          to: 'ל:'
+      m_template:
+        edit:
+          body: 'גוף:'
+          cancel: ביטול
+          edit_email_html: עריכת HTML של דואל של _YM
+          save: שמירה
+          subject: 'נושא:'
+        show:
+          advanced: " (מתקדם)"
+          customize: התאמת שימוש בתבנית
+          edit_html: עריכת HTML
+          preview: תוצג תצוגה מקדימה של my_description_YM להלן. ניתן להתאים אותו באמצעות התבנית או באמצעות עריכת HTML באופן ישיר.
+          preview_email_notif: תצוגה מקדימה של הודעת דואל של my_name_YM
+      metadata_profiles:
+        edit:
+          add_field: הוספת שדה
+          add_new_field: 'הוספת שדה חדש: '
+          edit_metadata: עריכת פרופיל מטה-נתונים
+          enabled: 'מופעל: '
+          error_fields_not_saved: 'הערה: שדות עם שגיאות אינם נשמרים'
+          illegal_characters: 'תווים לא חוקיים: '
+          max_length: 'אורך מרבי: '
+          note: הערה
+          note_no_save: 'הערה: לא יישמרו שינויים עד שתשמרו את פרופיל המטה-נתונים'
+          preview: תצוגה מקדימה
+          profile_name: 'שם פרופיל: '
+          profile_name_placeholder: שם הפרופיל ...
+          save: שמירה
+          save_and_prev: שמירה ותצוגה מקדימה
+          title: כותרת
+        date_format:
+          any_other_value: כל ערך אחר
+          any_other_value_hint: תמליל מילולי
+          at: חותמת זמן של Unix (ms מאז 01/01/1970)
+          capital_D_hint: שם יום (קצר)
+          capital_DD_hint: שם יום (ארוך)
+          capital_M_hint: שם החודש (קצר)
+          capital_MM_hint: שם החודש (ארוך)
+          d_hint: יום בחודש (ללא אפס מוביל)
+          dd_hint: יום בחודש (שתי ספרות)
+          description: תיאור
+          ellipses: תמליל מילולי
+          exclamation: קרציות Windows (100ns מאז 01/01/0001)
+          m_hint: חודש של שנה (ללא אפס מוביל)
+          mm_hint: חודש בשנה (שתי ספרות)
+          o_hint: יום השנה (ללא אפסים מובילים)
+          oo_hint: יום השנה (שלוש ספרות)
+          single_quote: ציטוט יחיד
+          variable: משתנה
+          y_hint: שנה (שתי ספרות)
+          yy_hint: שנה (ארבע ספרות)
+        metadata_field:
+          characters: תווים
+          date_format: 'מבנה תאריך: '
+          date_format_help: עיצוב תאריך ' עזרה '
+          illegal_chars: 'תווים לא חוקיים: '
+          illegal_chars_placeholder: מרכזים לא חוקיים ...
+          label: 'תווית: '
+          label_placeholder: תווית ...
+          max_length: 'אורך מרבי: '
+          options: 'אפשרויות: '
+          required: 'דרוש: '
+        index:
+          add_profile: הוספת פרופיל חדש
+          confirm: האם אתם בטוחים שברצונכם למחוק את פרופיל המטה-נתונים %{account}?
+          delete: מחיקה
+          edit: עריכה
+          metadata_profiles: פרופילי מטה-נתונים
+          name: שם
+          profile_for_norm: 'פרופיל עבור חבילות רגילות:'
+          save_metadata: 'שמירת מטה-נתונים לקובץ: '
+        new:
+          cancel: ביטול
+          create: יצירה
+          name: שם
+          new_profile: פרופיל מטה-נתונים חדש
+      mobile:
+        landing:
+          app_redirect: עבור החוויה הטובה ביותר, השתמשו ביישום Aspera Faspex Mobile.
+          no_app_prompt: דון ' יש את האפליקציה? קבלו את <a href='<%= @app_store_url %>'>כאן</a>
+          open_in_app: פתיחה באפליקציה
+          use_web_version: שימוש בגרסת אינטרנט
+      ms_admin:
+        convert_to_slave:
+          back: חזרה
+          convert: המרה
+          convert_server: המרת שרת ל-Slave
+          master_ip: 'IP של תבנית אב: '
+        edit:
+          connecting: התחברות אל my_hostname_YM ...
+          server_list: רשימת שרתי Faspex
+          working: עדיין עובד ...
+        edit_server:
+          alternate_address: 'כתובת חלופית: '
+          Back: חזרה
+          host_name: 'שם מארח או כתובת IP:'
+          https_port: 'יציאת HTTPS: '
+          master_ip: 'IP של תבנית אב:'
+          name: 'שם: '
+          save: שמירה
+          server_list: 'רשימת שרתי פקס: עריכת my_name_YM'
+          url_namespace: 'מרחב שמות של URL: '
+        list_rules:
+          create_new: יצירת חדש
+          default_user_server: 'שרת ברירת מחדל של Faspex/DS:'
+          home_server_rules: כללי שרת הבית
+          name: שם
+          note: >-
+            הערה: אם לא תגדירו כללים עבור תת-מיתרים חיצוניים, הם יופנו לשרת הבית של השולח כדי להוריד מארזים. באופן דומה, תת-מיתרים חיצוניים אשר מעלה מארזים חייבים
+            לעשות זאת משרת הבית של המזמין.
+          rule: כלל
+          save: שמירה
+          server: שרת
+          sort: מיון
+        new_edit_rule:
+          add: הוספה
+          back: חזרה
+          create: יצירה
+          create_new: יצירת חדש
+          dir_DN_regex: 'Regex של שירות מדריך:'
+          dir_regex: 'ארגון מחדש של קבוצת שירות מדריכים:'
+          edit: עריכה
+          email_regex: 'כתובת דוא " ל regex:'
+          external_users: 'משתמשים/תת-מיתרים חיצוניים:'
+          home_server: 'שרת הבית:'
+          home_server_rules: 'כללי שרת הבית: my_mod_YM כלל'
+          ldap_field: 'שם שדה LDAP:'
+          ldap_regex: 'שחזור שדה LDAP:'
+          regex_help: עזרה של Regex
+          remove: הסר
+          rule_name: 'שם כלל:'
+          save: שמירה
+          username_regex: 'שם משתמש חוזר:'
+        new_server:
+          alternate_address: 'כתובת חלופית:'
+          back: חזרה
+          create: יצירה
+          hostname: 'שם מארח או כתובת IP:'
+          http_port: 'יציאת HTTPS:'
+          name: 'שם:'
+          server_list_new_server: 'רשימת שרתי פקס: שרת מרוחק חדש'
+          url_namespace: 'מרחב שמות של URL:'
+        regex_help:
+          a*: אפס או יותר של.
+          a+: אחד או יותר של אחד.
+          a-z: כל תו יחיד בטווח a-z.
+          a-zA-z: כל תו יחיד בטווח a-z או A-Z.
+          abc: 'תו יחיד: a, b או C.'
+          ataslash_com: 'אקס: תואם למחרוזות המסיימות ב '' a.com '''
+          a|b: A או ב
+          expression: ביטוי
+          meaning: משמעות
+          period: כל תו יחיד.
+          slash: תו Escape.
+          slashA: התחלה של מחרוזת.
+          slashAa-m: 'אקס: תואם למחרוזות המתחילות באות בין ''a'' ו -''m ''.'
+          slashAperiod*z: 'אקס: תואם למחרוזות המתחילות ב - ''a'' ולסיים עם '' z '''
+          slashz: סוף המחרוזת.
+      nodes:
+        columns:
+          dropdown:
+            add: הוספת my_שיתופי _name_YM
+            delete: מחיקה
+            delete_confirm: אתה בטוח? פעולה זו תמחק את כל my_שיתו_name_YM כרגע באמצעות my_node_name_YM זה.
+            edit: עריכה
+          shares:
+            dropdown:
+              confirm: אתם בטוחים שברצונכם להמשיך?
+              custom_inbox_confirm: קובץ my_name_YM משמש כעת כמיקום תיבת הדואר הנכנס המותאמת עבור קבוצות עבודה מסוימות.
+              default_hint: קובץ my_name_YM משמש כעת כתיבת הדואר הנכנס המוגדרת כברירת מחדל של המערכת, ולא ניתן למחוק אותה.
+              delete: מחיקה
+              delete_warning: 'מחיקה תגרום לכל המארזים הקיימים בקבוצות עבודה אלה לא זמינים למשתמשים. '
+              edit: עריכה
+              relay_hint: קובץ my_name_YM משמש כעת כמיקום הממסר עבור קבוצות עבודה מסוימות.
+              rolled_back_warning: 'קבוצות עבודה אלה יוחזרו גם כדי להשתמש בתיבת הדואר הנכנס המוגדרת כברירת מחדל של המערכת. '
+      packages:
+        browser:
+          all: הכל
+          download_selected: הורדת נבחר
+          name: שם
+          none: ללא
+          select: בחירה
+          size: גודל
+          validation_error: שגיאת אימות?
+          warning: שגיאה
+        package:
+          browse_and_download_contents: עיון והורדת תוכן
+          browse_contents: עיון בתוכן
+          cc_on_delivery: 'עותק (במסירה):'
+          cc_on_download: 'עותק (בהורדה):'
+          cc_on_recipient: 'עותק (על הנמען):'
+          completed_relays: 'ממסרי עבודה שהושלמו:'
+          date_sent: תאריך ' נשלח
+          http_downloads_not_allowed: הורדות HTTP אינן מותרות עבור מארז זה.
+          delete_after_all_message: חבילה זו תימחק אוטומטית אחרי שכל הנמענים הורידו את כל קובצי המארז.
+          delete_after_first_message: חבילה זו תימחק אוטומטית לאחר שכל נמען הוריד את כל קובצי המארז.
+          edit: עריכה
+          error_release_date: שגיאה בעדכון תאריך השחרור
+          failed_relays: 'יחסי גומלין שנכשלו:'
+          forward: העברת עותק
+          from: 'מ -:'
+          in_progress_relays: 'יחסי גומלין בתהליך:'
+          incomplete_relays: 'מסרים לא הושלמו:'
+          none_set: ללא קבוצה
+          note_disabled: המארז אינו קיים באחסון הקבצים הנוכחי.
+          package: חבילה
+          release_now: שחרור כעת
+          save: שמירה
+          send_date: תאריך משלוח
+          to: 'אל:'
+          to_private: 'אל (פרטי):'
+          upload_date: 'תאריך העלאה:'
+        show_stats:
+          more_details: פרטים נוספים
+        stats:
+          active_downloads:
+            active_downloads: 'הורדות פעילות: %{num}'
+          completed_package:
+            avg_rate: 'תעריף ממוצע: my_rate_YM'
+            elapsed: 'שחלף: my_time_YM'
+            files: 'קבצים: my_num_YM'
+            size: גודל my_num_YM
+            upload_stats: 'טעינת סטטיסטיקות:'
+            uploaded_from: 'נטען מתוך:'
+          failed_package:
+            avg_rate: 'תעריף ממוצע: my_rate_YM'
+            elapsed: 'שחלף: my_time_YM'
+            files: 'קבצים: my_num_YM'
+            size: גודל my_num_YM
+            upload_stats: 'טעינת סטטיסטיקות:'
+            uploaded_from: 'נטען מתוך:'
+          full_download:
+            full_pkg_dl: 'הורדות חבילה מלאה: my_completed_YM'
+          package_details:
+            pkg_details: פרטי חבילה
+            status: סטאטוס my_package_YM
+            http_downloads_not_allowed: הורדות HTTP אינן מותרות עבור מארז זה.
+          partial_package:
+            partial_pkg_dl: 'הורדות חבילות חלקיות: my_total_YM'
+          transfer_package:
+            avg_rate: 'תעריף ממוצע:'
+            elapsed: 'שחלף:'
+            files: 'קבצים: my_num_YM'
+            loading: טעינה מתבצעת ...
+            size: גודל my_num_YM
+      pending:
+        action: פעולה
+        files: קבצים
+        history:
+          back_to_normal_view: חזרה לתצוגה רגילה
+          file_on_server: קבצים בשרת?
+          pending_package_hist: היסטוריית מארזים ממתינה
+        index:
+          archive_all: גניזת הכל
+          pending_packages: ממתין למארזים
+          view_full_history: הצגת היסטוריה מלאה
+          warning: אזהרה
+        recipients: נמענים
+        search: חיפוש
+        send_date: תאריך משלוח
+        size: גודל
+        status: סטטוס
+        title: כותרת
+        transfer_retries: העברת ניסיונות חוזרים
+        upload_date: תאריך העלאה
+      received:
+        action: פעולה
+        date_sent: תאריך ' נשלח
+        download_available: הורדה זמינה
+        files: קבצים
+        history:
+          back_to_normal_view: חזרה לתצוגה רגילה
+          files_on_server: קבצים בשרת?
+          received_package_hist: היסטוריית חבילות שהתקבלו
+        index:
+          archive_all: גניזת הכל
+          invitations: הזמנות
+          received_packages: חבילות שהתקבלו
+          view_full_history: הצגת היסטוריה מלאה
+        search: חיפוש
+        sender: שולח
+        size: גודל
+        status: סטטוס
+        title: כותרת
+      registrations:
+        confirmation:
+          back_to_login: חזרה להתחברות
+        edit_password:
+          set_password: הגדרת סיסמה
+        new:
+          back_to_login: חזרה להתחברות
+          email: דוא " ל
+          first_name: שם פרטי
+          last_name: שם משפחה
+          name: שם
+          tos_accept: אני מקבל את ה-%{tos}.
+      reset_password_tokens:
+        edit:
+          alert_error: התחברות הפספקס שלך היא עייפה לחשבון שירות ספרייה.
+          alert_error_contact: פנו לצוות התמיכה או למנהלן הרשת כדי לשנות את סיסמתכם.
+          reset_password: איפוס סיסמה
+        new:
+          back_to_login: חזרה להתחברות
+          enter_user_or_email: ציינו את שם המשתמש או הדואל שלכם.
+          forgot_password: שכחת את הסיסמה שלך?
+          send_email: משלוח דוא " ל
+      search: נמעני חיפוש, כותרות מארזים והערות.
+      send:
+        fieldsets:
+          encryption:
+            encryption: 'הצפנה:'
+            use_encrypt_at_rest: שימוש בהצפנה-במנוחה
+        form:
+          dropbox:
+            send_package: משלוח חבילה
+          external:
+            send_package: משלוח חבילה
+          fieldsets:
+            encryption:
+              encryption: 'הצפנה:'
+              use_encrypt_at_rest: שימוש בהצפנה-במנוחה
+            expiration_policy:
+              after_pkg_dl: לאחר הורדת החבילה
+              delete_after_all: מחיקה אחרי <strong>כל הנמענים</strong> הורידו את כל הקבצים.
+              delete_after_any: מחיקה אחרי <strong>כל נמען</strong> מוריד את כל הקבצים
+              do_nothing: לא לעשות דבר
+              expiration: 'תפוגה:'
+            prevent_http_download:
+              prevent_http_download: מניעת הורדה של HTTP עבור מארז זה
+              package_download: הורדת חבילה
+            metadata:
+              maximum_length: 'אורך מרבי: מיתוג &nbsp&nbsp'
+              illegal_chars: 'תווים לא חוקיים: %{illegal}'
+              required: נדרש
+              optional: אופציונלי
+            note:
+              note: הערה:<br><span class='dim'><small><small></small></span>
+              maximum_length: 'אורך מרבי: מיתוג &nbsp&nbsp'
+              illegal_chars: 'תווים לא חוקיים: %{illegal}'
+            notifications:
+              cc: CC
+              cc_on_download: CC להורדה
+              cc_on_receipt: CC על קבלה
+              cc_on_upload: עותק על ההעלאה
+              download: 'הורדה:'
+              notifications_help: הודעות הדיווח נשלחות לאחר הטעינה הראשונה או הורדה ראשונה
+              receipt: 'קבלה:'
+              upload: 'טעינה:'
+            obfuscation:
+              obfuscation: 'אופיקציה:'
+              use_obf: שימוש ב-obfuscation על שמות קבצים
+            release_policy:
+              release_date: 'תאריך שחרור:'
+              release_later_date_later: שחרור מאוחר יותר-קביעת תאריך מאוחר יותר
+              release_later_date_now: שחרור מאוחר יותר-תאריך הגדרה כעת
+              release_now: שחרור כעת
+              release_policy: 'מדיניות גירסה:'
+            transfer_options:
+              transfer_through: 'העברה עם:'
+              http_uploads_not_allowed: טעינת HTTP אינה מותרת עבור מארז זה.
+            source_shares:
+              contents: 'תוכן *:'
+              ear_cloud_warning: הצפנת המנוחה מוגדרת לשימוש עבור כל ההעברות, אך היא אינה נתמכת עבור העברות המשתמשות בהפניה לענן. העברה זו לא תשתמש בהצפנה במנוחה.
+              remove_all: סילוק הכל
+              source: 'מקור:'
+              warning: 'אזהרה:'
+            title:
+              title: 'כותרת *:'
+              maximum_length: 'אורך מרבי: מיתוג &nbsp&nbsp'
+              illegal_chars: 'תווים לא חוקיים: %{illegal}'
+            tos:
+              tos: 'תנאי שירות:'
+              tos_accept: אני מקבל את ה-%{tos}
+          forward:
+            contents: 'תוכן:'
+            forward_package: מארז קדימה
+            fwd: 'Fwd: %{ftitle}'
+            original_sender: 'שולח מקורי:'
+            received: 'התקבל:'
+          misc:
+            actions:
+              confirmation: 'אישור:'
+              enter_passphrase: ציינו סיסמה כדי להגן על הקבצים שלכם.<br>דרוש סיסמה.
+              passphrase: 'משפט סיסמה:'
+            connect_transfer:
+              browse_for_files: עיון לאיתור קבצים &hellip;
+              browse_for_folders: עיון לאיתור תיקיות &שלי;
+              or: או
+            instruct:
+              instructions: הוראות
+            remote_share:
+              loading: טעינה
+              browse_for_files: עיון לאיתור קבצים &hellip;
+            show_hide_controls:
+              show_private_recip: הצגת נמענים פרטיים
+          normal:
+            send_package: משלוח חבילה
+        http_gateway_submit:
+          completed: הושלם
+          current_file: 'קובץ נוכחי:'
+          current_file_name: 'שם קובץ נוכחי:'
+          invalid_status: סטאטוס לא חוקי
+          failed: נכשל
+          file_count: 'ספירת קבצים:'
+          initiating: אתחול
+          running: רץ
+          total: 'סך הכל:'
+          transfer_status: 'העברה:'
+      sent:
+        action: פעולה
+        date_sent: תאריך ' נשלח
+        files: קבצים
+        history:
+          sent_package_hist: היסטוריית מארזים שנשלחו
+          back_to_normal_view: חזרה לתצוגה רגילה
+          files_on_server: קבצים בשרת?
+        index:
+          archive_all: גניזת הכל
+          sent_packages: חבילות שנשלחו
+          view_full_history: הצגת היסטוריה מלאה
+          warning: אזהרה
+        recipients: נמענים
+        search: חיפוש
+        show_details:
+          full_partial: "&nbsp; מלא/חלקי"
+          ip_addr: כתובת IP &nbsp;
+          pkg_download_details: פרטי הורדת חבילה
+          start_time: שעת התחלה &nbsp;
+          stop_time: עצירת &nbsp;
+          time_elapsed: "&nbsp; מזמן"
+          user_name: שם משתמש &nbsp;
+        size: גודל
+        status: סטטוס
+        title: כותרת
+        transfer_retries: העברת ניסיונות חוזרים
+      settings:
+        contacts:
+          contact:
+            external: "(חיצוני)"
+            remove: הסר
+          index:
+            contacts: אנשי קשר
+            edit_alert: אין לכם אנשי קשר שניתנים לעריכה.
+            edit_contacts: עריכת אנשי קשר
+        dist_lists:
+          index:
+            add_new_dist_list: הוספת רשימת תפוצה חדשה
+            alert_dist: אין לך רשימות הפצה אישיות.
+            contacts: אנשי קשר
+            global_dist_lists: רשימות תפוצה גלובלית
+            name: שם
+            pers_dist_lists: רשימות תפוצה אישית
+            update_dist_list: עדכון רשימות תפוצה
+          new:
+            new_dist_list: רשימת תפוצה חדשה
+        passwords:
+          edit:
+            change_password: שינוי סיסמה
+            current_password: 'סיסמה נוכחית:'
+            password: סיסמה
+            confirm_pw: אישור סיסמה
+        preferences:
+          edit:
+            download_connect: הורדת תוסף חיבור
+            download_hint: יכול לקחת כמה דקות לשינוי.
+            download_notif: הורדת דיווחים
+            download_notif_hint: שלחו דואל לכתובות אלה כאשר כל נמען מוריד חבילה ראשונה.
+            email_settings: הגדרות דוא " ל
+            locales: לוקאלים
+            locale: אזור
+            misc: Misc
+            preferences: העדפות
+            update_pref: עדכון העדפות
+            upload_notif: טעינת הודעות
+            upload_notif_hint: דואל כתובות אלה עם תוצאת הטעינה.
+            received_page_option: הצגת מארזים שהושלמו רק בדף ' התקבל '
+        sender_quota:
+          index:
+            sender_alert_1: הגעתם למגבלת מכסת השולח של my_quota_YM MB
+            sender_alert_2: My_quota_YM MB זמין. מגבלת מכסת השולח מוגדרת ל-%{limit} MB.
+            sender_quota: השולח קואוטה
+      shared:
+        browser:
+          filter:
+            from: מ -
+            hide_filters: הסתרת מסננים
+            include_sub: הכללת תת-מדריכים
+            max: מקסימום
+            min: מינימום
+            mod_time: זמן שינוי
+            search: חיפוש
+            search_for_files: חיפוש קבצים או מדריכים &helשאיבת;
+            show_filters: הצגת מסננים
+            size: גודל
+            to: ל
+          par_dir_item:
+            parent_dir: מדריך אב
+        dist_lists:
+          dist_lists:
+            delete: מחיקה
+            duplicate: שכפול
+            import_contacts: יבוא אנשי קשר מתוך CSV
+          form:
+            name: שם
+            browse: עיון ...
+            contacts: אנשי קשר (עד my_num_YM)
+            import_from_csv: 'יבוא מתוך CSV:'
+        filter:
+          filter: סינון &שליפה;
+      user_profile_fields:
+        add_user_profile_field: הוספת שדה ' פרופיל משתמש '
+        enabled: מופעל
+        name: שם
+        note_no_changes: 'הערה: לא יישמרו שינויים עד שתלחצו על '' שמירת שדות '''
+        onclick_confirm: אתם בטוחים שברצונכם לסלק שדה פרופיל משתמש זה?
+        remove: סלקו שדה פרופיל זה.
+        required: נדרש
+        save_fields: שמירת שדות
+        user_profile: פרופיל משתמש
+      workgroup:
+        deliveries:
+          history:
+            date_sent: תאריך<br>נשלח
+            download_retry: הורדה או ניסיון חוזר זמין
+            files: קבצים
+            files_on_server: קבצים בשרת<br>?
+            package_history: היסטוריית מארזים
+            search: חיפוש
+            sender: שולח
+            size: גודל
+            status: סטטוס
+            title: כותרת
+          index:
+            action: פעולה
+            date_sent: תאריך<br>נשלח
+            download_retry: הורדה או ניסיון חוזר זמין
+            files: קבצים
+            packages: חבילות
+            search: חיפוש
+            sender: שולח
+            size: גודל
+            status: סטטוס
+            title: כותרת
+          misc:
+            links:
+              invite_outside: הזמנת הגשה מחוץ
+        file_relay_req:
+          index:
+            back: חזרה
+            relay_stat: סטטוס מחדש
+          table:
+            date_sent: תאריך ' נשלח
+            file_storage: אחסון קבצים
+            files: קבצים
+            node: צומת
+            size: גודל
+            status: סטטוס
+        forwards:
+          complete: הושלם
+          enable_relay: הפעלת Relay
+          enabled_message: אם האפשרות מופעלת, כל קובצי המארז יועברו לצמתים נוספים.
+          error: שגיאה
+          notify_users: דיווח למשתמשים ב ...
+          overwrite: דריסה
+          relay: משחזר
+          start: התחלה
+        name: שם
+        nodes:
+          default_inbox: תיבת דואר נכנס '
+          direct_upload: טעינה ישירות לתיבת הדואר הנכנס המותאמת.
+          direct_upload_default_check: אם האפשרות מסומנת, מארזים לא ייטענו לתיבת הדואר הנכנס המוגדרת כברירת מחדל אם קבוצת עבודה זו היא הנמען היחיד.
+          inbox_destination: יעד תיבת דואר נכנס
+          location: מיקום
+          status: סטטוס
+        users:
+          edit:
+            edit_user: 'עריכת משתמש: my_name_YM'
+          new:
+            new_user: חשבון משתמש חדש עבור my_wg_YM %{wgname}
+        workgroups:
+          details:
+            created_on: 'נוצר בתאריך:'
+            description: 'תיאור:'
+            inst_for_sub: 'הוראות עבור תת-מיצים: '
+            name: '<font color="red">* </font>שם:'
+            updated_on: 'עודכן בתאריך:'
+            wg_details: פרטי _wgtype_YM &nbsp;
+          ds_group:
+            all: הכל
+            none: ללא
+            ok: אוקי
+            remove_selected: סילוק נבחר
+            select: 'בחירת: '
+          ds_group_member:
+            add_group: הוספת קבוצה
+          ds_group_table:
+            access: גישה
+            date_added: תאריך הוספה
+            dir_serv_group: קבוצות של שירות מדריך
+            DN: DN של
+            members: חברים
+            name: שם
+            status: סטטוס
+          edit:
+            back: חזרה
+            back_to_list: חזרה לרשימה
+            editing: 'עריכת my_wgtype_YM: %{wgname}'
+            or: " או "
+            save: שמירה
+          forwards:
+            complete: הושלם
+            enable_relay: הפעלת Relay
+            error: שגיאה
+            if_enabled: אם האפשרות מופעלת, כל קובצי המארז יועברו לצמתים נוספים.
+            name: שם
+            notify_users: דיווח למשתמשים ב ...
+            overwrite: דריסה
+            relay: משחזר
+            start: התחלה
+          index:
+            create_new: יצירת חדש
+            dropbox: תיבת סימון
+            flash_message: ליצירה, מחיקה או עריכה של קבוצות עבודה (מלבד הוספה/סילוק של חברים) עליכם להיות מחוברים לשרת האב.
+            view_all: הצגת הכל
+            view_mine: הצגת מינה
+            workgroup: קבוצת עבודה
+            workgroups: קבוצות עבודה
+          member_table:
+            access: גישה
+            active: פעיל
+            add_user: הוספת משתמש
+            alert: לא נבחרו חברים לסילוק.
+            all: הכל
+            expires: פג תוקף
+            full_name: שם מלא
+            inactive: לא פעיל
+            inv_outside_submit: הזמנת הגשה מחוץ
+            member_since: חבר מאז
+            members: חברים
+            name: שם
+            none: ללא
+            ok: אוקי
+            remove_selected: סילוק נבחר
+            select: 'בחירת:'
+            status: סטטוס
+            type: סוג
+          new:
+            cancel: ביטול
+            create: יצירה
+            create_new: יצירת חדש my_wgtype_YM
+            or: " או "
+          nodes:
+            custom: מותאם
+            default_inbox: תיבת דואר נכנס '
+            inbox_dest: יעד תיבת דואר נכנס
+            location: מיקום
+            name: שם
+            server_default: ברירת מחדל של שרת
+            status: סטטוס
+            upload_directly: טעינה ישירות לתיבת הדואר הנכנס המותאמת.
+            upload_message: אם האפשרות מסומנת, מארזים לא ייטענו לתיבת הדואר הנכנס המוגדרת כברירת מחדל אם קבוצת עבודה זו היא הנמען היחיד
+          show:
+            view_packages: הצגת מארזים
+          wg_permissions:
+            add_dir_serv_groups_as_members_hint: הוספה/סילוק של קבוצות שירות מדריך כחברים
+            add_existing_users_hint: הוספת משתמשים/סילוק משתמשים שאינם קבוצת עבודה קיימים
+            edit_new_users_hint: צרו/edit/delete/סלקו משתמשים חדשים כחברים
+            full: " מלא:"
+            full_hint: חברים העניקו הרשאה לראות ולשלוח אחד לשני.
+            member_management: ניהול חברים
+            moderated: " מתון:"
+            moderated_hint: רק מנהלן קבוצת העבודה יכול לשלוח לקבוצת עבודה זו.
+            open: " פתיחה:"
+            open_hint: כל אחד יכול לשלוח לקבוצת עבודה זו
+            private: " פרטי:"
+            private_hint: רק חברים יכולים לשלוח לקבוצת עבודה זו.
+            restricted: " מוגבל:"
+            restricted_hint: אף אחד לא יכול לשלוח לקבוצת עבודה זו.
+            restricted_hint_2: רק קבוצות עבודה העניקו הרשאה לראות או לשלוח לחברים יחידים של קבוצת העבודה.
+            send_to_eachother: 'חברי קבוצת עבודה ששולחים אחד לשני:'
+            sending_to_itself: 'משלוח לקבוצת העבודה עצמה:'
+            wg_admins_only: " מנהלי קבוצת עבודה בלבד:"
+            wg_admins_only_hint: לחברים ניתנה הרשאה להציג ולשלוח את admins של קבוצת עבודה
+            workgroup_admins_can: מנהלי עבודה של קבוצת עבודה יכולים ...
+            workgroup_permissions: הרשאות קבוצת עבודה
+          workgroup_list:
+            description: תיאור
+            dropbox: תיבת סימון
+            latest: אחרון
+            member_warning: אינכם חברים כרגע בשום קבוצת עבודה.
+            members: חברים
+            no_wg: אין קבוצות עבודה.
+            packages: חבילות
+            type: סוג
+            workgroup: קבוצת עבודה
+          workgroup_members_form:
+            wg_members_title: _wg_name_YM חברים &nbsp;
+    helpers:
+      account:
+        users:
+          admin: " -מנהלן"
+          expir_date: My_date_YM חייב להיות מוגדר עבור משתמש פעיל.
+          manager: " -מנהל"
+          neg: לא
+          pos: כן
+          set_admin: הגדרת admin
+          set_non_admin: הגדרת שאינו מנהלן
+          taken_name: My_name_YM כבר נלקח
+        bootstrap_content_helper:
+          actions: פעולות
+          close: קרוב
+      admin:
+        nodes_helper:
+          browse_fail: עיון במקור הקובץ המרוחק נכשל.
+        post_processes_helper:
+          activate: הפעלה
+          confirm: האם אתם בטוחים שברצונכם למחוק קובץ Script לאחר העיבוד %{script_name}?
+          deactivate: הפעלה
+          remove: הסרה
+          view_log: הצגת יומן ביצוע
+      application_helper:
+        browse: עיון ...
+        path: 'נתיב:'
+      login_helper:
+        create_account: יצירת חשבון
+        request_account: בקשת חשבון
+      metadata_profiles_helper:
+        date_field: שדה תאריך
+        option_list: רשימת אפשרויות
+        text_area: אזור תמליל
+        text_field: שדה תמליל
+      packages_helper:
+        entire: הורדת החבילה Enהצמיג
+        partial: הורדת מארז חלקי
+        return_to_history: חזרה אל היסטוריה
+        return_to_list: חזרה לרשימה
+      registrations_helper:
+        create_account: יצירת חשבון
+        request_account: חשבון בקשה
+      send_helper:
+        hide: הסתרה
+        hide_cc: הסתרת Cc
+        show: הצגה
+        show_cc: הצגת Cc
+      sent_helper:
+        delete: מחיקה
+      source_shares_helper:
+        browse_fail: עיון במקור הקובץ המרוחק נכשל.
+      workgroup:
+        deliveries_helper:
+          back_to_normal_view: חזרה לתצוגה ' רגילה '
+          delete: מחיקה
+          view_full_history: הצגת היסטוריה מלאה
+          view_members: הצגת חברים
+        users_helper:
+          create_new_user: יצירת משתמש חדש
+        workgroups_helper:
+          delete: מחיקה
+          delete_confirm: האם אתם בטוחים שברצונכם למחוק את my_wg_type_YM "%{wg_name}"?
+          delete_wg: מחיקת my_wg_name_YM
+          dropbox: תיבת סימון
+          edit: עריכה
+          edit_wg: עריכת my_wg_type_name_YM
+          names_placeholder: ציינו שמות משתמשים או כתובות דואל.
+          view_all: הצגת הכל
+          view_mine: הצגת מינה
+          view_packages: הצגת מארזים
+          workgroup: קבוצת עבודה
+    models:
+      c_configuration:
+        cant_be_blank: השדות אינם יכולים להיות ריקים.
+      delivery:
+        send_fail_quota_limit: לא ניתן לשלוח את החבילה, הגעתם למגבלת Quota של my_limit_YM MB
+        send_fail_permissions: אינכם מורשים ליצור מארזים רגילים.
+        send_fail_invalid_recipients: אין נמענים חוקיים
+        send_fail_dropbox_only: מנמען Dropbox חייב להיות המקבל היחיד
+        send_fail_invalid_recipient_specific: 'נמען לא חוקי: %{resourceent_name}'
+        send_fail_permissions_multiple: אינכם מורשים לשלוח אל אחד או יותר מהנמענים שצוינו.
+        send_fail_invalid_cc: 'עותק לא חוקי (לטעינה): %{cc_name}'
+        send_fail_invalid_ccs_upload: אינכם מורשים לשלוח עותק של אחד או יותר מהנמענים בשדה הטעינה.
+        send_fail_invalid_ccs_download: אינכם מורשים לשלוח עותק של אחד או יותר מהנמענים בשדה ' הורדה '
+        send_fail_invalid_ccs_receipt: אינכם מורשים לשלוח עותק של אחד או יותר מהנמענים בשדה הקבלה.
+        send_fail_must_have_one_source: חייב להיות מקור אחד בדיוק.
+        send_fail_unknown_share_id: זיהוי מקור לא ידוע my_שיתו_id_YM
+        send_fail_source_not_authorized: מקור אינו מורשה
+        send_fail_no_items_to_upload: אין פריטים לטעינה!
+        send_fail_unique_filenames: Filenames חייב להיות ייחודי
+        send_fail_ear_must_be_specified: חייב להיות מצוין
+        send_fail_ear_not_allowed: אסור
+        send_fail_ear_disabled_message: הצפנה-at-rest מושבתת, הסיסמה אינה מותרת.
+        send_fail_sendershareid_forwarding: לא ניתן לשנות את SenderShareId עבור מארזים מועברים
+        send_fail_invalid_release_policy: 'מדיניות מהדורה לא חוקית: %{rp}'
+        send_fail_policy_date_future: תאריך השחרור חייב להיות בעתיד
+        send_fail_expiration_date_future: תאריך התפוגה חייב להיות בעתיד
+      directory_service_user:
+        login_error_message: ההתחברות שלכם לא הצליחה. נא לנסות שוב. אם אתם חווים כשלים של התחברות חוזרת, עליכם ללחוץ על הקישור 'שכחתם את הסיסמה' כדי לאפס את הסיסמה.
+      e_membership:
+        status:
+          expired: פג תוקף
+          active: פעיל
+          inactive: לא פעיל
+      local_user:
+        cannot_be_blank: לא יכול להיות ריק.
+        is_incorrect: שגוי
+        login_error_message: ההתחברות שלכם לא הצליחה. נא לנסות שוב. אם אתם חווים כשלים של התחברות חוזרת, עליכם ללחוץ על הקישור 'שכחתם את הסיסמה' כדי לאפס את הסיסמה.
+        lock_out_message: ננעלת בגלל יותר מדי התחברויות כושלות.
+        same_as_old_pw: זהה לסיסמה הישנה
+        same_old_pw_hint: חייב להיות שונה מסיסמאות קודמות של %{limit}
+      metadata_field:
+        value_already_taken: "'my_value_YM' כבר נלקח"
+        max_length_not_int: האורך המרבי של השדה '%{label_name}' חייב להיות מספר שלם
+        max_length_bounds: אורך השדה המרבי של השדה '%{label_name}' חייב להיות בטווח 1 עד my_max_YM
+        valid_option_list: "'%{label_name}' דורש רשימת אפשרויות חוקית"
+        valid_date_format: "'%{label_name}' דורש מבנה תאריך חוקי"
+        cannot_be_blank: My_label_name_YM לא יכול להיות ריק
+        error_decoding: 'שגיאה בפענוח מטה-נתונים: my_meta_YM'
+      metadata_profile:
+        all_fields_length_error: אורך מרבי של כל השדות (כולל תוויות, אפשרויות ושדות תאריך) חייבים להיות פחות מ-my_max_YM תווים
+        field_blank_error: My_err_label_YM אינו יכול להיות ריק
+        field_illegal_char_error: 'My_err_label_YM אינו יכול להכיל אף אחד מהתווים הבאים: %{illegal}'
+        field_length_error: My_err_label_YM חייב להיות התווים _max_YM או פחות
+        field_options_error: 'My_err_label_YM חייב להכיל אחת מהאפשרויות האלה: my_list_YM'
+        invalid_JSON_error: My_err_label_YM חייב להיות JSON חוקי
+        invalid_share_id_error: זיהוי שיתוף לא חוקי %{err_value} עבור my_err_label_YM
+        invalid_user_error: משתמש לא חוקי %{err_user} עבור my_err_label_YM
+        invalid_value_error: ערך לא חוקי עבור my_err_label_YM
+        max_length_reset_error: שדות אורך מרבי אופסו לברירת המחדל.
+        must_be_list_error: My_err_label_YM חייב להיות רשימה של זיהויי שיתופים
+        no_fields_error: לפרופיל מטה-נתונים חייב להיות לפחות שדה אחד.
+        note_invalid_char_error: 'הערה אינה יכולה להכיל אף אחד מהתווים הבאים: # לא חוקי}'
+        note_length_bounds_error: אורך ההערה המרבי חייב להיות בטווח 1 עד my_max_YM
+        note_length_error: הערה חייבת להיות התווים my_max_YM או פחות
+        note_length_int_error: אורך ההערה המרבי חייב להיות מספר שלם.
+        note_length_specified_error: יש לציין אורך מרבי של הערה
+        specified_error: My_err_label_YM חייב להיות מצוין
+        title_invalid_char_error: 'הכותרת אינה יכולה להכיל אף אחד מהתווים הבאים: %{illegal}'
+        title_length_bounds_error: האורך המרבי של הכותרת חייב להיות בטווח 1 עד my_max_YM
+        title_length_error: הכותרת חייבת להיות מסוג my_max_YM או פחות
+        title_length_int_error: אורך השם המרבי חייב להיות מספר שלם.
+        title_length_specified_error: יש לציין אורך מרבי של כותרת
+      post_process:
+        all_uploaded_pkgs: "[כל המארזים שנטענו]"
+      saml_configuration:
+        unspecified: לא צוין
+        transient: ארעי
+        persistent: מתמיד
+        email_address: כתובת דוא " ל
+      send_package_request:
+        from_name_error: השם "מאת" אינו תואם למשתמש מאומת
+        invalid_recipient_error: נמען לא חוקי
+        parse_xml_error: לא ניתן לנתח את XML הבקשה
+        validate_sender_error: אין הרשאה לטעון
+        too_many_elements: המרכיב my_path_YM חייב להתרחש לא יותר מ-my_max_YM
+        too_few_elements: המרכיב %{path} חייב להתרחש לפחות my_min_YM
+      user:
+        passwordable:
+          requirements: חייב להיות באורך של 6 תווים לפחות
+          strong_requirements: באורך של לפחות שישה תווים, עם לפחות אות אחת, מספר אחד, וסמל אחד
+        status:
+          saml_disabled: תצורת SAML מושבתת
+          pending: ממתין לאישור
+          active: פעיל
+          locked: נעול
+          inactive: לא פעיל
+  config:
+    account_navigation:
+      preferences: העדפות
+      change_password: שינוי סיסמה
+      contacts: עריכת אנשי קשר
+      distribution_lists: עריכת רשימות תפוצה
+      sender_quota: השולח קואוטה
+    initializers:
+      will_paginate:
+        laq_prev: "&laquo; הקודם"
+        lar_prev: "&larr; הקודם"
+        raq_next: "&raquo; הבא"
+        rar_next: "&rarr; הבא"
+    license:
+      paste_license: הדביקו את תוכן הרשיון שלכם כאן.
+      update_license: עדכון רשיון
+      decoded_license: רישיון מקודד
+    navigation:
+      account_approved: חשבון אושר
+      account_denied: חשבון נדחה
+      accounts: חשבונות
+      authentication: הזדהות
+      configuration: תצורת
+      directory_service_groups: קבוצות של שירות מדריך
+      directory_services: שירותי מדריך
+      display_settings: הגדרות תצוגה
+      dropbox_invitation: הזמנה לתיבת Dropbox
+      dropbox_submit: הגשה של תיבה נפתחת
+      email_configuration: תצורת דואל
+      entitlement: זכאות
+      external_users: משתמשים חיצוניים
+      forgot_password: שכחתם את הסיסמה
+      forward_error_cc: שגיאת שינוי ' עותק '
+      forward_finished_cc: החזרת עותק של עותק
+      forward_started_cc: יצירת עותק של עותק-עותק
+      global_distribution_lists: רשימות תפוצה גלובלית
+      license: רישיון
+      login_announcement: הכרזה על התחברות
+      metadata: מטה-נתונים
+      new_package: חבילה חדשה
+      notifications: התראות
+      package_cc_receipt_on_received: עותק התקבל של החבילה
+      package_cc_receipt_on_sent: החבילה נשלחה עותק
+      package_downloaded: חבילה הורדה של החבילה
+      package_downloaded_cc: עותק מוסתר של החבילה
+      package_instructions: הוראות חבילה
+      package_received: התקבל חבילה
+      package_storage: אחסון חבילה
+      package_validation_failed_recipient: נמען של תיקוף חבילה נכשל
+      package_validation_failed_sender: השולח נכשל של תיקוף חבילה
+      packages: חבילות
+      pending_registrations: רישומים ממתינים
+      personal_invitation: הזמנה אישית
+      personal_submit: הגשה אישית
+      post_processes: לאחר העיבוד
+      received: התקבל
+      saml_groups: קבוצות SAML
+      saml_integration: שילוב SAML
+      save_restore: שמירה/שחזור
+      security: אבטחה
+      sent: נשלח
+      server: שרת
+      shares: אחסון קבצים
+      transfer_options: אפשרויות העברה
+      upload_result: העלאת תוצאות
+      upload_result_cc: טעינת עותק סיסי
+      user_profile: פרופיל משתמש
+      users: משתמשים
+      web_server: שרת אינטרנט
+      welcome_email: דואל ברוכים הבאים
+      workgroup_package: חבילת קבוצת עבודה
+      workgroups: קבוצות עבודה
+  common:
+    allow: לאפשר
+    deny: מניעה
+    default: ברירת מחדל
+    server_default: ברירת מחדל של שרת (%{server_default})
+    are_you_sure: אתה בטוח?
+    days_from_now: ימים מעכשיו
+  date:
+    abbr_day_names:
+    - Sun
+    - Mon
+    - Tue
+    - Wed
+    - Thu
+    - Fri
+    - Sat
+    abbr_month_names:
+    - 
+    - Jan
+    - Feb
+    - Mar
+    - Apr
+    - May
+    - Jun
+    - Jul
+    - Aug
+    - Sep
+    - Oct
+    - Nov
+    - Dec
+    day_names:
+    - Sunday
+    - Monday
+    - Tuesday
+    - Wednesday
+    - Thursday
+    - Friday
+    - Saturday
+    formats:
+      default: "%Y-%m-%d"
+      long: "%B %d, %Y"
+      short: "%b %d"
+    month_names:
+    - 
+    - January
+    - February
+    - March
+    - April
+    - May
+    - June
+    - July
+    - August
+    - September
+    - October
+    - November
+    - December
+    order:
+    - :year
+    - :month
+    - :day
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: כ 1 שעה
+        other: אודות השעות my_count_YM
+      about_x_months:
+        one: בערך 1 חודש
+        other: אודות my_count_YM חודשים
+      about_x_years:
+        one: בערך 1 שנה
+        other: אודות השנים my_count_YM
+      almost_x_years:
+        one: כמעט 1 שנה
+        other: כמעט my_count_YM שנים
+      half_a_minute: חצי דקה
+      less_than_x_seconds:
+        zero: קטן מ-1 2
+        one: קטן מ-1 2
+        other: פחות מ-my_count_YM שניות
+      less_than_x_minutes:
+        zero: פחות מדקה
+        one: פחות מדקה
+        other: פחות מ-my_count_YM דקות
+      over_x_years:
+        one: מעל 1 שנה
+        other: במשך השנים %{count}
+      x_seconds:
+        one: 1 2
+        other: My_count_YM שניות
+      x_minutes:
+        one: 1 דקה
+        other: דקות my_count_YM
+      x_days:
+        one: 1 יום
+        other: ימי _count_YM
+      x_months:
+        one: 1 חודש
+        other: My_count_YM חודשים
+      x_years:
+        one: 1 שנה
+        other: My_count_YM שנים
+    prompts:
+      second: שנית
+      minute: דקות
+      hour: שעה
+      day: יום
+      month: חודשים
+      year: שנה
+  helpers:
+    application:
+      archive: ארכיב
+      back: חזרה
+      cloud_storage_referencing: אחסון בענן המפנה נתמך על ידי אחסון זה.
+      connect_install_message: כדי להשתמש במהירויות מרבי של my_direction_YM, התקינו את תוסף הדפדפן %{aspera}.
+      connect_upgrade_message: כדי להשתמש במהירויות מרבי של my_direction_YM, אנא שדרגו את תוסף הדפדפן %{aspera}.
+      confirm: האם אתם בטוחים שברצונכם למחוק קבצים עבור המארז my_package_name_YM שנשלח על-ידי %{package_sender}?
+      copy: העתקה ללוח הגזירים
+      delete: מחיקה
+      delete_confirm: האם אתם בטוחים שברצונכם למחוק קבצים עבור המארז my_package_name_YM שנשלח על-ידי %{package_sender}?
+      delete_confirm_forward: זהו צעד קדימה של חבילה אחרת. המקור וכל קדימה יימחקו.
+      delete_confirm_has_forwards: חלקי של חבילה זו קיימים. המקור וכל קדימה יימחקו.
+      enable_hst_dl: כדי להפעיל העברות מהירות גבוהה עם Aspera, my_download_YM התוסף של הדפדפן.
+      enable_hst_dl_enable: כדי להפעיל העברות מהירות גבוהה עם Aspera, my_download_YM ו-%{enable} התוסף של הדפדפן.
+      local_transfer_message: אתם משתמשים כעת ב-HTTP מהירות נמוכה. כדי להפעיל העברות מהירות גבוהה עם Aspera, בקרו ב-%{enable} כדי לאפשר/הורידו את תוסף הדפדפן של Connect.
+      no_cloud_storage_referencing: אחסון בענן המפנה אינו נתמך על ידי אחסון זה.
+      no_transfer_dl: טעינות ללא Aspera Connect יש מגבלות ביצועים. כדי לסלק מגבלה זו ואפשרו העברות מהירות גבוהה עם Aspera, my_download_YM התוסף של הדפדפן.
+      no_transfer_dl_enable: טעינות ללא Aspera Connect יש מגבלות ביצועים. כדי לסלק מגבלה זו ואפשרו העברות מהירות גבוהה עם Aspera, my_download_YM ו-%{enable} התוסף
+        של הדפדפן.
+      not_supp_symbolic_links: האחסון אינו תומך בקישורים סימבוליים
+      note: הערה
+      package_details: לחצו כאן לקבלת פרטי מארזים.
+      public_url: 'URL ציבורי:'
+      retry_upload: טעינה מחדש של טעינה
+      set_now: הגדרה כעת
+      stop_upload: עצירת הטעינה
+      supp_symbolic_links: אחסון תומך בקישורים סימבוליים
+    select:
+      prompt: נא לבחור.
+    submit:
+      create: יצירת my_model_YM
+      create_without_model: יצירה
+      create_and_continue: יצירה ו-%{action}
+      submit: שמירת my_model_YM
+      update_license: עדכון ורשיון של תיקוף
+      update: עדכון %{model}
+  login:
+    new:
+      login: התחברות
+      login_using_saml_idp: התחברות באמצעות SAML IdP
+    logged_out:
+      message: אתה כבר מחובר מתוך Faspex; ייתכן עדיין צריך להתנתק מחשבון יחיד של החברה שלך-על חשבון.
+      log_in_again: התחברות שוב
+    errors:
+      saml_not_authorized: אינכם מורשים להשתמש בפספקס.
+      invalid_saml_response: תגובה לא חוקית מספק SAML Identity Provider.
+      saml_login_failed: ההתחברות נכשלה.
+      saml_exception: שגיאת תגובת SAML. בדקו את היומנים.
+  lib:
+    app:
+      not_pingable: לא ניתן pingable
+      not_infoable: לא ניתן למידע
+      not_browsable: לא ניתן לחום
+      node_error: שגיאת צומת
+      host_error: שגיאת מארח
+    app_tar:
+      app:
+        bad_version: מספרי גרסה לא תואמים
+        config_save_error: שגיאה בשמירת התצורה.  ראו פרטים ביומן.
+        upload_saved_config: טעינת תצורה שמורה
+        restore_config_error: שגיאה בשחזור התצורה.  ראו פרטים ביומן.
+        tar_error: שגיאה בtarring config %{tar_status} %{tar_out}
+        untar_error: שגיאה untarring config %{untar_status} %{untar_stdout}
+    aspera_license_reader:
+      no_license_found: לא נמצאו רישיון או רישיון לא במבנה תקין.
+      license_signature_mismatch: חתימת הרשיון אינה תואמת לתוכן.
+      not_faspex_license: הרשיון אינו רשיון של פקס.
+      expired_license: פג תוקפו של הרשיון
+      bad_expiration_license: הרשיון כולל תאריך תפוגה שגוי.
+      valid_license: הרשיון חוקי
+      invalid_license: רישיון לא חוקי
+    directory_services:
+      active_directory:
+        active_directory: Active Directory
+        microsoft_active_directory: Microsoft Active Directory
+      apple_open_directory:
+        apple_open_directory: מדריך פתיחה של Apple
+        open_directory: פתיחת מדריך
+      red_hat:
+        fedora_directory: 389/Red Hat/Fedora Directory Server
+        red_hat_directory: שרת מדריך Red Hat
+    membership_methods:
+      dropbox_admin: מנהלן Dropbox
+      wg_admin: מנהלן קבוצת עבודה
+      standard: רגיל
+      submit_only: הגשה-בלבד
+      set_to_standard_access: הגדרת משתמש לגישה סטנדרטית
+      set_to_submit_access: הגדרת משתמש להגשה-גישה בלבד
+      set_user_as_admin: 'הגדרת משתמש בתור # {wg_name} admin'
+    packages:
+      package_methods:
+        HTTP_upload_in_progress: טעינת HTTP מתבצעת, היא תבוטל אם תנווטו מדף זה.
+        new_package: חבילה חדשה
+        return_to_history: חזרה אל היסטוריה
+        return_to_list: חזרה לרשימה
+        send_to_dropbox: 'שליחה ל-Dropbox: %{d_addr_name}'
+  number:
+    currency:
+      format:
+        delimiter: ","
+        format: "%u%n"
+        precision: 2
+        separator: "."
+        significant: false
+        strip_insignificant_zeros: false
+        unit: "$"
+    format:
+      delimiter: ","
+      precision: 3
+      separator: "."
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: "%n %u"
+        units:
+          billion: ביליוני
+          million: מיליון
+          quadrillion: קודריליון
+          thousand: אלף
+          trillion: סוס
+          unit: ''
+      format:
+        delimiter: ''
+        precision: 1
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one: ביטה
+            other: בתים
+          eb: א. ב
+          gb: גאב
+          kb: קאב
+          mb: MB
+          pb: פאב
+          tb: טאב
+    percentage:
+      format:
+        delimiter: ''
+        format: "%n%"
+    precision:
+      format:
+        delimiter: ''
+  public:
+    javascripts:
+      admin:
+        authorization_domains:
+          form:
+            save: שמירה
+            save_and_test: שמירה ובדיקה
+  support:
+    array:
+      last_word_connector: ", ו "
+      two_words_connector: " ו - "
+      words_connector: ", "
+  time:
+    am: ''
+    formats:
+      default: "%a, %d %b %Y %H:%M:%S %z"
+      long: "%B %d, %Y %H:%M"
+      short: "%d %b %H:%M"
+    pm: תחזוקה מונעת

@@ -1,0 +1,2814 @@
+---
+es:
+  activerecord:
+    models:
+      node: Nodo
+      share: Almacenamiento de archivos
+      distribution_list: Lista de distribución
+      authorization_domain: Servicio de directorio
+      metadata_profile: Perfil de metadatos
+      metadata_field: Campo de metadatos
+    attributes:
+      authorization_domain:
+        host: Dirección del servidor
+        port: Puerto
+        treebase: Treebase
+        login: Iniciar sesión
+        password: Contraseña
+      c_configuration:
+        encrypt_transfers: Transferencias de cifrado
+        c_ssh_tcp_port: Puerto TCP de SSH
+        c_fasp_udp_port: Puerto UDP de fasp
+        http_fallback_port: Puerto de reserva HTTP
+        c_kbps_initial_target_upload_rate: Tasa de subida inicial
+        c_kbps_initial_target_download_rate: Velocidad inicial de descarga
+        c_kbps_max_target_upload_rate: Velocidad máxima de subida
+        c_kbps_max_target_download_rate: Velocidad máxima de descarga
+        c_lock_minrate_policy: Tasa y política mínima de bloqueo
+        c_relay_outgoing_bandwidth: ancho de banda saliente
+        c_relay_incoming_bandwidth: Ancho de banda de entrada
+        min_connect_version_major: Versión de Connect mínima
+        min_connect_version_minor: Versión de Connect mínima
+        min_connect_version_point: Versión de Connect mínima
+        http_fallback_enabled: Habilitar reserva HTTP
+        downloads_during_transfers_enabled: Habilitar descargas durante las transferencias
+      m_configuration:
+        email_from_email: Faspex "From:" email
+        m_smtp_server_port: Puerto de servidor
+        m_smtp_auth_type: Autenticación SMTP
+        m_smtp_server: Servidor de correo SMTP
+        use_tls: Utilizar TLS si está disponible
+        m_smtp_helo_domain: Dominio
+        m_smtp_username: Usuario (incluir dominio)
+        smtp_password: Contraseña
+        email_from: Faspex "From:" nombre
+        package_received_notifications_from: Paquetes Destinatario "De"
+      e_configuration:
+        ad_proxy_host: Host proxy de Active Directory
+        ad_proxy_port: Puerto de proxy de Active Directory
+        announcement: Mensaje
+        dbox_can_override_ear: Permitir que los dropboxes tengan sus propios valores de cifrado
+        can_override_ear_per_personal_invite: Permitir valores de cifrado personalizados para las invitaciones de remitente externas
+        e_http_port: Puerto HTTP
+        e_https_port: Puerto HTTPS
+        e_server_address: Nombre o dirección externa del servidor
+        e_server_enable_alternate_address: Habilitar dirección alternativa
+        e_server_emails_include_alternate_address: Los correos electrónicos incluyen dirección alternativa
+        email_passcode_expires: El enlace de paquete caduca
+        email_passcode_days_valid: Caducar después
+        email_passcode_expire_after_download: Caducar tras la descarga completa del paquete
+        registration_type: Registro automático
+        registration_approval_ccs: Notificar los correos electrónicos siguientes para aprobar
+        registration_external_use_default: Utilizar la política de registro predeterminada para usuarios externos
+        registration_type_external: Política de registro para usuarios externos
+        registration_approval_ccs_external: Notificar los correos electrónicos siguientes para aprobar usuarios externos
+        tos_external: Términos de servicio para usuarios externos
+        package_instructions: Mensaje
+        tos: Condiciones de servicio
+        use_strong_password: Utilizar contraseñas fuertes
+        force_password_reset_for_new_users: Requerir que los nuevos usuarios cambien la contraseña en el primer inicio de sesión
+        allow_users_to_unlock: Permitir que los usuarios bloqueados se desbloqueen ellos mismos
+        session_timeout: Tiempo excedido de sesiones después
+        allow_send_to_email: Permitir el envío a direcciones de correo electrónico externas
+        allow_request_from_email: Permitir invitaciones a
+        registered_users_have_mutual_scope: Los usuarios autoregistrados pueden enviarse entre sí
+        inviting_allowed: Permitir la invitación de remitentes externos
+        hide_user_dir_default: Mantener el directorio de usuario privado de forma predeterminada
+        public_url_allowed: Permitir URL de envío público
+        dbox_can_override_public_url: Permitir que los dropboxes habiliten o inhabiliten individualmente sus propios URL públicos
+        public_url_home_server_id: Servidor inicial para URL públicos
+        automatically_login_using_saml_idp: Iniciar sesión utilizando un proveedor de identidades SAML
+        saml_idp_sso_target_url: URL de inicio de sesión único de IDP
+        saml_idp_slo_target_url: URL de inicio de sesión único de IDP
+        saml_idp_cert_fingerprint: Huella dactilar del certificado IDP
+        saml_idp_cert: Certificado IDP
+        can_see_global_distribution_lists_default: Los usuarios pueden ver listas de distribución globales de forma predeterminada
+        tos_for_sending: Condiciones de servicio para el envío
+        remove_ds_users_on_inactivity: Eliminar usuarios de DS
+        remove_saml_users_on_inactivity: Eliminar usuarios de SAML
+      e_workgroup:
+        e_wg_name: Nombre
+        e_wg_desc: Descripción
+        workgroup_received_notification_cc: Enviar copia de correo electrónico de recepción a estas direcciones
+        destination_share_id: Entrada predeterminada
+      invitation:
+        expires_at: Días hasta la caducidad
+      node:
+        alternate_address: Dirección secundaria o nombre
+        alternate_address_client_filter: Utilizar si la dirección de solicitante coincide
+        alternate_address_server_filter: Utilizar si los nombres de host del navegador
+        api_password: Contraseña
+        api_port: Puerto
+        api_username: Nombre
+        enable_alternate_address: Habilitar dirección secundaria
+        encrypted_api_password: Contraseña
+        host: Host
+        name: Nombre
+        primary_address: Nombre o dirección de transferencia primaria
+        ssl: "¿Utilizar SSL?"
+        verify_ssl: "¿Verificar certificado SSL?"
+      share:
+        kbps_initial_target_upload_rate: Tasa de subida inicial
+        kbps_initial_target_download_rate: Velocidad inicial de descarga
+        lock_minrate_policy: Tasa y política mínima de bloqueo
+        kbps_max_target_upload_rate: Velocidad máxima de subida
+        kbps_max_target_download_rate: Velocidad máxima de descarga
+        relay_incoming_bandwidth: Velocidad de relé entrante
+        relay_outgoing_bandwidth: Velocidad de relé saliente
+      e_package:
+        e_package_name: Título
+      delivery:
+        metadata: 'Metadatos no válidos: '
+        sources: ''
+        ear_passphrase: Passphrase
+        tos_for_sending: Condiciones de servicio
+      registration:
+        name: Iniciar sesión
+        email: Correo electrónico
+        first_name: 'Nombre:'
+        last_name: Apellido
+        tos_agreement: Acepto los términos del servicio
+      metadata_field:
+        label: Etiqueta
+      post_process:
+        active: Activo
+        name: Nombre
+        script_path: Vía de acceso al script en el servidor
+        package_name: Nombre del paquete
+        sender_name: Nombre del remitente
+        sender_email: Correo electrónico remitente
+        recipient_name: Lista de destinatarios
+        recipient_email: Lista de correo electrónico destinatario
+        package_note: Nota del paquete
+      ad_group:
+        kbps_initial_target_upload_rate: Velocidad de subida inicial (kbps)
+        kbps_initial_target_download_rate: Velocidad inicial de descarga (kbps)
+        kbps_max_target_upload_rate: Velocidad máxima de subida (kbps)
+        kbps_max_target_download_rate: Velocidad máxima de descarga (kbps)
+        lock_minrate_policy: Tasa y política mínima de bloqueo
+        can_invite: Permitir la invitación de remitentes externos
+        dn: DN
+      directory_service_group:
+        kbps_initial_target_upload_rate: Velocidad de subida inicial (kbps)
+        kbps_initial_target_download_rate: Velocidad inicial de descarga (kbps)
+        kbps_max_target_upload_rate: Velocidad máxima de subida (kbps)
+        kbps_max_target_download_rate: Velocidad máxima de descarga (kbps)
+        lock_minrate_policy: Tasa y política mínima de bloqueo
+      user:
+        name: Iniciar sesión
+        email: Correo electrónico
+        password: Contraseña
+        password_confirmation: Confirmación de contraseña
+        kbps_initial_target_upload_rate: Velocidad de subida inicial (kbps)
+        kbps_initial_target_download_rate: Velocidad inicial de descarga (kbps)
+        kbps_max_target_upload_rate: Velocidad máxima de subida (kbps)
+        kbps_max_target_download_rate: Velocidad máxima de descarga (kbps)
+        lock_minrate_policy: Tasa y política mínima de bloqueo
+        rows_per_page: Máximo de filas por página
+        disable_connect: Inhabilitar conector de Aspera Connect
+        account_activated: Cuenta activada
+        account_expires: La cuenta caduca
+        self_destructs: Supresión automática de cuentas
+        destruction_date: Fecha de supresión
+        received_notification_cc: Enviar copia de correo electrónico de recepción a estas direcciones
+        allow_receipt_cc_edit: Permitir la edición de direcciones de recepción en la creación de paquetes
+        uploads_allowed: Cargar paquetes
+        downloads_allowed: Descargar paquetes
+        forwarding_allowed: Paquetes de reenvío
+        can_create_from_remote: Crear paquetes a partir de orígenes remotos
+        can_send_to_all_faspex_users: Puede enviar a todos los usuarios de Faspex
+        can_send_to_external_email: Puede enviar a correo electrónico externo
+        can_invite: Permitir la invitación de remitentes externos
+        notify_on_receive: Envíeme un correo electrónico cuando reciba un paquete
+        notify_on_validation_failure_if_sender: Correo electrónico si la validación falla en los paquetes enviados
+        notify_on_validation_failure_if_recipient: Correo electrónico si la validación falla en los paquetes recibidos
+        notify_downloader_on_download: Envíeme un correo electrónico cuando descargue un paquete
+        notify_on_workgroup_package_if_sender: Inclume en las notificaciones del grupo de trabajo para los paquetes que envío
+        suppress_connect_install_dialog: Suprimir solicitudes de instalación/actualización
+        allowed_ip_addresses_for_login: Direcciones IP permitidas para el inicio de sesión
+        allowed_ip_addresses_for_download: Direcciones IP permitidas para descargar
+        allowed_ip_addresses_for_upload: Direcciones IP permitidas para la carga
+        last_remote_addr: Dirección del cliente de último inicio
+        last_server_addr: Última dirección del servidor de inicio
+        override_transfer_parameters: Alterar temporalmente los valores predeterminados
+        override_server_delete_after_download: Alterar temporalmente el sistema predeterminado
+        welcome_email: Enviar mensaje de bienvenida
+        created_at: Creado en
+        updated_at: Actualizado el
+        type: Tipo de usuario
+        description: Observaciones
+        allow_user_specified_delete_after_download: Permitir que el usuario establezca un valor de supresión propio en una base de paquete por paquete
+        enable_public_url: Habilitar URL público
+        can_have_public_url: Permitir URL de envío público
+      local_user:
+        password_expiration_interval: La contraseña caduca cada
+      template_user:
+        days_til_expiration: Las nuevas cuentas caducarán
+        days_til_destruction: Se suprimirán las cuentas nuevas
+      home_server_rule:
+        email_pattern: Dirección de correo electrónico
+        user_name_pattern: Nombre de usuario regex
+        ad_group_pattern: Grupo de servicios de directorio regex
+        ad_dn_pattern: Directorio DN de servicio de directorio
+        ldap_field_pattern1: Regex del campo LDAP
+        ldap_field_pattern2: Regex del campo LDAP
+        ldap_field_pattern3: Regex del campo LDAP
+      send:
+        upload_cc: Estos destinatarios serán notificados cuando este paquete haya terminado de subir
+        download_cc: Estos destinatarios se notificarán cuando un destinatario haya descargado este paquete
+        receipt_cc: Estos destinatarios serán Cc en el paquete recibido por el paquete de destinatarios
+    errors:
+      format: "%{attribute} %{message}"
+      e_configuration:
+        idp_cert_and_idp_cert_fingerprint_blank: Se debe proporcionar uno de "IdP Certificate Fingerprint" o "IdP Certificate".
+      models:
+        delivery:
+          attributes:
+            title:
+              blank: El título no puede estar en blanco
+        distribution_list:
+          attributes:
+            name:
+              blank: El nombre no puede estar en blanco
+            contacts:
+              blank: Los contactos no pueden estar en blanco
+        e_configuration:
+          attributes:
+            max_title_length_in_storage_paths:
+              not_a_number: La longitud máxima del título en vías de acceso de almacenamiento no es un número
+            days_until_packages_expire:
+              not_a_number: Días hasta que caduque el paquete no es un número
+        saml_configuration:
+          attributes:
+            allowed_clock_drift_in_ms:
+              not_a_number: La deriva de reloj permitida en ms no es un número
+      messages:
+        accepted: debe ser aceptado
+        blank: no puede estar en blanco
+        confirmation: no coincide con %{attribute}
+        empty: no puede estar vacío
+        equal_to: debe ser igual a %{count}
+        even: debe ser incluso
+        exclusion: está reservado
+        greater_than: debe ser mayor que %{count}
+        greater_than_or_equal_to: debe ser mayor o igual que %{count}
+        inclusion: no está incluido en la lista
+        invalid: no es válido
+        less_than: debe ser menor que %{count}
+        less_than_or_equal_to: debe ser menor o igual que %{count}
+        model_invalid: 'La validación ha fallado: %{errors}'
+        not_a_number: no es un número
+        not_an_integer: debe ser un entero
+        odd: debe ser impar
+        other_than: debe ser distinto de %{count}
+        present: debe estar en blanco
+        record_invalid: 'La validación ha fallado: %{errors}'
+        restrict_dependent_destroy:
+          has_many: No se puede suprimir el registro porque existe MI_record_YM dependiente
+          has_one: No se puede suprimir el registro porque existe un MI_record_YM dependiente
+        required: debe existir
+        taken: ya se ha tomado
+        too_long:
+          one: es demasiado largo (el máximo es 1 carácter)
+          other: es demasiado largo (el máximo es %{count})
+        too_short:
+          one: es demasiado corto (mínimo es 1 carácter)
+          other: es demasiado corto (mínimo es %{count} caracteres)
+        wrong_length:
+          one: es la longitud incorrecta (debe ser 1 carácter)
+          other: es la longitud incorrecta (deben ser los caracteres %{count})
+      template:
+        body: 'Había problemas con los siguientes campos:'
+        header:
+          one: 1 error ha prohibido que se guarde este %{model}
+          other: Los errores de %{count} han prohibido que se guarde este %{model}
+      user:
+        groups_are_inactive: Los grupos de los que es miembro están inactivos
+        user_is_inactive: El usuario está inactivo
+        username_conflicts_with_existing_user: Username entra en conflicto con una cuenta de usuario existente.
+  admin:
+    saml:
+      edit:
+        saml: SAML
+        automatically_login_using_saml_idp_hint: >-
+          Inicie sesión automáticamente utilizando el proveedor de identidades de SAML.  %{url} se puede utilizar para iniciar sesión directamente en Faspex incluso
+          cuando se habilita el inicio de sesión automático utilizando SAML.
+    saml_configurations:
+      edit:
+        domain_url_hint: >-
+          (Opcional) Al acceder a este dominio de Faspex, los usuarios se dirigirán automáticamente al inicio de sesión a través de este proveedor SAML (altera temporalmente
+          el valor predeterminado)
+        publicly_visible_hint: Permitir a los usuarios acceder a esta configuración SAML desde la página de inicio de sesión local
+      test_warning: |-
+        Aviso: Esta acción finalizará la sesión Faspex actual y le dirigirá a la página de inicio de sesión para este proveedor de SAML.
+
+        Para evitar finalizar la sesión actual, puede abrir este enlace en una ventana privada o en un navegador diferente para probar esta configuración.
+  app:
+    controllers:
+      account:
+        ad_groups_controller:
+          added_group: Se ha añadido el grupo %{group_name} al grupo de trabajo
+          sync_group: Sincronización de %{group_name}
+          updated_grp_prov: Política de suministro de grupo actualizada.
+          updated_grp_import: Política de importación de grupo actualizada.
+          updated_error: Error al guardar la configuración del grupo %{group_name}:<br/>
+          removed_group: Se ha eliminado el grupo %{group_name} del grupo de trabajo.
+          wg_not_found: Grupo de trabajo no encontrado
+          no_groups_selected: No hay grupos seleccionados
+          group_sched_activated: Se ha planificado que se active %{group_name}
+          group_sched_deactivated: Se ha planificado que %{group_name} se desactive
+          group_sched_removed: Se ha planificado que se elimine %{group_name}
+        memberships_controller:
+          added_wg: Se ha añadido el usuario de plantilla al grupo de trabajo-%{wg_name}
+          added_wg_fail: No se ha podido añadir el usuario de plantilla al grupo de trabajo-%{wg_name}
+          remove_wg: Se ha eliminado el usuario de plantilla del grupo de trabajo-%{wg_name}
+          remove_wg_fail: No se ha podido eliminar el usuario de plantilla del grupo de trabajo-%{wg_name}
+        saml_groups_controller:
+          added_group: Se ha añadido el grupo %{group_name}
+        users_controller:
+          no_wg_found: No se ha podido encontrar el grupo de trabajo *%{wg_name}
+          add_to_wg_fail: 'Error al añadir al grupo de trabajo: %{error}'
+          removed_from_wg: Se ha eliminado del grupo de trabajo.
+          removed_from_wg_fail: 'Error al eliminar el usuario del grupo de trabajo: %{error}'
+          user_membership_updated: Pertenencia de usuario actualizada.
+          error_editing_membership: 'Error al editar la pertenencia: %{error}'
+          created_user: Se ha creado satisfactoriamente el usuario %{user_name}
+          created_user_fail: No se ha podido añadir el usuario.
+          updated_user: Se ha actualizado satisfactoriamente el usuario %{user_name}
+          permission_error: No tiene permiso para modificar el usuario %{user_name}
+          activated: Se ha activado %{user}
+          disabled_saml_user_note: "<br>Nota: los usuarios asociados con configuraciones SAML inhabilitadas permanecerán inactivos"
+          deactivated: Desactivado %{user}
+          removed: Se ha eliminado %{user}
+          removed_external: Se ha eliminado %{user}
+          no_users_selected: No hay usuarios seleccionados
+          active_users: Usuarios activos
+          all_users: Todos los usuarios
+          inactive_users: Usuarios inactivos
+      admin:
+        authorization_domains_controller:
+          updated: Configuración actualizada.
+        nodes_controller:
+          deleted: Se ha suprimido %{name}
+          deleted_fail: No está autorizado para suprimir %{name}
+          connection_fail: "%{message}<br />%{status}<br />%{status_message}"
+          connection_success: La conexión %{message} <br /> ha sido satisfactoria.
+        notifications:
+          login_announcements_controller:
+            updated: Anuncio de inicio de sesión
+          package_instructions_controller:
+            updated: Instrucciones de paquete actualizadas
+        packages_controller:
+          invalid_num_days: Número de días no válido
+          no_older_pkgs: No hay paquetes anteriores a %{max}
+        post_processes_controller:
+          activated: Se ha activado %{script_name}
+          activated_error: Error al activar %{script_name}
+          created: Se ha creado correctamente el script de postproceso %{script_name}
+          deleted: Se ha eliminado el script de postproceso %{script_name}
+          inactivated: My_script_name_YM inactivado
+          inactivated_error: Error al inactivar %{script_name}
+          updated: Se ha actualizado correctamente el script %{script_name}
+        saml_configurations_controller:
+          create_success: 'Configuración de SAML creada satisfactoriamente<br>NOTA: Debe actualizar los metadatos en el servidor SAML antes de iniciar la sesión.'
+          update_success: 'Configuración de SAML actualizada satisfactoriamente<br>NOTA: es posible que tenga que actualizar los metadatos en el servidor SAML antes
+            de iniciar la sesión.'
+        settings:
+          display_settings_controller:
+            file_too_large: El archivo es demasiado grande. El tamaño máximo de archivo es de 5MB
+            remove_logo_fail: No se puede suprimir el archivo de logotipo personalizado
+            remove_logo_success: Archivo de logotipo personalizado eliminado satisfactoriamente
+            unsupported_file_type: Filetype no soportado para el logotipo personalizado. El archivo debe ser una imagen jpeg, gif o png.
+            updated_settings: Valores de visualización actualizados
+          entitlement_controller:
+            invalid_license: Licencia de titularidad no válida
+            successful_entitlement: Titularidad satisfactoria
+            unable_to_register: No se puede registrar
+          global_distribution_lists_controller:
+            created: Lista de distribución global creada %{name}
+            deleted: Lista de distribución global suprimida
+            updated: Listas de distribución globales actualizadas
+            updated_fail: Error al actualizar una o más listas de distribución globales
+          license_controller:
+            license_upload_fail: Error de carga de licencia
+            only_text_allowed: Sólo se permiten archivos de texto
+            updated_license: Licencia actualizada
+          package_storage_controller:
+            updated_settings: Configuración de almacenamiento de paquetes actualizada
+          save_restore_config_controller:
+            config_restored: Configuración restaurada. Asegúrese de reiniciar Faspex para completar este proceso.
+          security_controller:
+            updated_settings: Valores de seguridad actualizados
+          transfer_options_controller:
+            updated_settings: Configuración de opciones de transferencia actualizadas
+          web_server_controller:
+            updated_settings: Valores actualizados del servidor web
+        share_membership_controller:
+          deleted: Se ha suprimido %{mem_name}
+          deleted_fail: No se ha podido suprimir %{mem_name}
+        shares_controller:
+          add_term_fail: No se ha podido añadir %{term}
+          added_term: Se ha añadido %{term}
+          created: Creado %{share} %{share_name}
+          deleted: Se ha suprimido %{share}
+          find_fail: No se ha podido encontrar %{term}
+          updated: Se ha actualizado %{share} %{share_name}
+          updated_default: Bandeja de entrada predeterminada actualizada
+      authenticated_controller:
+        expired: La sesión ha caducado. Vuelva a iniciar sesión para continuar.
+        new_session: Se ha iniciado otra sesión para el usuario %{username} (%{remote})
+        timed_out: La sesión ha excedido el tiempo de espera. Vuelva a iniciar sesión para continuar.
+      entitlement_controller:
+        success: Titularidad satisfactoria
+      external:
+        submissions_controller:
+          send_to_recipient: Enviar a %{name}
+      invitations_controller:
+        invitation_failed: La invitación ha fallado. Vuelva a intentarlo más tarde.
+        invitation_created: Se ha creado la invitación para %{email}
+        reinvited: Invitación reinvitada a %{name}
+        reinvited_fail: La reinvitación ha fallado. Vuelva a intentarlo más tarde.
+        resend_invitation_failed: La invitación de reenvío ha fallado. Vuelva a intentarlo más tarde.
+        resent_invitation: Se ha reenviado invitación a %{name}
+        deleted_invitation: Invitación suprimida
+        deleted_invitation_try_again: La invitación de supresión ha fallado Vuelva a intentarlo más tarde.
+      login_base_controller:
+        login_error_message: >-
+          El inicio de sesión no fue satisfactorio. Inténtelo de nuevo. Si está experimentando anomalías de inicio de sesión repetidas, debe pulsar el enlace 'Pergot
+          Password' para restablecer la contraseña.
+      login_controller:
+        connect_enabled: IBM Aspera Connect se ha habilitado.
+        login_URL_change: El URL de inicio de sesión ha cambiado. Actualice el marcador del navegador.
+        session_already_disconnected: Esta sesión ya se ha desconectado
+      m_configuration_controller:
+        updated: Configuración de correo actualizada.
+      m_template_controller:
+        loaded: Valores predeterminados cargados satisfactoriamente
+        updated: Se ha actualizado satisfactoriamente la notificación por correo electrónico de %{template}
+      metadata_profiles_controller:
+        cannot_delete_profile: No se puede suprimir el perfil, lo utilizan los paquetes normales.
+        cannot_delete_profile_dropbox: No se puede suprimir el perfil, lo utiliza el dropbox %{db_name}.
+        created: Metadatos creados %{profile}
+        profile_deleted: Perfil suprimido.
+        save_success: Perfil de metadatos guardado satisfactoriamente
+        updated: Actualizado
+      ms_admin_controller:
+        home_server_rules_changed: Las reglas del servidor inicial han cambiado. Vuelva a calcular los servidores de inicio para aplicar los cambios.
+        updated_rule: Regla actualizada
+        deleted_rule: Regla suprimida
+        added_new_rule: Nueva regla añadida
+        error_finding_home_server: Error al buscar el servidor inicial para suprimir
+        removed_server: Servidor eliminado
+        updated_home_server_settings: Valores actualizados del servidor inicial
+        updated_attributes: Se ha actualizado %{attribute}
+        access_denied: Acceso denegado.
+      pending_controller:
+        archived: Paquete "%{pkg_name}" archivado
+        archived_fail: Error al archivar el paquete. Vuelva a intentarlo más tarde.
+        deleted: Se ha suprimido el paquete "%{pkg_name}"
+        deleted_fail: Error al suprimir el paquete. Vuelva a intentarlo más tarde.
+      received_controller:
+        package_archived: Paquete %{p_name} archivado
+        package_archived_fail: Error al archivar el paquete. Vuelva a intentarlo más tarde.
+      registrations_controller:
+        failed_registration: El registro ha fallado. Vuelva a intentarlo más tarde.
+      reset_password_tokens_controller:
+        no_account_exists: Esta cuenta ya no existe.
+        expired_pw_link: El enlace de restablecimiento de contraseña ya se ha utilizado o ha caducado y ya no es válido.
+        reset_success: "¡Su contraseña se ha restablecido correctamente!"
+        reset_submitted: Solicitud de restablecimiento de contraseña enviada. Si no recibe un correo electrónico en breve, póngase en contacto con el administrador
+          para obtener ayuda.
+      saml_controller:
+        does_not_exist: El proveedor de SAML solicitado no existe
+        disabled: El proveedor de SAML solicitado se ha inhabilitado
+        invalid_metadata: URL de metadatos no válido
+      sent_controller:
+        archived: Paquete "%{pkg_name}" archivado
+        archived_fail: Error al archivar el paquete. Vuelva a intentarlo más tarde.
+        deleted: Se ha suprimido el paquete "%{pkg_name}"
+        deleted_fail: Error al suprimir el paquete. Vuelva a intentarlo más tarde.
+        relay: Se ha iniciado el relé para compartir %{share}
+        relay_fail: Error al reiniciar relé. Vuelva a intentarlo más tarde.
+      settings:
+        distribution_lists_controller:
+          created: Lista de distribución creada %{dist_list_name}
+          deleted: Lista de distribución suprimida
+          updated: Listas de distribución actualizadas
+          error_updating: Error al actualizar una o más listas de distribución
+        passwords_controller:
+          success: La contraseña ha cambiado satisfactoriamente.
+        preferences_controller:
+          updated: Preferencias actualizadas
+      user_profile_fields_controller:
+        max_field_check_fail: Sólo puede tener hasta los campos de perfil de usuario %{max}
+        saved: Campos de perfil de usuario guardados satisfactoriamente
+      workgroup:
+        workgroups_controller:
+          activate: Activar
+          activated_members: Se ha activado %{counts} member%{plural}. %{msg}
+          add_ds: No se puede añadir el grupo DS. Vuelva a intentarlo más tarde.
+          add_ds_fail: Se ha añadido el grupo de DS %{group} al grupo de trabajo %{name}
+          add_member: Se ha añadido %{name} a %{box}
+          add_member_fail: No se puede añadir el miembro. Vuelva a intentarlo más tarde.
+          create_success: 'Creado satisfactoriamente '
+          deactivate: Desactivar
+          deactivated_success: Se ha desactivado %{counts} member%{plural}. %{msg}%{admin}
+          deleted_success: Se ha suprimido %{type} %{name}
+          external_email_no_standard_access: No se puede otorgar acceso estándar a los usuarios de correo electrónico externos. No se han realizado cambios.
+          external_email_deactivated_fail: Los usuarios de correo electrónico externos no se pueden desactivar, sólo se eliminan. No se han realizado cambios.
+          members_actions: Acciones miembros ...
+          no_ds_selected: No se han seleccionado grupos DS
+          no_members_selected: No hay miembros seleccionados
+          remove: Eliminar
+          remove_member: Se ha eliminado %{member} del grupo de trabajo.
+          remove_member_fail: No se puede eliminar el miembro. Vuelva a intentarlo más tarde.
+          remove_ds_group: Se ha eliminado %{count} del grupo de trabajo.
+          remove_ds_group_fail: No se puede eliminar el grupo DS. Vuelva a intentarlo más tarde.
+          set_admin: Establezca %{member} como administrador de %{name}.
+          set_admin_fail: Los usuarios de correo electrónico externos no pueden ser administradores de dropbox. No se han realizado cambios.
+          set_ds_access: Establezca %{group} como acceso MI_level_YM.
+          set_ds_access_fail: No se puede establecer el acceso MI_level_YM en grupos DS. Vuelva a intentarlo más tarde.
+          set_regular_access: Establezca %{member} como acceso regular.
+          set_regular_access_fail: No se puede establecer el acceso regular a los miembros. Vuelva a intentarlo más tarde.
+          set_standard_access: Establecer acceso estándar
+          set_submit_only: Establezca %{member} como submit-only.
+          set_submit_only_fail: No se puede establecer el acceso de sólo envío a los miembros. Vuelva a intentarlo más tarde.
+          set_submit_only_access: Establecer acceso de sólo envío
+          set_wg_admin: Establecer como admin %{wg_name}
+          skipped_sys_admin: Admin (s) del sistema %{size} omitidos
+          updated_wg: Se ha actualizado %{type}
+          user_not_found: Usuario no encontrado
+    views:
+      account:
+        ad_groups:
+          ad_group:
+            error: Error
+            invalid: No válido
+            pending: Pendiente de %{methodop}
+          additional_permissions:
+            edit_add_perm: Editar permisos adicionales
+          forms:
+            group_import:
+              save: Guardar
+            import_users:
+              full_name: Nombre completo
+              import_date: Fecha de importación
+              status: Estado
+              sync_now: Sincronizar ahora
+              user_name: Nombre de usuario
+            wg_member:
+              actions: Acciones
+              add_to: Añadir a ...
+              date_added: Fecha Añadida
+              remove: Eliminar
+              wg_name: Nombre del grupo de trabajo
+          user_ad_group:
+            active: Activo
+            inactive: Inactivo
+        directory_service_groups:
+          edit:
+            back: Volver
+            edit_dir_group: 'Editar grupo de servicios de directorio: %{groupname}'
+            group_import: Política de importación de grupo
+            imported_users: Usuarios importados (%{mem_count})
+            workgroup_memberships: Pertenencia a grupos de trabajo (%{mem_count})
+          index:
+            activate: Activar
+            date_added: Fecha Añadida
+            deactivate: Desactivar
+            directory_service: Servicio de directorio
+            group_name: Nombre del grupo
+            members: Miembros
+            new_group: " Nuevo Grupo"
+            remove: Eliminar
+            status: Estado
+            sync: Sincronización
+            view_op_history: Ver historial de operaciones
+          new:
+            back: Volver
+            cancel: Cancelar
+            dir_services: 'Servicio de directorio:'
+            import: Importación
+            import_dir_serv: Importar grupo desde servicio de directorio
+            search_dir_service: 'Servicio de directorio de búsqueda:'
+        directory_service_users:
+          additional_permissions:
+            edit_add_perm: Editar permisos adicionales
+          index:
+            back: Volver
+            directory_service: 'Servicio de directorio:'
+            import: Importación
+            import_user_from_dir_serv: Importar usuario desde servicio de directorio
+            search: Búsqueda
+            search_term: 'Término de búsqueda:'
+            searches_limit: Las búsquedas se limitan a 20 resultados.
+            searching: Búsqueda
+            usr_not_found: No se han encontrado usuarios
+        memberships:
+          actions: Acciones
+          add_to: Añadir a ...
+          back: Volver
+          name: Nombre
+          remove: Eliminar
+          self_reg_added: 'Los usuarios autoregistrados se añadirán a los siguientes grupos de trabajo:'
+          template_user_workgroups: Grupos de trabajo de usuario de
+        passwords:
+          back_to_edit: Volver a editar
+          cancel: Cancelar
+          password: Cambiar contraseña para %{local_name}
+          reset_confirm: >-
+            ¿Está seguro de que desea restablecer la contraseña de este usuario? Se enviará una notificación por correo electrónico a este usuario para que puedan
+            iniciar sesión y cambiar su contraseña.
+          reset_password: Restablecer contraseña
+          update_password: Actualizar contraseña
+        registrations:
+          form:
+            email: Correo electrónico
+            first: Primero
+            last: Último
+            login: Iniciar sesión
+          index:
+            approve: Aprobar
+            deny: Denegar
+            faspex_reg_type: Faspex se configura con el registro %{type}.
+            new_message: Esto significa que las cuentas recién creadas %{not} requieren aprobación.
+            not: 'no'
+            self_reg_users: Los usuarios registrados automáticamente heredarán los permisos de %{template_user} y se convertirán automáticamente en miembros del siguiente
+              %{workgroups}.
+        saml_groups:
+          edit:
+            back: Volver
+            edit_saml: 'Editar grupo SAML: %{groupname}'
+            group_prov_policy: Política de suministro de grupo
+            users: Usuarios (%{mem_count})
+            workgroup_memberships: Pertenencia a grupos de trabajo (%{mem_count})
+          index:
+            activate: Activar
+            date_added: Fecha Añadida
+            deactivate: Desactivar
+            group_name: Nombre del grupo
+            members: Miembros
+            new_group: " Nuevo Grupo"
+            remove: Eliminar
+            saml_config: Configuraciones SAML
+            status: Estado
+          new:
+            back: Volver
+            cancel: Cancelar
+            create: Crear
+            create_new_saml: Crear nuevo grupo SAML
+            group_name: 'Nombre de grupo (DN):'
+            saml_config: Configuración de SAML
+        template_users:
+          account_details: Detalles de cuenta
+          cancel: Cancelar
+          edit_template_user: Editar usuario de plantilla
+          form:
+            workgroup_memberships:
+              date_added: Fecha Añadida
+              remove: Eliminar
+              workgroup_name: Nombre del grupo de trabajo
+              workgroups: Grupos de trabajo
+          update: Actualización
+        users:
+          add_permissions:
+            edit_add_perm: Editar permisos adicionales
+          edit:
+            change_password: Cambiar/Restablecer contraseña
+            edit_user: 'Editar usuario: %{user}'
+            return_to_user_list: Volver a la lista de usuarios
+            type: "(escriba: %{user_type})"
+            workgroup_memberships: Pertenencia a grupos de trabajo
+          edit_form:
+            cancel: Cancelar
+            update_user: Actualizar usuario
+          edit_wg:
+            add_user: Añadir usuario a grupo de trabajo
+            back_to_edit: Volver a Editar
+            remove: Eliminar
+            workgroup_mem_for: Pertenencia a grupos de trabajo para %{user}
+            workgroup_name: Nombre del grupo de trabajo
+          external_users:
+            accounts: Cuentas
+            remove: Eliminar
+          fieldsets:
+            account_details:
+              account_details: Detalles de cuenta
+              active: Activo
+              admin_hint: Los administradores pueden añadir/eliminar usuarios y gestionar la configuración del servidor.
+              inactive: Inactivo
+              manager_hint: Los gestores pueden añadir/eliminar usuarios
+              never: Nunca
+              role: 'Función:'
+              text_area_hint: introducir direcciones de correo electrónico separadas por comas, punto y coma o espacios en blanco
+              user_hint: Los usuarios habituales pueden enviar y recibir paquetes de Faspex
+            advanced_transfer:
+              adv_trans_setting: Configuración avanzada de transferencia
+              checked: comprobadas
+              initial_transfer: Velocidad de transferencia inicial
+              max_rate: Velocidad máxima permitida
+              minrate_hint: 'Si se selecciona, los clientes no podrán ajustar su política de transferencia o la velocidad de transferencia mínima (valor predeterminado:
+                %{config})'
+              server_to_user: 'servidor al usuario (valor predeterminado: %{config})'
+              transfer_alert: |-
+                Faspex utilizará los valores de transferencia de la sección Aspera Central Server de forma predeterminada.
+                Sin embargo, aquí puede establecer valores de transferencia específicos del usuario, que tendrán prioridad sobre los valores de todo el servidor.
+              unchecked: desmarcado
+              user_to_server: 'usuario en servidor (valor predeterminado: %{config})'
+            ds_history:
+              action: Acción
+              ds_history: Historial de DS (%{dom_name})
+              notes: Notas
+              operation: Operación
+              show_all: Mostrar todo
+              time: Tiempo
+            package_deletion:
+              after_download: 'Después de descargar:'
+              allow_user_delete: 'Permitir que el usuario establezca su propio valor de supresión paquete por paquete:'
+              delete_files_after: Suprimir archivos después de que <strong>cualquier destinatario</strong> descargue todos los archivos
+              delete_files_all: Suprimir archivos después de <strong>todos los destinatarios</strong> descargar todos los archivos
+              do_nothing: No hacer nada
+              package_deletion: Supresión de paquetes
+              server_delete: 'Valor predeterminado: %{config}'
+            password_policy:
+              custom_pw_policy: Política de contraseñas personalizadas
+              pw_expires: La contraseña caduca
+              prevent_pw_reuse: Evitar la reutilización de contraseñas
+              every_x_days: cada día (s) %{x}
+              never: Nunca
+            permissions:
+              affirm: Sí
+              allow_inviting_external: 'Permitir la invitación a remitentes externos:'
+              allow_public_submission: 'Permitir la presentación pública url:'
+              allowed_to: 'Permitido a:'
+              can_see_global_dist_lists: 'Puede ver listas de distribución globales:'
+              control_hint: Si no se selecciona, el usuario no podrá enviar a los usuarios ni enviar a cuentagotas/grupos de trabajo
+              create_drop_packages: Si esta opción está inhabilitada, el usuario sólo podrá crear paquetes dropbox, si son miembros de cualquier dropbox.
+              create_normal: 'Puede crear paquetes normales:'
+              external_email: 'Puede enviar al correo electrónico externo:'
+              ip_addr_hint: especificar direcciones/rangos separados por comas, por ejemplo, <b>10.0. *, 192.168.1.1</b>
+              keep_dir_private: 'Mantenga el directorio de usuario privado:'
+              neg: 'No'
+              permissions: Permisos
+              see_global_dis_list: 'Puede ver listas de distribución globales:'
+              send_to_all: 'Puede enviar a todos los usuarios de Faspex:'
+              send_to_all_send_to_wg: Si se permite, el usuario puede enviar a todos los usuarios de Faspex. De lo contrario, el usuario sólo puede enviar a otros
+                miembros del grupo de trabajo.
+              user_server_def: 'Valor predeterminado del servidor de usuario (actualmente: %{def})'
+            personal_details:
+              first_name: 'Nombre:'
+              last_name: Apellido
+              personal_details: Datos personales
+            sender_quota:
+              sender_hint: Alterar temporalmente límite de cuota de remitente predeterminado
+              sender_quota: Cuota del remitente
+              sender_quota_hint: Tamaño total de datos enviados durante la ventana rodante
+              sender_quota_leg: 'Cuota Remitente:'
+            user_history:
+              last_login_time: Hora de inicio de sesión
+              user_history: Historial de usuarios
+            welcome_email:
+              welcome: E-mail de bienvenida
+          index:
+            accounts: Cuentas
+            activate: Activar
+            deactivate: Desactivar
+            remove: Eliminar
+          menus:
+            add_account:
+              add_account: 'Añadir cuenta '
+              dir_serv_user: Usuario del servicio de directorio
+              faspex_user: Usuario de faspex
+              new_user: " Nuevo usuario"
+            toggle_users:
+              active_users: Usuarios activos
+              all_users: Todos los usuarios
+              inactive_users: Usuarios inactivos
+          new:
+            back: Volver
+            user_account: Nueva cuenta de usuario
+          new_form:
+            cancel: Cancelar
+            confirm_password: Confirmar contraseña
+            create_account: Crear cuenta
+            first_name: 'Nombre:'
+            last_name: Apellido
+            or: " o "
+            password: Contraseña
+            set_password: Establecer contraseña
+          user:
+            invalid: No válido
+            same_as_login: "(igual que el inicio de sesión)"
+          user_list:
+            check_all_users: Comprobar todos los usuarios
+            check_user: Comprobar usuario
+            date_added: Fecha Añadida
+            email: Correo electrónico
+            first: Primero
+            home_server: Servidor inicial
+            last: Último
+            last_login: Última sesión
+            login: Iniciar sesión
+            status: Estado
+            type: tipo
+      active: Activo
+      ad_admin:
+        ad_users_list_rows:
+          active: Activo
+          full_name: Nombre completo
+          import_date: Fecha de importación
+          inactive: Inactivo
+          invalid: No válido
+          user_name: Nombre de usuario
+        edit_config:
+          and_test: " y prueba"
+          anonymous: Anónimo
+          dir_service_details: Detalles del servicio de directorio
+          dir_service_type: 'Tipo de servicio de directorio:'
+          enable_dir_service: 'Habilitar el servicio de directorio:'
+          ex_dir_service: Servicio de directorio externo
+          login: 'Inicie sesión:'
+          login_method: 'Método de conexión:'
+          password: 'Contraseña:'
+          port: 'Puerto:'
+          provide_credentials: Proporcionar credenciales
+          save: Guardar
+          save_and_test: Guardar y probar
+          server: 'Servidor:'
+          treebase: 'Treebase:'
+          use_tls: 'Utilizar modalidad segura (TLS):'
+        operation_hist:
+          details: Detalles
+          dir_service_op_history: Historial de operaciones de servicio de
+          no_op: No se han ejecutado operaciones
+          operation: Operación
+          time: Tiempo
+          view: Vista
+        status: Estado
+      ad_group_membership:
+        active: Activo
+        inactive: Inactivo
+      ad_groups:
+        error: Error
+        invalid: No válido
+        pending: 'Pendiente '
+      admin:
+        auth_domain:
+          edit:
+            edit_name: Editar %{name}
+          form:
+            anonymous: Anónimo
+            dir_service_details: Detalles del servicio de directorio
+            dir_service_name: 'Nombre del servicio de directorio:'
+            dir_service_type: 'Tipo de servicio de directorio:'
+            dn_message: Normalmente un nombre distinguido (DN)
+            enable_dir_service: 'Habilitar el servicio de directorio:'
+            login: 'Inicie sesión:'
+            login_method: 'Método de conexión:'
+            password: 'Contraseña:'
+            port: 'Puerto:'
+            provide_cred: Proporcionar credenciales
+            save: Guardar
+            save_and_test: Guardar y probar
+            secure_tls: 'Utilizar modalidad segura (TLS):'
+            server: 'Servidor:'
+            treebase: 'Treebase:'
+            username_attr: 'Atributo Nombre de usuario:'
+          index:
+            add_new: Añadir nuevo nombre de My_name_YM
+            disabled: Minusválidos
+            enabled: Habilitado
+            server: Servidor
+            status: Estado
+            type: Tipo
+          new: New %{name}
+        fasp_nodes:
+          fasp_nodes:
+            active_sessions: Sesiones activas
+            address: Dirección
+            errors: Errores
+            last_poll: Última hora de sondeo satisfactoria
+            node_id: ID de nodo
+            cluster_id: ID de clúster
+            polling_strategy: Estrategia de sondeo
+            os: OS
+            status: Estado
+        nodes:
+          edit:
+            cancel: Cancelar
+            edit_name: Editar %{user}-%{node}
+          form:
+            advanced_config: Configuración avanzada de <i class="icon-plus"></i>
+            basic_config: Configuración básica
+            config_message: >-
+              La configuración siguiente debe apuntar al servidor que aloja Aspera Enterprise Server. La aplicación web utiliza la dirección para recopilar estadísticas
+              de transferencia. Si Aspera Enterprise Server se ejecuta en la misma máquina que la aplicación web, la dirección correcta es 127.0.0.1.
+            sec_add_message: >-
+              La dirección a continuación es lo que sus usuarios necesitarán para iniciar las transferencias. Si tiene un grupo de usuarios que necesitan utilizar
+              una dirección diferente (por ejemplo, debido a las condiciones de red), utilice los campos 'Dirección secundaria' para especificar un rango de IP. Tenga
+              en cuenta que la dirección secundaria no se aplica a los relés de transferencia.
+            storage_error: >-
+              Este almacenamiento de archivos se utiliza actualmente como bandeja de entrada por omisión del sistema. La edición hará que todos los paquetes existentes
+              no estén disponibles para los usuarios.
+            test_connect: Conexión de prueba
+          index:
+            add_new: Añadir nuevo nombre de My_name_YM
+            default_inbox: Entrada predeterminada
+            location: Ubicación
+            name: Nombre
+            source: Fuente
+            shares: Almacenamiento de archivos
+            status: Estado
+            update: Actualización
+          new:
+            cancel: Cancelar
+            new_name: New %{name}
+          test: "¡Conexión satisfactoria!"
+        notifications:
+          login_announce:
+            edit:
+              ann_hint: Este mensaje aparecerá en la pantalla de inicio de sesión
+              update: Actualización
+          package_inst:
+            pkg_hint: Este mensaje aparecerá en la pantalla de envío
+            update: Actualización
+        packages:
+          delete:
+            age_days: Edad<br/>(días)
+            cancel: Cancelar
+            delete_confirm: |-
+              ¿Está seguro de que desea suprimir los archivos de estos paquetes?
+              No podrá deshacer esta acción.
+            delete_files: Suprimir archivos
+            files: Archivos
+            files_on_server: "¿Archivos en el servidor<br/>?"
+            full_downloads: Descargas completas de<br/>
+            recipients: Destinatarios
+            sender: Remitente
+            size: Tamaño
+            status: Estado
+            title: Título
+            upload_completion: Completar la finalización de<br/>
+            warning: 'ESTA ACCIÓN SUPRIMIRÁ LOS ARCHIVOS DE LOS PAQUETES SIGUIENTES:'
+          index:
+            action: Acción
+            all_packages: Todos los paquetes
+            days_or_older: días o más
+            delete_files: Suprimir archivos ...
+            download: Descargas <br/Full/Parcial
+            for_packages: Para paquetes
+            files: Archivos
+            files_on_server: "¿Archivos en servidor?"
+            package_created: Paquete<br>Creado
+            recipients: Destinatarios
+            relays: Relés
+            search: Búsqueda
+            sender: Remitente
+            size: Tamaño
+            status: Estado
+            title: Título
+            upload_completed: Cargar<br>Completado
+          relays:
+            all_packages: Todos los paquetes
+            completed_relays: Relés comunes
+            failed_relays: Relés anómalos
+            files: Archivos
+            incomplete_relays: Relés incompletos
+            ip_relays: En relés de progreso
+            package_created: Paquete<br>Creado
+            recipients: Destinatarios
+            relays: Relés
+            search: Búsqueda
+            sender: Remitente
+            size: Tamaño
+            status: Estado
+            title: Título
+            upload_completed: Cargar<br>Completado
+          show_details:
+            full: Completo
+            full_partial: Completo/Parcial
+            ip_addr: Dirección IP
+            package_download_details: Detalles de descarga del paquete
+            partial: Parcial
+            start: Hora de inicio
+            stop: Hora de detención
+            time_elapsed: Tiempo transcurrido
+            username: Nombre de usuario
+        post_processes:
+          edit:
+            cancel: Cancelar
+            edit_script: Editar script %{name}
+            update: Actualización
+          env_var_help:
+            description: Descripción
+            faspex_meta<field>: el valor del campo de metadatos denominado &lt;field&gt; con letras mayúsculas sustituidas por minúsculas y espacios sustituidos por
+              subrayados
+            faspex_metadata_fields: lista separada por comas de los campos de metadatos definidos para el paquete
+            faspex_pkg_delivery_id: ID de entrega del paquete (distinto del ID de paquete y el UUID de paquete)
+            faspex_pkg_dir: Vía de acceso
+            faspex_pkg_id: ID paquete
+            faspex_pkg_is_forward: 1 para los paquetes reenviados y 0 para los paquetes originales
+            faspex_pkg_name: título del paquete
+            faspex_pkg_note: nota del paquete
+            faspex_pkg_total_bytes: tamaño del paquete en bytes
+            faspex_pkg_total_files: número de archivos del paquete
+            faspex_pkg_uuid: UUID del paquete
+            faspex_recipient_count: número de destinatarios (por ejemplo, "3")
+            faspex_recipient_i: nombre del receptor i-ésimo
+            faspex_recipient_list: lista separada por comas de destinatarios (por ejemplo, "admin, johndoe")
+            faspex_sender_email: correo electrónico del remitente
+            faspex_sender_id: id del remitente
+            faspex_sender_name: nombre del remitente
+            variable: Variable
+          form:
+            env_var_help: Ayuda de variable de entorno
+            exact_match: Coincidencia exacta
+            execution_crit: Criterios de ejecución
+            high: alto
+            low: Baja
+            package_date_end: Fecha de finalización del paquete
+            package_date_start: Fecha de inicio del paquete
+            package_file_count: Recuento de archivos de paquete
+            package_file_hint: Especifique el rango para el número de archivos en el paquete aquí
+            package_name: Nombre del paquete
+            package_note: Nota del paquete
+            package_size: Tamaño del envase
+            range_hint: Especifique el rango para el tamaño del paquete aquí
+            recipient_email_list: Lista de correo electrónico destinatario
+            recipient_list: Lista de destinatarios
+            script_to_run: Script para ejecutar
+            sender_email: Correo electrónico remitente
+            sender_name: Nombre del remitente
+          index:
+            action: Acción
+            create_new: Crear nuevo
+            execution_criteria: Criterios de ejecución
+            log: Log
+            name: Nombre
+            post_processing: Post-Procesamiento
+            script: Script
+          new:
+            add_new_script: Añadir script nuevo
+            cancel: Cancelar
+            create: Crear
+          show_events:
+            back: Volver
+            exec_criteria: Criterios de ejecución de<br/>
+            package_name: Nombre del paquete
+            package_sender: Paquete<br/>Sender
+            package_uuid: UUID de paquete
+            post_processing_exec_log: 'Post-Proceso: Registro de ejecución para %{name}'
+            time_of_exec: Tiempo de ejecución de <br/>
+        saml:
+          edit:
+            saml_integration: Integración SAML
+            update: Actualización
+        saml_configurations:
+          edit:
+            allowable_clock_drift: Desviación de reloj admisible (ms)
+            attribute_mapping: Correlación de atributos
+            browse: Examinar ...
+            certificate: Certificado
+            create_saml_config: Crear configuración SAML
+            default_saml_config: Configuración SAML predeterminada
+            domain_url: URL de dominio
+            fingerprint: Empreinte digitale
+            fingerprint_alg: Algoritmo dactilar
+            hide: Ocultar
+            import_from_file: 'Importar desde archivo: '
+            import_from_text: 'Importar de texto: '
+            import_from_url: 'Importar desde URL: '
+            import_metadata_settings: Importar valores de texto
+            import_metadata_settings_url: Importar valores desde URL de metadatos
+            import_settings: Importar valores de Metadata %{dir}
+            name: Nombre
+            name_id_format: Formato de ID de nombre
+            new: Nuevo
+            public_login_inst: Instrucciones de inicio de sesión
+            publicly_visible: Visible públicamente
+            redirect_saml: Redirigir a la página de cierre de sesión SAML en los inicios de sesión
+            restrict_login_groups: Restringir el acceso a grupos conocidos
+            restrict_login_groups_hint: Si se selecciona, sólo se permitirá que los miembros de grupos SAML añadidos a Faspex inicien sesión.
+            restrict_login_users: Restringir el acceso a los usuarios conocidos
+            restrict_login_users_hint: Si se selecciona, sólo se permitirá que los usuarios de SAML existentes añadidos a Faspex inicien sesión.
+            saml_config: Configuración de SAML
+            saml_config_details: Detalles de configuración de SAML
+            SAML_metadata_server: Metadatos del servidor SAML
+            SAML_metadata_server_url: Url de metadatos del servidor SAML ...
+            saml_settings: Valores de SAML
+            show: Mostrar
+            SSO_target_URL: 'URL de destino SSO:'
+            update: Actualización
+            update_saml_config: Actualizar configuración de SAML
+          index:
+            actions: Acciones
+            add_new_config: Añadir nueva configuración de SAML
+            default: " (valor predeterminado)"
+            disable: Inhabilitar
+            disable_title: Inhabilitar
+            disabled: " (inhabilitado)"
+            domain_url: URL de dominio
+            enable: habilitar
+            enable_title: Habilitar
+            make_default: Cómo hacer que
+            metadata: Metadatos
+            name: Nombre
+            remove_default: Eliminar valor predeterminado
+            saml_config: Configuraciones SAML
+            saml_confirm: "¿Está seguro de que desea habilitar esta configuración de SAML?"
+            saml_confirm_disable: "¿Está seguro de que desea inhabilitar esta configuración de SAML?"
+            test: Ensayo
+          user_profile:
+            name: Nombre
+            remove: Eliminar este campo de perfil
+            remove_confirm: "¿Está seguro de que desea eliminar este campo de perfil de usuario?"
+          user_profile_fields:
+            add_local_field: Añadir campo de perfil local
+            default_profile_fields: Campos de perfil predeterminados
+            enabled: Habilitado
+            fields_required: Campos necesarios para todos los usuarios de Faspex
+            global_cust_message: Campos personalizados definidos en la pestaña Perfil de usuario
+            global_cust_prof_fields: Campos de perfil personalizados globales
+            local_cust_message: Campos de perfil de usuario específicos de esta configuración de SAML
+            local_cust_prof_fields: Campos de perfil personalizado local
+            name: Nombre
+            required: Obligatorio
+            saml_name: Nombre de SAML
+            save_note: 'Nota: No se guardará ningún cambio hasta que pulse ''Actualizar configuración SAML'''
+        settings:
+          display_settings:
+            date_format:
+              format: Formato
+              meaning: Significado
+              perc_a: El nombre abreviado del día de la semana (Sun)
+              perc_A: El nombre completo del día de la semana (domingo)
+              perc_b: El nombre del mes abreviado (Jan)
+              perc_B: El nombre del mes completo (enero)
+              perc_d: Día del mes (01 .. 31)
+              perc_j: Día del año (01 .. 366)
+              perc_m: Mes del año (01 .. 12)
+              perc_Y: Año con siglo
+              perc_y: Año sin siglo (00 ... 99)
+            edit:
+              acc_display_format: Formato nombre de visualización de cuenta
+              custom_logo: 'Logotipo personalizado:'
+              date_format: Formato de fecha
+              date_formatting_help: Ayuda de formato de fecha
+              default_logo_help: 'El logotipo predeterminado es 295x51 '
+              display_settings: Valores de visualización
+              examples: Ejemplos
+              local_login_inst: Instrucciones de inicio de sesión
+              login_page_header: Cabecera de página de inicio
+              remove_confirm: "¿Está seguro de que desea eliminar el logotipo personalizado actual?"
+              remove_logo: Eliminar el logotipo personalizado
+              update: Actualización
+          entitlement:
+            edit:
+              customer_id: 'ID de cliente:'
+              entitlement_license: Licencia de titularidad
+              faspex_enabled: 'Faspex Habilitado:'
+              key: 'Clave:'
+              max_active_users: 'Máximo de usuarios activos:'
+              save: Guardar
+          global_dist_lists:
+            index:
+              add_new_list: Añadir nueva lista de distribución
+              contacts: Contactos
+              global_dist: Listas de distribución globales
+              name: Nombre
+              no_list_alert: No hay listas de distribución globales.
+              update_dist_lists: Actualizar listas de distribución
+            new:
+              new_global_list: Nueva lista de distribución global
+          license:
+            edit:
+              OR: O
+          package_storage:
+            edit:
+              after_pkg_dl: Después de descargar los paquetes
+              after_upload_ends: después de la subida
+              characters: caracteres
+              days: día (s)
+              delete_files_all: Suprimir archivos después de <strong>todos los destinatarios</strong> descargar todos los archivos
+              delete_files_any: Suprimir archivos después de que <strong>cualquier destinatario</strong> descargue todos los archivos
+              do_nothing: No hacer nada
+              max_pkg_title: Longitud máxima del título del paquete en las vías de acceso
+              package_storage: Almacenamiento de paquetes
+              packages_expire: Paquetes caducados
+              pkg_by_pkg_del: Permitir a todos los usuarios establecer sus propios valores de supresión en una base de paquete por paquete
+              update: Actualización
+          save_restore:
+            index:
+              dl: Descargar
+              dl_curr_config: Descargar configuración actual
+              faspex_config_help: Se guardará la carpeta de configuración y la base de datos de faspex
+              restore: Restaurar
+              restore_config: Restaurar configuración
+              save_restore: Guardar/Restaurar
+              upload_help: Cargar y aplicar un archivo de configuración guardado (*.tar.gz)
+              version_help: 'Nota: la versión de restauración debe coincidir con la versión actual de faspex'
+          security:
+            edit:
+              act_dir_hint: Los usuarios del servicio de directorio no se bloquearán ni se desactivarán
+              affirm: Sí
+              after: Después
+              after_x_days: Después de My_num_YM días
+              after_inactivity: Después de los días de inactividad de %{len}
+              after_one_success: Después de una subida satisfactoria
+              allow_custom_link: Permitir a los usuarios establecer la política de caducidad de enlaces personalizados
+              allow_email_change: Permitir a los usuarios cambiar su dirección de correo electrónico
+              allow_external_pkg_hint: Si se selecciona, se permitirán los paquetes enviados a los usuarios de Faspex con el distintivo (externo)
+              allow_external_pkg_to_faspex: Permitir paquetes externos a usuarios de Faspex
+              allow_usrs_create: Permitir a los usuarios crear paquetes normales
+              allow_usrs_create_hint: Si está inhabilitado, los usuarios sólo podrán crear paquetes dropbox, si son miembros de cualquier dropbox.
+              allow_usrs_send: Permitir que todos los usuarios envíen a todos los demás usuarios de Faspex
+              always: Siempre
+              allow_unlock: Permitir que los usuarios bloqueados se desbloqueen ellos mismos
+              allow_send_email: Permitir el envío a direcciones de correo electrónico externas
+              appr_recipient_domains: Dominios receptores aprobados
+              appr_sender_domains: Dominios emisores aprobados
+              block_email_domain: Bloquear los siguientes dominios de correo electrónico desde el registro automático
+              can_override_ear_hint: El usuario puede elegir al invitar a remitentes externos para que ejecuten o no el cifrado
+              can_see_dist_list: Los usuarios pueden ver listas de distribución globales de forma predeterminada
+              cipher: Cifrado de FASP
+              days: día (s)
+              dbox_override: Permitir que los dropboxes tengan sus propios valores de cifrado
+              def_pw_expire: Intervalo de caducidad de contraseña predeterminado
+              default: Valor predeterminado
+              disable: Inhabilitar
+              disable_hint: Ventana de rotación de cuota de remitente, duración en horas
+              ds_users: Usuarios de DS después de días de inactividad de %{int}
+              email_expire_after_download: Caducar tras la descarga completa del paquete
+              enable: Habilitar
+              encrypt_hint: Si está habilitado, las transferencias de reserva HTTP también se cifrarán
+              encrypt_transfers: Transferencias de cifrado
+              encryption: Cifrado
+              enforce_pw_hist: No puede volver a utilizarse anterior
+              every: Cada
+              faspex_acc: Cuentas faspex
+              force_pw_reset: Requerir que los nuevos usuarios cambien la contraseña en el primer inicio de sesión
+              hours: horas
+              inviting_allowed: Permitir la invitación de remitentes externos
+              ignore_invalid_recipients: Ignorar destinatarios no válidos
+              ignore_invalid_recipients_hint: Si se selecciona, el envío de paquetes no fallará cuando un paquete se dirija a destinatarios no válidos
+              inv_link_expires: El enlace de invitación caduca
+              inv_link_help: Establezca una política de caducidad de enlaces para las invitaciones tanto personales como de dropbox.
+              keep_usr_dir: Mantener el directorio de usuario privado
+              list_hint: introducir direcciones de correo electrónico separadas por comas, punto y coma o espacios en blanco
+              local_users: Usuarios locales después de My_int_YM días de inactividad.
+              lock_hint: Después de que %{login_count} haya fallado los intentos de inicio de sesión en
+              lock_users: Usuarios de bloqueo
+              minutes: minutos
+              neg: 'No'
+              never: Nunca
+              new_user_pw: Nuevas contraseñas de usuario %{req}. Las contraseñas existentes seguirán siendo válidas %{warn}
+              obfuscation: Ofuscación
+              optional: Opcional
+              optional_hint: El usuario puede elegir a la hora de enviar si desea o no cifrar
+              otfv: Validación de archivos fuera de transferencia (OTFV)
+              outside_email_add: Direcciones de correo electrónico
+              package_link_expires: El enlace de paquete caduca
+              package_link_help: Si está seleccionado, el paquete sólo se puede descargar una vez %{master_warn}
+              passwords: contraseña (s)
+              passwords_expire: Contraseñas caducadas
+              public_url_allowed: Permitir URL de envío público
+              prevent_pw_reuse: Evitar la reutilización de contraseñas
+              prev_conc: Impedir inicio de sesión simultáneo
+              pw_reset_hint: El correo electrónico de restablecimiento de contraseña se enviará y la cuenta se desbloqueará después del cambio de contraseña
+              quota_limit: Tamaño total de datos enviados durante la ventana rodante
+              reg_hint: 'Opcional: Si se establece texto, los usuarios deberán aceptar la sentencia para poder registrarse'
+              reg_users_mutual: Los usuarios autoregistrados pueden enviarse entre sí
+              registration_instructions: Instrucciones de registro
+              registration_type: Registro automático
+              registrations: Registros
+              remove_users: Eliminar usuarios
+              req_external_reg: Requerir que los usuarios externos se registren
+              require_external_hint: Si está seleccionado, los usuarios externos deben registrar una cuenta de Faspex para descargar paquetes.
+              saml_users: Usuarios de SAML después de los días de inactividad de %{int}.
+              security: Seguridad
+              send_welcome_email: Enviar correo electrónico de bienvenida a todos los nuevos usuarios
+              sender_quota: Cuota del remitente
+              sender_quota_hint: >-
+                Los paquetes enviados a los usuarios de estos dominios no cuentan para la cuota de remitente. Utilice comas (,), semi-colons (;) o espacios en blanco
+                para separar los dominios de correo electrónico. Por ejemplo: @aspera.com; @ibm.com
+              sender_quota_option: Opción de cuota de remitente
+              sender_quota_duration: Duración del cupo del remitente
+              sender_quota_limit: Límite de cuota del remitente
+              session_timeout: Tiempo excedido de sesión después
+              slave_hint: Si se selecciona, los usuarios sólo pueden tener una conexión de un cliente a la vez
+              strong_pw: Utilizar contraseñas fuertes
+              timeout_hint: Las sesiones se agotarán después del número especificado de minutos de inactividad
+              tos: Condiciones de servicio para el envío
+              tos_hint: 'Opcional: Si se establece texto, los usuarios deberán aceptar la sentencia para enviar un paquete'
+              update: Actualización
+              use_encryption_at_rest: Utilizar cifrado-en-Descanso
+              use_obf: Utilizar ofuscación en nombres de archivo
+              use_obf_hint: La ofuscación del nombre de archivo es irreversible
+              enforce_expiration_policy: Aplicar siempre como duración máxima para la política de caducidad
+          transfer_options:
+            edit:
+              aspera_connect_sett: Configuración de Aspera Connect
+              def_max_rate: Velocidad máxima permitida predeterminada
+              dl_dur_trans: Descargas Durante Transferencias
+              dl_over_http: Descargar a través de HTTP
+              http_gateway_hint: La dirección a continuación es lo que sus usuarios necesitarán para iniciar las transferencias a través de http-gateway.
+              http_gateway_url: URL de pasarela HTTP
+              initial_def_trans_rate: Velocidad de transferencia predeterminada inicial
+              local_host_connect: Conexión de host local
+              local_host_hint: Si está seleccionado, Faspex no utilizará el CDN de Aspera para servir Connect, sino que utilizará el SDK local de Connect disponible
+                en Faspex.
+              local_to_remote: servidor local en servidor remoto
+              lock_connect_sdk: Versión de Bloc Connect SDK
+              lock_connect_sdk_hint: >-
+                Evite que Faspex actualice el SDK de Connect local si hay una nueva versión disponible. Este valor persiste en las actualizaciones. Nota: Faspex comprueba
+                periódicamente las actualizaciones y no descarga inmediatamente una nueva versión si esta opción está inhabilitada
+              min_connect_version: Versión de Connect mínima
+              minrate_hint: Si se selecciona, los clientes no podrán ajustar su política de transferencia o la velocidad de transferencia mínima
+              prefer_http_connect: Preferir la extensión http
+              prefer_http_connect_hint: >-
+                Si está seleccionado, Faspex aplicará el navegador para utilizar el método http para comunicarse con Connect Desktop Client, en lugar de utilizar
+                una extensión de navegador (sólo disponible con el navegador Chrome)
+              serv_to_serv_relay_trans_sett: Valores de transferencia de relé de servidor a servidor
+              server_to_user: servidor a usuario
+              transfer_options: Opciones de transferencia
+              update: Actualización
+              user_to_server: usuario al servidor
+              http_gwy_connection_success: Conexión Satisfactoria
+              http_gwy_connection_error: Error al establecer la conexión con IBM Aspera HTTP Gateway
+          web_server:
+            alt_address_fields:
+              remove_addr: Eliminar esta dirección alternativa
+            edit:
+              add_alt_address: Añadir dirección alternativa
+              address_name: Nombre de dirección
+              alternate_addr_hint: utilizar si necesita direcciones de servidor diferentes para determinados usuarios
+              desc_email: Descripción de los correos electrónicos
+              http_port_hint: determinada por la configuración de apache
+              https_port_hint: para el contenido cifrado a través de SSL determinado por la configuración de apache
+              remove: Eliminar
+              show_emails: Mostrar en los correos electrónicos
+              update: Actualización
+              web_server: Servidor Web
+        shares:
+          edit:
+            cancel: Cancelar
+            custom_access_control: Control de acceso personalizado
+            edit: Editar %{name}-%{share}
+          edit_warning:
+            alert_error_1: |-
+              Este almacenamiento de archivos se utiliza actualmente como la bandeja de entrada personalizada y la ubicación de relé para determinados grupos de trabajo.
+              La edición hará que todos los paquetes existentes en estos grupos de trabajo no estén disponibles para los usuarios y cambie el destino de relé.
+            alert_error_2: |-
+              Este almacenamiento de archivos se utiliza actualmente como ubicación de bandeja de entrada personalizada para determinados grupos de trabajo.
+              La edición hará que todos los paquetes existentes en estos grupos de trabajo no estén disponibles para los usuarios.
+            alert_error_3: |-
+              Este almacenamiento de archivos se utiliza actualmente como ubicación de relé para determinados grupos de trabajo.
+              La edición cambiará el destino del relé.
+          form:
+            dir_serv_groups:
+              add_group: Añadir grupo
+              date_added: Fecha Añadida
+              dir_service_groups: Grupos de servicios de directorio
+              DN: DN
+              members: Miembros
+              name: Nombre
+              status: Estado
+            dir_serv_group_member:
+              active: Activo
+              delete: Suprimir
+              inactive: Inactivo
+            users:
+              add_user: Añadir usuario
+              full_name: Nombre completo
+              member_since: Miembro Desde
+              name: Nombre
+              status: Estado
+              type: Tipo
+              users: Usuarios
+            user_membership:
+              delete: Suprimir
+          form_file:
+            browse: Examinar ...
+            default_max_allowed_rate: Velocidad máxima permitida predeterminada
+            directory: Directorio
+            enable_cloud_referencing: Habilitar la referencia de nube
+            enable_linking: Habilitar enlace
+            initial_default_rate: Velocidad de transferencia predeterminada inicial
+            limited: Limitada
+            loading: Carga
+            lock_minrate_hint: si está seleccionado, los clientes no podrán ajustar su política de transferencia o la tasa de transferencia mínima
+            name: Nombre
+            node: Nodo
+            override_default: Alterar temporalmente valores de transferencia predeterminados
+            private: Privado
+            public: Público
+            read_perm: Permiso de lectura
+            relay_transfer_rate: Velocidad de transferencia de retransmisión
+            server_to_user: servidor a usuario
+            user_to_server: usuario al servidor
+          new:
+            alert_no_node: No se ha creado %{nodes}. %{admin_node} antes de hacer un %{name}.
+            cancel: Cancelar
+            create_one: Crear uno
+            new: New %{name}
+      background_processes:
+        index:
+          action: Acción
+          background_processes: Procesos de fondo
+          log_file: Archivo de registro
+          log_level: Nivel de registro
+          name: Nombre
+          status: Estado
+        log:
+          lines: Líneas
+          refresh: Renovar cada
+          submit: Presentar
+      credits:
+        show:
+          java: Compatible con Java
+      directory_items:
+        file:
+          error: Error
+      dropbox:
+        dropboxes:
+          metadata_profile: 'Perfil de metadatos: '
+          options:
+            after_pac_downl: 'Después de descargar los paquetes:'
+            allow_submission_via_pub_URL: 'Permitir envío a través de URL público:'
+            always: Siempre
+            custom_exp_policy: Política de caducidad de paquetes personalizados
+            custom_inv_policy: Política de caducidad de enlaces de invitación personalizada
+            day_after_sending_inv: día (s) después de enviar el correo electrónico de invitación
+            day_after_upload: día (s) después de que finalice la carga
+            http_downloads_not_allowed: Las descargas HTTP no están permitidas para este paquete.
+            delete_after_all: Suprima los archivos después de que <strong>todos los miembros de este dropbox</strong> descarguen todos los archivos.
+            delete_after_first: Suprima los archivos después de que <strong>cualquier miembro de este dropbox</strong> descargue todos los archivos.
+            do_nothing: No hacer nada
+            inv_link_expire: 'Los enlaces de invitación vencen:'
+            never: Nunca
+            optional: Opcional
+            package_expires: 'Los paquetes caducan:'
+            require_encrypt: 'Requieren cifrado en reposo:'
+            save_message: aspera-metadata.xml se guardará en el directorio raíz de cada paquete
+            save_metadata: 'Guardar metadatos en el archivo:'
+            success: Después de una subida satisfactoria
+            use_server_default: 'Utilizar el valor predeterminado del servidor (actualmente: %{server})'
+          perm:
+            add_rem_dir_serv_groups: Añadir/eliminar grupos de servicios de directorio como miembros
+            add_remove_users: Añadir usuarios Faspex existentes/eliminar miembros de administración de no dropbox
+            dropbox_admin_can: Los administradores de dropbox pueden ...
+            invite_outside_submitters: Invite a los remitentes externos
+            invite_remove_users: Invitar/eliminar remitentes externos
+            member_manage: Gestión Miembro
+            reg_users_as_mem: Crear/editar/delete/eliminar nuevos usuarios registrados como miembros
+            standard_can: Los usuarios estándar pueden ...
+        users:
+          cancel: Cancelar
+          description: Descripción
+          email_address: Dirección electrónica
+          invite: 'Invitar al remitente externo a enviar a Dropbox: %{wgname}'
+          invite_html:
+            require_encryption: 'Requerir cifrado en reposo:'
+            yes_ear: Sí
+            no_ear: 'No'
+            optional: Opcional
+          submit_save: Guardar (envía correo electrónico de invitación)
+      e_error:
+        default: >-
+          El servidor ha encontrado un problema al intentar procesar la solicitud. Esto puede deberse a permisos insuficientes, a un problema de configuración, a
+          una interrupción de la red, a un fallo de error o de hardware.
+        default_2: Otros comandos además del que lo intentaste pueden seguir funcionando. Intente hacer clic en el botón "Atrás" o en una de las otras pestañas anteriores.
+      external:
+        sub_stat:
+          show:
+            safe: |-
+              Es seguro cerrar esta página web, su transferencia no se verá afectada.
+              Se le ha enviado un correo electrónico con un enlace para volver a esta pantalla.
+            send_to: Enviar a %{Apilient}
+            send_to_dropbox: 'Enviar a Dropbox: %{dropname}'
+            status: Esta página le permite ver el estado del paquete que ha enviado, así como volver a intentar la transferencia si falla.
+          submission_stat:
+            date_submit: Fecha de presentación
+            files: Archivos
+            size: Tamaño
+            status: Estado
+            title: Título
+        to:
+          email_address: Dirección electrónica
+          please_enter_email: Por favor, introduzca su dirección de correo electrónico para obtener acceso.
+          request_access: Solicitud de acceso
+          send_to: Enviar a %{recipient_name}
+      inactive: Inactivo
+      invitations:
+        edit:
+          cancel: Cancelar
+          reinvite: Volver a invitar (envía correo electrónico de invitación)
+          reinvite_sender: Volver a invitar al remitente
+        fieldsets:
+          sub_link_expires:
+            after: Después
+            after_one_success: Después de una subida satisfactoria
+            after_one_up: Después de una carga
+            custom_inv_policy: 'Política de caducidad de enlaces de invitación personalizada:'
+            day_after_sending_inv: día (s) después de enviar el correo electrónico de invitación
+            help: Puede restringir aún más estos valores, pero no puede exceder el valor predeterminado
+            inv_link_expires: El enlace de invitación caduca
+          prevent_http_upload:
+            package_upload: Carga de paquetes
+            prevent_http_upload: Impedir la carga HTTP para este paquete
+        index:
+          access_url: Ver URL de acceso
+          actions: Acciones
+          confirm: "¿Está seguro?"
+          delete: Suprimir
+          description: Descripción
+          email: Correo electrónico
+          expiration: Caducidad
+          invitations: Invitaciones
+          new: Nuevo
+          reinvite: Reinvitar
+          resend: Resend
+          status: Estado
+        new:
+          cancel: Cancelar
+          description: Descripción
+          email_address: Dirección electrónica
+          invite_sender: Invitar al remitente
+          no_ear: 'No'
+          optional: Opcional
+          require_encryption: 'Requerir cifrado en reposo:'
+          save: Guardar (envía correo electrónico de invitación)
+          yes_ear: Sí
+      layouts:
+        aspera_faspex: Aspera Faspex
+        footer:
+          copyright: Copyright IBM Corp. 2009,
+          credits: Créditos y anuncios
+          patch: Nivel de parche %{level}
+        header:
+          account: Cuenta
+          enable_connect: Habilitar IBM Aspera Connect
+          help: Ayuda
+          not_logged_in: No ha iniciado sesión.
+          sign_out: Signo de salida
+          skip_to_main: Omitir a principal
+        main_tabs:
+          accounts: Cuentas
+          new_package: Nuevo paquete
+          pending: Pendiente
+          received: Recibidos
+          sent: Enviado
+          server: Servidor
+          view_package_options: Pulse para ver las nuevas opciones del paquete
+          workgroups: Grupos de trabajo
+        node_error:
+          warning: "¡AVISO!"
+          errors_detected: Se han detectado errores de servidor de transferencia, las transferencias pueden no funcionar correctamente.
+      login:
+        entitlement:
+          customer_id: ID de cliente
+          entitle_info: 'Proporcione la información de titularidad para empezar:'
+          entitle_question: Para preguntas o preocupaciones sobre la titularidad, póngase en contacto con %{aspera}
+          entitlement: ID de titularidad
+          submit: Presentar
+        new:
+          anouncement: Anuncio
+          enter_password: Especifique la contraseña de Faspex
+          enter_username: Escriba su nombre de usuario Faspex
+          forgot_password: Contraseña olvidada
+          password: Contraseña
+          username: Nombre
+          or_log: o inicie sesión con
+      m_configuration:
+        edit:
+          faspex: Faspex
+          sender: Remitente
+          sender_via_faspex: Remitente via Faspex
+          sender_email: Correo electrónico remitente
+          mail_configuration: Configuración del correo
+          save: Guardar
+          savetest_email: Guardar y probar correo electrónico
+          to: 'a:'
+      m_template:
+        edit:
+          body: 'Cuerpo:'
+          cancel: Cancelar
+          edit_email_html: Editar HTML de correo electrónico de %{name}
+          save: Guardar
+          subject: 'Asunto:'
+        show:
+          advanced: " (avanzado)"
+          customize: Personalizar utilizando plantilla
+          edit_html: Editar HTML
+          preview: "%{description} A continuación se muestra una vista previa. Se puede personalizar utilizando la plantilla o editando directamente el HTML."
+          preview_email_notif: Vista previa de la notificación de correo electrónico MY_name_
+      metadata_profiles:
+        edit:
+          add_field: Añadir campo
+          add_new_field: 'Añadir nuevo campo: '
+          edit_metadata: Editar perfil de metadatos
+          enabled: 'Habilitado: '
+          error_fields_not_saved: 'Nota: los campos con errores NO se guardan'
+          illegal_characters: 'Caracteres ilegales: '
+          max_length: 'Longitud máxima: '
+          note: 'Nota:'
+          note_no_save: 'Nota: No se guardará ningún cambio hasta que guarde el perfil de metadatos'
+          preview: Vista previa
+          profile_name: 'Nombre del perfil: '
+          profile_name_placeholder: Nombre de perfil ...
+          save: Guardar
+          save_and_prev: Guardar y vista previa
+          title: Título
+        date_format:
+          any_other_value: Cualquier otro valor
+          any_other_value_hint: Texto literal
+          at: Indicación de fecha y hora de Unix (ms desde 01/01/1970)
+          capital_D_hint: Nombre del día (corto)
+          capital_DD_hint: Nombre de día (largo)
+          capital_M_hint: Nombre del mes (corto)
+          capital_MM_hint: Nombre de mes (largo)
+          d_hint: Día del mes (sin cero inicial)
+          dd_hint: Día del mes (dos dígitos)
+          description: Descripción
+          ellipses: Texto literal
+          exclamation: Marcas de Windows (100ns desde 01/01/0001)
+          m_hint: Mes del año (sin cero inicial)
+          mm_hint: Mes del año (dos dígitos)
+          o_hint: Día del año (sin ceros iniciales)
+          oo_hint: Día del año (tres dígitos)
+          single_quote: Presupuesto único
+          variable: Variable
+          y_hint: Año (dos dígitos)
+          yy_hint: Año (cuatro dígitos)
+        metadata_field:
+          characters: caracteres
+          date_format: 'Formato de fecha: '
+          date_format_help: Ayuda de formato de fecha
+          illegal_chars: 'Caracteres Ilegales: '
+          illegal_chars_placeholder: Chracters ilegales ...
+          label: 'Etiqueta: '
+          label_placeholder: Etiqueta ...
+          max_length: 'Longitud máxima: '
+          options: 'Opciones: '
+          required: 'Obligatorio: '
+        index:
+          add_profile: Añadir perfil nuevo
+          confirm: "¿Está seguro de que desea suprimir el perfil de metadatos %{account}?"
+          delete: Suprimir
+          edit: Editar
+          metadata_profiles: Perfiles de metadatos
+          name: Nombre
+          profile_for_norm: 'Perfil para paquetes normales:'
+          save_metadata: 'Guardar metadatos en el archivo: '
+        new:
+          cancel: Cancelar
+          create: Crear
+          name: Nombre
+          new_profile: Nuevo perfil de metadatos
+      mobile:
+        landing:
+          app_redirect: Para obtener la mejor experiencia, utilice la aplicación Aspera Faspex Mobile.
+          no_app_prompt: "¿No tiene la aplicación? Obtenga <a href='<%= @app_store_url %>'>aquí</a>"
+          open_in_app: OPEN IN APP
+          use_web_version: UTILIZAR LA VERSIÓN WEB
+      ms_admin:
+        convert_to_slave:
+          back: Volver
+          convert: Convertir
+          convert_server: Convertir servidor en esclavo
+          master_ip: 'Dirección IP: '
+        edit:
+          connecting: Conectando con %{hostname} ...
+          server_list: Lista de servidores de faspex
+          working: Todavía trabajando ...
+        edit_server:
+          alternate_address: 'Alternate_address: '
+          Back: Volver
+          host_name: 'Nombre de host o dirección IP:'
+          https_port: 'Puerto HTTPS: '
+          master_ip: 'Dirección IP:'
+          name: 'Nombre: '
+          save: Guardar
+          server_list: 'Lista de servidores de faspex: Edit %{name}'
+          url_namespace: 'Espacio de nombres URL: '
+        list_rules:
+          create_new: Crear nuevo
+          default_user_server: 'Servidor de usuarios Faspex/DS predeterminado:'
+          home_server_rules: Reglas del servidor de inicio
+          name: Nombre
+          note: >-
+            Nota: Si no establece reglas para los remitentes externos, se dirigirán al servidor inicial del remitente para descargar paquetes. Del mismo modo, los
+            remitentes externos que están cargando paquetes deben hacerlo desde el servidor inicial del invitado.
+          rule: Artículo
+          save: Guardar
+          server: Servidor
+          sort: Ordenar
+        new_edit_rule:
+          add: Añadir
+          back: Volver
+          create: Crear
+          create_new: Crear nuevo
+          dir_DN_regex: 'Regex DN de servicio de directorio:'
+          dir_regex: 'Grupo de servicios de directorio regex:'
+          edit: Editar
+          email_regex: 'Dirección de correo electrónico:'
+          external_users: 'Usuarios/remitentes externos:'
+          home_server: 'Servidor inicial:'
+          home_server_rules: 'Reglas del servidor inicial: Regla %{mod}'
+          ldap_field: 'Nombre de campo LDAP:'
+          ldap_regex: 'Regex de campo LDAP:'
+          regex_help: Ayuda Regex
+          remove: Eliminar
+          rule_name: 'Nombre de regla:'
+          save: Guardar
+          username_regex: 'Nombre de usuario regex:'
+        new_server:
+          alternate_address: 'Dirección alternativa:'
+          back: Volver
+          create: Crear
+          hostname: 'Nombre de host o dirección IP:'
+          http_port: 'Puerto HTTPS:'
+          name: 'Nombre:'
+          server_list_new_server: 'Lista de servidores FASpex: Nuevo servidor remoto'
+          url_namespace: 'Espacio de nombres URL:'
+        regex_help:
+          a*: Cero o más de un.
+          a+: Uno o más de un.
+          a-z: Cualquier carácter en el rango a-z.
+          a-zA-z: Cualquier carácter en el rango a-z o A-Z.
+          abc: 'Un solo carácter: a, b o c.'
+          ataslash_com: 'Ex: coincide con cadenas que terminan con ''a.com'''
+          a|b: a o b
+          expression: Expresión
+          meaning: Significado
+          period: Cualquier carácter individual.
+          slash: Carácter de escape.
+          slashA: Inicio de una serie.
+          slashAa-m: 'Ex: coincide con series que empiezan por una letra entre ''a'' y ''m''.'
+          slashAperiod*z: 'Ex: coincide con cadenas que empiezan por ''a'' y terminan con ''z'''
+          slashz: Fin de serie.
+      nodes:
+        columns:
+          dropdown:
+            add: Añadir %{share_name}
+            delete: Suprimir
+            delete_confirm: "¿Está seguro? Esto suprimirá cualquier %{share_name} que esté utilizando actualmente este %{nombre_nodo}."
+            edit: Editar
+          shares:
+            dropdown:
+              confirm: "¿Está seguro de que desea continuar?"
+              custom_inbox_confirm: Este %{name} se utiliza actualmente como ubicación de bandeja de entrada personalizada para determinados grupos de trabajo.
+              default_hint: Este %{name} se utiliza actualmente como bandeja de entrada por omisión del sistema y no se puede suprimir.
+              delete: Suprimir
+              delete_warning: 'La supresión hará que todos los paquetes existentes en estos grupos de trabajo no estén disponibles para los usuarios. '
+              edit: Editar
+              relay_hint: Este %{name} se utiliza actualmente como ubicación de relé para determinados grupos de trabajo.
+              rolled_back_warning: 'Estos grupos de trabajo también se retrotraerán para utilizar la bandeja de entrada predeterminada del sistema. '
+      packages:
+        browser:
+          all: Todos
+          download_selected: Descargar seleccionado
+          name: Nombre
+          none: Ninguno
+          select: Seleccione
+          size: Tamaño
+          validation_error: "¿Error de validación?"
+          warning: Error
+        package:
+          browse_and_download_contents: Examinar y descargar contenido
+          browse_contents: Examinar el contenido
+          cc_on_delivery: 'CC (en entrega):'
+          cc_on_download: 'CC (en descarga):'
+          cc_on_recipient: 'CC (destinatario):'
+          completed_relays: 'Relés completados:'
+          date_sent: Fecha de envío
+          http_downloads_not_allowed: Las descargas de HTTP no están permitidas para este paquete
+          delete_after_all_message: Este paquete se suprimirá automáticamente después de que TODOS los destinatarios hayan descargado todos los archivos de paquete.
+          delete_after_first_message: Este paquete se suprimirá automáticamente después de que cualquier destinatario haya descargado todos los archivos de paquete.
+          edit: Editar
+          error_release_date: Error al actualizar fecha de actualización
+          failed_relays: 'Relés anómalos:'
+          forward: Forward
+          from: 'De:'
+          in_progress_relays: 'Relés en curso:'
+          incomplete_relays: 'Relés incompletos:'
+          none_set: Ninguno establecido
+          note_disabled: El paquete no está presente en el almacenamiento de archivos actual.
+          package: Paquete
+          release_now: Release Ahora
+          save: Guardar
+          send_date: Fecha de envío
+          to: 'Para:'
+          to_private: 'To (private):'
+          upload_date: 'Fecha de subida:'
+        show_stats:
+          more_details: Más detalles
+        stats:
+          active_downloads:
+            active_downloads: 'Descargas activas: %{num}'
+          completed_package:
+            avg_rate: 'Tasa promedio: %{rate}'
+            elapsed: 'Transcurrido: %{time}'
+            files: 'Archivos: %{num}'
+            size: Tamaño %{num}
+            upload_stats: 'Cargar estadísticas:'
+            uploaded_from: 'Subidos desde:'
+          failed_package:
+            avg_rate: 'Tasa promedio: %{rate}'
+            elapsed: 'Transcurrido: %{time}'
+            files: 'Archivos: %{num}'
+            size: Tamaño %{num}
+            upload_stats: 'Cargar estadísticas:'
+            uploaded_from: 'Subidos desde:'
+          full_download:
+            full_pkg_dl: 'Descargas de paquetes completas: %{completed}'
+          package_details:
+            pkg_details: Detalles del paquete
+            status: Estado %{package}
+            http_downloads_not_allowed: Las descargas de HTTP no están permitidas para este paquete
+          partial_package:
+            partial_pkg_dl: 'Descargas parciales de paquetes: %{total}'
+          transfer_package:
+            avg_rate: 'Tasa media:'
+            elapsed: 'Transcurrido:'
+            files: 'Archivos: %{num}'
+            loading: cargando ...
+            size: Tamaño %{num}
+      pending:
+        action: Acción
+        files: Archivos
+        history:
+          back_to_normal_view: Volver a la vista normal
+          file_on_server: "¿Archivos en servidor?"
+          pending_package_hist: Historial de paquetes pendientes
+        index:
+          archive_all: Archivar todo
+          pending_packages: Paquetes pendientes
+          view_full_history: Ver historial completo
+          warning: Advertencia
+        recipients: Destinatarios
+        search: Búsqueda
+        send_date: Fecha de envío
+        size: Tamaño
+        status: Estado
+        title: Título
+        transfer_retries: Reintentos de transferencia
+        upload_date: Fecha de subida
+      received:
+        action: Acción
+        date_sent: Fecha de envío
+        download_available: Descargar disponible
+        files: Archivos
+        history:
+          back_to_normal_view: Volver a la vista normal
+          files_on_server: "¿Archivos en servidor?"
+          received_package_hist: Historial de paquetes recibidos
+        index:
+          archive_all: Archivar todo
+          invitations: Invitaciones
+          received_packages: Paquetes recibidos
+          view_full_history: Ver historial completo
+        search: Búsqueda
+        sender: Remitente
+        size: Tamaño
+        status: Estado
+        title: Título
+      registrations:
+        confirmation:
+          back_to_login: Volver al inicio de sesión
+        edit_password:
+          set_password: Establecer contraseña
+        new:
+          back_to_login: Volver al inicio de sesión
+          email: Correo electrónico
+          first_name: 'Nombre:'
+          last_name: Apellido
+          name: Nombre
+          tos_accept: Acepto el %{tos}.
+      reset_password_tokens:
+        edit:
+          alert_error: El inicio de sesión de Faspex está cansado para una cuenta de servicio de directorio.
+          alert_error_contact: Póngase en contacto con su servicio de asistencia o con el administrador de la red para cambiar su contraseña.
+          reset_password: Restablecer contraseña
+        new:
+          back_to_login: Volver al inicio de sesión
+          enter_user_or_email: Introduzca su nombre de usuario o correo electrónico
+          forgot_password: "¿Ha olvidado su contraseña?"
+          send_email: Enviar correo electrónico
+      search: Buscar destinatarios, títulos de paquetes y notas.
+      send:
+        fieldsets:
+          encryption:
+            encryption: 'Cifrado:'
+            use_encrypt_at_rest: Utilizar cifrado en reposo
+        form:
+          dropbox:
+            send_package: Enviar paquete
+          external:
+            send_package: Enviar paquete
+          fieldsets:
+            encryption:
+              encryption: 'Cifrado:'
+              use_encrypt_at_rest: Utilizar cifrado en reposo
+            expiration_policy:
+              after_pkg_dl: Después de descargar el paquete
+              delete_after_all: Suprimir después de <strong>todos los destinatarios</strong> descargar todos los archivos.
+              delete_after_any: Suprimir después de <strong>cualquier destinatario</strong> descarga todos los archivos
+              do_nothing: No hacer nada
+              expiration: 'Caducidad:'
+            prevent_http_download:
+              prevent_http_download: Impedir la descarga HTTP para este paquete
+              package_download: Descarga de paquetes
+            metadata:
+              maximum_length: 'Longitud máxima: %{max} caracteres &nbsp.'
+              illegal_chars: 'Caracteres no permitidos: %{illegal}'
+              required: required
+              optional: optativo
+            note:
+              note: Nota:<br><span class='dim'><small>opcional</small></span>
+              maximum_length: 'Longitud máxima: %{max} caracteres &nbsp.'
+              illegal_chars: 'Caracteres no permitidos: %{illegal}'
+            notifications:
+              cc: CC
+              cc_on_download: CC en descarga
+              cc_on_receipt: CC en recepción
+              cc_on_upload: CC en carga
+              download: 'Descargar:'
+              notifications_help: Las notificaciones se envían después de la primera carga o descarga
+              receipt: 'Recepción:'
+              upload: 'Carga:'
+            obfuscation:
+              obfuscation: 'Ofuscación:'
+              use_obf: Utilizar ofuscación en nombres de archivo
+            release_policy:
+              release_date: 'Fecha de lanzamiento:'
+              release_later_date_later: Release posterior-Fecha de establecimiento posterior
+              release_later_date_now: Release posterior-Fecha de establecimiento ahora
+              release_now: Release Ahora
+              release_policy: 'Política de release:'
+            transfer_options:
+              transfer_through: 'Transferencia Con:'
+              http_uploads_not_allowed: No se permiten las cargas HTTP para este paquete
+            source_shares:
+              contents: 'Contenido *:'
+              ear_cloud_warning: >-
+                El cifrado en el resto se establece para que se utilice para todas las transferencias, pero no está soportado para las transferencias que utilizan
+                la referencia a la nube. Esta transferencia no utilizará el cifrado en reposo.
+              remove_all: Eliminar todo
+              source: 'Fuente:'
+              warning: 'Advertencia:'
+            title:
+              title: 'Título *:'
+              maximum_length: 'Longitud máxima: %{max} caracteres &nbsp.'
+              illegal_chars: 'Caracteres no permitidos: %{illegal}'
+            tos:
+              tos: 'Condiciones de servicio:'
+              tos_accept: Acepto el %{tos}
+          forward:
+            contents: 'Contenido:'
+            forward_package: Paquete prospect
+            fwd: 'Fwd: %{ftitle}'
+            original_sender: 'Remitente original:'
+            received: 'Recibidos:'
+          misc:
+            actions:
+              confirmation: 'Confirmación:'
+              enter_passphrase: Especifique una frase de contraseña para proteger los archivos.<br>Es necesaria una frase de contraseña.
+              passphrase: 'Frase de contraseña:'
+            connect_transfer:
+              browse_for_files: Buscar archivos &hellip;
+              browse_for_folders: Buscar carpetas &hellip;
+              or: O
+            instruct:
+              instructions: Instrucciones
+            remote_share:
+              loading: Carga
+              browse_for_files: Buscar archivos &hellip;
+            show_hide_controls:
+              show_private_recip: Mostrar destinatarios privados
+          normal:
+            send_package: Enviar paquete
+        http_gateway_submit:
+          completed: Completado
+          current_file: 'Archivo actual:'
+          current_file_name: 'Nombre de archivo actual:'
+          invalid_status: Estado no válido
+          failed: Error
+          file_count: 'Recuento de archivos:'
+          initiating: Iniciación
+          running: Ejecución
+          total: 'Total:'
+          transfer_status: 'Transferencia:'
+      sent:
+        action: Acción
+        date_sent: Fecha de envío
+        files: Archivos
+        history:
+          sent_package_hist: Historial de paquetes enviados
+          back_to_normal_view: Volver a la vista normal
+          files_on_server: "¿Archivos en servidor?"
+        index:
+          archive_all: Archivar todo
+          sent_packages: Paquetes enviados
+          view_full_history: Ver historial completo
+          warning: Advertencia
+        recipients: Destinatarios
+        search: Búsqueda
+        show_details:
+          full_partial: Completo/parcial &nbsp;
+          ip_addr: Dirección IP &nbsp;
+          pkg_download_details: Detalles de descarga del paquete
+          start_time: Hora de inicio &nbsp;
+          stop_time: Hora de detención &nbsp;
+          time_elapsed: Tiempo transcurrido &nbsp;
+          user_name: Nombre de usuario &nbsp;
+        size: Tamaño
+        status: Estado
+        title: Título
+        transfer_retries: Reintentos de transferencia
+      settings:
+        contacts:
+          contact:
+            external: "(externa)"
+            remove: Eliminar
+          index:
+            contacts: Contactos
+            edit_alert: No tiene contactos editables.
+            edit_contacts: Editar contactos
+        dist_lists:
+          index:
+            add_new_dist_list: Añadir nueva lista de distribución
+            alert_dist: No tiene listas de distribución personal.
+            contacts: Contactos
+            global_dist_lists: Listas de distribución globales
+            name: Nombre
+            pers_dist_lists: Listas de distribución personal
+            update_dist_list: Actualizar listas de distribución
+          new:
+            new_dist_list: Nueva lista de distribución
+        passwords:
+          edit:
+            change_password: Cambiar contraseña
+            current_password: 'Contraseña actual:'
+            password: Contraseña
+            confirm_pw: Confirmar contraseña
+        preferences:
+          edit:
+            download_connect: Descargar plugin de Connect
+            download_hint: Puede tardar unos minutos en que el cambio entre en vigor
+            download_notif: Descargar notificaciones
+            download_notif_hint: Enviar por correo electrónico estas direcciones cuando cada destinatario descargue por primera vez un paquete
+            email_settings: Configuración del correo
+            locales: Entornos locales
+            locale: Entorno local
+            misc: Misc
+            preferences: Preferencias
+            update_pref: Actualizar preferencias
+            upload_notif: Cargar notificaciones
+            upload_notif_hint: Enviar por correo electrónico estas direcciones con el resultado de la carga
+            received_page_option: Mostrar sólo los paquetes completados en la página 'Recibido'
+        sender_quota:
+          index:
+            sender_alert_1: Ha alcanzado el límite de cuota de remitente de %{quota} MB
+            sender_alert_2: "%{quota} MB disponible. El límite de cuota de remitente se establece en %{limit} MB."
+            sender_quota: Cuota del remitente
+      shared:
+        browser:
+          filter:
+            from: De
+            hide_filters: Ocultar filtros
+            include_sub: Incluir subdirectorios
+            max: Máx.
+            min: Mín.
+            mod_time: Tiempo de modificación
+            search: Búsqueda
+            search_for_files: Buscar archivos o directorios &hellip;
+            show_filters: Mostrar filtros
+            size: Tamaño
+            to: A
+          par_dir_item:
+            parent_dir: Directorio padre
+        dist_lists:
+          dist_lists:
+            delete: Suprimir
+            duplicate: Duplicado
+            import_contacts: Importar contactos desde CSV
+          form:
+            name: Nombre
+            browse: Examinar ...
+            contacts: Contactos (hasta %{num})
+            import_from_csv: 'Importar desde CSV:'
+        filter:
+          filter: Filtrar &hellip;
+      user_profile_fields:
+        add_user_profile_field: Añadir campo de perfil de usuario
+        enabled: Habilitado
+        name: Nombre
+        note_no_changes: 'Nota: No se guardará ningún cambio hasta que haga clic en ''Guardar campos'''
+        onclick_confirm: "¿Está seguro de que desea eliminar este campo de perfil de usuario?"
+        remove: Elimine este campo de perfil.
+        required: Obligatorio
+        save_fields: Guardar campos
+        user_profile: Perfil de usuario
+      workgroup:
+        deliveries:
+          history:
+            date_sent: Fecha<br>Enviado
+            download_retry: Descargar o reintentar disponible
+            files: Archivos
+            files_on_server: "¿Archivos en el servidor<br>?"
+            package_history: Historial de paquetes
+            search: Búsqueda
+            sender: Remitente
+            size: Tamaño
+            status: Estado
+            title: Título
+          index:
+            action: Acción
+            date_sent: Fecha<br>Enviado
+            download_retry: Descargar o reintentar disponible
+            files: Archivos
+            packages: Paquetes
+            search: Búsqueda
+            sender: Remitente
+            size: Tamaño
+            status: Estado
+            title: Título
+          misc:
+            links:
+              invite_outside: Invite Fuera Del Remitente
+        file_relay_req:
+          index:
+            back: Volver
+            relay_stat: Estado de retransmisión
+          table:
+            date_sent: Fecha de envío
+            file_storage: Almacenamiento de archivos
+            files: Archivos
+            node: Nodo
+            size: Tamaño
+            status: Estado
+        forwards:
+          complete: Completo
+          enable_relay: Habilitar relé
+          enabled_message: Si está habilitado, todos los archivos de paquete se retransmitirán a nodos adicionales.
+          error: Error
+          notify_users: Notificar a los usuarios el ...
+          overwrite: Sobrescribir
+          relay: Relé
+          start: Inicio
+        name: Nombre
+        nodes:
+          default_inbox: Entrada predeterminada
+          direct_upload: Subir directamente a la bandeja de entrada personalizada.
+          direct_upload_default_check: Si está seleccionado, los paquetes no se subirán a la bandeja de entrada predeterminada si este grupo de trabajo es el único
+            destinatario.
+          inbox_destination: Destino de entrada
+          location: Ubicación
+          status: Estado
+        users:
+          edit:
+            edit_user: 'Editar usuario: %{name}'
+          new:
+            new_user: Nueva cuenta de usuario para %{wg} %{wgname}
+        workgroups:
+          details:
+            created_on: 'Creado en:'
+            description: 'Descripción:'
+            inst_for_sub: 'Instrucciones para los remitentes: '
+            name: 'Nombre de <font color="red">* </font>:'
+            updated_on: 'Actualizado el:'
+            wg_details: Detalles de %{wgtype} &nbsp;
+          ds_group:
+            all: Todos
+            none: Ninguno
+            ok: OK
+            remove_selected: Eliminar seleccionado
+            select: 'Seleccione: '
+          ds_group_member:
+            add_group: Añadir grupo
+          ds_group_table:
+            access: Acceso
+            date_added: Fecha Añadida
+            dir_serv_group: Grupos de servicios de directorio
+            DN: DN
+            members: Miembros
+            name: Nombre
+            status: Estado
+          edit:
+            back: Volver
+            back_to_list: Volver a la lista
+            editing: 'Edición de %{wgtype}: %{wgname}'
+            or: " o "
+            save: Guardar
+          forwards:
+            complete: Completo
+            enable_relay: Habilitar relé
+            error: Error
+            if_enabled: Si está habilitado, todos los archivos de paquete se retransmitirán a nodos adicionales.
+            name: Nombre
+            notify_users: Notificar a los usuarios el ...
+            overwrite: Sobrescribir
+            relay: Relé
+            start: Inicio
+          index:
+            create_new: Crear nuevo
+            dropbox: Dropbox
+            flash_message: Para crear, suprimir o editar grupos de trabajo (aparte de añadir/eliminar miembros) debe haber iniciado sesión en el servidor maestro.
+            view_all: Ver todo
+            view_mine: Ver mina
+            workgroup: Grupo de trabajo
+            workgroups: Grupos de trabajo
+          member_table:
+            access: Acceso
+            active: Activo
+            add_user: Añadir usuario
+            alert: No se ha seleccionado ningún miembro para su eliminación.
+            all: Todos
+            expires: Caduca
+            full_name: Nombre completo
+            inactive: Inactivo
+            inv_outside_submit: Invite Fuera Del Remitente
+            member_since: Miembro Desde
+            members: Miembros
+            name: Nombre
+            none: Ninguno
+            ok: OK
+            remove_selected: Eliminar seleccionado
+            select: 'Seleccione:'
+            status: Estado
+            type: Tipo
+          new:
+            cancel: Cancelar
+            create: Crear
+            create_new: Crear New %{wgtype}
+            or: " o "
+          nodes:
+            custom: Personalizado
+            default_inbox: Entrada predeterminada
+            inbox_dest: Destino de entrada
+            location: Ubicación
+            name: Nombre
+            server_default: Predeterminado del servidor
+            status: Estado
+            upload_directly: Subir directamente a la bandeja de entrada personalizada
+            upload_message: Si está seleccionado, los paquetes no se subirán a la bandeja de entrada predeterminada si este grupo de trabajo es el único destinatario
+          show:
+            view_packages: Ver paquetes
+          wg_permissions:
+            add_dir_serv_groups_as_members_hint: Añadir/eliminar grupos de servicios de directorio como miembros
+            add_existing_users_hint: Añadir usuarios Faspex existentes/eliminar miembros de administración que no son de grupo de trabajo
+            edit_new_users_hint: Crear/editar/delete/eliminar nuevos usuarios como miembros
+            full: " Completo:"
+            full_hint: Los miembros han otorgado permiso para ver y enviar entre sí
+            member_management: Gestión Miembro
+            moderated: " Moderado:"
+            moderated_hint: Sólo el administrador del grupo de trabajo puede enviar a este grupo de trabajo
+            open: " Abierto:"
+            open_hint: Cualquier persona puede enviar a este grupo de trabajo
+            private: " Privado:"
+            private_hint: Sólo los miembros pueden enviar a este grupo de trabajo
+            restricted: " Restringido:"
+            restricted_hint: Nadie puede enviar a este grupo de trabajo
+            restricted_hint_2: Sólo los grupos de trabajo otorgados permiso para ver o enviar a miembros individuales del grupo de trabajo
+            send_to_eachother: 'Miembros del grupo de trabajo que se envían entre sí:'
+            sending_to_itself: 'Envío al propio grupo de trabajo:'
+            wg_admins_only: " Sólo administradores de grupos de trabajo:"
+            wg_admins_only_hint: Los miembros han otorgado permiso para ver y enviar a los administradores de grupos de trabajo
+            workgroup_admins_can: Los administradores del grupo de trabajo pueden ...
+            workgroup_permissions: Permisos de grupo de trabajo
+          workgroup_list:
+            description: Descripción
+            dropbox: Dropbox
+            latest: Último
+            member_warning: Actualmente no es miembro de ningún grupo de trabajo.
+            members: Miembros
+            no_wg: No hay grupos de trabajo.
+            packages: Paquetes
+            type: Tipo
+            workgroup: Grupo de trabajo
+          workgroup_members_form:
+            wg_members_title: Miembros de %{wg_name} &nbsp;
+    helpers:
+      account:
+        users:
+          admin: " -admin"
+          expir_date: Se debe establecer %{date} para un usuario activo.
+          manager: " -gerente"
+          neg: 'No'
+          pos: Sí
+          set_admin: Establecer admin
+          set_non_admin: Establecer no administrador
+          taken_name: Ya se ha tomado %{name}
+        bootstrap_content_helper:
+          actions: Acciones
+          close: Cierre
+      admin:
+        nodes_helper:
+          browse_fail: Error al examinar el origen del archivo remoto
+        post_processes_helper:
+          activate: activar
+          confirm: "¿Está seguro de que desea suprimir el script de postproceso %{script_name}?"
+          deactivate: desactivar
+          remove: eliminar
+          view_log: Ver registro de ejecución
+      application_helper:
+        browse: Examinar ...
+        path: 'Vía:'
+      login_helper:
+        create_account: Crear una cuenta
+        request_account: Solicitar una cuenta
+      metadata_profiles_helper:
+        date_field: Campo de fecha
+        option_list: Lista de opciones
+        text_area: Área de texto
+        text_field: Campo de texto
+      packages_helper:
+        entire: Descargar paquete completo
+        partial: Descargar paquete parcial
+        return_to_history: Volver a la historia
+        return_to_list: Volver a la lista
+      registrations_helper:
+        create_account: Crear cuenta
+        request_account: Cuenta de solicitud
+      send_helper:
+        hide: ocultar
+        hide_cc: Ocultar Cc
+        show: mostrar
+        show_cc: Mostrar Cc
+      sent_helper:
+        delete: Suprimir
+      source_shares_helper:
+        browse_fail: Error al examinar el origen del archivo remoto
+      workgroup:
+        deliveries_helper:
+          back_to_normal_view: Volver a la vista Normal
+          delete: Suprimir
+          view_full_history: Ver historial completo
+          view_members: Ver Miembros
+        users_helper:
+          create_new_user: Crear nuevo usuario
+        workgroups_helper:
+          delete: Suprimir
+          delete_confirm: ¿Está seguro de que desea suprimir %{wg_type} "%{wg_name}"?
+          delete_wg: Suprimir %{wg_name}
+          dropbox: Dropbox
+          edit: Editar
+          edit_wg: Editar %{wg_type_name}
+          names_placeholder: Especifique nombres de usuario o direcciones de correo electrónico
+          view_all: Ver todo
+          view_mine: Ver mina
+          view_packages: Ver paquetes
+          workgroup: Grupo de trabajo
+    models:
+      c_configuration:
+        cant_be_blank: no pueden estar en blanco.
+      delivery:
+        send_fail_quota_limit: No se puede enviar el paquete, se ha alcanzado el límite de cuota de %{limit} MB
+        send_fail_permissions: No está permitido crear paquetes normales
+        send_fail_invalid_recipients: No hay destinatarios válidos
+        send_fail_dropbox_only: El destinatario de dropbox debe ser el único destinatario
+        send_fail_invalid_recipient_specific: 'Destinatario no válido: %{recipient_name}'
+        send_fail_permissions_multiple: No se le permite enviar a uno o más de los destinatarios especificados
+        send_fail_invalid_cc: 'CC no válido (en la carga): %{cc_name}'
+        send_fail_invalid_ccs_upload: No se le permite a CC uno o más de los destinatarios en el campo de carga
+        send_fail_invalid_ccs_download: No se le permite a CC uno o más de los destinatarios en el campo de descarga
+        send_fail_invalid_ccs_receipt: No se le permite a CC uno o más de los destinatarios en el campo de recepción
+        send_fail_must_have_one_source: Debe tener exactamente una fuente
+        send_fail_unknown_share_id: ID de compartimiento de origen desconocido %{share_id}
+        send_fail_source_not_authorized: Fuente no autorizada
+        send_fail_no_items_to_upload: "¡No hay artículos que subir!"
+        send_fail_unique_filenames: Los nombres de archivo deben ser exclusivos
+        send_fail_ear_must_be_specified: debe especificarse
+        send_fail_ear_not_allowed: no permitido
+        send_fail_ear_disabled_message: El cifrado en reposo está inhabilitado, la frase de contraseña no está permitida.
+        send_fail_sendershareid_forwarding: SenderShareId no se puede cambiar para los paquetes reenviados
+        send_fail_invalid_release_policy: 'Política de release no válida: %{rp}'
+        send_fail_policy_date_future: La fecha de lanzamiento debe ser en el futuro
+        send_fail_expiration_date_future: La fecha de caducidad debe ser en el futuro
+      directory_service_user:
+        login_error_message: >-
+          El inicio de sesión no fue satisfactorio. Inténtelo de nuevo. Si está experimentando anomalías de inicio de sesión repetidas, debe pulsar el enlace 'Pergot
+          Password' para restablecer la contraseña.
+      e_membership:
+        status:
+          expired: Caducado
+          active: Activo
+          inactive: Inactivo
+      local_user:
+        cannot_be_blank: no puede estar vacío
+        is_incorrect: es incorrecto
+        login_error_message: >-
+          El inicio de sesión no fue satisfactorio. Inténtelo de nuevo. Si está experimentando anomalías de inicio de sesión repetidas, debe pulsar el enlace 'Pergot
+          Password' para restablecer la contraseña.
+        lock_out_message: Ha estado bloqueado debido a demasiados inicios de sesión no satisfactorios.
+        same_as_old_pw: es el mismo que la contraseña antigua
+        same_old_pw_hint: debe ser diferente de las contraseñas de My_limit_YM anteriores
+      metadata_field:
+        value_already_taken: "'%{value}' ya se ha tomado"
+        max_length_not_int: La longitud máxima del campo '%{label_name}' debe ser un entero
+        max_length_bounds: La longitud máxima del campo '%{label_name}' debe estar entre 1 y %{max}
+        valid_option_list: "'%{label_name}' requiere una lista de opciones válida"
+        valid_date_format: "'%{label_name}' requiere un formato de fecha válido"
+        cannot_be_blank: "%{label_name} no puede estar en blanco"
+        error_decoding: 'Error al decodificar metadatos: %{meta}'
+      metadata_profile:
+        all_fields_length_error: La longitud máxima total de todos los campos (incluidas las etiquetas, las opciones y los campos de fecha) debe ser menor que los
+          caracteres %{max}
+        field_blank_error: "%{err_label} no debe estar en blanco"
+        field_illegal_char_error: "%{err_label} no debe contener ninguno de los siguientes caracteres: %{ilegal}"
+        field_length_error: "%{err_label} debe ser de caracteres %{max} o menos"
+        field_options_error: "%{err_label} debe contener una de estas opciones: %{list}"
+        invalid_JSON_error: "%{err_label} debe ser un JSON válido"
+        invalid_share_id_error: ID de compartimiento no válido %{err_value} para %{err_label}
+        invalid_user_error: Usuario no válido %{err_user} para %{err_label}
+        invalid_value_error: Valor no válido para %{err_label}
+        max_length_reset_error: Los campos de longitud máxima se han restablecido en el valor predeterminado
+        must_be_list_error: "%{err_label} debe ser una lista de ID de compartimiento"
+        no_fields_error: El perfil de metadatos debe tener al menos un campo
+        note_invalid_char_error: 'La nota no debe contener ninguno de los caracteres siguientes: # {ilegal}'
+        note_length_bounds_error: La longitud máxima de la nota debe estar entre 1 y %{max}
+        note_length_error: La nota debe ser de caracteres %{max} o menos
+        note_length_int_error: La longitud máxima de la nota debe ser un entero
+        note_length_specified_error: Se debe especificar la longitud máxima de la nota
+        specified_error: Se debe especificar %{err_label}
+        title_invalid_char_error: 'El título no debe contener ninguno de los caracteres siguientes: %{illegal}'
+        title_length_bounds_error: La longitud máxima del título debe estar entre 1 y %{max}
+        title_length_error: El título debe ser %{max} o menos
+        title_length_int_error: La longitud máxima del título debe ser un entero
+        title_length_specified_error: Se debe especificar la longitud máxima del título
+      post_process:
+        all_uploaded_pkgs: "[todos los paquetes cargados]"
+      saml_configuration:
+        unspecified: Sin especificar
+        transient: Transitorio
+        persistent: Persistente
+        email_address: Dirección electrónica
+      send_package_request:
+        from_name_error: El nombre "De" no coincide con el usuario autenticado
+        invalid_recipient_error: receptor no válido
+        parse_xml_error: No se puede analizar la solicitud XML
+        validate_sender_error: No autorizado para subir
+        too_many_elements: El elemento %{path} no debe producirse más que %{max}
+        too_few_elements: El elemento %{path} debe producirse como mínimo %{min}
+      user:
+        passwordable:
+          requirements: Debe tener al menos seis caracteres de longitud
+          strong_requirements: Debe tener al menos seis caracteres de longitud, con al menos una letra, un número y un símbolo
+        status:
+          saml_disabled: Configuración de SAML inhabilitada
+          pending: Aprobación pendiente
+          active: Activo
+          locked: Bloqueado
+          inactive: Inactivo
+  config:
+    account_navigation:
+      preferences: Preferencias
+      change_password: Cambiar contraseña
+      contacts: Editar contactos
+      distribution_lists: Editar listas de distribución
+      sender_quota: Cuota del remitente
+    initializers:
+      will_paginate:
+        laq_prev: "&laquo; Anterior"
+        lar_prev: "&larr; Anterior"
+        raq_next: Siguiente &raquo;
+        rar_next: Siguiente &rarr;
+    license:
+      paste_license: Pegue aquí el contenido de su licencia
+      update_license: Licencia de actualización
+      decoded_license: Licencia descodificada
+    navigation:
+      account_approved: Cuenta aprobada
+      account_denied: Cuenta denegada
+      accounts: Cuentas
+      authentication: Autenticación
+      configuration: Configuración
+      directory_service_groups: Grupos de servicios de directorio
+      directory_services: Servicios de directorio
+      display_settings: Valores de visualización
+      dropbox_invitation: Invitación de dropbox
+      dropbox_submit: Dropbox Submit
+      email_configuration: Configuración electrónica
+      entitlement: Derecho
+      external_users: Usuarios externos
+      forgot_password: Contraseña olvidada
+      forward_error_cc: Error de relé CC
+      forward_finished_cc: Relé terminado CC
+      forward_started_cc: Relé Iniciado CC
+      global_distribution_lists: Listas de distribución globales
+      license: Licencia
+      login_announcement: Inicio de sesión
+      metadata: Metadatos
+      new_package: Nuevo paquete
+      notifications: Notificaciones
+      package_cc_receipt_on_received: Paquete recibido CC
+      package_cc_receipt_on_sent: Paquete enviado CC
+      package_downloaded: Paquete descargado
+      package_downloaded_cc: Paquete descargado CC
+      package_instructions: Instrucciones del paquete
+      package_received: Paquete recibido
+      package_storage: Almacenamiento de paquetes
+      package_validation_failed_recipient: Destinatario fallido de validación de paquete
+      package_validation_failed_sender: Remitente anómalo de validación de paquete
+      packages: Paquetes
+      pending_registrations: Registros pendientes
+      personal_invitation: Invitación personal
+      personal_submit: Personal Submit
+      post_processes: Post-Procesamiento
+      received: Recibidos
+      saml_groups: Grupos SAML
+      saml_integration: Integración SAML
+      save_restore: Guardar/Restaurar
+      security: Seguridad
+      sent: Enviado
+      server: Servidor
+      shares: Almacenamiento de archivos
+      transfer_options: Opciones de transferencia
+      upload_result: Resultado de carga
+      upload_result_cc: CC de resultado de carga
+      user_profile: Perfil de usuario
+      users: Usuarios
+      web_server: Servidor Web
+      welcome_email: E-mail de bienvenida
+      workgroup_package: Paquete de grupo de trabajo
+      workgroups: Grupos de trabajo
+  common:
+    allow: Permitir
+    deny: Denegar
+    default: Valor predeterminado
+    server_default: Valor predeterminado de servidor (%{server_default})
+    are_you_sure: "¿Está seguro?"
+    days_from_now: días desde ahora
+  date:
+    abbr_day_names:
+    - Sun
+    - Mon
+    - Tue
+    - Wed
+    - Thu
+    - Fri
+    - Sat
+    abbr_month_names:
+    - 
+    - Jan
+    - Feb
+    - Mar
+    - Apr
+    - May
+    - Jun
+    - Jul
+    - Aug
+    - Sep
+    - Oct
+    - Nov
+    - Dec
+    day_names:
+    - Sunday
+    - Monday
+    - Tuesday
+    - Wednesday
+    - Thursday
+    - Friday
+    - Saturday
+    formats:
+      default: "%Y-%m-%d"
+      long: "%B %d, %Y"
+      short: "%b %d"
+    month_names:
+    - 
+    - January
+    - February
+    - March
+    - April
+    - May
+    - June
+    - July
+    - August
+    - September
+    - October
+    - November
+    - December
+    order:
+    - :year
+    - :month
+    - :day
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: Aproximadamente 1 hora
+        other: acerca de las horas %{count}
+      about_x_months:
+        one: Aproximadamente 1 mes
+        other: acerca de %{count} meses
+      about_x_years:
+        one: Aproximadamente 1 año
+        other: acerca de los años %{count}
+      almost_x_years:
+        one: casi 1 año
+        other: casi %{count} años
+      half_a_minute: medio minuto
+      less_than_x_seconds:
+        zero: menos de 1 segundo
+        one: menos de 1 segundo
+        other: menos de %{count} segundos
+      less_than_x_minutes:
+        zero: menos de un minuto
+        one: menos de un minuto
+        other: menos de %{count} minutos
+      over_x_years:
+        one: más de 1 año
+        other: sobre los años %{count}
+      x_seconds:
+        one: 1 segundo
+        other: "%{count} segundos"
+      x_minutes:
+        one: 1 minuto
+        other: Minutos %{count}
+      x_days:
+        one: 1 día
+        other: Días de %{count}
+      x_months:
+        one: 1 mes
+        other: Meses de %{count}
+      x_years:
+        one: 1 año
+        other: Años %{count}
+    prompts:
+      second: Segundo
+      minute: Minuto
+      hour: Hora
+      day: Día
+      month: Mes
+      year: Año
+  helpers:
+    application:
+      archive: Archivo
+      back: Volver
+      cloud_storage_referencing: La referencia al almacenamiento en la nube está soportada por este almacenamiento.
+      connect_install_message: Para utilizar las velocidades máximas de %{direction}, instale el plugin de navegador %{aspera}.
+      connect_upgrade_message: Para utilizar las velocidades máximas de %{direction}, actualice el plug-in del navegador %{aspera}.
+      confirm: "¿Está seguro de que desea suprimir archivos para el paquete %{package_name} enviado por %{package_sender}?"
+      copy: Copiar en el portapapeles
+      delete: Suprimir
+      delete_confirm: "¿Está seguro de que desea suprimir archivos para el paquete %{package_name} enviado por %{package_sender}?"
+      delete_confirm_forward: Esto es un avance de otro paquete. El original y todos los reenvíos serán eliminados.
+      delete_confirm_has_forwards: Los delanteros de este paquete existen. El original y todos los reenvíos serán eliminados.
+      enable_hst_dl: Para habilitar las transferencias de alta velocidad con Aspera, por favor, %{download} el plugin del navegador Connect.
+      enable_hst_dl_enable: Para habilitar las transferencias de alta velocidad con Aspera, por favor, %{download} y %{enable} el plugin del navegador Connect.
+      local_transfer_message: >-
+        Actualmente está utilizando HTTP de baja velocidad. Para habilitar las transferencias de alta velocidad con Aspera, visite %{enable} para habilitar/descargar
+        el plugin del navegador Connect.
+      no_cloud_storage_referencing: Este almacenamiento NO da soporte a la referencia del almacenamiento en la nube.
+      no_transfer_dl: >-
+        Las subidas sin Aspera Connect tienen limitaciones de rendimiento. Para eliminar esta limitación y habilitar las transferencias de alta velocidad con Aspera,
+        por favor, %{download} el plugin del navegador Connect.
+      no_transfer_dl_enable: >-
+        Las subidas sin Aspera Connect tienen limitaciones de rendimiento. Para eliminar esta limitación y habilitar las transferencias de alta velocidad con Aspera,
+        por favor, %{download} y %{enable} el plugin del navegador Connect.
+      not_supp_symbolic_links: El almacenamiento no da soporte a enlaces simbólicos
+      note: 'Nota:'
+      package_details: Pulse aquí para ver los detalles del paquete.
+      public_url: 'URL público:'
+      retry_upload: Volver a cargar
+      set_now: Establecer ahora
+      stop_upload: Detener carga
+      supp_symbolic_links: El almacenamiento soporta enlaces simbólicos
+    select:
+      prompt: Seleccione
+    submit:
+      create: Crear %{model}
+      create_without_model: Crear
+      create_and_continue: Crear y My_action_YM
+      submit: Guardar %{model}
+      update_license: Actualizar y validar licencia
+      update: Actualizar %{model}
+  login:
+    new:
+      login: Iniciar sesión
+      login_using_saml_idp: Iniciar sesión utilizando IdP SAML
+    logged_out:
+      message: Ha sido desconectado de Faspex; es posible que todavía tenga que cerrar sesión en su cuenta de inicio de sesión único corporativo.
+      log_in_again: Volver a iniciar sesión
+    errors:
+      saml_not_authorized: No tiene autorización para utilizar Faspex.
+      invalid_saml_response: Respuesta no válida del proveedor de identidades de SAML.
+      saml_login_failed: Error al iniciar sesión.
+      saml_exception: Error de respuesta de SAML. Compruebe los registros.
+  lib:
+    app:
+      not_pingable: no pingable
+      not_infoable: no info-able
+      not_browsable: no browsable
+      node_error: error de nodo
+      host_error: error de host
+    app_tar:
+      app:
+        bad_version: Números de versión incompatibles
+        config_save_error: Error al guardar la configuración.  Consulte el registro para obtener detalles.
+        upload_saved_config: Cargar una configuración guardada
+        restore_config_error: Error al restaurar la configuración.  Consulte el registro para obtener detalles.
+        tar_error: Error al ejecutar la configuración %{tar_status} %{tar_out}
+        untar_error: Error untarring config %{untar_status} %{untar_stdout}
+    aspera_license_reader:
+      no_license_found: No se ha encontrado ninguna licencia o no se ha formado bien
+      license_signature_mismatch: La firma de licencia no coincide con el contenido
+      not_faspex_license: La licencia no es una licencia de Faspex
+      expired_license: La licencia ha caducado
+      bad_expiration_license: La licencia tiene una fecha de caducidad incorrecta
+      valid_license: La licencia es válida
+      invalid_license: Licencia no válida
+    directory_services:
+      active_directory:
+        active_directory: Active Directory
+        microsoft_active_directory: Microsoft Active Directory
+      apple_open_directory:
+        apple_open_directory: Apple Open Directory
+        open_directory: Directorio abierto
+      red_hat:
+        fedora_directory: 389/Red Hat/Servidor de directorios de Fedora
+        red_hat_directory: Red Hat Directory Server
+    membership_methods:
+      dropbox_admin: Administración de dropbox
+      wg_admin: Administración del grupo de trabajo
+      standard: Norma
+      submit_only: Enviar-Sólo
+      set_to_standard_access: Establecer el usuario en el acceso estándar
+      set_to_submit_access: Establecer acceso de usuario a sólo envío
+      set_user_as_admin: 'Establecer el usuario como # {wg_name} admin'
+    packages:
+      package_methods:
+        HTTP_upload_in_progress: La carga HTTP está en curso, se cancelará si navega fuera de esta página.
+        new_package: Nuevo paquete
+        return_to_history: Volver a la historia
+        return_to_list: Volver a la lista
+        send_to_dropbox: 'Enviar a Dropbox: %{d_addr_name}'
+  number:
+    currency:
+      format:
+        delimiter: ","
+        format: "%u%n"
+        precision: 2
+        separator: "."
+        significant: false
+        strip_insignificant_zeros: false
+        unit: "$"
+    format:
+      delimiter: ","
+      precision: 3
+      separator: "."
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: "%n %u"
+        units:
+          billion: Millones
+          million: Millones
+          quadrillion: Cuadrilátero
+          thousand: Miles
+          trillion: Billón
+          unit: ''
+      format:
+        delimiter: ''
+        precision: 1
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one: Byte
+            other: Bytes
+          eb: EB
+          gb: GB
+          kb: KB
+          mb: MB
+          pb: PB
+          tb: TB
+    percentage:
+      format:
+        delimiter: ''
+        format: "%n%"
+    precision:
+      format:
+        delimiter: ''
+  public:
+    javascripts:
+      admin:
+        authorization_domains:
+          form:
+            save: Guardar
+            save_and_test: Guardar y probar
+  support:
+    array:
+      last_word_connector: ", y "
+      two_words_connector: " y "
+      words_connector: ", "
+  time:
+    am: am
+    formats:
+      default: "%a, %d %b %Y %H:%M:%S %z"
+      long: "%B %d, %Y %H:%M"
+      short: "%d %b %H:%M"
+    pm: ''

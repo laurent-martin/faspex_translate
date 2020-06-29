@@ -1,0 +1,2780 @@
+---
+zh:
+  activerecord:
+    models:
+      node: 节点
+      share: 文件存储器
+      distribution_list: 分发列表
+      authorization_domain: 目录服务
+      metadata_profile: 元数据概要文件
+      metadata_field: 元数据字段
+    attributes:
+      authorization_domain:
+        host: 服务器地址
+        port: 波特
+        treebase: 特雷伯基
+        login: 登录
+        password: 密码
+      c_configuration:
+        encrypt_transfers: 加密传输
+        c_ssh_tcp_port: SSH TCP 端口
+        c_fasp_udp_port: fasp UDP 端口
+        http_fallback_port: HTTP 回退端口
+        c_kbps_initial_target_upload_rate: 初始上载速率
+        c_kbps_initial_target_download_rate: 初始下载速率
+        c_kbps_max_target_upload_rate: 最大上载速率
+        c_kbps_max_target_download_rate: 最大下载速率
+        c_lock_minrate_policy: 锁定最小速率和策略
+        c_relay_outgoing_bandwidth: 传出带宽
+        c_relay_incoming_bandwidth: 中继输入带宽
+        min_connect_version_major: 最低连接版本
+        min_connect_version_minor: 最低连接版本
+        min_connect_version_point: 最低连接版本
+        http_fallback_enabled: 启用 HTTP 回退
+        downloads_during_transfers_enabled: 在传输期间启用下载
+      m_configuration:
+        email_from_email: Faspex "From:" 电子邮件
+        m_smtp_server_port: 服务器端口
+        m_smtp_auth_type: SMTP 认证
+        m_smtp_server: SMTP 邮件服务器
+        use_tls: 如果可用，请使用 TLS
+        m_smtp_helo_domain: 域
+        m_smtp_username: 用户 ( 包含域)
+        smtp_password: 密码
+        email_from: Faspex "From:" 名称
+        package_received_notifications_from: 收件人 "发件人"
+      e_configuration:
+        ad_proxy_host: Active Directory 代理主机
+        ad_proxy_port: Active Directory 代理端口
+        announcement: 消息
+        dbox_can_override_ear: 允许 dropbox 拥有自己的加密设置
+        can_override_ear_per_personal_invite: 允许外部发送方邀请的定制加密设置
+        e_http_port: HTTP 端口
+        e_https_port: HTTP 端口
+        e_server_address: 服务器的外部地址或名称
+        e_server_enable_alternate_address: 启用备用地址
+        e_server_emails_include_alternate_address: 电子邮件包括备用地址
+        email_passcode_expires: 程序包链接到期
+        email_passcode_days_valid: 到期之后
+        email_passcode_expire_after_download: 完整包下载后到期
+        registration_type: 自注册
+        registration_approval_ccs: 通知以下电子邮件以进行核准
+        registration_external_use_default: 为外部用户使用缺省注册策略
+        registration_type_external: 外部用户的注册策略
+        registration_approval_ccs_external: 通知以下电子邮件以核准外部用户
+        tos_external: 外部用户的服务条件
+        package_instructions: 消息
+        tos: 服务条款
+        use_strong_password: 使用强密码
+        force_password_reset_for_new_users: 要求新用户在首次登录时更改密码
+        allow_users_to_unlock: 允许锁定用户解锁自己
+        session_timeout: 会话超时后
+        allow_send_to_email: 允许发送至外部电子邮件地址
+        allow_request_from_email: 允许邀请
+        registered_users_have_mutual_scope: 自注册用户可以发送到另一个用户
+        inviting_allowed: 允许邀请外部发件人
+        hide_user_dir_default: 缺省情况下保留用户目录专用
+        public_url_allowed: 允许公共提交 URL
+        dbox_can_override_public_url: 允许下拉框单独启用/禁用自己的公用 URL
+        public_url_home_server_id: 公共 URL 的主服务器
+        automatically_login_using_saml_idp: 使用 SAML 身份提供者登录
+        saml_idp_sso_target_url: IdP 单点登录 URL
+        saml_idp_slo_target_url: IdP 单点注销 URL
+        saml_idp_cert_fingerprint: IdP 证书指纹
+        saml_idp_cert: IdP 证书
+        can_see_global_distribution_lists_default: 缺省情况下，用户可以查看全局分发列表
+        tos_for_sending: 发送服务条件
+        remove_ds_users_on_inactivity: 除去 DS 用户
+        remove_saml_users_on_inactivity: 除去 SAML 用户
+      e_workgroup:
+        e_wg_name: 名称
+        e_wg_desc: 描述
+        workgroup_received_notification_cc: 将接收电子邮件的副本发送到这些地址
+        destination_share_id: 缺省收件箱
+      invitation:
+        expires_at: 到期前的天数
+      node:
+        alternate_address: 辅助地址或名称
+        alternate_address_client_filter: 请使用请求者的地址匹配
+        alternate_address_server_filter: 浏览器主机名匹配时使用
+        api_password: 密码
+        api_port: 波特
+        api_username: 用户名
+        enable_alternate_address: 启用辅助地址
+        encrypted_api_password: 密码
+        host: 主机
+        name: 名称
+        primary_address: 主传输地址或名称
+        ssl: 是否使用 SSL?
+        verify_ssl: 是否验证 SSL 证书?
+      share:
+        kbps_initial_target_upload_rate: 初始上载速率
+        kbps_initial_target_download_rate: 初始下载速率
+        lock_minrate_policy: 锁定最小速率和策略
+        kbps_max_target_upload_rate: 最大上载速率
+        kbps_max_target_download_rate: 最大下载速率
+        relay_incoming_bandwidth: 传入中继率
+        relay_outgoing_bandwidth: 传出中继率
+      e_package:
+        e_package_name: 标题
+      delivery:
+        metadata: '无效的元数据: '
+        sources: ''
+        ear_passphrase: 口令
+        tos_for_sending: 服务条款
+      registration:
+        name: 登录
+        email: 电子邮件
+        first_name: 名字
+        last_name: 姓氏
+        tos_agreement: 我接受服务条件
+      metadata_field:
+        label: 标签
+      post_process:
+        active: 活动
+        name: 名称
+        script_path: 服务器上的脚本路径
+        package_name: 包名
+        sender_name: 发件人姓名
+        sender_email: 发件人电子邮件
+        recipient_name: 收件人列表
+        recipient_email: 收件人电子邮件列表
+        package_note: 包裹说明
+      ad_group:
+        kbps_initial_target_upload_rate: 初始上载速率 (kbps)
+        kbps_initial_target_download_rate: 初始下载速率 (kbps)
+        kbps_max_target_upload_rate: 最大上载速率 (kbps)
+        kbps_max_target_download_rate: 最大下载速率 (kbps)
+        lock_minrate_policy: 锁定最小速率和策略
+        can_invite: 允许邀请外部发件人
+        dn: DN
+      directory_service_group:
+        kbps_initial_target_upload_rate: 初始上载速率 (kbps)
+        kbps_initial_target_download_rate: 初始下载速率 (kbps)
+        kbps_max_target_upload_rate: 最大上载速率 (kbps)
+        kbps_max_target_download_rate: 最大下载速率 (kbps)
+        lock_minrate_policy: 锁定最小速率和策略
+      user:
+        name: 登录
+        email: 电子邮件
+        password: 密码
+        password_confirmation: 密码确认
+        kbps_initial_target_upload_rate: 初始上载速率 (kbps)
+        kbps_initial_target_download_rate: 初始下载速率 (kbps)
+        kbps_max_target_upload_rate: 最大上载速率 (kbps)
+        kbps_max_target_download_rate: 最大下载速率 (kbps)
+        lock_minrate_policy: 锁定最小速率和策略
+        rows_per_page: 每页最大行数
+        disable_connect: 禁用 Aspera Connect 插件
+        account_activated: 已激活帐户
+        account_expires: 帐户到期
+        self_destructs: 帐户自动删除
+        destruction_date: 删除日期
+        received_notification_cc: 将接收电子邮件的副本发送到这些地址
+        allow_receipt_cc_edit: 允许编辑包创建上的收据地址
+        uploads_allowed: 上载软件包
+        downloads_allowed: 下载包
+        forwarding_allowed: 转发包
+        can_create_from_remote: 从远程源创建包
+        can_send_to_all_faspex_users: 可以发送给所有 Faspex 用户
+        can_send_to_external_email: 可以发送到外部电子邮件
+        can_invite: 允许邀请外部发件人
+        notify_on_receive: 收到包裹时给我发邮件
+        notify_on_validation_failure_if_sender: 在发送的数据包上验证失败时向我发送电子邮件
+        notify_on_validation_failure_if_recipient: 在收到的数据包上验证失败时向我发送电子邮件
+        notify_downloader_on_download: 下载包时给我发邮件
+        notify_on_workgroup_package_if_sender: 将我包含在发送的数据包的工作组通知中
+        suppress_connect_install_dialog: 禁止安装/升级提示
+        allowed_ip_addresses_for_login: 允许登录的 IP 地址
+        allowed_ip_addresses_for_download: 允许下载的 IP 地址
+        allowed_ip_addresses_for_upload: 允许上载的 IP 地址
+        last_remote_addr: 上次登录客户机地址
+        last_server_addr: 上次登录服务器地址
+        override_transfer_parameters: 覆盖缺省设置
+        override_server_delete_after_download: 覆盖系统缺省值
+        welcome_email: 发送欢迎消息
+        created_at: 创建于
+        updated_at: 已更新
+        type: 用户类型
+        description: 评论
+        allow_user_specified_delete_after_download: 允许用户根据包包设置自己的删除设置
+        enable_public_url: 启用公用 URL
+        can_have_public_url: 允许公共提交 URL
+      local_user:
+        password_expiration_interval: 密码每次到期
+      template_user:
+        days_til_expiration: 新帐户将到期
+        days_til_destruction: 将删除新帐户
+      home_server_rule:
+        email_pattern: 电子邮件地址重新发送
+        user_name_pattern: 用户名重新创建
+        ad_group_pattern: 目录服务组重新热
+        ad_dn_pattern: 目录服务 DN 重新进行
+        ldap_field_pattern1: LDAP 字段重新进行
+        ldap_field_pattern2: LDAP 字段重新进行
+        ldap_field_pattern3: LDAP 字段重新进行
+      send:
+        upload_cc: 此程序包已完成上载时，将通知这些接收方
+        download_cc: 当收件人已下载此软件包时，将通知这些收件人
+        receipt_cc: 这些收件人将是收件人数据包中的 Cc会收到的邮件
+    errors:
+      format: "%{attribute} %{message}"
+      e_configuration:
+        idp_cert_and_idp_cert_fingerprint_blank: 必须提供一个 "IdP 证书指纹 " 或 " IdP 证书 " 。
+      models:
+        delivery:
+          attributes:
+            title:
+              blank: 标题不能为空
+        distribution_list:
+          attributes:
+            name:
+              blank: 名称不能为空
+            contacts:
+              blank: 联系人不能为空
+        e_configuration:
+          attributes:
+            max_title_length_in_storage_paths:
+              not_a_number: 存储路径中的最大标题长度不是数字
+            days_until_packages_expire:
+              not_a_number: 软件包到期的天数不是数字
+        saml_configuration:
+          attributes:
+            allowed_clock_drift_in_ms:
+              not_a_number: 允许的时钟漂移 ( 毫秒 ) 不是数字
+      messages:
+        accepted: 必须接受
+        blank: 不能为空
+        confirmation: 与 %{attribute} 不匹配
+        empty: 不能空
+        equal_to: 必须等于 %{count}
+        even: 一定是
+        exclusion: 已保留
+        greater_than: 必须大于 %{count}
+        greater_than_or_equal_to: 必须大于或等于 %{count}
+        inclusion: 未包含在列表中
+        invalid: 无效
+        less_than: 必须小于 %{count}
+        less_than_or_equal_to: 必须小于或等于 %{count}
+        model_invalid: 验证失败:%{errors}
+        not_a_number: 不是数字
+        not_an_integer: 必须是整数
+        odd: 一定是奇怪的
+        other_than: 必须不是 %{count}
+        present: 必须为空白
+        record_invalid: 验证失败:%{errors}
+        restrict_dependent_destroy:
+          has_many: 无法删除记录，因为从属 %{record} 存在
+          has_one: 无法删除记录，因为存在从属 %{record}
+        required: 必须存在
+        taken: 已经被拿走了
+        too_long:
+          one: 太长 (最大值为 1 个字符)
+          other: 太长 ( 最大为 %{count} 字符)
+        too_short:
+          one: 太短 (最小为 1 个字符)
+          other: 太短 (最小为 %{count} 字符)
+        wrong_length:
+          one: 是错误的长度 (应该是 1 个字符)
+          other: 长度错误 ( 应为 %{count} 字符)
+      template:
+        body: '以下字段存在问题 :'
+        header:
+          one: 1 个错误禁止保存 %{model}
+          other: "%{count} 错误禁止保存此 %{model}"
+      user:
+        groups_are_inactive: 您是不活动的成员的组
+        user_is_inactive: 用户处于不活动状态
+        username_conflicts_with_existing_user: 用户名与现有用户帐户冲突。
+  admin:
+    saml:
+      edit:
+        saml: SAML
+        automatically_login_using_saml_idp_hint: 使用 SAML 身份提供者自动登录。  即使启用了使用 SAML
+          的自动登录， %{url} 也可用于直接登录到 Faspex 。
+    saml_configurations:
+      edit:
+        domain_url_hint: "(可选) 当访问此 Faspex 域时，用户将自动引导通过此 SAML 提供程序进行登录 (覆盖缺省值 )"
+        publicly_visible_hint: 允许用户从本地登录页面访问此 SAML 配置
+      test_warning: |-
+        警告: 此操作将结束当前 Faspex 会话并将您引导至该 SAML 提供者的登录页面。
+
+        为避免结束当前会话，您可以在专用窗口或其他浏览器中打开此链接以测试此配置。
+  app:
+    controllers:
+      account:
+        ad_groups_controller:
+          added_group: 已将 %{group_name} 组添加到工作组
+          sync_group: 正在同步 %{group_name}
+          updated_grp_prov: 已更新组供应策略。
+          updated_grp_import: 已更新组导入策略。
+          updated_error: 保存 %{group_name} 组配置时出错 :<br/>
+          removed_group: 已从工作组中除去 %{group_name} 组。
+          wg_not_found: 找不到工作组
+          no_groups_selected: 未选择任何组
+          group_sched_activated: 将激活 %{group_name}
+          group_sched_deactivated: 将取消激活 %{group_name}
+          group_sched_removed: 已计划除去 %{group_name}
+        memberships_controller:
+          added_wg: 已将模板用户添加到工作组 - %{wg_name}
+          added_wg_fail: 无法将模板用户添加到工作组 - %{wg_name}
+          remove_wg: 已从工作组中除去模板用户 - %{wg_name}
+          remove_wg_fail: 无法从工作组除去模板用户 - %{wg_name}
+        saml_groups_controller:
+          added_group: 已添加组 %{group_name}
+        users_controller:
+          no_wg_found: 找不到工作组 *%{wg_name}
+          add_to_wg_fail: 添加到工作组时出错 :%{error}
+          removed_from_wg: 已从工作组中除去。
+          removed_from_wg_fail: 从工作组中除去用户时出错 :%{error}
+          user_membership_updated: 已更新用户成员资格。
+          error_editing_membership: 编辑成员资格时出错 :%{error}
+          created_user: 已成功创建用户 %{user_name}
+          created_user_fail: 无法添加用户。
+          updated_user: 已成功更新用户 %{user_name}
+          permission_error: 您没有修改用户 %{user_name} 的许可权
+          activated: 已激活 %{user}
+          disabled_saml_user_note: "<br>注: 与禁用的 SAML 配置相关联的用户将保持不活动状态"
+          deactivated: 已取消激活的 %{user}
+          removed: 已除去 %{user}
+          removed_external: 已除去 %{user}
+          no_users_selected: 未选择用户
+          active_users: 活动用户
+          all_users: 所有用户
+          inactive_users: 不活动用户
+      admin:
+        authorization_domains_controller:
+          updated: 配置已更新。
+        nodes_controller:
+          deleted: 已删除 %{name}
+          deleted_fail: 无权删除 %{name}
+          connection_fail: "%{message}<br />%{status}<br />%{status_message}"
+          connection_success: "%{message} <br /> 连接成功!"
+        notifications:
+          login_announcements_controller:
+            updated: 更新的登录声明
+          package_instructions_controller:
+            updated: 更新的软件包指示信息
+        packages_controller:
+          invalid_num_days: 无效天数
+          no_older_pkgs: 没有早于 %{max} 的包
+        post_processes_controller:
+          activated: 已激活 %{script_name}
+          activated_error: 激活 %{script_name} 时出错
+          created: 已成功创建后处理脚本 %{script_name}
+          deleted: 已除去后处理脚本 %{script_name}
+          inactivated: 未激活 %{script_name}
+          inactivated_error: 停用 %{script_name} 时出错
+          updated: 已成功更新脚本 %{script_name}
+        saml_configurations_controller:
+          create_success: '已成功创建 SAML 配置<br>注: 您必须先更新 SAML 服务器上的元数据，然后登录。'
+          update_success: '已成功更新 SAML 配置<br>注: 您可能需要在登录之前更新 SAML 服务器上的元数据。'
+        settings:
+          display_settings_controller:
+            file_too_large: 文件太大。 最大文件大小为 5MB
+            remove_logo_fail: 无法删除定制徽标文件
+            remove_logo_success: 已成功除去定制徽标文件
+            unsupported_file_type: 定制徽标的文件类型不受支持。 文件必须是 jpeg， gif或 png 图像。
+            updated_settings: 更新的显示设置
+          entitlement_controller:
+            invalid_license: 授权许可无效
+            successful_entitlement: 成功的权利
+            unable_to_register: 无法注册
+          global_distribution_lists_controller:
+            created: 已创建全局分发列表 %{name}
+            deleted: 已删除的全局分发列表
+            updated: 更新的全局分发列表
+            updated_fail: 更新一个或多个全局分发列表时出错
+          license_controller:
+            license_upload_fail: 许可证上载失败
+            only_text_allowed: 仅允许文本文件
+            updated_license: 已更新许可证
+          package_storage_controller:
+            updated_settings: 更新的软件包存储设置
+          save_restore_config_controller:
+            config_restored: 配置已复原。 请确保重新启动 Faspex 以完成此过程。
+          security_controller:
+            updated_settings: 更新的安全性设置
+          transfer_options_controller:
+            updated_settings: 已更新的传输选项设置
+          web_server_controller:
+            updated_settings: 更新的 Web 服务器设置
+        share_membership_controller:
+          deleted: 已删除 %{mem_name}
+          deleted_fail: 无法删除 %{mem_name}
+        shares_controller:
+          add_term_fail: 无法添加 %{term}
+          added_term: 已添加 %{term}
+          created: 已创建 %{share} %{shar_name}
+          deleted: 删除的 %{share}
+          find_fail: 找不到 %{term}
+          updated: 更新的 %{share} %{shar_name}
+          updated_default: 更新的缺省收件箱
+      authenticated_controller:
+        expired: 您的会话已到期。 请再次登录以继续。
+        new_session: 已从 (%{remote}) 启动用户 %{username} 的另一个会话
+        timed_out: 您的会话已超时。 请再次登录以继续。
+      entitlement_controller:
+        success: 成功的权利
+      external:
+        submissions_controller:
+          send_to_recipient: 发送至 %{name}
+      invitations_controller:
+        invitation_failed: 邀请失败。 请稍后重试。
+        invitation_created: 已创建 %{email} 的邀请
+        reinvited: 重新邀请 %{name} 邀请
+        reinvited_fail: 重新邀请失败。 请稍后重试。
+        resend_invitation_failed: 重新发送邀请失败。 请稍后重试。
+        resent_invitation: 重新发送邀请到 %{name}
+        deleted_invitation: 已删除邀请
+        deleted_invitation_try_again: 删除邀请失败。 请稍后重试。
+      login_base_controller:
+        login_error_message: 您的登录失败。 请重试。 如果您迂到重复登录失败，那么应单击 "忘记密码" 链接以重置密码。
+      login_controller:
+        connect_enabled: 已启用 IBM Aspera Connect !
+        login_URL_change: 登录 URL 已更改。 请更新浏览器书签。
+        session_already_disconnected: 此会话已断开连接
+      m_configuration_controller:
+        updated: 邮件配置已更新。
+      m_template_controller:
+        loaded: 已成功装入缺省设置
+        updated: 已成功更新 %{template} 电子邮件通知
+      metadata_profiles_controller:
+        cannot_delete_profile: 无法删除概要文件，它由正常软件包使用。
+        cannot_delete_profile_dropbox: 无法删除概要文件，它由 dropbox %{db_name} 使用。
+        created: 已创建元数据 %{profile}
+        profile_deleted: 概要文件已删除。
+        save_success: 已成功保存元数据概要文件
+        updated: 已更新
+      ms_admin_controller:
+        home_server_rules_changed: 家庭服务器规则已更改。 重新计算主服务器以应用更改。
+        updated_rule: 已更新规则
+        deleted_rule: 已删除规则
+        added_new_rule: 添加新规则
+        error_finding_home_server: 查找要删除的主服务器时出错
+        removed_server: 已除去服务器
+        updated_home_server_settings: 更新的主服务器设置
+        updated_attributes: 已更新 %{attribute}
+        access_denied: 拒绝访问。
+      pending_controller:
+        archived: 已归档程序包 "%{pkg_name}"
+        archived_fail: 归档软件包时出错。 请稍后重试。
+        deleted: 已删除包 "%{pkg_name}"
+        deleted_fail: 删除软件包时出错。 请稍后重试。
+      received_controller:
+        package_archived: 已归档程序包 %{p_name}
+        package_archived_fail: 归档软件包时出错。 请稍后重试。
+      registrations_controller:
+        failed_registration: 注册失败。 请稍后重试。
+      reset_password_tokens_controller:
+        no_account_exists: 此帐户不再存在。
+        expired_pw_link: 密码重置链接已使用或已到期且不再有效。
+        reset_success: 已成功重置密码 !
+        reset_submitted: 已提交密码重置请求。 如果您不久未收到电子邮件，请与管理员联系以获取帮助。
+      saml_controller:
+        does_not_exist: 请求的 SAML 提供程序不存在
+        disabled: 已禁用请求的 SAML 提供程序
+        invalid_metadata: 无效的元数据 URL
+      sent_controller:
+        archived: 已归档程序包 "%{pkg_name}"
+        archived_fail: 归档软件包时出错。 请稍后重试。
+        deleted: 已删除包 "%{pkg_name}"
+        deleted_fail: 删除软件包时出错。 请稍后重试。
+        relay: 已启动共享 %{share} 的中继
+        relay_fail: 重新启动中继时出错。 请稍后重试。
+      settings:
+        distribution_lists_controller:
+          created: 已创建分发列表 %{dist_list_name}
+          deleted: 已删除的分发列表
+          updated: 更新的分发列表
+          error_updating: 更新一个或多个分发列表时出错
+        passwords_controller:
+          success: 密码已成功更改。
+        preferences_controller:
+          updated: 已更新首选项
+      user_profile_fields_controller:
+        max_field_check_fail: 您只能具有 %{max} 用户概要文件字段
+        saved: 已成功保存用户概要文件字段
+      workgroup:
+        workgroups_controller:
+          activate: 激活
+          activated_members: 已激活 %{counts} member%{plural}。 %{msg}
+          add_ds: 无法添加 DS 组。 请稍后重试。
+          add_ds_fail: 将 DS 组 %{group} 添加到工作组 %{name}
+          add_member: 已将 %{name} 添加到 %{box}
+          add_member_fail: 无法添加成员。 请稍后重试。
+          create_success: '已成功创建 '
+          deactivate: 取消激活
+          deactivated_success: 已取消激活 %{counts} member%{plural}。 %{msg}%{admin}
+          deleted_success: 删除的 %{type} %{name}
+          external_email_no_standard_access: 无法授予外部电子邮件用户标准访问权。 未进行任何更改。
+          external_email_deactivated_fail: 无法取消激活外部电子邮件用户，仅除去。 未进行任何更改。
+          members_actions: 成员操作...
+          no_ds_selected: 未选择 DS 组
+          no_members_selected: 未选择成员
+          remove: 除去
+          remove_member: 已从工作组中除去 %{member} 。
+          remove_member_fail: 无法除去成员。 请稍后重试。
+          remove_ds_group: 已从工作组中除去 %{count} 。
+          remove_ds_group_fail: 无法除去 DS 组。 请稍后重试。
+          set_admin: 将 %{member} 设置为 %{name} admin。
+          set_admin_fail: 外部电子邮件用户不能成为 dropbox 管理员。 未进行任何更改。
+          set_ds_access: 将 %{group} 设置为 %{level} 访问。
+          set_ds_access_fail: 无法在 DS 组上设置 %{level} 访问。 请稍后重试。
+          set_regular_access: 将 %{member} 设置为常规访问。
+          set_regular_access_fail: 无法设置对成员的常规访问权。 请稍后重试。
+          set_standard_access: 设置标准访问权
+          set_submit_only: 将 %{member} 设置为仅提交。
+          set_submit_only_fail: 无法设置对成员的仅提交访问权。 请稍后重试。
+          set_submit_only_access: 设置仅提交访问权
+          set_wg_admin: 设置为 %{wg_name} admin
+          skipped_sys_admin: 已跳过 %{SIZE} 系统管理员
+          updated_wg: 已更新 %{type}
+          user_not_found: 找不到用户
+    views:
+      account:
+        ad_groups:
+          ad_group:
+            error: 错误
+            invalid: 无效
+            pending: 暂挂 %{methodop}
+          additional_permissions:
+            edit_add_perm: 编辑其他许可权
+          forms:
+            group_import:
+              save: 保存
+            import_users:
+              full_name: 全名
+              import_date: 导入日期
+              status: 地位
+              sync_now: 立即同步
+              user_name: 用户名
+            wg_member:
+              actions: 行动
+              add_to: 添加到...
+              date_added: 已添加日期
+              remove: 除去
+              wg_name: 工作组名称
+          user_ad_group:
+            active: 活动
+            inactive: 不活动
+        directory_service_groups:
+          edit:
+            back: 回来了
+            edit_dir_group: 编辑目录服务组 :%{groupname}
+            group_import: 组导入策略
+            imported_users: 导入的用户 ( %{mem_count})
+            workgroup_memberships: 工作组成员资格 ( %{mem_count})
+          index:
+            activate: 激活
+            date_added: 已添加日期
+            deactivate: 取消激活
+            directory_service: 目录服务
+            group_name: 组名
+            members: 成员
+            new_group: " 新建组"
+            remove: 除去
+            status: 地位
+            sync: 同步
+            view_op_history: 查看操作历史记录
+          new:
+            back: 回来了
+            cancel: 取消
+            dir_services: '目录服务:'
+            import: 导入
+            import_dir_serv: 从目录服务导入组
+            search_dir_service: '搜索目录服务:'
+        directory_service_users:
+          additional_permissions:
+            edit_add_perm: 编辑其他许可权
+          index:
+            back: 回来了
+            directory_service: '目录服务:'
+            import: 导入
+            import_user_from_dir_serv: 从目录服务导入用户
+            search: 搜索
+            search_term: '搜索项:'
+            searches_limit: 搜索限制为 20 个结果。
+            searching: 正在搜索
+            usr_not_found: 未找到用户
+        memberships:
+          actions: 行动
+          add_to: 添加到...
+          back: 回来了
+          name: 名称
+          remove: 除去
+          self_reg_added: '自注册用户将添加到以下工作组:'
+          template_user_workgroups: 模板用户工作组
+        passwords:
+          back_to_edit: 返回以进行编辑
+          cancel: 取消
+          password: 更改 %{local_name} 的密码
+          reset_confirm: 确定要重置此用户的密码吗 ? 将向该用户发送一封电子邮件通知，允许他们登录并更改其密码。
+          reset_password: 重置密码
+          update_password: 更新密码
+        registrations:
+          form:
+            email: 电子邮件
+            first: 第一
+            last: 最后
+            login: 登录
+          index:
+            approve: 批准
+            deny: 否认
+            faspex_reg_type: Faspex 配置为 %{type} 注册。
+            new_message: 这意味着新创建的帐户将需要核准 %{not} 。
+            not: 不
+            self_reg_users: 自注册用户将继承 %{template_user} 的许可权，并且将自动成为以下 %{workgroups}的成员。
+        saml_groups:
+          edit:
+            back: 回来了
+            edit_saml: 编辑 SAML 组:%{groupname}
+            group_prov_policy: 组供应策略
+            users: 用户 ( %{mem_count})
+            workgroup_memberships: 工作组成员资格 ( %{mem_count})
+          index:
+            activate: 激活
+            date_added: 已添加日期
+            deactivate: 取消激活
+            group_name: 组名
+            members: 成员
+            new_group: " 新建组"
+            remove: 除去
+            saml_config: SAML 配置
+            status: 地位
+          new:
+            back: 回来了
+            cancel: 取消
+            create: 创建
+            create_new_saml: 创建新的 SAML 组
+            group_name: '组名 (DN):'
+            saml_config: SAML 配置
+        template_users:
+          account_details: 帐户详细信息
+          cancel: 取消
+          edit_template_user: 编辑模板用户
+          form:
+            workgroup_memberships:
+              date_added: 已添加日期
+              remove: 除去
+              workgroup_name: 工作组名称
+              workgroups: 工作组
+          update: 更新
+        users:
+          add_permissions:
+            edit_add_perm: 编辑其他许可权
+          edit:
+            change_password: 更改/重置密码
+            edit_user: 编辑用户:%{user}
+            return_to_user_list: 返回到用户列表
+            type: "(类型:%{user_type})"
+            workgroup_memberships: 工作组成员资格
+          edit_form:
+            cancel: 取消
+            update_user: 更新用户
+          edit_wg:
+            add_user: 将用户添加到工作组
+            back_to_edit: 返回至编辑
+            remove: 除去
+            workgroup_mem_for: "%{user} 的工作组成员资格"
+            workgroup_name: 工作组名称
+          external_users:
+            accounts: 帐户
+            remove: 除去
+          fieldsets:
+            account_details:
+              account_details: 帐户详细信息
+              active: 活动
+              admin_hint: 管理员可以添加/除去用户和管理服务器配置。
+              inactive: 不活动
+              manager_hint: 管理员可以添加/除去用户
+              never: 永不
+              role: '角色 :'
+              text_area_hint: 输入逗号，分号或空格分隔的电子邮件地址
+              user_hint: 常规用户可以发送和接收 Faspex 包
+            advanced_transfer:
+              adv_trans_setting: 高级传输设置
+              checked: 查
+              initial_transfer: 初始传输速率
+              max_rate: 允许的最大速率
+              minrate_hint: 如果选中，客户机将无法调整其传输策略或最小传输速率 (缺省值 :%{config})
+              server_to_user: 服务器到用户 ( 缺省值 :%{config})
+              transfer_alert: |-
+                缺省情况下， faspex 将使用 Aspera Central Server 部分中的传输设置。
+                但是，此处您可以设置特定于用户的传输设置，这将优先于服务器范围的设置。
+              unchecked: 未选中
+              user_to_server: 用户到服务器 ( 缺省值 :%{config})
+            ds_history:
+              action: 行动
+              ds_history: DS 历史记录 ( %{dom_name})
+              notes: 注释
+              operation: 操作
+              show_all: 全部显示
+              time: 时间
+            package_deletion:
+              after_download: '下载后 :'
+              allow_user_delete: '允许用户按程序包设置自己的删除设置 :'
+              delete_files_after: 在 <strong>任何接收方</strong> 下载所有文件后删除文件
+              delete_files_all: 在 <strong>所有收件人</strong> 下载所有文件后删除文件
+              do_nothing: 不做任何事
+              package_deletion: 程序包删除
+              server_delete: 缺省值 :%{config}
+            password_policy:
+              custom_pw_policy: 定制密码策略
+              pw_expires: 密码到期
+              prevent_pw_reuse: 防止密码复用
+              every_x_days: 每个 %{x} 天 ( 秒)
+              never: 永不
+            permissions:
+              affirm: 是啊
+              allow_inviting_external: '允许邀请外部发件人:'
+              allow_public_submission: '允许公共提交 URL:'
+              allowed_to: '允许 :'
+              can_see_global_dist_lists: '可以查看全局分发列表:'
+              control_hint: 如果未选中，那么用户将无法发送给用户或提交给 dropbox/workgroups
+              create_drop_packages: 如果禁用此选项，那么用户将只能创建 dropbox 软件包 ( 如果它们是任何 dropbox的成员
+                ) 。
+              create_normal: '可以创建正常数据包:'
+              external_email: '可以发送到外部电子邮件:'
+              ip_addr_hint: 输入以逗号分隔的地址/范围，例如 <b>10.0.*， 192.168.1.1</b>
+              keep_dir_private: '保留用户目录专用:'
+              neg: 没有
+              permissions: 许可权
+              see_global_dis_list: '可以查看全局分发列表:'
+              send_to_all: '可以发送给所有 Faspex 用户:'
+              send_to_all_send_to_wg: 如果允许，用户可以发送给所有 Faspex 用户。 否则，用户只能发送给其他工作组成员。
+              user_server_def: '用户服务器缺省值 (当前: %{def})'
+            personal_details:
+              first_name: 名字
+              last_name: 姓氏
+              personal_details: 个人详细信息
+            sender_quota:
+              sender_hint: 覆盖缺省发件人限额限制
+              sender_quota: 发送方限额
+              sender_quota_hint: 在滚动窗口期间发送的总数据大小
+              sender_quota_leg: '发送方限额:'
+            user_history:
+              last_login_time: 上次登录时间
+              user_history: 用户历史记录
+            welcome_email:
+              welcome: 欢迎电子邮件
+          index:
+            accounts: 帐户
+            activate: 激活
+            deactivate: 取消激活
+            remove: 除去
+          menus:
+            add_account:
+              add_account: '添加帐户 '
+              dir_serv_user: 目录服务用户
+              faspex_user: Faspex 用户
+              new_user: " 新建用户"
+            toggle_users:
+              active_users: 活动用户
+              all_users: 所有用户
+              inactive_users: 不活动用户
+          new:
+            back: 回来了
+            user_account: 新建用户帐户
+          new_form:
+            cancel: 取消
+            confirm_password: 确认密码
+            create_account: 创建帐户
+            first_name: 名字
+            last_name: 姓氏
+            or: " 或 "
+            password: 密码
+            set_password: 设置密码
+          user:
+            invalid: 无效
+            same_as_login: "( 与登录相同 )"
+          user_list:
+            check_all_users: 检查所有用户
+            check_user: 检查用户
+            date_added: 已添加日期
+            email: 电邮
+            first: 第一
+            home_server: 主服务器
+            last: 最后
+            last_login: 上次登录
+            login: 登录
+            status: 地位
+            type: 类型
+      active: 活动
+      ad_admin:
+        ad_users_list_rows:
+          active: 活动
+          full_name: 全名
+          import_date: 导入日期
+          inactive: 不活动
+          invalid: 无效
+          user_name: 用户名
+        edit_config:
+          and_test: " 和测试"
+          anonymous: 匿名
+          dir_service_details: 目录服务详细信息
+          dir_service_type: '目录服务类型:'
+          enable_dir_service: '启用目录服务:'
+          ex_dir_service: 外部目录服务
+          login: '登录 :'
+          login_method: '登录方法:'
+          password: '密码 :'
+          port: '端口 :'
+          provide_credentials: 提供凭证
+          save: 保存
+          save_and_test: 保存并测试
+          server: '服务器 :'
+          treebase: '树座 :'
+          use_tls: '使用安全方式 (TLS):'
+        operation_hist:
+          details: 细节
+          dir_service_op_history: 目录服务操作历史记录
+          no_op: 未执行任何操作
+          operation: 操作
+          time: 时间
+          view: 维尤
+        status: 地位
+      ad_group_membership:
+        active: 活动
+        inactive: 不活动
+      ad_groups:
+        error: 错误
+        invalid: 无效
+        pending: '暂挂 '
+      admin:
+        auth_domain:
+          edit:
+            edit_name: 编辑 %{name}
+          form:
+            anonymous: 匿名
+            dir_service_details: 目录服务详细信息
+            dir_service_name: '目录服务名称:'
+            dir_service_type: '目录服务类型:'
+            dn_message: 通常是专有名称 (DN)
+            enable_dir_service: '启用目录服务:'
+            login: '登录 :'
+            login_method: '登录方法:'
+            password: '密码 :'
+            port: '端口 :'
+            provide_cred: 提供凭证
+            save: 保存
+            save_and_test: 保存并测试
+            secure_tls: '使用安全方式 (TLS):'
+            server: '服务器 :'
+            treebase: '树座 :'
+            username_attr: '用户名属性:'
+          index:
+            add_new: 添加新 %{name}
+            disabled: 已禁用
+            enabled: 已启用
+            server: 服务器
+            status: 地位
+            type: 类型
+          new: 新建 %{name}
+        fasp_nodes:
+          fasp_nodes:
+            active_sessions: 活动会话数
+            address: 地址
+            errors: 错误
+            last_poll: 上次成功轮询时间
+            node_id: 节点标识
+            cluster_id: 集群标识
+            polling_strategy: 轮询策略
+            os: 操作系统
+            status: 地位
+        nodes:
+          edit:
+            cancel: 取消
+            edit_name: 编辑 %{user} - %{node}
+          form:
+            advanced_config: <i class="icon-plus"></i>高级配置
+            basic_config: 基本配置
+            config_message: 以下配置必须指向主管 Aspera Enterprise Server的服务器。 该地址由 Web 应用程序用于收集传输统计信息。
+              如果 Aspera Enterprise Server 与 Web 应用程序在同一台机器上运行，那么正确的地址为 127.0.0.1。
+            sec_add_message: 以下地址是您的用户为了启动传输所需要的内容。 如果您有一组用户需要使用其他地址 (例如，由于网络条件 )
+              ，请使用 "辅助地址" 字段来指定 IP 范围。 请注意，辅助地址不适用于传输中继系统。
+            storage_error: 此文件存储器当前用作系统缺省收件箱。 编辑它将使所有现有包不可供用户使用。
+            test_connect: 测试连接
+          index:
+            add_new: 添加新 %{name}
+            default_inbox: 缺省收件箱
+            location: 地点
+            name: 名称
+            source: 来源
+            shares: 文件存储器
+            status: 地位
+            update: 更新
+          new:
+            cancel: 取消
+            new_name: 新建 %{name}
+          test: 连接成功!
+        notifications:
+          login_announce:
+            edit:
+              ann_hint: 此消息将显示在登录屏幕上
+              update: 更新
+          package_inst:
+            pkg_hint: 此消息将显示在发送屏幕上
+            update: 更新
+        packages:
+          delete:
+            age_days: 年龄<br/>(天)
+            cancel: 取消
+            delete_confirm: |-
+              确定要删除这些包的文件吗 ?
+              您将无法撤销此操作。
+            delete_files: 删除文件
+            files: 文件
+            files_on_server: "<br/>服务器上的文件 ?"
+            full_downloads: 完整<br/>下载
+            recipients: 收件人
+            sender: 发送方
+            size: 大小
+            status: 地位
+            title: 标题
+            upload_completion: 上载<br/>完成
+            warning: '此操作将删除以下软件包的文件 :'
+          index:
+            action: 行动
+            all_packages: 所有程序包
+            days_or_older: 天或更早
+            delete_files: 删除文件...
+            download: 下载/ 完整 /部分
+            for_packages: 对于包
+            files: 文件
+            files_on_server: 服务器上的文件 ?
+            package_created: 已创建包<br>
+            recipients: 收件人
+            relays: 继电器
+            search: 搜索
+            sender: 发送方
+            size: 大小
+            status: 地位
+            title: 标题
+            upload_completed: 上载<br>已完成
+          relays:
+            all_packages: 所有程序包
+            completed_relays: 公共中继系统
+            failed_relays: 失败的中继系统
+            files: 文件
+            incomplete_relays: 不完整的中继
+            ip_relays: 正在进行中继
+            package_created: 已创建包<br>
+            recipients: 收件人
+            relays: 继电器
+            search: 搜索
+            sender: 发送方
+            size: 大小
+            status: 地位
+            title: 标题
+            upload_completed: 上载<br>已完成
+          show_details:
+            full: 满了
+            full_partial: 全部/部分
+            ip_addr: IP 地址
+            package_download_details: 软件包下载详细信息
+            partial: 部分
+            start: 开始时间
+            stop: 停止时间
+            time_elapsed: 耗用时间
+            username: 用户名
+        post_processes:
+          edit:
+            cancel: 取消
+            edit_script: 编辑脚本 %{name}
+            update: 更新
+          env_var_help:
+            description: 描述
+            faspex_meta<field>: 名为 &lt;field&gt; 的元数据字段的值，其中大写字母替换为小写字母，空格替换为下划线
+            faspex_metadata_fields: 为包定义的元数据字段的逗号分隔列表
+            faspex_pkg_delivery_id: 软件包的交付标识 (不同于软件包标识和软件包 UUID)
+            faspex_pkg_dir: 包路径
+            faspex_pkg_id: 程序包标识
+            faspex_pkg_is_forward: 1 用于转发数据包， 0 用于原始数据包
+            faspex_pkg_name: 程序包标题
+            faspex_pkg_note: 包裹说明
+            faspex_pkg_total_bytes: 包的大小 ( 以字节计 )
+            faspex_pkg_total_files: 包中的文件数
+            faspex_pkg_uuid: 包的 UUID
+            faspex_recipient_count: 收件人数 (例如， "3")
+            faspex_recipient_i: 第 i 个接收方的名称
+            faspex_recipient_list: 逗号分隔的收件人列表 ( 例如， "admin， johndoe")
+            faspex_sender_email: 发送方的电子邮件
+            faspex_sender_id: 发送方的标识
+            faspex_sender_name: 发送方的名称
+            variable: 变量
+          form:
+            env_var_help: 环境变量帮助
+            exact_match: 精确匹配
+            execution_crit: 执行条件
+            high: 高
+            low: 低
+            package_date_end: 程序包日期结束
+            package_date_start: 程序包日期开始
+            package_file_count: 程序包文件计数
+            package_file_hint: 在此处输入程序包中文件数的范围
+            package_name: 包名
+            package_note: 包裹说明
+            package_size: 程序包大小
+            range_hint: 在此处输入程序包大小的范围
+            recipient_email_list: 收件人电子邮件列表
+            recipient_list: 收件人列表
+            script_to_run: 要运行的脚本
+            sender_email: 发件人电子邮件
+            sender_name: 发件人姓名
+          index:
+            action: 行动
+            create_new: 新建
+            execution_criteria: 执行条件
+            log: Log
+            name: 名称
+            post_processing: 后处理
+            script: 剧本
+          new:
+            add_new_script: 添加新脚本
+            cancel: 取消
+            create: 创建
+          show_events:
+            back: 回来了
+            exec_criteria: 执行<br/>条件
+            package_name: 包名
+            package_sender: 程序包<br/>发送方
+            package_uuid: 程序包 UUID
+            post_processing_exec_log: '后处理 : %{name} 的执行日志'
+            time_of_exec: "<br/>执行的时间"
+        saml:
+          edit:
+            saml_integration: SAML 集成
+            update: 更新
+        saml_configurations:
+          edit:
+            allowable_clock_drift: 允许的时钟漂移 ( 毫秒)
+            attribute_mapping: 属性映射
+            browse: 浏览 ...
+            certificate: 证书
+            create_saml_config: 创建 SAML 配置
+            default_saml_config: 缺省 SAML 配置
+            domain_url: 域 URL
+            fingerprint: Emprinte Digitale
+            fingerprint_alg: 指纹算法
+            hide: 英
+            import_from_file: '从文件导入 : '
+            import_from_text: '从文本导入 : '
+            import_from_url: '从 URL 导入 : '
+            import_metadata_settings: 从文本导入设置
+            import_metadata_settings_url: 从元数据 URL 导入设置
+            import_settings: 从元数据 %{dir} 导入设置
+            name: 名称
+            name_id_format: 名称标识格式
+            new: 新
+            public_login_inst: 公共登录指示信息
+            publicly_visible: 公共可视
+            redirect_saml: 在注销时重定向到 SAML 注销页面
+            restrict_login_groups: 限制对已知组的访问
+            restrict_login_groups_hint: 如果选中，那么只允许添加到 Faspex 的 SAML 组的成员登录。
+            restrict_login_users: 限制对已知用户的访问
+            restrict_login_users_hint: 如果选中，那么只允许添加到 Faspex 的现有 SAML 用户登录。
+            saml_config: SAML 配置
+            saml_config_details: SAML 配置详细信息
+            SAML_metadata_server: SAML 服务器元数据
+            SAML_metadata_server_url: SAML 服务器元数据 URL...
+            saml_settings: SAML 设置
+            show: 显示
+            SSO_target_URL: 'SSO 目标 URL:'
+            update: 更新
+            update_saml_config: 更新 SAML 配置
+          index:
+            actions: 行动
+            add_new_config: 添加新的 SAML 配置
+            default: " ( 缺省值 )"
+            disable: 禁用
+            disable_title: 禁用
+            disabled: " ( 已禁用)"
+            domain_url: 域 URL
+            enable: 使能
+            enable_title: 启用
+            make_default: 缺省设置
+            metadata: 元数据
+            name: 名称
+            remove_default: 除去缺省值
+            saml_config: SAML 配置
+            saml_confirm: 确定要启用此 SAML 配置吗 ?
+            saml_confirm_disable: 确定要禁用此 SAML 配置吗 ?
+            test: 测试
+          user_profile:
+            name: 名称
+            remove: 除去此概要文件字段
+            remove_confirm: 确定要除去此用户概要文件字段吗 ?
+          user_profile_fields:
+            add_local_field: 添加本地概要文件字段
+            default_profile_fields: 缺省概要文件字段
+            enabled: 已启用
+            fields_required: 所有 Faspex 用户都需要的字段
+            global_cust_message: '" 用户概要文件 " 选项卡中定义的定制字段'
+            global_cust_prof_fields: 全局定制概要文件字段
+            local_cust_message: 特定于此 SAML 配置的用户概要文件字段
+            local_cust_prof_fields: 本地定制概要文件字段
+            name: 名称
+            required: 必需
+            saml_name: SAML 名称
+            save_note: '注意: 在单击 " 更新 SAML 配置" 之前，不会保存任何更改'
+        settings:
+          display_settings:
+            date_format:
+              format: 格式
+              meaning: 意思
+              perc_a: 缩写的工作日名称 ( Sun)
+              perc_A: 完整工作日名称 ( 星期日)
+              perc_b: 缩写月份名称 ( Jan)
+              perc_B: 完整月份名称 ( 1月)
+              perc_d: 月日 ( 01..31)
+              perc_j: 年日 ( 01..366)
+              perc_m: 年月 ( 01..12)
+              perc_Y: 世纪
+              perc_y: 无世纪的年份 (00...99)
+            edit:
+              acc_display_format: 帐户显示名称格式
+              custom_logo: '定制徽标:'
+              date_format: 日期格式
+              date_formatting_help: 日期格式帮助
+              default_logo_help: '缺省徽标是 295x51 '
+              display_settings: 显示设置
+              examples: 例子
+              local_login_inst: 本地登录指示信息
+              login_page_header: 登录页面标题
+              remove_confirm: 确定要除去当前定制徽标吗 ?
+              remove_logo: 除去定制徽标
+              update: 更新
+          entitlement:
+            edit:
+              customer_id: '客户标识:'
+              entitlement_license: 授权许可
+              faspex_enabled: '已启用 faspex :'
+              key: '关键 :'
+              max_active_users: '最大活动用户数:'
+              save: 保存
+          global_dist_lists:
+            index:
+              add_new_list: 添加新的分发列表
+              contacts: 联系人
+              global_dist: 全局分发列表
+              name: 名
+              no_list_alert: 没有全局分发列表。
+              update_dist_lists: 更新分发列表
+            new:
+              new_global_list: 新建全局分发列表
+          license:
+            edit:
+              OR: 或
+          package_storage:
+            edit:
+              after_pkg_dl: 下载包后
+              after_upload_ends: 上载结束后
+              characters: 人物
+              days: 天
+              delete_files_all: 在 <strong>所有收件人</strong> 下载所有文件后删除文件
+              delete_files_any: 在 <strong>任何接收方</strong> 下载所有文件后删除文件
+              do_nothing: 不做任何事
+              max_pkg_title: 存储路径中的最大包标题长度
+              package_storage: 包存储
+              packages_expire: 包到期
+              pkg_by_pkg_del: 允许所有用户在包包基础上设置自己的删除设置
+              update: 更新
+          save_restore:
+            index:
+              dl: 下载
+              dl_curr_config: 下载当前配置
+              faspex_config_help: 将保存 faspex 配置文件夹和数据库
+              restore: 恢复
+              restore_config: 复原配置
+              save_restore: 保存/恢复
+              upload_help: 上载并应用已保存的配置文件 (*.tar.gz)
+              version_help: '注意: 复原版本应与 faspex 的当前版本匹配'
+          security:
+            edit:
+              act_dir_hint: 目录服务用户将不会被锁定或取消激活
+              affirm: 是啊
+              after: 之后
+              after_x_days: "%{num} 天后"
+              after_inactivity: "%{len} 不活动天数之后"
+              after_one_success: 上传成功后
+              allow_custom_link: 允许用户设置定制链接到期策略
+              allow_email_change: 允许用户更改其电子邮件地址
+              allow_external_pkg_hint: 如果选中，将允许向 Faspex 用户发送具有 (外部) 标志的软件包
+              allow_external_pkg_to_faspex: 允许 Faspex 用户的外部包
+              allow_usrs_create: 允许用户创建正常数据包
+              allow_usrs_create_hint: 如果禁用，用户将只能创建 dropbox 软件包 ( 如果它们是任何 dropbox的成员
+                ) 。
+              allow_usrs_send: 允许所有用户发送给所有其他 Faspex 用户
+              always: 总是
+              allow_unlock: 允许锁定用户解锁自己
+              allow_send_email: 允许发送至外部电子邮件地址
+              appr_recipient_domains: 核准的接收方域
+              appr_sender_domains: 核准的发送方域
+              block_email_domain: 阻止以下电子邮件域自注册
+              can_override_ear_hint: 用户可以在邀请外部发件人时选择是否强制实施加密
+              can_see_dist_list: 缺省情况下，用户可以查看全局分发列表
+              cipher: FASP 密码
+              days: 天
+              dbox_override: 允许 dropbox 拥有自己的加密设置
+              def_pw_expire: 缺省密码到期时间间隔
+              default: 缺省值
+              disable: 禁用
+              disable_hint: 发送方配额滚动窗口，持续时间 ( 以小时为单位 )
+              ds_users: "%{int} 不活动天数后的 DS 用户"
+              email_expire_after_download: 完整包下载后到期
+              enable: 启用
+              encrypt_hint: 如果启用，那么 HTTP 回退传输也将加密
+              encrypt_transfers: 加密传输
+              encryption: 加密
+              enforce_pw_hist: 不能复用先前的
+              every: 每
+              faspex_acc: Faspex 帐户
+              force_pw_reset: 要求新用户在首次登录时更改密码
+              hours: 小时
+              inviting_allowed: 允许邀请外部发件人
+              ignore_invalid_recipients: 忽略无效收件人
+              ignore_invalid_recipients_hint: 如果选中，那么当包针对无效收件人时，打包发送将不会失败
+              inv_link_expires: 邀请链接到期
+              inv_link_help: 为个人和下拉框邀请设置链接到期策略。
+              keep_usr_dir: 保留用户目录专用
+              list_hint: 输入逗号，分号或空格分隔的电子邮件地址
+              local_users: "%{int} 不活动天数后的本地用户。"
+              lock_hint: "%{login_count} 登录尝试失败后"
+              lock_users: 锁定用户
+              minutes: 分钟
+              neg: 没有
+              never: 永不
+              new_user_pw: 新用户密码 %{req}。 现有密码将保持有效 %{warn}
+              obfuscation: 模糊处理
+              optional: 可选
+              optional_hint: 用户可在发送时间选择是否加密
+              otfv: 移出文件验证 ( OTFV)
+              outside_email_add: 外部电子邮件地址
+              package_link_expires: 程序包链接到期
+              package_link_help: 如果选中，那么软件包仅可下载一次 %{master_warn}
+              passwords: 密码
+              passwords_expire: 密码到期
+              public_url_allowed: 允许公共提交 URL
+              prevent_pw_reuse: 防止密码复用
+              prev_conc: 阻止并发登录
+              pw_reset_hint: 密码重置电子邮件将被发送，密码更改后将解锁帐户
+              quota_limit: 在滚动窗口期间发送的总数据大小
+              reg_hint: '可选: 如果设置了文本，那么用户将需要接受该语句以进行注册'
+              reg_users_mutual: 自注册用户可以发送到另一个用户
+              registration_instructions: 注册指示信息
+              registration_type: 自注册
+              registrations: 注册
+              remove_users: 除去用户
+              req_external_reg: 要求外部用户注册
+              require_external_hint: 如果选中，那么外部用户必须注册 Faspex 帐户才能下载软件包。
+              saml_users: "%{int} 不活动天数后的 SAML 用户。"
+              security: 保安
+              send_welcome_email: 向所有新用户发送欢迎电子邮件
+              sender_quota: 发送方限额
+              sender_quota_hint: '发送给这些域中的用户的数据包不会计入发送方限额。 使用逗号 (，)，分号 ( ; )或空格来分隔电子邮件域。
+                例如 : @aspera.com; @ibm.com'
+              sender_quota_option: 发送方限额选项
+              sender_quota_duration: 发送方配额持续时间
+              sender_quota_limit: 发送方限额限制
+              session_timeout: 会话超时后
+              slave_hint: 如果选中，用户一次只能从一个客户端登录
+              strong_pw: 使用强密码
+              timeout_hint: 会话将在不活动的指定分钟数后超时
+              tos: 发送服务条件
+              tos_hint: '可选: 如果文本是设置的，用户将需要接受该语句才能发送数据包'
+              update: 更新
+              use_encryption_at_rest: 使用加密功能
+              use_obf: 对文件名使用模糊处理
+              use_obf_hint: 文件名模糊处理是不可逆的 !
+              enforce_expiration_policy: 始终作为到期策略的最大持续时间执行
+          transfer_options:
+            edit:
+              aspera_connect_sett: Aspera Connect 设置
+              def_max_rate: 缺省允许的最大速率
+              dl_dur_trans: 传输期间下载
+              dl_over_http: 通过 HTTP 下载
+              http_gateway_hint: 以下地址是用户通过 http-gateway 开始传输时需要的内容。
+              http_gateway_url: HTTP 网关 URL
+              initial_def_trans_rate: 初始缺省传输速率
+              local_host_connect: 本地主机连接
+              local_host_hint: 如果选中， Faspex 将不会使用 Aspera CDN 来服务 Connect ，而是使用 Faspex
+                上可用的本地 Connect SDK 。
+              local_to_remote: 本地服务器到远程服务器
+              lock_connect_sdk: 锁定 Connect SDK 版本
+              lock_connect_sdk_hint: '如果新版本可用，请防止 Faspex 更新本地 Connect SDK 。 此设置持续跨升级。
+                注: Faspex 定期检查更新，如果禁用此选项，那么不会立即下载新版本'
+              min_connect_version: 最低连接版本
+              minrate_hint: 如果选中，客户机将无法调整其传输策略或最小传输速率
+              prefer_http_connect: 首选 HTTP 扩展扩展
+              prefer_http_connect_hint: 如果选中， Faspex 将强制浏览器使用 HTTP 方法与 Connect Desktop
+                Client 进行通信，而不是使用浏览器扩展 ( 仅适用于 Chrome 浏览器)
+              serv_to_serv_relay_trans_sett: 服务器到服务器中继设备传输设置
+              server_to_user: 服务器到用户
+              transfer_options: 传输选项
+              update: 更新
+              user_to_server: 用户到服务器
+              http_gwy_connection_success: 连接成功
+              http_gwy_connection_error: 与 IBM Aspera HTTP 网关建立连接时出错
+          web_server:
+            alt_address_fields:
+              remove_addr: 除去此备用地址
+            edit:
+              add_alt_address: 添加备用地址
+              address_name: 地址名称
+              alternate_addr_hint: 为某些用户需要不同的服务器地址时使用
+              desc_email: 电子邮件描述
+              http_port_hint: 由 apache 配置确定
+              https_port_hint: 对于由 apache 配置确定的 SSL 上的加密内容
+              remove: 除去
+              show_emails: 在电子邮件中显示
+              update: 更新
+              web_server: Web 服务器
+        shares:
+          edit:
+            cancel: 取消
+            custom_access_control: 定制访问控制
+            edit: 编辑 %{name} - %{share}
+          edit_warning:
+            alert_error_1: |-
+              此文件存储器当前用作特定工作组的定制收件箱和中继位置。
+              编辑它将使这些工作组中的所有现有包不可供用户使用，并更改中继目标。
+            alert_error_2: |-
+              此文件存储器当前用作特定工作组的定制收件箱位置。
+              编辑它将使这些工作组中的所有现有软件包都不可供用户使用。
+            alert_error_3: |-
+              此文件存储器当前用作特定工作组的中继位置。
+              编辑它将更改中继目标。
+          form:
+            dir_serv_groups:
+              add_group: 添加组
+              date_added: 已添加日期
+              dir_service_groups: 目录服务组
+              DN: DN
+              members: 成员
+              name: 名称
+              status: 地位
+            dir_serv_group_member:
+              active: 活动
+              delete: 删除
+              inactive: 不活动
+            users:
+              add_user: 添加用户
+              full_name: 全名
+              member_since: 成员自
+              name: 名称
+              status: 地位
+              type: 类型
+              users: 用户
+            user_membership:
+              delete: 删除
+          form_file:
+            browse: 浏览 ...
+            default_max_allowed_rate: 缺省允许的最大速率
+            directory: 目录
+            enable_cloud_referencing: 启用云引用
+            enable_linking: 启用链接
+            initial_default_rate: 初始缺省传输速率
+            limited: 有限
+            loading: 正在装入
+            lock_minrate_hint: 如果选中，客户机将无法调整其传输策略或最小传输速率
+            name: 名称
+            node: 节点
+            override_default: 覆盖缺省传输设置
+            private: 专用
+            public: 公众
+            read_perm: 读取许可权
+            relay_transfer_rate: 中继传输速率
+            server_to_user: 服务器到用户
+            user_to_server: 用户到服务器
+          new:
+            alert_no_node: 未创建 %{nodes} 。 %{admin_node} 在制作 %{name}之前。
+            cancel: 取消
+            create_one: 创建一个
+            new: 新建 %{name}
+      background_processes:
+        index:
+          action: 行动
+          background_processes: 后台进程
+          log_file: 日志文件
+          log_level: 日志级别
+          name: 名称
+          status: 地位
+        log:
+          lines: 线路
+          refresh: 刷新每个
+          submit: 提交
+      credits:
+        show:
+          java: Java 兼容
+      directory_items:
+        file:
+          error: 错误
+      dropbox:
+        dropboxes:
+          metadata_profile: '元数据概要文件 : '
+          options:
+            after_pac_downl: '下载包之后 :'
+            allow_submission_via_pub_URL: '允许通过公共 URL 提交 :'
+            always: 总是
+            custom_exp_policy: 定制包到期策略
+            custom_inv_policy: 定制邀请链接到期策略
+            day_after_sending_inv: 发送邀请电子邮件后的日期
+            day_after_upload: 上载结束后的日期 ( 秒 )
+            http_downloads_not_allowed: 此软件包不允许 HTTP 下载。
+            delete_after_all: 在 <strong>此 dropbox的所有成员</strong> 下载所有文件之后删除文件。
+            delete_after_first: 在 <strong>此 dropbox的任何成员</strong> 下载所有文件之后删除文件。
+            do_nothing: 不做任何事
+            inv_link_expire: '邀请链接到期:'
+            never: 永不
+            optional: 可选
+            package_expires: '软件包到期:'
+            require_encrypt: '需要加密 - at -rest:'
+            save_message: aspera-metadata.xml 将保存到每个包的根目录
+            save_metadata: '将元数据保存到文件:'
+            success: 上传成功后
+            use_server_default: 使用服务器缺省值 (当前:%{SERVER})
+          perm:
+            add_rem_dir_serv_groups: 添加/除去目录服务组作为成员
+            add_remove_users: 添加现有 Faspex 用户 / 除去非 dropbox 管理成员
+            dropbox_admin_can: Dropbox 管理员可以...
+            invite_outside_submitters: 邀请外部提交者
+            invite_remove_users: 邀请/除去外部提交器
+            member_manage: 成员管理
+            reg_users_as_mem: 创建/编辑 / 删除 / 除去新注册用户作为成员
+            standard_can: 标准用户可以...
+        users:
+          cancel: 取消
+          description: 描述
+          email_address: 电子邮件地址
+          invite: '邀请外部提交者发送至 Dropbox: %{wgname}'
+          invite_html:
+            require_encryption: '需要在休息时进行加密 :'
+            yes_ear: 是啊
+            no_ear: 没有
+            optional: 可选
+          submit_save: 保存 (发送邀请电子邮件)
+      e_error:
+        default: 服务器在尝试处理请求时迂到问题。 这可能是由于许可权不足，配置问题，网络中断，错误或硬件故障所致。
+        default_2: 除了你曾经尝试过的其他命令 尝试单击 "后退 " 按钮或上面的某个选项卡。
+      external:
+        sub_stat:
+          show:
+            safe: |-
+              关闭此 Web 页面是安全的，您的转账将不受影响。
+              已通过链接向您发送一封电子邮件，以返回到该屏幕。
+            send_to: 发送至 %{recipient}
+            send_to_dropbox: '发送至 Dropbox: %{dropname}'
+            status: 此页面允许您查看提交的软件包的状态，以及在传输失败时重试传输。
+          submission_stat:
+            date_submit: 提交日期
+            files: 文件
+            size: 大小
+            status: 地位
+            title: 标题
+        to:
+          email_address: 电子邮件地址
+          please_enter_email: 请输入您的电子邮件地址以获取访问权。
+          request_access: 请求访问权
+          send_to: 发送至 %{recipient_name}
+      inactive: 不活动
+      invitations:
+        edit:
+          cancel: 取消
+          reinvite: 重新邀请 (发送邀请电子邮件)
+          reinvite_sender: 重新邀请发送方
+        fieldsets:
+          sub_link_expires:
+            after: 之后
+            after_one_success: 上传成功后
+            after_one_up: 一次上载后
+            custom_inv_policy: '定制邀请链接到期策略:'
+            day_after_sending_inv: 发送邀请电子邮件后的日期
+            help: 您可以进一步限制这些设置，但不能超过缺省设置
+            inv_link_expires: 邀请链接到期
+          prevent_http_upload:
+            package_upload: 程序包上载
+            prevent_http_upload: 阻止为此包上载 HTTP
+        index:
+          access_url: 请参阅访问 URL
+          actions: 行动
+          confirm: 你确定吗
+          delete: 删除
+          description: 描述
+          email: 电子邮件
+          expiration: 到期
+          invitations: 邀请函
+          new: 新
+          reinvite: 重新邀请
+          resend: 雷什德
+          status: 地位
+        new:
+          cancel: 取消
+          description: 描述
+          email_address: 电子邮件地址
+          invite_sender: 邀请发件人
+          no_ear: 没有
+          optional: 可选
+          require_encryption: '需要在休息时进行加密 :'
+          save: 保存 (发送邀请电子邮件)
+          yes_ear: 是啊
+      layouts:
+        aspera_faspex: Aspera Faspex
+        footer:
+          copyright: Copyright IBM Corp. 2009，
+          credits: 贷记和通知
+          patch: 补丁级别 %{level}
+        header:
+          account: 账户
+          enable_connect: 启用 IBM Aspera Connect
+          help: 救命
+          not_logged_in: 未登录。
+          sign_out: 注销
+          skip_to_main: 跳至主
+        main_tabs:
+          accounts: 帐户
+          new_package: 新建数据包
+          pending: 暂挂
+          received: 收到
+          sent: 已发送
+          server: 服务器
+          view_package_options: 单击以查看新的软件包选项
+          workgroups: 工作组
+        node_error:
+          warning: 警告 !
+          errors_detected: 检测到传输服务器错误，传输可能无法正常运行。
+      login:
+        entitlement:
+          customer_id: 客户标识
+          entitle_info: '请提供您的授权信息以开始 :'
+          entitle_question: 有关权利的疑问或关注，请联系 MY_Aspera YM
+          entitlement: 授权标识
+          submit: 提交
+        new:
+          anouncement: 宣布
+          enter_password: 输入 Faspex 密码
+          enter_username: 输入 Faspex 用户名
+          forgot_password: 忘记密码
+          password: 密码
+          username: 用户名
+          or_log: 或登录
+      m_configuration:
+        edit:
+          faspex: 法斯佩
+          sender: 发送方
+          sender_via_faspex: 通过 Faspex 的发送方
+          sender_email: 发件人电子邮件
+          mail_configuration: 邮件配置
+          save: 保存
+          savetest_email: 保存并测试电子邮件
+          to: '至 :'
+      m_template:
+        edit:
+          body: '正文:'
+          cancel: 取消
+          edit_email_html: 编辑 %{name} 电子邮件 HTML
+          save: 保存
+          subject: '主题 :'
+        show:
+          advanced: " ( 高级)"
+          customize: 使用模板进行定制
+          edit_html: 编辑 HTML
+          preview: "%{description} 预览显示如下。 它可以通过使用模板或直接编辑 HTML来定制。"
+          preview_email_notif: 预览 %{name} 电子邮件通知
+      metadata_profiles:
+        edit:
+          add_field: 添加字段
+          add_new_field: '添加新字段: '
+          edit_metadata: 编辑元数据概要文件
+          enabled: '已启用: '
+          error_fields_not_saved: '注意: 未保存有错误的字段'
+          illegal_characters: '非法字符: '
+          max_length: '最大长度 : '
+          note: '注 :'
+          note_no_save: '注意: 在保存元数据概要文件之前，不会保存任何更改'
+          preview: 预览
+          profile_name: '概要文件名 : '
+          profile_name_placeholder: 概要文件名 ...
+          save: 保存
+          save_and_prev: 保存并预览
+          title: 标题
+        date_format:
+          any_other_value: 任何其他值
+          any_other_value_hint: 文字文本
+          at: Unix 时间戳记 (自1970年1月01日起 )
+          capital_D_hint: 日名 ( 短)
+          capital_DD_hint: 日名 ( 长)
+          capital_M_hint: 月份名称 (短)
+          capital_MM_hint: 月份名称 ( 长)
+          d_hint: 月日 ( 无前导零)
+          dd_hint: 月日 ( 两位数 )
+          description: 描述
+          ellipses: 文字文本
+          exclamation: Windows ticks (100ns 01/01/0001起 100ns )
+          m_hint: 年月 ( 无前导零)
+          mm_hint: 年份 ( 两位数 )
+          o_hint: 年日 ( 无前导零)
+          oo_hint: 年日 ( 三位数)
+          single_quote: 单引号
+          variable: 变量
+          y_hint: 年份 (两位数 )
+          yy_hint: 年份 (四位数字 )
+        metadata_field:
+          characters: 人物
+          date_format: '日期格式: '
+          date_format_help: 日期格式帮助
+          illegal_chars: '非法字符: '
+          illegal_chars_placeholder: 非法赛车
+          label: '标签 : '
+          label_placeholder: 标签 ...
+          max_length: '最大长度 : '
+          options: '选项 : '
+          required: '必需: '
+        index:
+          add_profile: 添加新概要文件
+          confirm: 确定要删除元数据概要文件 %{account}吗 ?
+          delete: 删除
+          edit: 编辑
+          metadata_profiles: 元数据概要文件
+          name: 名称
+          profile_for_norm: '正常包的概要文件 :'
+          save_metadata: '将元数据保存到文件: '
+        new:
+          cancel: 取消
+          create: 创建
+          name: 名称
+          new_profile: 新建元数据概要文件
+      mobile:
+        landing:
+          app_redirect: 为获得最佳体验，请使用 Aspera Faspex Mobile 应用程序。
+          no_app_prompt: 你有应用吗 <a href='<%= @app_store_url %>'>此处</a> 获取
+          open_in_app: 在 APP 中打开
+          use_web_version: 使用 WEB 版本
+      ms_admin:
+        convert_to_slave:
+          back: 回来了
+          convert: 转换
+          convert_server: 将服务器转换为从属服务器
+          master_ip: '主 IP: '
+        edit:
+          connecting: 正在连接至 %{hostname}...
+          server_list: Faspex 服务器列表
+          working: 还在工作
+        edit_server:
+          alternate_address: 'Alternate_address: '
+          Back: 回来了
+          host_name: '主机名或 IP 地址:'
+          https_port: 'HTTP 端口: '
+          master_ip: '主 IP:'
+          name: '名称 : '
+          save: 保存
+          server_list: 'Faspex 服务器列表: 编辑 %{name}'
+          url_namespace: 'URL 名称空间: '
+        list_rules:
+          create_new: 新建
+          default_user_server: '缺省 Faspex/DS 用户服务器:'
+          home_server_rules: 主服务器规则
+          name: 名称
+          note: '注意: 如果您未设置外部子 mitter 的规则，那么它们将定向到发送方的主服务器以下载包。 同样，正在上载数据包的外部提交者必须从邀请者的主服务器中执行。'
+          rule: 规则
+          save: 保存
+          server: 服务器
+          sort: 排序
+        new_edit_rule:
+          add: 加添
+          back: 回来了
+          create: 创建
+          create_new: 新建
+          dir_DN_regex: '目录服务 DN regex:'
+          dir_regex: '目录服务组重新 gex:'
+          edit: 编辑
+          email_regex: '电子邮件地址重新 gex:'
+          external_users: '外部用户/提交者 :'
+          home_server: '主服务器:'
+          home_server_rules: 主服务器规则:%{mod} 规则
+          ldap_field: 'LDAP 字段名 :'
+          ldap_regex: 'LDAP 字段重新 gex:'
+          regex_help: Regex 帮助
+          remove: 除去
+          rule_name: '规则名称:'
+          save: 保存
+          username_regex: '用户名重新 gex:'
+        new_server:
+          alternate_address: '备用地址:'
+          back: 回来了
+          create: 创建
+          hostname: '主机名或 IP 地址:'
+          http_port: 'HTTP 端口:'
+          name: '名称 :'
+          server_list_new_server: Faspex 服务器列表:New Remote Server
+          url_namespace: 'URL 名称空间:'
+        regex_help:
+          a*: 零个或零个以上。
+          a+: 一个或多个。
+          a-z: 范围 a-z中的任何单个字符。
+          a-zA-z: 范围 a-z 或 A-Z中的任何单个字符。
+          abc: 单个字符:a，b 或 c。
+          ataslash_com: '例如: 匹配以 "a.com" 结尾的字符串'
+          a|b: A 或 b
+          expression: 表情
+          meaning: 意思
+          period: 任何单个字符。
+          slash: 转义字符。
+          slashA: 开始字符串。
+          slashAa-m: 'Ex: 匹配以 "a" 和 " m" 之间的字母开头的字符串。'
+          slashAperiod*z: 'Ex: 匹配以 "a" 开头并以 "z" 结尾的字符串'
+          slashz: 字符串结束。
+      nodes:
+        columns:
+          dropdown:
+            add: 添加 %{shar_name}
+            delete: 删除
+            delete_confirm: 你确定吗 这将删除当前正在使用此 %{node_name}的任何 %{share_name} 。
+            edit: 编辑
+          shares:
+            dropdown:
+              confirm: 确定要继续吗 ?
+              custom_inbox_confirm: 此 %{name} 当前用作特定工作组的定制收件箱位置。
+              default_hint: 此 %{name} 当前用作系统缺省收件箱，无法删除。
+              delete: 删除
+              delete_warning: '删除它将使这些工作组中的所有现有包不可供用户使用。 '
+              edit: 编辑
+              relay_hint: 此 %{name} 当前用作特定工作组的中继位置。
+              rolled_back_warning: '这些工作组还将回滚以使用系统缺省收件箱。 '
+      packages:
+        browser:
+          all: 全部
+          download_selected: 已选择下载
+          name: 名称
+          none: 没有
+          select: 选择
+          size: 大小
+          validation_error: 验证错误?
+          warning: 错误
+        package:
+          browse_and_download_contents: 浏览和下载内容
+          browse_contents: 浏览内容
+          cc_on_delivery: 'CC ( 在交付时 ):'
+          cc_on_download: 'CC ( 下载 ) :'
+          cc_on_recipient: '抄送 (收件人 ):'
+          completed_relays: '已完成的中继系统 :'
+          date_sent: 发送日期
+          http_downloads_not_allowed: 此软件包不允许 HTTP 下载
+          delete_after_all_message: 在所有收件人已下载所有软件包文件后，将自动删除此软件包。
+          delete_after_first_message: 在 ANY 收件人已下载所有软件包文件之后，将自动删除此软件包。
+          edit: 编辑
+          error_release_date: 更新发布日期时出错
+          failed_relays: '失败的中继系统 :'
+          forward: 前进
+          from: '来源:'
+          in_progress_relays: '正在进行中继 :'
+          incomplete_relays: '不完整的中继系统 :'
+          none_set: 无集合
+          note_disabled: 程序包在当前文件存储器上不存在。
+          package: 包装
+          release_now: 立即发布
+          save: 保存
+          send_date: 发送日期
+          to: '至:'
+          to_private: '至 (专用):'
+          upload_date: '上载日期:'
+        show_stats:
+          more_details: 更多详细信息
+        stats:
+          active_downloads:
+            active_downloads: '活动下载数 : %{num}'
+          completed_package:
+            avg_rate: 平均速率:%{Rate}
+            elapsed: 耗用时间 :%{time}
+            files: 文件:%{num}
+            size: 大小 %{num}
+            upload_stats: '上载统计信息 :'
+            uploaded_from: '上载自:'
+          failed_package:
+            avg_rate: 平均速率:%{Rate}
+            elapsed: 耗用时间 :%{time}
+            files: 文件:%{num}
+            size: 大小 %{num}
+            upload_stats: '上载统计信息 :'
+            uploaded_from: '上载自:'
+          full_download:
+            full_pkg_dl: 完整软件包下载:%{completed}
+          package_details:
+            pkg_details: 程序包详细信息
+            status: 状态 %{package}
+            http_downloads_not_allowed: 此软件包不允许 HTTP 下载
+          partial_package:
+            partial_pkg_dl: '部分软件包下载: %{total}'
+          transfer_package:
+            avg_rate: '平均比率 :'
+            elapsed: '耗用时间 :'
+            files: 文件:%{num}
+            loading: 正在装入...
+            size: 大小 %{num}
+      pending:
+        action: 行动
+        files: 文件
+        history:
+          back_to_normal_view: 返回到正常视图
+          file_on_server: 服务器上的文件 ?
+          pending_package_hist: 暂挂程序包历史记录
+        index:
+          archive_all: 全部归档
+          pending_packages: 暂挂软件包
+          view_full_history: 查看完整历史记录
+          warning: 警告
+        recipients: 收件人
+        search: 搜索
+        send_date: 发送日期
+        size: 大小
+        status: 地位
+        title: 标题
+        transfer_retries: 传输重试次数
+        upload_date: 上载日期
+      received:
+        action: 行动
+        date_sent: 发送日期
+        download_available: 下载可用
+        files: 文件
+        history:
+          back_to_normal_view: 返回到正常视图
+          files_on_server: 服务器上的文件 ?
+          received_package_hist: 接收的程序包历史记录
+        index:
+          archive_all: 全部归档
+          invitations: 邀请函
+          received_packages: 已接收的软件包
+          view_full_history: 查看完整历史记录
+        search: 搜索
+        sender: 发送方
+        size: 大小
+        status: 地位
+        title: 标题
+      registrations:
+        confirmation:
+          back_to_login: 返回登录
+        edit_password:
+          set_password: 设置密码
+        new:
+          back_to_login: 返回登录
+          email: 电子邮件
+          first_name: 名字
+          last_name: 姓氏
+          name: 名称
+          tos_accept: 我接受 %{TOS}。
+      reset_password_tokens:
+        edit:
+          alert_error: 您的 Faspex 登录已厌倦目录服务帐户。
+          alert_error_contact: 请与帮助热线或网络管理员联系以更改密码。
+          reset_password: 重置密码
+        new:
+          back_to_login: 返回登录
+          enter_user_or_email: 输入用户名或电子邮件
+          forgot_password: 忘记密码了吗
+          send_email: 发送电子邮件
+      search: 搜索收件人，包标题和注释。
+      send:
+        fieldsets:
+          encryption:
+            encryption: '加密 :'
+            use_encrypt_at_rest: 使用加密 - at -rest
+        form:
+          dropbox:
+            send_package: 发送数据包
+          external:
+            send_package: 发送数据包
+          fieldsets:
+            encryption:
+              encryption: '加密 :'
+              use_encrypt_at_rest: 使用加密 - at -rest
+            expiration_policy:
+              after_pkg_dl: 下载软件包后
+              delete_after_all: 在 <strong>所有收件人</strong> 下载所有文件后删除。
+              delete_after_any: 在 <strong>任何接收方</strong> 下载所有文件之后删除
+              do_nothing: 不做任何事
+              expiration: '到期 :'
+            prevent_http_download:
+              prevent_http_download: 阻止对此包进行 HTTP 下载
+              package_download: 软件包下载
+            metadata:
+              maximum_length: '最大长度: %{max} 字符'
+              illegal_chars: 非法字符:%{illegal}
+              required: 必需
+              optional: 可选
+            note:
+              note: 注<br><br><span class='dim'><small>可选</small></span>
+              maximum_length: '最大长度: %{max} 字符'
+              illegal_chars: 非法字符:%{illegal}
+            notifications:
+              cc: CC
+              cc_on_download: 下载的 CC
+              cc_on_receipt: 收据上的 CC
+              cc_on_upload: 上载的抄送
+              download: '下载 :'
+              notifications_help: 首次上载或下载后发送通知
+              receipt: '收据 :'
+              upload: '上载 :'
+            obfuscation:
+              obfuscation: '模糊处理 :'
+              use_obf: 在文件名上使用模糊处理
+            release_policy:
+              release_date: '发布日期:'
+              release_later_date_later: 稍后释放 - 设置日期
+              release_later_date_now: 稍后发布 - 设置日期
+              release_now: 立即发布
+              release_policy: '发布策略:'
+            transfer_options:
+              transfer_through: '传输方式:'
+              http_uploads_not_allowed: 此软件包不允许 HTTP 上载
+            source_shares:
+              contents: '内容*:'
+              ear_cloud_warning: 其余的加密设置为用于所有传输，但不支持使用云引用的传输。 此传输将不会使用加密。
+              remove_all: 全部除去
+              source: '来源 :'
+              warning: '警告 :'
+            title:
+              title: '标题*:'
+              maximum_length: '最大长度: %{max} 字符'
+              illegal_chars: 非法字符:%{illegal}
+            tos:
+              tos: '服务条款 :'
+              tos_accept: 我接受 %{tos}
+          forward:
+            contents: '内容 :'
+            forward_package: 转发包
+            fwd: 'Fwd: %{ftitle}'
+            original_sender: '原始发件人:'
+            received: '收到 :'
+          misc:
+            actions:
+              confirmation: '确认 :'
+              enter_passphrase: 输入口令以保护文件。<br>需要口令。
+              passphrase: '口令:'
+            connect_transfer:
+              browse_for_files: 浏览文件 &hellip;
+              browse_for_folders: 浏览文件夹 &hellip;
+              or: 或
+            instruct:
+              instructions: 指示信息
+            remote_share:
+              loading: 正在装入
+              browse_for_files: 浏览文件 &hellip;
+            show_hide_controls:
+              show_private_recip: 显示专用接收方
+          normal:
+            send_package: 发送数据包
+        http_gateway_submit:
+          completed: 已完成
+          current_file: '当前文件:'
+          current_file_name: '当前文件名 :'
+          invalid_status: 状态无效
+          failed: 失败
+          file_count: '文件计数:'
+          initiating: 正在启动
+          running: 正在运行
+          total: '总计 :'
+          transfer_status: '转移 :'
+      sent:
+        action: 行动
+        date_sent: 发送日期
+        files: 文件
+        history:
+          sent_package_hist: 已发送的程序包历史记录
+          back_to_normal_view: 返回到正常视图
+          files_on_server: 服务器上的文件 ?
+        index:
+          archive_all: 全部归档
+          sent_packages: 已发送的程序包
+          view_full_history: 查看完整历史记录
+          warning: 警告
+        recipients: 收件人
+        search: 搜索
+        show_details:
+          full_partial: 全部/部分
+          ip_addr: IP 地址
+          pkg_download_details: 软件包下载详细信息
+          start_time: 开始时间
+          stop_time: 停止时间
+          time_elapsed: 耗用时间
+          user_name: 用户名
+        size: 大小
+        status: 地位
+        title: 标题
+        transfer_retries: 传输重试次数
+      settings:
+        contacts:
+          contact:
+            external: "( 外部)"
+            remove: 除去
+          index:
+            contacts: 联系人
+            edit_alert: 您没有可编辑的联系人。
+            edit_contacts: 编辑联系人
+        dist_lists:
+          index:
+            add_new_dist_list: 添加新的分发列表
+            alert_dist: 您没有个人分发列表。
+            contacts: 联系人
+            global_dist_lists: 全局分发列表
+            name: 名称
+            pers_dist_lists: 个人分发列表
+            update_dist_list: 更新分发列表
+          new:
+            new_dist_list: 新建分发列表
+        passwords:
+          edit:
+            change_password: 更改密码
+            current_password: '当前密码:'
+            password: 密码
+            confirm_pw: 确认密码
+        preferences:
+          edit:
+            download_connect: 下载 Connect 插件
+            download_hint: 可能需要几分钟时间才能更改生效
+            download_notif: 下载通知
+            download_notif_hint: 当每个收件人首次下载包时，向这些地址发送电子邮件
+            email_settings: 电子邮件设置
+            locales: 语言环境
+            locale: 语言环境
+            misc: 米克
+            preferences: 首选项
+            update_pref: 更新首选项
+            upload_notif: 上载通知
+            upload_notif_hint: 通过上载的结果向这些地址发送电子邮件
+            received_page_option: 仅在 "接收 " 页面上显示已完成的数据包
+        sender_quota:
+          index:
+            sender_alert_1: 已达到 %{quota} MB 的发送方限额限制
+            sender_alert_2: "%{quota} MB 可用。 您的发送方限额限制设置为 %{limit} MB。"
+            sender_quota: 发送方限额
+      shared:
+        browser:
+          filter:
+            from: 从
+            hide_filters: 隐藏过滤器
+            include_sub: 包含子目录
+            max: 马克斯
+            min: 明
+            mod_time: 修改时间
+            search: 搜索
+            search_for_files: 搜索文件或目录&hellip;
+            show_filters: 显示过滤器
+            size: 大小
+            to: 至
+          par_dir_item:
+            parent_dir: 父目录
+        dist_lists:
+          dist_lists:
+            delete: 删除
+            duplicate: 复制
+            import_contacts: 从 CSV 导入联系人
+          form:
+            name: 名称
+            browse: 浏览 ...
+            contacts: 联系人 ( 最多为 %{num})
+            import_from_csv: '从 CSV 导入 :'
+        filter:
+          filter: 过滤&hellip;
+      user_profile_fields:
+        add_user_profile_field: 添加用户概要文件字段
+        enabled: 已启用
+        name: 名称
+        note_no_changes: '注意: 在单击 " 保存字段" 之前，不会保存任何更改'
+        onclick_confirm: 确定要除去此用户概要文件字段吗 ?
+        remove: 除去此概要文件字段。
+        required: 必需
+        save_fields: 保存字段
+        user_profile: 用户概要文件
+      workgroup:
+        deliveries:
+          history:
+            date_sent: 发送日期<br>
+            download_retry: 下载或重试可用
+            files: 文件
+            files_on_server: "<br>服务器上的文件 ?"
+            package_history: 程序包历史记录
+            search: 搜索
+            sender: 发送方
+            size: 大小
+            status: 地位
+            title: 标题
+          index:
+            action: 行动
+            date_sent: 发送日期<br>
+            download_retry: 下载或重试可用
+            files: 文件
+            packages: 包包
+            search: 搜索
+            sender: 发送方
+            size: 大小
+            status: 地位
+            title: 标题
+          misc:
+            links:
+              invite_outside: 邀请外部提交者
+        file_relay_req:
+          index:
+            back: 回来了
+            relay_stat: 中继状态
+          table:
+            date_sent: 发送日期
+            file_storage: 文件存储器
+            files: 文件
+            node: 节点
+            size: 大小
+            status: 地位
+        forwards:
+          complete: 完成
+          enable_relay: 启用中继设备
+          enabled_message: 如果启用，那么所有软件包文件都将中继到其他节点。
+          error: 错误
+          notify_users: 通知用户开启...
+          overwrite: 覆盖
+          relay: 继电器
+          start: 开始
+        name: 名称
+        nodes:
+          default_inbox: 缺省收件箱
+          direct_upload: 直接上载到定制收件箱。
+          direct_upload_default_check: 如果选中此项，那么如果此工作组是唯一收件人，那么软件包将不会上载到缺省收件箱。
+          inbox_destination: 收件箱目标
+          location: 地点
+          status: 地位
+        users:
+          edit:
+            edit_user: 编辑用户:%{name}
+          new:
+            new_user: "%{wg} %{wgname} 的新用户帐户"
+        workgroups:
+          details:
+            created_on: '创建时间:'
+            description: '描述 :'
+            inst_for_sub: '提交子机的指示信息 : '
+            name: '<font color="red">* </font>名称:'
+            updated_on: '更新时间:'
+            wg_details: "%{wgtype} 详细信息"
+          ds_group:
+            all: 全部
+            none: 没有
+            ok: 好的
+            remove_selected: 除去所选的
+            select: '选择: '
+          ds_group_member:
+            add_group: 添加组
+          ds_group_table:
+            access: 访问权
+            date_added: 已添加日期
+            dir_serv_group: 目录服务组
+            DN: DN
+            members: 成员
+            name: 名称
+            status: 地位
+          edit:
+            back: 回来了
+            back_to_list: 返回列表
+            editing: '编辑 %{wgtype}: %{wgname}'
+            or: " 或 "
+            save: 保存
+          forwards:
+            complete: 完成
+            enable_relay: 启用中继设备
+            error: 错误
+            if_enabled: 如果启用，那么所有软件包文件都将中继到其他节点。
+            name: 名称
+            notify_users: 通知用户开启...
+            overwrite: 覆盖
+            relay: 继电器
+            start: 开始
+          index:
+            create_new: 新建
+            dropbox: Dropbox
+            flash_message: 要创建，删除或编辑工作组 ( 添加/除去成员除外 ) ，您必须登录到主控服务器。
+            view_all: 全部查看
+            view_mine: 查看我的
+            workgroup: 工作组
+            workgroups: 工作组
+          member_table:
+            access: 访问权
+            active: 活动
+            add_user: 添加用户
+            alert: 未选择任何成员进行除去。
+            all: 全部
+            expires: 期满
+            full_name: 全名
+            inactive: 不活动
+            inv_outside_submit: 邀请外部提交者
+            member_since: 成员自
+            members: 成员
+            name: 名称
+            none: 没有
+            ok: 好的
+            remove_selected: 除去所选的
+            select: '选择:'
+            status: 地位
+            type: 类型
+          new:
+            cancel: 取消
+            create: 创建
+            create_new: 创建新的 %{wgtype}
+            or: " 或 "
+          nodes:
+            custom: 定制
+            default_inbox: 缺省收件箱
+            inbox_dest: 收件箱目标
+            location: 地点
+            name: 名称
+            server_default: 服务器缺省值
+            status: 地位
+            upload_directly: 直接上载到定制收件箱
+            upload_message: 如果选中，那么如果此工作组是唯一收件人，那么软件包将不会上载到缺省收件箱
+          show:
+            view_packages: 查看程序包
+          wg_permissions:
+            add_dir_serv_groups_as_members_hint: 添加/除去目录服务组作为成员
+            add_existing_users_hint: 添加现有 Faspex 用户 / 除去非工作组管理员成员
+            edit_new_users_hint: 创建/编辑 / 删除 / 除去新用户作为成员
+            full: " 满 :"
+            full_hint: 成员授予查看和发送彼此的许可权
+            member_management: 成员管理
+            moderated: " 需审核 :"
+            moderated_hint: 只有工作组管理员才能发送至此工作组
+            open: " 打开 :"
+            open_hint: 任何人都可以发送到该工作组
+            private: " 专用 :"
+            private_hint: 只有成员才能发送至此工作组
+            restricted: " 受限 :"
+            restricted_hint: 没有人可以发送给此工作组
+            restricted_hint_2: 只有工作组授予查看或发送工作组个别成员的许可权
+            send_to_eachother: '工作组成员相互发送 :'
+            sending_to_itself: '发送至工作组本身:'
+            wg_admins_only: " 仅工作组管理员 :"
+            wg_admins_only_hint: 成员授予查看和发送工作组管理员的许可权
+            workgroup_admins_can: 工作组管理员可以...
+            workgroup_permissions: 工作组许可权
+          workgroup_list:
+            description: 描述
+            dropbox: Dropbox
+            latest: 最新
+            member_warning: 您当前不是任何工作组中的成员。
+            members: 成员
+            no_wg: 没有工作组。
+            packages: 包包
+            type: 类型
+            workgroup: 工作组
+          workgroup_members_form:
+            wg_members_title: "%{wg_name} 成员"
+    helpers:
+      account:
+        users:
+          admin: " - 管理"
+          expir_date: 必须为活动用户设置 mY_date_YM 。
+          manager: " - 经理"
+          neg: 没有
+          pos: 是啊
+          set_admin: 设置管理员
+          set_non_admin: 设置非管理员
+          taken_name: 已使用 %{name}
+        bootstrap_content_helper:
+          actions: 行动
+          close: 关闭
+      admin:
+        nodes_helper:
+          browse_fail: 浏览远程文件源失败
+        post_processes_helper:
+          activate: 激活
+          confirm: 确定要删除后处理脚本 %{script_name}吗 ?
+          deactivate: 停用
+          remove: 除去
+          view_log: 查看执行日志
+      application_helper:
+        browse: 浏览 ...
+        path: '路径 :'
+      login_helper:
+        create_account: 创建帐户
+        request_account: 请求帐户
+      metadata_profiles_helper:
+        date_field: 日期字段
+        option_list: 选项列表
+        text_area: 文本区域
+        text_field: 文本字段
+      packages_helper:
+        entire: 下载整个软件包
+        partial: 下载部分包
+        return_to_history: 返回到历史记录
+        return_to_list: 返回到列表
+      registrations_helper:
+        create_account: 创建帐户
+        request_account: 请求帐户
+      send_helper:
+        hide: 躲藏
+        hide_cc: 隐藏抄送
+        show: 秀
+        show_cc: 显示抄送
+      sent_helper:
+        delete: 删除
+      source_shares_helper:
+        browse_fail: 浏览远程文件源失败
+      workgroup:
+        deliveries_helper:
+          back_to_normal_view: 返回到正常视图
+          delete: 删除
+          view_full_history: 查看完整历史记录
+          view_members: 查看成员
+        users_helper:
+          create_new_user: 创建新用户
+        workgroups_helper:
+          delete: 删除
+          delete_confirm: 是否要删除 %{wg_type} "%{wg_name}"?
+          delete_wg: 删除 %{wg_name}
+          dropbox: Dropbox
+          edit: 编辑
+          edit_wg: 编辑 %{wg_type_name}
+          names_placeholder: 输入用户名或电子邮件地址
+          view_all: 全部查看
+          view_mine: 查看我的
+          view_packages: 查看程序包
+          workgroup: 工作组
+    models:
+      c_configuration:
+        cant_be_blank: 字段不能为空白。
+      delivery:
+        send_fail_quota_limit: 无法发送包，已达到 %{limit} MB 的配额限制
+        send_fail_permissions: 不允许您创建正常数据包
+        send_fail_invalid_recipients: 无有效收件人
+        send_fail_dropbox_only: Dropbox 接收方必须是唯一接收方
+        send_fail_invalid_recipient_specific: 收件人:%{recipient_name} 无效
+        send_fail_permissions_multiple: 不允许您发送给一个或多个指定收件人
+        send_fail_invalid_cc: 无效 CC (上载 ):%{cc_name}
+        send_fail_invalid_ccs_upload: 不允许在上载字段中抄送一个或多个收件人
+        send_fail_invalid_ccs_download: 不允许您在下载字段中 CC 一个或多个收件人
+        send_fail_invalid_ccs_receipt: 不允许您在收据字段中抄送一个或多个收件人
+        send_fail_must_have_one_source: 必须完全有一个源
+        send_fail_unknown_share_id: 未知源共享标识 %{share_id}
+        send_fail_source_not_authorized: 未授权来源
+        send_fail_no_items_to_upload: 没有要上载的项 !
+        send_fail_unique_filenames: 文件名必须唯一
+        send_fail_ear_must_be_specified: 必须指定
+        send_fail_ear_not_allowed: 不允许
+        send_fail_ear_disabled_message: 禁用加密 - at -rest ，不允许口令。
+        send_fail_sendershareid_forwarding: 可能未更改转发包的 senderShareId
+        send_fail_invalid_release_policy: 发行版策略无效 :%{rp}
+        send_fail_policy_date_future: 发行日期必须在将来
+        send_fail_expiration_date_future: 到期日期必须在将来
+      directory_service_user:
+        login_error_message: 您的登录失败。 请重试。 如果您迂到重复登录失败，那么应单击 "忘记密码" 链接以重置密码。
+      e_membership:
+        status:
+          expired: 已到期
+          active: 活动
+          inactive: 不活动
+      local_user:
+        cannot_be_blank: 不能为空
+        is_incorrect: 不正确
+        login_error_message: 您的登录失败。 请重试。 如果您迂到重复登录失败，那么应单击 "忘记密码" 链接以重置密码。
+        lock_out_message: 由于登录失败次数过多，您已被锁定。
+        same_as_old_pw: 与旧密码相同
+        same_old_pw_hint: 必须与先前的 %{limit} 密码不同
+      metadata_field:
+        value_already_taken: 已使用 "%{value} "
+        max_length_not_int: 字段 "%{label_name}" 的最大长度必须是整数
+        max_length_bounds: 字段 "%{label_name}" 的最大长度必须在 1 和 %{max} 之间
+        valid_option_list: '"%{label_name}" 需要有效选项列表'
+        valid_date_format: '"%{label_name}" 需要有效日期格式'
+        cannot_be_blank: "%{label_name} 不能为空"
+        error_decoding: 解码元数据时出错 :%{meta}
+      metadata_profile:
+        all_fields_length_error: 所有字段的最大总长度 (包括标签，选项和日期字段 ) 必须小于 %{max} 字符
+        field_blank_error: "%{err_label} 不能为空"
+        field_illegal_char_error: "%{err_label} 不得包含以下任何字符 :%{illegal}"
+        field_length_error: "%{err_label} 必须为 %{max} 字符或更少"
+        field_options_error: "%{err_label} 必须包含以下某个选项:%{list}"
+        invalid_JSON_error: "%{err_label} 必须是有效的 JSON"
+        invalid_share_id_error: mY_err_label_YM 的共享标识 %{err_value} 无效
+        invalid_user_error: "%{err_label} 的用户 %{err_user} 无效"
+        invalid_value_error: "%{err_label} 的值无效"
+        max_length_reset_error: 最大长度字段已复位为缺省值
+        must_be_list_error: "%{err_label} 必须是共享标识的列表"
+        no_fields_error: 元数据概要文件必须至少有一个字段
+        note_invalid_char_error: '注意不得包含下列任何字符: #{非法}'
+        note_length_bounds_error: 注释的最大长度必须在 1 和 %{max} 之间
+        note_length_error: 注释必须为 %{max} 字符或更少
+        note_length_int_error: 注释的最大长度必须是整数
+        note_length_specified_error: 必须指定注释的最大长度
+        specified_error: 必须指定 %{err_label}
+        title_invalid_char_error: 标题不得包含以下任何字符:%{illegal}
+        title_length_bounds_error: 标题的最大长度必须在 1 和 %{max} 之间
+        title_length_error: 标题必须为 %{max} 字符或更少
+        title_length_int_error: 标题的最大长度必须是整数
+        title_length_specified_error: 必须指定标题的最大长度
+      post_process:
+        all_uploaded_pkgs: "[ 所有已上载的软件包]"
+      saml_configuration:
+        unspecified: 未指定
+        transient: 瞬态
+        persistent: 持久性
+        email_address: 电子邮件地址
+      send_package_request:
+        from_name_error: '"发件人" 名称与已认证的用户不匹配'
+        invalid_recipient_error: 无效接收方
+        parse_xml_error: 无法解析请求 XML
+        validate_sender_error: 未授权上载
+        too_many_elements: 元素 %{path} 必须不超过 %{max}
+        too_few_elements: 元素 %{path} 必须至少发生 %{min}
+      user:
+        passwordable:
+          requirements: 长度必须至少为 6 个字符
+          strong_requirements: 长度必须至少为 6 个字符，至少有一个字母，一个数字和一个符号
+        status:
+          saml_disabled: 已禁用 SAML 配置
+          pending: 暂挂核准
+          active: 活动
+          locked: 已锁定
+          inactive: 不活动
+  config:
+    account_navigation:
+      preferences: 首选项
+      change_password: 更改密码
+      contacts: 编辑联系人
+      distribution_lists: 编辑分发列表
+      sender_quota: 发送方限额
+    initializers:
+      will_paginate:
+        laq_prev: "&laquo; 上一个"
+        lar_prev: "&larr; 上一个"
+        raq_next: 下一个 &raquo;
+        rar_next: 下一个 &rarr;
+    license:
+      paste_license: 在此处粘贴许可证的内容
+      update_license: 更新许可证
+      decoded_license: 已解码许可证
+    navigation:
+      account_approved: 已核准帐户
+      account_denied: 已拒绝帐户
+      accounts: 帐户
+      authentication: 认证
+      configuration: 配置
+      directory_service_groups: 目录服务组
+      directory_services: 目录服务
+      display_settings: 显示设置
+      dropbox_invitation: Dropbox 邀请
+      dropbox_submit: Dropbox 提交
+      email_configuration: 电子邮件配置
+      entitlement: 权利
+      external_users: 外部用户
+      forgot_password: 忘记密码
+      forward_error_cc: 中继错误 CC
+      forward_finished_cc: 中继已完成 CC
+      forward_started_cc: 中继已启动 CC
+      global_distribution_lists: 全局分发列表
+      license: 许可证
+      login_announcement: 登录声明
+      metadata: 元数据
+      new_package: 新建数据包
+      notifications: 通知
+      package_cc_receipt_on_received: 包接收 CC
+      package_cc_receipt_on_sent: 程序包已发送 CC
+      package_downloaded: 已下载软件包
+      package_downloaded_cc: 打包下载的抄送
+      package_instructions: 软件包指示信息
+      package_received: 接收包
+      package_storage: 包存储
+      package_validation_failed_recipient: 包验证失败接收方
+      package_validation_failed_sender: 程序包验证失败发送方
+      packages: 包包
+      pending_registrations: 暂挂注册
+      personal_invitation: 个人邀请
+      personal_submit: 个人提交
+      post_processes: 后处理
+      received: 收到
+      saml_groups: SAML 组
+      saml_integration: SAML 集成
+      save_restore: 保存/恢复
+      security: 保安
+      sent: 已发送
+      server: 服务器
+      shares: 文件存储器
+      transfer_options: 传输选项
+      upload_result: 上载结果
+      upload_result_cc: 上载结果 CC
+      user_profile: 用户概要文件
+      users: 用户
+      web_server: Web 服务器
+      welcome_email: 欢迎电子邮件
+      workgroup_package: 工作组包
+      workgroups: 工作组
+  common:
+    allow: 允许
+    deny: 否认
+    default: 缺省值
+    server_default: 服务器缺省值 (%{SERVER_default})
+    are_you_sure: 你确定吗
+    days_from_now: 从现在开始
+  date:
+    abbr_day_names:
+    - Sun
+    - Mon
+    - Tue
+    - Wed
+    - Thu
+    - Fri
+    - Sat
+    abbr_month_names:
+    - 
+    - Jan
+    - Feb
+    - Mar
+    - Apr
+    - May
+    - Jun
+    - Jul
+    - Aug
+    - Sep
+    - Oct
+    - Nov
+    - Dec
+    day_names:
+    - Sunday
+    - Monday
+    - Tuesday
+    - Wednesday
+    - Thursday
+    - Friday
+    - Saturday
+    formats:
+      default: "%Y-%m-%d"
+      long: "%B %d, %Y"
+      short: "%b %d"
+    month_names:
+    - 
+    - January
+    - February
+    - March
+    - April
+    - May
+    - June
+    - July
+    - August
+    - September
+    - October
+    - November
+    - December
+    order:
+    - :year
+    - :month
+    - :day
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: 约 1 小时
+        other: 关于 %{count} 小时
+      about_x_months:
+        one: 大约 1 个月
+        other: 关于 %{count} 月
+      about_x_years:
+        one: 大约 1 年
+        other: 关于 %{count} 年
+      almost_x_years:
+        one: 将近 1 年
+        other: 几乎 %{count} 年
+      half_a_minute: 半分钟
+      less_than_x_seconds:
+        zero: 小于 1 秒钟
+        one: 小于 1 秒钟
+        other: 小于 %{count} 秒
+      less_than_x_minutes:
+        zero: 不到一分钟
+        one: 不到一分钟
+        other: 小于 %{count} 分钟
+      over_x_years:
+        one: 1 年以上
+        other: 超过 %{count} 年
+      x_seconds:
+        one: 1 秒钟
+        other: "%{count} 秒"
+      x_minutes:
+        one: 1 1 分
+        other: "%{count} 分钟"
+      x_days:
+        one: 1 天
+        other: "%{count} 天"
+      x_months:
+        one: 1 个月
+        other: "%{count} 月"
+      x_years:
+        one: 1 年
+        other: "%{count} 年"
+    prompts:
+      second: 第二个
+      minute: 分钟
+      hour: 小时
+      day: 日
+      month: 月
+      year: 年份
+  helpers:
+    application:
+      archive: 档案
+      back: 回来了
+      cloud_storage_referencing: 此存储器支持的引用 IS 的云存储器。
+      connect_install_message: 要使用最大 %{direction} 速度，请安装 MY_Aspera YM 浏览器插件。
+      connect_upgrade_message: 要利用最大 %{direction} 速度，请升级 MY_Aspera YM 浏览器插件。
+      confirm: 是否确定要删除 %{package_sender} 发送的软件包 %{package_name} 的文件 ?
+      copy: 复制到剪贴板
+      delete: 删除
+      delete_confirm: 是否确定要删除 %{package_sender} 发送的软件包 %{package_name} 的文件 ?
+      delete_confirm_forward: 这是另一个包的转发。 将删除原始和所有转发。
+      delete_confirm_has_forwards: 此程序包的转发存在。 将删除原始和所有转发。
+      enable_hst_dl: 要启用 Aspera 的高速传输，请使用 %{download} Connect 浏览器插件。
+      enable_hst_dl_enable: 要启用 Aspera 的高速传输，请使用 %{download} 和 %{enable} 连接浏览器插件。
+      local_transfer_message: 您当前正在使用低速 HTTP。 要启用 Aspera 的高速传输，请访问 %{enable} 以启用/下载
+        Connect 浏览器插件。
+      no_cloud_storage_referencing: 此存储器不支持引用云存储器。
+      no_transfer_dl: 在没有 Aspera Connect 的情况下进行上载具有性能限制。 要除去此限制并启用 Aspera 的高速传输，请使用
+        %{download} Connect 浏览器插件。
+      no_transfer_dl_enable: 在没有 Aspera Connect 的情况下进行上载具有性能限制。 要除去此限制并启用 Aspera 的高速传输，请使用
+        %{download} 和 %{enable} 连接浏览器插件。
+      not_supp_symbolic_links: 存储器不支持符号链接
+      note: '注 :'
+      package_details: 单击此处以获取软件包详细信息。
+      public_url: '公用 URL:'
+      retry_upload: 重试上载
+      set_now: 立即设置
+      stop_upload: 停止上载
+      supp_symbolic_links: 存储器支持符号链接
+    select:
+      prompt: 请选择
+    submit:
+      create: 创建 %{model}
+      create_without_model: 创建
+      create_and_continue: 创建和 %{action}
+      submit: 保存 %{model}
+      update_license: 更新和验证许可证
+      update: 更新 %{model}
+  login:
+    new:
+      login: 登录
+      login_using_saml_idp: 使用 SAML IdP 登录
+    logged_out:
+      message: 您已从 Faspex 注销 ; 您可能仍需要注销公司单点登录帐户。
+      log_in_again: 再次登录
+    errors:
+      saml_not_authorized: 您无权使用 Faspex。
+      invalid_saml_response: SAML 身份提供者的响应无效。
+      saml_login_failed: 登录失败。
+      saml_exception: SAML 响应错误。 请检查日志。
+  lib:
+    app:
+      not_pingable: 不可 ping
+      not_infoable: 不可信息
+      not_browsable: 不可浏览
+      node_error: 节点错误
+      host_error: 主机错误
+    app_tar:
+      app:
+        bad_version: 不兼容的版本号
+        config_save_error: 保存配置时出错。  请参阅日志以获取详细信息。
+        upload_saved_config: 上载已保存的配置
+        restore_config_error: 恢复配置时出错。  请参阅日志以获取详细信息。
+        tar_error: 错误 tarring config %{tar_status} %{tar_out}
+        untar_error: 错误取消配置 %{untar_status} %{untar_stdout}
+    aspera_license_reader:
+      no_license_found: 未找到许可证或许可证格式不正确
+      license_signature_mismatch: 许可证签名不匹配内容
+      not_faspex_license: 许可证不是 Faspex 许可证
+      expired_license: 许可证已到期
+      bad_expiration_license: 许可证的到期日期不正确
+      valid_license: 许可证有效
+      invalid_license: 许可证无效
+    directory_services:
+      active_directory:
+        active_directory: Active Directory
+        microsoft_active_directory: Microsoft Active Directory
+      apple_open_directory:
+        apple_open_directory: Apple 打开目录
+        open_directory: 打开目录
+      red_hat:
+        fedora_directory: 389/Red Hat/Fedora Directory Server
+        red_hat_directory: Red Hat Directory Server
+    membership_methods:
+      dropbox_admin: Dropbox 管理员
+      wg_admin: 工作组管理员
+      standard: 标准
+      submit_only: 仅提交
+      set_to_standard_access: 将用户设置为标准访问权
+      set_to_submit_access: 将用户设置为仅提交访问权
+      set_user_as_admin: '将用户设置为 #{wg_name} admin'
+    packages:
+      package_methods:
+        HTTP_upload_in_progress: HTTP 上载正在进行中，如果您离开此页面，那么它将被取消。
+        new_package: 新建数据包
+        return_to_history: 返回到历史记录
+        return_to_list: 返回到列表
+        send_to_dropbox: '发送至 Dropbox: %{d_addr_name}'
+  number:
+    currency:
+      format:
+        delimiter: ","
+        format: "%u%n"
+        precision: 2
+        separator: "."
+        significant: false
+        strip_insignificant_zeros: false
+        unit: "$"
+    format:
+      delimiter: ","
+      precision: 3
+      separator: "."
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: "%n %u"
+        units:
+          billion: Billion
+          million: Million
+          quadrillion: 夸德里利翁
+          thousand: 千
+          trillion: ''
+          unit: ''
+      format:
+        delimiter: ''
+        precision: 1
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one: 字节
+            other: 字节数
+          eb: EB
+          gb: GB
+          kb: KB
+          mb: MB
+          pb: PB
+          tb: 结核病
+    percentage:
+      format:
+        delimiter: ''
+        format: "%n%"
+    precision:
+      format:
+        delimiter: ''
+  public:
+    javascripts:
+      admin:
+        authorization_domains:
+          form:
+            save: 保存
+            save_and_test: 保存并测试
+  support:
+    array:
+      last_word_connector: '而 '
+      two_words_connector: " 而 "
+      words_connector: ", "
+  time:
+    am: amam
+    formats:
+      default: "%a, %d %b %Y %H:%M:%S %z"
+      long: "%B %d, %Y %H:%M"
+      short: "%d %b %H:%M"
+    pm: 下午

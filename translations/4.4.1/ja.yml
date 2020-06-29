@@ -1,0 +1,2793 @@
+---
+ja:
+  activerecord:
+    models:
+      node: ノード
+      share: ファイル・ストレージ
+      distribution_list: 配布リスト
+      authorization_domain: ディレクトリー・サービス
+      metadata_profile: メタデータ・プロファイル
+      metadata_field: メタデータ・フィールド
+    attributes:
+      authorization_domain:
+        host: サーバー・アドレス
+        port: ポート
+        treebase: トレイベース
+        login: ログイン
+        password: パスワード
+      c_configuration:
+        encrypt_transfers: 転送の暗号化
+        c_ssh_tcp_port: SSH TCP ポート
+        c_fasp_udp_port: fasp UDP ポート
+        http_fallback_port: HTTP フォールバック・ポート
+        c_kbps_initial_target_upload_rate: 初期アップロード率
+        c_kbps_initial_target_download_rate: 初期ダウンロード速度
+        c_kbps_max_target_upload_rate: 最大アップロード率
+        c_kbps_max_target_download_rate: 最大ダウンロード速度
+        c_lock_minrate_policy: 最小比率およびポリシーのロック
+        c_relay_outgoing_bandwidth: 発信帯域幅
+        c_relay_incoming_bandwidth: 着信帯域幅のリレー
+        min_connect_version_major: 最小接続バージョン
+        min_connect_version_minor: 最小接続バージョン
+        min_connect_version_point: 最小接続バージョン
+        http_fallback_enabled: HTTP フォールバックを使用可能にする
+        downloads_during_transfers_enabled: 転送中にダウンロードを有効に
+      m_configuration:
+        email_from_email: Faspex "From:" E メール
+        m_smtp_server_port: サーバー・ポート
+        m_smtp_auth_type: SMTP 認証
+        m_smtp_server: SMTP メール・サーバー
+        use_tls: 使用可能な場合は TLS を
+        m_smtp_helo_domain: ドメイン
+        m_smtp_username: ユーザー ( ドメインを含む )
+        smtp_password: パスワード
+        email_from: ファスペックス「From:」名
+        package_received_notifications_from: パッケージの受信者「元」
+      e_configuration:
+        ad_proxy_host: Active Directory プロキシー・ホスト
+        ad_proxy_port: Active Directory プロキシー・ポート
+        announcement: メッセージ
+        dbox_can_override_ear: ドロップダウン・ボックスに独自の暗号化設定を許可する
+        can_override_ear_per_personal_invite: 外部送信者招待のカスタム暗号化設定を許可する
+        e_http_port: HTTP ポート
+        e_https_port: HTTPS ポート
+        e_server_address: サーバーの外部アドレスまたは名前
+        e_server_enable_alternate_address: 代替アドレスを有効
+        e_server_emails_include_alternate_address: メールに代替アドレスが含まれる
+        email_passcode_expires: パッケージ・リンク有効
+        email_passcode_days_valid: 後で期限切れ
+        email_passcode_expire_after_download: フルパッケージ・ダウンロード後の有効期限切れ
+        registration_type: 自己登録
+        registration_approval_ccs: 次の E メールを承認して承認してください
+        registration_external_use_default: 外部ユーザーにデフォルトの登録ポリシーを使用する
+        registration_type_external: 外部ユーザーの登録ポリシー
+        registration_approval_ccs_external: 外部ユーザーを承認するために次の E メールを通知
+        tos_external: 外部ユーザー向けサービスの条件
+        package_instructions: メッセージ
+        tos: サービスの条件
+        use_strong_password: 強力なパスワードの使用
+        force_password_reset_for_new_users: 初回ログイン時に新規ユーザーがパスワードを変更する必要がある
+        allow_users_to_unlock: ロックアウトされたユーザーが自身をアンロックできる
+        session_timeout: タイムアウト後のセッション
+        allow_send_to_email: 外部メール・アドレスへの送信を許可
+        allow_request_from_email: 招待の許可
+        registered_users_have_mutual_scope: 自己登録ユーザーは、互いに送信できます。
+        inviting_allowed: 外部センダーの招待を許可
+        hide_user_dir_default: ユーザー・ディレクトリーをデフォルトでプライベートにする
+        public_url_allowed: 公開送信 URL の許可
+        dbox_can_override_public_url: 個々のパブリック URL を個別に使用可能/使用不可にすることを許可する
+        public_url_home_server_id: パブリック URL のホーム・サーバー
+        automatically_login_using_saml_idp: SAML ID プロバイダーを使用したログイン
+        saml_idp_sso_target_url: IdP シングル・サインオン URL
+        saml_idp_slo_target_url: IdP シングル・ログ・オフ URL
+        saml_idp_cert_fingerprint: IdP 証明書フィンガープリント
+        saml_idp_cert: IdP 証明書
+        can_see_global_distribution_lists_default: デフォルトでユーザーはグローバル配布リストを表示できます。
+        tos_for_sending: 送信のためのサービスの条件
+        remove_ds_users_on_inactivity: DS ユーザーの削除
+        remove_saml_users_on_inactivity: SAML ユーザーの削除
+      e_workgroup:
+        e_wg_name: 名称
+        e_wg_desc: 解説
+        workgroup_received_notification_cc: 受信メールのコピーをこれらのアドレスに送信する
+        destination_share_id: デフォルトの受信箱
+      invitation:
+        expires_at: 満了までの日数
+      node:
+        alternate_address: 2 次アドレスまたは名前
+        alternate_address_client_filter: リクエスターのアドレスが一致する場合に使用
+        alternate_address_server_filter: ブラウザーのホスト名が一致する
+        api_password: パスワード
+        api_port: ポート
+        api_username: ユーザー名
+        enable_alternate_address: 2 次アドレス有効
+        encrypted_api_password: パスワード
+        host: ホスト
+        name: 名称
+        primary_address: 1 次転送アドレスまたは名前
+        ssl: SSLを使用する
+        verify_ssl: SSL 証明書を検査する
+      share:
+        kbps_initial_target_upload_rate: 初期アップロード率
+        kbps_initial_target_download_rate: 初期ダウンロード速度
+        lock_minrate_policy: 最小比率およびポリシーのロック
+        kbps_max_target_upload_rate: 最大アップロード率
+        kbps_max_target_download_rate: 最大ダウンロード速度
+        relay_incoming_bandwidth: 受信リレー率
+        relay_outgoing_bandwidth: 発信リレー率
+      e_package:
+        e_package_name: 書名
+      delivery:
+        metadata: '無効なメタデータ: '
+        sources: ''
+        ear_passphrase: パスフレーズ
+        tos_for_sending: サービスの条件
+      registration:
+        name: ログイン
+        email: E メール
+        first_name: 名
+        last_name: 姓
+        tos_agreement: 私はサービスの条件を受け入れる
+      metadata_field:
+        label: ラベル
+      post_process:
+        active: アクティブ
+        name: 名称
+        script_path: サーバー上のスクリプトへのパス
+        package_name: パッケージ名
+        sender_name: 送信者名
+        sender_email: 送信者 E メール
+        recipient_name: 受信者リスト
+        recipient_email: 受信者 E メール・リスト
+        package_note: パッケージ・ノート
+      ad_group:
+        kbps_initial_target_upload_rate: 初期アップロード速度 (kbps)
+        kbps_initial_target_download_rate: 初期ダウンロード速度 (kbps)
+        kbps_max_target_upload_rate: 最大アップロード速度 (kbps)
+        kbps_max_target_download_rate: 最大ダウンロード速度 (kbps)
+        lock_minrate_policy: 最小比率およびポリシーのロック
+        can_invite: 外部センダーの招待を許可
+        dn: DN
+      directory_service_group:
+        kbps_initial_target_upload_rate: 初期アップロード速度 (kbps)
+        kbps_initial_target_download_rate: 初期ダウンロード速度 (kbps)
+        kbps_max_target_upload_rate: 最大アップロード速度 (kbps)
+        kbps_max_target_download_rate: 最大ダウンロード速度 (kbps)
+        lock_minrate_policy: 最小比率およびポリシーのロック
+      user:
+        name: ログイン
+        email: E メール
+        password: パスワード
+        password_confirmation: パスワードの確認
+        kbps_initial_target_upload_rate: 初期アップロード速度 (kbps)
+        kbps_initial_target_download_rate: 初期ダウンロード速度 (kbps)
+        kbps_max_target_upload_rate: 最大アップロード速度 (kbps)
+        kbps_max_target_download_rate: 最大ダウンロード速度 (kbps)
+        lock_minrate_policy: 最小比率およびポリシーのロック
+        rows_per_page: ページあたりの最大行数
+        disable_connect: Aspera Connect プラグインの無効化
+        account_activated: アクティブなアカウント
+        account_expires: アカウント有効期限
+        self_destructs: アカウントの自動削除
+        destruction_date: 削除日
+        received_notification_cc: 受信メールのコピーをこれらのアドレスに送信する
+        allow_receipt_cc_edit: パッケージ作成時に受信先住所の編集を許可する
+        uploads_allowed: パッケージのアップロード
+        downloads_allowed: パッケージのダウンロード
+        forwarding_allowed: パッケージの転送
+        can_create_from_remote: リモート・ソースからパッケージを作成
+        can_send_to_all_faspex_users: すべての Faspex ユーザーに送信可能
+        can_send_to_external_email: 外部 E メールに送信可能
+        can_invite: 外部センダーの招待を許可
+        notify_on_receive: パッケージの受信時にメールを送信する
+        notify_on_validation_failure_if_sender: 送信済みパッケージで検証が失敗した場合に E メール
+        notify_on_validation_failure_if_recipient: 受信したパッケージの検証が失敗した場合に E メール
+        notify_downloader_on_download: パッケージのダウンロード時にメールを送信する
+        notify_on_workgroup_package_if_sender: 送信するパッケージのワークグループ通知を含める
+        suppress_connect_install_dialog: インストール/アップグレード・プロンプトの抑制
+        allowed_ip_addresses_for_login: ログインに許可された IP アドレス
+        allowed_ip_addresses_for_download: ダウンロード可能な IP アドレス
+        allowed_ip_addresses_for_upload: アップロードの許可された IP アドレス
+        last_remote_addr: 最終ログイン・クライアント・アドレス
+        last_server_addr: 最終ログイン・サーバー・アドレス
+        override_transfer_parameters: デフォルト設定のオーバーライド
+        override_server_delete_after_download: システム・デフォルト設定
+        welcome_email: ようこそメッセージの送信
+        created_at: 作成日
+        updated_at: 更新日
+        type: ユーザー・タイプ
+        description: 解説
+        allow_user_specified_delete_after_download: パッケージごとにユーザーが自身の削除設定を設定できるようにします。
+        enable_public_url: 公開 URL を有効に
+        can_have_public_url: 公開送信 URL の許可
+      local_user:
+        password_expiration_interval: パスワード有効期限間隔
+      template_user:
+        days_til_expiration: 新規アカウントの有効期限切れ
+        days_til_destruction: 新規アカウントは削除されます
+      home_server_rule:
+        email_pattern: E メール・アドレス regex
+        user_name_pattern: ユーザー名 regex
+        ad_group_pattern: ディレクトリー・サービス・グループ正規表現
+        ad_dn_pattern: ディレクトリー・サービス DN 正規表現
+        ldap_field_pattern1: LDAP フィールド regex
+        ldap_field_pattern2: LDAP フィールド regex
+        ldap_field_pattern3: LDAP フィールド regex
+      send:
+        upload_cc: これらの受信者には、このパッケージのアップロードが完了したときに通知
+        download_cc: 受信者がこのパッケージをダウンロードした場合に、これらの受信者に通知
+        receipt_cc: これらの受信者は、受信者のパッケージに受信した E メールを受信します。
+    errors:
+      format: "%{attribute} %{message}"
+      e_configuration:
+        idp_cert_and_idp_cert_fingerprint_blank: "「 IdP 証明書の Fingerprint」または「IdP 証明書」の
+          1 つを指定する必要があります。"
+      models:
+        delivery:
+          attributes:
+            title:
+              blank: タイトルはブランクにできません
+        distribution_list:
+          attributes:
+            name:
+              blank: 名前はブランクにできません
+            contacts:
+              blank: 連絡先を空欄にする
+        e_configuration:
+          attributes:
+            max_title_length_in_storage_paths:
+              not_a_number: ストレージ・パス内の最大タイトル長が数値ではありません
+            days_until_packages_expire:
+              not_a_number: パッケージの有効期限までの日数が数値ではない
+        saml_configuration:
+          attributes:
+            allowed_clock_drift_in_ms:
+              not_a_number: 許可されたクロック・ドリフトは数値ではありません
+      messages:
+        accepted: 受け入れなければならない
+        blank: 空白にはできません
+        confirmation: "%{attribute} と一致しません"
+        empty: 空にはできません
+        equal_to: "%{count} と等しくなければなりません"
+        even: 偶数であること
+        exclusion: 予約済み
+        greater_than: "%{count} より大きくなければなりません"
+        greater_than_or_equal_to: は %{count} 以上でなければなりません
+        inclusion: はリストに含まれていません
+        invalid: は無効です
+        less_than: は %{count} より小さくなければなりません
+        less_than_or_equal_to: は %{count} 以下でなければなりません。
+        model_invalid: '検証に失敗しました : %{errors}'
+        not_a_number: 数値ではありません
+        not_an_integer: 整数でなければなりません
+        odd: 奇数であること
+        other_than: "%{count} 以外である必要があります"
+        present: ブランクにする必要
+        record_invalid: '検証に失敗しました : %{errors}'
+        restrict_dependent_destroy:
+          has_many: 従属 %{record} が存在するため、レコードを削除できません
+          has_one: 従属 %{record} が存在するため、レコードを削除できません
+        required: 存在している
+        taken: 既に使用されています
+        too_long:
+          one: 長さが長すぎます (最大は 1 文字です )
+          other: は長すぎます (最大は %{count} 文字です )
+        too_short:
+          one: は短すぎます (最小は 1 文字です )
+          other: は短すぎます (最小は %{count} 文字です )
+        wrong_length:
+          one: は、誤った長さです ( 1 文字でなければなりません )
+          other: 長さが正しくありません ( %{count} 文字にする必要があります )
+      template:
+        body: 以下のフィールドに問題がありました。
+        header:
+          one: 1 エラーが原因でこの %{model} が保存されません。
+          other: "%{count} エラーがこの %{model} の保存を禁止しています"
+      user:
+        groups_are_inactive: メンバーとして所属するグループは非アクティブです
+        user_is_inactive: ユーザーが非アクティブである
+        username_conflicts_with_existing_user: ユーザー名が既存のユーザー・アカウントと競合します。
+  admin:
+    saml:
+      edit:
+        saml: サムル
+        automatically_login_using_saml_idp_hint: SAML ID プロバイダーを使用して自動的にログインします。  %{url}
+          は、 SAML を使用した自動ログインが使用可能になっている場合でも、 Faspex に直接ログインするために使用できます。
+    saml_configurations:
+      edit:
+        domain_url_hint: "(オプション) この Faspex ドメインにアクセスすると、ユーザーはこの SAML プロバイダー経由で自動的にログインするように誘導されます
+          ( デフォルトはオーバーライド ) 。"
+        publicly_visible_hint: ユーザーがローカル・ログイン・ページからこの SAML 構成にアクセスできるようにする
+      test_warning: |-
+        警告: このアクションを実行すると、現在の Faspex セッションが終了し、この SAML プロバイダーのログイン・ページが表示されます。
+
+        現在のセッションを終了しないようにするには、このリンクをプライベート・ウィンドウで開くか、別のブラウザーでこの構成をテストすることができます。
+  app:
+    controllers:
+      account:
+        ad_groups_controller:
+          added_group: "%{group_name} グループをワークグループに追加しました"
+          sync_group: "%{group_name} の同期中"
+          updated_grp_prov: グループ・プロビジョニング・ポリシーの更新
+          updated_grp_import: グループのインポート・ポリシーを更新
+          updated_error: "%{group_name} グループ構成の保存中にエラーが発生しました :<br/>"
+          removed_group: ワークグループから %{group_name} グループを削除しました。
+          wg_not_found: ワークグループが見つかりません
+          no_groups_selected: 選択されたグループ
+          group_sched_activated: "%{group_name} がアクティブ化されるようにスケジュールされました"
+          group_sched_deactivated: "%{group_name} の非アクティブ化がスケジュールされました"
+          group_sched_removed: "%{group_name} が除去されるようにスケジュールされています"
+        memberships_controller:
+          added_wg: 作業グループにテンプレート・ユーザーが追加されました - %{wg_name}
+          added_wg_fail: 作業グループにテンプレート・ユーザーを追加できませんでした - %{wg_name}
+          remove_wg: ワークグループ - %{wg_name} からテンプレート・ユーザーが削除されました
+          remove_wg_fail: 作業グループからテンプレート・ユーザーを削除できませんでした - %{wg_name}
+        saml_groups_controller:
+          added_group: 追加されたグループ %{group_name}
+        users_controller:
+          no_wg_found: ワークグループ *%{wg_name} が見つかりませんでした
+          add_to_wg_fail: 'ワークグループに追加中にエラーが発生しました : %{error}'
+          removed_from_wg: ワークグループから削除されました。
+          removed_from_wg_fail: 'ワークグループからユーザーを削除中にエラーが発生しました : %{error}'
+          user_membership_updated: ユーザーメンバーシップが更新され
+          error_editing_membership: 'メンバーシップの編集エラー : %{error}'
+          created_user: ユーザー %{user_name} が正常に作成されました
+          created_user_fail: ユーザーを追加できません。
+          updated_user: ユーザー %{user_name} を正常に更新しました
+          permission_error: ユーザー %{user_name} を変更する権限がありません
+          activated: アクティブ化された %{user}
+          disabled_saml_user_note: "<br>注: 無効な SAML 構成に関連付けられているユーザーは、非アクティブのまま"
+          deactivated: 非アクティブ化された %{user}
+          removed: "%{user} を削除しました"
+          removed_external: "%{user} を削除しました"
+          no_users_selected: ユーザー選択なし
+          active_users: アクティブ・ユーザー
+          all_users: すべてのユーザー
+          inactive_users: 非アクティブなユーザー
+      admin:
+        authorization_domains_controller:
+          updated: 構成の更新。
+        nodes_controller:
+          deleted: "%{name} を削除しました"
+          deleted_fail: "%{name} を削除する権限がありません"
+          connection_fail: "%{message}<br />%{status}<br />%{status_message}"
+          connection_success: "%{message} <br /> 接続が成功しました。"
+        notifications:
+          login_announcements_controller:
+            updated: 更新されたログインの告知
+          package_instructions_controller:
+            updated: 更新パッケージの指示
+        packages_controller:
+          invalid_num_days: 日数が無効です
+          no_older_pkgs: "%{max} より古いパッケージはありません"
+        post_processes_controller:
+          activated: アクティブ化された %{script_name}
+          activated_error: "%{script_name} のアクティブ化中のエラー"
+          created: ポストプロセッシング・スクリプト %{script_name} が正常に作成されました
+          deleted: 処理後のスクリプト %{script_name} が削除されました
+          inactivated: "%{script_name} が非アクティブ化されました"
+          inactivated_error: "%{script_name} を非アクティブにしているときにエラーが発生"
+          updated: スクリプト %{script_name} が正常に更新されました
+        saml_configurations_controller:
+          create_success: 'SAML 構成が正常に作成されました<br>注: ログインする前に SAML サーバー上のメタデータを更新する必要があります。'
+          update_success: 'SAML 構成が正常に更新されました<br>注: ログインする前に SAML サーバー上のメタデータを更新する必要がある場合があります。'
+        settings:
+          display_settings_controller:
+            file_too_large: ファイルが大きすぎます。 最大ファイル・サイズは 5MB
+            remove_logo_fail: カスタムロゴファイルを削除できません
+            remove_logo_success: カスタム・ロゴ・ファイルの削除
+            unsupported_file_type: カスタム・ロゴに対してサポートされないファイル・タイプ ファイルは jpeg、 gif、または
+              png のイメージでなければなりません。
+            updated_settings: 更新表示設定
+          entitlement_controller:
+            invalid_license: 無効な資格ライセンス
+            successful_entitlement: 成功した資格
+            unable_to_register: 登録できません
+          global_distribution_lists_controller:
+            created: 作成されたグローバル配布リスト %{name}
+            deleted: 削除されたグローバル配布リスト
+            updated: 更新されたグローバル配布リスト
+            updated_fail: 1 つ以上のグローバル配布リストの更新エラー
+          license_controller:
+            license_upload_fail: ライセンスのアップロードが
+            only_text_allowed: テキスト・ファイルのみ許可
+            updated_license: 更新済みライセンス
+          package_storage_controller:
+            updated_settings: 更新済みパッケージ・ストレージ設定
+          save_restore_config_controller:
+            config_restored: 構成の復元。 このプロセスを完了するには、 Faspex を再始動してください。
+          security_controller:
+            updated_settings: セキュリティー設定の更新
+          transfer_options_controller:
+            updated_settings: 更新された転送オプション設定
+          web_server_controller:
+            updated_settings: 更新された Web サーバー設定
+        share_membership_controller:
+          deleted: "%{mem_name} が削除されました"
+          deleted_fail: "%{mem_name} を削除できませんでした"
+        shares_controller:
+          add_term_fail: "%{term} を追加できませんでした"
+          added_term: 追加された %{term}
+          created: "%{share} の %{share_name} が作成されました"
+          deleted: "%{share} を削除しました"
+          find_fail: "%{term} が見つかりませんでした"
+          updated: "%{share} の %{share_name} を更新しました"
+          updated_default: 更新されたデフォルト受信箱
+      authenticated_controller:
+        expired: セッションは期限切れです。 続行するには、再度ログインしてください。
+        new_session: ユーザー %{username} の別のセッションが (%{remote}) から開始されました。
+        timed_out: セッションがタイムアウトになりました。 続行するには、再度ログインしてください。
+      entitlement_controller:
+        success: 成功した資格
+      external:
+        submissions_controller:
+          send_to_recipient: "%{name} に送信"
+      invitations_controller:
+        invitation_failed: 招待に失敗しました。 後で再試行してください。
+        invitation_created: "%{email} のインビテーションが作成されました"
+        reinvited: "%{name} への招待を再招待しました"
+        reinvited_fail: 再招待に失敗しました 後で再試行してください。
+        resend_invitation_failed: 招待の再送に失敗し 後で再試行してください。
+        resent_invitation: "%{name} への招待を再送します"
+        deleted_invitation: 削除済み招待
+        deleted_invitation_try_again: 招待を削除できません 後で再試行してください。
+      login_base_controller:
+        login_error_message: ログインが失敗しました。 再試行してください。 ログイン失敗が繰り返し発生している場合は、「パスワードを忘れた場合」リンクをクリックして、パスワードを再設定する必要があります。
+      login_controller:
+        connect_enabled: IBM Aspera Connect が使用可能になりました。
+        login_URL_change: ログイン URL が変更されました。 ブラウザーのブックマークを更新してください。
+        session_already_disconnected: このセッションは既に切断されています
+      m_configuration_controller:
+        updated: メール構成を更新しました
+      m_template_controller:
+        loaded: デフォルトの設定が正常にロード
+        updated: "%{template} E メール通知が正常に更新されました"
+      metadata_profiles_controller:
+        cannot_delete_profile: プロファイルは削除できません。通常のパッケージで使用されます。
+        cannot_delete_profile_dropbox: プロファイルを削除できません。このプロファイルは、 dropbox %{db_name}
+          によって使用されます。
+        created: 作成されたメタデータ %{profile}
+        profile_deleted: プロファイルの削除。
+        save_success: メタデータ・プロファイルを正常に保存
+        updated: 更新済み
+      ms_admin_controller:
+        home_server_rules_changed: ホームサーバールールが変更されました。 ホームサーバーを再計算して変更を適用します。
+        updated_rule: 更新済みルール
+        deleted_rule: 削除済みルール
+        added_new_rule: 新規ルールの追加
+        error_finding_home_server: 削除するホームサーバーを検索中にエラー
+        removed_server: 削除されたサーバー
+        updated_home_server_settings: 更新されたホームサーバー設定
+        updated_attributes: 更新された %{attribute}
+        access_denied: '" アクセス拒否"'
+      pending_controller:
+        archived: パッケージ「%{pkg_name}」がアーカイブされました
+        archived_fail: パッケージのアーカイブ中にエラー 後で再試行してください。
+        deleted: パッケージ "%{pkg_name}" が削除されました
+        deleted_fail: パッケージ削除中のエラー。 後で再試行してください。
+      received_controller:
+        package_archived: パッケージ %{p_name} がアーカイブされている
+        package_archived_fail: パッケージのアーカイブ中にエラー 後で再試行してください。
+      registrations_controller:
+        failed_registration: 登録の失敗。 後で再試行してください。
+      reset_password_tokens_controller:
+        no_account_exists: このアカウントは存在しません。
+        expired_pw_link: パスワードのリセット・リンクは既に使用されているか、有効期限が切れているため、無効になっています。
+        reset_success: パスワードが正常にリセットされました。
+        reset_submitted: パスワード・リセット要求が実行依頼 すぐに E メールを受信しない場合は、管理者に連絡して支援を依頼してください。
+      saml_controller:
+        does_not_exist: 要求された SAML プロバイダーは存在しません
+        disabled: 要求された SAML プロバイダーは無効になっています
+        invalid_metadata: 無効なメタデータ URL
+      sent_controller:
+        archived: パッケージ「%{pkg_name}」がアーカイブされました
+        archived_fail: パッケージのアーカイブ中にエラー 後で再試行してください。
+        deleted: パッケージ "%{pkg_name}" が削除されました
+        deleted_fail: パッケージ削除中のエラー。 後で再試行してください。
+        relay: "%{share} を共用するリレーが開始されました"
+        relay_fail: リレーの再始動エラー。 後で再試行してください。
+      settings:
+        distribution_lists_controller:
+          created: 作成された配布リスト %{dist_list_name}
+          deleted: 削除済み配布リスト
+          updated: 更新済み配布リスト
+          error_updating: 1 つ以上の配布リストの更新エラー
+        passwords_controller:
+          success: パスワードが正常に変更された
+        preferences_controller:
+          updated: 設定の更新
+      user_profile_fields_controller:
+        max_field_check_fail: "%{max} ユーザー・プロファイル・フィールドのみを使用することができます。"
+        saved: ユーザー・プロファイル・フィールドの保存
+      workgroup:
+        workgroups_controller:
+          activate: アクティブ化
+          activated_members: "%{counts} member%{plural} のアクティブ化が実行されました。 %{msg}"
+          add_ds: DS グループを追加できません。 後で再試行してください。
+          add_ds_fail: DS グループ %{group} をワークグループ %{name} に追加しました
+          add_member: "%{name} を %{box} に追加しました"
+          add_member_fail: メンバーを追加できません。 後で再試行してください。
+          create_success: '作成に成功 '
+          deactivate: 非活動化
+          deactivated_success: "%{counts} member%{plural} を非アクティブ化しました。 %{msg}%{admin}"
+          deleted_success: "%{type} %{name} を削除しました"
+          external_email_no_standard_access: 外部の E メール・ユーザーに標準アクセス権を付与する 変更はありません。
+          external_email_deactivated_fail: 外部の E メール・ユーザーは、非アクティブ化できません。 変更はありません。
+          members_actions: メンバーのアクション...
+          no_ds_selected: DS グループを選択しない
+          no_members_selected: メンバー選択なし
+          remove: 削除
+          remove_member: "%{member} をワークグループから削除しました。"
+          remove_member_fail: メンバーを削除できません。 後で再試行してください。
+          remove_ds_group: "%{count} がワークグループから削除されました。"
+          remove_ds_group_fail: DS グループを削除できません。 後で再試行してください。
+          set_admin: "%{member} を %{name} 管理者として設定します。"
+          set_admin_fail: 外部の E メール・ユーザーは、ドロップボックス管理者にできません 変更はありません。
+          set_ds_access: "%{group} を %{level} アクセスとして設定します。"
+          set_ds_access_fail: DS グループで %{level} アクセスを設定できません。 後で再試行してください。
+          set_regular_access: "%{member} を通常のアクセスとして設定します。"
+          set_regular_access_fail: メンバーへの通常アクセスを設定できません。 後で再試行してください。
+          set_standard_access: 標準アクセスの設定
+          set_submit_only: "%{member} を送信専用として設定します。"
+          set_submit_only_fail: メンバーへの送信専用アクセスを設定できません。 後で再試行してください。
+          set_submit_only_access: 送信専用アクセスの設定
+          set_wg_admin: "%{wg_name} 管理者として設定"
+          skipped_sys_admin: "%{size} システム管理者をスキップしました"
+          updated_wg: 更新された %{type}
+          user_not_found: ユーザーが見つからない
+    views:
+      account:
+        ad_groups:
+          ad_group:
+            error: エラー
+            invalid: 無効
+            pending: 保留中の %{methodop}
+          additional_permissions:
+            edit_add_perm: 追加許可の編集
+          forms:
+            group_import:
+              save: セーブ
+            import_users:
+              full_name: フルネーム
+              import_date: インポート日
+              status: 状況
+              sync_now: 今すぐ同期
+              user_name: ユーザー名
+            wg_member:
+              actions: アクション
+              add_to: 追加先 ...
+              date_added: 追加日
+              remove: 削除
+              wg_name: ワークグループ名
+          user_ad_group:
+            active: アクティブ
+            inactive: 非アクティブ
+        directory_service_groups:
+          edit:
+            back: バック
+            edit_dir_group: 'ディレクトリー・サービス・グループの編集 : %{groupname}'
+            group_import: グループインポートポリシー
+            imported_users: インポートされたユーザー (%{mem_count})
+            workgroup_memberships: ワークグループ・メンバーシップ (%{mem_count})
+          index:
+            activate: アクティブ化
+            date_added: 追加日
+            deactivate: 非活動化
+            directory_service: ディレクトリー・サービス
+            group_name: グループ名
+            members: メンバー
+            new_group: " 新規グループ"
+            remove: 削除
+            status: 状況
+            sync: 同期
+            view_op_history: 操作履歴の表示
+          new:
+            back: バック
+            cancel: キャンセル
+            dir_services: 'ディレクトリー・サービス:'
+            import: インポート
+            import_dir_serv: グループのインポート元ディレクトリー・サービス
+            search_dir_service: '検索ディレクトリー・サービス:'
+        directory_service_users:
+          additional_permissions:
+            edit_add_perm: 追加許可の編集
+          index:
+            back: バック
+            directory_service: 'ディレクトリー・サービス:'
+            import: インポート
+            import_user_from_dir_serv: ディレクトリー・サービスからユーザーをインポート
+            search: サーチ
+            search_term: '検索語:'
+            searches_limit: 検索結果は 20 件に制限されています。
+            searching: 検索
+            usr_not_found: ユーザーが見つからない
+        memberships:
+          actions: アクション
+          add_to: 追加先 ...
+          back: バック
+          name: 名称
+          remove: 削除
+          self_reg_added: 自己登録ユーザーは、以下のワークグループに追加されます。
+          template_user_workgroups: テンプレート・ユーザー・ワークグループ
+        passwords:
+          back_to_edit: 編集に戻る
+          cancel: キャンセル
+          password: "%{local_name} のパスワードの変更"
+          reset_confirm: このユーザーのパスワードをリセットしますか ? E メール通知がこのユーザーに送信され、ログインしてパスワードを変更できるようになります。
+          reset_password: パスワードのリセット
+          update_password: パスワードの更新
+        registrations:
+          form:
+            email: E メール
+            first: ファースト
+            last: ラスト
+            login: ログイン
+          index:
+            approve: 承認
+            deny: デニー
+            faspex_reg_type: Faspex は %{type} の登録を使用して構成されます。
+            new_message: これは、新規に作成されたアカウントが %{not} に承認を必要とすることを
+            not: しない
+            self_reg_users: 自己登録ユーザーは、 %{template_user} の許可を継承し、自動的に以下の %{workgroups}
+              のメンバーになります。
+        saml_groups:
+          edit:
+            back: バック
+            edit_saml: 'SAML グループの編集 : %{groupname}'
+            group_prov_policy: グループプロビジョニングポリシー
+            users: ユーザー (%{mem_count})
+            workgroup_memberships: ワークグループ・メンバーシップ (%{mem_count})
+          index:
+            activate: アクティブ化
+            date_added: 追加日
+            deactivate: 非活動化
+            group_name: グループ名
+            members: メンバー
+            new_group: " 新規グループ"
+            remove: 削除
+            saml_config: SAML 構成
+            status: 状況
+          new:
+            back: バック
+            cancel: キャンセル
+            create: クリエイ作成
+            create_new_saml: 新規 SAML グループの作成
+            group_name: 'グループ名 (DN):'
+            saml_config: SAML 構成
+        template_users:
+          account_details: アカウントの詳細
+          cancel: キャンセル
+          edit_template_user: テンプレートユーザーの編集
+          form:
+            workgroup_memberships:
+              date_added: 追加日
+              remove: 削除
+              workgroup_name: ワークグループ名
+              workgroups: ワークグループ
+          update: アップデート
+        users:
+          add_permissions:
+            edit_add_perm: 追加許可の編集
+          edit:
+            change_password: パスワードの変更/リセット
+            edit_user: 'ユーザーの編集 : %{user}'
+            return_to_user_list: ユーザー・リストに戻る
+            type: "( タイプ: %{user_type})"
+            workgroup_memberships: ワークグループ・メンバーシップ
+          edit_form:
+            cancel: キャンセル
+            update_user: ユーザーの更新
+          edit_wg:
+            add_user: ワークグループにユーザーを追加
+            back_to_edit: 編集に戻る
+            remove: 削除
+            workgroup_mem_for: "%{user} のワークグループ・メンバーシップ"
+            workgroup_name: ワークグループ名
+          external_users:
+            accounts: アカウント
+            remove: 削除
+          fieldsets:
+            account_details:
+              account_details: アカウントの詳細
+              active: アクティブ
+              admin_hint: 管理者は、ユーザーの追加/削除、およびサーバー構成の管理を
+              inactive: 非アクティブ
+              manager_hint: 管理者は、ユーザーの追加/削除
+              never: ネヴァー
+              role: '役割:'
+              text_area_hint: コンマ、セミコロン、または空白文字で区切られた E メール・アドレスを入力します。
+              user_hint: 通常のユーザーは Faspex パッケージを送受信できます。
+            advanced_transfer:
+              adv_trans_setting: 拡張転送設定
+              checked: チェック
+              initial_transfer: 初期転送速度
+              max_rate: 最大許容速度
+              minrate_hint: 'チェック・マークを付けた場合、クライアントは転送ポリシーまたは最小転送速度を調整できません (デフォルト:
+                %{config})'
+              server_to_user: 'サーバーからユーザーへ ( デフォルト: %{config})'
+              transfer_alert: |-
+                Faspex は、デフォルトで Aspera Central Server セクションからの転送設定を使用します。
+                ただし、ここでは、サーバー全体の設定よりも優先される、ユーザー固有の転送設定を設定できます。
+              unchecked: チェックなし
+              user_to_server: 'ユーザーからサーバーへ ( デフォルト: %{config})'
+            ds_history:
+              action: アクション
+              ds_history: DS ヒストリー (%{dom_name})
+              notes: 備考
+              operation: オペレーション
+              show_all: すべて表示
+              time: 時間
+            package_deletion:
+              after_download: 'ダウンロード後 :'
+              allow_user_delete: パッケージごとにユーザーが独自の削除設定を設定できるようにします。
+              delete_files_after: "<strong>受信者</strong> がすべてのファイルをダウンロードすると、ファイルを"
+              delete_files_all: "<strong>すべての受信者</strong> がすべてのファイルをダウンロードした後に"
+              do_nothing: 何もしない
+              package_deletion: パッケージの削除
+              server_delete: 'デフォルト: %{config}'
+            password_policy:
+              custom_pw_policy: カスタムパスワードポリシー
+              pw_expires: パスワード有効期限
+              prevent_pw_reuse: パスワードの再利用の防止
+              every_x_days: すべての %{x} 日(秒)
+              never: ネヴァー
+            permissions:
+              affirm: そうだ
+              allow_inviting_external: '外部センダーの招待を許可 :'
+              allow_public_submission: '公開の送信 URL を許可 :'
+              allowed_to: '許可 :'
+              can_see_global_dist_lists: グローバル配布リストを表示できます。
+              control_hint: チェック・マークを外した場合、ユーザーはユーザーに送信したり、ドロップ・ボックス/ワークグループに送信したりすることができなくなります
+              create_drop_packages: このオプションが使用不可の場合、ユーザーはいずれかのドロップダウン・パッケージのメンバーである場合にのみ、ドロップ・ボックス・パッケージを作成することができます。
+              create_normal: '通常のパッケージを作成できる :'
+              external_email: '外部 E メールに送信可能 :'
+              ip_addr_hint: 'コンマで区切られたアドレス/範囲をコンマで区切って入力します。例 : <b>10.0.*、 192.168.1.1</b>'
+              keep_dir_private: 'ユーザーディレクトリをプライベートに保持 :'
+              neg: 違う。
+              permissions: アクセス権
+              see_global_dis_list: グローバル配布リストを表示できます。
+              send_to_all: 'すべての Faspex ユーザーに送信可能 :'
+              send_to_all_send_to_wg: 許可されている場合、ユーザーはすべての Faspex ユーザーに送信できます。 それ以外の場合、ユーザーは他のワークグループ・メンバーにのみ送信できます。
+              user_server_def: 'ユーザー・サーバー・デフォルト (現在: %{def} )'
+            personal_details:
+              first_name: ファーストネーム
+              last_name: ラストネーム
+              personal_details: 個人の詳細
+            sender_quota:
+              sender_hint: デフォルトの送信者割り当て量制限のオーバーライド
+              sender_quota: 送信者割り当て量
+              sender_quota_hint: ローリング期間中に送信される合計データ
+              sender_quota_leg: '送信者割り当て量 :'
+            user_history:
+              last_login_time: 最終ログイン時刻
+              user_history: ユーザー履歴
+            welcome_email:
+              welcome: ようこそ E メール
+          index:
+            accounts: アカウント
+            activate: アクティブ化
+            deactivate: 非活動化
+            remove: 削除
+          menus:
+            add_account:
+              add_account: 'アカウントの追加 '
+              dir_serv_user: ディレクトリー・サービスユーザー
+              faspex_user: Faspex ユーザー
+              new_user: " 新規ユーザー"
+            toggle_users:
+              active_users: アクティブ・ユーザー
+              all_users: すべてのユーザー
+              inactive_users: 非アクティブなユーザー
+          new:
+            back: バック
+            user_account: 新規ユーザー・アカウント
+          new_form:
+            cancel: キャンセル
+            confirm_password: パスワードの確認
+            create_account: アカウントの作成
+            first_name: ファーストネーム
+            last_name: ラストネーム
+            or: " 又は "
+            password: パスワード
+            set_password: パスワードの設定
+          user:
+            invalid: 無効
+            same_as_login: "( ログインと同じ )"
+          user_list:
+            check_all_users: 全ユーザーをチェック
+            check_user: ユーザーの確認
+            date_added: 追加日
+            email: E メール
+            first: ファースト
+            home_server: ホームサーバー
+            last: ラスト
+            last_login: 最終ログイン
+            login: ログイン
+            status: 状況
+            type: タイプ
+      active: アクティブ
+      ad_admin:
+        ad_users_list_rows:
+          active: アクティブ
+          full_name: フルネーム
+          import_date: インポート日
+          inactive: 非アクティブ
+          invalid: 無効
+          user_name: ユーザー名
+        edit_config:
+          and_test: " およびテスト"
+          anonymous: アノニマス
+          dir_service_details: ディレクトリー・サービス詳細
+          dir_service_type: 'ディレクトリー・サービス・タイプ:'
+          enable_dir_service: 'ディレクトリー・サービス使用可能 :'
+          ex_dir_service: 外部ディレクトリー・サービス
+          login: 'ログイン:'
+          login_method: 'ログイン方法:'
+          password: 'パスワード:'
+          port: 'ポート:'
+          provide_credentials: 資格情報の提供
+          save: セーブ
+          save_and_test: 保存してテスト
+          server: 'サーバー:'
+          treebase: 'ツリー・ベース:'
+          use_tls: 'セキュア・モード (TLS)の使用 :'
+        operation_hist:
+          details: 経緯
+          dir_service_op_history: ディレクトリー・サービス操作履歴
+          no_op: 操作が実行されていない
+          operation: オペレーション
+          time: 時間
+          view: ビュー
+        status: 状況
+      ad_group_membership:
+        active: アクティブ
+        inactive: 非アクティブ
+      ad_groups:
+        error: エラー
+        invalid: 無効
+        pending: '保留中 '
+      admin:
+        auth_domain:
+          edit:
+            edit_name: "%{name} の編集"
+          form:
+            anonymous: アノニマス
+            dir_service_details: ディレクトリー・サービス詳細
+            dir_service_name: 'ディレクトリー・サービス名:'
+            dir_service_type: 'ディレクトリー・サービス・タイプ:'
+            dn_message: 通常、識別名 (DN)
+            enable_dir_service: 'ディレクトリー・サービス使用可能 :'
+            login: 'ログイン:'
+            login_method: 'ログイン方法:'
+            password: 'パスワード:'
+            port: 'ポート:'
+            provide_cred: 資格情報の提供
+            save: セーブ
+            save_and_test: 保存してテスト
+            secure_tls: 'セキュア・モード (TLS)の使用 :'
+            server: 'サーバー:'
+            treebase: 'ツリー・ベース:'
+            username_attr: 'ユーザー名属性:'
+          index:
+            add_new: 新規 %{name} の追加
+            disabled: 無効
+            enabled: 有効
+            server: サーバー ( )
+            status: 状況
+            type: 種類
+          new: 新規 %{name}
+        fasp_nodes:
+          fasp_nodes:
+            active_sessions: アクティブ・セッション
+            address: 所在地
+            errors: エラー
+            last_poll: 最終成功ポーリング時間
+            node_id: ノード ID
+            cluster_id: クラスター ID
+            polling_strategy: ポリング戦略
+            os: O
+            status: 状況
+        nodes:
+          edit:
+            cancel: キャンセル
+            edit_name: "%{user} - %{node} の編集"
+          form:
+            advanced_config: <i class="icon-plus"></i>拡張構成
+            basic_config: 基本構成
+            config_message: 以下の構成は、 Aspera Enterprise Server をホストするサーバーを指している必要があります。
+              このアドレスは、転送統計を収集するために Web アプリケーションで使用されます。 Aspera Enterprise Server が
+              Web アプリケーションと同じマシン上で実行されている場合、正しいアドレスは 127.0.0.1です。
+            sec_add_message: 以下のアドレスは、転送を開始するためにユーザーが必要とするものです。 異なるアドレスを使用する必要のあるユーザーのグループがある場合
+              ( 例えば、ネットワーク条件のために ) 、「2 次アドレス」フィールドを使用して IP 範囲を指定します。 2 次アドレスは転送リレーには適用されないことに注意してください。
+            storage_error: このファイル・ストレージは、現在システム・デフォルト・受信トレイとして使用されてい 編集すると、既存のパッケージがすべてユーザーに使用できなくなります
+            test_connect: 接続のテスト
+          index:
+            add_new: 新規 %{name} の追加
+            default_inbox: デフォルトの受信箱
+            location: 所在地
+            name: 名称
+            source: ソース
+            shares: ファイル・ストレージ
+            status: 状況
+            update: アップデート
+          new:
+            cancel: キャンセル
+            new_name: 新規 %{name}
+          test: 接続に成功し
+        notifications:
+          login_announce:
+            edit:
+              ann_hint: このメッセージはログイン画面に表示されます。
+              update: アップデート
+          package_inst:
+            pkg_hint: このメッセージは送信画面に表示されます。
+            update: アップデート
+        packages:
+          delete:
+            age_days: 経過日数<br/>(日)
+            cancel: キャンセル
+            delete_confirm: |-
+              これらのパッケージのファイルを削除しますか ?
+              このアクションを元に戻すことはできません。
+            delete_files: ファイルの削除
+            files: ファイル
+            files_on_server: "<br/>サーバー上のファイル"
+            full_downloads: フル・<br/>ダウンロード
+            recipients: 受信者
+            sender: 送信者
+            size: 規模
+            status: 状況
+            title: 書名
+            upload_completion: "<br/>完了のアップロード"
+            warning: このアクションは、以下のパッケージのファイルを削除します。
+          index:
+            action: アクション
+            all_packages: すべてのパッケージ
+            days_or_older: 日または古い
+            delete_files: ファイルの削除 ...
+            download: ダウンロード<br/ フル/部分
+            for_packages: パッケージの場合
+            files: ファイル
+            files_on_server: サーバー上のファイル
+            package_created: パッケージ<br>作成済み
+            recipients: 受信者
+            relays: リレー
+            search: サーチ
+            sender: 送信者
+            size: 規模
+            status: 状況
+            title: 書名
+            upload_completed: アップロード<br>完了
+          relays:
+            all_packages: すべてのパッケージ
+            completed_relays: 共通リレー
+            failed_relays: 失敗したリレー
+            files: ファイル
+            incomplete_relays: 不完全なリレー
+            ip_relays: 進行中のリレー
+            package_created: パッケージ<br>作成済み
+            recipients: 受信者
+            relays: リレー
+            search: サーチ
+            sender: 送信者
+            size: 規模
+            status: 状況
+            title: 書名
+            upload_completed: アップロード<br>完了
+          show_details:
+            full: フル
+            full_partial: 完全/部分
+            ip_addr: IP アドレス
+            package_download_details: パッケージのダウンロード詳細
+            partial: 部分的
+            start: 開始時刻
+            stop: 停止時刻
+            time_elapsed: 経過時間
+            username: ユーザー名
+        post_processes:
+          edit:
+            cancel: キャンセル
+            edit_script: スクリプト %{name} の編集
+            update: アップデート
+          env_var_help:
+            description: 解説
+            faspex_meta<field>: "&lt;field&gt; という名前のメタデータ・フィールドの値で、小文字に置換され、アンダースコアーによって置換されるスペース"
+            faspex_metadata_fields: パッケージに定義されているメタデータ・フィールドのコンマ区切りリスト
+            faspex_pkg_delivery_id: パッケージの配信 ID ( パッケージ ID およびパッケージ UUID とは異なります )
+            faspex_pkg_dir: パッケージへのパス
+            faspex_pkg_id: パッケージ ID
+            faspex_pkg_is_forward: 転送済みパッケージの場合は 1 、元のパッケージの場合
+            faspex_pkg_name: パッケージ・タイトル
+            faspex_pkg_note: パッケージ・ノート
+            faspex_pkg_total_bytes: パッケージのサイズ ( バイト単位 )
+            faspex_pkg_total_files: パッケージ内のファイル数
+            faspex_pkg_uuid: パッケージの UUID
+            faspex_recipient_count: '受信者の数 (例 : 「3」)'
+            faspex_recipient_i: i 番目の受信者の名前
+            faspex_recipient_list: '受信者のコンマ区切りリスト (例 : 「admin, johndoe」)'
+            faspex_sender_email: 送信者の E メール
+            faspex_sender_id: 送信側の ID
+            faspex_sender_name: 送信者の名前
+            variable: 変数
+          form:
+            env_var_help: 環境変数のヘルプ
+            exact_match: 完全一致
+            execution_crit: 実行基準
+            high: 高
+            low: 低い
+            package_date_end: パッケージ日付の終了
+            package_date_start: パッケージ日付開始
+            package_file_count: パッケージ・ファイル数
+            package_file_hint: パッケージ内のファイル数の範囲をここに入力してください
+            package_name: パッケージ名
+            package_note: パッケージ・ノート
+            package_size: パッケージ・サイズ
+            range_hint: パッケージ・サイズの範囲をここに入力
+            recipient_email_list: 受信者 E メール・リスト
+            recipient_list: 受信者リスト
+            script_to_run: 実行するスクリプト
+            sender_email: 送信側電子メール
+            sender_name: 送信者名
+          index:
+            action: アクション
+            create_new: 新規作成
+            execution_criteria: 実行基準
+            log: ログ
+            name: 名称
+            post_processing: 後処理
+            script: スクリプト
+          new:
+            add_new_script: 新規スクリプトの追加
+            cancel: キャンセル
+            create: クリエイ作成
+          show_events:
+            back: バック
+            exec_criteria: 実行<br/>基準
+            package_name: パッケージ名
+            package_sender: パッケージ<br/>送信者
+            package_uuid: パッケージ UUID
+            post_processing_exec_log: '後処理: %{name} の実行ログ'
+            time_of_exec: "<br/>実行の時刻"
+        saml:
+          edit:
+            saml_integration: SAML 統合
+            update: アップデート
+        saml_configurations:
+          edit:
+            allowable_clock_drift: 許容されるクロック・ドリフト ( ミリ秒)
+            attribute_mapping: 属性マッピング
+            browse: 参照...
+            certificate: 証明書
+            create_saml_config: SAML 構成の作成
+            default_saml_config: デフォルト SAML 構成
+            domain_url: ドメイン URL
+            fingerprint: デジタルネッターレ
+            fingerprint_alg: 指紋アルゴリズム
+            hide: 非表示
+            import_from_file: 'インポート元ファイル: '
+            import_from_text: 'テキストからインポート : '
+            import_from_url: 'URLからインポート : '
+            import_metadata_settings: テキストから設定をインポート
+            import_metadata_settings_url: メタデータ URL から設定をインポート
+            import_settings: メタデータ %{dir} から設定をインポート
+            name: 名称
+            name_id_format: 名前 ID の形式
+            new: ニュー
+            public_login_inst: 公開ログインの指示
+            publicly_visible: パブリック・アクセス可能
+            redirect_saml: ログアウト時に SAML ログアウト・ページにリダイレクト
+            restrict_login_groups: 既知のグループへのアクセスの制限
+            restrict_login_groups_hint: チェック・マークを付けると、 Faspex に追加された SAML グループのメンバーだけがログインを許可されます。
+            restrict_login_users: 既知のユーザーへのアクセスの制限
+            restrict_login_users_hint: チェック・マークを付けると、 Faspex に追加された既存の SAML ユーザーのみがログインを許可されます。
+            saml_config: SAML 構成
+            saml_config_details: SAML 構成の詳細
+            SAML_metadata_server: SAML サーバー・メタデータ
+            SAML_metadata_server_url: SAML サーバー・メタデータ URL...
+            saml_settings: SAML 設定
+            show: ショー
+            SSO_target_URL: 'SSO ターゲット URL:'
+            update: アップデート
+            update_saml_config: SAML 構成の更新
+          index:
+            actions: アクション
+            add_new_config: 新規 SAML 構成の追加
+            default: " ( デフォルト)"
+            disable: 無効化
+            disable_title: 無効化
+            disabled: " ( 使用不可)"
+            domain_url: ドメイン URL
+            enable: 有効化
+            enable_title: 有効
+            make_default: デフォルトにする
+            metadata: メタデータ
+            name: 名称
+            remove_default: デフォルトを削除
+            saml_config: SAML 構成
+            saml_confirm: この SAML 構成を有効にしますか ?
+            saml_confirm_disable: この SAML 構成を無効にしますか ?
+            test: テスト
+          user_profile:
+            name: 名称
+            remove: このプロファイル・フィールドの削除
+            remove_confirm: このユーザー・プロファイル・フィールドを削除しますか ?
+          user_profile_fields:
+            add_local_field: ローカル・プロファイルの追加フィールド
+            default_profile_fields: デフォルトのプロファイルフィールド
+            enabled: 有効
+            fields_required: すべての Faspex ユーザーに必要なフィールド
+            global_cust_message: "「ユーザー・プロファイル」タブで定義したカスタム・フィールド"
+            global_cust_prof_fields: グローバルカスタム・プロファイル・フィールド
+            local_cust_message: この SAML 構成に固有のユーザー・プロファイル・フィールド
+            local_cust_prof_fields: ローカルカスタム・プロファイル・フィールド
+            name: 名称
+            required: 必須
+            saml_name: SAML 名
+            save_note: '注: 「 SAML 構成の更新」をクリックするまで、変更は保存されません。'
+        settings:
+          display_settings:
+            date_format:
+              format: 形式
+              meaning: 意味
+              perc_a: 短縮曜日名 (Sun)
+              perc_A: 曜日の完全な名前 (日曜日)
+              perc_b: 短縮月名 (1 月)
+              perc_B: 完全な月名 (1 月)
+              perc_d: その月の日 (01..31)
+              perc_j: その年の日 (01..366)
+              perc_m: 年の月 ( 01..12)
+              perc_Y: 世紀のある年
+              perc_y: 1 世紀なしの年 (00...99)
+            edit:
+              acc_display_format: アカウント表示名の形式
+              custom_logo: 'カスタム・ロゴ:'
+              date_format: 日付形式
+              date_formatting_help: 日付の書式設定のヘルプ
+              default_logo_help: 'デフォルト・ロゴは 295x51 です '
+              display_settings: 表示設定
+              examples: 用例
+              local_login_inst: ローカル・ログイン手順
+              login_page_header: ログインページのヘッダー
+              remove_confirm: 現在のカスタム・ロゴを削除しますか ?
+              remove_logo: カスタムロゴの削除
+              update: アップデート
+          entitlement:
+            edit:
+              customer_id: '顧客 ID:'
+              entitlement_license: ライセンス・ライセンス
+              faspex_enabled: 'Faspex 使用可能:'
+              key: 'キー:'
+              max_active_users: '最大アクティブ・ユーザー数 :'
+              save: セーブ
+          global_dist_lists:
+            index:
+              add_new_list: 新規配布リストの追加
+              contacts: 連絡先
+              global_dist: グローバル配布リスト
+              name: 名称
+              no_list_alert: グローバル配布リストはありません。
+              update_dist_lists: 配布リストの更新
+            new:
+              new_global_list: 新規グローバル配布リスト
+          license:
+            edit:
+              OR: それとも
+          package_storage:
+            edit:
+              after_pkg_dl: パッケージがダウンロードされた後
+              after_upload_ends: アップロードの終了後
+              characters: 登場人物
+              days: 日
+              delete_files_all: "<strong>すべての受信者</strong> がすべてのファイルをダウンロードした後に"
+              delete_files_any: "<strong>受信者</strong> がすべてのファイルをダウンロードすると、ファイルを"
+              do_nothing: 何もしない
+              max_pkg_title: ストレージ・パス内の最大パッケージ・タイトル長
+              package_storage: パッケージ・ストレージ
+              packages_expire: 失効したパッケージ
+              pkg_by_pkg_del: すべてのユーザーがパッケージごとに独自の削除設定を設定できるようにします。
+              update: アップデート
+          save_restore:
+            index:
+              dl: ダウンロード
+              dl_curr_config: 現行構成のダウンロード
+              faspex_config_help: Faspex 構成フォルダーとデータベースが保存されます。
+              restore: 復元
+              restore_config: 構成の復元
+              save_restore: 保存/復元
+              upload_help: 保存された構成ファイル (*.tar.gz) をアップロードして適用します
+              version_help: '注: 復元バージョンは現在のファスプレクスのバージョンと一致している'
+          security:
+            edit:
+              act_dir_hint: ディレクトリー・サービス・ユーザーはロックまたは非活動化され
+              affirm: そうだ
+              after: アフター
+              after_x_days: "%{num} 日後"
+              after_inactivity: "%{len} 日の非アクティブ後"
+              after_one_success: アップロードが成功した後
+              allow_custom_link: ユーザーにカスタム・リンク有効期限ポリシーの設定を許可
+              allow_email_change: ユーザーに E メール・アドレスの変更を許可
+              allow_external_pkg_hint: チェック・マークを付けると、 (外部) フラグを使用して Faspex ユーザーに送信されるパッケージが許可されます
+              allow_external_pkg_to_faspex: Faspex ユーザーへの外部パッケージの許可
+              allow_usrs_create: ユーザーによる通常パッケージの作成を許可
+              allow_usrs_create_hint: 使用不可にすると、ユーザーはいずれかのドロップダウン・パッケージのメンバーである場合にのみ、ドロップ・ボックス・パッケージを作成することができます。
+              allow_usrs_send: すべてのユーザーに他のすべての Faspex ユーザーへの送信を許可する
+              always: 常に
+              allow_unlock: ロックアウトされたユーザーが自身をアンロックできる
+              allow_send_email: 外部メール・アドレスへの送信を許可
+              appr_recipient_domains: 承認済み受信ドメイン
+              appr_sender_domains: 承認送信側ドメイン
+              block_email_domain: 以下の E メール・ドメインを自己登録からブロックします
+              can_override_ear_hint: 暗号化を実施するかどうかにかかわらず、外部の送信者を招待することを
+              can_see_dist_list: デフォルトでユーザーはグローバル配布リストを表示できます。
+              cipher: FASP チフェール
+              days: 日
+              dbox_override: ドロップダウン・ボックスに独自の暗号化設定を許可する
+              def_pw_expire: デフォルトのパスワード有効期限間隔
+              default: デフォルト
+              disable: 無効化
+              disable_hint: 送信者割り当て量のローリング・ウィンドウ、所要時間
+              ds_users: "%{int} 日の非アクティブ状態の後の DS ユーザー"
+              email_expire_after_download: フルパッケージ・ダウンロード後の有効期限切れ
+              enable: 有効
+              encrypt_hint: 有効になっている場合は、 HTTP フォールバック転送も暗号化されます
+              encrypt_transfers: 転送の暗号化
+              encryption: 暗号化
+              enforce_pw_hist: 前に再使用できない
+              every: 毎
+              faspex_acc: Faspex アカウント
+              force_pw_reset: 初回ログイン時に新規ユーザーがパスワードを変更する必要がある
+              hours: 時間
+              inviting_allowed: 外部センダーの招待を許可
+              ignore_invalid_recipients: 無効な受信者を
+              ignore_invalid_recipients_hint: チェック・マークを付けた場合、パッケージが無効な受信者宛てにアドレス指定されると、パッケージ送信は失敗
+              inv_link_expires: 招待リンクの有効期限切れ
+              inv_link_help: 個人用およびドロップボックスの両方の招待状にリンク有効期限ポリシーを設定します。
+              keep_usr_dir: ユーザーディレクトリをプライベートに保持
+              list_hint: コンマ、セミコロン、または空白文字で区切られた E メール・アドレスを入力します。
+              local_users: "%{int} 日が非アクティブ状態になった後のローカル・ユーザー。"
+              lock_hint: "%{login_count} のログイン試行が失敗した後"
+              lock_users: ユーザーのロック
+              minutes: 議事録
+              neg: 違う。
+              never: ネヴァー
+              new_user_pw: 新規ユーザー・パスワード %{req}。 既存のパスワードは有効な %{warn} のままになります
+              obfuscation: 難読化
+              optional: オプション
+              optional_hint: 暗号化するかどうかをユーザーが送信時に選択できます
+              otfv: 転送出力ファイル妥当性検査 (OTFV)
+              outside_email_add: 外部のメールアドレス
+              package_link_expires: パッケージ・リンク有効
+              package_link_help: チェック・マークを付けた場合、パッケージは %{master_warn} の 1 回だけダウンロードできます。
+              passwords: パスワード
+              passwords_expire: パスワードの有効期限
+              public_url_allowed: 公開送信 URL の許可
+              prevent_pw_reuse: パスワードの再利用の防止
+              prev_conc: 同時ログインの防止
+              pw_reset_hint: パスワードのリセット E メールが送信され、パスワードの変更後にアカウントがアンロックされます
+              quota_limit: ローリング期間中に送信される合計データ
+              reg_hint: 'オプション: テキストが設定されている場合、ユーザーは、登録するためにそのステートメントを受け入れる必要があります。'
+              reg_users_mutual: 自己登録ユーザーは、互いに送信できます。
+              registration_instructions: 登録指示
+              registration_type: 自己登録
+              registrations: 登録
+              remove_users: ユーザーの削除
+              req_external_reg: 外部ユーザーが登録を必要とする
+              require_external_hint: チェック・マークを付けると、外部ユーザーはパッケージをダウンロードするために Faspex
+                アカウントを登録する必要があります
+              saml_users: 非アクティブ状態の MY__YM 日後の SAML ユーザー。
+              security: セキュリティ
+              send_welcome_email: ようこそメールをすべての新規ユーザーに送信
+              sender_quota: 送信者割り当て量
+              sender_quota_hint: 'これらのドメインのユーザーに送信されるパッケージは送信側の割り当て量にカウントされ E メール・ドメインを区切るには、コンマ
+                (,)、セミコロン ( ; )、または空白文字を使用します。 例 : @aspera.com; @ibm.com'
+              sender_quota_option: 送信者割り当て量オプション
+              sender_quota_duration: 送信者割り当て量期間
+              sender_quota_limit: 送信側割り当て量制限
+              session_timeout: 次のセッション・タイムアウト
+              slave_hint: チェック・マークを付けた場合、ユーザーは一度に 1 つのクライアントからのみ loggin を使用できます
+              strong_pw: 強力なパスワードの使用
+              timeout_hint: セッションは、指定された分数の非アクティブ状態の後にタイムアウトになります
+              tos: 送信に関するサービスの条件
+              tos_hint: 'オプション: テキストが設定されている場合、ユーザーは、パッケージを送信するためにそのステートメントを受け入れる必要があります。'
+              update: アップデート
+              use_encryption_at_rest: 暗号化 - at-Rest の使用
+              use_obf: ファイル名に難読化を使用する
+              use_obf_hint: ファイル名の難読化は元に戻せません。
+              enforce_expiration_policy: 有効期限ポリシーの最大期間を常に強制する
+          transfer_options:
+            edit:
+              aspera_connect_sett: Aspera Connect の設定
+              def_max_rate: デフォルトの最大許容速度
+              dl_dur_trans: 転送中のダウンロード
+              dl_over_http: HTTP を超えたダウンロード
+              http_gateway_hint: 以下のアドレスは、 http-gHTTPSを介して転送を開始するためにユーザーが必要とするものです。
+              http_gateway_url: HTTP ゲートウェイ URL
+              initial_def_trans_rate: 初期デフォルト転送速度
+              local_host_connect: ローカル・ホスト接続
+              local_host_hint: チェック・マークを付けると、 Faspex は Aspera CDN を使用して Connectにサービスを提供しませんが、代わりに、
+                Faspex上で使用可能なローカル接続 SDK を使用します。
+              local_to_remote: ローカル・サーバーからリモート・サーバー
+              lock_connect_sdk: 接続 SDK バージョンのロック
+              lock_connect_sdk_hint: '新規バージョンが使用可能になった場合に、 Faspex がローカル Connect SDK
+                を更新しないようにします。 この設定は、アップグレードの間も持続 注: Faspex が更新を定期的に検査し、このオプションが使用不可の場合には新規バージョンを即時にダウンロードしない'
+              min_connect_version: 最小接続バージョン
+              minrate_hint: これにチェック・マークを付けると、クライアントは転送ポリシーまたは最小転送速度を調整できなくなります。
+              prefer_http_connect: http の拡張を優先します
+              prefer_http_connect_hint: チェック・マークが付いている場合、 Faspex はブラウザーを使用して、ブラウザーの拡張機能を使用せずに、
+                Connect デスクトップ・クライアントと通信するために http メソッドを使用します ( Chrome ブラウザーでのみ使用可能
+                ) 。
+              serv_to_serv_relay_trans_sett: サーバーからサーバーへのリレー転送設定
+              server_to_user: サーバーからユーザー
+              transfer_options: 転送オプション
+              update: アップデート
+              user_to_server: ユーザーからサーバーへ
+              http_gwy_connection_success: 接続成功
+              http_gwy_connection_error: IBM Aspera HTTP Gateway との接続の確立中にエラーが発生
+          web_server:
+            alt_address_fields:
+              remove_addr: この代替アドレスを除去
+            edit:
+              add_alt_address: 代替アドレスの追加
+              address_name: アドレス名
+              alternate_addr_hint: 特定のユーザーに異なるサーバー・アドレスが必要な場合に使用します。
+              desc_email: 電子メールの説明
+              http_port_hint: apache 構成によって判別
+              https_port_hint: apache 構成によって決定される SSL を介した暗号化コンテンツの
+              remove: 削除
+              show_emails: E メールで表示
+              update: アップデート
+              web_server: Web サーバー
+        shares:
+          edit:
+            cancel: キャンセル
+            custom_access_control: カスタム・アクセス制御
+            edit: "%{name} - %{share} を編集します"
+          edit_warning:
+            alert_error_1: |-
+              このファイル・ストレージは、現在、特定のワークグループのカスタム受信トレイおよびリレー・ロケーションとして使用されています。
+              編集すると、これらのワークグループ内のすべての既存パッケージがユーザーに使用できなくなり、リレー宛先が変更されます
+            alert_error_2: |-
+              このファイル・ストレージは、現在、特定のワークグループのカスタム受信トレイ・ロケーションとして使用されています。
+              編集すると、これらのワークグループ内の既存のパッケージはすべてユーザーが使用できなくなり
+            alert_error_3: |-
+              このファイル・ストレージは、特定のワークグループのリレー・ロケーションとして現在使用されています。
+              編集すると、リレー宛先が変更されます。
+          form:
+            dir_serv_groups:
+              add_group: グループの追加
+              date_added: 追加日
+              dir_service_groups: ディレクトリーサービス・グループ
+              DN: DN
+              members: メンバー
+              name: 名称
+              status: 状況
+            dir_serv_group_member:
+              active: アクティブ
+              delete: 削除
+              inactive: 非アクティブ
+            users:
+              add_user: ユーザーの追加
+              full_name: フルネーム
+              member_since: 以降のメンバー
+              name: 名称
+              status: 状況
+              type: 種類
+              users: 利用者
+            user_membership:
+              delete: 削除
+          form_file:
+            browse: 参照...
+            default_max_allowed_rate: デフォルトの最大許容速度
+            directory: ディレクトリ
+            enable_cloud_referencing: クラウド参照を使用
+            enable_linking: リンクの有効
+            initial_default_rate: 初期デフォルト転送速度
+            limited: リミテッド
+            loading: ロード中
+            lock_minrate_hint: これにチェック・マークを付けると、クライアントは転送ポリシーまたは最小転送速度を調整できなくなります。
+            name: 名称
+            node: ノード
+            override_default: デフォルト転送設定のオーバーライド
+            private: プライベート
+            public: パブリック
+            read_perm: 読み取り権限
+            relay_transfer_rate: リレー転送速度
+            server_to_user: サーバーからユーザー
+            user_to_server: ユーザーからサーバーへ
+          new:
+            alert_no_node: "%{nodes} は作成されていません。 %{name}を作成する前に、 %{admin_node} を実行してください。"
+            cancel: キャンセル
+            create_one: 1 つ作成
+            new: 新規 %{name}
+      background_processes:
+        index:
+          action: アクション
+          background_processes: バックグラウンド・プロセス
+          log_file: ログ・ファイル
+          log_level: ログ・レベル
+          name: 名称
+          status: 状況
+        log:
+          lines: 路線
+          refresh: 最新表示間隔
+          submit: 送信
+      credits:
+        show:
+          java: Java 互換
+      directory_items:
+        file:
+          error: エラー
+      dropbox:
+        dropboxes:
+          metadata_profile: 'メタデータ・プロファイル: '
+          options:
+            after_pac_downl: 'パッケージのダウンロード後 :'
+            allow_submission_via_pub_URL: 'パブリック URLを使用して送信を許可 :'
+            always: 常に
+            custom_exp_policy: カスタム・パッケージ有効期限ポリシー
+            custom_inv_policy: カスタム招待リンクの有効期限ポリシー
+            day_after_sending_inv: 招待メールを送信した後の日(1 日 )
+            day_after_upload: アップロードが終了した日 ( 複数の場合 )
+            http_downloads_not_allowed: このパッケージでは HTTP ダウンロードは許可されません。
+            delete_after_all: "<strong>このドロップダウン・ボックスのすべてのメンバー</strong> がすべてのファイルをダウンロードした後でファイルを削除"
+            delete_after_first: "<strong>このドロップダウン・ボックスの</strong> メンバー</strong> がすべてのファイルをダウンロードした後に、ファイルを削除"
+            do_nothing: 何もしない
+            inv_link_expire: '招待リンクの有効期限:'
+            never: ネヴァー
+            optional: オプション
+            package_expires: 'パッケージ有効期限:'
+            require_encrypt: '保存時に暗号化が必要 :'
+            save_message: aspera-metadata.xml が各パッケージのルート・ディレクトリーに保存されます。
+            save_metadata: 'メタデータをファイルに保存 :'
+            success: アップロードが成功した後
+            use_server_default: 'サーバー・デフォルトを使用 (現在: %{server})'
+          perm:
+            add_rem_dir_serv_groups: ディレクトリー・サービス・グループをメンバーとして追加/除去
+            add_remove_users: 既存の Faspex ユーザーの追加 / ドロップ・ボックス以外の管理メンバーの削除
+            dropbox_admin_can: Dropbox の管理者は、 ...
+            invite_outside_submitters: 外部サブミッターの招待
+            invite_remove_users: 外部サブミッターの招待/除去
+            member_manage: メンバー管理
+            reg_users_as_mem: 新規登録済みユーザーをメンバーとして作成/編集 / 削除 / 削除
+            standard_can: 標準ユーザーは...
+        users:
+          cancel: キャンセル
+          description: 解説
+          email_address: メールアドレス
+          invite: '外部サブミッターを Dropboxに送信するための招待 : %{wgname}'
+          invite_html:
+            require_encryption: '保存時に暗号化が必要 :'
+            yes_ear: そうだ
+            no_ear: 違う。
+            optional: オプション
+          submit_save: 保存 ( 招待メールを送信 )
+      e_error:
+        default: 要求を処理しようとしているときに、サーバーで問題が発生しました。 これは、不十分な許可、構成の問題、ネットワークの中断、バグ、またはハードウェアの障害が原因である可能性があります。
+        default_2: 試みたもの以外の他のコマンドは、まだ機能している可能性が 上の「戻る」ボタンまたはその他のタブのいずれかをクリックしてみてください。
+      external:
+        sub_stat:
+          show:
+            safe: |-
+              この Web ページを閉じるのは安全です。転送は影響を受けません。
+              この画面に戻るためのリンクが表示され、 E メールが送信されました。
+            send_to: "%{recipient} に送信"
+            send_to_dropbox: 'Dropboxに送信 : %{dropname}'
+            status: このページを使用すると、送信したパッケージの状況を確認することができ、失敗した場合に転送を再試行することができます。
+          submission_stat:
+            date_submit: 実行依頼日
+            files: ファイル
+            size: 規模
+            status: 状況
+            title: 書名
+        to:
+          email_address: メールアドレス
+          please_enter_email: アクセスするには E メール・アドレスを入力してください。
+          request_access: アクセスの要求
+          send_to: "%{recipient_name} に送信します"
+      inactive: 非アクティブ
+      invitations:
+        edit:
+          cancel: キャンセル
+          reinvite: 招待の再招待 ( 招待メールの送信 )
+          reinvite_sender: 送信者の再招待
+        fieldsets:
+          sub_link_expires:
+            after: アフター
+            after_one_success: アップロードが成功した後
+            after_one_up: アップロード後
+            custom_inv_policy: 'カスタム招待リンクの有効期限ポリシー:'
+            day_after_sending_inv: 招待メールを送信した後の日(1 日 )
+            help: これらの設定をさらに制限することはできますが、デフォルトを超えては
+            inv_link_expires: 招待リンクの有効期限切れ
+          prevent_http_upload:
+            package_upload: パッケージのアップロード
+            prevent_http_upload: このパッケージの HTTP アップロードを防止
+        index:
+          access_url: アクセス URL を参照
+          actions: アクション
+          confirm: "- 確かか ?"
+          delete: 削除
+          description: 解説
+          email: E メール
+          expiration: 有効期限切れ
+          invitations: インビテーション
+          new: ニュー
+          reinvite: 再招待
+          resend: 再送
+          status: 状況
+        new:
+          cancel: キャンセル
+          description: 解説
+          email_address: メールアドレス
+          invite_sender: 送信側の招待
+          no_ear: 違う。
+          optional: オプション
+          require_encryption: '保存時に暗号化が必要 :'
+          save: 保存 ( 招待メールを送信 )
+          yes_ear: そうだ
+      layouts:
+        aspera_faspex: アスペラ・ファスペックス
+        footer:
+          copyright: 著作権 IBM の 2009 年
+          credits: クレジットおよび通知
+          patch: パッチ・レベル %{level}
+        header:
+          account: 勘定
+          enable_connect: IBM Aspera Connect を有効にする
+          help: ヘルプ
+          not_logged_in: ログインしていません。
+          sign_out: サインアウト
+          skip_to_main: メインにスキップ
+        main_tabs:
+          accounts: アカウント
+          new_package: 新規パッケージ
+          pending: 保留中
+          received: 受信済み
+          sent: 送信済み
+          server: サーバー ( )
+          view_package_options: クリックして新規パッケージ・オプションを表示
+          workgroups: ワークグループ
+        node_error:
+          warning: 警告!
+          errors_detected: 転送サーバー・エラーが検出されました。転送が正しく作動しない
+      login:
+        entitlement:
+          customer_id: 顧客 ID
+          entitle_info: 開始するライセンス情報を入力してください。
+          entitle_question: 資格に関する質問または懸念事項については、 %{aspera} にお問い合わせください。
+          entitlement: 資格 ID
+          submit: 送信
+        new:
+          anouncement: 発表
+          enter_password: Faspex パスワードを入力してください
+          enter_username: Faspex ユーザー名を入力してください
+          forgot_password: パスワードを忘れた場合
+          password: パスワード
+          username: ユーザー名
+          or_log: を使用してログインする
+      m_configuration:
+        edit:
+          faspex: ファスペックス
+          sender: 送信者
+          sender_via_faspex: ファスペックスを通した送信者
+          sender_email: 送信側電子メール
+          mail_configuration: メール構成
+          save: セーブ
+          savetest_email: E メールの保存とテスト
+          to: '実行先:'
+      m_template:
+        edit:
+          body: '本文:'
+          cancel: キャンセル
+          edit_email_html: "%{name} E メール HTML の編集"
+          save: セーブ
+          subject: '件名:'
+        show:
+          advanced: " ( 拡張)"
+          customize: テンプレートによるカスタマイズ
+          edit_html: HTML の編集
+          preview: "%{description} A プレビューが下に表示されます。 これは、テンプレートを使用するか、または HTMLを直接編集することによって、カスタマイズできます。"
+          preview_email_notif: "%{name} E メール通知のプレビュー"
+      metadata_profiles:
+        edit:
+          add_field: フィールドの追加
+          add_new_field: '新規フィールドの追加 : '
+          edit_metadata: メタデータプロファイルの編集
+          enabled: '使用可能: '
+          error_fields_not_saved: '注: エラーのあるフィールドは保存されません'
+          illegal_characters: '正しくない文字: '
+          max_length: '最大長: '
+          note: 備考
+          note_no_save: '注: メタデータ・プロファイルを保存するまで、変更は保存されません。'
+          preview: プレビュー
+          profile_name: 'プロファイル名: '
+          profile_name_placeholder: プロファイル名...
+          save: セーブ
+          save_and_prev: 保存してプレビュー
+          title: 書名
+        date_format:
+          any_other_value: その他の値
+          any_other_value_hint: リテラル・テキスト
+          at: UNIX のタイム・スタンプ ( 01/01/1970以降のミリ秒 )
+          capital_D_hint: 日の名前 (ショート)
+          capital_DD_hint: 日の名前 (長)
+          capital_M_hint: 月名 (ショート)
+          capital_MM_hint: 月名 (長さ )
+          d_hint: 月の日 ( 先頭にゼロはありません )
+          dd_hint: 月の日 (2 桁)
+          description: 解説
+          ellipses: リテラル・テキスト
+          exclamation: Windows ティック ( 01/01/0001以降 100ns )
+          m_hint: 月 ( 先行ゼロなし )
+          mm_hint: 月 ( 2 桁)
+          o_hint: 年の日 ( 先行ゼロはありません )
+          oo_hint: その年の日 (3 桁)
+          single_quote: 単一引用符
+          variable: 変数
+          y_hint: 年 (2 桁)
+          yy_hint: 年 (4 桁)
+        metadata_field:
+          characters: 登場人物
+          date_format: '日付形式: '
+          date_format_help: 日付形式のヘルプ
+          illegal_chars: '正しくない文字: '
+          illegal_chars_placeholder: 違法なクラクターズ...
+          label: 'ラベル: '
+          label_placeholder: ラベル...
+          max_length: '最大長: '
+          options: 'オプション: '
+          required: '必須: '
+        index:
+          add_profile: 新規プロファイルの追加
+          confirm: メタデータ・プロファイル %{account} を削除しますか ?
+          delete: 削除
+          edit: 編集
+          metadata_profiles: メタデータ・プロファイル
+          name: 名称
+          profile_for_norm: '通常パッケージのプロファイル :'
+          save_metadata: 'メタデータをファイルに保存 : '
+        new:
+          cancel: キャンセル
+          create: クリエイ作成
+          name: 名称
+          new_profile: 新規メタデータ・プロファイル
+      mobile:
+        landing:
+          app_redirect: 最良の経験を得るために、 Aspera Faspex Mobile アプリケーションを使用してください。
+          no_app_prompt: ドンがアプリを持ってるのか ? これを <a href='<%= @app_store_url %>'>ここ</a>
+            に取得
+          open_in_app: アプリケーションで開く
+          use_web_version: WEB バージョンの使用
+      ms_admin:
+        convert_to_slave:
+          back: バック
+          convert: コンバート
+          convert_server: サーバーをスレーブに変換
+          master_ip: 'マスター IP: '
+        edit:
+          connecting: "%{hostname}に接続中 ..."
+          server_list: Faspex サーバー・リスト
+          working: まだ動いてる ...
+        edit_server:
+          alternate_address: '代替アドレス: '
+          Back: バック
+          host_name: 'ホスト名または IP アドレス:'
+          https_port: 'HTTPS ポート: '
+          master_ip: 'マスター IP:'
+          name: '名前 : '
+          save: セーブ
+          server_list: 'Faspex サーバー・リスト: %{name} の編集'
+          url_namespace: 'URL 名前空間: '
+        list_rules:
+          create_new: 新規作成
+          default_user_server: 'デフォルトの Faspex/DS ユーザー・サーバー:'
+          home_server_rules: ホーム・サーバー規則
+          name: 名称
+          note: '注: 外部サブミッターのルールを設定しない場合は、パッケージをダウンロードするために送信者のホーム・サーバーに送信されます。 同様に、パッケージをアップロードする外部サブミッターは、招待者のホーム・サーバーからそれを行う必要があります。'
+          rule: 規則
+          save: セーブ
+          server: サーバー ( )
+          sort: ソート
+        new_edit_rule:
+          add: 追加
+          back: バック
+          create: クリエイ作成
+          create_new: 新規作成
+          dir_DN_regex: 'ディレクトリー・サービス DN 正規表現:'
+          dir_regex: 'ディレクトリー・サービス・グループ regex:'
+          edit: 編集
+          email_regex: 'E メール・アドレス regex:'
+          external_users: '外部ユーザー/サブミッター:'
+          home_server: 'ホームサーバー:'
+          home_server_rules: 'ホーム・サーバー・ルール: %{mod} ルール'
+          ldap_field: 'LDAP フィールド名:'
+          ldap_regex: 'LDAP フィールド正規表現 :'
+          regex_help: 正規表現のヘルプ
+          remove: 削除
+          rule_name: 'ルール名:'
+          save: セーブ
+          username_regex: 'ユーザー名 regex:'
+        new_server:
+          alternate_address: '代替アドレス:'
+          back: バック
+          create: クリエイ作成
+          hostname: 'ホスト名または IP アドレス:'
+          http_port: 'HTTPS ポート:'
+          name: '名前 :'
+          server_list_new_server: 'Faspex サーバー・リスト: 新規リモート・サーバー'
+          url_namespace: 'URL 名前空間:'
+        regex_help:
+          a*: ゼロまたはそれ以上。
+          a+: 1つ以上の
+          a-z: a からzまでの範囲内の任意の単一文字。
+          a-zA-z: a-z または A-Z の範囲内の任意の 1 文字。
+          abc: 1 文字の a 、b 、または cのいずれか。
+          ataslash_com: 'Ex: 「 a.com」で終わるストリングに一致します。'
+          a|b: a または b
+          expression: 式
+          meaning: 意味
+          period: 任意の 1 文字。
+          slash: エスケープ文字。
+          slashA: ストリングの先頭。
+          slashAa-m: 'Ex: 「 a」と「m」の間の文字で始まるストリングと一致します。'
+          slashAperiod*z: 'Ex: 「a」で始まり、「 z」で終わるストリングと一致'
+          slashz: ストリングの終わり。
+      nodes:
+        columns:
+          dropdown:
+            add: "%{share_name} の追加"
+            delete: 削除
+            delete_confirm: "- 確かか ? これにより、現在この %{node_name}を使用している %{share_name}
+              が削除されます。"
+            edit: 編集
+          shares:
+            dropdown:
+              confirm: 続行しますか ?
+              custom_inbox_confirm: この %{name} は、特定のワークグループのカスタム受信トレイの場所として現在使用されています。
+              default_hint: この %{name} は現在、システム・デフォルトの受信箱として使用されており、削除できません。
+              delete: 削除
+              delete_warning: '削除すると、これらのワークグループ内の既存のパッケージはすべてユーザーが使用できなくなり '
+              edit: 編集
+              relay_hint: この %{name} は、現在、特定のワークグループのリレー・ロケーションとして使用されています。
+              rolled_back_warning: 'これらのワークグループは、システム・デフォルト・インボックスを使用するためにロールバックされます。 '
+      packages:
+        browser:
+          all: オール
+          download_selected: ダウンロードが選択
+          name: 名称
+          none: なし
+          select: 選択
+          size: 規模
+          validation_error: 検証エラー?
+          warning: エラー
+        package:
+          browse_and_download_contents: コンテンツの参照とダウンロード
+          browse_contents: 内容の参照
+          cc_on_delivery: 'CC ( 配信時 ):'
+          cc_on_download: 'CC ( ダウンロード時 ):'
+          cc_on_recipient: 'CC ( 受信側):'
+          completed_relays: '完了済みリレー:'
+          date_sent: 送信日
+          http_downloads_not_allowed: このパッケージでは HTTP ダウンロードは許可されていません
+          delete_after_all_message: すべての受信者がすべてのパッケージ・ファイルをダウンロードした後、このパッケージは自動的に削除されます。
+          delete_after_first_message: このパッケージは、すべてのパッケージ・ファイルをダウンロードした後、自動的に削除されます。
+          edit: 編集
+          error_release_date: リリース日付の更新エラー
+          failed_relays: '失敗したリレー:'
+          forward: フォワード ( )
+          from: '送信元:'
+          in_progress_relays: '進行中のリレー :'
+          incomplete_relays: '未完了リレー:'
+          none_set: なしセット
+          note_disabled: パッケージが現行ファイル・ストレージ上に存在しません。
+          package: パッケージ
+          release_now: 今すぐリリース
+          save: セーブ
+          send_date: 送信日
+          to: '終了:'
+          to_private: '宛先 (非公開):'
+          upload_date: 'アップロード日:'
+        show_stats:
+          more_details: 詳細
+        stats:
+          active_downloads:
+            active_downloads: 'アクティブ・ダウンロード: %{num}'
+          completed_package:
+            avg_rate: '平均速度: %{rate}'
+            elapsed: '経過時間 : %{time}'
+            files: 'ファイル: %{num}'
+            size: サイズ %{num}
+            upload_stats: '統計のアップロード :'
+            uploaded_from: 'アップロード元:'
+          failed_package:
+            avg_rate: '平均速度: %{rate}'
+            elapsed: '経過時間 : %{time}'
+            files: 'ファイル: %{num}'
+            size: サイズ %{num}
+            upload_stats: '統計のアップロード :'
+            uploaded_from: 'アップロード元:'
+          full_download:
+            full_pkg_dl: '全パッケージ・ダウンロード: %{completed}'
+          package_details:
+            pkg_details: パッケージの詳細
+            status: 状況 %{package}
+            http_downloads_not_allowed: このパッケージでは HTTP ダウンロードは許可されていません
+          partial_package:
+            partial_pkg_dl: '部分パッケージのダウンロード: %{total}'
+          transfer_package:
+            avg_rate: '平均速度:'
+            elapsed: '経過時間 :'
+            files: 'ファイル: %{num}'
+            loading: ロード中 ...
+            size: サイズ %{num}
+      pending:
+        action: アクション
+        files: ファイル
+        history:
+          back_to_normal_view: 通常のビューに戻る
+          file_on_server: サーバー上のファイル
+          pending_package_hist: 保留パッケージ履歴
+        index:
+          archive_all: すべてアーカイブ
+          pending_packages: 保留パッケージ
+          view_full_history: 全履歴の表示
+          warning: 警告
+        recipients: 受信者
+        search: サーチ
+        send_date: 送信日
+        size: 規模
+        status: 状況
+        title: 書名
+        transfer_retries: 再試行の転送
+        upload_date: アップロード日
+      received:
+        action: アクション
+        date_sent: 送信日
+        download_available: ダウンロード使用可能
+        files: ファイル
+        history:
+          back_to_normal_view: 通常のビューに戻る
+          files_on_server: サーバー上のファイル
+          received_package_hist: 受信したパッケージ履歴
+        index:
+          archive_all: すべてアーカイブ
+          invitations: インビテーション
+          received_packages: 受信したパッケージ
+          view_full_history: 全履歴の表示
+        search: サーチ
+        sender: 送信者
+        size: 規模
+        status: 状況
+        title: 書名
+      registrations:
+        confirmation:
+          back_to_login: ログインに戻る
+        edit_password:
+          set_password: パスワードの設定
+        new:
+          back_to_login: ログインに戻る
+          email: E メール
+          first_name: ファーストネーム
+          last_name: ラストネーム
+          name: 名称
+          tos_accept: 私は %{tos}に同意します。
+      reset_password_tokens:
+        edit:
+          alert_error: ディレクトリー・サービス・アカウントに対して Faspex ログインが実行されませんでした。
+          alert_error_contact: ヘルプ・デスクまたはネットワーク管理者に連絡して、パスワードを変更してください。
+          reset_password: パスワードのリセット
+        new:
+          back_to_login: ログインに戻る
+          enter_user_or_email: ユーザー名または電子メールの入力
+          forgot_password: パスワードを忘れたのか ?
+          send_email: E メール送信
+      search: 受信者、パッケージのタイトル、およびメモを検索する
+      send:
+        fieldsets:
+          encryption:
+            encryption: '暗号化 :'
+            use_encrypt_at_rest: 保存時に暗号化を使用
+        form:
+          dropbox:
+            send_package: パッケージの送信
+          external:
+            send_package: パッケージの送信
+          fieldsets:
+            encryption:
+              encryption: '暗号化 :'
+              use_encrypt_at_rest: 保存時に暗号化を使用
+            expiration_policy:
+              after_pkg_dl: パッケージがダウンロードされた後
+              delete_after_all: "<strong>すべての受信者</strong> がすべてのファイルをダウンロードすると削除"
+              delete_after_any: "<strong>受信者</strong> がすべてのファイルをダウンロードすると削除"
+              do_nothing: 何もしない
+              expiration: '有効期限:'
+            prevent_http_download:
+              prevent_http_download: このパッケージの HTTP ダウンロードを防止
+              package_download: パッケージのダウンロード
+            metadata:
+              maximum_length: '最大長: %{max} 文字 ( &nbsp&nbsp )'
+              illegal_chars: '正しくない文字: %{illegal}'
+              required: 必須
+              optional: オプション
+            note:
+              note: 注:<br><span class='dim'><small><small>オプション</small></span>
+              maximum_length: '最大長: %{max} 文字 ( &nbsp&nbsp )'
+              illegal_chars: '正しくない文字: %{illegal}'
+            notifications:
+              cc: CC
+              cc_on_download: ダウンロード時に CC
+              cc_on_receipt: 受領書に CC
+              cc_on_upload: アップロードに関する CC
+              download: 'ダウンロード:'
+              notifications_help: 最初のアップロードまたはダウンロード後に通知が送信される
+              receipt: '受領:'
+              upload: 'アップロード:'
+            obfuscation:
+              obfuscation: '難読化:'
+              use_obf: ファイル名に難読化を使用する
+            release_policy:
+              release_date: 'リリース日:'
+              release_later_date_later: 後でリリース - 後で設定
+              release_later_date_now: 後でリリース - 日付を設定
+              release_now: 今すぐリリース
+              release_policy: 'リリース・ポリシー:'
+            transfer_options:
+              transfer_through: '転送先:'
+              http_uploads_not_allowed: このパッケージでは HTTP アップロードは許可されていません
+            source_shares:
+              contents: '内容*:'
+              ear_cloud_warning: 保存時の暗号化はすべての転送に使用されるように設定されていますが、クラウド参照を使用する転送ではサポートされていません。
+                この転送では、暗号化は使用されません
+              remove_all: すべて削除
+              source: '出典:'
+              warning: '警告:'
+            title:
+              title: 'タイトル*:'
+              maximum_length: '最大長: %{max} 文字 ( &nbsp&nbsp )'
+              illegal_chars: '正しくない文字: %{illegal}'
+            tos:
+              tos: 'サービスのご利用条件 :'
+              tos_accept: 私は %{tos} に同意します
+          forward:
+            contents: '内容:'
+            forward_package: パッケージの転送
+            fwd: 'Fwd: %{ftitle}'
+            original_sender: '元の送信者:'
+            received: '受信済み :'
+          misc:
+            actions:
+              confirmation: '確認:'
+              enter_passphrase: ファイルを保護するためのパスフレーズを入力してください。<br>パスフレーズが必要です。
+              passphrase: 'パスフレーズ:'
+            connect_transfer:
+              browse_for_files: ファイルの参照 &hellip;
+              browse_for_folders: フォルダーの参照 &hellip;
+              or: それとも
+            instruct:
+              instructions: 記載要等
+            remote_share:
+              loading: ロード中
+              browse_for_files: ファイルの参照 &hellip;
+            show_hide_controls:
+              show_private_recip: プライベート受信者の表示
+          normal:
+            send_package: パッケージの送信
+        http_gateway_submit:
+          completed: 竣工
+          current_file: '現行ファイル:'
+          current_file_name: '現行ファイル名:'
+          invalid_status: 無効な状況
+          failed: 失敗
+          file_count: 'ファイル・カウント:'
+          initiating: 開始中
+          running: ランニング
+          total: '合計:'
+          transfer_status: '転送:'
+      sent:
+        action: アクション
+        date_sent: 送信日
+        files: ファイル
+        history:
+          sent_package_hist: パッケージ履歴の送信
+          back_to_normal_view: 通常のビューに戻る
+          files_on_server: サーバー上のファイル
+        index:
+          archive_all: すべてアーカイブ
+          sent_packages: 送信したパッケージ
+          view_full_history: 全履歴の表示
+          warning: 警告
+        recipients: 受信者
+        search: サーチ
+        show_details:
+          full_partial: フル/部分&nbsp;
+          ip_addr: IP アドレス&nbsp;
+          pkg_download_details: パッケージのダウンロード詳細
+          start_time: 開始時刻&nbsp;
+          stop_time: 停止時刻&nbsp;
+          time_elapsed: 経過時間 &nbsp;
+          user_name: ユーザー名&nbsp;
+        size: 規模
+        status: 状況
+        title: 書名
+        transfer_retries: 再試行の転送
+      settings:
+        contacts:
+          contact:
+            external: "(外部)"
+            remove: 削除
+          index:
+            contacts: 連絡先
+            edit_alert: 編集可能な連絡先がありません。
+            edit_contacts: コンタクトの編集
+        dist_lists:
+          index:
+            add_new_dist_list: 新規配布リストの追加
+            alert_dist: 個人用配布リストはありません。
+            contacts: 連絡先
+            global_dist_lists: グローバル配布リスト
+            name: 名称
+            pers_dist_lists: 個人配布リスト
+            update_dist_list: 配布リストの更新
+          new:
+            new_dist_list: 新規配布リスト
+        passwords:
+          edit:
+            change_password: パスワードの変更
+            current_password: '現在のパスワード:'
+            password: パスワード
+            confirm_pw: パスワードの確認
+        preferences:
+          edit:
+            download_connect: Connect プラグインのダウンロード
+            download_hint: 変更を有効にするには、 5 月から数分かかります。
+            download_notif: ダウンロードの通知
+            download_notif_hint: 各受信者が最初にパッケージをダウンロードするときに、これらの
+            email_settings: E メール設定
+            locales: ロザレス
+            locale: ロカレ
+            misc: ミスク
+            preferences: 設定
+            update_pref: 設定の更新
+            upload_notif: 通知のアップロード
+            upload_notif_hint: アップロードの結果にこれらのアドレスを E メールで送信
+            received_page_option: 完了したパッケージのみを「受信済み」ページに表示
+        sender_quota:
+          index:
+            sender_alert_1: "%{quota} MB の送信側の割り当て量制限に達しました。"
+            sender_alert_2: "%{quota} MB を使用できます。 送信側の割り当て量制限が %{limit} MBに設定されています。"
+            sender_quota: 送信者割り当て量
+      shared:
+        browser:
+          filter:
+            from: 差出人
+            hide_filters: フィルターを隠す
+            include_sub: サブディレクトリーを含める
+            max: マックス
+            min: ミン
+            mod_time: 変更時刻
+            search: サーチ
+            search_for_files: ファイルまたはディレクトリーの検索 &hellip;
+            show_filters: フィルターの表示
+            size: 規模
+            to: 宛先
+          par_dir_item:
+            parent_dir: 親ディレクトリー
+        dist_lists:
+          dist_lists:
+            delete: 削除
+            duplicate: 重複
+            import_contacts: CSV から連絡先をインポート
+          form:
+            name: 名称
+            browse: 参照...
+            contacts: 連絡先 ( %{num} まで )
+            import_from_csv: 'CSVからインポート :'
+        filter:
+          filter: フィルター&hellip;
+      user_profile_fields:
+        add_user_profile_field: ユーザー・プロファイル・フィールド追加
+        enabled: 有効
+        name: 名称
+        note_no_changes: '注: 「フィールドの保存」をクリックするまで、変更は保存されません。'
+        onclick_confirm: このユーザー・プロファイル・フィールドを削除しますか ?
+        remove: このプロファイル・フィールドを除去する
+        required: 必須
+        save_fields: フィールドの保存
+        user_profile: ユーザー・プロファイル
+      workgroup:
+        deliveries:
+          history:
+            date_sent: "<br>送信日"
+            download_retry: ダウンロードまたは再試行使用可能
+            files: ファイル
+            files_on_server: "<br>サーバー上のファイル"
+            package_history: パッケージ履歴
+            search: サーチ
+            sender: 送信者
+            size: 規模
+            status: 状況
+            title: 書名
+          index:
+            action: アクション
+            date_sent: "<br>送信日"
+            download_retry: ダウンロードまたは再試行使用可能
+            files: ファイル
+            packages: パッケージ
+            search: サーチ
+            sender: 送信者
+            size: 規模
+            status: 状況
+            title: 書名
+          misc:
+            links:
+              invite_outside: 外部送信者を招待
+        file_relay_req:
+          index:
+            back: バック
+            relay_stat: リレー状況
+          table:
+            date_sent: 送信日
+            file_storage: ファイル・ストレージ
+            files: ファイル
+            node: ノード
+            size: 規模
+            status: 状況
+        forwards:
+          complete: コンプリート
+          enable_relay: リレーの有効化
+          enabled_message: 使用可能にすると、すべてのパッケージ・ファイルが追加のノードに中継されます。
+          error: エラー
+          notify_users: ユーザーの通知をオン...
+          overwrite: 上書き
+          relay: リレー
+          start: スタート
+        name: 名称
+        nodes:
+          default_inbox: デフォルトの受信箱
+          direct_upload: カスタム受信トレイに直接アップロードします。
+          direct_upload_default_check: これにチェック・マークを付けた場合、このワークグループが唯一の受信者である場合、パッケージはデフォルトの受信箱にアップロードされません。
+          inbox_destination: 受信ボックスの宛先
+          location: 所在地
+          status: 状況
+        users:
+          edit:
+            edit_user: 'ユーザーの編集 : %{name}'
+          new:
+            new_user: "%{wg} %{wgname} の新規ユーザー・アカウント"
+        workgroups:
+          details:
+            created_on: '作成日:'
+            description: '説明:'
+            inst_for_sub: 'サブミッターの指示 : '
+            name: '<font color="red">* </font>名前:'
+            updated_on: '更新日:'
+            wg_details: "%{wgtype} の詳細&nbsp;"
+          ds_group:
+            all: オール
+            none: なし
+            ok: オク
+            remove_selected: 選択項目を
+            select: '選択 : '
+          ds_group_member:
+            add_group: グループの追加
+          ds_group_table:
+            access: アクセス
+            date_added: 追加日
+            dir_serv_group: ディレクトリーサービス・グループ
+            DN: DN
+            members: メンバー
+            name: 名称
+            status: 状況
+          edit:
+            back: バック
+            back_to_list: リストに戻る
+            editing: "%{wgtype}の編集中 : %{wgname}"
+            or: " 又は "
+            save: セーブ
+          forwards:
+            complete: コンプリート
+            enable_relay: リレーの有効化
+            error: エラー
+            if_enabled: 使用可能にすると、すべてのパッケージ・ファイルが追加のノードに中継されます。
+            name: 名称
+            notify_users: ユーザーの通知をオン...
+            overwrite: 上書き
+            relay: リレー
+            start: スタート
+          index:
+            create_new: 新規作成
+            dropbox: ドロップボックス
+            flash_message: ワークグループ ( メンバーの追加/削除以外 ) を作成、削除、または編集するには、マスター・サーバーにログインする必要があります。
+            view_all: すべて表示
+            view_mine: ビュー・マイン
+            workgroup: ワークグループ
+            workgroups: ワークグループ
+          member_table:
+            access: アクセス
+            active: アクティブ
+            add_user: ユーザーの追加
+            alert: 削除するメンバーが選択されていません。
+            all: オール
+            expires: 有効期限切れ
+            full_name: フルネーム
+            inactive: 非アクティブ
+            inv_outside_submit: 外部送信者を招待
+            member_since: 以降のメンバー
+            members: メンバー
+            name: 名称
+            none: なし
+            ok: オク
+            remove_selected: 選択項目を
+            select: '選択 :'
+            status: 状況
+            type: 種類
+          new:
+            cancel: キャンセル
+            create: クリエイ作成
+            create_new: 新規 %{wgtype} の作成
+            or: " 又は "
+          nodes:
+            custom: カスタム
+            default_inbox: デフォルトの受信箱
+            inbox_dest: 受信ボックスの宛先
+            location: 所在地
+            name: 名称
+            server_default: サーバー・デフォルト
+            status: 状況
+            upload_directly: カスタム受信箱に直接アップロード
+            upload_message: チェック・マークを付けた場合、このワークグループが唯一の受信者である場合、パッケージはデフォルトの受信箱にアップロードされません。
+          show:
+            view_packages: パッケージの表示
+          wg_permissions:
+            add_dir_serv_groups_as_members_hint: ディレクトリー・サービス・グループをメンバーとして追加/除去
+            add_existing_users_hint: 既存の Faspex ユーザーの追加 / ワークグループ以外の管理メンバーの削除
+            edit_new_users_hint: メンバーとしての新規ユーザーの作成/編集 / 削除 / 削除
+            full: " 完全:"
+            full_hint: 相互に表示および送信する権限を付与されたメンバー
+            member_management: メンバー管理
+            moderated: " モデレート:"
+            moderated_hint: ワークグループ管理者のみがこのワークグループに送信できます
+            open: " オープン:"
+            open_hint: このワークグループに誰でも送信できます
+            private: " プライベート:"
+            private_hint: このワークグループに送信できるのはメンバーのみです
+            restricted: " 制限付き :"
+            restricted_hint: このワークグループに誰も送信できません
+            restricted_hint_2: ワークグループの個々のメンバーに対する表示または送信権限を付与されたワークグループのみ
+            send_to_eachother: '相互に送信するワークグループ・メンバー :'
+            sending_to_itself: 'ワークグループ自体への送信 :'
+            wg_admins_only: " ワークグループ管理者のみ:"
+            wg_admins_only_hint: ワークグループ管理者に表示して送信する権限を付与されたメンバー
+            workgroup_admins_can: ワークグループ管理者は ...
+            workgroup_permissions: ワークグループの許可
+          workgroup_list:
+            description: 解説
+            dropbox: ドロップボックス
+            latest: 最新
+            member_warning: 現在、ワークグループのメンバーではありません。
+            members: メンバー
+            no_wg: ワークグループはありません。
+            packages: パッケージ
+            type: 種類
+            workgroup: ワークグループ
+          workgroup_members_form:
+            wg_members_title: "%{wg_name} メンバー&nbsp;"
+    helpers:
+      account:
+        users:
+          admin: " - 管理者"
+          expir_date: アクティブ・ユーザーに %{date} を設定する必要があります。
+          manager: " - マネージャー"
+          neg: 違う。
+          pos: そうだ
+          set_admin: 管理の設定
+          set_non_admin: 非管理者の設定
+          taken_name: "%{name} は既に取得されています"
+        bootstrap_content_helper:
+          actions: アクション
+          close: クローズ
+      admin:
+        nodes_helper:
+          browse_fail: リモート・ファイルの参照元の
+        post_processes_helper:
+          activate: アクティブ化
+          confirm: 処理後のスクリプト %{script_name} を削除しますか ?
+          deactivate: 非活動化
+          remove: 取り除く
+          view_log: 実行ログの表示
+      application_helper:
+        browse: 参照...
+        path: 'パス:'
+      login_helper:
+        create_account: アカウントの作成
+        request_account: アカウントの要求
+      metadata_profiles_helper:
+        date_field: 日付フィールド
+        option_list: オプション・リスト
+        text_area: テキスト域
+        text_field: テキスト・フィールド
+      packages_helper:
+        entire: パッケージ全体のダウンロード
+        partial: 部分パッケージのダウンロード
+        return_to_history: 歴史に戻る
+        return_to_list: リストに戻る
+      registrations_helper:
+        create_account: アカウントの作成
+        request_account: アカウントの要求
+      send_helper:
+        hide: 非表示
+        hide_cc: Cc を隠す
+        show: ショー
+        show_cc: Cc の表示
+      sent_helper:
+        delete: 削除
+      source_shares_helper:
+        browse_fail: リモート・ファイルの参照元の
+      workgroup:
+        deliveries_helper:
+          back_to_normal_view: 標準ビューに戻る
+          delete: 削除
+          view_full_history: 全履歴の表示
+          view_members: メンバーの表示
+        users_helper:
+          create_new_user: 新規ユーザーの作成
+        workgroups_helper:
+          delete: 削除
+          delete_confirm: '%{wg_type} "%{wg_name}" を削除したいかどうかを指定してください。'
+          delete_wg: "%{wg_name} を削除します"
+          dropbox: ドロップボックス
+          edit: 編集
+          edit_wg: "%{wg_type_name} の編集"
+          names_placeholder: ユーザー名または E メール・アドレスの入力
+          view_all: すべて表示
+          view_mine: ビュー・マイン
+          view_packages: パッケージの表示
+          workgroup: ワークグループ
+    models:
+      c_configuration:
+        cant_be_blank: フィールドはブランクにできません。
+      delivery:
+        send_fail_quota_limit: パッケージを送信できません。 %{limit} MB の制限量が到達しました
+        send_fail_permissions: 通常のパッケージの作成は許可されていません
+        send_fail_invalid_recipients: 有効な受信者なし
+        send_fail_dropbox_only: Dropbox 受信者は、唯一の受信者でなければ
+        send_fail_invalid_recipient_specific: '受信者が無効です : %{recipient_name}'
+        send_fail_permissions_multiple: 指定された 1 つ以上の受信者への送信を許可されていません
+        send_fail_invalid_cc: 'CC ( アップロード時 )が無効です : %{cc_name}'
+        send_fail_invalid_ccs_upload: アップロード・フィールドの 1 つ以上の受信者に CC を使用することはできません
+        send_fail_invalid_ccs_download: ダウンロード・フィールド内の 1 つ以上の受信者に CC を使用することはできません
+        send_fail_invalid_ccs_receipt: 受領フィールドの 1 つ以上の受信者に CC を使用することはできません。
+        send_fail_must_have_one_source: 1 つのソースが必要です。
+        send_fail_unknown_share_id: 不明なソース共有 ID %{share_id}
+        send_fail_source_not_authorized: ソースが権限あり
+        send_fail_no_items_to_upload: アップロードするアイテムがありません
+        send_fail_unique_filenames: ファイル名は固有でなければなりません
+        send_fail_ear_must_be_specified: 指定されなければ
+        send_fail_ear_not_allowed: 許されない
+        send_fail_ear_disabled_message: 保存時の暗号化が使用不可になっているため、パスフレーズは許可されません。
+        send_fail_sendershareid_forwarding: 転送済みパッケージの SenderShareId は変更できません
+        send_fail_invalid_release_policy: '無効なリリース・ポリシー: %{rp}'
+        send_fail_policy_date_future: リリース日は将来の日付にする必要が
+        send_fail_expiration_date_future: 有効期限は将来にする必要があります
+      directory_service_user:
+        login_error_message: ログインが失敗しました。 再試行してください。 ログイン失敗が繰り返し発生している場合は、「パスワードを忘れた場合」リンクをクリックして、パスワードを再設定する必要があります。
+      e_membership:
+        status:
+          expired: 有効期限切れ
+          active: アクティブ
+          inactive: 非アクティブ
+      local_user:
+        cannot_be_blank: ブランクにすること
+        is_incorrect: 正しくない
+        login_error_message: ログインが失敗しました。 再試行してください。 ログイン失敗が繰り返し発生している場合は、「パスワードを忘れた場合」リンクをクリックして、パスワードを再設定する必要があります。
+        lock_out_message: ログイン失敗が多すぎるため、ロックアウトされました。
+        same_as_old_pw: 古いパスワードと同じです。
+        same_old_pw_hint: 前の %{limit} パスワードとは異なっている必要があります。
+      metadata_field:
+        value_already_taken: "'%{value}' はすでに使用されています"
+        max_length_not_int: フィールド「%{label_name}」の最大長は整数でなければなりません
+        max_length_bounds: フィールド '%{label_name}' の最大長は 1 から %{max} の間でなければなりません
+        valid_option_list: "'%{label_name}' には有効なオプション・リストが必要です。"
+        valid_date_format: "'%{label_name}' には有効な日付形式が必要です。"
+        cannot_be_blank: "%{label_name} をブランクにすることはできません"
+        error_decoding: 'メタデータのデコード・エラー : %{meta}'
+      metadata_profile:
+        all_fields_length_error: すべてのフィールドの合計最大長 ( ラベル、オプション、および日付フィールドを含む ) は、 %{max}
+          文字より小さくなければなりません。
+        field_blank_error: "%{err_label} をブランクにすることはできません"
+        field_illegal_char_error: "%{err_label} には、以下の文字が含まれていてはなりません : %{illegal}"
+        field_length_error: "%{err_label} は %{max} 文字以下でなければなりません"
+        field_options_error: "%{err_label} には、以下のオプションのいずれかが含まれている必要があります : %{list}"
+        invalid_JSON_error: "%{err_label} は有効な JSON でなければなりません"
+        invalid_share_id_error: "%{err_label} の共有 ID %{err_value} が無効です"
+        invalid_user_error: "%{err_label} のユーザー %{err_user} が無効です"
+        invalid_value_error: "%{err_label} の値が無効です"
+        max_length_reset_error: 最大長フィールドがデフォルトにリセットされました
+        must_be_list_error: "%{err_label} は、共用 ID のリストでなければなりません。"
+        no_fields_error: メタデータ・プロファイルには少なくとも 1 つのフィールドが必要です
+        note_invalid_char_error: 'メモには以下の文字を含めることはできません : #{違法な}'
+        note_length_bounds_error: ノートの最大長は 1 から %{max} の間でなければなりません
+        note_length_error: 注は %{max} 文字以下でなければなりません
+        note_length_int_error: メモの最大長は整数でなければなりません
+        note_length_specified_error: メモの最大長を指定してください
+        specified_error: "%{err_label} を指定する必要があります"
+        title_invalid_char_error: 'タイトルに以下の文字を含めることはできません : %{illegal}'
+        title_length_bounds_error: タイトルの最大長は 1 から %{max} の間でなければなりません
+        title_length_error: タイトルは %{max} 文字以下でなければなりません
+        title_length_int_error: タイトルの最大長は整数でなければなりません
+        title_length_specified_error: タイトルの最大長を指定してください
+      post_process:
+        all_uploaded_pkgs: "[すべてのアップロード済みパッケージ]"
+      saml_configuration:
+        unspecified: 未指定
+        transient: トランジェント
+        persistent: パーシスタント
+        email_address: メール・アドレス
+      send_package_request:
+        from_name_error: "「元」名が認証済みユーザーと一致しません"
+        invalid_recipient_error: 無効な受信者
+        parse_xml_error: 要求 XML を解析できません
+        validate_sender_error: アップロード権限がありません
+        too_many_elements: エレメント %{path} は、 %{max} 以下でなければなりません。
+        too_few_elements: エレメント %{path} は、 %{min} 以上でなければなりません。
+      user:
+        passwordable:
+          requirements: 少なくとも 6 文字の長さが必要です。
+          strong_requirements: 少なくとも 1 つの文字、 1 つの数字、および 1 つの記号を持つ 6 文字以上の長さでなければなりません。
+        status:
+          saml_disabled: SAML 構成は無効です
+          pending: 承認待ち
+          active: アクティブ
+          locked: ロック済み
+          inactive: 非アクティブ
+  config:
+    account_navigation:
+      preferences: 設定
+      change_password: パスワードの変更
+      contacts: コンタクトの編集
+      distribution_lists: 配布リストの編集
+      sender_quota: 送信者割り当て量
+    initializers:
+      will_paginate:
+        laq_prev: "&laquo; 前へ"
+        lar_prev: "&larr; 前へ"
+        raq_next: 次の &raquo;
+        rar_next: 次の &rarr;
+    license:
+      paste_license: ライセンスの内容をここに貼り付けます
+      update_license: ライセンスの更新
+      decoded_license: デコデッド・ライセンス
+    navigation:
+      account_approved: 承認済みアカウント
+      account_denied: 口座拒否
+      accounts: アカウント
+      authentication: 認証
+      configuration: 構成
+      directory_service_groups: ディレクトリーサービス・グループ
+      directory_services: ディレクトリー・サービス
+      display_settings: 表示設定
+      dropbox_invitation: Dropbox インビテーション
+      dropbox_submit: Dropbox の実行依頼
+      email_configuration: E メール構成
+      entitlement: 資格
+      external_users: 外部ユーザー
+      forgot_password: パスワードを忘れた場合
+      forward_error_cc: リレー・エラー CC
+      forward_finished_cc: リレー完了 CC
+      forward_started_cc: リレー開始 CC
+      global_distribution_lists: グローバル配布リスト
+      license: 免許
+      login_announcement: ログインアナウンス
+      metadata: メタデータ
+      new_package: 新規パッケージ
+      notifications: 届出
+      package_cc_receipt_on_received: パッケージ受信 CC
+      package_cc_receipt_on_sent: パッケージ送信済み CC
+      package_downloaded: ダウンロードされたパッケージ
+      package_downloaded_cc: パッケージ・ダウンロード CC
+      package_instructions: パッケージの説明
+      package_received: 受信したパッケージ
+      package_storage: パッケージ・ストレージ
+      package_validation_failed_recipient: パッケージ検証失敗の受信者
+      package_validation_failed_sender: パッケージ検証に失敗した送信者
+      packages: パッケージ
+      pending_registrations: 保留中の登録
+      personal_invitation: 個人の招待
+      personal_submit: 個人の送信
+      post_processes: 後処理
+      received: 受信済み
+      saml_groups: SAML グループ
+      saml_integration: SAML 統合
+      save_restore: 保存/復元
+      security: セキュリティ
+      sent: 送信済み
+      server: サーバー ( )
+      shares: ファイル・ストレージ
+      transfer_options: 転送オプション
+      upload_result: 結果のアップロード
+      upload_result_cc: 結果 CC のアップロード
+      user_profile: ユーザー・プロファイル
+      users: 利用者
+      web_server: Web サーバー
+      welcome_email: ようこそ E メール
+      workgroup_package: ワークグループ・パッケージ
+      workgroups: ワークグループ
+  common:
+    allow: 許可
+    deny: デニー
+    default: デフォルト
+    server_default: サーバー・デフォルト (%{server_default})
+    are_you_sure: "- 確かか ?"
+    days_from_now: 現在からの日数
+  date:
+    abbr_day_names:
+    - Sun
+    - Mon
+    - Tue
+    - Wed
+    - Thu
+    - Fri
+    - Sat
+    abbr_month_names:
+    - 
+    - Jan
+    - Feb
+    - Mar
+    - Apr
+    - May
+    - Jun
+    - Jul
+    - Aug
+    - Sep
+    - Oct
+    - Nov
+    - Dec
+    day_names:
+    - Sunday
+    - Monday
+    - Tuesday
+    - Wednesday
+    - Thursday
+    - Friday
+    - Saturday
+    formats:
+      default: "%Y-%m-%d"
+      long: "%B %d, %Y"
+      short: "%b %d"
+    month_names:
+    - 
+    - January
+    - February
+    - March
+    - April
+    - May
+    - June
+    - July
+    - August
+    - September
+    - October
+    - November
+    - December
+    order:
+    - :year
+    - :month
+    - :day
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: 約 1 時間
+        other: "%{count} 時間について"
+      about_x_months:
+        one: 約 1 カ月
+        other: "%{count} の月数について"
+      about_x_years:
+        one: 約 1 年
+        other: "%{count} 年に関する"
+      almost_x_years:
+        one: ほぼ 1 年
+        other: ほぼ %{count} 年
+      half_a_minute: 半分
+      less_than_x_seconds:
+        zero: 1 秒未満
+        one: 1 秒未満
+        other: "%{count} 秒未満の秒数"
+      less_than_x_minutes:
+        zero: 1 分未満
+        one: 1 分未満
+        other: "%{count} 分未満"
+      over_x_years:
+        one: 1 年以上
+        other: "%{count} 年以上"
+      x_seconds:
+        one: 1 秒
+        other: "%{count} 秒"
+      x_minutes:
+        one: 1 分
+        other: "%{count} 分"
+      x_days:
+        one: 一日
+        other: "%{count} 日"
+      x_months:
+        one: 1 カ月
+        other: "%{count} 月"
+      x_years:
+        one: 一年
+        other: "%{count} 年"
+    prompts:
+      second: セカンド
+      minute: 分
+      hour: アワー
+      day: デー
+      month: 月
+      year: 年
+  helpers:
+    application:
+      archive: アーカイブ
+      back: バック
+      cloud_storage_referencing: このストレージでサポートされる IS を参照するクラウド・ストレージ
+      connect_install_message: 最大 %{direction} の速度を使用するには、 %{aspera} ブラウザー・プラグインをインストールしてください。
+      connect_upgrade_message: 最大 %{direction} の速度を使用するには、 %{aspera} ブラウザー・プラグインをアップグレードしてください。
+      confirm: "%{package_sender} によって送信されたパッケージ %{package_name} のファイルを削除してもよろしいですか
+        ?"
+      copy: クリップボードにコピー
+      delete: 削除
+      delete_confirm: "%{package_sender} によって送信されたパッケージ %{package_name} のファイルを削除してもよろしいですか
+        ?"
+      delete_confirm_forward: これは別のパッケージの転送です。 元の転送およびすべての転送が削除されます。
+      delete_confirm_has_forwards: このパッケージの転送は存在します。 元の転送およびすべての転送が削除されます。
+      enable_hst_dl: Asperaを使用して高速転送を有効にするには、 %{download} ( 接続ブラウザー・プラグイン ) を使用してください。
+      enable_hst_dl_enable: Asperaを使用して高速転送を有効にするには、 %{download} および %{enable} を接続ブラウザー・プラグインとして使用してください。
+      local_transfer_message: 現在、低速 HTTPを使用しています。 Asperaを使用する高速転送を有効にするには、 %{enable}
+        にアクセスして、 Connect ブラウザー・プラグインを使用可能/ダウンロードしてください。
+      no_cloud_storage_referencing: IS NOT を参照しているクラウド・ストレージはこのストレージによってサポート
+      no_transfer_dl: Aspera Connect を使用しないアップロードには、パフォーマンスの制限が この制限を削除し、 Asperaを使用して高速転送を有効にするには、
+        %{download} ( 接続ブラウザー・プラグイン ) をお願いします。
+      no_transfer_dl_enable: Aspera Connect を使用しないアップロードには、パフォーマンスの制限が この制限を解除し、 Asperaを使用して高速転送を有効にするには、
+        %{download} および %{enable} を接続ブラウザー・プラグインとして使用してください。
+      not_supp_symbolic_links: ストレージがシンボリック・リンクをサポートしない
+      note: 備考
+      package_details: パッケージの詳細についてはここをクリック
+      public_url: 'パブリック URL:'
+      retry_upload: アップロード再試行
+      set_now: 今すぐ設定
+      stop_upload: アップロードの停止
+      supp_symbolic_links: ストレージはシンボリック・リンクを
+    select:
+      prompt: 選択してください
+    submit:
+      create: "%{model} の作成"
+      create_without_model: クリエイ作成
+      create_and_continue: 作成および %{action}
+      submit: "%{model} を保存します"
+      update_license: ライセンスの更新および検証
+      update: "%{model} の更新"
+  login:
+    new:
+      login: ログイン
+      login_using_saml_idp: SAML IdP を使用してログイン
+    logged_out:
+      message: Faspexからログアウトされました。企業のシングル・サインオン・アカウントからログアウトする必要がある場合があります。
+      log_in_again: 再度ログイン
+    errors:
+      saml_not_authorized: Faspexを使用する権限がありません。
+      invalid_saml_response: SAML ID プロバイダーからの応答が無効です。
+      saml_login_failed: ログイン失敗。
+      saml_exception: SAML 応答エラー。 ログを確認してください。
+  lib:
+    app:
+      not_pingable: ping できない
+      not_infoable: 情報がありません
+      not_browsable: 褐色でない
+      node_error: ノード・エラー
+      host_error: ホスト・エラー
+    app_tar:
+      app:
+        bad_version: 非互換バージョン番号
+        config_save_error: 構成の保存エラーです。  詳しくはログを参照してください
+        upload_saved_config: 保存された構成のアップロード
+        restore_config_error: 構成復元中のエラー。  詳しくはログを参照してください
+        tar_error: 構成 %{tar_status} %{tar_out} のターゲット・ターゲットを指定してエラーが発生しました
+        untar_error: 構成 %{untar_status} %{untar_stdout} の非ターゲット化エラー
+    aspera_license_reader:
+      no_license_found: ライセンスが見つからないか、ライセンスの形式が正しくあり
+      license_signature_mismatch: ライセンス・シグニチャーが内容と一致しない
+      not_faspex_license: ライセンスが Faspex ライセンスではありません
+      expired_license: ライセンスの期限切れ
+      bad_expiration_license: ライセンスの有効期限が正しくありません
+      valid_license: ライセンスは有効です
+      invalid_license: 無効なライセンス
+    directory_services:
+      active_directory:
+        active_directory: アクティブ・ディレクトリー
+        microsoft_active_directory: Microsoft アクティブ・ディレクトリー
+      apple_open_directory:
+        apple_open_directory: Apple オープンディレクトリ
+        open_directory: オープンディレクトリ
+      red_hat:
+        fedora_directory: 389/Red Hat/Fedora ディレクトリー・サーバー
+        red_hat_directory: Red Hat ディレクトリー・サーバー
+    membership_methods:
+      dropbox_admin: Dropbox 管理者
+      wg_admin: ワークグループ管理
+      standard: スタンダード
+      submit_only: 送信専用
+      set_to_standard_access: ユーザーを標準アクセスに設定
+      set_to_submit_access: ユーザーを送信専用アクセスに設定
+      set_user_as_admin: 'ユーザーを #{wg_name} 管理者として設定'
+    packages:
+      package_methods:
+        HTTP_upload_in_progress: HTTP アップロードが進行中です。このページから移動すると、そのアップロードはキャンセルされます。
+        new_package: 新規パッケージ
+        return_to_history: 歴史に戻る
+        return_to_list: リストに戻る
+        send_to_dropbox: 'Dropboxに送信 : %{d_addr_name}'
+  number:
+    currency:
+      format:
+        delimiter: ","
+        format: "%u%n"
+        precision: 2
+        separator: "."
+        significant: false
+        strip_insignificant_zeros: false
+        unit: "$"
+    format:
+      delimiter: ","
+      precision: 3
+      separator: "."
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: "%n %u"
+        units:
+          billion: 100 万人
+          million: ミリオン
+          quadrillion: クアドリオン
+          thousand: サウザンド
+          trillion: トリリオン
+          unit: ''
+      format:
+        delimiter: ''
+        precision: 1
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one: バイト
+            other: バイト
+          eb: エブ
+          gb: GB
+          kb: KB
+          mb: エムブ
+          pb: PB
+          tb: TB
+    percentage:
+      format:
+        delimiter: ''
+        format: "%n%"
+    precision:
+      format:
+        delimiter: ''
+  public:
+    javascripts:
+      admin:
+        authorization_domains:
+          form:
+            save: セーブ
+            save_and_test: 保存してテスト
+  support:
+    array:
+      last_word_connector: "、および "
+      two_words_connector: " 及び "
+      words_connector: ", "
+  time:
+    am: am
+    formats:
+      default: "%a, %d %b %Y %H:%M:%S %z"
+      long: "%B %d, %Y %H:%M"
+      short: "%d %b %H:%M"
+    pm: pm

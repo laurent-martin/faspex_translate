@@ -1,0 +1,2815 @@
+---
+el:
+  activerecord:
+    models:
+      node: 'Κόμβος:'
+      share: Χώρος αποθήκευσης αρχείων
+      distribution_list: 'Λίστα διανομής:'
+      authorization_domain: 'Υπηρεσία καταλόγου:'
+      metadata_profile: Προφίλ μεταδεδομένων
+      metadata_field: Πεδίο μεταδεδομένων
+    attributes:
+      authorization_domain:
+        host: 'Διεύθυνση εξυπηρετητή:'
+        port: Θύρα.
+        treebase: Treebase
+        login: 'Σύνδεση:'
+        password: Κωδικός πρόσβασης
+      c_configuration:
+        encrypt_transfers: Κρυπτογράφηση μεταφορές
+        c_ssh_tcp_port: Θύρα TCP SSH
+        c_fasp_udp_port: Θύρα UDP fasp
+        http_fallback_port: Θύρα επαναφοράς HTTP
+        c_kbps_initial_target_upload_rate: Αρχική συχνότητα αποστολής
+        c_kbps_initial_target_download_rate: Αρχική ταχύτητα λήψης
+        c_kbps_max_target_upload_rate: Μέγιστος ρυθμός μεταφόρτωσης
+        c_kbps_max_target_download_rate: Μέγιστο ποσοστό λήψης
+        c_lock_minrate_policy: "' Ελάχιστη τιμή"
+        c_relay_outgoing_bandwidth: Εξωτερικό εύρος ζώνης
+        c_relay_incoming_bandwidth: Relay εισερχόμενο εύρος ζώνης
+        min_connect_version_major: Ελάχιστη έκδοση Connect
+        min_connect_version_minor: Ελάχιστη έκδοση Connect
+        min_connect_version_point: Ελάχιστη έκδοση Connect
+        http_fallback_enabled: Ενεργοποίηση επαναφοράς HTTP
+        downloads_during_transfers_enabled: Ενεργοποίηση λήψεων κατά τη μεταφορά
+      m_configuration:
+        email_from_email: Φάσο "From:" email
+        m_smtp_server_port: Θύρα εξυπηρετητή
+        m_smtp_auth_type: Έλεγχος ταυτότητας SMTP
+        m_smtp_server: Εξυπηρετητής αλληλογραφίας SMTP
+        use_tls: Χρήση TLS αν είναι διαθέσιμη
+        m_smtp_helo_domain: 'Τομέας:'
+        m_smtp_username: Χρήστης (περιλαμβάνει τομέα)
+        smtp_password: Κωδικός πρόσβασης
+        email_from: Φάσο "From:" όνομα
+        package_received_notifications_from: Πακέτα Αποδέκτη "Από"
+      e_configuration:
+        ad_proxy_host: Όνομα ενδιάμεσου εξυπηρετητή Active Directory
+        ad_proxy_port: Θύρα ενδιάμεσου εξυπηρετητή Active Directory
+        announcement: 'Μήνυμα:'
+        dbox_can_override_ear: Δυνατότητα χρήσης των δικών τους dropboxes
+        can_override_ear_per_personal_invite: Δυνατότητα προσαρμοσμένων ρυθμίσεων κρυπτογράφησης για εξωτερικές προσκλήσεις αποστολέων
+        e_http_port: Θύρα HTTP
+        e_https_port: Θύρα HTTPS
+        e_server_address: Εξωτερική διεύθυνση ή όνομα εξυπηρετητή
+        e_server_enable_alternate_address: Ενεργοποίηση εναλλακτικής διεύθυνσης
+        e_server_emails_include_alternate_address: Τα μηνύματα e-mail περιλαμβάνουν εναλλακτική διεύθυνση
+        email_passcode_expires: Λήξη διασύνδεσης πακέτου
+        email_passcode_days_valid: Λήξη μετά από
+        email_passcode_expire_after_download: Λήξη μετά από πλήρη λήψη πακέτου
+        registration_type: 'Αυτοεγγραφή:'
+        registration_approval_ccs: Ειδοποιήστε τα ακόλουθα μηνύματα email για έγκριση
+        registration_external_use_default: Χρήση προεπιλεγμένης πολιτικής καταχώρησης για εξωτερικούς χρήστες
+        registration_type_external: Πολιτική καταχώρησης για εξωτερικούς χρήστες.
+        registration_approval_ccs_external: Ειδοποιήστε τα ακόλουθα μηνύματα email για την έγκριση εξωτερικών χρηστών
+        tos_external: Όροι παροχής υπηρεσιών για εξωτερικούς χρήστες
+        package_instructions: 'Μήνυμα:'
+        tos: 'Όροι υπηρεσίας:'
+        use_strong_password: Χρήση ισχυρών κωδικών πρόσβασης
+        force_password_reset_for_new_users: Απαίτηση νέων χρηστών για την αλλαγή του κωδικού πρόσβασης στην πρώτη σύνδεση
+        allow_users_to_unlock: Επιτρέπονται οι κλειδωμένοι χρήστες να ξεκλειδωθούν.
+        session_timeout: Λήξη προθεσμίας λήξης
+        allow_send_to_email: Δυνατότητα αποστολής σε εξωτερικές διευθύνσεις email
+        allow_request_from_email: 'Δυνατότητα πρόσκλησης σε:'
+        registered_users_have_mutual_scope: Οι αυτοεγγεγραμμένοι χρήστες μπορούν να στείλουν ο ένας στον άλλο.
+        inviting_allowed: 'Δυνατότητα πρόσκλησης εξωτερικών αποστολέων:'
+        hide_user_dir_default: Χρήση προεπιλεγμένου καταλόγου χρηστών.
+        public_url_allowed: Επιτρέπονται διευθύνσεις URL δημόσιων υποβολής
+        dbox_can_override_public_url: Δυνατότητα μεμονωμένης ενεργοποίησης/απενεργοποίησης των δικών τους διευθύνσεων URL
+        public_url_home_server_id: Αρχική σελίδα για δημόσιες διευθύνσεις URL
+        automatically_login_using_saml_idp: Σύνδεση με χρήση παροχέα ταυτοτήτων SAML
+        saml_idp_sso_target_url: Διεύθυνση URL ενιαίας σύνδεσης IdP
+        saml_idp_slo_target_url: Διεύθυνση URL ενιαίας σύνδεσης IdP
+        saml_idp_cert_fingerprint: Αποτύπωμα πιστοποιητικού IdP
+        saml_idp_cert: Πιστοποιητικό IdP
+        can_see_global_distribution_lists_default: Οι χρήστες μπορούν να δουν τις γενικές λίστες διανομής από προεπιλογή.
+        tos_for_sending: 'Όροι Παροχής Υπηρεσιών:'
+        remove_ds_users_on_inactivity: Αφαίρεση χρηστών DS
+        remove_saml_users_on_inactivity: Αφαίρεση χρηστών SAML
+      e_workgroup:
+        e_wg_name: "' Ονομα"
+        e_wg_desc: 'Περιγραφή:'
+        workgroup_received_notification_cc: Αποστολή αντιγράφου του e-mail απόδειξης σε αυτές τις διευθύνσεις
+        destination_share_id: Προεπιλεγμένα Εισερχόμενα
+      invitation:
+        expires_at: "-Μέρες μέχρι"
+      node:
+        alternate_address: Δευτερεύον διεύθυνση ή όνομα
+        alternate_address_client_filter: Χρήση αν συμφωνεί η διεύθυνση του αιτούντα
+        alternate_address_server_filter: Χρήση αν το όνομα υπολογιστή του προγράμματος πλοήγησης
+        api_password: Κωδικός πρόσβασης
+        api_port: Θύρα.
+        api_username: 'Όνομα χρήστη:'
+        enable_alternate_address: Ενεργοποίηση δευτερεύουσας διεύθυνσης
+        encrypted_api_password: Κωδικός πρόσβασης
+        host: 'Υπολογιστής:'
+        name: "' Ονομα"
+        primary_address: 'Κύρια διεύθυνση μεταφοράς ή όνομα:'
+        ssl: Χρήση SSL;
+        verify_ssl: Επαλήθευση πιστοποιητικού SSL;
+      share:
+        kbps_initial_target_upload_rate: Αρχική συχνότητα αποστολής
+        kbps_initial_target_download_rate: Αρχική ταχύτητα λήψης
+        lock_minrate_policy: "' Ελάχιστη τιμή"
+        kbps_max_target_upload_rate: Μέγιστος ρυθμός μεταφόρτωσης
+        kbps_max_target_download_rate: Μέγιστο ποσοστό λήψης
+        relay_incoming_bandwidth: Εισερχόμενο ρελέ επιτόκιο
+        relay_outgoing_bandwidth: Ρυθ. ρελέ
+      e_package:
+        e_package_name: "' Τίτλος"
+      delivery:
+        metadata: 'Μη έγκυρα μεταδεδομένα: '
+        sources: ''
+        ear_passphrase: 'Φράση:'
+        tos_for_sending: 'Όροι υπηρεσίας:'
+      registration:
+        name: 'Σύνδεση:'
+        email: 'E-mail:'
+        first_name: 'Όνομα:'
+        last_name: 'Επώνυμο:'
+        tos_agreement: Δέχομαι τους όρους της υπηρεσίας.
+      metadata_field:
+        label: 'Ετικέτα:'
+      post_process:
+        active: Ενεργός.
+        name: "' Ονομα"
+        script_path: Διαδρομή στο σενάριο στον εξυπηρετητή
+        package_name: 'Όνομα πακέτου:'
+        sender_name: 'Όνομα αποστολέα:'
+        sender_email: Μήνυμα email αποστολέα
+        recipient_name: 'Λίστα παραλήπτη:'
+        recipient_email: Λίστα email παραλήπτη
+        package_note: 'Σημείωση πακέτου:'
+      ad_group:
+        kbps_initial_target_upload_rate: Αρχική ταχύτητα αποστολής (kbps)
+        kbps_initial_target_download_rate: Αρχική ταχύτητα λήψης (kbps)
+        kbps_max_target_upload_rate: Μέγιστη ταχύτητα αποστολής (kbps)
+        kbps_max_target_download_rate: Μέγιστο ποσοστό λήψης (kbps)
+        lock_minrate_policy: "' Ελάχιστη τιμή"
+        can_invite: 'Δυνατότητα πρόσκλησης εξωτερικών αποστολέων:'
+        dn: DN
+      directory_service_group:
+        kbps_initial_target_upload_rate: Αρχική ταχύτητα αποστολής (kbps)
+        kbps_initial_target_download_rate: Αρχική ταχύτητα λήψης (kbps)
+        kbps_max_target_upload_rate: Μέγιστη ταχύτητα αποστολής (kbps)
+        kbps_max_target_download_rate: Μέγιστο ποσοστό λήψης (kbps)
+        lock_minrate_policy: "' Ελάχιστη τιμή"
+      user:
+        name: 'Σύνδεση:'
+        email: 'E-mail:'
+        password: Κωδικός πρόσβασης
+        password_confirmation: επιβεβαίωση κωδικού πρόσβασης
+        kbps_initial_target_upload_rate: Αρχική ταχύτητα αποστολής (kbps)
+        kbps_initial_target_download_rate: Αρχική ταχύτητα λήψης (kbps)
+        kbps_max_target_upload_rate: Μέγιστη ταχύτητα αποστολής (kbps)
+        kbps_max_target_download_rate: Μέγιστο ποσοστό λήψης (kbps)
+        lock_minrate_policy: "' Ελάχιστη τιμή"
+        rows_per_page: Μέγιστος αριθμός γραμμών ανά σελίδα
+        disable_connect: Απενεργοποίηση πρόσθετου Aspera Connect
+        account_activated: Ενεργοποίηση λογαριασμού
+        account_expires: Λήξη λογαριασμού
+        self_destructs: Αυτόματη διαγραφή λογαριασμού
+        destruction_date: Ημερομηνία διαγραφής.
+        received_notification_cc: Αποστολή αντιγράφου του e-mail απόδειξης σε αυτές τις διευθύνσεις
+        allow_receipt_cc_edit: Δυνατότητα τροποποίησης διευθύνσεων λήψης για τη δημιουργία πακέτων.
+        uploads_allowed: Μεταφόρτωση πακέτων
+        downloads_allowed: 'Λήψη πακέτων:'
+        forwarding_allowed: 'Προώθηση πακέτων:'
+        can_create_from_remote: Δημιουργία πακέτων από απομακρυσμένες πηγές
+        can_send_to_all_faspex_users: Μπορεί να στείλει σε όλους τους χρήστες Faspex
+        can_send_to_external_email: Δυνατότητα αποστολής στο εξωτερικό email
+        can_invite: 'Δυνατότητα πρόσκλησης εξωτερικών αποστολέων:'
+        notify_on_receive: Στείλε μου μήνυμα όταν λάβω ένα πακέτο.
+        notify_on_validation_failure_if_sender: Στείλτε μου email αν η επικύρωση αποτύχει σε απεσταλμένα πακέτα
+        notify_on_validation_failure_if_recipient: Στείλτε μου email αν η επικύρωση αποτύχει σε παραληφμένα πακέτα
+        notify_downloader_on_download: Στείλε μου email όταν κατεβάσω ένα πακέτο.
+        notify_on_workgroup_package_if_sender: Συμπερίληψη σε ειδοποιήσεις ομάδων εργασίας για πακέτα που στέλνω
+        suppress_connect_install_dialog: Απόκρυψη προτροπής εγκατάστασης/αναβάθμισης
+        allowed_ip_addresses_for_login: Επιτρεπόμενες διευθύνσεις IP για σύνδεση
+        allowed_ip_addresses_for_download: Επιτρεπόμενες διευθύνσεις IP για μεταφόρτωση
+        allowed_ip_addresses_for_upload: Επιτρεπόμενες διευθύνσεις IP για μεταφόρτωση
+        last_remote_addr: Τελευταία διεύθυνση πελάτη σύνδεσης
+        last_server_addr: Τελευταία διεύθυνση εξυπηρετητή σύνδεσης
+        override_transfer_parameters: Αντικατάσταση προεπιλεγμένων ρυθμίσεων
+        override_server_delete_after_download: Προεπιλογή συστήματος αντικατάστασης
+        welcome_email: Αποστολή μηνύματος υποδοχής
+        created_at: 'Δημιουργία σε:'
+        updated_at: "' Ενημερώθηκε"
+        type: 'Είδος χρήστη:'
+        description: 'Σχόλια:'
+        allow_user_specified_delete_after_download: Επιτρέπεται ο ορισμός της ρύθμισης διαγραφής από το χρήστη με βάση το πακέτο
+        enable_public_url: Ενεργοποίηση δημόσιου URL
+        can_have_public_url: Επιτρέπονται διευθύνσεις URL δημόσιων υποβολής
+      local_user:
+        password_expiration_interval: Το σύνθημα λήγει κάθε
+      template_user:
+        days_til_expiration: Θα λήξουν νέοι λογαριασμοί.
+        days_til_destruction: Θα διαγραφούν νέοι λογαριασμοί.
+      home_server_rule:
+        email_pattern: Διεύθυνση email regex
+        user_name_pattern: Όνομα χρήστη regex
+        ad_group_pattern: Regex ομάδα υπηρεσιών καταλόγου
+        ad_dn_pattern: Regex DN υπηρεσίας καταλόγου
+        ldap_field_pattern1: Regex τομέα LDAP
+        ldap_field_pattern2: Regex τομέα LDAP
+        ldap_field_pattern3: Regex τομέα LDAP
+      send:
+        upload_cc: Αυτοί οι παραλήπτες θα ειδοποιηθούν όταν ολοκληρωθεί η μεταφόρτωση του πακέτου.
+        download_cc: Αυτοί οι παραλήπτες θα ειδοποιηθούν όταν ένας παραλήπτης έχει μεταφορτώσει το πακέτο.
+        receipt_cc: Αυτοί οι παραλήπτες θα είναι Cc'd στο πακέτο των παραληπτών έλαβε email
+    errors:
+      format: "%{attribute} %{message}"
+      e_configuration:
+        idp_cert_and_idp_cert_fingerprint_blank: Πρέπει να παρέχεται ένα από τα "IdP Certificate Fingerprint" ή "IdP Certificate".
+      models:
+        delivery:
+          attributes:
+            title:
+              blank: Ο τίτλος δεν είναι κενό.
+        distribution_list:
+          attributes:
+            name:
+              blank: Το όνομα δεν είναι κενό.
+            contacts:
+              blank: Οι επαφές δεν είναι κενές.
+        e_configuration:
+          attributes:
+            max_title_length_in_storage_paths:
+              not_a_number: Μέγιστο μήκος τίτλου σε διαδρομές αποθήκευσης δεν είναι αριθμός
+            days_until_packages_expire:
+              not_a_number: Οι ημέρες μέχρι τη λήξη των πακέτων δεν είναι αριθμός
+        saml_configuration:
+          attributes:
+            allowed_clock_drift_in_ms:
+              not_a_number: Το επιτρεπόμενο ρολόι σε ms δεν είναι αριθμός
+      messages:
+        accepted: "(')"
+        blank: Δεν είναι κενό.
+        confirmation: δεν συμφωνεί με τη %{attribute}
+        empty: Δεν είναι άδειο.
+        equal_to: πρέπει να είναι ίδια με %{count}
+        even: ακομα και ...
+        exclusion: ": δεσμεύεται."
+        greater_than: πρέπει να είναι μεγαλύτερη από %{count}
+        greater_than_or_equal_to: πρέπει να είναι μεγαλύτερη ή ίση με %{count}
+        inclusion: δεν περιλαμβάνεται στη λίστα.
+        invalid: δεν είναι έγκυρο
+        less_than: πρέπει να είναι μικρότερη από %{count}
+        less_than_or_equal_to: πρέπει να είναι μικρότερη ή ίση με %{count}
+        model_invalid: 'Απέτυχε η επικύρωση: %{errors}'
+        not_a_number: δεν είναι αριθμός.
+        not_an_integer: πρέπει να είναι ακέραιος.
+        odd: Θα είναι περίεργο.
+        other_than: πρέπει να είναι διαφορετική από %{count}
+        present: πρέπει να είναι κενό
+        record_invalid: 'Απέτυχε η επικύρωση: %{errors}'
+        restrict_dependent_destroy:
+          has_many: Δεν είναι δυνατή η διαγραφή της εγγραφής γιατί υπάρχει η εξαρτημένη %{record}
+          has_one: Δεν είναι δυνατή η διαγραφή της εγγραφής γιατί υπάρχει ένα εξαρτημένο %{record}
+        required: πρέπει να υπάρχει
+        taken: έχει ήδη ληφθεί.
+        too_long:
+          one: είναι πολύ μεγάλο (μέγιστο 1 χαρακτήρα)
+          other: είναι πολύ μεγάλος (μέγιστος αριθμός χαρακτήρων %{count})
+        too_short:
+          one: είναι πολύ σύντομη (ελάχιστη είναι 1 χαρακτήρας)
+          other: είναι πολύ σύντομη (ελάχιστη τιμή είναι %{count} χαρακτήρες)
+        wrong_length:
+          one: είναι το λάθος μήκος (πρέπει να είναι 1 χαρακτήρας)
+          other: είναι το λάθος μήκος (πρέπει να είναι %{count} χαρακτήρες)
+      template:
+        body: 'Υπήρξαν προβλήματα με τα ακόλουθα πεδία:'
+        header:
+          one: 1 σφάλμα κατά την απαγόρευση της αποθήκευσης της %{model}
+          other: Τα σφάλματα %{count} απαγόρευσε την αποθήκευση της %{model}
+      user:
+        groups_are_inactive: Οι ομάδες στις οποίες είστε μέλος είναι ανενεργές.
+        user_is_inactive: Χρήστης είναι ανενεργό
+        username_conflicts_with_existing_user: Το όνομα χρήστη έρχεται σε διένεξη με έναν υπάρχοντα λογαριασμό χρήστη.
+  admin:
+    saml:
+      edit:
+        saml: "-SAML"
+        automatically_login_using_saml_idp_hint: >-
+          Αυτόματη σύνδεση με χρήση του παροχέα ταυτοτήτων SAML.  %{url} μπορεί να χρησιμοποιηθεί για να συνδεθείτε απευθείας στο Faspex ακόμα και όταν η αυτόματη
+          σύνδεση με χρήση SAML είναι ενεργοποιημένη.
+    saml_configurations:
+      edit:
+        domain_url_hint: "(Προαιρετικά) Κατά την πρόσβαση σε αυτόν τον τομέα Faspex, οι χρήστες θα κατευθύνονται αυτόματα σε σύνδεση μέσω αυτού του παροχέα SAML (προεπιλογή)"
+        publicly_visible_hint: Δυνατότητα πρόσβασης σε αυτές τις ρυθμίσεις SAML από την τοπική σελίδα σύνδεσης
+      test_warning: |-
+        Προειδοποίηση: Αυτή η ενέργεια θα τερματίσει την τρέχουσα συνεδρία Faspex και θα σας κατευθει στη σελίδα σύνδεσης για αυτό τον παροχέα SAML.
+
+        Για να αποφύγετε την ολοκλήρωση της τρέχουσας συνεδρίας, μπορείτε να ανοίξετε αυτή τη διασύνδεση σε ένα ιδιωτικό παράθυρο ή σε διαφορετικό πρόγραμμα πλοήγησης για να ελέγξετε αυτή τη ρύθμιση.
+  app:
+    controllers:
+      account:
+        ad_groups_controller:
+          added_group: Προστέθηκε ομάδα %{group_name} στην ομάδα εργασίας
+          sync_group: Συγχρονισμός του %{group_name}
+          updated_grp_prov: Ενημερώθηκε η πολιτική τροφοδότησης.
+          updated_grp_import: Ενημερωμένη πολιτική εισαγωγής ομάδας.
+          updated_error: Σφάλμα κατά την αποθήκευση των ρυθμίσεων ομάδας %{group_name}:<br/>
+          removed_group: Αφαιρέθηκε η ομάδα %{group_name} από ομάδα εργασίας.
+          wg_not_found: Η ομάδα εργασίας δεν βρέθηκε
+          no_groups_selected: Δεν έχουν επιλεγεί ομάδες
+          group_sched_activated: Η %{group_name} έχει προγραμματιστεί να ενεργοποιηθεί
+          group_sched_deactivated: Η %{group_name} έχει προγραμματιστεί να απενεργοποιηθεί
+          group_sched_removed: Η τιμή %{group_name} πρόκειται να αφαιρεθεί
+        memberships_controller:
+          added_wg: Προστέθηκε χρήστης προτύπου στην ομάδα εργασίας-%{wg_name}
+          added_wg_fail: Δεν ήταν δυνατή η προσθήκη του χρήστη προτύπου στην ομάδα εργασίας-%{wg_name}
+          remove_wg: Αφαίρεση χρήστη προτύπου από την ομάδα εργασίας-%{wg_name}
+          remove_wg_fail: Δεν ήταν δυνατή η αφαίρεση του χρήστη προτύπου από την ομάδα εργασίας-%{wg_name}
+        saml_groups_controller:
+          added_group: Προσθήκη ομάδας %{group_name}
+        users_controller:
+          no_wg_found: Δεν βρέθηκε η ομάδα εργασίας *%{wg_name}
+          add_to_wg_fail: 'Σφάλμα κατά την προσθήκη στην ομάδα εργασίας: %{error}'
+          removed_from_wg: Αφαιρέθηκε από την ομάδα εργασίας.
+          removed_from_wg_fail: 'Σφάλμα κατά την αφαίρεση του χρήστη από την ομάδα εργασίας: %{error}'
+          user_membership_updated: Ενημέρωση συμμετοχής χρηστών.
+          error_editing_membership: 'Σφάλμα κατά την τροποποίηση της συμμετοχής: %{error}'
+          created_user: Επιτυχής δημιουργία του χρήστη %{user_name}
+          created_user_fail: Δεν ήταν δυνατή η προσθήκη χρήστη.
+          updated_user: Ο χρήστης %{user_name} ενημερώθηκε με επιτυχία
+          permission_error: Δεν έχετε δικαίωμα τροποποίησης του χρήστη %{user_name}
+          activated: Ενεργοποιήθηκε %{user}
+          disabled_saml_user_note: "<br>Σημείωση: Οι χρήστες που σχετίζονται με απενεργοποιημένες ρυθμίσεις SAML θα παραμείνουν ανενεργοί"
+          deactivated: Απενεργοποίηση του %{user}
+          removed: Αφαίρεση του %{user}
+          removed_external: Αφαίρεση του %{user}
+          no_users_selected: Δεν έχουν επιλεγεί χρήστες
+          active_users: Ενεργοί χρήστες
+          all_users: Όλοι οι χρήστες
+          inactive_users: Μη ενεργοί χρήστες
+      admin:
+        authorization_domains_controller:
+          updated: Η ρύθμιση ενημερώθηκε.
+        nodes_controller:
+          deleted: Διαγράφηκε η %{name}
+          deleted_fail: Δεν έχετε εξουσιοδότηση διαγραφής της %{name}
+          connection_fail: "%{message}<br />%{status}<br />%{status_message}"
+          connection_success: Η σύνδεση %{message} <br /> ήταν επιτυχημένη!
+        notifications:
+          login_announcements_controller:
+            updated: Ενημερωμένη ανακοίνωση σύνδεσης
+          package_instructions_controller:
+            updated: Ενημερωμένες οδηγίες πακέτων
+        packages_controller:
+          invalid_num_days: Μη έγκυρος αριθμός ημερών.
+          no_older_pkgs: Δεν υπάρχουν πακέτα μεγαλύτερα από %{max}
+        post_processes_controller:
+          activated: Ενεργοποιημένη %{script_name}
+          activated_error: Σφάλμα κατά την ενεργοποίηση της %{script_name}
+          created: Το σενάριο μετα-επεξεργασίας %{script_name} δημιουργήθηκε με επιτυχία
+          deleted: Αφαίρεση σεναρίου μετεπεξεργασίας %{script_name}
+          inactivated: Απενεργοποίηση του %{script_name}
+          inactivated_error: Σφάλμα κατά την απενεργοποίηση της %{script_name}
+          updated: Επιτυχημένο ενημερωμένο σενάριο %{script_name}
+        saml_configurations_controller:
+          create_success: 'Επιτυχής δημιουργία ρυθμίσεων SAML<br>ΣΗΜΕΙΩΣΗ: Πρέπει να ενημερώσετε τα μεταδεδομένα στον εξυπηρετητή SAML πριν συνδεθείτε.'
+          update_success: 'Επιτυχημένη ενημέρωση των ρυθμίσεων SAML<br>ΣΗΜΕΙΩΣΗ: Ενδέχεται να χρειαστεί να ενημερώσετε τα μεταδεδομένα στον εξυπηρετητή SAML πριν
+            συνδεθείτε.'
+        settings:
+          display_settings_controller:
+            file_too_large: Το αρχείο είναι πολύ μεγάλο. Μέγιστο μέγεθος αρχείου 5MB
+            remove_logo_fail: Δεν είναι δυνατή η διαγραφή του προσαρμοσμου αρχείου
+            remove_logo_success: Επιτυχής αφαίρεση προσαρμοστου αρχείου λογότυπου
+            unsupported_file_type: Μη υποστηριζόμενο είδος αρχείου για το προσαρμοσμένο λογότυπο. Το αρχείο πρέπει να είναι jpeg, gif ή png.
+            updated_settings: Ενημερωμένες ρυθμίσεις εμφάνισης
+          entitlement_controller:
+            invalid_license: Μη έγκυρη άδεια χρήσης
+            successful_entitlement: "-Επιτυχής"
+            unable_to_register: Αδυναμία εγγραφής
+          global_distribution_lists_controller:
+            created: Δημιουργήθηκε η γενική λίστα διανομής %{name}
+            deleted: Διαγραφή καθολικού καταλόγου διανομής
+            updated: Ενημερώθηκαν καθολικές λίστες διανομής
+            updated_fail: Σφάλμα κατά την ενημέρωση ενός ή περισσότερων γενικών λιστών διανομής
+          license_controller:
+            license_upload_fail: Αποτυχία αποστολής άδειας χρήσης
+            only_text_allowed: Μόνο αρχεία κειμένου επιτρέπονται.
+            updated_license: Ενημέρωση άδειας χρήσης
+          package_storage_controller:
+            updated_settings: Ενημερωμένες ρυθμίσεις αποθήκευσης πακέτων
+          save_restore_config_controller:
+            config_restored: Έγινε επαναφορά ρυθμίσεων. Επανεκκινήστε το Faspex για να ολοκληρώσετε αυτή τη διαδικασία.
+          security_controller:
+            updated_settings: Ενημερωμένες ρυθμίσεις ασφάλειας
+          transfer_options_controller:
+            updated_settings: Ενημερωμένες ρυθμίσεις επιλογών μεταφοράς
+          web_server_controller:
+            updated_settings: Ενημερωμένες ρυθμίσεις διακομιστή Web
+        share_membership_controller:
+          deleted: Διαγράφηκε η %{mem_name}
+          deleted_fail: Αδύνατη η διαγραφή της %{mem_name}
+        shares_controller:
+          add_term_fail: Δεν ήταν δυνατή η προσθήκη %{term}
+          added_term: Προστέθηκε %{term}
+          created: Δημιουργήθηκε %{share} %{share_name}
+          deleted: Διαγράφηκε η %{share}
+          find_fail: Δεν βρέθηκε η %{term}
+          updated: Ενημερώθηκε η %{share} %{share_name}
+          updated_default: Ενημερώθηκε το προεπιλεγμένο inbox
+      authenticated_controller:
+        expired: Η συνεδρία σας έληξε. Συνδεθείτε ξανά για να συνεχίσετε.
+        new_session: Ξεκίνησε μια άλλη συνεδρία για το χρήστη %{username} (%{remote})
+        timed_out: Η συνεδρία σας έληξε. Συνδεθείτε ξανά για να συνεχίσετε.
+      entitlement_controller:
+        success: "-Επιτυχής"
+      external:
+        submissions_controller:
+          send_to_recipient: Αποστολή στη %{name}
+      invitations_controller:
+        invitation_failed: Η πρόσκληση απέτυχε. Προσπαθήστε ξανά αργότερα.
+        invitation_created: Δημιουργήθηκε πρόσκληση για τη %{email}
+        reinvited: Πρόσκληση πρόσκλησης στην %{name}
+        reinvited_fail: Η επαναφορά απέτυχε. Προσπαθήστε ξανά αργότερα.
+        resend_invitation_failed: Η επαναφορά της πρόσκλησης απέτυχε. Προσπαθήστε ξανά αργότερα.
+        resent_invitation: Επανάληψη της πρόσκλησης στη %{name}
+        deleted_invitation: Διαγραφόμενη πρόσκληση
+        deleted_invitation_try_again: Η πρόσκληση διαγραφής απέτυχε. Προσπαθήστε ξανά αργότερα.
+      login_base_controller:
+        login_error_message: >-
+          Η σύνδεσή σας απέτυχε. Προσπαθήστε ξανά. Εάν αντιμετωπίζετε επαναλαμβανόμενες αποτυχίες σύνδεσης, θα πρέπει να κάνετε κλικ στη σύνδεση "Ξεχάσατε τον κωδικό
+          πρόσβασης" για να επαναφέρετε τον κωδικό πρόσβασης.
+      login_controller:
+        connect_enabled: Το IBM Aspera Connect έχει ενεργοποιηθεί!
+        login_URL_change: Η διεύθυνση URL σύνδεσης άλλαξε. Ενημερώστε το σελιδοδείκτη του προγράμματος πλοήγησης.
+        session_already_disconnected: Η συνεδρία έχει ήδη αποσυνδεθεί.
+      m_configuration_controller:
+        updated: Ενημερώθηκαν οι ρυθμίσεις αλληλογραφίας.
+      m_template_controller:
+        loaded: Οι προεπιλεγμένες ρυθμίσεις φορτώθηκαν.
+        updated: Επιτυχημένη ενημέρωση της ειδοποίησης μέσω e-mail %{template}
+      metadata_profiles_controller:
+        cannot_delete_profile: Δεν είναι δυνατή η διαγραφή του προφίλ. Χρησιμοποιείται από κανονικά πακέτα.
+        cannot_delete_profile_dropbox: Δεν είναι δυνατή η διαγραφή του προφίλ, χρησιμοποιείται από το dropbox %{db_name}.
+        created: Δημιουργημένα μεταδεδομένα %{profile}
+        profile_deleted: Το προφίλ διαγράφηκε.
+        save_success: Επιτυχής αποθήκευση προφίλ μεταδεδομένων
+        updated: "' Ενημέρωση"
+      ms_admin_controller:
+        home_server_rules_changed: Οι κανόνες τοπικού εξυπηρετητή έχουν αλλάξει. Επανυπολογισμός των αρχικών εξυπηρετητών για την εφαρμογή αλλαγών.
+        updated_rule: Ενημερωμένος κανόνας
+        deleted_rule: Διαγράφεται κανόνας.
+        added_new_rule: 'Προσθήκη νέου κανόνα:'
+        error_finding_home_server: Σφάλμα εύρεσης του τοπικού εξυπηρετητή για διαγραφή
+        removed_server: 'Αφαίρεση εξυπηρετητή:'
+        updated_home_server_settings: Ενημερωμένες ρυθμίσεις τοπικού εξυπηρετητή
+        updated_attributes: Ενημέρωση του %{attribute}
+        access_denied: Άρνηση πρόσβασης.
+      pending_controller:
+        archived: Το πακέτο "%{pkg_name}" αρχειοθετήθηκε
+        archived_fail: Σφάλμα αρχειοθέτησης πακέτου. Προσπαθήστε ξανά αργότερα.
+        deleted: Το πακέτο "%{pkg_name}" διαγράφηκε
+        deleted_fail: Σφάλμα διαγραφής πακέτου. Προσπαθήστε ξανά αργότερα.
+      received_controller:
+        package_archived: Αρχειοθέτηση πακέτου %{p_name}
+        package_archived_fail: Σφάλμα αρχειοθέτησης πακέτου. Προσπαθήστε ξανά αργότερα.
+      registrations_controller:
+        failed_registration: Η εγγραφή απέτυχε. Προσπαθήστε ξανά αργότερα.
+      reset_password_tokens_controller:
+        no_account_exists: Αυτός ο λογαριασμός δεν υπάρχει πλέον.
+        expired_pw_link: Η διασύνδεση επανακαθορισμού κωδικού πρόσβασης έχει ήδη χρησιμοποιηθεί ή έχει λήξει και δεν είναι πλέον έγκυρη.
+        reset_success: Ο κωδικός πρόσβασης επανακαθορίστηκε με επιτυχία!
+        reset_submitted: Υποβληθείσες αιτήσεις επαναφοράς κωδικού πρόσβασης Αν δεν λάβετε σύντομα ένα μήνυμα e-mail, επικοινωνήστε με το διαχειριστή σας για βοήθεια.
+      saml_controller:
+        does_not_exist: Ο ζητούμενη παροχέας SAML δεν υπάρχει
+        disabled: Ο ζητούμενη παροχέας SAML έχει απενεργοποιηθεί
+        invalid_metadata: Μη έγκυρο URL μεταδεδομένων
+      sent_controller:
+        archived: Το πακέτο "%{pkg_name}" αρχειοθετήθηκε
+        archived_fail: Σφάλμα αρχειοθέτησης πακέτου. Προσπαθήστε ξανά αργότερα.
+        deleted: Το πακέτο "%{pkg_name}" διαγράφηκε
+        deleted_fail: Σφάλμα διαγραφής πακέτου. Προσπαθήστε ξανά αργότερα.
+        relay: Έναρξη της μετοχής %{share}
+        relay_fail: Σφάλμα επανεκκίνησης αναμετάδοσης. Προσπαθήστε ξανά αργότερα.
+      settings:
+        distribution_lists_controller:
+          created: Δημιουργήθηκε λίστα διανομής %{dist_list_name}
+          deleted: Διαγραφή καταλόγου διανομής
+          updated: Ενημερωμένες λίστες διανομής
+          error_updating: Σφάλμα ενημέρωσης ενός ή περισσότερων λιστών διανομής
+        passwords_controller:
+          success: Το σύνθημα άλλαξε με επιτυχία.
+        preferences_controller:
+          updated: Ενημερωμένες προτιμήσεις
+      user_profile_fields_controller:
+        max_field_check_fail: Μπορείτε να έχετε μόνο τα πεδία προφίλ χρήστη %{max}
+        saved: Επιτυχής αποθήκευση πεδίων προφίλ χρήστη
+      workgroup:
+        workgroups_controller:
+          activate: 'Ενεργοποίηση:'
+          activated_members: Ενεργοποιήθηκε ο %{counts} member%{πλειο}. %{msg}
+          add_ds: Δεν είναι δυνατή η προσθήκη ομάδας DS. Προσπαθήστε ξανά αργότερα.
+          add_ds_fail: Προστέθηκε η ομάδα DS %{group} στην ομάδα εργασίας %{name}
+          add_member: Προστέθηκε %{name} στη %{box}
+          add_member_fail: Δεν είναι δυνατή η προσθήκη μέλους. Προσπαθήστε ξανά αργότερα.
+          create_success: 'Επιτυχημένη δημιουργία '
+          deactivate: 'Απενεργοποίηση:'
+          deactivated_success: Απενεργοποίηση %{counts} member%{πλειο}. %{msg}%{admin}
+          deleted_success: Διαγράφηκε η %{type} %{name}
+          external_email_no_standard_access: Δεν είναι δυνατή η πρόσβαση σε εξωτερικούς χρήστες email. Δεν έγιναν αλλαγές.
+          external_email_deactivated_fail: Οι εξωτερικοί χρήστες email δεν μπορούν να απενεργοποιηθούν. Δεν έγιναν αλλαγές.
+          members_actions: Ενέργειες μελών ...
+          no_ds_selected: Δεν έχουν επιλεγεί ομάδες DS
+          no_members_selected: Δεν έχουν επιλεγεί μέλη
+          remove: 'Αφαίρεση:'
+          remove_member: Αφαιρέθηκε το %{member} από την ομάδα εργασίας.
+          remove_member_fail: Δεν είναι δυνατή η αφαίρεση μέλους. Προσπαθήστε ξανά αργότερα.
+          remove_ds_group: Αφαιρέθηκαν %{count} από την ομάδα εργασίας.
+          remove_ds_group_fail: Δεν είναι δυνατή η αφαίρεση ομάδας DS. Προσπαθήστε ξανά αργότερα.
+          set_admin: Ορίστε %{member} ως διαχειριστής %{name}.
+          set_admin_fail: Οι εξωτερικοί χρήστες δεν μπορούν να γίνουν διαχειριστές dropbox. Δεν έγιναν αλλαγές.
+          set_ds_access: Ορίστε την τιμή %{group} ως %{level}.
+          set_ds_access_fail: Δεν είναι δυνατός ο ορισμός της πρόσβασης %{level} σε ομάδες DS. Προσπαθήστε ξανά αργότερα.
+          set_regular_access: Ορίστε το %{member} ως κανονική πρόσβαση.
+          set_regular_access_fail: Δεν είναι δυνατός ο ορισμός κανονικής πρόσβασης στα μέλη. Προσπαθήστε ξανά αργότερα.
+          set_standard_access: Ορισμός τυπικής πρόσβασης
+          set_submit_only: Ορίστε τη ρύθμιση %{member} ως υποβολή.
+          set_submit_only_fail: Δεν είναι δυνατός ο ορισμός της πρόσβασης μόνο στα μέλη. Προσπαθήστε ξανά αργότερα.
+          set_submit_only_access: Ορισμός πρόσβασης μόνο για υποβολή
+          set_wg_admin: Ορισμός ως διαχειριστής %{wg_name}
+          skipped_sys_admin: Παράλειψη διαχειριστή συστήματος %{size}
+          updated_wg: Ενημερώθηκε το %{type}
+          user_not_found: Ο χρήστης δεν βρέθηκε
+    views:
+      account:
+        ad_groups:
+          ad_group:
+            error: 'Σφάλμα:'
+            invalid: Μη έγκυρο.
+            pending: Εκκρεμεί %{methodop}
+          additional_permissions:
+            edit_add_perm: Τροποποίηση πρόσθετων δικαιωμάτων
+          forms:
+            group_import:
+              save: 'Αποθήκευση:'
+            import_users:
+              full_name: Πλήρες Όνομα
+              import_date: 'Ημερομηνία εισαγωγής:'
+              status: "' Κατάσταση"
+              sync_now: 'Συγχρονισμός:'
+              user_name: 'Όνομα χρήστη:'
+            wg_member:
+              actions: "' Ενέργειες"
+              add_to: Προσθήκη στο ...
+              date_added: 'Ημερομηνία προσθήκης:'
+              remove: 'Αφαίρεση:'
+              wg_name: Όνομα ομάδας εργασίας
+          user_ad_group:
+            active: Ενεργός.
+            inactive: 'Ανενεργή:'
+        directory_service_groups:
+          edit:
+            back: Πίσω!
+            edit_dir_group: 'Τροποποίηση ομάδας υπηρεσιών καταλόγου: %{groupname}'
+            group_import: Πολιτική εισαγωγής ομάδας
+            imported_users: Εισαγόμενοι χρήστες (%{mem_count})
+            workgroup_memberships: Μέλη ομάδας εργασίας (%{mem_count})
+          index:
+            activate: 'Ενεργοποίηση:'
+            date_added: 'Ημερομηνία προσθήκης:'
+            deactivate: 'Απενεργοποίηση:'
+            directory_service: 'Υπηρεσία καταλόγου:'
+            group_name: 'Όνομα ομάδας:'
+            members: "-Μέλη"
+            new_group: " Νέα ομάδα:"
+            remove: 'Αφαίρεση:'
+            status: "' Κατάσταση"
+            sync: "~ Συγχρονισμός"
+            view_op_history: Προβολή ιστορικού λειτουργιών
+          new:
+            back: Πίσω!
+            cancel: Ακύρωση.
+            dir_services: 'Υπηρεσία καταλόγου:'
+            import: 'Εισαγωγή:'
+            import_dir_serv: Εισαγωγή ομάδας από την υπηρεσία καταλόγου
+            search_dir_service: 'Υπηρεσία καταλόγου αναζήτησης:'
+        directory_service_users:
+          additional_permissions:
+            edit_add_perm: Τροποποίηση πρόσθετων δικαιωμάτων
+          index:
+            back: Πίσω!
+            directory_service: 'Υπηρεσία καταλόγου:'
+            import: 'Εισαγωγή:'
+            import_user_from_dir_serv: Εισαγωγή χρήστη από την υπηρεσία καταλόγου
+            search: Αναζήτηση.
+            search_term: 'Όρος αναζήτησης:'
+            searches_limit: Οι αναζητήσεις περιορίζονται σε 20 αποτελέσματα.
+            searching: Αναζήτηση.
+            usr_not_found: Δεν βρέθηκαν χρήστες.
+        memberships:
+          actions: "' Ενέργειες"
+          add_to: Προσθήκη στο ...
+          back: Πίσω!
+          name: "' Ονομα"
+          remove: 'Αφαίρεση:'
+          self_reg_added: 'Οι αυτοεγγεγραμμένοι χρήστες θα προστεθούν στις ακόλουθες ομάδες εργασίας:'
+          template_user_workgroups: Ομάδες εργασίας χρηστών προτύπων
+        passwords:
+          back_to_edit: Επιστροφή στην επεξεργασία
+          cancel: Ακύρωση.
+          password: Αλλαγή κωδικού πρόσβασης για %{local_name}
+          reset_confirm: >-
+            Είστε βέβαιοι ότι θέλετε να επαναφέρετε τον κωδικό πρόσβασης του χρήστη; Θα σταλεί μια ειδοποίηση μέσω e-mail σε αυτό το χρήστη που θα τους επιτρέπει
+            να συνδεθούν και να αλλάξουν τον κωδικό πρόσβασης.
+          reset_password: Κωδικός πρόσβασης επαναφοράς
+          update_password: Ενημέρωση κωδικού πρόσβασης
+        registrations:
+          form:
+            email: 'Email:'
+            first: 'Πρώτο:'
+            last: Τελευταίο.
+            login: 'Σύνδεση:'
+          index:
+            approve: 'Έγκριση:'
+            deny: 'Άρνηση:'
+            faspex_reg_type: Το Faspex έχει ρυθμιστεί με εγγραφή %{type}.
+            new_message: Αυτό σημαίνει ότι θα απαιτείται έγκριση για τους νέους λογαριασμούς %{not}.
+            not: "-όχι"
+            self_reg_users: Οι αυτοεγγεγραμμένοι χρήστες θα κληρονομήσουν τα δικαιώματα του %{template_user} και θα γίνουν αυτόματα μέλη της ακόλουθης %{workgroups}.
+        saml_groups:
+          edit:
+            back: Πίσω!
+            edit_saml: 'Τροποποίηση ομάδας SAML: %{groupname}'
+            group_prov_policy: Πολιτική Provisioning Group
+            users: Χρήστες (%{mem_count})
+            workgroup_memberships: Μέλη ομάδας εργασίας (%{mem_count})
+          index:
+            activate: 'Ενεργοποίηση:'
+            date_added: 'Ημερομηνία προσθήκης:'
+            deactivate: 'Απενεργοποίηση:'
+            group_name: 'Όνομα ομάδας:'
+            members: "-Μέλη"
+            new_group: " Νέα ομάδα:"
+            remove: 'Αφαίρεση:'
+            saml_config: Σύνολα ρυθμίσεων SAML
+            status: "' Κατάσταση"
+          new:
+            back: Πίσω!
+            cancel: Ακύρωση.
+            create: 'Δημιουργία:'
+            create_new_saml: Δημιουργία νέας ομάδας SAML
+            group_name: 'Όνομα ομάδας:'
+            saml_config: Ρύθμιση SAML
+        template_users:
+          account_details: Λεπτομέρειες λογαριασμού
+          cancel: Ακύρωση.
+          edit_template_user: Τροποποίηση χρήστη προτύπου
+          form:
+            workgroup_memberships:
+              date_added: 'Ημερομηνία προσθήκης:'
+              remove: 'Αφαίρεση:'
+              workgroup_name: Όνομα ομάδας εργασίας
+              workgroups: 'Ομάδες εργασίας:'
+          update: 'Ενημέρωση:'
+        users:
+          add_permissions:
+            edit_add_perm: Τροποποίηση πρόσθετων δικαιωμάτων
+          edit:
+            change_password: Αλλαγή/Επαναφορά κωδικού πρόσβασης
+            edit_user: 'Τροποποίηση χρήστη: %{user}'
+            return_to_user_list: Επιστροφή στη λίστα χρηστών
+            type: "(είδος: %{user_type})"
+            workgroup_memberships: "(')"
+          edit_form:
+            cancel: Ακύρωση.
+            update_user: 'Ενημέρωση χρήστη:'
+          edit_wg:
+            add_user: Προσθήκη χρήστη στο Workgroup
+            back_to_edit: Επιστροφή στην Τροποποίηση
+            remove: 'Αφαίρεση:'
+            workgroup_mem_for: Μέλη ομάδας εργασίας για τη %{user}
+            workgroup_name: Όνομα ομάδας εργασίας
+          external_users:
+            accounts: Λογαριασμοί.
+            remove: 'Αφαίρεση:'
+          fieldsets:
+            account_details:
+              account_details: Λεπτομέρειες λογαριασμού
+              active: Ενεργός.
+              admin_hint: Οι διαχειριστές μπορούν να προσθέτουν/αφαιρείτε χρήστες και να διαχειρίζονται τις ρυθμίσεις του εξυπηρετητή.
+              inactive: 'Ανενεργή:'
+              manager_hint: Οι διευθυντές μπορούν να προσθέσαν/καταργήσετε χρήστες
+              never: Ποτέ!
+              role: 'Ρόλος:'
+              text_area_hint: καταχωρήστε τις διευθύνσεις e-mail που διαχωρίζονται με κόμμα -, ερωτηματικό ή κενό διάστημα
+              user_hint: Οι τακτικοί χρήστες μπορούν να στείλουν και να λάβουν πακέτα Faspex
+            advanced_transfer:
+              adv_trans_setting: Πρόσθετες ρυθμίσεις μεταφοράς
+              checked: ελεγαν.
+              initial_transfer: 'Αρχική τιμή μεταφοράς:'
+              max_rate: Μέγιστο Επιτρεπόμενο Ρυθμό
+              minrate_hint: 'Αν ενεργοποιηθεί, οι πελάτες δεν θα έχουν τη δυνατότητα προσαρμογής της πολιτικής μεταφοράς ή της ελάχιστης τιμής μεταφοράς (προεπιλογή:
+                %{config})'
+              server_to_user: 'εξυπηρετητής σε χρήστη (προεπιλογή: %{config})'
+              transfer_alert: |-
+                Το Faspex θα χρησιμοποιήσει τις ρυθμίσεις μεταφοράς από την ενότητα Aspera Central Server από προεπιλογή.
+                Ωστόσο, εδώ μπορείτε να ορίσετε ρυθμίσεις μεταφοράς για το χρήστη, οι οποίες θα υπερισχύουν των ρυθμίσεων σε επίπεδο εξυπηρετητή.
+              unchecked: χωρίς έλεγχο.
+              user_to_server: 'χρήστης στον εξυπηρετητή (προεπιλογή: %{config})'
+            ds_history:
+              action: "' Ενέργεια"
+              ds_history: Ιστορικό DS (%{dom_name})
+              notes: Notes
+              operation: "' Επιχείρηση"
+              show_all: 'Εμφάνιση όλων:'
+              time: "' Ωρα"
+            package_deletion:
+              after_download: 'Μετά τη λήψη:'
+              allow_user_delete: 'Επιτρέπει στο χρήστη να ορίσει τη ρύθμιση διαγραφής με βάση το πακέτο:'
+              delete_files_after: Διαγραφή αρχείων μετά από <strong>οποιονδήποτε παραλήπτη</strong> μεταφορτώνει όλα τα αρχεία
+              delete_files_all: Διαγραφή αρχείων μετά από <strong>όλους τους παραλήπτες</strong> μεταφορτώστε όλα τα αρχεία
+              do_nothing: Τίποτα.
+              package_deletion: Διαγραφή πακέτου.
+              server_delete: 'Προεπιλογή: %{config}'
+            password_policy:
+              custom_pw_policy: Πολιτική κωδικών πρόσβασης
+              pw_expires: Το σύνθημα λήγει
+              prevent_pw_reuse: Αποτροπή επαναχρησιμοποίησης κωδικού πρόσβασης
+              every_x_days: κάθε ημέρα (-ες) %{x}
+              never: Ποτέ!
+            permissions:
+              affirm: Ναι!
+              allow_inviting_external: 'Επιτρέπεται η πρόσκληση εξωτερικών αποστολέων:'
+              allow_public_submission: 'Επιτρέπονται οι δημόσιες υπηρεσίες υποβολής:'
+              allowed_to: 'Επιτρέπεται:'
+              can_see_global_dist_lists: 'Μπορεί να δει καθολικούς καταλόγους διανομής:'
+              control_hint: Αν δεν επιλεγεί, ο χρήστης δεν θα μπορεί να στείλει στους χρήστες ή να υποβάλει τα dropboxes/ομάδες εργασίας
+              create_drop_packages: Αν αυτή η επιλογή είναι απενεργοποιημένη, ο χρήστης θα μπορεί να δημιουργήσει μόνο πακέτα dropbox, αν είναι μέλος οποιουδήποτε
+                dropboxes.
+              create_normal: 'Μπορεί να δημιουργήσει κανονικά πακέτα:'
+              external_email: 'Μπορεί να σταλεί στο εξωτερικό email:'
+              ip_addr_hint: Καταχωρήστε διευθύνσεις/περιοχές διαχωρισμένες με κόμματα, π.χ. <b>10.0. *, 192.168.1.1</b>
+              keep_dir_private: 'Διατήρηση του καταλόγου χρηστών:'
+              neg: Όχι.
+              permissions: "' Εκδοση"
+              see_global_dis_list: 'Μπορεί να δει καθολικούς καταλόγους διανομής:'
+              send_to_all: 'Μπορεί να στείλει σε όλους τους χρήστες Faspex:'
+              send_to_all_send_to_wg: Αν επιτρέπεται, ο χρήστης μπορεί να στείλει όλους τους χρήστες του Faspex. Διαφορετικά, ο χρήστης μπορεί να στείλει μόνο άλλα
+                μέλη της ομάδας εργασίας.
+              user_server_def: 'Προεπιλογή εξυπηρετητή χρήστη (τρέχουσα: %{def})'
+            personal_details:
+              first_name: 'Όνομα:'
+              last_name: 'Επώνυμο:'
+              personal_details: Προσωπικές λεπτομέρειες
+            sender_quota:
+              sender_hint: Αντικατάσταση προεπιλεγμένης ορίου μεγέθους Sender
+              sender_quota: Αποστολέας Quota
+              sender_quota_hint: Συνολικό μέγεθος δεδομένων που εστάλη κατά το τροχαίο.
+              sender_quota_leg: 'Αποστολέας Ποσόστωση:'
+            user_history:
+              last_login_time: 'Ώρα τελευταίας σύνδεσης:'
+              user_history: 'Ιστορικό χρήστη:'
+            welcome_email:
+              welcome: Καλωσορίσατε E-mail
+          index:
+            accounts: Λογαριασμοί.
+            activate: 'Ενεργοποίηση:'
+            deactivate: 'Απενεργοποίηση:'
+            remove: 'Αφαίρεση:'
+          menus:
+            add_account:
+              add_account: 'Προσθήκη λογαριασμού '
+              dir_serv_user: Χρήστης υπηρεσίας καταλόγου
+              faspex_user: Χρήστης του Faspex
+              new_user: " Νέος χρήστης:"
+            toggle_users:
+              active_users: Ενεργοί χρήστες
+              all_users: Όλοι οι χρήστες
+              inactive_users: Μη ενεργοί χρήστες
+          new:
+            back: Πίσω!
+            user_account: Νέος λογαριασμός χρήστη
+          new_form:
+            cancel: Ακύρωση.
+            confirm_password: Έλεγχος κωδικού πρόσβασης
+            create_account: 'Δημιουργία λογαριασμού:'
+            first_name: 'Όνομα:'
+            last_name: 'Επώνυμο:'
+            or: " ή "
+            password: Κωδικός πρόσβασης
+            set_password: Ορισμός κωδικού πρόσβασης
+          user:
+            invalid: Μη έγκυρο.
+            same_as_login: "(ίδιο με τη σύνδεση)"
+          user_list:
+            check_all_users: Έλεγχος όλων των χρηστών
+            check_user: 'Έλεγχος χρήστη:'
+            date_added: 'Ημερομηνία προσθήκης:'
+            email: Email
+            first: 'Πρώτο:'
+            home_server: Κεντρικός εξυπηρετητής
+            last: Τελευταίο.
+            last_login: Τελευταία σύνδεση
+            login: 'Σύνδεση:'
+            status: "' Κατάσταση"
+            type: "-"
+      active: Ενεργός.
+      ad_admin:
+        ad_users_list_rows:
+          active: Ενεργός.
+          full_name: Πλήρες Όνομα
+          import_date: 'Ημερομηνία εισαγωγής:'
+          inactive: 'Ανενεργή:'
+          invalid: Μη έγκυρο.
+          user_name: 'Όνομα χρήστη:'
+        edit_config:
+          and_test: " και δοκιμή."
+          anonymous: Ανώνυμος
+          dir_service_details: Λεπτομέρειες υπηρεσίας καταλόγου
+          dir_service_type: 'Είδος υπηρεσίας καταλόγου:'
+          enable_dir_service: 'Ενεργοποίηση υπηρεσίας καταλόγου:'
+          ex_dir_service: Υπηρεσία εξωτερικού καταλόγου
+          login: 'Σύνδεση:'
+          login_method: 'Μέθοδος σύνδεσης:'
+          password: 'Κωδικός πρόσβασης:'
+          port: 'Λιμένας:'
+          provide_credentials: Παροχή στοιχείων ταυτότητας
+          save: 'Αποθήκευση:'
+          save_and_test: 'Αποθήκευση και δοκιμή:'
+          server: 'Εξυπηρετητής:'
+          treebase: 'Treebase:'
+          use_tls: 'Χρήση ασφαλούς λειτουργίας (TLS):'
+        operation_hist:
+          details: "' Λεπτομέρειες"
+          dir_service_op_history: Ιστορικό λειτουργίας υπηρεσίας καταλόγου
+          no_op: Δεν εκτελέστηκε καμία ενέργεια.
+          operation: "' Επιχείρηση"
+          time: "' Ωρα"
+          view: "' Προβολή"
+        status: "' Κατάσταση"
+      ad_group_membership:
+        active: Ενεργός.
+        inactive: 'Ανενεργή:'
+      ad_groups:
+        error: 'Σφάλμα:'
+        invalid: Μη έγκυρο.
+        pending: 'Αναμονή: '
+      admin:
+        auth_domain:
+          edit:
+            edit_name: Τροποποίηση %{name}
+          form:
+            anonymous: Ανώνυμος
+            dir_service_details: Λεπτομέρειες υπηρεσίας καταλόγου
+            dir_service_name: 'Όνομα υπηρεσίας καταλόγου:'
+            dir_service_type: 'Είδος υπηρεσίας καταλόγου:'
+            dn_message: Συνήθως ένα διακεκριμένο όνομα (DN)
+            enable_dir_service: 'Ενεργοποίηση υπηρεσίας καταλόγου:'
+            login: 'Σύνδεση:'
+            login_method: 'Μέθοδος σύνδεσης:'
+            password: 'Κωδικός πρόσβασης:'
+            port: 'Λιμένας:'
+            provide_cred: Παροχή στοιχείων ταυτότητας
+            save: 'Αποθήκευση:'
+            save_and_test: 'Αποθήκευση και δοκιμή:'
+            secure_tls: 'Χρήση ασφαλούς λειτουργίας (TLS):'
+            server: 'Εξυπηρετητής:'
+            treebase: 'Treebase:'
+            username_attr: 'Γνώρισμα ονόματος χρήστη:'
+          index:
+            add_new: Προσθήκη νέας %{name}
+            disabled: "' Ατομα"
+            enabled: "' Ενεργή"
+            server: 'Εξυπηρετητής:'
+            status: "' Κατάσταση"
+            type: 'Είδος:'
+          new: Νέα %{name}
+        fasp_nodes:
+          fasp_nodes:
+            active_sessions: Ενεργές συνεδρίες.
+            address: 'Διεύθυνση:'
+            errors: 'Σφάλματα:'
+            last_poll: Τελευταία επιτυχής σφυγμομέτρηση
+            node_id: Ταυτότητα κόμβου
+            cluster_id: Ταυτότητα συμπλέγματος
+            polling_strategy: Στρατηγική δημοσκοπήσεων
+            os: Ε!
+            status: "' Κατάσταση"
+        nodes:
+          edit:
+            cancel: Ακύρωση.
+            edit_name: Τροποποίηση του %{user}-%{node}
+          form:
+            advanced_config: <i class="icon-plus"></i>Πρόσθετες ρυθμίσεις
+            basic_config: 'Βασικές ρυθμίσεις:'
+            config_message: >-
+              Οι παρακάτω ρυθμίσεις πρέπει να παραπέμπουν στον εξυπηρετητή που φιλοξενεί τον εξυπηρετητή Aspera Enterprise Server. Η διεύθυνση χρησιμοποιείται από
+              τη διαδικτυακή εφαρμογή για τη συλλογή στατιστικών δεδομένων μεταφοράς. Αν το Aspera Enterprise Server εκτελείται στον ίδιο υπολογιστή με τη διαδικτυακή
+              εφαρμογή, η σωστή διεύθυνση είναι 127.0.0.1.
+            sec_add_message: >-
+              Η παρακάτω διεύθυνση είναι αυτό που θα χρειαστούν οι χρήστες σας για να ξεκινήσουν τις μεταφορές. Αν διαθέτετε μια ομάδα χρηστών που πρέπει να χρησιμοποιούν
+              διαφορετική διεύθυνση (π.χ. λόγω συνθηκών δικτύου), χρησιμοποιήστε τα πεδία 'Δευτερεύουσες διευθύνσεις' για να καθορίσετε μια περιοχή τιμών IP. Σημειώστε
+              ότι η δευτερεύουσα διεύθυνση δεν ισχύει για τη μεταφορά ρελέ.
+            storage_error: Αυτό το αρχείο αποθήκευσης χρησιμοποιείται ως προεπιλογή του συστήματος. Η τροποποίηση θα καταστήσει όλα τα υπάρχοντα πακέτα μη διαθέσιμα
+              στους χρήστες.
+            test_connect: 'Δοκιμή σύνδεσης:'
+          index:
+            add_new: Προσθήκη νέας %{name}
+            default_inbox: Προεπιλεγμένα Εισερχόμενα
+            location: 'Τοποθεσία:'
+            name: "' Ονομα"
+            source: 'Πηγή:'
+            shares: Χώρος αποθήκευσης αρχείων
+            status: "' Κατάσταση"
+            update: 'Ενημέρωση:'
+          new:
+            cancel: Ακύρωση.
+            new_name: Νέα %{name}
+          test: Η σύνδεση πέτυχε!
+        notifications:
+          login_announce:
+            edit:
+              ann_hint: Αυτό το μήνυμα εμφανίζεται στην οθόνη σύνδεσης.
+              update: 'Ενημέρωση:'
+          package_inst:
+            pkg_hint: Αυτό το μήνυμα εμφανίζεται στην οθόνη αποστολής.
+            update: 'Ενημέρωση:'
+        packages:
+          delete:
+            age_days: Ηλικία<br/>(ημέρες)
+            cancel: Ακύρωση.
+            delete_confirm: |-
+              Είστε βέβαιοι ότι θέλετε να διαγράψετε τα αρχεία για αυτά τα πακέτα;
+              Δεν θα μπορείτε να αναιρείτε αυτή την ενέργεια.
+            delete_files: 'Διαγραφή αρχείων:'
+            files: "' Αρχεία"
+            files_on_server: Αρχεία στον εξυπηρετητή<br/>;
+            full_downloads: Πλήρες φορτίο<br/>
+            recipients: "-Δέκτες"
+            sender: Πιο Sender
+            size: "' Μέγεθος"
+            status: "' Κατάσταση"
+            title: "' Τίτλος"
+            upload_completion: Μεταφόρτωση του<br/>
+            warning: 'ΑΥΤΉ Η ΕΝΈΡΓΕΙΑ ΘΑ ΔΙΑΓΡΆΨΕΙ ΑΡΧΕΊΑ ΓΙΑ ΤΑ ΑΚΌΛΟΥΘΑ ΠΑΚΈΤΑ:'
+          index:
+            action: "' Ενέργεια"
+            all_packages: 'Όλα τα πακέτα:'
+            days_or_older: ημέρες ή παλιότερες
+            delete_files: Διαγραφή αρχείων ...
+            download: Λήψεις <br/Full/Partial
+            for_packages: 'Για πακέτα:'
+            files: "' Αρχεία"
+            files_on_server: Αρχεία στον εξυπηρετητή;
+            package_created: Πακέτο<br>Δημιουργήθηκε
+            recipients: "-Δέκτες"
+            relays: ")."
+            search: Αναζήτηση.
+            sender: Πιο Sender
+            size: "' Μέγεθος"
+            status: "' Κατάσταση"
+            title: "' Τίτλος"
+            upload_completed: Μεταφόρτωση<br>Ολοκληρώθηκε
+          relays:
+            all_packages: 'Όλα τα πακέτα:'
+            completed_relays: Κοινά κέντρα.
+            failed_relays: Απέτυχε ρελέ
+            files: "' Αρχεία"
+            incomplete_relays: Incomplete ρελέ
+            ip_relays: Σε προχωρη -
+            package_created: Πακέτο<br>Δημιουργήθηκε
+            recipients: "-Δέκτες"
+            relays: ")."
+            search: Αναζήτηση.
+            sender: Πιο Sender
+            size: "' Μέγεθος"
+            status: "' Κατάσταση"
+            title: "' Τίτλος"
+            upload_completed: Μεταφόρτωση<br>Ολοκληρώθηκε
+          show_details:
+            full: "-Πλήρης."
+            full_partial: Πλήρης/Μερική
+            ip_addr: Διεύθυνση IP
+            package_download_details: Λεπτομέρειες μεταφόρτωσης πακέτων
+            partial: "-Μερική"
+            start: 'Ώρα έναρξης:'
+            stop: 'Χρόνος διακοπής:'
+            time_elapsed: Χρόνος Elapsed
+            username: 'Όνομα χρήστη:'
+        post_processes:
+          edit:
+            cancel: Ακύρωση.
+            edit_script: Τροποποίηση σεναρίου %{name}
+            update: 'Ενημέρωση:'
+          env_var_help:
+            description: 'Περιγραφή:'
+            faspex_meta<field>: η τιμή του πεδίου μεταδεδομένων με όνομα &lt;field&gt; με κεφαλαία γράμματα που αντικαθίστανται από πεζούς και χαρακτήρες που αντικαθίστανται
+              από υπογραμμές
+            faspex_metadata_fields: λίστα των πεδίων μεταδεδομένων που έχουν οριστεί για το πακέτο
+            faspex_pkg_delivery_id: ταυτότητα παράδοσης του πακέτου (διαφορετική από την ταυτότητα πακέτου και το UUID πακέτου)
+            faspex_pkg_dir: διαδρομή προς το πακέτο
+            faspex_pkg_id: ID πακέτου
+            faspex_pkg_is_forward: 1 για προωθημένα πακέτα και 0 για πρωτότυπα πακέτα
+            faspex_pkg_name: 'τίτλος πακέτου:'
+            faspex_pkg_note: 'σημείωση πακέτου:'
+            faspex_pkg_total_bytes: μέγεθος του πακέτου σε bytes
+            faspex_pkg_total_files: αριθμός αρχείων στη συσκευασία.
+            faspex_pkg_uuid: UUID του πακέτου
+            faspex_recipient_count: αριθμός αποδεκτών (π.χ. "3")
+            faspex_recipient_i: όνομα του i-οστού παραλήπτη
+            faspex_recipient_list: λίστα παραληπτών διαχωρισμένων με κόμματα (π.χ. "Admin, johndoe")
+            faspex_sender_email: Email του αποστολέα
+            faspex_sender_id: Id του αποστολέα
+            faspex_sender_name: 'όνομα του αποστολέα:'
+            variable: "(μεταβλητών)"
+          form:
+            env_var_help: Βοήθεια μεταβλητής περιβάλλοντος
+            exact_match: Ακριβή αντιστοιχία.
+            execution_crit: 'Κριτήρια εκτέλεσης:'
+            high: "- ..."
+            low: κάτω.
+            package_date_end: Τέλος ημερομηνίας πακέτου
+            package_date_start: Έναρξη ημερομηνίας πακέτου
+            package_file_count: Αριθμός αρχείων πακέτου
+            package_file_hint: Καταχωρήστε το εύρος για τον αριθμό των αρχείων στο πακέτο εδώ.
+            package_name: 'Όνομα πακέτου:'
+            package_note: 'Σημείωση πακέτου:'
+            package_size: 'Μέγεθος πακέτου:'
+            range_hint: Καταχωρήστε εύρος για το πακέτο εδώ.
+            recipient_email_list: Λίστα email παραλήπτη
+            recipient_list: 'Λίστα παραλήπτη:'
+            script_to_run: 'Εκτέλεση σεναρίου:'
+            sender_email: E-mail αποστολέα
+            sender_name: 'Όνομα αποστολέα:'
+          index:
+            action: "' Ενέργεια"
+            create_new: Δημιουργία νέου.
+            execution_criteria: 'Κριτήρια εκτέλεσης:'
+            log: 'Ημερολόγιο:'
+            name: "' Ονομα"
+            post_processing: Μετά την επεξεργασία
+            script: 'Σενάριο:'
+          new:
+            add_new_script: Προσθήκη νέου σεναρίου
+            cancel: Ακύρωση.
+            create: 'Δημιουργία:'
+          show_events:
+            back: Πίσω!
+            exec_criteria: Κριτήρια εκτέλεσης<br/>
+            package_name: 'Όνομα πακέτου:'
+            package_sender: Πακέτο<br/>Sender
+            package_uuid: UUID πακέτου
+            post_processing_exec_log: 'Μεταποίηση: Ημερολόγιο εκτέλεσης για %{name}'
+            time_of_exec: Ώρα εκτέλεσης <br/>
+        saml:
+          edit:
+            saml_integration: Ενοποίηση SAML
+            update: 'Ενημέρωση:'
+        saml_configurations:
+          edit:
+            allowable_clock_drift: Επιτρεπτή μετατόπιση ρολογιού (ms)
+            attribute_mapping: Σχεδίαση γνωρισμάτων
+            browse: Αναζήτηση ...
+            certificate: "-Πιστοποιητικό"
+            create_saml_config: Δημιουργία συνόλου ρυθμίσεων SAML
+            default_saml_config: Προεπιλεγμένες ρυθμίσεις SAML
+            domain_url: Διεύθυνση URL τομέα
+            fingerprint: Empreinte digitale
+            fingerprint_alg: Αλγόριθμος εκτυπώσεων
+            hide: Κρύψου
+            import_from_file: 'Εισαγωγή από αρχείο: '
+            import_from_text: 'Εισαγωγή από κείμενο: '
+            import_from_url: 'Εισαγωγή από διεύθυνση URL: '
+            import_metadata_settings: Εισαγωγή ρυθμίσεων από κείμενο
+            import_metadata_settings_url: Εισαγωγή ρυθμίσεων από διεύθυνση URL μεταδεδομένων
+            import_settings: Εισαγωγή ρυθμίσεων από το Metadata %{dir}
+            name: "' Ονομα"
+            name_id_format: Μορφή ταυτότητας ονόματος
+            new: "-Νέο"
+            public_login_inst: Δημόσιες οδηγίες σύνδεσης
+            publicly_visible: 'Διαφημιστικό:'
+            redirect_saml: Ανακατεύθυνση στη σελίδα αποσύνδεσης SAML σε αποσύνδεση
+            restrict_login_groups: 'Περιορισμός πρόσβασης σε γνωστές ομάδες:'
+            restrict_login_groups_hint: Αν ενεργοποιηθεί, μόνο τα μέλη των ομάδων SAML που προστίθενται στο Faspex θα μπορούν να συνδεθούν.
+            restrict_login_users: Περιορισμός πρόσβασης σε γνωστούς χρήστες
+            restrict_login_users_hint: Αν ενεργοποιηθεί, μόνο οι υπάρχοντες χρήστες SAML που έχουν προστεθεί στο Faspex θα μπορούν να συνδεθούν.
+            saml_config: Ρύθμιση SAML
+            saml_config_details: Λεπτομέρειες ρύθμισης SAML
+            SAML_metadata_server: μεταδεδομένα εξυπηρετητή SAML
+            SAML_metadata_server_url: Διεύθυνση μεταδεδομένων εξυπηρετητή SAML ...
+            saml_settings: Ρυθμίσεις SAML
+            show: 'Εμφάνιση:'
+            SSO_target_URL: 'Διεύθυνση URL προορισμού SSO:'
+            update: 'Ενημέρωση:'
+            update_saml_config: Ενημέρωση ρυθμίσεων SAML
+          index:
+            actions: "' Ενέργειες"
+            add_new_config: Προσθήκη νέων ρυθμίσεων SAML
+            default: " (προεπιλογή)"
+            disable: 'Απενεργοποίηση:'
+            disable_title: 'Απενεργοποίηση:'
+            disabled: " (ΑΜΕΑ)"
+            domain_url: Διεύθυνση URL τομέα
+            enable: "-Ενεργοποίηση"
+            enable_title: "' Ενεργοποίηση"
+            make_default: Προεπιλογή Make
+            metadata: Μετα-δεδομένα
+            name: "' Ονομα"
+            remove_default: Αφαίρεση προεπιλογής
+            saml_config: Σύνολα ρυθμίσεων SAML
+            saml_confirm: Είστε βέβαιοι ότι θέλετε να ενεργοποιήσετε αυτή τη ρύθμιση SAML;
+            saml_confirm_disable: Είστε βέβαιοι ότι θέλετε να απενεργοποιήσετε αυτή τη ρύθμιση SAML;
+            test: 'Δοκιμή:'
+          user_profile:
+            name: "' Ονομα"
+            remove: Αφαίρεση αυτού του πεδίου προφίλ
+            remove_confirm: Είστε βέβαιοι ότι θέλετε να αφαιρέσετε αυτό το πεδίο προφίλ χρήστη;
+          user_profile_fields:
+            add_local_field: Προσθήκη πεδίου τοπικού προφίλ
+            default_profile_fields: Προεπιλεγμένα πεδία προφίλ
+            enabled: "' Ενεργή"
+            fields_required: Πεδία που απαιτούνται για όλους τους χρήστες του Faspex
+            global_cust_message: Τα προσαρμοσμένα πεδία ορίζονται στην καρτέλα Προφίλ χρήστη.
+            global_cust_prof_fields: Πεδία καθολικών προσαρμοσμένων προφίλ
+            local_cust_message: Πεδία προφίλ χρήστη ειδικά για αυτή τη ρύθμιση SAML
+            local_cust_prof_fields: Τοπικά προσαρμοσμένα πεδία προφίλ
+            name: "' Ονομα"
+            required: Απαιτούμενη
+            saml_name: Όνομα SAML
+            save_note: 'Σημείωση: Δεν θα αποθηκευτούν οι αλλαγές μέχρι να πατήσετε '' Ενημέρωση ρυθμίσεων SAML '''
+        settings:
+          display_settings:
+            date_format:
+              format: "-Μορφή"
+              meaning: 'Που σημαίνει:'
+              perc_a: Το σύντομο όνομα της ημέρας (Ήλιος)
+              perc_A: Η πλήρης εργάσιμη ημέρα (Κυριακή)
+              perc_b: Το σύντομο όνομα μήνα (Ιαν)
+              perc_B: Όνομα πλήρους μήνα (Ιανουάριος)
+              perc_d: Ημέρα του μήνα (01 .. 31)
+              perc_j: Ημέρα του χρόνου (01 .. 366)
+              perc_m: Μήνας του έτους (01 .. 12)
+              perc_Y: Έτος με τον αιώνα
+              perc_y: Έτος χωρίς έναν αιώνα (00 ... 99)
+            edit:
+              acc_display_format: Μορφή ονόματος εμφάνισης λογαριασμού
+              custom_logo: 'Προσαρμοσμένο λογότυπο:'
+              date_format: Μορφή ημερομηνίας
+              date_formatting_help: 'Βοήθεια: Μορφοποίηση'
+              default_logo_help: 'Το προεπιλεγμένο λογότυπο είναι 295x51 '
+              display_settings: Ρυθμίσεις εμφάνισης
+              examples: 'Παραδείγματα:'
+              local_login_inst: 'Οδηγίες τοπικής σύνδεσης:'
+              login_page_header: Κεφαλίδα σελίδας σύνδεσης
+              remove_confirm: Είστε βέβαιοι ότι θέλετε να αφαιρέσετε το τρέχον προσαρμοσμένο λογότυπο;
+              remove_logo: Αφαίρεση προσαρμοσσστοιχείου
+              update: 'Ενημέρωση:'
+          entitlement:
+            edit:
+              customer_id: 'Ταυτότητα πελάτη:'
+              entitlement_license: Άδεια χρήσης δικαιωμάτων
+              faspex_enabled: 'Ενεργοποίηση Faspex:'
+              key: 'Κλειδί:'
+              max_active_users: 'Μέγιστος αριθμός χρηστών:'
+              save: 'Αποθήκευση:'
+          global_dist_lists:
+            index:
+              add_new_list: Προσθήκη νέου καταλόγου διανομής
+              contacts: "' Επαφές"
+              global_dist: Λίστες καθολικής διανομής
+              name: 'όνομα:'
+              no_list_alert: Δεν υπάρχουν καθολικές λίστες διανομής.
+              update_dist_lists: Ενημέρωση λιστών διανομής
+            new:
+              new_global_list: Νέα παγκόσμια λίστα διανομής
+          license:
+            edit:
+              OR: Ή ...
+          package_storage:
+            edit:
+              after_pkg_dl: Μετά τη λήψη των πακέτων
+              after_upload_ends: μετά τη μεταφόρτωση.
+              characters: 'χαρακτήρες:'
+              days: ημέρα (ες)
+              delete_files_all: Διαγραφή αρχείων μετά από <strong>όλους τους παραλήπτες</strong> μεταφορτώστε όλα τα αρχεία
+              delete_files_any: Διαγραφή αρχείων μετά από <strong>οποιονδήποτε παραλήπτη</strong> μεταφορτώνει όλα τα αρχεία
+              do_nothing: Τίποτα.
+              max_pkg_title: Μέγιστο μήκος τίτλου πακέτου σε διαδρομές αποθήκευσης
+              package_storage: Αποθήκευση πακέτων
+              packages_expire: 'Λήξη πακέτων:'
+              pkg_by_pkg_del: Επιτρέπει σε όλους τους χρήστες να ορίσουν τις δικές τους ρυθμίσεις διαγραφής βάσει πακέτου.
+              update: 'Ενημέρωση:'
+          save_restore:
+            index:
+              dl: "& Λήψη"
+              dl_curr_config: Λήψη τρέχοντος συνόλου ρυθμίσεων
+              faspex_config_help: Ο φάκελος και η βάση δεδομένων του Faspex θα αποθηκευτούν
+              restore: 'Επαναφορά:'
+              restore_config: Επαναφορά ρυθμίσεων
+              save_restore: Αποθήκευση/Επαναφορά
+              upload_help: Μεταφόρτωση και εφαρμογή αποθηκευτου αρχείου ρυθμίσεων (*.tar.gz)
+              version_help: 'Σημείωση: Η επαναφορά εκδοχής πρέπει να συμφωνεί με την τρέχουσα έκδοση του faspex'
+          security:
+            edit:
+              act_dir_hint: Οι χρήστες υπηρεσιών καταλόγου δεν θα κλειδωθούν ή θα απενεργοποιηθούν.
+              affirm: Ναι!
+              after: 'Μετά:'
+              after_x_days: Μετά από %{num} ημέρες
+              after_inactivity: Μετά τη %{len} ημέρες αδράνειας
+              after_one_success: Μετά από μια επιτυχημένη αποστολή.
+              allow_custom_link: Δυνατότητα ορισμού πολιτικής λήξης προσαρμοσμένων διασυνδέσεων
+              allow_email_change: Δυνατότητα αλλαγής της διεύθυνσης email τους
+              allow_external_pkg_hint: Αν ενεργοποιηθεί, τα πακέτα που αποστέλλονται στους χρήστες του Faspex με τη (εξωτερική) σημαία θα επιτρέπονται
+              allow_external_pkg_to_faspex: Δυνατότητα εξωτερικών πακέτων σε χρήστες του Faspex
+              allow_usrs_create: Δυνατότητα δημιουργίας κανονικών πακέτων.
+              allow_usrs_create_hint: Αν είναι απενεργοποιημένο, οι χρήστες θα μπορούν να δημιουργούν πακέτα dropbox, αν είναι μέλη οποιουδήποτε dropboxes.
+              allow_usrs_send: Δυνατότητα αποστολής όλων των χρηστών σε άλλους χρήστες του Faspex
+              always: 'Πάντα:'
+              allow_unlock: Επιτρέπονται οι κλειδωμένοι χρήστες να ξεκλειδωθούν.
+              allow_send_email: Δυνατότητα αποστολής σε εξωτερικές διευθύνσεις email
+              appr_recipient_domains: Εγκεκριμέοι τομείς παραλήπτη
+              appr_sender_domains: 'Έγκριση τομέων αποστολέα:'
+              block_email_domain: Αποκλεισμός των ακόλουθων τομέων email από αυτο-εγγραφή
+              can_override_ear_hint: ο χρήστης μπορεί να επιλέξει κατά την πρόσκληση εξωτερικών αποστολέων αν θα επιβάλει την κρυπτογράφηση
+              can_see_dist_list: Οι χρήστες μπορούν να δουν τις γενικές λίστες διανομής από προεπιλογή.
+              cipher: FASP Cipher
+              days: ημέρα (ες)
+              dbox_override: Δυνατότητα χρήσης των δικών τους dropboxes
+              def_pw_expire: Προεπιλεγμένο διάστημα λήξης κωδικού πρόσβασης
+              default: 'Προεπιλογή:'
+              disable: 'Απενεργοποίηση:'
+              disable_hint: Παράθυρο κύλισης Sender, διάρκεια σε ώρες
+              ds_users: Χρήστες DS μετά από αδράνεια %{int}
+              email_expire_after_download: Λήξη μετά από πλήρη λήψη πακέτου
+              enable: "' Ενεργοποίηση"
+              encrypt_hint: Αν ενεργοποιηθεί, οι εφεδρήσεις HTTP θα κρυπτογραφηθούν επίσης
+              encrypt_transfers: Κρυπτογράφηση μεταφορές
+              encryption: Κρυπτογράφηση
+              enforce_pw_hist: Δεν μπορεί να ξαναχρησιμοποιηθεί.
+              every: "-κάθε"
+              faspex_acc: Λογαριασμοί Faspex
+              force_pw_reset: Απαίτηση νέων χρηστών για την αλλαγή του κωδικού πρόσβασης στην πρώτη σύνδεση
+              hours: ώρες.
+              inviting_allowed: 'Δυνατότητα πρόσκλησης εξωτερικών αποστολέων:'
+              ignore_invalid_recipients: Παράβλεψη μη έγκυρου παραλήπτη
+              ignore_invalid_recipients_hint: Αν ενεργοποιηθεί, η αποστολή πακέτων δεν θα αποτύχει όταν ένα πακέτο απευθύνεται σε μη έγκυρους παραλήπτες
+              inv_link_expires: Η διασύνδεση Πρόσκληση λήγει
+              inv_link_help: Ορίστε μια πολιτική λήξης διασύνδεσης για τις προσκλήσεις προσωπικών και dropbox.
+              keep_usr_dir: Διατήρηση του καταλόγου χρηστών.
+              list_hint: καταχωρήστε τις διευθύνσεις e-mail που διαχωρίζονται με κόμμα -, ερωτηματικό ή κενό διάστημα
+              local_users: Τοπικοί χρήστες μετά την αδράνεια της %{int}.
+              lock_hint: Μετά τις αποτυχημένες προσπάθειες σύνδεσης %{login_count}
+              lock_users: Κλείδωμα χρηστών
+              minutes: λεπτά.
+              neg: Όχι.
+              never: Ποτέ!
+              new_user_pw: Νέος κωδικός πρόσβασης χρήστη %{req}. Οι υπάρχοντες κωδικοί πρόσβασης θα παραμείνουν έγκυρα %{warn}
+              obfuscation: Obfuscation
+              optional: Προαιρετικό.
+              optional_hint: Ο χρήστης μπορεί να επιλέξει κατά την αποστολή ή όχι την κρυπτογράφηση
+              otfv: Επικύρωση αρχείου εκτός μεταφοράς (OTFV)
+              outside_email_add: Εξωτερικές διευθύνσεις email
+              package_link_expires: Λήξη διασύνδεσης πακέτου
+              package_link_help: Αν ενεργοποιηθεί, το πακέτο μπορεί να μεταφορτωθεί μόνο μία φορά %{master_warn}
+              passwords: Κωδικός (- οί)
+              passwords_expire: Λήξη κωδικών πρόσβασης
+              public_url_allowed: Επιτρέπονται διευθύνσεις URL δημόσιων υποβολής
+              prevent_pw_reuse: Αποτροπή επαναχρησιμοποίησης κωδικού πρόσβασης
+              prev_conc: Αποτροπή ταυτόχρονης σύνδεσης.
+              pw_reset_hint: Το μήνυμα email επαναφοράς κωδικού πρόσβασης θα σταλεί και θα ξεκλειδωθεί μετά την αλλαγή του κωδικού πρόσβασης
+              quota_limit: Συνολικό μέγεθος δεδομένων που εστάλη κατά το τροχαίο.
+              reg_hint: 'Προαιρετικά: Αν έχει οριστεί κείμενο, οι χρήστες θα πρέπει να αποδεχτούν τη δήλωση προκειμένου να εγγραφείτε.'
+              reg_users_mutual: Οι αυτοεγγεγραμμένοι χρήστες μπορούν να στείλουν ο ένας στον άλλο.
+              registration_instructions: 'Οδηγίες κυκλοφορίας:'
+              registration_type: 'Αυτοεγγραφή:'
+              registrations: "' Εγγραφές"
+              remove_users: 'Αφαίρεση χρηστών:'
+              req_external_reg: Απαίτηση εγγραφής εξωτερικών χρηστών
+              require_external_hint: Αν ενεργοποιηθεί, οι εξωτερικοί χρήστες πρέπει να εγγράψουν ένα λογαριασμό Faspex προκειμένου να μεταφορτώσουν πακέτα.
+              saml_users: Χρήστες SAML μετά τις ημέρες αδράνειας %{int}.
+              security: "-Ασφάλεια"
+              send_welcome_email: Αποστολή e-mail καλωσορίσματος σε όλους τους νέους χρήστες
+              sender_quota: Αποστολέας Quota
+              sender_quota_hint: >-
+                Τα πακέτα που αποστέλλονται στους χρήστες σε αυτούς τους τομείς δεν υπολογίζονται για την ποσόστωση αποστολέα. Χρησιμοποιήστε κόμματα (,), ημι-colons
+                (;) ή κενά διαστήματα για να διαχωρίσετε τους τομείς e-mail. Για παράδειγμα: @aspera.com; @ibm.com
+              sender_quota_option: Επιλογή Sender Quota
+              sender_quota_duration: Διάρκεια ποσόστωσης Sender
+              sender_quota_limit: Όριο ποσοστώσεων Sender
+              session_timeout: Προθεσμία συνεδρίας μετά
+              slave_hint: Αν ενεργοποιηθεί, οι χρήστες μπορούν να συνδέονται μόνο από έναν πελάτη κάθε φορά
+              strong_pw: Χρήση ισχυρών κωδικών πρόσβασης
+              timeout_hint: Λήξη προθεσμίας λήξης προθεσμίας μετά τον καθορισμένο αριθμό λεπτών αδράνειας
+              tos: Όροι υπηρεσίας για αποστολή
+              tos_hint: 'Προαιρετικά: Αν το κείμενο έχει οριστεί, οι χρήστες θα πρέπει να αποδεχτούν τη δήλωση προκειμένου να στείλουν ένα πακέτο'
+              update: 'Ενημέρωση:'
+              use_encryption_at_rest: Χρήση Κρυπτογράφησης-at-Rest
+              use_obf: Χρήση obfuscation στα ονόματα αρχείων
+              use_obf_hint: Filename obfuscation είναι μη αναστρέψιμη!
+              enforce_expiration_policy: Πάντα επιβολή ως μέγιστη διάρκεια για την πολιτική λήξης.
+          transfer_options:
+            edit:
+              aspera_connect_sett: Ρυθμίσεις σύνδεσης Aspera
+              def_max_rate: Προκαθορισμένο Μέγιστο Επιτρεπόμενο Ποσοστό
+              dl_dur_trans: Λήψεις Κατά Τη Μεταφορά
+              dl_over_http: Λήψη μέσω HTTP
+              http_gateway_hint: Η παρακάτω διεύθυνση είναι αυτό που θα χρειαστούν οι χρήστες σας για να ξεκινήσουν τις μεταφορές μέσω http-gateway.
+              http_gateway_url: Διεύθυνση URL πύλης HTTP
+              initial_def_trans_rate: Αρχικό προκαθορισμένο ποσοστό μεταφοράς
+              local_host_connect: Τοπικά συστήματα Connect
+              local_host_hint: >-
+                Αν ενεργοποιηθεί, το Faspex δεν θα χρησιμοποιήσει το CDN Aspera για να εξυπηρετίσει το Connect, αλλά θα χρησιμοποιήσει το τοπικό Connect SDK διαθέσιμο
+                στο Faspex.
+              local_to_remote: τοπικός εξυπηρετητής στον απομακρυσμένο εξυπηρετητή
+              lock_connect_sdk: Κλείδωμα έκδοσης του SDK
+              lock_connect_sdk_hint: >-
+                Αποτροπή του Faspex από την ενημέρωση του τοπικού Connect SDK, αν γίνει διαθέσιμη μια νέα εκδοχή. Αυτή η ρύθμιση διατηρείται στις αναβαθμίσεις. Σημείωση:
+                Το Faspex ελέγχει περιοδικά για ενημερώσεις και δεν μεταφορτώνει αμέσως μια νέα εκδοχή αν αυτή η επιλογή είναι απενεργοποιημένη
+              min_connect_version: Ελάχιστη έκδοση Connect
+              minrate_hint: Αν ενεργοποιηθεί, οι πελάτες δεν θα έχουν τη δυνατότητα προσαρμογής της πολιτικής μεταφοράς ή του ελάχιστου ποσοστού μεταφοράς
+              prefer_http_connect: Προτίμηση http πάνω από επέκταση
+              prefer_http_connect_hint: >-
+                Αν ενεργοποιηθεί, το Faspex θα επιβάλει στο πρόγραμμα πλοήγησης τη χρήση της μεθόδου http για την επικοινωνία με το Connect Desktop Client, αντί να
+                χρησιμοποιεί μια επέκταση προγράμματος πλοήγησης (διαθέσιμη μόνο με το πρόγραμμα πλοήγησης Chrome)
+              serv_to_serv_relay_trans_sett: Ρυθμίσεις μεταφοράς για τον εξυπηρετητή σε εξυπηρετητή
+              server_to_user: εξυπηρετητής στο χρήστη.
+              transfer_options: 'Επιλογές μεταφοράς:'
+              update: 'Ενημέρωση:'
+              user_to_server: χρήστης στον εξυπηρετητή.
+              http_gwy_connection_success: 'Επιτυχία σύνδεσης:'
+              http_gwy_connection_error: Σφάλμα κατά τη σύνδεση με το IBM Aspera HTTP Gateway
+          web_server:
+            alt_address_fields:
+              remove_addr: Αφαίρεση αυτής της εναλλακτικής διεύθυνσης
+            edit:
+              add_alt_address: Προσθήκη εναλλακτικής διεύθυνσης
+              address_name: Όνομα διεύθυνσης
+              alternate_addr_hint: χρήση αν χρειάζεστε διαφορετικές διευθύνσεις εξυπηρετητών για συγκεκριμένους χρήστες
+              desc_email: Περιγραφή για email
+              http_port_hint: καθορίζεται από τη ρύθμιση apache
+              https_port_hint: για κρυπτογραφημένο περιεχόμενο μέσω SSL που καθορίζεται από τη ρύθμιση apache
+              remove: 'Αφαίρεση:'
+              show_emails: Εμφάνιση σε email
+              update: 'Ενημέρωση:'
+              web_server: Εξυπηρετητής Web
+        shares:
+          edit:
+            cancel: Ακύρωση.
+            custom_access_control: Έλεγχος προσαρμοσμένος πρόσβασης
+            edit: Τροποποίηση της %{name}-%{share}
+          edit_warning:
+            alert_error_1: |-
+              Αυτή η αποθήκευση αρχείων χρησιμοποιείται ως προσαρμοσμένη θέση εισερχομένων και αναμετάδοσης για ορισμένες ομάδες εργασίας.
+              Με την τροποποίηση, όλα τα υπάρχοντα πακέτα σε αυτές τις ομάδες εργασίας δεν είναι διαθέσιμα στους χρήστες και αλλάζουν τον προορισμό αναμετάδοσης.
+            alert_error_2: |-
+              Αυτή η αποθήκευση αρχείων χρησιμοποιείται ως προσαρμοσμένη θέση εισερχομένων για ορισμένες ομάδες εργασίας.
+              Με την τροποποίηση, όλα τα υπάρχοντα πακέτα σε αυτές τις ομάδες εργασίας δεν είναι διαθέσιμα στους χρήστες.
+            alert_error_3: |-
+              Αυτή η αποθήκευση αρχείων χρησιμοποιείται ως θέση αναμετάδοσης ορισμένων ομάδων εργασίας.
+              Τροποποίηση θα αλλάξει τον προορισμό αναμετάδοσης.
+          form:
+            dir_serv_groups:
+              add_group: Προσθήκη ομάδας
+              date_added: 'Ημερομηνία προσθήκης:'
+              dir_service_groups: Ομάδες υπηρεσιών καταλόγου
+              DN: DN
+              members: "-Μέλη"
+              name: "' Ονομα"
+              status: "' Κατάσταση"
+            dir_serv_group_member:
+              active: Ενεργός.
+              delete: 'Διαγραφή:'
+              inactive: 'Ανενεργή:'
+            users:
+              add_user: Προσθήκη χρήστη
+              full_name: Πλήρες Όνομα
+              member_since: Τα κράτη μέλη
+              name: "' Ονομα"
+              status: "' Κατάσταση"
+              type: 'Είδος:'
+              users: 'Χρήστες:'
+            user_membership:
+              delete: 'Διαγραφή:'
+          form_file:
+            browse: Αναζήτηση ...
+            default_max_allowed_rate: Προκαθορισμένο Μέγιστο Επιτρεπόμενο Ποσοστό
+            directory: "' Κατάλογος"
+            enable_cloud_referencing: Ενεργοποίηση παραπομπής σε σύννεφο
+            enable_linking: Ενεργοποίηση σύνδεσης
+            initial_default_rate: Αρχικό προκαθορισμένο ποσοστό μεταφοράς
+            limited: "(')"
+            loading: 'Φόρτωση:'
+            lock_minrate_hint: αν ενεργοποιηθεί, οι πελάτες δεν θα έχουν τη δυνατότητα προσαρμογής της πολιτικής μεταφοράς ή του ελάχιστου ποσοστού μεταφοράς
+            name: "' Ονομα"
+            node: 'Κόμβος:'
+            override_default: Αντικατάσταση προεπιλεγμένων ρυθμίσεων μεταφοράς
+            private: "' Ιδιωτικό"
+            public: "-Δημόσια"
+            read_perm: 'Δικαίωμα ανάγνωσης:'
+            relay_transfer_rate: Ρυθμός μεταφοράς Relay
+            server_to_user: εξυπηρετητής στο χρήστη.
+            user_to_server: χρήστης στον εξυπηρετητή.
+          new:
+            alert_no_node: Δεν έχετε δημιουργήσει %{nodes}. %{admin_node} πριν κάνετε μια %{name}.
+            cancel: Ακύρωση.
+            create_one: Δημιουργία ενός.
+            new: Νέα %{name}
+      background_processes:
+        index:
+          action: "' Ενέργεια"
+          background_processes: Διεργασίες φόντου
+          log_file: Αρχείο καταγραφής
+          log_level: Επίπεδο καταγραφής
+          name: "' Ονομα"
+          status: "' Κατάσταση"
+        log:
+          lines: 'Γραμμές:'
+          refresh: Ανανέωση Κάθε.
+          submit: 'Υποβολή:'
+      credits:
+        show:
+          java: Συμβατό Java
+      directory_items:
+        file:
+          error: 'Σφάλμα:'
+      dropbox:
+        dropboxes:
+          metadata_profile: 'Προφίλ μεταδεδομένων: '
+          options:
+            after_pac_downl: 'Μετά τη μεταφόρτωση των πακέτων:'
+            allow_submission_via_pub_URL: 'Δυνατότητα υποβολής μέσω δημόσιας διεύθυνσης URL:'
+            always: 'Πάντα:'
+            custom_exp_policy: Πολιτική λήξης προσαρμοσμένος πακέτου
+            custom_inv_policy: Πολιτική λήξης της διασύνδεσης προσαρμοσμένος πρόσκλησης
+            day_after_sending_inv: ημέρα (- ες) μετά την αποστολή e-mail πρόσκλησης
+            day_after_upload: ημέρα (- ες) μετά τη λήξη
+            http_downloads_not_allowed: Δεν επιτρέπονται μεταφορτώσεις HTTP για αυτό το πακέτο.
+            delete_after_all: Διαγραφή αρχείων μετά από <strong>όλα τα μέλη αυτού του dropbox</strong> μεταφορτώστε όλα τα αρχεία.
+            delete_after_first: Η διαγραφή αρχείων μετά από <strong>οποιοδήποτε μέλος αυτού του dropbox</strong> μεταφορτώνει όλα τα αρχεία.
+            do_nothing: Τίποτα.
+            inv_link_expire: 'Λήξη διασυνδέσεων πρόσκλησης:'
+            never: Ποτέ!
+            optional: Προαιρετικό.
+            package_expires: 'Λήξη πακέτων:'
+            require_encrypt: 'Απαίτηση κρυπτογράφησης-at-rest:'
+            save_message: Το aspera-metadata.xml θα αποθηκευτεί στον κεντρικό κατάλογο κάθε πακέτου
+            save_metadata: 'Αποθήκευση μεταδεδομένων σε αρχείο:'
+            success: Μετά από μια επιτυχημένη αποστολή.
+            use_server_default: 'Χρήση προεπιλογής εξυπηρετητή (τρέχουσα: %{server})'
+          perm:
+            add_rem_dir_serv_groups: Προσθήκη/αφαίρεση ομάδων υπηρεσιών καταλόγου ως μελών
+            add_remove_users: Προσθήκη υπαρχόντων χρηστών του Faspex/αφαίρεση μελών διαχείρισης μη dropbox
+            dropbox_admin_can: Το Dropbox admins μπορεί ...
+            invite_outside_submitters: Προσκαλέστε εξωτερικούς χρήστες.
+            invite_remove_users: Πρόσκληση/αφαίρεση εξωτερικών υποβρυχίων
+            member_manage: 'Διαχείριση μελών:'
+            reg_users_as_mem: Δημιουργία/edit/delete/αφαίρεση νέων εγγεγραμμένων χρηστών ως μελών
+            standard_can: Οι τυπικοί χρήστες ...
+        users:
+          cancel: Ακύρωση.
+          description: 'Περιγραφή:'
+          email_address: Διεύθυνση email
+          invite: 'Πρόσκληση εκτός υπότιττου για αποστολή στο Dropbox: %{wgname}'
+          invite_html:
+            require_encryption: 'Απαιτείται κρυπτογράφηση σε ηρεμία:'
+            yes_ear: Ναι!
+            no_ear: Όχι.
+            optional: Προαιρετικό.
+          submit_save: Αποθήκευση (στέλνει e-mail πρόσκλησης)
+      e_error:
+        default: >-
+          Ο εξυπηρετητής εντόπισε ένα πρόβλημα κατά την προσπάθεια επεξεργασίας της αίτησας. Αυτό μπορεί να οφείλεται σε ανεπαρκή δικαιώματα, πρόβλημα ρύθμισης, διακοπή
+          δικτύου, σφάλμα ή σφάλμα υλικού εξοπλισμού.
+        default_2: Άλλες εντολές εκτός από αυτή που προσπάθησες να δουλέψεις ακόμα. Πατήστε το κουμπί "Πίσω" ή μία από τις άλλες καρτέλες.
+      external:
+        sub_stat:
+          show:
+            safe: |-
+              Είναι ασφαλές να κλείσει αυτή η ιστοσελίδα, η μεταφορά σας δεν θα επηρεαστεί.
+              Σας έχει σταλεί ένα μήνυμα e-mail με μια διασύνδεση για να επιστρέψετε στην οθόνη αυτή.
+            send_to: Αποστολή στο %{δεκτός}
+            send_to_dropbox: 'Αποστολή στο Dropbox: %{dropname}'
+            status: Αυτή η σελίδα σας επιτρέπει να δείτε την κατάσταση του πακέτου που υποβάλατε, καθώς και να επαναλάβετε τη μεταφορά αν αποτύχει.
+          submission_stat:
+            date_submit: 'Ημερομηνία υποβολής:'
+            files: "' Αρχεία"
+            size: "' Μέγεθος"
+            status: "' Κατάσταση"
+            title: "' Τίτλος"
+        to:
+          email_address: Διεύθυνση email
+          please_enter_email: Καταχωρήστε τη διεύθυνση email για να αποκτήσετε πρόσβαση.
+          request_access: 'Αίτηση πρόσβασης:'
+          send_to: Αποστολή στη %{δεκτών_name}
+      inactive: 'Ανενεργή:'
+      invitations:
+        edit:
+          cancel: Ακύρωση.
+          reinvite: Επανάληψη πρόσκλησης (αποστολή e-mail πρόσκλησης)
+          reinvite_sender: Επανάληψη πρόσκλησης αποστολέα
+        fieldsets:
+          sub_link_expires:
+            after: 'Μετά:'
+            after_one_success: Μετά από μια επιτυχημένη αποστολή.
+            after_one_up: Μετά από ένα ...
+            custom_inv_policy: 'Πολιτική λήξης προσαρμοσμένος δεσμός πρόσκλησης:'
+            day_after_sending_inv: ημέρα (- ες) μετά την αποστολή e-mail πρόσκλησης
+            help: Μπορείτε να περιορίσετε περισσότερο αυτές τις ρυθμίσεις αλλά δεν μπορείτε να υπερβείτε την προεπιλογή.
+            inv_link_expires: Η διασύνδεση Πρόσκληση λήγει
+          prevent_http_upload:
+            package_upload: Μεταφόρτωση πακέτου
+            prevent_http_upload: Αποτροπή μεταφόρτωσης HTTP για αυτό το πακέτο
+        index:
+          access_url: 'Δείτε: Διεύθυνση URL'
+          actions: "' Ενέργειες"
+          confirm: "-Σίγουρα;"
+          delete: 'Διαγραφή:'
+          description: 'Περιγραφή:'
+          email: 'Email:'
+          expiration: 'Λήξη:'
+          invitations: "-Προσκλήσεις"
+          new: "-Νέο"
+          reinvite: "' Επανάληψη"
+          resend: 'Επαναφορά:'
+          status: "' Κατάσταση"
+        new:
+          cancel: Ακύρωση.
+          description: 'Περιγραφή:'
+          email_address: Διεύθυνση email
+          invite_sender: Πρόσκληση αποστολέα
+          no_ear: Όχι.
+          optional: Προαιρετικό.
+          require_encryption: 'Απαιτείται κρυπτογράφηση σε ηρεμία:'
+          save: Αποθήκευση (στέλνει e-mail πρόσκλησης)
+          yes_ear: Ναι!
+      layouts:
+        aspera_faspex: Aspera Faspex
+        footer:
+          copyright: Copyright IBM Corp. 2009,
+          credits: Πιστώσεις και σημειώσεις
+          patch: Επίπεδο επιδιόρθωσης %{level}
+        header:
+          account: "' Λογαριασμός"
+          enable_connect: Ενεργοποίηση του IBM Aspera Connect
+          help: 'Βοήθεια:'
+          not_logged_in: Δεν έχει συνδεθεί.
+          sign_out: 'Υπογραφή:'
+          skip_to_main: Μετάβαση στο Main
+        main_tabs:
+          accounts: Λογαριασμοί.
+          new_package: 'Νέο πακέτο:'
+          pending: 'Αναμονή:'
+          received: Ελήφθη.
+          sent: "' Εστάλη"
+          server: 'Εξυπηρετητής:'
+          view_package_options: Πατήστε για να δείτε νέες επιλογές πακέτου.
+          workgroups: 'Ομάδες εργασίας:'
+        node_error:
+          warning: "-ΠΡΟΣΟΧΉ!"
+          errors_detected: Εντοπίστηκαν σφάλματα στον εξυπηρετητή μεταφοράς, οι μεταφορές ενδέχεται να μην λειτουργούν σωστά.
+      login:
+        entitlement:
+          customer_id: Ταυτότητα πελάτη
+          entitle_info: 'Καταχωρήστε τις πληροφορίες δικαιωμάτων για να ξεκινήσετε:'
+          entitle_question: Για ερωτήσεις ή ανησυχίες σχετικά με το δικαίωμα χρήσης, επικοινωνήστε με τη %{aspera}
+          entitlement: 'Ταυτότητα δικαιώματος:'
+          submit: 'Υποβολή:'
+        new:
+          anouncement: 'Ανακοίνωση:'
+          enter_password: Καταχωρήστε τον κωδικό του Faspex
+          enter_username: Εισάγετε το όνομα χρήστη Faspex
+          forgot_password: Ξεχάσατε τον κωδικό
+          password: Κωδικός πρόσβασης
+          username: 'Όνομα χρήστη:'
+          or_log: ή συνδεθείτε με
+      m_configuration:
+        edit:
+          faspex: 'Φάσο:'
+          sender: Πιο Sender
+          sender_via_faspex: Αποστολέας μέσω του Faspex
+          sender_email: E-mail αποστολέα
+          mail_configuration: Ρυθμίσεις αλληλογραφίας
+          save: 'Αποθήκευση:'
+          savetest_email: Αποθήκευση και δοκιμή email
+          to: 'προς:'
+      m_template:
+        edit:
+          body: "-Τι;"
+          cancel: Ακύρωση.
+          edit_email_html: Τροποποίηση HTML %{name}
+          save: 'Αποθήκευση:'
+          subject: 'Θέμα:'
+        show:
+          advanced: " (προχωρημένο)"
+          customize: Προσαρμογή με χρήση προτύπου
+          edit_html: Τροποποίηση HTML
+          preview: "%{description} Μια προεπισκόπηση εμφανίζεται παρακάτω. Μπορεί να προσαρμοστεί είτε χρησιμοποιώντας το πρότυπο είτε τροποποιώντας απευθείας τον
+            κώδικα HTML."
+          preview_email_notif: Προεπισκόπηση μηνύματος e-mail %{name}
+      metadata_profiles:
+        edit:
+          add_field: Προσθήκη πεδίου
+          add_new_field: 'Προσθήκη νέου πεδίου: '
+          edit_metadata: Τροποποίηση προφίλ μεταδεδομένων
+          enabled: 'Ενεργοποίηση: '
+          error_fields_not_saved: 'Σημείωση: Τα πεδία με σφάλματα δεν αποθηκεύονται'
+          illegal_characters: 'Μη έγκυοι χαρακτήρες: '
+          max_length: 'Μέγιστο μήκος: '
+          note: 'Σημείωση:'
+          note_no_save: 'Σημείωση: Δεν θα αποθηκευτούν οι αλλαγές μέχρι να αποθηκεύσετε το προφίλ μεταδεδομένων'
+          preview: 'Προεπισκόπηση:'
+          profile_name: 'Όνομα προφίλ: '
+          profile_name_placeholder: Όνομα προφίλ ...
+          save: 'Αποθήκευση:'
+          save_and_prev: Αποθήκευση και προεπισκόπηση
+          title: "' Τίτλος"
+        date_format:
+          any_other_value: Οποιαδήποτε άλλη τιμή
+          any_other_value_hint: 'Λειτουργικό κείμενο:'
+          at: Unix timestamp (ms από 01/01/1970)
+          capital_D_hint: Όνομα ημέρας (σύντομη)
+          capital_DD_hint: Όνομα ημέρας (μακρύ)
+          capital_M_hint: Όνομα μήνα (σύντομη)
+          capital_MM_hint: Όνομα μήνα (μακρύ)
+          d_hint: Ημέρα του μήνα (δεν υπάρχει μηδέν)
+          dd_hint: Ημέρα του μήνα (δύο ψηφία)
+          description: 'Περιγραφή:'
+          ellipses: 'Λειτουργικό κείμενο:'
+          exclamation: Windows τικκς (100ns από 01/01/0001)
+          m_hint: Μήνας του έτους (χωρίς το μηδέν)
+          mm_hint: Μήνα έτους (διψήφιος)
+          o_hint: Ημέρα του έτους (δεν υπάρχουν μηδενικά)
+          oo_hint: Ημέρα του έτους (τρία ψηφία)
+          single_quote: Μόνο λόγια.
+          variable: "(μεταβλητών)"
+          y_hint: Έτος (διψήφιος)
+          yy_hint: Έτος (τετραψήφιος)
+        metadata_field:
+          characters: 'χαρακτήρες:'
+          date_format: 'Μορφή ημερομηνίας: '
+          date_format_help: Βοήθεια μορφής ημερομηνίας
+          illegal_chars: 'Μη έγκυροι χαρακτήρες: '
+          illegal_chars_placeholder: Παράνομοι ρατσιστές ...
+          label: 'Ετικέτα: '
+          label_placeholder: Ετικέτα ...
+          max_length: 'Μέγιστο μήκος: '
+          options: 'Επιλογές: '
+          required: 'Απαιτείται: '
+        index:
+          add_profile: Προσθήκη νέου προφίλ
+          confirm: Είστε βέβαιοι ότι θέλετε να διαγράψετε το προφίλ μεταδεδομένων %{account};
+          delete: 'Διαγραφή:'
+          edit: 'Τροποποίηση:'
+          metadata_profiles: Προφίλ μεταδεδομένων
+          name: "' Ονομα"
+          profile_for_norm: 'Προφίλ για κανονικά πακέτα:'
+          save_metadata: 'Αποθήκευση μεταδεδομένων σε αρχείο: '
+        new:
+          cancel: Ακύρωση.
+          create: 'Δημιουργία:'
+          name: "' Ονομα"
+          new_profile: Νέο προφίλ μεταδεδομένων
+      mobile:
+        landing:
+          app_redirect: Για καλύτερη εμπειρία, χρησιμοποιήστε την εφαρμογή Aspera Faspex Mobile.
+          no_app_prompt: Ντον, έχεις την εφαρμογή; Αποκτήστε το <a href='<%= @app_store_url %>'>εδώ</a>
+          open_in_app: ΆΝΟΙΓΜΑ ΣΕ ΕΦΑΡΜΟΓΉ
+          use_web_version: ΧΡΉΣΗ ΔΙΑΔΙΚΤΥΑΚΉΣ ΈΚΔΟΣΗΣ
+      ms_admin:
+        convert_to_slave:
+          back: Πίσω!
+          convert: 'Μετατροπή:'
+          convert_server: Μετατροπή εξυπηρετητή σε Slave
+          master_ip: 'Master IP: '
+        edit:
+          connecting: Σύνδεση με %{hostname} ...
+          server_list: Λίστα εξυπηρετητών Faspex
+          working: Ακόμα δουλεύω ...
+        edit_server:
+          alternate_address: 'Εναλλακτική διεύθυνση: '
+          Back: Πίσω!
+          host_name: 'Όνομα υπολογιστή ή διεύθυνση IP:'
+          https_port: 'Θύρα HTTPS: '
+          master_ip: 'Master IP:'
+          name: 'Όνομα: '
+          save: 'Αποθήκευση:'
+          server_list: 'Λίστα εξυπηρετητών Faspex: Τροποποίηση %{name}'
+          url_namespace: 'Χώρος ονομάτων URL: '
+        list_rules:
+          create_new: Δημιουργία νέου.
+          default_user_server: 'ΠροεπιλεγμέναςΕξυπηρετητής χρηστών/Χρήστες DS:'
+          home_server_rules: Κανόνες Home Server
+          name: "' Ονομα"
+          note: >-
+            Σημείωση: Αν δεν ορίσετε κανόνες για εξωτερικούς χρήστες, θα μεταφερθούν στον τοπικό εξυπηρετητή του αποστολέα για να μεταφορτώσουν πακέτα. Παρομοίως,
+            οι εξωτερικοί χρήστες που μεταφορτώνουν πακέτα πρέπει να το κάνουν από τον τοπικό εξυπηρετητή του εισβολέα.
+          rule: 'Κανόνας:'
+          save: 'Αποθήκευση:'
+          server: 'Εξυπηρετητής:'
+          sort: Ταξινόμηση.
+        new_edit_rule:
+          add: Προσθήκη
+          back: Πίσω!
+          create: 'Δημιουργία:'
+          create_new: Δημιουργία νέου.
+          dir_DN_regex: 'Regex DN υπηρεσίας καταλόγου:'
+          dir_regex: 'Regex ομάδα υπηρεσιών καταλόγου:'
+          edit: 'Τροποποίηση:'
+          email_regex: 'Διεύθυνση ηλεκτρονικού ταχυδρομείου:'
+          external_users: 'Εξωτερικοί χρήστες/χρήστες:'
+          home_server: 'Αρχική σελίδα:'
+          home_server_rules: 'Κανόνες Home Server: %{mod} Κανόνας'
+          ldap_field: 'Όνομα πεδίου LDAP:'
+          ldap_regex: 'Το πεδίο LDAP regex:'
+          regex_help: 'Βοήθεια: Regex'
+          remove: 'Αφαίρεση:'
+          rule_name: 'Όνομα κανόνα:'
+          save: 'Αποθήκευση:'
+          username_regex: 'Όνομα χρήστη:'
+        new_server:
+          alternate_address: 'Εναλλακτική διεύθυνση:'
+          back: Πίσω!
+          create: 'Δημιουργία:'
+          hostname: 'Όνομα υπολογιστή ή διεύθυνση IP:'
+          http_port: 'Θύρα HTTPS:'
+          name: 'Όνομα:'
+          server_list_new_server: 'Λίστα εξυπηρετητών Faspex: Νέος απομακρυσμένος εξυπηρετητής'
+          url_namespace: 'Χώρος ονομάτων URL:'
+        regex_help:
+          a*: Μηδέν ή περισσότερο.
+          a+: Ένα ή περισσότερα από.
+          a-z: Κάθε χαρακτήρας στο εύρος a-z.
+          a-zA-z: Κάθε χαρακτήρας στο εύρος a-z ή A-Z.
+          abc: 'Ένας χαρακτήρας: α, β ή γ.'
+          ataslash_com: 'Ex: αντιστοιχεί σε συμβολοσειρές που τελειώνουν με '' a.com '''
+          a|b: α ή β
+          expression: Έκφραση
+          meaning: 'Που σημαίνει:'
+          period: Κάθε χαρακτήρας.
+          slash: Χαρακτήρων διαφυγής.
+          slashA: Ξεκίνα μια κλωστή.
+          slashAa-m: 'Ex: συμφωνεί με τις σειρές χαρακτήρων που αρχίζουν με μια επιστολή μεταξύ "a" και "m".'
+          slashAperiod*z: 'Ex: αντιστοιχεί σε συμβολοσειρές που αρχίζουν με ''a'' και τελειώνουν με '' z '''
+          slashz: Τέλος χορδών.
+      nodes:
+        columns:
+          dropdown:
+            add: Προσθήκη του %{share_name}
+            delete: 'Διαγραφή:'
+            delete_confirm: "-Σίγουρα; Αυτό θα διαγράψει οποιαδήποτε %{share_name} που χρησιμοποιεί αυτή τη στιγμή αυτή τη %{node_name}."
+            edit: 'Τροποποίηση:'
+          shares:
+            dropdown:
+              confirm: Είστε βέβαιοι ότι θέλετε να συνεχίσετε;
+              custom_inbox_confirm: Αυτή η %{name} χρησιμοποιείται ως προσαρμοσμένη θέση εισερχομένων για ορισμένες ομάδες εργασίας.
+              default_hint: Αυτή η %{name} χρησιμοποιείται ως προεπιλογή στο σύστημα και δεν μπορεί να διαγραφεί.
+              delete: 'Διαγραφή:'
+              delete_warning: 'Με τη διαγραφή, όλα τα υπάρχοντα πακέτα σε αυτές τις ομάδες εργασίας δεν είναι διαθέσιμα στους χρήστες. '
+              edit: 'Τροποποίηση:'
+              relay_hint: Αυτή η %{name} χρησιμοποιείται ως θέση αναμετάδοσης για ορισμένες ομάδες εργασίας.
+              rolled_back_warning: 'Αυτές οι ομάδες εργασίας θα αναιρείται επίσης η χρήση του προεπιλεγμένου εισερχομένων του συστήματος. '
+      packages:
+        browser:
+          all: Όλα!
+          download_selected: 'Επιλογή μεταφόρτωσης:'
+          name: "' Ονομα"
+          none: Καμία.
+          select: 'Επιλογή:'
+          size: "' Μέγεθος"
+          validation_error: Σφάλμα επικύρωσης;
+          warning: 'Σφάλμα:'
+        package:
+          browse_and_download_contents: Αναζήτηση και μεταφόρτωση περιεχομένων
+          browse_contents: Αναζήτηση περιεχομένων
+          cc_on_delivery: 'CC (με παράδοση):'
+          cc_on_download: 'CC (κατά τη λήψη):'
+          cc_on_recipient: 'CC (στον παραλήπτη):'
+          completed_relays: 'Ολοκληρωμένες ρελέ:'
+          date_sent: Ημερομηνία Sent
+          http_downloads_not_allowed: Δεν επιτρέπεται η μεταφόρτωση HTTP για αυτό το πακέτο
+          delete_after_all_message: Αυτό το πακέτο θα διαγραφεί αυτόματα μετά τη μεταφόρτωση όλων των αρχείων του πακέτου από ΌΛΟΙ από τους παραλήπτες.
+          delete_after_first_message: Αυτό το πακέτο θα διαγραφεί αυτόματα μετά τη λήψη όλων των αρχείων πακέτων από τον παραλήπτη ANY.
+          edit: 'Τροποποίηση:'
+          error_release_date: Σφάλμα ενημέρωσης ημερομηνίας έκδοσης
+          failed_relays: 'Απέτυχε ρελέ:'
+          forward: Εμπρός!
+          from: 'Από:'
+          in_progress_relays: 'Ηλεκτρονόμοι σε εξέλιξη:'
+          incomplete_relays: 'Incomplete ρελέ:'
+          none_set: Κανένα σύνολο.
+          note_disabled: Το πακέτο δεν υπάρχει στην τρέχουσα αποθήκευση αρχείων.
+          package: "' Πακέτο"
+          release_now: 'Αποδέσμευση:'
+          save: 'Αποθήκευση:'
+          send_date: 'Ημερομηνία αποστολής:'
+          to: 'Προς:'
+          to_private: 'Προς (ιδιωτική):'
+          upload_date: 'Ημερομηνία φόρτωσης:'
+        show_stats:
+          more_details: Περισσότερες λεπτομέρειες
+        stats:
+          active_downloads:
+            active_downloads: 'Ενεργές Λήψεις: %{num}'
+          completed_package:
+            avg_rate: 'Μέσο ποσοστό: %{rate}'
+            elapsed: 'Elapsed: %{time}'
+            files: 'Αρχεία: %{num}'
+            size: Μέγεθος %{num}
+            upload_stats: 'Μεταφόρτωση στατιστικών:'
+            uploaded_from: 'Μεταφόρτωση από:'
+          failed_package:
+            avg_rate: 'Μέσο ποσοστό: %{rate}'
+            elapsed: 'Elapsed: %{time}'
+            files: 'Αρχεία: %{num}'
+            size: Μέγεθος %{num}
+            upload_stats: 'Μεταφόρτωση στατιστικών:'
+            uploaded_from: 'Μεταφόρτωση από:'
+          full_download:
+            full_pkg_dl: 'Πλήρες Πακέτο Λήψεις: %{completed}'
+          package_details:
+            pkg_details: Λεπτομέρειες πακέτου
+            status: Κατάσταση %{package}
+            http_downloads_not_allowed: Δεν επιτρέπεται η μεταφόρτωση HTTP για αυτό το πακέτο
+          partial_package:
+            partial_pkg_dl: 'Μερικό Πακέτο Μεταφοράς: %{total}'
+          transfer_package:
+            avg_rate: 'Μέσο ποσοστό:'
+            elapsed: 'Ελαφίδες:'
+            files: 'Αρχεία: %{num}'
+            loading: φόρτωση ...
+            size: Μέγεθος %{num}
+      pending:
+        action: "' Ενέργεια"
+        files: "' Αρχεία"
+        history:
+          back_to_normal_view: 'Επιστροφή στην κανονική προβολή:'
+          file_on_server: Αρχεία στον εξυπηρετητή;
+          pending_package_hist: Ιστορία εκκρεμών πακέτων
+        index:
+          archive_all: 'Αρχείο Όλα:'
+          pending_packages: Εν αναμονή πακέτων
+          view_full_history: Προβολή πλήρους ιστορικού
+          warning: Προσοχή.
+        recipients: "-Δέκτες"
+        search: Αναζήτηση.
+        send_date: 'Ημερομηνία αποστολής:'
+        size: "' Μέγεθος"
+        status: "' Κατάσταση"
+        title: "' Τίτλος"
+        transfer_retries: 'Επαναλήψεις μεταφοράς:'
+        upload_date: 'Ημερομηνία φόρτωσης:'
+      received:
+        action: "' Ενέργεια"
+        date_sent: Ημερομηνία Sent
+        download_available: 'Διαθέσιμα:'
+        files: "' Αρχεία"
+        history:
+          back_to_normal_view: 'Επιστροφή στην κανονική προβολή:'
+          files_on_server: Αρχεία στον εξυπηρετητή;
+          received_package_hist: Παραλαβή ιστορία πακέτων
+        index:
+          archive_all: 'Αρχείο Όλα:'
+          invitations: "-Προσκλήσεις"
+          received_packages: 'Παραληφθέντα πακέτα:'
+          view_full_history: Προβολή πλήρους ιστορικού
+        search: Αναζήτηση.
+        sender: Πιο Sender
+        size: "' Μέγεθος"
+        status: "' Κατάσταση"
+        title: "' Τίτλος"
+      registrations:
+        confirmation:
+          back_to_login: Επιστροφή στη σύνδεση
+        edit_password:
+          set_password: Ορισμός κωδικού πρόσβασης
+        new:
+          back_to_login: Επιστροφή στη σύνδεση
+          email: 'Email:'
+          first_name: 'Όνομα:'
+          last_name: 'Επώνυμο:'
+          name: "' Ονομα"
+          tos_accept: Αποδέχομαι την %{tos}.
+      reset_password_tokens:
+        edit:
+          alert_error: Η σύνδεσή σας με το Faspex κουράζεται σε ένα λογαριασμό υπηρεσίας καταλόγου.
+          alert_error_contact: Επικοινωνήστε με το γραφείο υποστήριξης ή το διαχειριστή δικτύου για να αλλάξετε τον κωδικό πρόσβασης.
+          reset_password: Κωδικός πρόσβασης επαναφοράς
+        new:
+          back_to_login: Επιστροφή στη σύνδεση
+          enter_user_or_email: Καταχωρήστε το όνομα χρήστη ή το email
+          forgot_password: Ξέχασες τον κωδικό σου;
+          send_email: Αποστολή e-mail
+      search: Αναζήτηση στους παραλήπτες, στους τίτλους και τις σημειώσεις.
+      send:
+        fieldsets:
+          encryption:
+            encryption: 'Η κρυπτογράφηση:'
+            use_encrypt_at_rest: Χρήση κρυπτογράφησης-at-rest
+        form:
+          dropbox:
+            send_package: 'Αποστολή πακέτου:'
+          external:
+            send_package: 'Αποστολή πακέτου:'
+          fieldsets:
+            encryption:
+              encryption: 'Η κρυπτογράφηση:'
+              use_encrypt_at_rest: Χρήση κρυπτογράφησης-at-rest
+            expiration_policy:
+              after_pkg_dl: Μετά τη λήψη του πακέτου.
+              delete_after_all: Διαγράψτε όλα τα αρχεία μετά από <strong>όλους τους παραλήπτες</strong> .
+              delete_after_any: Η διαγραφή μετά από <strong>οποιονδήποτε παραλήπτη</strong> μεταφορτώνει όλα τα αρχεία
+              do_nothing: Τίποτα.
+              expiration: 'Λήξη:'
+            prevent_http_download:
+              prevent_http_download: Αποτροπή μεταφόρτωσης HTTP για αυτό το πακέτο
+              package_download: 'Λήψη πακέτου:'
+            metadata:
+              maximum_length: 'Μέγιστο μήκος: %{max} χαρακτήρες &nbsp&nbsp'
+              illegal_chars: 'Μη έγκυοι χαρακτήρες: %{illegal}'
+              required: απαιτούμενη.
+              optional: προαιρετικά.
+            note:
+              note: Σημείωση:<br><span class='dim'><small><small></small></span>
+              maximum_length: 'Μέγιστο μήκος: %{max} χαρακτήρες &nbsp&nbsp'
+              illegal_chars: 'Μη έγκυοι χαρακτήρες: %{illegal}'
+            notifications:
+              cc: CC
+              cc_on_download: CC on download
+              cc_on_receipt: CC στην παραλαβή
+              cc_on_upload: CC on upload
+              download: 'Λήψη:'
+              notifications_help: Οι ειδοποιήσεις αποστέλλονται μετά την πρώτη μεταφόρτωση ή μεταφόρτωση.
+              receipt: 'Ημερομηνία παραλαβής:'
+              upload: 'Μεταφόρτωση:'
+            obfuscation:
+              obfuscation: 'Παράταση:'
+              use_obf: Χρήση obfuscation σε ονόματα αρχείων
+            release_policy:
+              release_date: 'Ημερομηνία κυκλοφορίας:'
+              release_later_date_later: Αργότερα-Ορισμός ημερομηνίας αργότερα
+              release_later_date_now: Έκδοση αργότερα-Ημερομηνία λήξης
+              release_now: 'Αποδέσμευση:'
+              release_policy: 'Πολιτική Release:'
+            transfer_options:
+              transfer_through: 'Μεταφορά Με:'
+              http_uploads_not_allowed: Δεν επιτρέπεται η μεταφόρτωση HTTP για αυτό το πακέτο
+            source_shares:
+              contents: Περιεχόμενα *
+              ear_cloud_warning: >-
+                Το Encryption at rest θα χρησιμοποιηθεί για όλες τις μεταφορές, αλλά δεν υποστηρίζεται για μεταφορές που χρησιμοποιούν το cloud-referencing. Αυτή
+                η μεταφορά δεν θα χρησιμοποιήσει κρυπτογράφηση σε ηρεμία.
+              remove_all: 'Αφαίρεση όλων:'
+              source: 'Πηγή:'
+              warning: 'Προειδοποίηση:'
+            title:
+              title: 'Τίτλος *:'
+              maximum_length: 'Μέγιστο μήκος: %{max} χαρακτήρες &nbsp&nbsp'
+              illegal_chars: 'Μη έγκυοι χαρακτήρες: %{illegal}'
+            tos:
+              tos: 'Όροι Υπηρεσίας:'
+              tos_accept: Αποδέχομαι την %{tos}
+          forward:
+            contents: 'Περιεχόμενα:'
+            forward_package: 'Προώθηση πακέτου:'
+            fwd: 'Fwd: %{ftitle}'
+            original_sender: 'Αρχική Αποστολέας:'
+            received: 'Ελήφθη:'
+          misc:
+            actions:
+              confirmation: 'Επιβεβαίωση:'
+              enter_passphrase: Καταχωρήστε μια φράση πρόσβασης για την προστασία των αρχείων σας.<br>Απαιτείται μια φράση πρόσβασης.
+              passphrase: 'Η φράση:'
+            connect_transfer:
+              browse_for_files: Αναζήτηση αρχείων &hellip;
+              browse_for_folders: Αναζήτηση φακέλων &hellip;
+              or: Ή ...
+            instruct:
+              instructions: "' Οδηγίες"
+            remote_share:
+              loading: 'Φόρτωση:'
+              browse_for_files: Αναζήτηση αρχείων &hellip;
+            show_hide_controls:
+              show_private_recip: Εμφάνιση ιδιωτικών Recipients
+          normal:
+            send_package: 'Αποστολή πακέτου:'
+        http_gateway_submit:
+          completed: 'Ολοκληρώθηκε:'
+          current_file: 'Τρέχον αρχείο:'
+          current_file_name: 'Όνομα τρέχοντος αρχείου:'
+          invalid_status: Μη έγκυρη κατάσταση
+          failed: Αποτυχία.
+          file_count: 'Αριθμός αρχείων:'
+          initiating: 'Εκκίνηση:'
+          running: 'Εκτέλεση:'
+          total: 'Σύνολο:'
+          transfer_status: 'Μεταφορά:'
+      sent:
+        action: "' Ενέργεια"
+        date_sent: Ημερομηνία Sent
+        files: "' Αρχεία"
+        history:
+          sent_package_hist: Ιστορικό Sent Packages
+          back_to_normal_view: 'Επιστροφή στην κανονική προβολή:'
+          files_on_server: Αρχεία στον εξυπηρετητή;
+        index:
+          archive_all: 'Αρχείο Όλα:'
+          sent_packages: Sent Πακέτα
+          view_full_history: Προβολή πλήρους ιστορικού
+          warning: Προσοχή.
+        recipients: "-Δέκτες"
+        search: Αναζήτηση.
+        show_details:
+          full_partial: Πλήρης/Μερική &nbsp;
+          ip_addr: Διεύθυνση IP &nbsp;
+          pkg_download_details: Λεπτομέρειες μεταφόρτωσης πακέτων
+          start_time: Ώρα έναρξης &nbsp;
+          stop_time: Διακοπή ώρας &nbsp;
+          time_elapsed: Χρόνος που πέρασε &nbsp;
+          user_name: Όνομα χρήστη &nbsp;
+        size: "' Μέγεθος"
+        status: "' Κατάσταση"
+        title: "' Τίτλος"
+        transfer_retries: 'Επαναλήψεις μεταφοράς:'
+      settings:
+        contacts:
+          contact:
+            external: "(εξωτερικά)"
+            remove: 'Αφαίρεση:'
+          index:
+            contacts: "' Επαφές"
+            edit_alert: Δεν έχετε τροποποιήσιμες επαφές.
+            edit_contacts: 'Τροποποίηση επαφών:'
+        dist_lists:
+          index:
+            add_new_dist_list: Προσθήκη νέου καταλόγου διανομής
+            alert_dist: Δεν έχετε προσωπικές λίστες διανομής.
+            contacts: "' Επαφές"
+            global_dist_lists: Λίστες καθολικής διανομής
+            name: "' Ονομα"
+            pers_dist_lists: Λίστες προσωπικών κατανομής
+            update_dist_list: Ενημέρωση λιστών διανομής
+          new:
+            new_dist_list: Νέος κατάλογος διανομής
+        passwords:
+          edit:
+            change_password: Αλλαγή κωδικού πρόσβασης
+            current_password: 'Τρέχον σύνθημα:'
+            password: Κωδικός πρόσβασης
+            confirm_pw: Έλεγχος κωδικού πρόσβασης
+        preferences:
+          edit:
+            download_connect: Πρόσθετο σύνδεσης μεταφόρτωσης
+            download_hint: Μπορεί να χρειαστούν μερικά λεπτά για την αλλαγή.
+            download_notif: 'Λήψη ειδοποιήσεων:'
+            download_notif_hint: Email σε αυτές τις διευθύνσεις όταν κάθε παραλήπτης πρώτα μεταφορτώνει ένα πακέτο
+            email_settings: Ρυθμίσεις email
+            locales: "-Τοπικές"
+            locale: "(')"
+            misc: Misc
+            preferences: 'Προτιμήσεις:'
+            update_pref: 'Ενημέρωση προτιμήσεων:'
+            upload_notif: Μεταφόρτωση ειδοποιήσεων
+            upload_notif_hint: Στείλτε αυτές τις διευθύνσεις με το αποτέλεσμα της μεταφόρτωσης.
+            received_page_option: Εμφάνιση μόνο ολοκληρωμένων πακέτων στη σελίδα ' Received '
+        sender_quota:
+          index:
+            sender_alert_1: Συμπληρώσατε το όριο μεγέθους αποστολέα %{quota} MB
+            sender_alert_2: "%{quota} MB διαθέσιμη. Το όριο μεγέθους του αποστολέα έχει οριστεί σε %{limit} MB."
+            sender_quota: Αποστολέας Quota
+      shared:
+        browser:
+          filter:
+            from: 'Από:'
+            hide_filters: Απόκρυψη φίλτρων
+            include_sub: Συμπερίληψη υποκαταλόγων
+            max: "-Μαξ"
+            min: Μιν
+            mod_time: 'Ώρα τροποποίησης:'
+            search: Αναζήτηση.
+            search_for_files: Αναζήτηση αρχείων ή καταλόγων &hellip;
+            show_filters: Εμφάνιση φίλτρων
+            size: "' Μέγεθος"
+            to: "- ..."
+          par_dir_item:
+            parent_dir: 'Γονικός κατάλογος:'
+        dist_lists:
+          dist_lists:
+            delete: 'Διαγραφή:'
+            duplicate: 'Διπλότυπο:'
+            import_contacts: Εισαγωγή επαφών από CSV
+          form:
+            name: "' Ονομα"
+            browse: Αναζήτηση ...
+            contacts: Επαφές (έως %{num})
+            import_from_csv: 'Εισαγωγή από CSV:'
+        filter:
+          filter: Φίλτρο &hellip;
+      user_profile_fields:
+        add_user_profile_field: Προσθήκη πεδίου προφίλ χρήστη
+        enabled: "' Ενεργή"
+        name: "' Ονομα"
+        note_no_changes: 'Σημείωση: Δεν θα αποθηκευτούν οι αλλαγές μέχρι να πατήσετε '' Αποθήκευση πεδίων '''
+        onclick_confirm: Είστε βέβαιοι ότι θέλετε να αφαιρέσετε αυτό το πεδίο προφίλ χρήστη;
+        remove: Αφαιρέστε αυτό το πεδίο προφίλ.
+        required: Απαιτούμενη
+        save_fields: 'Αποθήκευση πεδίων:'
+        user_profile: Προφίλ χρήστη
+      workgroup:
+        deliveries:
+          history:
+            date_sent: Ημερομηνία<br>Sent
+            download_retry: 'Διαθέσιμα ή Επανάληψη:'
+            files: "' Αρχεία"
+            files_on_server: Αρχεία στο<br>Server;
+            package_history: Ιστορικό πακέτων
+            search: Αναζήτηση.
+            sender: Πιο Sender
+            size: "' Μέγεθος"
+            status: "' Κατάσταση"
+            title: "' Τίτλος"
+          index:
+            action: "' Ενέργεια"
+            date_sent: Ημερομηνία<br>Sent
+            download_retry: 'Διαθέσιμα ή Επανάληψη:'
+            files: "' Αρχεία"
+            packages: 'Πακέτα:'
+            search: Αναζήτηση.
+            sender: Πιο Sender
+            size: "' Μέγεθος"
+            status: "' Κατάσταση"
+            title: "' Τίτλος"
+          misc:
+            links:
+              invite_outside: Πρόσκληση Εξωτερικού Υποβλητή
+        file_relay_req:
+          index:
+            back: Πίσω!
+            relay_stat: 'Κατάσταση Αναδιανομής:'
+          table:
+            date_sent: Ημερομηνία Sent
+            file_storage: Χώρος αποθήκευσης αρχείων
+            files: "' Αρχεία"
+            node: 'Κόμβος:'
+            size: "' Μέγεθος"
+            status: "' Κατάσταση"
+        forwards:
+          complete: Πλήρης.
+          enable_relay: Ενεργοποίηση αναμετάδοσης
+          enabled_message: Αν ενεργοποιηθεί, όλα τα αρχεία πακέτων θα αναμεταδίδονται σε πρόσθετους κόμβους.
+          error: 'Σφάλμα:'
+          notify_users: Ειδοποίηση Χρηστών Για ...
+          overwrite: Αντικατάσταση '
+          relay: "(')"
+          start: "' ρχισε"
+        name: "' Ονομα"
+        nodes:
+          default_inbox: Προεπιλεγμένα Εισερχόμενα
+          direct_upload: Μεταφόρτωση απευθείας στα εισερχόμενα.
+          direct_upload_default_check: Αν ενεργοποιηθεί, τα πακέτα δεν θα μεταφορτωθούν στο προεπιλεγμένο φάκελο εισερχομένων αν αυτή η ομάδα εργασίας είναι ο μοναδικός
+            παραλήπτης.
+          inbox_destination: Προορισμός εισερχομένων
+          location: 'Τοποθεσία:'
+          status: "' Κατάσταση"
+        users:
+          edit:
+            edit_user: 'Τροποποίηση χρήστη: %{name}'
+          new:
+            new_user: Νέος Λογαριασμός Χρήστη Για %{wg} %{wgname}
+        workgroups:
+          details:
+            created_on: 'Δημιουργία σε:'
+            description: 'Περιγραφή:'
+            inst_for_sub: 'Οδηγίες για τους χρήστες: '
+            name: '<font color="red">* </font>Όνομα:'
+            updated_on: 'Ενημερώθηκε στις:'
+            wg_details: Λεπτομέρειες %{wgtype} &nbsp;
+          ds_group:
+            all: Όλα!
+            none: Καμία.
+            ok: ΕΝΤΆΞΕΙ.
+            remove_selected: Αφαίρεση επιλεγμένου στοιχείου
+            select: 'Επιλέξτε: '
+          ds_group_member:
+            add_group: Προσθήκη ομάδας
+          ds_group_table:
+            access: "' Πρόσβαση"
+            date_added: 'Ημερομηνία προσθήκης:'
+            dir_serv_group: Ομάδες υπηρεσιών καταλόγου
+            DN: DN
+            members: "-Μέλη"
+            name: "' Ονομα"
+            status: "' Κατάσταση"
+          edit:
+            back: Πίσω!
+            back_to_list: Επιστροφή στη λίστα
+            editing: 'Τροποποίηση %{wgtype}: %{wgname}'
+            or: " ή "
+            save: 'Αποθήκευση:'
+          forwards:
+            complete: Πλήρης.
+            enable_relay: Ενεργοποίηση αναμετάδοσης
+            error: 'Σφάλμα:'
+            if_enabled: Αν ενεργοποιηθεί, όλα τα αρχεία πακέτων θα αναμεταδίδονται σε πρόσθετους κόμβους.
+            name: "' Ονομα"
+            notify_users: Ειδοποίηση Χρηστών Για ...
+            overwrite: Αντικατάσταση '
+            relay: "(')"
+            start: "' ρχισε"
+          index:
+            create_new: Δημιουργία νέου.
+            dropbox: Το Dropbox
+            flash_message: Για να δημιουργήσετε, να διαγράψετε ή να τροποποιήσετε ομάδες εργασίας (εκτός από την προσθήκη/αφαίρεση μελών), πρέπει να συνδεθείτε στον
+              κύριο εξυπηρετητή.
+            view_all: 'Προβολή όλων:'
+            view_mine: Προβολή Mine
+            workgroup: 'Ομάδα εργασίας:'
+            workgroups: 'Ομάδες εργασίας:'
+          member_table:
+            access: "' Πρόσβαση"
+            active: Ενεργός.
+            add_user: Προσθήκη χρήστη
+            alert: Δεν έχουν επιλεγεί μέλη για αφαίρεση.
+            all: Όλα!
+            expires: 'Λήγει:'
+            full_name: Πλήρες Όνομα
+            inactive: 'Ανενεργή:'
+            inv_outside_submit: Πρόσκληση Εξωτερικού Υποβλητή
+            member_since: Τα κράτη μέλη
+            members: "-Μέλη"
+            name: "' Ονομα"
+            none: Καμία.
+            ok: ΕΝΤΆΞΕΙ.
+            remove_selected: Αφαίρεση επιλεγμένου στοιχείου
+            select: 'Επιλέξτε:'
+            status: "' Κατάσταση"
+            type: 'Είδος:'
+          new:
+            cancel: Ακύρωση.
+            create: 'Δημιουργία:'
+            create_new: Δημιουργία νέας %{wgtype}
+            or: " ή "
+          nodes:
+            custom: "' Έθιμο"
+            default_inbox: Προεπιλεγμένα Εισερχόμενα
+            inbox_dest: Προορισμός εισερχομένων
+            location: 'Τοποθεσία:'
+            name: "' Ονομα"
+            server_default: Προεπιλογή εξυπηρετητή
+            status: "' Κατάσταση"
+            upload_directly: Μεταφόρτωση απευθείας σε προσαρμοσμένα εισερχόμενα.
+            upload_message: Αν ενεργοποιηθεί, τα πακέτα δεν θα μεταφορτωθούν στο προεπιλεγμένο φάκελο εισερχομένων αν αυτή η ομάδα εργασίας είναι ο μοναδικός παραλήπτης
+          show:
+            view_packages: Προβολή πακέτων.
+          wg_permissions:
+            add_dir_serv_groups_as_members_hint: Προσθήκη/αφαίρεση ομάδων υπηρεσιών καταλόγου ως μελών
+            add_existing_users_hint: Προσθήκη υπαρχόντων χρηστών του Faspex/αφαίρεσης μελών ομάδας διαχειριστών
+            edit_new_users_hint: Δημιουργία/edit/διαγραφή/αφαίρεση νέων χρηστών ως μελών
+            full: " -Ναι."
+            full_hint: Οι βουλευτές έχουν δικαίωμα να βλέπουν και να στέλνουν ο ένας στον άλλο.
+            member_management: 'Διαχείριση μελών:'
+            moderated: " Μέτρια:"
+            moderated_hint: Μόνο ο διαχειριστής μπορεί να στείλει αυτή την ομάδα εργασίας.
+            open: " Άνοιγμα:"
+            open_hint: Οποιοσδήποτε μπορεί να στείλει σε αυτή την ομάδα εργασίας.
+            private: " -Όχι."
+            private_hint: Μόνο μέλη μπορούν να στείλουν σε αυτή την ομάδα εργασίας.
+            restricted: " Περιορισμός:"
+            restricted_hint: Κανείς δεν μπορεί να στείλει σε αυτή την ομάδα εργασίας
+            restricted_hint_2: Μόνο οι ομάδες εργασίας έχουν δικαίωμα να βλέπουν ή να στέλνουν σε μεμονωμένα μέλη της ομάδας εργασίας
+            send_to_eachother: 'Τα μέλη της ομάδας εργασίας αποστέλλουν ο ένας στον άλλο:'
+            sending_to_itself: 'Αποστολή στην ίδια την ομάδα εργασίας:'
+            wg_admins_only: " Μόνο οι διαχειριστές Workgroup:"
+            wg_admins_only_hint: Τα μέλη έχουν δικαίωμα να βλέπουν και να στέλνουν στην ομάδα εργασίας admins
+            workgroup_admins_can: Οι διαχειριστές ομάδας εργασίας μπορούν ...
+            workgroup_permissions: Δικαιώματα ομάδας εργασίας
+          workgroup_list:
+            description: 'Περιγραφή:'
+            dropbox: Το Dropbox
+            latest: Τελευταία.
+            member_warning: Δεν είστε μέλος σε καμία ομάδα εργασίας.
+            members: "-Μέλη"
+            no_wg: Δεν υπάρχουν ομάδες εργασίας.
+            packages: 'Πακέτα:'
+            type: 'Είδος:'
+            workgroup: 'Ομάδα εργασίας:'
+          workgroup_members_form:
+            wg_members_title: "%{wg_name} Μέλη &nbsp;"
+    helpers:
+      account:
+        users:
+          admin: " -admin."
+          expir_date: Πρέπει να οριστεί η τιμή %{date} για έναν ενεργό χρήστη.
+          manager: " -Διευθυντές"
+          neg: Όχι.
+          pos: Ναι!
+          set_admin: Ορισμός διαχειριστή
+          set_non_admin: Ορισμός μη διαχειριστή
+          taken_name: Η %{name} έχει ήδη ληφθεί
+        bootstrap_content_helper:
+          actions: "' Ενέργειες"
+          close: Κλείσιμο
+      admin:
+        nodes_helper:
+          browse_fail: Απέτυχε η αναζήτηση της απομακρυσμένης πηγής αρχείου
+        post_processes_helper:
+          activate: ενεργοποίηση.
+          confirm: Είστε βέβαιοι ότι θέλετε να διαγράψετε το σενάριο μετα-επεξεργασίας %{script_name};
+          deactivate: Απενεργοποίηση.
+          remove: αφαίρεση.
+          view_log: Προβολή αρχείου καταγραφής εκτέλεσης
+      application_helper:
+        browse: Αναζήτηση ...
+        path: 'Διαδρομή:'
+      login_helper:
+        create_account: 'Δημιουργία λογαριασμού:'
+        request_account: 'Αίτηση λογαριασμού:'
+      metadata_profiles_helper:
+        date_field: Πεδίο ημερομηνίας
+        option_list: Λίστα επιλογών '
+        text_area: Περιοχή κειμένου
+        text_field: Πεδίο κειμένου
+      packages_helper:
+        entire: Λήψη Ολόκληρα Πακέτο
+        partial: Μεταφόρτωση Partial Package
+        return_to_history: Επιστροφή στην ιστορία
+        return_to_list: Επιστροφή στη λίστα
+      registrations_helper:
+        create_account: 'Δημιουργία λογαριασμού:'
+        request_account: Λογαριασμός αίτησης
+      send_helper:
+        hide: κρυφη.
+        hide_cc: Απόκρυψη Cc
+        show: Show.
+        show_cc: Εμφάνιση Cc
+      sent_helper:
+        delete: 'Διαγραφή:'
+      source_shares_helper:
+        browse_fail: Απέτυχε η αναζήτηση της απομακρυσμένης πηγής αρχείου
+      workgroup:
+        deliveries_helper:
+          back_to_normal_view: Επιστροφή στην κανονική προβολή
+          delete: 'Διαγραφή:'
+          view_full_history: Προβολή πλήρους ιστορικού
+          view_members: Προβολή μελών.
+        users_helper:
+          create_new_user: Δημιουργία νέου χρήστη
+        workgroups_helper:
+          delete: 'Διαγραφή:'
+          delete_confirm: Επιθυμείτε να διαγράψετε το %{wg_type} "%{wg_name}";
+          delete_wg: Διαγραφή της %{wg_name}
+          dropbox: Το Dropbox
+          edit: 'Τροποποίηση:'
+          edit_wg: Τροποποίηση %{wg_type_name}
+          names_placeholder: Καταχωρήστε ονόματα χρηστών ή διευθύνσεις email
+          view_all: 'Προβολή όλων:'
+          view_mine: Προβολή Mine
+          view_packages: Προβολή πακέτων.
+          workgroup: 'Ομάδα εργασίας:'
+    models:
+      c_configuration:
+        cant_be_blank: Τα πεδία δεν είναι κενά.
+      delivery:
+        send_fail_quota_limit: Δεν είναι δυνατή η αποστολή πακέτου, όριο Quota της %{limit} MB έφτασε
+        send_fail_permissions: Δεν επιτρέπεται να δημιουργήσετε κανονικά πακέτα.
+        send_fail_invalid_recipients: Δεν υπάρχουν παραλήπτες.
+        send_fail_dropbox_only: Ο παραλήπτης μπορεί να είναι ο μοναδικός παραλήπτης.
+        send_fail_invalid_recipient_specific: 'Μη έγκυρος παραλήπτης: %{δεκτή}'
+        send_fail_permissions_multiple: Δεν επιτρέπεται η αποστολή σε έναν ή περισσότερους από τους καθορισθέντες παραλήπτες.
+        send_fail_invalid_cc: 'Μη έγκυρη CC (κατά τη μεταφόρτωση): %{cc_name}'
+        send_fail_invalid_ccs_upload: Δεν επιτρέπεται να επιλέξετε έναν ή περισσότερους από τους παραλήπτες στο πεδίο μεταφόρτωσης.
+        send_fail_invalid_ccs_download: Δεν επιτρέπεται να επιλέξετε έναν ή περισσότερους από τους παραλήπτες στο πεδίο μεταφόρτωσης.
+        send_fail_invalid_ccs_receipt: Δεν επιτρέπεται να χρησιμοποιείτε έναν ή περισσότερους από τους παραλήπτες στο πεδίο αποδείξεων.
+        send_fail_must_have_one_source: Πρέπει να έχει ακριβώς μία πηγή.
+        send_fail_unknown_share_id: Άγνωστη ταυτότητα κοινόχρηστου πόρου %{share_id}
+        send_fail_source_not_authorized: "(')"
+        send_fail_no_items_to_upload: Δεν υπάρχουν στοιχεία!
+        send_fail_unique_filenames: Το Filenames πρέπει να είναι μοναδικό
+        send_fail_ear_must_be_specified: πρέπει να καθοριστεί.
+        send_fail_ear_not_allowed: ": δεν επιτρέπεται"
+        send_fail_ear_disabled_message: Η κρυπτογράφηση-at-rest είναι απενεργοποιημένη, η φράση πρόσβασης δεν επιτρέπεται.
+        send_fail_sendershareid_forwarding: Δεν επιτρέπεται η αλλαγή του SenderShareId για προωθημένα πακέτα
+        send_fail_invalid_release_policy: 'Μη έγκυρη πολιτική έκδοσης: %{rp}'
+        send_fail_policy_date_future: Η ημερομηνία έκδοσης πρέπει να είναι μελλοντική.
+        send_fail_expiration_date_future: Η ημερομηνία λήξης πρέπει να είναι μελλοντική.
+      directory_service_user:
+        login_error_message: >-
+          Η σύνδεσή σας απέτυχε. Προσπαθήστε ξανά. Εάν αντιμετωπίζετε επαναλαμβανόμενες αποτυχίες σύνδεσης, θα πρέπει να κάνετε κλικ στη σύνδεση "Ξεχάσατε τον κωδικό
+          πρόσβασης" για να επαναφέρετε τον κωδικό πρόσβασης.
+      e_membership:
+        status:
+          expired: Έληξε
+          active: Ενεργός.
+          inactive: 'Ανενεργή:'
+      local_user:
+        cannot_be_blank: δεν είναι κενό.
+        is_incorrect: είναι λανθασμένη.
+        login_error_message: >-
+          Η σύνδεσή σας απέτυχε. Προσπαθήστε ξανά. Εάν αντιμετωπίζετε επαναλαμβανόμενες αποτυχίες σύνδεσης, θα πρέπει να κάνετε κλικ στη σύνδεση "Ξεχάσατε τον κωδικό
+          πρόσβασης" για να επαναφέρετε τον κωδικό πρόσβασης.
+        lock_out_message: Έχετε κλειδωθεί λόγω πάρα πολλών αποτυχημένων logins.
+        same_as_old_pw: είναι το ίδιο με το παλιό σύνθημα
+        same_old_pw_hint: πρέπει να διαφέρει από τον προηγούμενο κωδικό πρόσβασης %{limit}
+      metadata_field:
+        value_already_taken: Η τιμή '%{value}' έχει ήδη ληφθεί
+        max_length_not_int: Το μέγιστο μήκος του πεδίου '%{label_name}' πρέπει να είναι ακέραιος αριθμός
+        max_length_bounds: Το μέγιστο μήκος του πεδίου '%{label_name}' πρέπει να είναι μεταξύ 1 και %{max}
+        valid_option_list: Η τιμή '%{label_name}' απαιτεί μια έγκυρη λίστα επιλογών
+        valid_date_format: Η τιμή '%{label_name}' απαιτεί μια έγκυρη μορφή ημερομηνίας
+        cannot_be_blank: Η τιμή %{label_name} δεν μπορεί να είναι κενή
+        error_decoding: 'Σφάλμα αποκωδικοποίησης μεταδεδομένων: %{meta}'
+      metadata_profile:
+        all_fields_length_error: Το συνολικό μέγιστο μήκος όλων των πεδίων (συμπεριλαμβανομένων ετικετών, επιλογών και πεδίων ημερομηνίας) πρέπει να είναι μικρότερο
+          από %{max} χαρακτήρες
+        field_blank_error: Η τιμή %{err_label} δεν πρέπει να είναι κενή
+        field_illegal_char_error: 'Η τιμή %{err_label} δεν πρέπει να περιέχει τους ακόλουθους χαρακτήρες: %{illegal}'
+        field_length_error: Οι χαρακτήρες %{err_label} πρέπει να είναι %{max} ή λιγότεροι
+        field_options_error: 'Η %{err_label} πρέπει να περιέχει μία από αυτές τις επιλογές: %{list}'
+        invalid_JSON_error: Το %{err_label} πρέπει να είναι ένα έγκυρο JSON
+        invalid_share_id_error: Μη έγκυρη ταυτότητα κοινής χρήσης %{err_value} για %{err_label}
+        invalid_user_error: Μη έγκυρος χρήστης %{err_user} για %{err_label}
+        invalid_value_error: Μη έγκυρη τιμή για %{err_label}
+        max_length_reset_error: Τα πεδία μέγιστου μήκους έχουν επανακαθοριστεί.
+        must_be_list_error: Η %{err_label} πρέπει να είναι μια λίστα με ταυτότητες μετοχών
+        no_fields_error: Το προφίλ μεταδεδομένων πρέπει να έχει τουλάχιστον ένα πεδίο.
+        note_invalid_char_error: 'Η σημείωση δεν πρέπει να περιέχει τους ακόλουθους χαρακτήρες: # {παράνομη}'
+        note_length_bounds_error: Το μέγιστο μήκος σημείωσης πρέπει να είναι μεταξύ 1 και %{max}
+        note_length_error: Η σημείωση πρέπει να είναι %{max} ή μικρότερος
+        note_length_int_error: Το μέγιστο μήκος σημείωσης πρέπει να είναι ακέραιος.
+        note_length_specified_error: Πρέπει να καθοριστεί μέγιστο μήκος σημείωσης.
+        specified_error: Πρέπει να οριστεί %{err_label}
+        title_invalid_char_error: 'Ο τίτλος δεν πρέπει να περιέχει κανέναν από τους ακόλουθους χαρακτήρες: %{illegal}'
+        title_length_bounds_error: Το μέγιστο μήκος του τίτλου πρέπει να είναι μεταξύ 1 και %{max}
+        title_length_error: Ο τίτλος πρέπει να είναι %{max} ή μικρότερος
+        title_length_int_error: Το μέγιστο μήκος τίτλου πρέπει να είναι ακέραιος.
+        title_length_specified_error: Πρέπει να καθοριστεί μέγιστο μήκος τίτλου.
+      post_process:
+        all_uploaded_pkgs: "[όλα τα πακέτα]"
+      saml_configuration:
+        unspecified: Μη καθορισμένη.
+        transient: "\" Παροδική"
+        persistent: 'Επίμονη:'
+        email_address: Διεύθυνση email
+      send_package_request:
+        from_name_error: Το όνομα "From" δεν συμφωνεί με τον ταυτοποιημένο χρήστη
+        invalid_recipient_error: μη έγκυρο παραλήπτη
+        parse_xml_error: Δεν είναι δυνατή η ανάλυση αίτησης XML
+        validate_sender_error: Δεν επιτρέπεται η μεταφόρτωση.
+        too_many_elements: Το στοιχείο %{path} δεν πρέπει να υπερβαίνει τη %{max}
+        too_few_elements: Το στοιχείο %{path} πρέπει να εμφανίζεται τουλάχιστον %{min}
+      user:
+        passwordable:
+          requirements: Πρέπει να έχει μήκος τουλάχιστον 6 χαρακτήρες
+          strong_requirements: Πρέπει να έχει μήκος τουλάχιστον έξι χαρακτήρες, με τουλάχιστον ένα γράμμα, έναν αριθμό και ένα σύμβολο
+        status:
+          saml_disabled: Απενεργοποίηση ρύθμισης SAML
+          pending: Έγκριση σε αναμονή
+          active: Ενεργός.
+          locked: Κλειδωμένο.
+          inactive: 'Ανενεργή:'
+  config:
+    account_navigation:
+      preferences: 'Προτιμήσεις:'
+      change_password: Αλλαγή κωδικού πρόσβασης
+      contacts: 'Τροποποίηση επαφών:'
+      distribution_lists: Τροποποίηση λιστών διανομής
+      sender_quota: Αποστολέας Quota
+    initializers:
+      will_paginate:
+        laq_prev: "&laquo; Προηγούμενο"
+        lar_prev: "&larr; Προηγούμενο"
+        raq_next: Επόμενο &raquo;
+        rar_next: Επόμενο &rar·
+    license:
+      paste_license: Επικολλήστε τα περιεχόμενα της άδειας σας εδώ.
+      update_license: Ενημέρωση άδειας χρήσης
+      decoded_license: 'Άδεια Χρήσης:'
+    navigation:
+      account_approved: Εγκρίθηκε ο λογαριασμός
+      account_denied: Άρνηση λογαριασμού
+      accounts: Λογαριασμοί.
+      authentication: 'Έλεγχος ταυτότητας:'
+      configuration: 'Ρυθμίσεις:'
+      directory_service_groups: Ομάδες υπηρεσιών καταλόγου
+      directory_services: 'Υπηρεσίες καταλόγου:'
+      display_settings: Ρυθμίσεις εμφάνισης
+      dropbox_invitation: Πρόσκληση σε Dropbox
+      dropbox_submit: Υποδοχή Dropbox
+      email_configuration: Ρύθμιση e-mail
+      entitlement: "-Δικαίωμα"
+      external_users: Εξωτερικοί Χρήστες
+      forgot_password: Ξεχάσατε τον κωδικό
+      forward_error_cc: Σφάλμα αναμετάδοσης CC
+      forward_finished_cc: Relay Finished CC
+      forward_started_cc: Εκκίνηση του Relay CC
+      global_distribution_lists: Λίστες καθολικής διανομής
+      license: "' Αδεια"
+      login_announcement: Ανακοίνωση σύνδεσης
+      metadata: Μετα-δεδομένα
+      new_package: 'Νέο πακέτο:'
+      notifications: Κοινοποιήσεις
+      package_cc_receipt_on_received: Πακέτο που ελήφθη CC
+      package_cc_receipt_on_sent: Πακέτο Sent CC
+      package_downloaded: 'Μεταφόρτωση πακέτου:'
+      package_downloaded_cc: Πακέτο Μεταφορτώθηκε CC
+      package_instructions: 'Οδηγίες Χρήσης:'
+      package_received: 'Λήψη πακέτου:'
+      package_storage: Αποθήκευση πακέτων
+      package_validation_failed_recipient: Απέτυχε ο παραλήπτης επικύρωσης πακέτου
+      package_validation_failed_sender: Αποτυχία επικύρωσης πακέτου.
+      packages: 'Πακέτα:'
+      pending_registrations: Εκκρεμείς εγγραφές.
+      personal_invitation: Προσωπική Πρόσκληση
+      personal_submit: Προσωπικό Submit
+      post_processes: Μετά την επεξεργασία
+      received: Ελήφθη.
+      saml_groups: Ομάδες SAML
+      saml_integration: Ενοποίηση SAML
+      save_restore: Αποθήκευση/Επαναφορά
+      security: "-Ασφάλεια"
+      sent: "' Εστάλη"
+      server: 'Εξυπηρετητής:'
+      shares: Χώρος αποθήκευσης αρχείων
+      transfer_options: 'Επιλογές μεταφοράς:'
+      upload_result: Μεταφόρτωση αποτελεσμάτων
+      upload_result_cc: Μεταφόρτωση αποτελεσμάτων CC
+      user_profile: Προφίλ χρήστη
+      users: 'Χρήστες:'
+      web_server: Εξυπηρετητής Web
+      welcome_email: Καλωσορίσατε E-mail
+      workgroup_package: Πακέτο εργασιών ομάδας
+      workgroups: 'Ομάδες εργασίας:'
+  common:
+    allow: "' Επέτρεψε"
+    deny: 'Άρνηση:'
+    default: 'Προεπιλογή:'
+    server_default: Προεπιλογή εξυπηρετητή (%{server_default})
+    are_you_sure: "-Σίγουρα;"
+    days_from_now: ημέρες από τώρα
+  date:
+    abbr_day_names:
+    - Sun
+    - Mon
+    - Tue
+    - Wed
+    - Thu
+    - Fri
+    - Sat
+    abbr_month_names:
+    - 
+    - Jan
+    - Feb
+    - Mar
+    - Apr
+    - May
+    - Jun
+    - Jul
+    - Aug
+    - Sep
+    - Oct
+    - Nov
+    - Dec
+    day_names:
+    - Sunday
+    - Monday
+    - Tuesday
+    - Wednesday
+    - Thursday
+    - Friday
+    - Saturday
+    formats:
+      default: "%Y-%m-%d"
+      long: "%B %d, %Y"
+      short: "%b %d"
+    month_names:
+    - 
+    - January
+    - February
+    - March
+    - April
+    - May
+    - June
+    - July
+    - August
+    - September
+    - October
+    - November
+    - December
+    order:
+    - :year
+    - :month
+    - :day
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: περίπου 1 ώρα
+        other: για ώρες %{count}
+      about_x_months:
+        one: περίπου 1 μήνα
+        other: σχετικά με %{count} μήνες
+      about_x_years:
+        one: περίπου 1 έτος
+        other: σχετικά με %{count} έτη
+      almost_x_years:
+        one: σχεδόν 1 έτος
+        other: σχεδόν %{count} έτη
+      half_a_minute: Μισό λεπτό.
+      less_than_x_seconds:
+        zero: λιγότερο από 1 δευτερόλεπτο
+        one: λιγότερο από 1 δευτερόλεπτο
+        other: λιγότερο από %{count} δευτερόλεπτα
+      less_than_x_minutes:
+        zero: λιγότερο από ένα λεπτό
+        one: λιγότερο από ένα λεπτό
+        other: λιγότερο από %{count} λεπτά
+      over_x_years:
+        one: άνω του 1 έτους
+        other: πάνω από %{count} έτη
+      x_seconds:
+        one: 1 δευτερόλεπτο
+        other: "%{count} δευτερόλεπτα"
+      x_minutes:
+        one: 1 λεπτό
+        other: "%{count} λεπτά"
+      x_days:
+        one: 1 ημέρα
+        other: "%{count} ημέρες"
+      x_months:
+        one: 1 μήνα
+        other: "%{count} μήνες"
+      x_years:
+        one: 1 έτος
+        other: "%{count} έτη"
+    prompts:
+      second: '2.'
+      minute: Μ.
+      hour: "-Ώρα."
+      day: "' Μέρα"
+      month: 'Μήνας:'
+      year: "' Έτος"
+  helpers:
+    application:
+      archive: "' Αρχείο"
+      back: Πίσω!
+      cloud_storage_referencing: Η παραπομπή στην αποθήκευση νεφών υποστηρίζεται από αυτή την αποθήκη.
+      connect_install_message: Για να χρησιμοποιήσετε τις μέγιστες ταχύτητες %{direction}, εγκαταστήστε το πρόσθετο πρόγραμμα περιήγησης %{aspera}.
+      connect_upgrade_message: Για να χρησιμοποιήσετε τις μέγιστες ταχύτητες %{direction}, αναβαθμίστε την πρόσθετη λειτουργία %{aspera}.
+      confirm: Είστε βέβαιοι ότι θέλετε να διαγράψετε αρχεία για το πακέτο %{package_name} που έστειλε η %{package_sender};
+      copy: Αντιγραφή στο πρόχειρο.
+      delete: 'Διαγραφή:'
+      delete_confirm: Είστε βέβαιοι ότι θέλετε να διαγράψετε αρχεία για το πακέτο %{package_name} που έστειλε η %{package_sender};
+      delete_confirm_forward: Αυτό είναι ένα δεύτερο πακέτο. Το πρωτότυπο και όλα τα εμπρός θα διαγραφούν.
+      delete_confirm_has_forwards: Υπάρχουν εμπρός αυτού του πακέτου. Το πρωτότυπο και όλα τα εμπρός θα διαγραφούν.
+      enable_hst_dl: Για να ενεργοποιήσετε τις μεταφορές υψηλής ταχύτητας με Aspera, παρακαλούμε %{download} το plugin του προγράμματος περιήγησης.
+      enable_hst_dl_enable: Για να ενεργοποιήσετε τις μεταφορές υψηλής ταχύτητας με το Aspera, παρακαλώ %{download} και %{enable} το πρόσθετο πρόγραμμα πλοήγησης
+        Connect.
+      local_transfer_message: >-
+        Αυτή τη στιγμή χρησιμοποιείτε HTTP χαμηλής ταχύτητας. Για να ενεργοποιήσετε τις μεταφορές υψηλής ταχύτητας με το Aspera, επισκεφτείτε το %{enable} για να
+        ενεργοποιήσετε/μεταφορτώστε το πρόσθετο πρόγραμμα πλοήγησης Connect.
+      no_cloud_storage_referencing: Η παραπομπή στην αποθήκευση νεφών ΔΕΝ υποστηρίζεται από αυτή την αποθήκη.
+      no_transfer_dl: >-
+        Τα αρχεία μεταφόρτωσης χωρίς το Aspera Connect έχουν περιορισμούς απόδοσης. Για να αφαιρέσετε αυτόν τον περιορισμό και να ενεργοποιήσετε τις μεταφορές υψηλής
+        ταχύτητας με το Aspera, παρακαλώ %{download} το πρόσθετο πρόγραμμα πλοήγησης Connect.
+      no_transfer_dl_enable: >-
+        Τα αρχεία μεταφόρτωσης χωρίς το Aspera Connect έχουν περιορισμούς απόδοσης. Για να αφαιρέσετε αυτό τον περιορισμό και να ενεργοποιήσετε τις μεταφορές υψηλής
+        ταχύτητας με το Aspera, παρακαλώ %{download} και %{enable} το πρόσθετο πρόγραμμα πλοήγησης Connect.
+      not_supp_symbolic_links: Η αποθήκευση δεν υποστηρίζει συμβολικές διασυνδέσεις.
+      note: 'Σημείωση:'
+      package_details: Πατήστε εδώ για λεπτομέρειες του πακέτου.
+      public_url: 'Δημόσια URL:'
+      retry_upload: Επανάληψη αποστολής.
+      set_now: Σετ!
+      stop_upload: Τερματισμός μεταφόρτωσης
+      supp_symbolic_links: Η αποθήκευση υποστηρίζει συμβολικές διασυνδέσεις
+    select:
+      prompt: 'Επιλέξτε:'
+    submit:
+      create: Δημιουργία %{model}
+      create_without_model: 'Δημιουργία:'
+      create_and_continue: Δημιουργία και %{action}
+      submit: Αποθήκευση του %{model}
+      update_license: Ενημέρωση και επικύρωση άδειας χρήσης
+      update: Ενημέρωση του %{model}
+  login:
+    new:
+      login: 'Σύνδεση:'
+      login_using_saml_idp: Σύνδεση με χρήση του SAML IdP
+    logged_out:
+      message: Έχετε αποσυνδεθεί από το Faspex. Μπορεί να χρειαστεί να αποσυνδεθείτε από το εταιρικό σας λογαριασμό.
+      log_in_again: Συνδεθείτε ξανά.
+    errors:
+      saml_not_authorized: Δεν έχετε εξουσιοδότηση χρήσης του Faspex.
+      invalid_saml_response: Μη έγκυρη απόκριση από τον παροχέα ταυτοτήτων SAML.
+      saml_login_failed: Η σύνδεση απέτυχε.
+      saml_exception: Σφάλμα απόκρισης SAML. Ελέγξτε τα αρχεία.
+  lib:
+    app:
+      not_pingable: μη pingable
+      not_infoable: μη info-able
+      not_browsable: δεν είναι δυνατή.
+      node_error: σφάλμα κόμβου
+      host_error: σφάλμα υπολογιστή
+    app_tar:
+      app:
+        bad_version: Μη συμβατοί αριθμοί έκδοσης
+        config_save_error: Σφάλμα κατά την αποθήκευση ρυθμίσεων.  Ανατρέξτε στο ημερολόγιο για λεπτομέρειες.
+        upload_saved_config: Μεταφόρτωση αποθηκευμένων ρυθμίσεων.
+        restore_config_error: Σφάλμα αποκατάστασης ρυθμίσεων.  Ανατρέξτε στο ημερολόγιο για λεπτομέρειες.
+        tar_error: Σφάλμα κατά την εκκαθάριση των ρυθμίσεων %{tar_status} %{tar_out}
+        untar_error: Σφάλμα untarring config %{untar_status} %{untar_stdout}
+    aspera_license_reader:
+      no_license_found: Δεν βρέθηκε καμία άδεια χρήσης ή άδεια χρήσης.
+      license_signature_mismatch: Η υπογραφή άδειας χρήσης δεν συμφωνεί με το περιεχόμενο
+      not_faspex_license: Η άδεια χρήσης δεν είναι Faspex
+      expired_license: Η άδεια έληξε.
+      bad_expiration_license: Η άδεια χρήσης δεν έχει ημερομηνία λήξης.
+      valid_license: Το License είναι έγκυρο
+      invalid_license: Μη έγκυρη άδεια
+    directory_services:
+      active_directory:
+        active_directory: Active Directory
+        microsoft_active_directory: Active Directory της Microsoft
+      apple_open_directory:
+        apple_open_directory: Άνοιγμα καταλόγου Apple
+        open_directory: 'Άνοιγμα καταλόγου:'
+      red_hat:
+        fedora_directory: 389/Red Hat/Εξυπηρετητής καταλόγου Fedora
+        red_hat_directory: Εξυπηρετητής καταλόγου Red Hat
+    membership_methods:
+      dropbox_admin: Dropbox Admin
+      wg_admin: Ομάδα εργασίας Admin
+      standard: 'Πρότυπο:'
+      submit_only: Υποβολή-Μόνο
+      set_to_standard_access: Ορισμός χρήστη σε τυπική πρόσβαση
+      set_to_submit_access: Ορισμός πρόσβασης χρήστη-μόνο πρόσβαση
+      set_user_as_admin: 'Ορισμός χρήστη ως διαχειριστή # {wg_name}'
+    packages:
+      package_methods:
+        HTTP_upload_in_progress: Η μεταφόρτωση HTTP βρίσκεται σε εξέλιξη, θα ακυρωθεί αν απομακρυνθείτε από αυτή τη σελίδα.
+        new_package: 'Νέο πακέτο:'
+        return_to_history: Επιστροφή στην ιστορία
+        return_to_list: Επιστροφή στη λίστα
+        send_to_dropbox: 'Αποστολή στο Dropbox: %{d_addr_name}'
+  number:
+    currency:
+      format:
+        delimiter: ","
+        format: "%u%n"
+        precision: 2
+        separator: "."
+        significant: false
+        strip_insignificant_zeros: false
+        unit: "$"
+    format:
+      delimiter: ","
+      precision: 3
+      separator: "."
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: "%n %u"
+        units:
+          billion: Δισ.
+          million: Εκατ.
+          quadrillion: Τετραμ.
+          thousand: Χίλια ...
+          trillion: Τρισεκατομμύρια.
+          unit: ''
+      format:
+        delimiter: ''
+        precision: 1
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one: Byte.
+            other: Bytes.
+          eb: EB
+          gb: GB
+          kb: KB
+          mb: MB
+          pb: PB
+          tb: TB
+    percentage:
+      format:
+        delimiter: ''
+        format: "%n%"
+    precision:
+      format:
+        delimiter: ''
+  public:
+    javascripts:
+      admin:
+        authorization_domains:
+          form:
+            save: 'Αποθήκευση:'
+            save_and_test: 'Αποθήκευση και δοκιμή:'
+  support:
+    array:
+      last_word_connector: ", και "
+      two_words_connector: " και "
+      words_connector: ", "
+  time:
+    am: π.
+    formats:
+      default: "%a, %d %b %Y %H:%M:%S %z"
+      long: "%B %d, %Y %H:%M"
+      short: "%d %b %H:%M"
+    pm: μ.μ.

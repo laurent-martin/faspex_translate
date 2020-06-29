@@ -1,0 +1,3014 @@
+---
+hi:
+  activerecord:
+    models:
+      node: आसंधि
+      share: फ़ाइल भंडारण
+      distribution_list: वितरण सूची
+      authorization_domain: निर्देशिका सेवा
+      metadata_profile: मेटाडाटा प्रोफ़ाइल
+      metadata_field: मेटाडाटा क्षेत्र
+    attributes:
+      authorization_domain:
+        host: सर्वर पता
+        port: पोर्ट
+        treebase: ट्रेबेज़
+        login: लॉगइन
+        password: पासवर्ड
+      c_configuration:
+        encrypt_transfers: हस्तांतरण एन्क्रिप्ट करें
+        c_ssh_tcp_port: SSH TCP पोर्ट
+        c_fasp_udp_port: फाम्प यूडीपी पोर्ट
+        http_fallback_port: HTTP फॉलबैक पोर्ट
+        c_kbps_initial_target_upload_rate: प्रारंभिक अपलोड दर
+        c_kbps_initial_target_download_rate: प्रारंभिक डाउनलोड दर
+        c_kbps_max_target_upload_rate: अधिकतम अपलोड दर
+        c_kbps_max_target_download_rate: अधिकतम डाउनलोड दर
+        c_lock_minrate_policy: लाक न्यूनतम दर और नीति
+        c_relay_outgoing_bandwidth: बहिर्गामी बैंडविड्थ
+        c_relay_incoming_bandwidth: आने वाली बैंडविड्थ रिले
+        min_connect_version_major: न्यूनतम कनेक्ट संस्करण
+        min_connect_version_minor: न्यूनतम कनेक्ट संस्करण
+        min_connect_version_point: न्यूनतम कनेक्ट संस्करण
+        http_fallback_enabled: HTTP फॉलबैक सक्षम करें
+        downloads_during_transfers_enabled: स्थानांतरण के दौरान डाउनलोड सक्षम करें
+      m_configuration:
+        email_from_email: फेपेक्स "फ्क्रोः" ईमेल
+        m_smtp_server_port: सर्वर पोर्ट
+        m_smtp_auth_type: SMTP सत्यापन
+        m_smtp_server: एसएमटीपी मेल सर्वर
+        use_tls: TLS प्रयोग करें यदि उपलब्ध है
+        m_smtp_helo_domain: डोमेन
+        m_smtp_username: उपयोगकर्ता (डोमेन शामिल करें)
+        smtp_password: पासवर्ड
+        email_from: फेपेक्स "फ्क्रोः" नाम
+        package_received_notifications_from: पैकेज प्राप्तकर्ता "से"
+      e_configuration:
+        ad_proxy_host: सक्रिय निर्देशिका प्रॉक्सी होस्ट
+        ad_proxy_port: सक्रिय निर्देशिका प्रॉक्सी पोर्ट
+        announcement: संदेश
+        dbox_can_override_ear: ड्रॉपबॉक्स को स्वयं के गोपन सेटिंग के लिए अनुमति देता
+          है
+        can_override_ear_per_personal_invite: बाहरी प्रेषक आमंत्रण के लिए मनपसंद गोपन
+          सेटिंग स्वीकारें (A)
+        e_http_port: एचटीटीपी पोर्ट
+        e_https_port: TTPS पोर्ट
+        e_server_address: सर्वर का बाहरी पता या नाम
+        e_server_enable_alternate_address: वैकल्पिक पता सक्षम करें
+        e_server_emails_include_alternate_address: ईमेल में वैकल्पिक पता शामिल हैं
+        email_passcode_expires: पैकेज कड़ी की अवधि समाप्त
+        email_passcode_days_valid: के बाद समाप्त
+        email_passcode_expire_after_download: पूर्ण पैकेज डाउनलोड के बाद समाप्त करें
+        registration_type: स्व पंजीकरण
+        registration_approval_ccs: सूचित करने के लिए निम्नलिखित ईमेल को सूचित करें
+        registration_external_use_default: बाहरी उपयोगकर्ताओं के लिए डिफ़ॉल्ट पंजीकरण
+          नीति का उपयोग करें
+        registration_type_external: बाहरी उपयोगकर्ताओं के लिए पंजीकरण नीति
+        registration_approval_ccs_external: बाहरी उपयोगकर्ताओं को अनुमोदित करने के
+          लिए निम्नलिखित ईमेल को अधिसूचित करें
+        tos_external: बाहरी उपयोगकर्ताओं के लिए सेवा की शर्तें
+        package_instructions: संदेश
+        tos: सेवा की शर्तें
+        use_strong_password: मजबूत पासवर्ड का उपयोग करें
+        force_password_reset_for_new_users: पहले लॉगिन पर कूटशब्द बदलने के लिए नए
+          उपयोक्ता की आवश्यकता है
+        allow_users_to_unlock: उपयोगकर्ताओं को अपने आप को अनलॉक करने की अनुमति दें
+        session_timeout: सत्र समय समाप्ति के बाद
+        allow_send_to_email: बाहरी ईमेल पता भेजने की अनुमति दें
+        allow_request_from_email: निमंत्रण की अनुमति दें
+        registered_users_have_mutual_scope: स्वयं पंजीकृत उपयोगकर्ता एक दूसरे को भेज
+          सकते हैं
+        inviting_allowed: बाहरी संदेश को आमंत्रित करने की अनुमति दें
+        hide_user_dir_default: उपयोक्ता निर्देशिका निजी को डिफ़ॉल्ट से रखें
+        public_url_allowed: सार्वजनिक सबमिशन यूआरएल स्वीकारें
+        dbox_can_override_public_url: ड्रॉपबॉक्स को व्यक्तिगत रूप से सक्षम/अक्षम अपने
+          सार्वजनिक यूआरएल को सक्षम करें
+        public_url_home_server_id: सार्वजनिक यूआरएल के लिए होम सर्वर
+        automatically_login_using_saml_idp: एक SAML पहचान प्रदाता का उपयोग करके लॉग
+          इन करें
+        saml_idp_sso_target_url: आईडीपी एकल साइन-ऑन यूआरएल
+        saml_idp_slo_target_url: IdP एकल लॉग ऑफ यूआरएल
+        saml_idp_cert_fingerprint: डीईपी प्रमाणपत्र फिंगरप्रिंट
+        saml_idp_cert: IdP प्रमाणपत्र
+        can_see_global_distribution_lists_default: उपयोगकर्ता डिफ़ॉल्ट रूप से वैश्विक
+          वितरण सूची देख सकते हैं
+        tos_for_sending: भेजने के लिए सेवा की शर्तें
+        remove_ds_users_on_inactivity: DS उपयोक्ता हटाएं
+        remove_saml_users_on_inactivity: SAML उपयोक्ता मिटाएँ
+      e_workgroup:
+        e_wg_name: नाम
+        e_wg_desc: वर्णन
+        workgroup_received_notification_cc: इन पतों को प्राप्त करने के लिए रसीद की
+          प्रतिलिपि भेजें
+        destination_share_id: डिफ़ॉल्ट इनबॉक्स
+      invitation:
+        expires_at: समय समाप्त होने तक
+      node:
+        alternate_address: द्वितीयक पता या नाम
+        alternate_address_client_filter: यदि मांग है तो उपयोग करें
+        alternate_address_server_filter: यदि ब्राउज़र होस्टनाम मैच का उपयोग करें
+        api_password: पासवर्ड
+        api_port: पोर्ट
+        api_username: उपयोक्ता नाम
+        enable_alternate_address: द्वितीयक पता सक्षम करें
+        encrypted_api_password: पासवर्ड
+        host: मेजबान
+        name: नाम
+        primary_address: प्राथमिक अंतरण पता या नाम
+        ssl: SSL का उपयोग करें?
+        verify_ssl: SSL प्रमाणपत्र सत्यापित करें?
+      share:
+        kbps_initial_target_upload_rate: प्रारंभिक अपलोड दर
+        kbps_initial_target_download_rate: प्रारंभिक डाउनलोड दर
+        lock_minrate_policy: लाक न्यूनतम दर और नीति
+        kbps_max_target_upload_rate: अधिकतम अपलोड दर
+        kbps_max_target_download_rate: अधिकतम डाउनलोड दर
+        relay_incoming_bandwidth: आने वाली रिले दर
+        relay_outgoing_bandwidth: जावक रिले दर
+      e_package:
+        e_package_name: शीर्षक
+      delivery:
+        metadata: 'अवैध मेटाडाटा: '
+        sources: ''
+        ear_passphrase: कूटशब्द
+        tos_for_sending: सेवा की शर्तें
+      registration:
+        name: लॉगइन
+        email: ई मेल
+        first_name: प्रथम नाम
+        last_name: अंतिम नाम
+        tos_agreement: मैं सेवा की शर्तों को स्वीकार करता हूँ
+      metadata_field:
+        label: लेबल
+      post_process:
+        active: सक्रिय
+        name: नाम
+        script_path: सर्वर पर स्क्रिप्ट का पथ
+        package_name: पैकेज नाम
+        sender_name: प्रेषक का नाम
+        sender_email: प्रेषक ईमेल
+        recipient_name: प्राप्तकर्ता सूची
+        recipient_email: प्राप्तकर्ता ईमेल सूची
+        package_note: पैकेज नोट
+      ad_group:
+        kbps_initial_target_upload_rate: प्रारंभिक अपलोड दर (केबीपीएस)
+        kbps_initial_target_download_rate: प्रारंभिक डाउनलोड दर (केबीपीएस)
+        kbps_max_target_upload_rate: अधिकतम अपलोड दर (केबीपीएस)
+        kbps_max_target_download_rate: अधिकतम डाउनलोड दर (केबीपीएस)
+        lock_minrate_policy: लाक न्यूनतम दर और नीति
+        can_invite: बाहरी संदेश को आमंत्रित करने की अनुमति दें
+        dn: डीएन
+      directory_service_group:
+        kbps_initial_target_upload_rate: प्रारंभिक अपलोड दर (केबीपीएस)
+        kbps_initial_target_download_rate: प्रारंभिक डाउनलोड दर (केबीपीएस)
+        kbps_max_target_upload_rate: अधिकतम अपलोड दर (केबीपीएस)
+        kbps_max_target_download_rate: अधिकतम डाउनलोड दर (केबीपीएस)
+        lock_minrate_policy: लाक न्यूनतम दर और नीति
+      user:
+        name: लॉगइन
+        email: ई मेल
+        password: पासवर्ड
+        password_confirmation: पासवर्ड की पुष्टि
+        kbps_initial_target_upload_rate: प्रारंभिक अपलोड दर (केबीपीएस)
+        kbps_initial_target_download_rate: प्रारंभिक डाउनलोड दर (केबीपीएस)
+        kbps_max_target_upload_rate: अधिकतम अपलोड दर (केबीपीएस)
+        kbps_max_target_download_rate: अधिकतम डाउनलोड दर (केबीपीएस)
+        lock_minrate_policy: लाक न्यूनतम दर और नीति
+        rows_per_page: अधिकतम पंक्ति प्रति पृष्ठ
+        disable_connect: कनेक्ट कनेक्ट प्लगिन निष्क्रिय करें (D)
+        account_activated: सक्रिय खाता
+        account_expires: खाता अवधि समाप्त
+        self_destructs: खाता ऑटो-डेसिटीज खाता
+        destruction_date: विलोपन तिथि
+        received_notification_cc: इन पतों को प्राप्त करने के लिए रसीद की प्रतिलिपि
+          भेजें
+        allow_receipt_cc_edit: पैकेज सृजन पर प्राप्ति पतों के संपादन की अनुमति दें
+          ।
+        uploads_allowed: पैकेज अपलोड करें
+        downloads_allowed: पैकेज डाउनलोड करें
+        forwarding_allowed: अग्रेषित पैकेज
+        can_create_from_remote: दूरस्थ स्रोतों से संकुल बनाएँ
+        can_send_to_all_faspex_users: सभी फाक्स उपयोगकर्ताओं को भेज सकते हैं
+        can_send_to_external_email: बाहरी ईमेल पर भेज सकते हैं
+        can_invite: बाहरी संदेश को आमंत्रित करने की अनुमति दें
+        notify_on_receive: मुझे ईमेल जब मैं एक पैकेज प्राप्त
+        notify_on_validation_failure_if_sender: ईमेल यदि भेजने में विफल रहा है तो
+          मुझे ईमेल करें
+        notify_on_validation_failure_if_recipient: ईमेल प्राप्त करने में विफल रहने
+          के लिए मुझे ईमेल करें
+        notify_downloader_on_download: मुझे ईमेल जब मैं एक पैकेज डाउनलोड
+        notify_on_workgroup_package_if_sender: मुझे वर्कग्रुप अधिसूचना में शामिल करें
+          पैकेज के लिए मैं भेजने के लिए
+        suppress_connect_install_dialog: संस्थापन/अद्यतन संकेतक को दबाने से
+        allowed_ip_addresses_for_login: लॉगिन के लिए आईपी पते की अनुमति दी
+        allowed_ip_addresses_for_download: डाउनलोड के लिए आईपी पते की अनुमति दी
+        allowed_ip_addresses_for_upload: अपलोड के लिए आईपी पते की अनुमति दी
+        last_remote_addr: अंतिम लॉगिन क्लाइंट पता
+        last_server_addr: अंतिम लॉगिन सर्वर पता
+        override_transfer_parameters: डिफ़ॉल्ट सेटिंग को ओवरराइड करें
+        override_server_delete_after_download: तंत्र तयशुदा ओवरराइड करें
+        welcome_email: स्वागत संदेश भेजें
+        created_at: पर बनाया गया
+        updated_at: अद्यतन पर अद्यतन
+        type: उपयोक्ता प्रकार
+        description: टिप्पणी
+        allow_user_specified_delete_after_download: उपयोक्ता को पैकेज-द्वारा-पैकेज
+          के आधार पर अपने आप को हटाने की अनुमति दें
+        enable_public_url: सार्वजनिक यूआरएल सक्षम करें
+        can_have_public_url: सार्वजनिक सबमिशन यूआरएल स्वीकारें
+      local_user:
+        password_expiration_interval: पासवर्ड समाप्त होता है हर
+      template_user:
+        days_til_expiration: नया खाता समाप्त हो जाएगा
+        days_til_destruction: नया खाता मिटा दिया जाएगा
+      home_server_rule:
+        email_pattern: ईमेल पता रेलेक्स
+        user_name_pattern: उपयोक्ता नाम रेग्युलर
+        ad_group_pattern: निर्देशिका सेवा समूह रीलेक्स
+        ad_dn_pattern: सेवा सेवा
+        ldap_field_pattern1: एलडीएपी फील्ड रीलेक्स
+        ldap_field_pattern2: एलडीएपी फील्ड रीलेक्स
+        ldap_field_pattern3: एलडीएपी फील्ड रीलेक्स
+      send:
+        upload_cc: इन प्राप्तकर्ताओं को सूचित किया जाएगा जब इस पैकेज को अपलोड किया
+          गया है
+        download_cc: इन प्राप्तकर्ताओं को सूचित किया जाएगा जब प्राप्तकर्ता ने इस पैकेज
+          को डाउनलोड किया है
+        receipt_cc: ये प्राप्तकर्ता Cc होगा, प्राप्तकर्ता पैकेज पर ईमेल प्राप्त किया
+          जाएगा
+    errors:
+      format: "%{attribute} %{message}"
+      e_configuration:
+        idp_cert_and_idp_cert_fingerprint_blank: '"आईडीपी प्रमाणपत्र फिंगरप्रिंट"
+          या "ईडीपी प्रमाणपत्र" प्रदान किया जाना चाहिए.'
+      models:
+        delivery:
+          attributes:
+            title:
+              blank: शीर्षक खाली नहीं किया जा सकता है
+        distribution_list:
+          attributes:
+            name:
+              blank: नाम खाली नहीं किया जा सकता है
+            contacts:
+              blank: संपर्क खाली नहीं हो सकता है
+        e_configuration:
+          attributes:
+            max_title_length_in_storage_paths:
+              not_a_number: भंडारण पथ में अधिकतम शीर्षक लंबाई एक संख्या नहीं है
+            days_until_packages_expire:
+              not_a_number: दिन जब तक कि पैकेजों की मियाद संख्या नहीं है एक संख्या
+        saml_configuration:
+          attributes:
+            allowed_clock_drift_in_ms:
+              not_a_number: अनुमति घड़ी में घड़ी बहाव एक संख्या नहीं है
+      messages:
+        accepted: स्वीकार्य होना चाहिए
+        blank: खाली किया जा सकता है
+        confirmation: My_sine_YM से मेल नहीं खाता है
+        empty: खाली नहीं हो सकता
+        equal_to: "%{count} के बराबर होना चाहिए"
+        even: भी होना चाहिए
+        exclusion: आरक्षित है
+        greater_than: My_count_YM से अधिक होना चाहिए
+        greater_than_or_equal_to: My_count_YM से अधिक या बराबर होना चाहिए
+        inclusion: सूची में शामिल नहीं है
+        invalid: अवैध है
+        less_than: "%{count} से कम होना चाहिए"
+        less_than_or_equal_to: "%{count} से कम या बराबर होना चाहिए"
+        model_invalid: 'वैधता विफल: %{errors}'
+        not_a_number: संख्या नहीं है
+        not_an_integer: एक पूर्णांक ही होना चाहिए
+        odd: विषम होना चाहिए
+        other_than: My_count_YM के अलावा अन्य होना चाहिए
+        present: खाली होना चाहिए
+        record_invalid: 'वैधता विफल: %{errors}'
+        restrict_dependent_destroy:
+          has_many: अभिलेख मिटा नहीं सकता है क्योंकि आश्रित My_redre_yM मौजूद है
+          has_one: अभिलेख मिटा नहीं सकता है क्योंकि एक आश्रित %{breg} मौजूद है
+        required: होना चाहिए
+        taken: पहले ही लिया गया है
+        too_long:
+          one: बहुत लंबा है (अधिकतम है 1 अक्षर)
+          other: बहुत लंबा है (अधिकतम %{count} अक्षर)
+        too_short:
+          one: बहुत छोटा है (न्यूनतम है 1 अक्षर)
+          other: बहुत छोटा है (न्यूनतम है %{count} अक्षर)
+        wrong_length:
+          one: गलत लंबाई है (होना चाहिए 1 अक्षर होना चाहिए)
+          other: गलत लंबाई है (होना चाहिए %{count} अक्षर)
+      template:
+        body: 'निम्नलिखित क्षेत्रों के साथ समस्याएं थीं:'
+        header:
+          one: 1 त्रुटि के कारण इस %{Syst_} को बचाया जा रहा है
+          other: "%{count} त्रुटि इस %{saly} को बचाया जा रहा है निषिद्ध"
+      user:
+        groups_are_inactive: समूह आप निष्क्रिय कर रहे हैं के एक सदस्य हैं
+        user_is_inactive: उपयोक्ता निष्क्रिय है
+        username_conflicts_with_existing_user: मौजूदा उपयोगकर्ता खाते के साथ परस्पर
+          संपर्क (A)
+  admin:
+    saml:
+      edit:
+        saml: एसएएमएल
+        automatically_login_using_saml_idp_hint: SAML पहचान प्रदाता का उपयोग करके
+          स्वचालित लॉग इन करें.  %{urll} का उपयोग सीधे फाक्स में लॉग इन करने के लिए
+          किया जा सकता है, यहां तक कि SAML का उपयोग करके स्वचालित लॉगिन सक्षम हो जाता
+          है.
+    saml_configurations:
+      edit:
+        domain_url_hint: "(वैकल्पिक) इस एफपेक्स डोमेन पर पहुँचने के दौरान, उपयोगकर्ताओं
+          को स्वचालित रूप से इस SAML प्रदाता (ओवरसवारी डिफ़ॉल्ट) के माध्यम से लॉगिन
+          के लिए निर्देशित किया जाएगा"
+        publicly_visible_hint: उपयोगकर्ताओं को स्थानीय लॉगिन पृष्ठ से इस SAML विन्यास
+          तक पहुँचने की अनुमति दें
+      test_warning: |-
+        चेतावनी: यह क्रिया आपके वर्तमान फेसपेक्स सत्र को समाप्त करेगी और आपको इस SML प्रदाता के लिए लॉगिन पृष्ठ पर निर्देशित करेगी.
+
+        अपने मौजूदा सत्र को समाप्त करने से बचने के लिए, आप इस लिंक को एक निजी विंडो में या इस विन्यास का परीक्षण करने के लिए एक अलग ब्राउज़र में खोल सकते हैं.
+  app:
+    controllers:
+      account:
+        ad_groups_controller:
+          added_group: कार्य समूह में %{ग्रुप_नाम} समूह को जोड़ा
+          sync_group: "%{blis_ni} का तुल्यकालन कर रहा है"
+          updated_grp_prov: अद्यतन समूह प्रावधान नीति ।
+          updated_grp_import: अद्यतन समूह आयात नीति.
+          updated_error: "%{ग्रुप_ni} समूह विन्यास सहेजने में त्रुटि:<br/>"
+          removed_group: कार्यसमूह से %{ग्रुप_नाम} समूह को हटा दें.
+          wg_not_found: कार्यसमूह नहीं मिला
+          no_groups_selected: कोई समूह चयनित नहीं
+          group_sched_activated: सक्रिय होने के लिए %{ग्रुप_नाम} (_YM)
+          group_sched_deactivated: सूची को निष्क्रिय करने के लिए %{ग्रुप_नाम} (_YM)
+          group_sched_removed: हटाए जाने के लिए %{ग्रुप_नाम}
+        memberships_controller:
+          added_wg: समूह-%{wg_ni} को कार्यसमूह में जोड़ा (_W)
+          added_wg_fail: टैम्प्लेट उपयोक्ता को वर्कग्रुप-%{wg_ni} में जोड़ नहीं सका
+          remove_wg: को कार्यस्थान-%{wg_ni} से हटा दिया गया
+          remove_wg_fail: कार्यसमूह-%{wg_ni} से टेम्प्लेट उपयोगकर्ता को हटा नहीं सका
+        saml_groups_controller:
+          added_group: जोड़े गए समूह MY_blis_nM
+        users_controller:
+          no_wg_found: कार्य समूह नहीं पा सका
+          add_to_wg_fail: 'कार्यसमूह में जोड़ने में त्रुटि: %{error}'
+          removed_from_wg: कार्यसमूह से हटा दिया गया.
+          removed_from_wg_fail: 'कार्य समूह से उपयोगकर्ता को हटाने में त्रुटि: %{error}'
+          user_membership_updated: उपयोगकर्ता सदस्यता अद्यतन.
+          error_editing_membership: 'सदस्यता संपादन में त्रुटि: %{error}'
+          created_user: सफलतापूर्वक बनाया गया उपयोक्ता %{user_ni}
+          created_user_fail: उपयोक्ता जोड़ नहीं सका.
+          updated_user: सफलतापूर्वक अद्यतन उपयोगकर्ता %{user_ni}
+          permission_error: आपके पास उपयोक्ता %{user_ni} को संशोधित करने की अनुमति
+            नहीं है
+          activated: सक्रिय करें %{user}
+          disabled_saml_user_note: "<br>नोट: अक्षम SCML विन्यास से जुड़े उपयोक्ता
+            निष्क्रिय रहते हैं"
+          deactivated: निष्क्रिय %{user}
+          removed: "%{user} हटाया गया"
+          removed_external: "%{user} हटाया गया"
+          no_users_selected: कोई उपयोक्ता चयनित नहीं
+          active_users: सक्रिय उपयोक्ता
+          all_users: सभी उपयोक्ता
+          inactive_users: निष्क्रिय उपयोक्ता
+      admin:
+        authorization_domains_controller:
+          updated: विन्यास अद्यतन.
+        nodes_controller:
+          deleted: "%{नेम} मिटाया"
+          deleted_fail: "%{nie} को हटाने के लिए अधिकृत नहीं"
+          connection_fail: "%{message}<br />%{statU}<br />%{statU_message}"
+          connection_success: "%{messageb} <br /> कनेक्शन सफल हुआ!"
+        notifications:
+          login_announcements_controller:
+            updated: अद्यतन लॉगिन घोषणा
+          package_instructions_controller:
+            updated: अद्यतन पैकेज अनुदेश
+        packages_controller:
+          invalid_num_days: दिन की अवैध संख्या
+          no_older_pkgs: My_Max_YM से अधिक कोई पैकेज पुराना नहीं है
+        post_processes_controller:
+          activated: सक्रिय %{Script_ni}
+          activated_error: "%{स्क्रिप्ट_ni} सक्रिय करते समय त्रुटि हुई"
+          created: पोस्ट-प्रोसेसिंग स्क्रिप्ट %{स्क्रिप्ट_नाम} सफलतापूर्वक बनाया गया
+          deleted: हटा दिया गया पोस्ट-प्रोसेसिंग स्क्रिप्ट %{Script_ni}
+          inactivated: सक्रिय %{Script_ni}
+          inactivated_error: "%{Script_ni} सक्रिय करते समय त्रुटि हुई"
+          updated: स्क्रिप्ट को सफलतापूर्वक अद्यतन किया जा रहा है %{स्क्रिप्ट_ni}
+        saml_configurations_controller:
+          create_success: 'सफलतापूर्वक SAML विन्यास<br>NNOTE बनाया: लॉग इन करने से
+            पहले आप SAML सर्वर पर मेटाडाटा अद्यतन करना चाहिए.'
+          update_success: 'SAML विन्यास को सफलतापूर्वक अद्यतन किया जा रहा है<br>NOTE:
+            आपको लॉग इन करने से पहले SAML सर्वर पर मेटाडेटा अद्यतन करने की आवश्यकता
+            हो सकती है.'
+        settings:
+          display_settings_controller:
+            file_too_large: फ़ाइल बहुत बड़ा है. अधिकतम फ़ाइल आकार 5MB है
+            remove_logo_fail: मनपसंद लोगो फ़ाइल को मिटाने में असमर्थ
+            remove_logo_success: पसंदीदा लोगो फ़ाइल को सफलतापूर्वक हटा दिया
+            unsupported_file_type: कस्टम लोगो के लिए असमर्थित fileetype. फ़ाइल एक
+              jpeg, Gif, या png छवि होना चाहिए.
+            updated_settings: अद्यतन प्रदर्शन विन्यास
+          entitlement_controller:
+            invalid_license: अवैध हकदारी लाइसेंस
+            successful_entitlement: सफल पात्रता
+            unable_to_register: रजिस्टर करने में असमर्थ
+          global_distribution_lists_controller:
+            created: वैश्विक वितरण सूची %{ni} बनाया
+            deleted: मिटाई गई वैश्विक वितरण सूची
+            updated: अद्यतन वैश्विक वितरण सूची
+            updated_fail: एक या अधिक वैश्विक वितरण सूची अद्यतन करने में त्रुटि
+          license_controller:
+            license_upload_fail: लाइसेंस अपलोड असफल
+            only_text_allowed: सिर्फ पाठ फ़ाइलों की अनुमति दी
+            updated_license: अद्यतन लाइसेंस
+          package_storage_controller:
+            updated_settings: अद्यतन पैकेज भंडारण विन्यास
+          save_restore_config_controller:
+            config_restored: विन्यास बहाल. इस प्रक्रिया को पूरा करने के लिए फाक्स
+              को फिर से शुरू करने के लिए सुनिश्चित
+          security_controller:
+            updated_settings: अद्यतन सुरक्षा विन्यास
+          transfer_options_controller:
+            updated_settings: अद्यतन स्थानांतरण विकल्प विन्यास
+          web_server_controller:
+            updated_settings: अद्यतन वेब सर्वर विन्यास
+        share_membership_controller:
+          deleted: My_mem_ni_YM को मिटाया
+          deleted_fail: My_mem_ni_YM को मिटाया नहीं जा सका
+        shares_controller:
+          add_term_fail: "%{Term} को जोड़ नहीं सका"
+          added_term: जोड़ा गया %{Term}
+          created: My_biw_YM %{bi_ni} बनाया
+          deleted: "%{शेयर} मिटाया जा रहा है"
+          find_fail: "%{terrm} नहीं मिला"
+          updated: अद्यतन %{शेयर} %{शेयर_ny}
+          updated_default: अद्यतनीकृत किया गया डिफ़ॉल्ट इनबॉक्स
+      authenticated_controller:
+        expired: आपका सत्र समाप्त हो गया है. जारी रखने के लिए फिर से लॉग इन करें.
+        new_session: उपयोगकर्ता %{userni} के लिए एक और सत्र शुरू किया गया है (%{uptt})
+        timed_out: आपका सत्र समय समाप्त हो गया है. जारी रखने के लिए फिर से लॉग इन
+          करें.
+      entitlement_controller:
+        success: सफल पात्रता
+      external:
+        submissions_controller:
+          send_to_recipient: एमवाई_नाम_YM को भेजें
+      invitations_controller:
+        invitation_failed: निमंत्रण असफल. कृपया बाद में पुनः प्रयास करें.
+        invitation_created: "%{EMAIL} बनाया के लिए आमंत्रण भेजा"
+        reinvited: "%{ni} के लिए आमंत्रण को फिर से आमंत्रित किया"
+        reinvited_fail: पुनः आमंत्रित असफल. कृपया बाद में पुनः प्रयास करें.
+        resend_invitation_failed: Ressend आमंत्रण असफल रहा. कृपया बाद में पुनः प्रयास
+          करें.
+        resent_invitation: "%{ni} को आमंत्रण भेजा जा रहा है"
+        deleted_invitation: मिटाई निमंत्रण
+        deleted_invitation_try_again: निमंत्रण मिटाना असफल. कृपया बाद में पुनः प्रयास
+          करें.
+      login_base_controller:
+        login_error_message: आपका लॉगिन असफल रहा. कृपया फिर कोशिश करें. यदि आप बार-बार
+          लॉगिन विफलताओं का अनुभव कर रहे हैं तो आपको अपना पासवर्ड रीसेट करने के लिए
+          'फॉल पासवर्ड' लिंक क्लिक करना चाहिए.
+      login_controller:
+        connect_enabled: आईबीएम एस्पेरा कनेक्ट किया गया है!
+        login_URL_change: लॉगिन URL बदल गया है. कृपया अपने ब्राउज़र बुकमार्क अद्यतन
+          करें.
+        session_already_disconnected: यह सत्र पहले से डिस्कनेक्ट हो चुका है
+      m_configuration_controller:
+        updated: डाक विन्यास अद्यतन.
+      m_template_controller:
+        loaded: डिफ़ॉल्ट विन्यास सफलतापूर्वक लोड किया गया
+        updated: एमवाई_टेम्प्लैट_वाईएम ई-मेल अधिसूचना को सफलतापूर्वक अद्यतन किया गया
+      metadata_profiles_controller:
+        cannot_delete_profile: प्रोफाइल मिटा नहीं सकता है, यह सामान्य पैकेजों द्वारा
+          प्रयोग किया जाता है.
+        cannot_delete_profile_dropbox: प्रोफाइल मिटा नहीं सकता है, यह ड्रॉपबॉक्स %{db_ni}
+          के द्वारा प्रयोग किया जाता है.
+        created: मेटाडेटा %{profile} बनाया गया
+        profile_deleted: प्रोफ़ाइल हटा दिया गया.
+        save_success: मेटाडाटा प्रोफ़ाइल सफलतापूर्वक सहेजा
+        updated: अद्यतनीकृत
+      ms_admin_controller:
+        home_server_rules_changed: होम सर्वर नियम बदल गए हैं. परिवर्तनों को लागू करने
+          के लिए होम सर्वर को फिर से गणना करें.
+        updated_rule: अद्यतन नियम
+        deleted_rule: विलोपित नियम
+        added_new_rule: नया नियम जोड़ा गया
+        error_finding_home_server: मिटाने के लिए घर सर्वर को खोजने में त्रुटि
+        removed_server: हटाए गए सर्वर
+        updated_home_server_settings: अद्यतन गृह सर्वर सेटिंग
+        updated_attributes: अद्यतन %{ins}
+        access_denied: पहुँच अस्वीकृत.
+      pending_controller:
+        archived: पैकेज "%{pkg_none}" Archived
+        archived_fail: पैकेज पैकेज में त्रुटि. कृपया बाद में पुनः प्रयास करें.
+        deleted: पैकेज "%{pkg_ni}" हटा दिया गया
+        deleted_fail: पैकेज मिटाने में त्रुटि. कृपया बाद में पुनः प्रयास करें.
+      received_controller:
+        package_archived: पैकेज %{p_ni} Archived a
+        package_archived_fail: पैकेज पैकेज में त्रुटि. कृपया बाद में पुनः प्रयास करें.
+      registrations_controller:
+        failed_registration: पंजीकरण असफल. कृपया बाद में पुनः प्रयास करें.
+      reset_password_tokens_controller:
+        no_account_exists: यह खाता अब मौजूद नहीं है.
+        expired_pw_link: आपका पासवर्ड रीसेट लिंक पहले से ही उपयोग किया गया है या समाप्त
+          हो गया है और अब मान्य नहीं है.
+        reset_success: आपका पासवर्ड सफलतापूर्वक रीसेट कर दिया गया है!
+        reset_submitted: पासवर्ड रीसेट अनुरोध प्रस्तुत किया गया. यदि आप जल्दी ही एक
+          ईमेल नहीं प्राप्त करते हैं, सहायता के लिए अपने व्यवस्थापक से संपर्क करें.
+      saml_controller:
+        does_not_exist: निवेदित SAML प्रदाता मौजूद नहीं है
+        disabled: निवेदित SAML प्रदाता अक्षम कर दिया गया है
+        invalid_metadata: अवैध मेटाडाटा URL
+      sent_controller:
+        archived: पैकेज "%{pkg_none}" Archived
+        archived_fail: पैकेज पैकेज में त्रुटि. कृपया बाद में पुनः प्रयास करें.
+        deleted: पैकेज "%{pkg_ni}" हटा दिया गया
+        deleted_fail: पैकेज मिटाने में त्रुटि. कृपया बाद में पुनः प्रयास करें.
+        relay: "%{शेयर} को साझा करने के लिए रिले शुरू"
+        relay_fail: रिले दौड़ में सुधार करने में त्रुटि. कृपया बाद में पुनः प्रयास
+          करें.
+      settings:
+        distribution_lists_controller:
+          created: वितरण सूची %{dist_list_ni}
+          deleted: विलोपित वितरण सूची
+          updated: अद्यतन वितरण सूची
+          error_updating: एक या अधिक वितरण सूची को अद्यतन करने में त्रुटि
+        passwords_controller:
+          success: पासवर्ड सफलतापूर्वक बदला गया.
+        preferences_controller:
+          updated: प्राथमिकताएं अद्यतन
+      user_profile_fields_controller:
+        max_field_check_fail: आप केवल %{MY} उपयोगकर्ता प्रोफ़ाइल क्षेत्र के लिए हो
+          सकता है
+        saved: उपयोगकर्ता प्रोफ़ाइल क्षेत्रों को सफलतापूर्वक सुरक्षित किया
+      workgroup:
+        workgroups_controller:
+          activate: सक्रिय करें
+          activated_members: सक्रिय %{count} membmy_munal_YM. %{msg}
+          add_ds: डीएस समूह को जोड़ने में अक्षम. कृपया बाद में पुनः प्रयास करें.
+          add_ds_fail: एमवाई_नेम_YM के लिए DS समूह %{ग्रुप} जोड़ा (_l)
+          add_member: "%{box} से %{bix} में जोड़ा (_h)"
+          add_member_fail: सदस्य जोड़ने में असमर्थ. कृपया बाद में पुनः प्रयास करें.
+          create_success: 'सफलतापूर्वक बनाया गया '
+          deactivate: निष्क्रिय करें
+          deactivated_success: निष्क्रिय %{count} membmy_munal_YM. %{msG}%{admin}
+          deleted_success: "%{typt} %{ni} मिटाया"
+          external_email_no_standard_access: बाहरी ईमेल प्रयोक्ताओं को मानक अभिगम
+            प्रदान नहीं किया जा सकता है । कोई परिवर्तन नहीं किया गया.
+          external_email_deactivated_fail: ईमेल उपयोगकर्ताओं के बाहर निष्क्रिय नहीं
+            किया जा सकता है, केवल हटा दिया गया है. कोई परिवर्तन नहीं किया गया.
+          members_actions: सदस्य क्रियाएँ ...
+          no_ds_selected: कोई DS समूह चयनित नहीं
+          no_members_selected: कोई सदस्य चयनित नहीं
+          remove: हटाएँ
+          remove_member: कार्यसमूह से %{membbb} को हटा दिया.
+          remove_member_fail: सदस्य को हटाने में अक्षम. कृपया बाद में पुनः प्रयास
+            करें.
+          remove_ds_group: कार्यसमूह से %{count} को हटा दिया.
+          remove_ds_group_fail: डीएस समूह को हटाने में अक्षम. कृपया बाद में पुनः प्रयास
+            करें.
+          set_admin: "%{membb} के रूप में %{nye} admin के रूप में सेट करें."
+          set_admin_fail: बाहरी ईमेल उपयोगकर्ताओं को ड्रॉपबॉक्स एडमींस नहीं बनाया
+            जा सकता है. कोई परिवर्तन नहीं किया गया.
+          set_ds_access: "%{ग्रुप} को %{level} पहुँच के रूप में सेट करें."
+          set_ds_access_fail: डीएस समूहों पर %{level} पहुँच सेट करने में असमर्थ. कृपया
+            बाद में पुनः प्रयास करें.
+          set_regular_access: "%{membb} को नियमित पहुँच के रूप में सेट करें."
+          set_regular_access_fail: सदस्यों के लिए नियमित पहुँच सेट करने में अक्षम.
+            कृपया बाद में पुनः प्रयास करें.
+          set_standard_access: मानक अभिगम नियत करें
+          set_submit_only: "%{membb} को सिर्फ सबमिट के रूप में सेट करें."
+          set_submit_only_fail: प्रस्तुत करने में असमर्थ-सदस्यों के लिए केवल पहुंच.
+            कृपया बाद में पुनः प्रयास करें.
+          set_submit_only_access: सबमिट करें-केवल पहुँच सेट करें
+          set_wg_admin: के रूप में सेट करें (_wg) नाम_YM admin
+          skipped_sys_admin: "%{size} सिस्टम admin (ओं) को छोड़ दिया"
+          updated_wg: अद्यतन एम. YY_typ_YM
+          user_not_found: उपयोक्ता नहीं मिला
+    views:
+      account:
+        ad_groups:
+          ad_group:
+            error: त्रुटि
+            invalid: अवैध
+            pending: लंबित %{Siopop}
+          additional_permissions:
+            edit_add_perm: अतिरिक्त अनुमतियाँ संपादित करें
+          forms:
+            group_import:
+              save: सहेजें
+            import_users:
+              full_name: पूरा नाम
+              import_date: तिथि आयात करें
+              status: स्थिति
+              sync_now: अब समन्वयन करें
+              user_name: उपयोक्ता नाम
+            wg_member:
+              actions: क्रियाएँ
+              add_to: इसमें जोड़ें ...
+              date_added: जोड़ा गया
+              remove: हटाएँ
+              wg_name: कार्यसमूह नाम
+          user_ad_group:
+            active: सक्रिय
+            inactive: निष्क्रिय
+        directory_service_groups:
+          edit:
+            back: पीछे
+            edit_dir_group: 'निर्देशिका सेवा समूह संपादित करें: %{Groupny}'
+            group_import: समूह आयात नीति
+            imported_users: आयातित उपयोक्ता (%{mem_count})
+            workgroup_memberships: कार्यसमूह Mambbons (%{mem_count})
+          index:
+            activate: सक्रिय करें
+            date_added: जोड़ा गया
+            deactivate: निष्क्रिय करें
+            directory_service: निर्देशिका सेवा
+            group_name: समूह नाम
+            members: सदस्य
+            new_group: " नया समूह"
+            remove: हटाएँ
+            status: स्थिति
+            sync: सिंक करें
+            view_op_history: ऑपरेशन इतिहास देखें
+          new:
+            back: पीछे
+            cancel: रद्द करें
+            dir_services: 'निर्देशिका सेवा:'
+            import: आयात करें
+            import_dir_serv: निर्देशिका सेवा से आयात समूह
+            search_dir_service: 'खोज निर्देशिका सेवा:'
+        directory_service_users:
+          additional_permissions:
+            edit_add_perm: अतिरिक्त अनुमतियाँ संपादित करें
+          index:
+            back: पीछे
+            directory_service: 'निर्देशिका सेवा:'
+            import: आयात करें
+            import_user_from_dir_serv: निर्देशिका सेवा से उपयोक्ता आयात करें
+            search: ढूंढें
+            search_term: 'ढूंढें (S):'
+            searches_limit: खोजों के 20 परिणाम तक सीमित हैं.
+            searching: ढूंढ रहे
+            usr_not_found: कोई उपयोक्ता नहीं मिला
+        memberships:
+          actions: क्रियाएँ
+          add_to: इसमें जोड़ें ...
+          back: पीछे
+          name: नाम
+          remove: हटाएँ
+          self_reg_added: 'स्व-पंजीकृत उपयोगकर्ताओं को निम्नलिखित कार्यसमूहों में
+            जोड़ा जाएगा:'
+          template_user_workgroups: टेम्पलेट उपयोगकर्ता कार्यसमूह
+        passwords:
+          back_to_edit: संपादन के लिए वापस
+          cancel: रद्द करें
+          password: "%{local_ni} के लिए कूटशब्द बदलें (_l)"
+          reset_confirm: क्या आप निश्चित हैं कि आप इस उपयोगकर्ता के पासवर्ड को रीसेट
+            करना चाहते हैं? एक ईमेल अधिसूचना इस उपयोगकर्ता को भेज दी जाएगी जब उन्हें
+            लॉग इन करने के लिए और उनके पासवर्ड को बदलने की अनुमति दी जाएगी.
+          reset_password: कूटशब्द रीसेट करें
+          update_password: पासवर्ड अद्यतन करें
+        registrations:
+          form:
+            email: ईमेल
+            first: प्रथम
+            last: अंतिम
+            login: लॉगइन
+          index:
+            approve: अनुमोदन
+            deny: इनकार करना
+            faspex_reg_type: फेपेक्स %{typt} पंजीकरण के साथ कॉन्फ़िगर किया गया है.
+            new_message: इसका मतलब यह है कि नव निर्मित खाते %{t} को अनुमोदन की आवश्यकता
+              है.
+            not: नहीं
+            self_reg_users: स्वयं पंजीकृत उपयोगकर्ता %{template_user} की अनुमतियों
+              का उत्तराधिकारी होगा और स्वचालित रूप से निम्न %{workcarsecs} के सदस्य
+              बन जाएंगे.
+        saml_groups:
+          edit:
+            back: पीछे
+            edit_saml: 'SAML समूह संपादित करें: %{Groupny}'
+            group_prov_policy: नीति-संशोधनवादी नीति
+            users: उपयोक्ता (%{MAG_count})
+            workgroup_memberships: कार्यसमूह Mambbons (%{mem_count})
+          index:
+            activate: सक्रिय करें
+            date_added: जोड़ा गया
+            deactivate: निष्क्रिय करें
+            group_name: समूह नाम
+            members: सदस्य
+            new_group: " नया समूह"
+            remove: हटाएँ
+            saml_config: एसएएमएल कॉन्फिगरेशन
+            status: स्थिति
+          new:
+            back: पीछे
+            cancel: रद्द करें
+            create: बनाएँ
+            create_new_saml: नया SAML समूह बनाएँ
+            group_name: 'समूह नाम (DN):'
+            saml_config: एसएएमएल कॉन्फ़िगरेशन
+        template_users:
+          account_details: खाता विवरण
+          cancel: रद्द करें
+          edit_template_user: टेम्पलेट उपयोक्ता संपादित करें
+          form:
+            workgroup_memberships:
+              date_added: जोड़ा गया
+              remove: हटाएँ
+              workgroup_name: कार्यसमूह नाम
+              workgroups: कार्यसमूह
+          update: अद्यतन
+        users:
+          add_permissions:
+            edit_add_perm: अतिरिक्त अनुमतियाँ संपादित करें
+          edit:
+            change_password: कूटशब्द बदलें/रीसेट करें
+            edit_user: 'उपयोक्ता संपादित करें: %{user}'
+            return_to_user_list: उपयोगकर्ता सूची में वापसी
+            type: "(प्रकार: %{user_typt})"
+            workgroup_memberships: कार्यसमूह एमम्म्म्म्प्स
+          edit_form:
+            cancel: रद्द करें
+            update_user: अद्यतन प्रयोक्ता
+          edit_wg:
+            add_user: उपयोक्ता को कार्यसमूह में जोड़ें
+            back_to_edit: संपादन के लिए वापस
+            remove: हटाएँ
+            workgroup_mem_for: "%{user} के लिए कार्यसमूह मेम्म्म्म्शिप"
+            workgroup_name: कार्यसमूह नाम
+          external_users:
+            accounts: खाता
+            remove: हटाएँ
+          fieldsets:
+            account_details:
+              account_details: खाता विवरण
+              active: सक्रिय
+              admin_hint: प्रशासक उपयोगकर्ताओं को जोड़/हटा सकते हैं और सर्वर विन्यास
+                प्रबंधित कर सकते हैं.
+              inactive: निष्क्रिय
+              manager_hint: प्रबंधक उपयोगकर्ताओं को जोड़ सकते हैं/निकालें
+              never: कभी नहीं
+              role: 'भूमिका:'
+              text_area_hint: अल्पविराम-, सेमिकोलोन-या व्हाइटस्पेस-अलग ई-मेल पता
+              user_hint: नियमित उपयोगकर्ता फाक्स पैकेज भेज सकते हैं और उन्हें प्राप्त
+                कर सकते हैं
+            advanced_transfer:
+              adv_trans_setting: उन्नत स्थानांतरण विन्यास
+              checked: जाँचा
+              initial_transfer: प्रारंभिक अंतरण दर
+              max_rate: अधिकतम अनुमतिप्राप्त दर
+              minrate_hint: 'यदि चुना जाता है, ग्राहक अपनी अंतरण नीति या न्यूनतम स्थानांतरण
+                दर को समायोजित करने में सक्षम नहीं होंगे (डिफ़ॉल्ट: %{config})'
+              server_to_user: 'सर्वर से उपयोगकर्ता (डिफ़ॉल्ट: %{config})'
+              transfer_alert: |-
+                Faspicx डिफ़ॉल्ट रूप से Aspera केंद्रीय सर्वर अनुभाग से स्थानांतरण सेटिंग का उपयोग करेगा.
+                हालांकि, यहाँ आप उपयोगकर्ता-विशिष्ट स्थानांतरण सेटिंग सेट कर सकते हैं, जो सर्वर-व्यापी सेटिंग के ऊपर वरीयता ले जाएगा.
+              unchecked: बेरोक
+              user_to_server: 'सर्वर से उपयोगकर्ता (डिफ़ॉल्ट: %{config})'
+            ds_history:
+              action: क्रिया
+              ds_history: DS इतिहास (%{dom_ame})
+              notes: नोट्स
+              operation: ऑपरेशन
+              show_all: सभी दिखाएँ
+              time: समय
+            package_deletion:
+              after_download: 'डाउनलोड के बाद:'
+              allow_user_delete: 'किसी पैकेज-द्वारा-पैकेज के आधार पर उपयोगकर्ता को
+                अपना विलोपित करने की अनुमति दें: (U)'
+              delete_files_after: "<strong>सभी फ़ाइलों को <strong>किसी भी प्राप्तकर्ता</strong>
+                डाउनलोड के बाद फ़ाइलों को मिटाएँ"
+              delete_files_all: "<strong>सभी प्राप्तकर्ता</strong> फ़ाइलों को डाउनलोड
+                करने के बाद फ़ाइल को मिटाएँ"
+              do_nothing: कुछ नहीं करें
+              package_deletion: पैकेज मिटाना
+              server_delete: 'डिफ़ॉल्ट: %{config}'
+            password_policy:
+              custom_pw_policy: पसंदीदा पासवर्ड नीति
+              pw_expires: पासवर्ड समाप्त हो रहा है
+              prevent_pw_reuse: पासवर्ड पुनः प्रयोग को रोकें
+              every_x_days: हर %{x} दिन (ओं)
+              never: कभी नहीं
+            permissions:
+              affirm: हाँ
+              allow_inviting_external: 'बाहरी संदेश आमंत्रित करने की अनुमति दें:'
+              allow_public_submission: 'सार्वजनिक जमा करने की अनुमति दें:'
+              allowed_to: 'को अनुमति:'
+              can_see_global_dist_lists: 'वैश्विक वितरण सूची देख सकते हैं:'
+              control_hint: अगर बिना चेक किया जाता है, तो उपयोगकर्ता उपयोगकर्ताओं
+                को भेजने में सक्षम नहीं होगा या ड्रॉपबॉक्स/कार्यसमूहों के लिए प्रस्तुत
+                होगा
+              create_drop_packages: यदि यह विकल्प अक्षम किया जाता है, तो उपयोगकर्ता
+                केवल ड्रॉपबॉक्स पैकेजों का निर्माण करने में सक्षम होगा, यदि वे किसी
+                भी ड्रॉपबॉक्स के सदस्य हैं.
+              create_normal: 'सामान्य संकुल बना सकता है:'
+              external_email: 'बाहरी ईमेल के लिए भेज सकते हैं:'
+              ip_addr_hint: के द्वारा संबोधित/पता दर्ज करें । जैसे <b>10.0. *, 192.168.1.1</b>
+              keep_dir_private: 'उपयोगकर्ता निर्देशिका निजी रखें:'
+              neg: नहीं
+              permissions: अनुमतियाँ
+              see_global_dis_list: 'वैश्विक वितरण सूची देख सकते हैं:'
+              send_to_all: 'सभी फाक्स उपयोगकर्ताओं को भेज सकते हैं:'
+              send_to_all_send_to_wg: यदि अनुमति है, तो उपयोगकर्ता सभी फाक्स उपयोगकर्ताओं
+                को भेज सकते हैं. अन्यथा, उपयोगकर्ता केवल अन्य कार्यसमूह के सदस्यों
+                को भेज सकते हैं.
+              user_server_def: 'उपयोगकर्ता सर्वर डिफ़ॉल्ट (वर्तमान में: %{Fre})'
+            personal_details:
+              first_name: प्रथम नाम
+              last_name: अंतिम नाम
+              personal_details: व्यक्तिगत विवरण
+            sender_quota:
+              sender_hint: ओवरराइड डिफ़ॉल्ट प्रेषक कोटा सीमा ओवरराइड करें
+              sender_quota: भेजने वाले का कोटा
+              sender_quota_hint: रोलिंग विंडो के दौरान कुल डाटा आकार भेजा गया
+              sender_quota_leg: 'प्रेषक कोटा:'
+            user_history:
+              last_login_time: अंतिम लॉगिन समय
+              user_history: प्रयोक्ता इतिहास
+            welcome_email:
+              welcome: आपका स्वागत है
+          index:
+            accounts: खाता
+            activate: सक्रिय करें
+            deactivate: निष्क्रिय करें
+            remove: हटाएँ
+          menus:
+            add_account:
+              add_account: 'खाता जोड़ें '
+              dir_serv_user: निर्देशिका सेवा उपयोगकर्ता
+              faspex_user: फाक्स प्रयोक्ता
+              new_user: " नया उपयोगकर्ता"
+            toggle_users:
+              active_users: सक्रिय उपयोक्ता
+              all_users: सभी उपयोक्ता
+              inactive_users: निष्क्रिय उपयोक्ता
+          new:
+            back: पीछे
+            user_account: नया उपयोगकर्ता खाता
+          new_form:
+            cancel: रद्द करें
+            confirm_password: कूटशब्द पुष्टि करें
+            create_account: खाता बनाएँ
+            first_name: प्रथम नाम
+            last_name: अंतिम नाम
+            or: " या "
+            password: पासवर्ड
+            set_password: पासवर्ड सेट करें
+          user:
+            invalid: अवैध
+            same_as_login: "(वही लॉगिन के रूप में)"
+          user_list:
+            check_all_users: सभी उपयोक्ता की जाँच करें
+            check_user: उपयोक्ता जाँचें
+            date_added: जोड़ा गया
+            email: ईमेल
+            first: प्रथम
+            home_server: घर सर्वर
+            last: अंतिम
+            last_login: अंतिम लॉगइन
+            login: लॉगइन
+            status: स्थिति
+            type: क़िस्म
+      active: सक्रिय
+      ad_admin:
+        ad_users_list_rows:
+          active: सक्रिय
+          full_name: पूरा नाम
+          import_date: तिथि आयात करें
+          inactive: निष्क्रिय
+          invalid: अवैध
+          user_name: उपयोक्ता नाम
+        edit_config:
+          and_test: " और टेस्ट"
+          anonymous: अज्ञातनाम
+          dir_service_details: निर्देशिका सेवा विवरण
+          dir_service_type: 'निर्देशिका सेवा प्रकार:'
+          enable_dir_service: 'निर्देशिका सेवा सक्षम करें:'
+          ex_dir_service: बाहरी निर्देशिका सेवा
+          login: लॉगइनः
+          login_method: 'लॉगिन विधि:'
+          password: 'पासवर्ड:'
+          port: पोर्टः
+          provide_credentials: क्रेडेंशियल प्रदान करें
+          save: सहेजें
+          save_and_test: सहेजें और जाँच
+          server: सर्वरः
+          treebase: 'ट्रेबेज़:'
+          use_tls: 'सुरक्षित मोड का उपयोग करें (TLS):'
+        operation_hist:
+          details: विवरण
+          dir_service_op_history: निर्देशिका सेवा ऑपरेशन इतिहास
+          no_op: कोई संक्रिया निष्पादित नहीं की गई है
+          operation: ऑपरेशन
+          time: समय
+          view: दृश्य
+        status: स्थिति
+      ad_group_membership:
+        active: सक्रिय
+        inactive: निष्क्रिय
+      ad_groups:
+        error: त्रुटि
+        invalid: अवैध
+        pending: 'लंबित '
+      admin:
+        auth_domain:
+          edit:
+            edit_name: "%{नाम} संपादित करें (_h)"
+          form:
+            anonymous: अज्ञातनाम
+            dir_service_details: निर्देशिका सेवा विवरण
+            dir_service_name: 'निर्देशिका सेवा नाम:'
+            dir_service_type: 'निर्देशिका सेवा प्रकार:'
+            dn_message: विशिष्ट रूप से एक विशिष्ट नाम (DN)
+            enable_dir_service: 'निर्देशिका सेवा सक्षम करें:'
+            login: लॉगइनः
+            login_method: 'लॉगिन विधि:'
+            password: 'पासवर्ड:'
+            port: पोर्टः
+            provide_cred: क्रेडेंशियल प्रदान करें
+            save: सहेजें
+            save_and_test: सहेजें और जाँच
+            secure_tls: 'सुरक्षित मोड का उपयोग करें (TLS):'
+            server: सर्वरः
+            treebase: 'ट्रेबेज़:'
+            username_attr: 'उपयोगकर्ता नाम गुणधर्म:'
+          index:
+            add_new: नया %{ni} जोड़ें (_r)
+            disabled: अक्षम
+            enabled: सक्षम
+            server: सर्वर
+            status: स्थिति
+            type: क़िस्म
+          new: नया %{नाम}
+        fasp_nodes:
+          fasp_nodes:
+            active_sessions: सक्रिय सत्र
+            address: पता
+            errors: त्रुटियाँ
+            last_poll: अंतिम सफल सर्वेक्षण समय
+            node_id: नोड आईडी
+            cluster_id: क्लस्टर ID
+            polling_strategy: मतदान रणनीति
+            os: ओएस
+            status: स्थिति
+        nodes:
+          edit:
+            cancel: रद्द करें
+            edit_name: "%{user}-%{node} संपादित करें"
+          form:
+            advanced_config: <i class="icon-plus"></i>उन्नत विन्यास
+            basic_config: मूल कॉन्फ़िगरेशन
+            config_message: नीचे विन्यास को सर्वर के लिए बिन्दु होना चाहिए जो Aspera
+              एंटरप्राइज़ सर्वर होस्ट करता है. का उपयोग वेब अनुप्रयोग द्वारा स्थानांतरण
+              सांख्यिकी इकट्ठा करने के लिए किया जाता है. यदि अस्पेरा एंटरप्राइज़ सर्वर
+              वेब अनुप्रयोग के रूप में एक ही मशीन पर चल रहा है, तो सही पता 127.0.0.1
+              है.
+            sec_add_message: नीचे पता है क्या आपके उपयोगकर्ताओं को स्थानान्तरण शुरू
+              करने के क्रम में जरूरत होगी. यदि आप उपयोगकर्ताओं के एक समूह है कि एक
+              अलग पता (उदाहरण के लिए नेटवर्किंग शर्तों के कारण) का उपयोग करने की आवश्यकता
+              है, तो एक आईपी रेंज निर्दिष्ट करने के लिए 'माध्यमिक पता' क्षेत्रों का
+              उपयोग करें. ध्यान दें कि द्वितीयक पता संबंधक अंतरण के लिए लागू नहीं
+              होता है.
+            storage_error: इस फ़ाइल भंडारण वर्तमान में सिस्टम डिफ़ॉल्ट इनबॉक्स के
+              रूप में इस्तेमाल किया जाता है. संपादन यह उपयोगकर्ताओं के लिए अनुपलब्ध
+              सभी मौजूदा पैकेजों को बना देगा.
+            test_connect: कनेक्शन जांचें
+          index:
+            add_new: नया %{ni} जोड़ें (_r)
+            default_inbox: डिफ़ॉल्ट इनबॉक्स
+            location: स्थान
+            name: नाम
+            source: स्रोत
+            shares: फ़ाइल भंडारण
+            status: स्थिति
+            update: अद्यतन
+          new:
+            cancel: रद्द करें
+            new_name: नया %{नाम}
+          test: कनेक्शन सफल!
+        notifications:
+          login_announce:
+            edit:
+              ann_hint: यह संदेश लॉगिन स्क्रीन पर प्रकट होगा
+              update: अद्यतन
+          package_inst:
+            pkg_hint: यह संदेश प्रेषण स्क्रीन पर दिखाई देगा.
+            update: अद्यतन
+        packages:
+          delete:
+            age_days: आयु<br/>(दिन)
+            cancel: रद्द करें
+            delete_confirm: |-
+              क्या आप निश्चित हैं कि आप इन पैकेजों के लिए फ़ाइलों को नष्ट करना चाहते हैं?
+              आप इस क्रिया को पहले जैसा नहीं कर पाएंगे.
+            delete_files: फ़ाइल मिटाएँ
+            files: फ़ाइलें
+            files_on_server: "<br/>सर्वर पर फ़ाइलें?"
+            full_downloads: पूर्ण<br/>डाउनलोड
+            recipients: प्राप्तकर्ता
+            sender: प्रेषक
+            size: आकार
+            status: स्थिति
+            title: शीर्षक
+            upload_completion: अपलोड<br/>पूर्णता
+            warning: 'यह क्रिया निम्न पैकेजों के लिए फ़ाइल को मिटा देगा:'
+          index:
+            action: क्रिया
+            all_packages: सभी संकुल (S)
+            days_or_older: या पुराने दिन
+            delete_files: फ़ाइल मिटाएँ ...
+            download: डाउनलोड <bbr/full/आंशिक
+            for_packages: पैकेजों के लिए
+            files: फ़ाइलें
+            files_on_server: सर्वर पर फ़ाइलें?
+            package_created: पैकेज<br>बनाया गया
+            recipients: प्राप्तकर्ता
+            relays: रिले
+            search: ढूंढें
+            sender: प्रेषक
+            size: आकार
+            status: स्थिति
+            title: शीर्षक
+            upload_completed: समाप्त हो रहा<br>
+          relays:
+            all_packages: सभी संकुल (S)
+            completed_relays: आम रिले
+            failed_relays: असफल रिले
+            files: फ़ाइलें
+            incomplete_relays: अपूर्ण रिले
+            ip_relays: प्रगति में रिले
+            package_created: पैकेज<br>बनाया गया
+            recipients: प्राप्तकर्ता
+            relays: रिले
+            search: ढूंढें
+            sender: प्रेषक
+            size: आकार
+            status: स्थिति
+            title: शीर्षक
+            upload_completed: समाप्त हो रहा<br>
+          show_details:
+            full: पूर्ण
+            full_partial: पूर्ण/आंशिक
+            ip_addr: आईपी पता
+            package_download_details: पैकेज डाउनलोड विवरण
+            partial: आंशिक
+            start: प्रारंभ समय
+            stop: समय बन्द करें
+            time_elapsed: समय बीत गया
+            username: उपयोक्ता नाम
+        post_processes:
+          edit:
+            cancel: रद्द करें
+            edit_script: स्क्रिप्ट संपादित करें (_y_YM)
+            update: अद्यतन
+          env_var_help:
+            description: वर्णन
+            faspex_meta<field>: मेटाडेटा क्षेत्र का मान जिसका नाम &lt;field&gt; अपरकेस
+              अक्षरों के साथ, जिनके स्थान पर लोअरकेस और स्पेस को रेखांकित करने से
+              प्रतिस्थापित किया जाता है
+            faspex_metadata_fields: पैकेज के लिए परिभाषित मेटाडेटा क्षेत्रों की एक
+              अलग अलग सूची
+            faspex_pkg_delivery_id: पैकेज की डिलीवरी आईडी (पैकेज आईडी और पैकेज UUID
+              से अलग)
+            faspex_pkg_dir: पैकेज
+            faspex_pkg_id: पैकेज आईडी
+            faspex_pkg_is_forward: 1 को अग्रेषित पैकेजों के लिए और 0 मूल पैकेजों के
+              लिए
+            faspex_pkg_name: पैकेज शीर्षक
+            faspex_pkg_note: एकमुश्त पत्र
+            faspex_pkg_total_bytes: बाइट्स में पैकेज का आकार
+            faspex_pkg_total_files: पैकेज की संख्या
+            faspex_pkg_uuid: पैकेज का UUID
+            faspex_recipient_count: प्राप्तकर्ताओं की संख्या (जैसे "3")
+            faspex_recipient_i: आई-थ प्राप्तकर्ता का नाम
+            faspex_recipient_list: प्राप्तकर्ताओं की (उदा. "admin, jhhndoe") को अलग
+              से अलग सूची में
+            faspex_sender_email: प्रेषक का ईमेल
+            faspex_sender_id: प्रेषक
+            faspex_sender_name: प्रेषक का नाम
+            variable: परिवर्तनीय
+          form:
+            env_var_help: एनवायरनमेंट वेरिएबल मदद
+            exact_match: सटीक मिलान
+            execution_crit: निष्पादन मानदंड
+            high: ऊँचा
+            low: कम
+            package_date_end: पैकेज की तिथि समाप्त
+            package_date_start: पैकेज की तिथि प्रारंभ
+            package_file_count: पैकेज फ़ाइल गिनती
+            package_file_hint: पैकेज में फ़ाइलों की संख्या के लिए परिसर यहाँ भरें
+            package_name: पैकेज नाम
+            package_note: पैकेज नोट
+            package_size: पैकेज आकार
+            range_hint: पैकेज आकार के लिए परिसर यहाँ भरें
+            recipient_email_list: प्राप्तकर्ता ईमेल सूची
+            recipient_list: प्राप्तकर्ता सूची
+            script_to_run: चलाने के लिए स्क्रिप्ट
+            sender_email: प्रेषक ईमेल
+            sender_name: प्रेषक का नाम
+          index:
+            action: क्रिया
+            create_new: नया बनाएँ
+            execution_criteria: निष्पादन मानदंड
+            log: लॉग
+            name: नाम
+            post_processing: पश्च-प्रक्रमण
+            script: स्क्रिप्ट
+          new:
+            add_new_script: नया स्क्रिप्ट जोड़ें
+            cancel: रद्द करें
+            create: बनाएँ
+          show_events:
+            back: पीछे
+            exec_criteria: निष्पादन<br/>मानदंड
+            package_name: पैकेज नाम
+            package_sender: "<br/>पैकेज<br/>प्रेषक"
+            package_uuid: पैकेज UUID
+            post_processing_exec_log: 'पोस्ट प्रोसेसिंग: %{नाम} के लिए एक्जीक्यूशन
+              लॉग'
+            time_of_exec: "<br/># समय का समय निष्पादन"
+        saml:
+          edit:
+            saml_integration: एसएएमएल इंटीग्रेशन
+            update: अद्यतन
+        saml_configurations:
+          edit:
+            allowable_clock_drift: स्वीकार्य घड़ी बहाव (एमएस)
+            attribute_mapping: एट्रिब्यूट मैपिंग
+            browse: ब्राउज़ ...
+            certificate: प्रमाणपत्र
+            create_saml_config: SASML कॉन्फ़िगरेशन बनाएँ
+            default_saml_config: तयशुदा SAML कॉन्फ़िगरेशन
+            domain_url: डोमेन यूआरएल
+            fingerprint: एम्प्रींटई डाइटिनिकेल
+            fingerprint_alg: फिंगरप्रिंट एल्गोरिथ्म
+            hide: छुपाएं
+            import_from_file: 'फ़ाइल से आयात करें: '
+            import_from_text: 'पाठ से आयात करें: '
+            import_from_url: 'यूआरएल से आयात करें: '
+            import_metadata_settings: पाठ से विन्यास आयात करें
+            import_metadata_settings_url: मेटाडाटा यूआरएल से आयात करें
+            import_settings: मेटाडाटा %{dir} से आयात करें
+            name: नाम
+            name_id_format: नाम ID फ़ॉर्मेट
+            new: नया
+            public_login_inst: सार्वजनिक लॉगइन अनुदेश
+            publicly_visible: सार्वजनिक रूप से
+            redirect_saml: फिर लॉग आउट पर SAML लॉग आउट पृष्ठ पर फिर से सीधे करें
+            restrict_login_groups: ज्ञात समूहों तक पहुँच सीमित करें
+            restrict_login_groups_hint: यदि चेक किया जाता है, faML समूहों के केवल
+              सदस्यों को साथ लॉग इन करने की अनुमति होगी.
+            restrict_login_users: ज्ञात उपयोगकर्ताओं के लिए पहुंच सीमित करें
+            restrict_login_users_hint: यदि चेक किया जाता है, केवल मौजूदा SAML उपयोक्ता
+              फेपपेक्स में जोड़ा जाएगा लॉग इन करने के लिए अनुमति दी जाएगी.
+            saml_config: एसएएमएल कॉन्फ़िगरेशन
+            saml_config_details: एसएएमएल कॉन्फ़िगरेशन विवरण
+            SAML_metadata_server: एसएएमएल सर्वर मेटाडाटा
+            SAML_metadata_server_url: SAML सर्वर मेटाडेटा यूआरएल ...
+            saml_settings: एसएएमएल विन्यास
+            show: दिखाएँ
+            SSO_target_URL: एसओ लक्ष्य यूआरएलः
+            update: अद्यतन
+            update_saml_config: SAML विन्यास अद्यतन करें
+          index:
+            actions: क्रियाएँ
+            add_new_config: नया SAML विन्यास जोड़ें
+            default: " (डिफ़ॉल्ट)"
+            disable: निष्क्रिय करें
+            disable_title: निष्क्रिय करें
+            disabled: " (अक्षम)"
+            domain_url: डोमेन यूआरएल
+            enable: सक्षम
+            enable_title: सक्षम करें
+            make_default: डिफ़ॉल्ट बनाएँ
+            metadata: मेटाडाटा
+            name: नाम
+            remove_default: डिफ़ॉल्ट मिटाएँ
+            saml_config: एसएएमएल कॉन्फिगरेशन
+            saml_confirm: क्या आप निश्चित हैं कि आप इस SAML विन्यास को सक्षम करना
+              चाहते हैं?
+            saml_confirm_disable: क्या आप निश्चित हैं कि आप इस SAML विन्यास को अक्षम
+              करना चाहते हैं?
+            test: टेस्ट
+          user_profile:
+            name: नाम
+            remove: इस प्रोफ़ाइल क्षेत्र को निकालें
+            remove_confirm: क्या आप निश्चित हैं कि आप इस उपयोगकर्ता प्रोफ़ाइल क्षेत्र
+              को हटाना चाहते हैं?
+          user_profile_fields:
+            add_local_field: स्थानीय प्रोफ़ाइल क्षेत्र जोड़ें
+            default_profile_fields: डिफ़ॉल्ट प्रोफ़ाइल फील्ड्स
+            enabled: सक्षम
+            fields_required: सभी फाक्स उपयोगकर्ताओं के लिए आवश्यक क्षेत्र
+            global_cust_message: पसंदीदा क्षेत्र उपयोगकर्ता प्रोफ़ाइल टैब में परिभाषित
+            global_cust_prof_fields: वैश्विक मनपसंद प्रोफ़ाइल फील्ड्स
+            local_cust_message: इस SAML विन्यास के लिए उपयोगकर्ता प्रोफ़ाइल क्षेत्र
+              विशिष्ट
+            local_cust_prof_fields: स्थानीय कस्टम प्रोफ़ाइल फील्ड्स
+            name: नाम
+            required: आवश्यक
+            saml_name: एसएएमएल नाम
+            save_note: 'नोट: कोई भी परिवर्तन तब तक सहेजा जाएगा जब तक आप ''अद्यतन SAML
+              विन्यास'' क्लिक करें'
+        settings:
+          display_settings:
+            date_format:
+              format: फॉर्मेट
+              meaning: अर्थ
+              perc_a: संक्षिप्त सप्ताह का नाम (सूर्य)
+              perc_A: पूरा सप्ताह का नाम (रविवार)
+              perc_b: संक्षिप्त मास नाम (जन)
+              perc_B: पूरा महीना नाम (जनवरी)
+              perc_d: माह का दिन (01 .. 31)
+              perc_j: वर्ष का दिन (01 .. 366)
+              perc_m: वर्ष का महीना (01 .. 12)
+              perc_Y: शताब्दी के साथ वर्ष
+              perc_y: एक सदी के बिना वर्ष (00 ... 99)
+            edit:
+              acc_display_format: खाता प्रदर्शन नाम प्रारूप
+              custom_logo: 'मनपसंद लोगो:'
+              date_format: तिथि फ़ॉर्मेट
+              date_formatting_help: तिथि फ़ॉर्मेटिंग में मदद
+              default_logo_help: 'डिफ़ॉल्ट लोगो 295x51 है '
+              display_settings: प्रदर्शक विन्यास
+              examples: उदाहरण
+              local_login_inst: स्थानीय लॉगइन अनुदेश
+              login_page_header: लॉगइन पृष्ठ शीर्ष
+              remove_confirm: क्या आप निश्चित हैं कि आप मौजूदा कस्टम लोगो को हटाना
+                चाहते हैं?
+              remove_logo: पसंदीदा लोगो हटाएँ
+              update: अद्यतन
+          entitlement:
+            edit:
+              customer_id: 'ग्राहक आईडी:'
+              entitlement_license: पात्रता लाइसेंस
+              faspex_enabled: 'फाक्स सक्रिय:'
+              key: कुंजीः
+              max_active_users: 'अधिकतम सक्रिय उपयोक्ता:'
+              save: सहेजें
+          global_dist_lists:
+            index:
+              add_new_list: नई वितरण सूची जोड़ें
+              contacts: संपर्क
+              global_dist: वैश्विक वितरण सूची
+              name: नाम
+              no_list_alert: कोई वैश्विक वितरण सूची नहीं है.
+              update_dist_lists: वितरण सूची अद्यतन करें
+            new:
+              new_global_list: नई वैश्विक वितरण सूची
+          license:
+            edit:
+              OR: या
+          package_storage:
+            edit:
+              after_pkg_dl: पैकेज डाउनलोड किए जाने के बाद
+              after_upload_ends: अपलोड के बाद
+              characters: पात्र
+              days: दिन (ओं)
+              delete_files_all: "<strong>सभी प्राप्तकर्ता</strong> फ़ाइलों को डाउनलोड
+                करने के बाद फ़ाइल को मिटाएँ"
+              delete_files_any: "<strong>सभी फ़ाइलों को <strong>किसी भी प्राप्तकर्ता</strong>
+                डाउनलोड के बाद फ़ाइलों को मिटाएँ"
+              do_nothing: कुछ नहीं करें
+              max_pkg_title: भंडारण पथ में अधिकतम पैकेज शीर्षक लंबाई
+              package_storage: पैकेज भंडारण
+              packages_expire: पैकेजों की अवधि
+              pkg_by_pkg_del: सभी उपयोगकर्ताओं को एक पैकेज-द्वारा-पैकेज के आधार पर
+                अपने स्वयं के विलोपन सेटिंग्स को सेट करने की अनुमति दें
+              update: अद्यतन
+          save_restore:
+            index:
+              dl: डाउनलोड करें
+              dl_curr_config: वर्तमान विन्यास डाउनलोड करें
+              faspex_config_help: फाक्स विन्यास फ़ोल्डर और डेटाबेस सहेज लिया जाएगा
+              restore: बहाल करें
+              restore_config: कॉन्फ़िगरेशन बहाल करें
+              save_restore: सहेजें/पुनर्स्थापित करें
+              upload_help: एक सहेजा विन्यास फ़ाइल को अपलोड करें और लागू करें (*.tar.gz)
+              version_help: 'नोट: रिस्टोर संस्करण को फाक्स के वर्तमान संस्करण से मेल
+                करना चाहिए'
+          security:
+            edit:
+              act_dir_hint: निर्देशिका सेवा उपयोगकर्ता बंद या निष्क्रिय नहीं होगा
+              affirm: हाँ
+              after: के बाद
+              after_x_days: "%{num} दिनों के बाद"
+              after_inactivity: निष्क्रियता के %{len} दिन के बाद
+              after_one_success: एक सफल अपलोड के बाद
+              allow_custom_link: उपयोगकर्ताओं को कस्टम लिंक समापन नीति सेट करने की
+                अनुमति दें
+              allow_email_change: उपयोगकर्ताओं को अपना ईमेल पता बदलने की अनुमति दें
+              allow_external_pkg_hint: यदि चेक किया जाता है, फाक्स उपयोगकर्ताओं के
+                लिए भेजे गए पैकेजों को (बाहरी) फ्लैग की अनुमति दी जाएगी
+              allow_external_pkg_to_faspex: बाहरी पैकेजों को फाक्स उपयोगकर्ताओं को
+                अनुमति दें
+              allow_usrs_create: उपयोगकर्ताओं को सामान्य संकुल बनाने की अनुमति दें
+              allow_usrs_create_hint: यदि अक्षम है, तो उपयोगकर्ता केवल ड्रॉपबॉक्स
+                पैकेजों का निर्माण करने में सक्षम हो सकते हैं, यदि वे किसी भी ड्रॉपबॉक्स
+                के सदस्य हैं.
+              allow_usrs_send: सभी उपयोगकर्ताओं को अन्य फाक्स उपयोगकर्ताओं को भेजने
+                के लिए अनुमति दें
+              always: हमेशा
+              allow_unlock: उपयोगकर्ताओं को अपने आप को अनलॉक करने की अनुमति दें
+              allow_send_email: बाहरी ईमेल पता भेजने की अनुमति दें
+              appr_recipient_domains: स्वीकृत प्राप्तकर्ता डोमेन
+              appr_sender_domains: अनुमोदित प्रेषक डोमेन
+              block_email_domain: आत्म पंजीकरण से निम्नलिखित ईमेल डोमेन को ब्लॉक करें
+              can_override_ear_hint: उपयोगकर्ता द्वारा गोपन को लागू करने के लिए आमंत्रित
+                करने के दौरान उपयोगकर्ता चुन सकता है
+              can_see_dist_list: उपयोगकर्ता डिफ़ॉल्ट रूप से वैश्विक वितरण सूची देख
+                सकते हैं
+              cipher: एफ़एएसपी साइफर
+              days: दिन (ओं)
+              dbox_override: ड्रॉपबॉक्स को स्वयं के गोपन सेटिंग के लिए अनुमति देता
+                है
+              def_pw_expire: तयशुदा कूटशब्द समापन अंतराल
+              default: डिफ़ॉल्ट
+              disable: निष्क्रिय करें
+              disable_hint: प्रेषक कोटा रोलिंग विंडो, घंटे में अवधि
+              ds_users: निष्क्रियता के %{int} दिनों के बाद DS उपयोगकर्ताओं
+              email_expire_after_download: पूर्ण पैकेज डाउनलोड के बाद समाप्त करें
+              enable: सक्षम करें
+              encrypt_hint: यदि सक्रिय किया जाता है, HTTP फॉलबैक स्थानांतरण भी एन्क्रिप्टेड
+                है
+              encrypt_transfers: हस्तांतरण एन्क्रिप्ट करें
+              encryption: एनक्रिप्शन
+              enforce_pw_hist: पिछला पुनः उपयोग न करें
+              every: हर
+              faspex_acc: फाक्स लेखे
+              force_pw_reset: पहले लॉगिन पर कूटशब्द बदलने के लिए नए उपयोक्ता की आवश्यकता
+                है
+              hours: घण्टों
+              inviting_allowed: बाहरी संदेश को आमंत्रित करने की अनुमति दें
+              ignore_invalid_recipients: अवैध प्राप्तकर्ताओं को अनदेखा करें
+              ignore_invalid_recipients_hint: अगर चेक किया जाता है, पैकेज भेजना विफल
+                नहीं होगा जब एक पैकेज को अवैध प्राप्तकर्ताओं को संबोधित किया जाता
+                है
+              inv_link_expires: निमंत्रण कड़ी अवधि समाप्त
+              inv_link_help: व्यक्तिगत और ड्रॉपबॉक्स निमंत्रण दोनों के लिए एक लिंक
+                समाप्ति नीति सेट करें.
+              keep_usr_dir: उपयोगकर्ता निर्देशिका निजी रखें
+              list_hint: अल्पविराम-, सेमिकोलोन-या व्हाइटस्पेस-अलग ई-मेल पता
+              local_users: निष्क्रियता के %{int} दिनों के बाद स्थानीय उपयोगकर्ताओं.
+              lock_hint: MY_login_count_yM के अंदर लॉगिन प्रयासों में विफल रहने के
+                बाद
+              lock_users: उपयोगकर्ता लॉक करें
+              minutes: मिनट्स
+              neg: नहीं
+              never: कभी नहीं
+              new_user_pw: नया उपयोगकर्ता पासवर्ड %{req}. मौजूदा शब्दकूट वैध %{warn}
+                रहेगा
+              obfuscation: भिनभिन
+              optional: वैकल्पिक
+              optional_hint: उपयोगकर्ता को एनक्रिप्ट करने के लिए कोई भी समय भेज सकता
+                है या नहीं
+              otfv: बाहर ट्रांसफर फ़ाइल वेलिडेशन (OTFV)
+              outside_email_add: ईमेल पते के बाहर
+              package_link_expires: पैकेज कड़ी की अवधि समाप्त
+              package_link_help: यदि चेक किया जाता है, पैकेज केवल डाउनलोड करने योग्य
+                है एक बार %{wi_warn}
+              passwords: पासवर्ड (s)
+              passwords_expire: कूटशब्द समाप्त
+              public_url_allowed: सार्वजनिक सबमिशन यूआरएल स्वीकारें
+              prevent_pw_reuse: पासवर्ड पुनः प्रयोग को रोकें
+              prev_conc: समवर्ती लॉगिन रोकें
+              pw_reset_hint: कूटशब्द रीसेट ईमेल भेजा जाएगा और खाता पासवर्ड परिवर्तन
+                के बाद अबंद हो जाएगा
+              quota_limit: रोलिंग विंडो के दौरान कुल डाटा आकार भेजा गया
+              reg_hint: 'वैकल्पिक: यदि पाठ सेट है, तो उपयोगकर्ताओं को रजिस्टर करने
+                के लिए विवरण को स्वीकार करने के लिए आवश्यक हो जाएगा'
+              reg_users_mutual: स्वयं पंजीकृत उपयोगकर्ता एक दूसरे को भेज सकते हैं
+              registration_instructions: पंजीकरण अनुदेश
+              registration_type: स्व पंजीकरण
+              registrations: पंजीकरण
+              remove_users: उपयोक्ता मिटाएँ
+              req_external_reg: बाहरी उपयोगकर्ताओं को रजिस्टर करने की आवश्यकता है
+              require_external_hint: यदि चेक किया जाता है, तो बाहरी उपयोगकर्ताओं को
+                पैकेज डाउनलोड करने के लिए एक फाक्स खाता दर्ज करना होता है.
+              saml_users: निष्क्रियता के %{int} दिनों के बाद SAML उपयोगकर्ताओं को.
+              security: प्रतिभूति
+              send_welcome_email: सभी नए उपयोगकर्ताओं को स्वागत ईमेल भेजें
+              sender_quota: भेजने वाले का कोटा
+              sender_quota_hint: 'इन डोमेन में उपयोगकर्ताओं को भेजा गया पैकेज प्रेषक
+                कोटा की गणना नहीं करता है. अल्पविराम (,), अर्द्ध-कोलन्स (;), या अलग
+                ई-मेल डोमेन के लिए व्हाइटस्पेस का उपयोग करें. उदाहरण के लिए: @aspera.com;
+                @ibm.com'
+              sender_quota_option: भेजने वाला कोटा विकल्प
+              sender_quota_duration: प्रेषक कोटा अवधि
+              sender_quota_limit: प्रेषक कोटा सीमा
+              session_timeout: सत्र समय समाप्ति के बाद
+              slave_hint: यदि चेक किया जाता है, तो उपयोगकर्ता एक समय में एक ग्राहक
+                से केवल लोग्गा कर सकते हैं
+              strong_pw: मजबूत पासवर्ड का उपयोग करें
+              timeout_hint: सत्र निष्क्रियता की निर्दिष्ट संख्या के बाद सत्र समाप्त
+                हो जाएगा
+              tos: भेजने के लिए सेवा की शर्तें
+              tos_hint: 'वैकल्पिक: यदि पाठ सेट है तो उपयोगकर्ताओं को एक पैकेज भेजने
+                के क्रम में बयान को स्वीकार करने के लिए आवश्यक होगा'
+              update: अद्यतन
+              use_encryption_at_rest: गोपन-एट-रेस्ट का प्रयोग करें
+              use_obf: फ़ाइल नाम पर obffep प्रयोग करें
+              use_obf_hint: फ़ाइलनाम obsfatcats अपरिवर्तनीय है!
+              enforce_expiration_policy: समाप्ति नीति के लिए हमेशा अधिकतम अवधि के
+                रूप में लागू करें
+          transfer_options:
+            edit:
+              aspera_connect_sett: Sasta कनेक्ट विन्यास
+              def_max_rate: डिफ़ॉल्ट अधिकतम स्वीकार्य दर
+              dl_dur_trans: स्थानांतरण के दौरान डाउनलोड करें
+              dl_over_http: HTTP पर डाउनलोड करें
+              http_gateway_hint: नीचे पता है कि आपके उपयोगकर्ताओं को http-गेटवे के
+                माध्यम से स्थानान्तरण शुरू करने के लिए अपने उपयोगकर्ताओं की आवश्यकता
+                होगी.
+              http_gateway_url: एचटीटीपी गेटवे URL
+              initial_def_trans_rate: प्रारंभिक डिफ़ॉल्ट अंतरण दर
+              local_host_connect: स्थानीय होस्ट कनेक्ट
+              local_host_hint: यदि चुना जाता है, फेपपेक्स Aspera CDN को कनेक्ट करने
+                के लिए उपयोग नहीं करेगा, लेकिन इसके बजाय फेसपेक्स पर उपलब्ध स्थानीय
+                कनेक्ट एसडीके का उपयोग करेंगे.
+              local_to_remote: स्थानीय सर्वर से दूरस्थ सर्वर
+              lock_connect_sdk: कनेक्ट एसडीके संस्करण
+              lock_connect_sdk_hint: 'जब एक नया संस्करण उपलब्ध हो जाता है तो स्थानीय
+                कनेक्ट एसडीके को अद्यतन करने से फापपेक्स को रोकना. यह सेटिंग अपग्रेड
+                के पार बनी हुई है. नोट: फेसपेक्स आवधिक रूप से अद्यतन की जांच करता
+                है और इस विकल्प को निष्क्रिय कर देता है यदि तुरंत कोई नया संस्करण
+                डाउनलोड नहीं करता है'
+              min_connect_version: न्यूनतम कनेक्ट संस्करण
+              minrate_hint: यदि चुना जाता है, ग्राहक अपनी अंतरण नीति या न्यूनतम अंतरण
+                दर को समायोजित करने में सक्षम नहीं होंगे
+              prefer_http_connect: एक्सटेंशन पर http को प्राथमिकता दें
+              prefer_http_connect_hint: यदि चुना जाता है, फापेक्स ब्राउज़र को ब्राउज़र
+                एक्सटेंशन (केवल Chrome ब्राउज़र के साथ उपलब्ध) का उपयोग करने के बजाय,
+                कनेक्ट डेस्कटॉप क्लाइंट के साथ ब्राउज़र के उपयोग के लिए ब्राउज़र लागू
+                करेगा.
+              serv_to_serv_relay_trans_sett: सर्वर से सर्वर रिले ट्रांसफर सेटिंग
+              server_to_user: उपयोगकर्ता से सर्वर
+              transfer_options: हस्तांतरण विकल्प
+              update: अद्यतन
+              user_to_server: सर्वर से उपयोगकर्ता
+              http_gwy_connection_success: कनेक्शन सफल
+              http_gwy_connection_error: आईबीएम आस्पेरा एचटीटीपी गेटवे के साथ कनेक्शन
+                स्थापित करने में त्रुटि
+          web_server:
+            alt_address_fields:
+              remove_addr: इस वैकल्पिक पता को हटायें
+            edit:
+              add_alt_address: वैकल्पिक पता जोड़ें
+              address_name: पता नाम
+              alternate_addr_hint: का उपयोग करें यदि आप कुछ उपयोगकर्ताओं के लिए विभिन्न
+                सर्वर पते की जरूरत
+              desc_email: ईमेल के लिए विवरण
+              http_port_hint: एप्दर्द विन्यास द्वारा निर्धारित
+              https_port_hint: एफिप विन्यास द्वारा निर्धारित SSL के ऊपर एनक्रिप्टेड
+                सामग्री के लिए
+              remove: हटाएँ
+              show_emails: ईमेल में दिखाएँ
+              update: अद्यतन
+              web_server: वेब सर्वर
+        shares:
+          edit:
+            cancel: रद्द करें
+            custom_access_control: मनपसंद पहुँच नियंत्रण
+            edit: MAY_नेम_YM-%{शेयर} संपादित करें
+          edit_warning:
+            alert_error_1: |-
+              यह फ़ाइल भंडारण वर्तमान में कुछ कार्यसमूहों के लिए कस्टम इनबॉक्स और रिले स्थान के रूप में इस्तेमाल किया जाता है.
+              संपादन यह इन कार्यसमूहों में सभी मौजूदा पैकेजों को उपयोगकर्ताओं के लिए अनुपलब्ध बना देगा और रिले गंतव्य को बदलने के लिए.
+            alert_error_2: |-
+              इस फ़ाइल भंडारण वर्तमान में कुछ कार्यसमूहों के लिए कस्टम इनबॉक्स स्थान के रूप में इस्तेमाल किया जाता है.
+              संपादन यह इन कार्यसमूहों में सभी मौजूदा पैकेजों को उपयोगकर्ताओं के लिए अनुपलब्ध बना देगा.
+            alert_error_3: |-
+              इस फ़ाइल भंडारण वर्तमान में कुछ कार्यसमूहों के लिए रिले स्थान के रूप में इस्तेमाल किया जाता है.
+              संपादन यह रिले गंतव्य को बदल देगा.
+          form:
+            dir_serv_groups:
+              add_group: समूह जोड़ें
+              date_added: जोड़ा गया
+              dir_service_groups: निर्देशिका सेवा समूह
+              DN: डीएन
+              members: सदस्य
+              name: नाम
+              status: स्थिति
+            dir_serv_group_member:
+              active: सक्रिय
+              delete: मिटाएँ
+              inactive: निष्क्रिय
+            users:
+              add_user: उपयोक्ता जोड़ें
+              full_name: पूरा नाम
+              member_since: सदस्य से
+              name: नाम
+              status: स्थिति
+              type: क़िस्म
+              users: उपयोक्ता
+            user_membership:
+              delete: मिटाएँ
+          form_file:
+            browse: ब्राउज़ ...
+            default_max_allowed_rate: डिफ़ॉल्ट अधिकतम स्वीकार्य दर
+            directory: डिरेक्ट्री
+            enable_cloud_referencing: क्लाउड संदर्भित सक्षम करें
+            enable_linking: लिंक सक्षम करें
+            initial_default_rate: प्रारंभिक डिफ़ॉल्ट अंतरण दर
+            limited: सीमित
+            loading: भारित
+            lock_minrate_hint: यदि चेक किया जाता है, ग्राहक अपनी अंतरण नीति या न्यूनतम
+              अंतरण दर को समायोजित करने में सक्षम नहीं होंगे
+            name: नाम
+            node: आसंधि
+            override_default: डिफ़ॉल्ट स्थानांतरण सेटिंग को ओवरराइड करें
+            private: निजी
+            public: सार्वजनिक
+            read_perm: पढ़ने की अनुमति
+            relay_transfer_rate: प्रसारण दर अंतरण दर
+            server_to_user: उपयोगकर्ता से सर्वर
+            user_to_server: सर्वर से उपयोगकर्ता
+          new:
+            alert_no_node: आपके पास कोई %{nddes} बनाया नहीं गया है. %{NOY} बनाने से
+              पहले %{admin_node}.
+            cancel: रद्द करें
+            create_one: एक बनाएँ
+            new: नया %{नाम}
+      background_processes:
+        index:
+          action: क्रिया
+          background_processes: पृष्ठभूमि प्रक्रियाएँ
+          log_file: लॉग फ़ाइल
+          log_level: लॉग स्तर
+          name: नाम
+          status: स्थिति
+        log:
+          lines: पंक्तियाँ
+          refresh: सबको ताज़ा करें
+          submit: सबमिट
+      credits:
+        show:
+          java: जावा संगत
+      directory_items:
+        file:
+          error: त्रुटि
+      dropbox:
+        dropboxes:
+          metadata_profile: 'मेटाडाटा प्रोफ़ाइल: '
+          options:
+            after_pac_downl: 'पैकेज डाउनलोड करने के बाद:'
+            allow_submission_via_pub_URL: सार्वजनिक यूआरएल के माध्यम से निवेदन की
+              अनुमति दें
+            always: हमेशा
+            custom_exp_policy: मनपसंद पैकेज समाप्ति नीति
+            custom_inv_policy: पसंदीदा निमंत्रण लिंक समाप्ति नीति
+            day_after_sending_inv: "(ओं) निमंत्रण ईमेल भेजने के बाद"
+            day_after_upload: अपलोड समाप्त होने के बाद दिन (ओं)
+            http_downloads_not_allowed: इस पैकेज के लिए HTTP डाउनलोड की अनुमति नहीं
+              है.
+            delete_after_all: इस ड्रॉपबॉक्स</strong> सभी सदस्यों को <strong>सभी फ़ाइलों
+              को डाउनलोड करने के बाद फ़ाइलों को मिटाएँ.
+            delete_after_first: इस ड्रॉपबॉक्स</strong> किसी भी सदस्य को <strong>सभी
+              फ़ाइलों को डाउनलोड <strong>के बाद फ़ाइलों को मिटाएँ.
+            do_nothing: कुछ नहीं करें
+            inv_link_expire: निमंत्रण संपर्क समाप्त हो रहा हैः
+            never: कभी नहीं
+            optional: वैकल्पिक
+            package_expires: 'पैकेज की मियाद:'
+            require_encrypt: 'एन्क्रिप्शन की आवश्यकता है-आराम:'
+            save_message: प्रत्येक पैकेज की रूट निर्देशिका में-metatatataa.xml सहेजा
+              जाएगा
+            save_metadata: 'फ़ाइल में मेटाडाटा सहेजें:'
+            success: एक सफल अपलोड के बाद
+            use_server_default: 'सर्वर तयशुदा का उपयोग करें (वर्तमान में: %{server})'
+          perm:
+            add_rem_dir_serv_groups: सदस्य के रूप में निर्देशिका सेवा समूहों को जोड़ें/हटाएँ
+            add_remove_users: मौजूदा फाक्स उपयोक्ता जोड़ें/गैर-ड्रॉपबॉक्स व्यवस्थापक
+              सदस्यों को हटा दें
+            dropbox_admin_can: ड्रॉपबॉक्स एडम कर सकते हैं ...
+            invite_outside_submitters: बाहरी उपमाइटरों को आमंत्रित करें
+            invite_remove_users: निमंत्रित करें बाहरी subsmitters
+            member_manage: सदस्य प्रबंधन
+            reg_users_as_mem: बनाएँ/edit/delete/नया पंजीकृत उपयोगकर्ताओं को सदस्यों
+              के रूप में बनाएँ
+            standard_can: मानक उपयोगकर्ता कर सकते हैं ...
+        users:
+          cancel: रद्द करें
+          description: वर्णन
+          email_address: ईमेल पता
+          invite: 'ड्रॉपबॉक्स को भेजने के लिए बाहर के लिए आमंत्रित करें: %{wgMAY}'
+          invite_html:
+            require_encryption: 'आराम पर गोपन की आवश्यकता है:'
+            yes_ear: हाँ
+            no_ear: नहीं
+            optional: वैकल्पिक
+          submit_save: सहेजें (निमंत्रण ईमेल भेजता है)
+      e_error:
+        default: आपके अनुरोध को संसाधित करने की कोशिश करते समय सर्वर ने एक समस्या
+          का सामना किया. यह अपर्याप्त अनुमतियों, एक विन्यास समस्या, नेटवर्क व्यवधान,
+          बग या हार्डवेयर विफलता के कारण हो सकता है.
+        default_2: दूसरे आदेश के अलावा, आप अभी भी काम कर सकते हैं काम करने की कोशिश.
+          "पीछे" बटन या ऊपर के अन्य टैब में से एक पर क्लिक करने की कोशिश करें.
+      external:
+        sub_stat:
+          show:
+            safe: |-
+              इस वेब पृष्ठ को बंद करने के लिए सुरक्षित है, आपका स्थानांतरण प्रभावित नहीं होगा.
+              इस स्क्रीन पर वापस पाने के लिए एक लिंक के साथ आपको एक ईमेल भेज दिया गया है.
+            send_to: "%{protend} को भेजें"
+            send_to_dropbox: 'के लिए भेजें: %{ड्रॉपनाम}'
+            status: यह पृष्ठ आपको प्रस्तुत पैकेज की स्थिति को देखने देता है, साथ ही
+              अगर यह विफल रहता है तो स्थानांतरण की पुनः कोशिश करता है.
+          submission_stat:
+            date_submit: तिथि प्रस्तुत
+            files: फ़ाइलें
+            size: आकार
+            status: स्थिति
+            title: शीर्षक
+        to:
+          email_address: ईमेल पता
+          please_enter_email: पहुँच प्राप्त करने के लिए कृपया अपना ईमेल पता दर्ज करें.
+          request_access: अनुरोध अभिगम
+          send_to: "%{Edeliti_ni} को भेजें"
+      inactive: निष्क्रिय
+      invitations:
+        edit:
+          cancel: रद्द करें
+          reinvite: पुनर्आमंत्रित (आमंत्रण ईमेल भेजता है)
+          reinvite_sender: प्रेषक को पुनः आमंत्रित करें
+        fieldsets:
+          sub_link_expires:
+            after: के बाद
+            after_one_success: एक सफल अपलोड के बाद
+            after_one_up: एक अपलोड के बाद
+            custom_inv_policy: 'पसंदीदा निमंत्रण लिंक समाप्ति नीति:'
+            day_after_sending_inv: "(ओं) निमंत्रण ईमेल भेजने के बाद"
+            help: आप इन सेटिंग्स को आगे सीमित कर सकते हैं लेकिन आप डिफ़ॉल्ट से अधिक
+              नहीं कर सकते
+            inv_link_expires: निमंत्रण कड़ी अवधि समाप्त
+          prevent_http_upload:
+            package_upload: पैकेज अपलोड
+            prevent_http_upload: इस पैकेज के लिए HTTP अपलोड रोकें
+        index:
+          access_url: पहुँच यूआरएल देखें
+          actions: क्रियाएँ
+          confirm: क्या आप सुनिश्चित हैं?
+          delete: मिटाएँ
+          description: वर्णन
+          email: ईमेल
+          expiration: समाप्ति
+          invitations: न्यौते
+          new: नया
+          reinvite: पुनः आमंत्रित करें
+          resend: पुनः समाप्त करें
+          status: स्थिति
+        new:
+          cancel: रद्द करें
+          description: वर्णन
+          email_address: ईमेल पता
+          invite_sender: प्रेषक को भेजें
+          no_ear: नहीं
+          optional: वैकल्पिक
+          require_encryption: 'आराम पर गोपन की आवश्यकता है:'
+          save: सहेजें (निमंत्रण ईमेल भेजता है)
+          yes_ear: हाँ
+      layouts:
+        aspera_faspex: अस्पेरा फाफिक्स
+        footer:
+          copyright: कॉपीराइट आईबीएम कॉर्प. 2009,
+          credits: क्रेडिट और नोटिस
+          patch: पैच स्तर %{level}
+        header:
+          account: खाता
+          enable_connect: आईबीएम आपर्का कनेक्ट सक्षम करें
+          help: मदद
+          not_logged_in: में लॉग इन नहीं है.
+          sign_out: साइन आउट करें
+          skip_to_main: मैं मुख्य रूप से छोड़ें
+        main_tabs:
+          accounts: खाता
+          new_package: नया पैकेज
+          pending: लंबित
+          received: प्राप्त
+          sent: भेजा गया
+          server: सर्वर
+          view_package_options: नए पैकेज विकल्प देखने के लिए क्लिक करें
+          workgroups: कार्यसमूह
+        node_error:
+          warning: चेतावनी!
+          errors_detected: हस्तांतरण सर्वर त्रुटियों का पता चला, स्थानांतरण सही ढंग
+            से काम नहीं कर सकता है.
+      login:
+        entitlement:
+          customer_id: ग्राहक आईडी
+          entitle_info: 'कृपया आप के लिए पात्रता जानकारी उपलब्ध कराने के लिए प्रदान
+            करें:'
+          entitle_question: पात्रता के बारे में प्रश्न या चिंताओं के लिए, कृपया %{SAMA}
+            संपर्क करें
+          entitlement: पात्रता आईडी
+          submit: सबमिट
+        new:
+          anouncement: घोषणा
+          enter_password: अपना फेक्स पासवर्ड दर्ज करें
+          enter_username: अपना फेक्स उपयोगकर्ता नाम दर्ज करें
+          forgot_password: पासवर्ड भूल गया
+          password: पासवर्ड
+          username: उपयोक्ता नाम
+          or_log: या लॉग इन के साथ
+      m_configuration:
+        edit:
+          faspex: तुनकना
+          sender: प्रेषक
+          sender_via_faspex: फाक्स के माध्यम से प्रेषक
+          sender_email: प्रेषक ईमेल
+          mail_configuration: डाक विन्यास
+          save: सहेजें
+          savetest_email: सहेजें और टेस्ट ईमेल
+          to: 'प्रति:'
+      m_template:
+        edit:
+          body: 'शरीर:'
+          cancel: रद्द करें
+          edit_email_html: ईमेल संपादित करें (_Y)
+          save: सहेजें
+          subject: 'विषय:'
+        show:
+          advanced: " (उन्नत)"
+          customize: टैम्प्लेट के प्रयोग को मनपसंद
+          edit_html: HTML संपादित करें
+          preview: "%{डिस्क्रिप्शन} एक पूर्वावलोकन नीचे प्रदर्शित किया गया है. यह
+            या तो टेम्पलेट का उपयोग करके या सीधे HTML के संपादन के द्वारा अनुकूलित
+            किया जा सकता है."
+          preview_email_notif: पूर्वावलोकन %{nie} ईमेल सूचना
+      metadata_profiles:
+        edit:
+          add_field: क्षेत्र जोड़ें
+          add_new_field: 'नया क्षेत्र जोड़ें: '
+          edit_metadata: मेटाडाटा प्रोफाइल संपादित करें
+          enabled: 'सक्षम: '
+          error_fields_not_saved: 'नोट: त्रुटियों के साथ क्षेत्र सहेजा नहीं कर रहे
+            हैं'
+          illegal_characters: 'अवैध अक्षर: '
+          max_length: 'अधिकतम लंबाईः '
+          note: नोट
+          note_no_save: 'नोट: कोई परिवर्तन तब तक सहेजा जाएगा जब तक आप मेटाडेटा प्रोफ़ाइल
+            सहेजेंगे'
+          preview: पूर्वावलोकन
+          profile_name: 'प्रोफ़ाइल नाम: '
+          profile_name_placeholder: प्रोफ़ाइल नाम ...
+          save: सहेजें
+          save_and_prev: सहेजें और पूर्वावलोकन
+          title: शीर्षक
+        date_format:
+          any_other_value: कोई अन्य मूल्य
+          any_other_value_hint: शाब्दिक पाठ
+          at: यूनिक्स टाइमस्टैंप (01/01/1970 के बाद से एमएस)
+          capital_D_hint: दिन का नाम (छोटा)
+          capital_DD_hint: दिन का नाम (लंबा)
+          capital_M_hint: माह नाम (छोटा)
+          capital_MM_hint: माह नाम (लंबा)
+          d_hint: महीने का दिन (कोई भी अग्रणी शून्य नहीं)
+          dd_hint: महीने का दिन (दो अंक)
+          description: वर्णन
+          ellipses: शाब्दिक पाठ
+          exclamation: विंडोज टिक्स (01/01/0001 के बाद से 100s)
+          m_hint: वर्ष का महीना (कोई भी अग्रणी शून्य नहीं)
+          mm_hint: वर्ष का महीना (दो अंक)
+          o_hint: वर्ष का दिन (कोई भी बड़ा शून्य नहीं)
+          oo_hint: वर्ष का दिन (तीन अंक)
+          single_quote: एकल उद्धरण
+          variable: परिवर्तनीय
+          y_hint: वर्ष (दो अंक)
+          yy_hint: वर्ष (चार अंक)
+        metadata_field:
+          characters: पात्र
+          date_format: 'तिथि फार्मेटः '
+          date_format_help: तिथि फ़ॉर्मेट मदद
+          illegal_chars: 'अवैध अक्षर: '
+          illegal_chars_placeholder: अवैध chracters ...
+          label: 'लेबलः '
+          label_placeholder: लेबलः
+          max_length: 'अधिकतम लंबाईः '
+          options: 'विकल्प: '
+          required: 'आवश्यक: '
+        index:
+          add_profile: नया प्रोफ़ाइल जोड़ें
+          confirm: क्या आप निश्चित हैं कि आप मेटाडेटा प्रोफ़ाइल %{ACCOT} को मिटाना
+            चाहते हैं?
+          delete: मिटाएँ
+          edit: संपादित करें
+          metadata_profiles: मेटाडाटा प्रोफ़ाइल
+          name: नाम
+          profile_for_norm: 'सामान्य पैकेजों के लिए प्रोफाइल:'
+          save_metadata: 'फ़ाइल में मेटाडाटा सहेजें: '
+        new:
+          cancel: रद्द करें
+          create: बनाएँ
+          name: नाम
+          new_profile: नया मेटाडाटा प्रोफ़ाइल
+      mobile:
+        landing:
+          app_redirect: के लिए सबसे अच्छा अनुभव के लिए, एपरेला फाक्स मोबाइल अनुप्रयोग
+            का उपयोग करें.
+          no_app_prompt: क्या एप्लिकेशन है? यह <a href='<%= @app_store_url %>'>यहाँ</a>
+          open_in_app: एप्लिकेशन में खोलें (O)
+          use_web_version: वेब संस्करण का उपयोग करें
+      ms_admin:
+        convert_to_slave:
+          back: पीछे
+          convert: बदलें
+          convert_server: सर्वर को स्लेव में बदलें
+          master_ip: 'मास्टर आईपी: '
+        edit:
+          connecting: My_hostni_YM से कनेक्ट हो रहा है ...
+          server_list: फाक्स सर्वर सूची
+          working: अभी भी काम करते हैं
+        edit_server:
+          alternate_address: 'वैकल्पिक पता: (_n) '
+          Back: पीछे
+          host_name: 'होस्ट नाम या आईपी पता:'
+          https_port: 'एचटीटीपीएस पोर्टः '
+          master_ip: 'मास्टर आईपी:'
+          name: 'नाम: '
+          save: सहेजें
+          server_list: 'फेपेक्स सर्वर सूची: संपादित करें %{nie}'
+          url_namespace: 'यूआरएल नेमस्पेस: '
+        list_rules:
+          create_new: नया बनाएँ
+          default_user_server: 'डिफ़ॉल्ट Faspex/DS उपयोक्ता सर्वर:'
+          home_server_rules: होम सर्वर नियम
+          name: नाम
+          note: 'नोट: यदि आप बाहरी सब्टमेटरों के लिए नियम निर्धारित नहीं करते हैं,
+            तो उन्हें प्रेषक के घर सर्वर को डाउनलोड करने के लिए निर्देशित किया जाएगा.
+            इसी तरह, बाहरी कड़ियाँ जो पैकेजों को अपलोड कर रहे हैं, बाह्य सर्वर से
+            भी ऐसा ही करना चाहिए.'
+          rule: नियम
+          save: सहेजें
+          server: सर्वर
+          sort: छांटें
+        new_edit_rule:
+          add: जोड़ें
+          back: पीछे
+          create: बनाएँ
+          create_new: नया बनाएँ
+          dir_DN_regex: 'निर्देशिका सेवा डीएन रीलेक्स:'
+          dir_regex: 'निर्देशिका सेवा समूह रीलेक्स:'
+          edit: संपादित करें
+          email_regex: 'ईमेल पता regex:'
+          external_users: 'बाहरी उपयोक्ता/सबमाइटर:'
+          home_server: घर सर्वरः
+          home_server_rules: 'होम सर्वर नियम: %{mod} नियम'
+          ldap_field: 'एलडीएपी क्षेत्र का नाम:'
+          ldap_regex: 'एलडीएपी फील्ड रीलेक्स:'
+          regex_help: Regex मदद
+          remove: हटाएँ
+          rule_name: 'नियम नाम:'
+          save: सहेजें
+          username_regex: 'उपयोक्ता नाम रीलेक्स (e):'
+        new_server:
+          alternate_address: 'वैकल्पिक पता:'
+          back: पीछे
+          create: बनाएँ
+          hostname: 'होस्ट नाम या आईपी पता:'
+          http_port: एचटीटीपीएस पोर्टः
+          name: 'नाम:'
+          server_list_new_server: 'फाक्स सर्वर सूची: नया रिमोट सर्वर'
+          url_namespace: 'यूआरएल नेमस्पेस:'
+        regex_help:
+          a*: शून्य या अधिक का एक.
+          a+: एक या एक से अधिक.
+          a-z: रेंज ए जेड में कोई भी चरित्र.
+          a-zA-z: रेंज ए जेड या ए-जेड रेंज में किसी भी एक चरित्र.
+          abc: 'एक ही अक्षर: a, b या c.'
+          ataslash_com: 'पूर्व: ''a.com'' के साथ मेल खाता है'
+          a|b: एक या ब
+          expression: अभिव्यक्ति
+          meaning: अर्थ
+          period: कोई भी चरित्र.
+          slash: एस्केप संप्रतीक.
+          slashA: किसी वाक्यांश का प्रारंभ करें.
+          slashAa-m: 'पूर्व: मेल के तार जो ''ए'' और ''म'' के बीच एक अक्षर के साथ प्रारंभ
+            होता है.'
+          slashAperiod*z: 'पूर्व: मेल स्ट्रिंग जो ''a'' के साथ शुरू होता है और ''z''
+            के साथ समाप्त होता है'
+          slashz: स्ट्रिंग का अंत.
+      nodes:
+        columns:
+          dropdown:
+            add: "%{Fam_ni} जोड़ें (_l)"
+            delete: मिटाएँ
+            delete_confirm: क्या आप सुनिश्चित हैं? यह किसी भी %{ber_ni} को मिटा देगा
+              जो वर्तमान में इस My_node_ni_YM का उपयोग कर रहा है.
+            edit: संपादित करें
+          shares:
+            dropdown:
+              confirm: क्या आप निश्चित हैं कि आप आगे बढ़ना चाहते हैं?
+              custom_inbox_confirm: इस %{ni} को वर्तमान में कुछ कार्यसमूहों के लिए
+                कस्टम इनबॉक्स स्थान के रूप में इस्तेमाल किया जाता है.
+              default_hint: इस %{ni} को वर्तमान में सिस्टम डिफ़ॉल्ट इनबॉक्स के रूप
+                में इस्तेमाल किया जाता है, और नष्ट नहीं किया जा सकता है.
+              delete: मिटाएँ
+              delete_warning: 'यह हटाना उपयोगकर्ताओं के लिए अनुपलब्ध इन कार्यसमूहों
+                में सभी मौजूदा संकुल बना देगा. '
+              edit: संपादित करें
+              relay_hint: इस %{ni} को वर्तमान में कुछ कार्यसमूहों के लिए रिले स्थान
+                के रूप में इस्तेमाल किया जाता है.
+              rolled_back_warning: 'सिस्टम डिफाल्ट इनबॉक्स का उपयोग करने के लिए इन
+                कार्यसमूहों को भी वापस लाया जाएगा. '
+      packages:
+        browser:
+          all: सभी
+          download_selected: डाउनलोड चयनित
+          name: नाम
+          none: कुछ नहीं
+          select: चुनें
+          size: आकार
+          validation_error: वैधीकरण त्रुटि?
+          warning: त्रुटि
+        package:
+          browse_and_download_contents: सामग्री ब्राउज़ करें और डाउनलोड करें
+          browse_contents: सामग्री ब्राउज़ करें
+          cc_on_delivery: 'सीसी (वितरण पर):'
+          cc_on_download: 'सीसी (डाउनलोड करने पर):'
+          cc_on_recipient: 'CC (प्राप्तकर्ता पर):'
+          completed_relays: पूर्ण संबंधः
+          date_sent: तिथि प्रेषित
+          http_downloads_not_allowed: इस पैकेज के लिए HTTP डाउनलोड की अनुमति नहीं
+            है
+          delete_after_all_message: यह पैकेज स्वचालित रूप से सभी पैकेज फ़ाइलों को
+            डाउनलोड करने के बाद स्वचालित रूप से मिटा दिया जाएगा.
+          delete_after_first_message: यह पैकेज स्वचालित रूप से सभी पैकेज फ़ाइलों को
+            डाउनलोड करने के बाद स्वचालित रूप से हटा दिया जाएगा.
+          edit: संपादित करें
+          error_release_date: विमोचन तिथि अद्यतन करने में त्रुटि
+          failed_relays: असफल संबंधः
+          forward: अग्रेषित करें
+          from: से.
+          in_progress_relays: 'रिले प्रगति में:'
+          incomplete_relays: 'अपूर्ण रिले: (T)'
+          none_set: कोई सेट नहीं
+          note_disabled: पैकेज वर्तमान फ़ाइल भंडारण पर मौजूद नहीं है.
+          package: पैकेज
+          release_now: अब जारी करें
+          save: सहेजें
+          send_date: तिथि भेजें
+          to: 'के लिए:'
+          to_private: 'करने के लिए (निजी):'
+          upload_date: अपलोड तारीख़ः
+        show_stats:
+          more_details: अधिक विवरण
+        stats:
+          active_downloads:
+            active_downloads: 'डाउनलोड्स: %{num}'
+          completed_package:
+            avg_rate: 'औसत दर: %{rate}'
+            elapsed: 'बीता: %{Times}'
+            files: 'फ़ाइलें: %{num}'
+            size: आकार (_num_num_yM)
+            upload_stats: 'आँकड़े अपलोड करें:'
+            uploaded_from: 'से अपलोड किया गया:'
+          failed_package:
+            avg_rate: 'औसत दर: %{rate}'
+            elapsed: 'बीता: %{Times}'
+            files: 'फ़ाइलें: %{num}'
+            size: आकार (_num_num_yM)
+            upload_stats: 'आँकड़े अपलोड करें:'
+            uploaded_from: 'से अपलोड किया गया:'
+          full_download:
+            full_pkg_dl: 'पूर्ण पैकेज डाउनलोड: %{Sededed}'
+          package_details:
+            pkg_details: पैकेज विवरण
+            status: प्रस्थिति %{packe}
+            http_downloads_not_allowed: इस पैकेज के लिए HTTP डाउनलोड की अनुमति नहीं
+              है
+          partial_package:
+            partial_pkg_dl: 'आंशिक पैकेज डाउनलोड: %{total}'
+          transfer_package:
+            avg_rate: 'औसत दर:'
+            elapsed: 'बीता:'
+            files: 'फ़ाइलें: %{num}'
+            loading: लोडिंग ...
+            size: आकार (_num_num_yM)
+      pending:
+        action: क्रिया
+        files: फ़ाइलें
+        history:
+          back_to_normal_view: वापस सामान्य दृश्य (V)
+          file_on_server: सर्वर पर फ़ाइलें?
+          pending_package_hist: लंबित पैकेजों का इतिहास
+        index:
+          archive_all: सभी अभिलेख
+          pending_packages: लंबित पैकेज
+          view_full_history: पूरा इतिहास देखें
+          warning: चेतावनी
+        recipients: प्राप्तकर्ता
+        search: ढूंढें
+        send_date: तिथि भेजें
+        size: आकार
+        status: स्थिति
+        title: शीर्षक
+        transfer_retries: स्थानांतरण रेड़ियाँ
+        upload_date: अपलोड तारीख़
+      received:
+        action: क्रिया
+        date_sent: तिथि प्रेषित
+        download_available: उपलब्ध डाउनलोड
+        files: फ़ाइलें
+        history:
+          back_to_normal_view: वापस सामान्य दृश्य (V)
+          files_on_server: सर्वर पर फ़ाइलें?
+          received_package_hist: प्राप्त पैकेज इतिहास
+        index:
+          archive_all: सभी अभिलेख
+          invitations: न्यौते
+          received_packages: प्राप्त पैकेज
+          view_full_history: पूरा इतिहास देखें
+        search: ढूंढें
+        sender: प्रेषक
+        size: आकार
+        status: स्थिति
+        title: शीर्षक
+      registrations:
+        confirmation:
+          back_to_login: वापस लॉगिन के लिए
+        edit_password:
+          set_password: पासवर्ड सेट करें
+        new:
+          back_to_login: वापस लॉगिन के लिए
+          email: ईमेल
+          first_name: प्रथम नाम
+          last_name: अंतिम नाम
+          name: नाम
+          tos_accept: मैं %{to} स्वीकार करता हूँ.
+      reset_password_tokens:
+        edit:
+          alert_error: आपका फेसपेक्स लॉगिन एक निर्देशिका सेवा खाते से थक जाता है.
+          alert_error_contact: अपना पासवर्ड बदलने के लिए कृपया अपने हैल्प डेस्क या
+            नेटवर्क व्यवस्थापक से संपर्क करें.
+          reset_password: कूटशब्द रीसेट करें
+        new:
+          back_to_login: वापस लॉगिन के लिए
+          enter_user_or_email: अपना उपयोगकर्ता नाम या ईमेल दर्ज करें
+          forgot_password: अपना पासवर्ड भूल गए?
+          send_email: ईमेल भेजें
+      search: प्राप्तकर्ता, पैकेज शीर्षक और नोट्स खोजें.
+      send:
+        fieldsets:
+          encryption:
+            encryption: 'एनक्रिप्शन:'
+            use_encrypt_at_rest: एन्क्रिप्शन का उपयोग करें-एट-रेस्ट
+        form:
+          dropbox:
+            send_package: पैकेज भेजें
+          external:
+            send_package: पैकेज भेजें
+          fieldsets:
+            encryption:
+              encryption: 'एनक्रिप्शन:'
+              use_encrypt_at_rest: एन्क्रिप्शन का उपयोग करें-एट-रेस्ट
+            expiration_policy:
+              after_pkg_dl: पैकेज डाउनलोड करने के बाद
+              delete_after_all: "<strong>सभी प्राप्तकर्ता</strong> के बाद मिटाएँ</strong>
+                सभी फ़ाइलों को डाउनलोड करें."
+              delete_after_any: "<strong>कोई प्राप्तकर्ता</strong> सभी फ़ाइलें डाउनलोड
+                करने के बाद मिटाएँ (D)"
+              do_nothing: कुछ नहीं करें
+              expiration: 'समाप्ति:'
+            prevent_http_download:
+              prevent_http_download: इस पैकेज के लिए HTTP डाउनलोड रोकें
+              package_download: पैकेज डाउनलोड
+            metadata:
+              maximum_length: 'अधिकतम लंबाई: %{max} अक्षर &nbspo&nbsp'
+              illegal_chars: 'अवैध अक्षर: %{ilendal}'
+              required: आवश्यक
+              optional: वैकल्पिक
+            note:
+              note: नोट:<span class='dim'><span class='dim'><small>वैकल्पिक</small></span>
+              maximum_length: 'अधिकतम लंबाई: %{max} अक्षर &nbspo&nbsp'
+              illegal_chars: 'अवैध अक्षर: %{ilendal}'
+            notifications:
+              cc: CC
+              cc_on_download: डाउनलोड पर सीसी
+              cc_on_receipt: प्राप्ति पर सीसी
+              cc_on_upload: अपलोड पर CC
+              download: 'डाउनलोड करें:'
+              notifications_help: पहले अपलोड या डाउनलोड के बाद सूचनाएं भेजी जाती हैं
+              receipt: 'प्राप्ति:'
+              upload: 'अपलोड:'
+            obfuscation:
+              obfuscation: 'अस्पष्ट:'
+              use_obf: फ़ाइलनाम पर obfause का प्रयोग करें
+            release_policy:
+              release_date: 'विमोचन दिनांक:'
+              release_later_date_later: बाद में जारी किया जाने वाला तिथि बाद
+              release_later_date_now: बाद में जारी करें-सेट तिथि अब
+              release_now: अब जारी करें
+              release_policy: 'जारी नीति:'
+            transfer_options:
+              transfer_through: 'के साथ स्थानांतरण:'
+              http_uploads_not_allowed: इस पैकेज के लिए HTTP अपलोड की अनुमति नहीं
+                है
+            source_shares:
+              contents: 'सामग्री *:'
+              ear_cloud_warning: शेष सभी हस्तांतरण के लिए शेष का उपयोग किया जाता है,
+                लेकिन यह उन स्थानान्तरण के लिए समर्थित नहीं है जो क्लाउड-सन्दर्भित
+                का उपयोग करते हैं। यह स्थानांतरण एन्क्रिप्शन का आराम करने पर उपयोग
+                नहीं करेगा.
+              remove_all: सभी मिटाएँ
+              source: स्रोतः
+              warning: 'चेतावनी:'
+            title:
+              title: 'शीर्षक *:'
+              maximum_length: 'अधिकतम लंबाई: %{max} अक्षर &nbspo&nbsp'
+              illegal_chars: 'अवैध अक्षर: %{ilendal}'
+            tos:
+              tos: 'सेवा की शर्तें:'
+              tos_accept: मैं %{to} को स्वीकार करता हूँ
+          forward:
+            contents: विषयवस्तुः
+            forward_package: वायदा पैकेज
+            fwd: 'Fwd: %{ftitle}'
+            original_sender: 'मूल प्रेषक:'
+            received: 'प्राप्त:'
+          misc:
+            actions:
+              confirmation: 'पुष्टि:'
+              enter_passphrase: "<br>अपनी फ़ाइलों को सुरक्षित रखने के लिए पासफ्रेज
+                दाखिल करें."
+              passphrase: 'पासफ़्रेज़:'
+            connect_transfer:
+              browse_for_files: फ़ाइलें &hellis के लिए ब्राउज़ करें;
+              browse_for_folders: फ़ोल्डर के &hello के लिए ब्राउज़ करें;
+              or: या
+            instruct:
+              instructions: निर्देश
+            remote_share:
+              loading: भारित
+              browse_for_files: फ़ाइलें &hellis के लिए ब्राउज़ करें;
+            show_hide_controls:
+              show_private_recip: निजी प्राप्तकर्ता दिखाएँ
+          normal:
+            send_package: पैकेज भेजें
+        http_gateway_submit:
+          completed: पूर्ण
+          current_file: मौज़ूदा फ़ाइलः
+          current_file_name: 'मौज़ूदा फ़ाइल नाम:'
+          invalid_status: अवैध स्थिति
+          failed: असफल
+          file_count: 'फ़ाइल गणना:'
+          initiating: आरंभ करना
+          running: चल रहे
+          total: 'कुल:'
+          transfer_status: 'ट्रांसफर:'
+      sent:
+        action: क्रिया
+        date_sent: तिथि प्रेषित
+        files: फ़ाइलें
+        history:
+          sent_package_hist: भेजे गए पैकेज इतिहास
+          back_to_normal_view: वापस सामान्य दृश्य (V)
+          files_on_server: सर्वर पर फ़ाइलें?
+        index:
+          archive_all: सभी अभिलेख
+          sent_packages: प्रेषित पैकेज
+          view_full_history: पूरा इतिहास देखें
+          warning: चेतावनी
+        recipients: प्राप्तकर्ता
+        search: ढूंढें
+        show_details:
+          full_partial: पूर्ण/आंशिक &nbsp;
+          ip_addr: आईपी पता &nbsp;
+          pkg_download_details: पैकेज डाउनलोड विवरण
+          start_time: प्रारंभ समय & nbsp;
+          stop_time: टाइम &nbsp; रोकें
+          time_elapsed: समय बीत गया & nbsp;
+          user_name: उपयोगकर्ता नाम &nbsp;
+        size: आकार
+        status: स्थिति
+        title: शीर्षक
+        transfer_retries: स्थानांतरण रेड़ियाँ
+      settings:
+        contacts:
+          contact:
+            external: "(बाहरी)"
+            remove: हटाएँ
+          index:
+            contacts: संपर्क
+            edit_alert: आपके कोई संपादनयोग्य संपर्क नहीं है.
+            edit_contacts: संपर्क संपादित करें
+        dist_lists:
+          index:
+            add_new_dist_list: नई वितरण सूची जोड़ें
+            alert_dist: आपके पास कोई व्यक्तिगत वितरण सूची नहीं है.
+            contacts: संपर्क
+            global_dist_lists: वैश्विक वितरण सूची
+            name: नाम
+            pers_dist_lists: व्यक्तिगत वितरण सूची
+            update_dist_list: वितरण सूची अद्यतन करें
+          new:
+            new_dist_list: नई वितरण सूची
+        passwords:
+          edit:
+            change_password: पासवर्ड बदलें
+            current_password: 'मौजूदा कूटशब्द:'
+            password: पासवर्ड
+            confirm_pw: पासवर्ड पुष्टि करें
+        preferences:
+          edit:
+            download_connect: कनेक्ट प्लगिन डाउनलोड करें
+            download_hint: परिवर्तन करने के लिए परिवर्तन के लिए कुछ मिनट ले सकते हैं
+            download_notif: सूचनाएं डाउनलोड करें
+            download_notif_hint: इन पतों को ईमेल करें जब प्रत्येक प्राप्तकर्ता एक
+              पैकेज को पहले डाउनलोड करें
+            email_settings: ईमेल सेटिंग
+            locales: Locales
+            locale: लोकेल
+            misc: Misc
+            preferences: वरीयताएं
+            update_pref: अद्यतन वरीयताएँ
+            upload_notif: सूचनाएं अपलोड करें
+            upload_notif_hint: अपलोड के परिणाम के साथ इन पतों को ईमेल करें
+            received_page_option: "'प्राप्त' पृष्ठ पर केवल पूर्ण पैकेजों को दिखाएँ"
+        sender_quota:
+          index:
+            sender_alert_1: आप %{iMY} एमबी की प्रेषक कोटा सीमा तक पहुँच गए हैं
+            sender_alert_2: "%{endeA} MB उपलब्ध है. आपका प्रेषक कोटा सीमा %{ci} एमबी
+              के लिए सेट है."
+            sender_quota: भेजने वाले का कोटा
+      shared:
+        browser:
+          filter:
+            from: से
+            hide_filters: फिल्टर छुपाएं
+            include_sub: उप-निर्देशिका में शामिल करें
+            max: अधिकतम
+            min: न्यूनतम
+            mod_time: परिवर्धन समय
+            search: ढूंढें
+            search_for_files: फ़ाइलों या निर्देशिकाओं के लिए खोज &help;
+            show_filters: फ़िल्टर दिखाएँ
+            size: आकार
+            to: के लिए
+          par_dir_item:
+            parent_dir: मूल निर्देशिका
+        dist_lists:
+          dist_lists:
+            delete: मिटाएँ
+            duplicate: अनुलिपि
+            import_contacts: "% s से संपर्क आयात करें"
+          form:
+            name: नाम
+            browse: ब्राउज़ ...
+            contacts: संपर्क (%{num} तक)
+            import_from_csv: 'CSV से आयात करें:'
+        filter:
+          filter: फ़िल्टर (&hell))
+      user_profile_fields:
+        add_user_profile_field: उपयोगकर्ता प्रोफ़ाइल क्षेत्र जोड़ें
+        enabled: सक्षम
+        name: नाम
+        note_no_changes: 'नोट: कोई परिवर्तन तब तक सहेजा जाएगा जब तक आप ''सेव फील्ड्स''
+          क्लिक करें ।'
+        onclick_confirm: क्या आप निश्चित हैं कि आप इस उपयोगकर्ता प्रोफ़ाइल क्षेत्र
+          को हटाना चाहते हैं?
+        remove: इस प्रोफ़ाइल क्षेत्र को निकालें.
+        required: आवश्यक
+        save_fields: फील्ड्स सहेजें
+        user_profile: उपयोगकर्ता प्रोफ़ाइल
+      workgroup:
+        deliveries:
+          history:
+            date_sent: तिथि<br>प्रेषित
+            download_retry: डाउनलोड या उपलब्ध फिर से डाउनलोड करें
+            files: फ़ाइलें
+            files_on_server: "<br>सर्वर पर फ़ाइलें?"
+            package_history: पैकेज इतिहास
+            search: ढूंढें
+            sender: प्रेषक
+            size: आकार
+            status: स्थिति
+            title: शीर्षक
+          index:
+            action: क्रिया
+            date_sent: तिथि<br>प्रेषित
+            download_retry: डाउनलोड या उपलब्ध फिर से डाउनलोड करें
+            files: फ़ाइलें
+            packages: पैकेज
+            search: ढूंढें
+            sender: प्रेषक
+            size: आकार
+            status: स्थिति
+            title: शीर्षक
+          misc:
+            links:
+              invite_outside: सबमाइटर के बाहर आमंत्रित करें
+        file_relay_req:
+          index:
+            back: पीछे
+            relay_stat: रिले स्थिति
+          table:
+            date_sent: तिथि प्रेषित
+            file_storage: फ़ाइल भंडारण
+            files: फ़ाइलें
+            node: आसंधि
+            size: आकार
+            status: स्थिति
+        forwards:
+          complete: पूर्ण
+          enable_relay: रिले सक्षम करें
+          enabled_message: यदि सक्रिय किया जाता है, सभी पैकेज फ़ाइलों को अतिरिक्त
+            नोड्स के लिए छूट दी जाएगी.
+          error: त्रुटि
+          notify_users: इन उपयोगकर्ताओं को सूचित करें ...
+          overwrite: मिटाकर लिखें
+          relay: रिले
+          start: प्रारंभ
+        name: नाम
+        nodes:
+          default_inbox: डिफ़ॉल्ट इनबॉक्स
+          direct_upload: कस्टम इनबॉक्स को सीधे अपलोड करें.
+          direct_upload_default_check: यदि चेक किया जाता है, डिफ़ॉल्ट इनबॉक्स में
+            पैकेज अपलोड नहीं किया जाएगा यदि यह कार्यसमूह एकमात्र प्राप्तकर्ता है.
+          inbox_destination: इनबॉक्स गंतव्य
+          location: स्थान
+          status: स्थिति
+        users:
+          edit:
+            edit_user: 'उपयोक्ता संपादित करें: %{ni}'
+          new:
+            new_user: "%{wg} %{wgone} के लिए नया उपयोगकर्ता खाता"
+        workgroups:
+          details:
+            created_on: 'पर बनाया गया:'
+            description: 'वर्णन:'
+            inst_for_sub: 'Submesters के लिए निर्देश: '
+            name: '<font color="red">* </font>नाम:'
+            updated_on: अद्यतन किया जा रहा हैः
+            wg_details: "%{wgtt} विवरण &nbsp;"
+          ds_group:
+            all: सभी
+            none: कुछ नहीं
+            ok: ठीक
+            remove_selected: चयनित को मिटाएँ
+            select: 'चुनें: '
+          ds_group_member:
+            add_group: समूह जोड़ें
+          ds_group_table:
+            access: अभिगम
+            date_added: जोड़ा गया
+            dir_serv_group: निर्देशिका सेवा समूह
+            DN: डीएन
+            members: सदस्य
+            name: नाम
+            status: स्थिति
+          edit:
+            back: पीछे
+            back_to_list: सूची में वापस जाएँ
+            editing: "%{wgt} को संपादित करें: %{wgMAY}"
+            or: " या "
+            save: सहेजें
+          forwards:
+            complete: पूर्ण
+            enable_relay: रिले सक्षम करें
+            error: त्रुटि
+            if_enabled: यदि सक्रिय किया जाता है, सभी पैकेज फ़ाइलों को अतिरिक्त नोड्स
+              के लिए छूट दी जाएगी.
+            name: नाम
+            notify_users: इन उपयोगकर्ताओं को सूचित करें ...
+            overwrite: मिटाकर लिखें
+            relay: रिले
+            start: प्रारंभ
+          index:
+            create_new: नया बनाएँ
+            dropbox: ड्रॉपबॉक्स
+            flash_message: बनाएँ, हटाना, या संपादित करें कार्यसमूह (सदस्यों को जोड़ने/हटाने
+              के अलावा) आपको मास्टर सर्वर में लॉग इन किया जाना चाहिए.
+            view_all: सभी देखें
+            view_mine: मेरा ख्याल करें
+            workgroup: कार्यसमूह
+            workgroups: कार्यसमूह
+          member_table:
+            access: अभिगम
+            active: सक्रिय
+            add_user: उपयोक्ता जोड़ें
+            alert: हटाने के लिए कोई भी सदस्यों का चयन नहीं किया गया है।
+            all: सभी
+            expires: समाप्त होता है
+            full_name: पूरा नाम
+            inactive: निष्क्रिय
+            inv_outside_submit: सबमाइटर के बाहर आमंत्रित करें
+            member_since: सदस्य से
+            members: सदस्य
+            name: नाम
+            none: कुछ नहीं
+            ok: ठीक
+            remove_selected: चयनित को मिटाएँ
+            select: 'चुनें:'
+            status: स्थिति
+            type: क़िस्म
+          new:
+            cancel: रद्द करें
+            create: बनाएँ
+            create_new: नया %{wgt} बनाएँ (_W)
+            or: " या "
+          nodes:
+            custom: मनपसंद
+            default_inbox: डिफ़ॉल्ट इनबॉक्स
+            inbox_dest: इनबॉक्स गंतव्य
+            location: स्थान
+            name: नाम
+            server_default: सर्वर तयशुदा
+            status: स्थिति
+            upload_directly: कस्टम इनबॉक्स पर सीधे अपलोड करें
+            upload_message: यदि चेक किया जाता है, डिफ़ॉल्ट इनबॉक्स में पैकेज अपलोड
+              नहीं किया जाएगा यदि यह कार्यसमूह एकमात्र प्राप्तकर्ता है
+          show:
+            view_packages: पैकेजों को देखें
+          wg_permissions:
+            add_dir_serv_groups_as_members_hint: सदस्य के रूप में निर्देशिका सेवा
+              समूहों को जोड़ें/हटाएँ
+            add_existing_users_hint: मौजूदा फाक्स उपयोक्ता जोड़ें/गैर कार्यसमूह के
+              व्यवस्थापक सदस्यों को हटा दें
+            edit_new_users_hint: बनाएँ/edit/delete/सदस्य के रूप में नए उपयोगकर्ताओं
+              को निकालें
+            full: " पूर्ण:"
+            full_hint: सदस्यों ने एक-दूसरे को देखने और भेजने के लिए अनुमति प्रदान
+              की
+            member_management: सदस्य प्रबंधन
+            moderated: " मॉडलः"
+            moderated_hint: केवल कार्यसमूह मालिक इस कार्यसमूह को भेज सकता है
+            open: " खोलें:"
+            open_hint: कोई भी इस कार्यसमूह में भेज सकता है
+            private: " निजी:"
+            private_hint: केवल सदस्य ही इस कार्यसमूह में भेज सकते हैं
+            restricted: " प्रतिबंधित:"
+            restricted_hint: कोई भी इस कार्यसमूह को भेज सकता है
+            restricted_hint_2: केवल कार्यसमूहों ने कार्यसमूह के व्यक्तिगत सदस्यों
+              को देखने या भेजने की अनुमति प्रदान की ।
+            send_to_eachother: 'कार्यसमूह के सदस्य एक दूसरे को भेजना:'
+            sending_to_itself: 'स्वयं वर्कग्रुप को भेज रहा है:'
+            wg_admins_only: " केवल कार्यसमूह प्रशासक:"
+            wg_admins_only_hint: सदस्यों को देखने और कार्यसमूह के लिए भेजने के लिए
+              अनुमति दी गई
+            workgroup_admins_can: कार्यसमूह एडमींस कर सकते हैं ...
+            workgroup_permissions: कार्यसमूह अनुमति
+          workgroup_list:
+            description: वर्णन
+            dropbox: ड्रॉपबॉक्स
+            latest: नवीनतम
+            member_warning: आप वर्तमान में किसी भी कार्यसमूह में सदस्य नहीं हैं.
+            members: सदस्य
+            no_wg: कोई कार्यसमूह नहीं हैं.
+            packages: पैकेज
+            type: क़िस्म
+            workgroup: कार्यसमूह
+          workgroup_members_form:
+            wg_members_title: "%{wg_name} सदस्य &nbsp;"
+    helpers:
+      account:
+        users:
+          admin: " -एडमिन"
+          expir_date: एक सक्रिय उपयोगकर्ता के लिए %{date} को सेट किया जाना चाहिए.
+          manager: " -प्रबंधक"
+          neg: नहीं
+          pos: हाँ
+          set_admin: प्रशासक सेट करें
+          set_non_admin: गैर-प्रशासक सेट करें
+          taken_name: "%{नेम} पहले ही लिया जा चुका है"
+        bootstrap_content_helper:
+          actions: क्रियाएँ
+          close: बंद करें
+      admin:
+        nodes_helper:
+          browse_fail: ब्राउज़ रिमोट फ़ाइल स्रोत विफल
+        post_processes_helper:
+          activate: सक्रिय करना
+          confirm: क्या आप निश्चित हैं कि आप पोस्ट-प्रोसेसिंग स्क्रिप्ट %{Script_ni}
+            को मिटाना चाहते हैं?
+          deactivate: अक्रिय
+          remove: दूर करना
+          view_log: निष्पादन लॉग देखें
+      application_helper:
+        browse: ब्राउज़ ...
+        path: 'पथ:'
+      login_helper:
+        create_account: खाता बनाएँ (A)
+        request_account: खाता निवेदित करें
+      metadata_profiles_helper:
+        date_field: तारीख़ फील्ड
+        option_list: विकल्प सूची
+        text_area: पाठ क्षेत्र
+        text_field: पाठ क्षेत्र
+      packages_helper:
+        entire: पूरा पैकेज डाउनलोड करें
+        partial: आंशिक पैकेज डाउनलोड करें
+        return_to_history: इतिहास में वापसी
+        return_to_list: सूची में वापस जाएँ
+      registrations_helper:
+        create_account: खाता बनाएँ
+        request_account: अनुरोध लेखा
+      send_helper:
+        hide: छिपना
+        hide_cc: नक़ल छुपाएँ
+        show: दिखलाना
+        show_cc: सीसी दिखाएँ
+      sent_helper:
+        delete: मिटाएँ
+      source_shares_helper:
+        browse_fail: ब्राउज़ रिमोट फ़ाइल स्रोत विफल
+      workgroup:
+        deliveries_helper:
+          back_to_normal_view: सामान्य दृश्य में वापस
+          delete: मिटाएँ
+          view_full_history: पूरा इतिहास देखें
+          view_members: सदस्य देखें
+        users_helper:
+          create_new_user: नया उपयोगकर्ता बनाएँ
+        workgroups_helper:
+          delete: मिटाएँ
+          delete_confirm: क्या आप निश्चित हैं कि आप %{wg_typt} "%{wG_nY}" को मिटाना
+            चाहते हैं?
+          delete_wg: "%{wg_ni} को मिटाएँ"
+          dropbox: ड्रॉपबॉक्स
+          edit: संपादित करें
+          edit_wg: "%{wg_typt_ni} को संपादित करें"
+          names_placeholder: उपयोगकर्ता नाम या ईमेल पता दर्ज करें
+          view_all: सभी देखें
+          view_mine: मेरा ख्याल करें
+          view_packages: पैकेजों को देखें
+          workgroup: कार्यसमूह
+    models:
+      c_configuration:
+        cant_be_blank: मैदान खाली नहीं हो सकता.
+      delivery:
+        send_fail_quota_limit: पैकेज भेजने में असमर्थ, %{cy} MB की क्कोटा सीमा पहुँच
+          गई
+        send_fail_permissions: आप सामान्य पैकेज बनाने की अनुमति नहीं है
+        send_fail_invalid_recipients: कोई वैध प्राप्तकर्ता नहीं
+        send_fail_dropbox_only: ड्रॉपबॉक्स प्राप्तकर्ता ही एकमात्र प्राप्तकर्ता होना
+          चाहिए
+        send_fail_invalid_recipient_specific: 'अमान्य प्राप्तकर्ता: %{Eintent_ni}'
+        send_fail_permissions_multiple: आपको किसी एक या अधिक निर्दिष्ट प्राप्तकर्ताओं
+          को भेजने की अनुमति नहीं है
+        send_fail_invalid_cc: 'अवैध CC (अपलोड करने पर): %{cc_name}'
+        send_fail_invalid_ccs_upload: आप को एक या अधिक प्राप्तकर्ता को अपलोड के क्षेत्र
+          में भेजने की अनुमति नहीं है (CC)
+        send_fail_invalid_ccs_download: आप डाउनलोड क्षेत्र में एक या अधिक प्राप्तकर्ता
+          को सीसी या अधिक करने की अनुमति नहीं है
+        send_fail_invalid_ccs_receipt: आप को रसीद के क्षेत्र में किसी एक या अधिक प्राप्तकर्ता
+          को CC करने की अनुमति नहीं है
+        send_fail_must_have_one_source: वास्तव में एक स्रोत होना चाहिए
+        send_fail_unknown_share_id: अज्ञात स्रोत शेयर आईडी %{शेयर_id}
+        send_fail_source_not_authorized: स्रोत अधिकृत नहीं
+        send_fail_no_items_to_upload: अपलोड करने के लिए कोई आइटम नहीं!
+        send_fail_unique_filenames: फ़ाइल नाम बेजोड़ होना चाहिए
+        send_fail_ear_must_be_specified: निर्दिष्ट होना चाहिए
+        send_fail_ear_not_allowed: स्वीकृत नहीं
+        send_fail_ear_disabled_message: एन्क्रिप्शन-एट-आराम अक्षम है, पासफ़्रेज़ की
+          अनुमति नहीं है.
+        send_fail_sendershareid_forwarding: भेजे गए पैकेजों के लिए sendersheId नहीं
+          बदला जा सकता है
+        send_fail_invalid_release_policy: 'अवैध रिलीज़ नीति: %{rP}'
+        send_fail_policy_date_future: विमोचन तिथि भविष्य में होनी चाहिए ।
+        send_fail_expiration_date_future: समाप्ति की तारीख भविष्य में होनी चाहिए
+      directory_service_user:
+        login_error_message: आपका लॉगिन असफल रहा. कृपया फिर कोशिश करें. यदि आप बार-बार
+          लॉगिन विफलताओं का अनुभव कर रहे हैं तो आपको अपना पासवर्ड रीसेट करने के लिए
+          'फॉल पासवर्ड' लिंक क्लिक करना चाहिए.
+      e_membership:
+        status:
+          expired: समय समाप्त
+          active: सक्रिय
+          inactive: निष्क्रिय
+      local_user:
+        cannot_be_blank: ब्लैंक नहीं
+        is_incorrect: गलत है
+        login_error_message: आपका लॉगिन असफल रहा. कृपया फिर कोशिश करें. यदि आप बार-बार
+          लॉगिन विफलताओं का अनुभव कर रहे हैं तो आपको अपना पासवर्ड रीसेट करने के लिए
+          'फॉल पासवर्ड' लिंक क्लिक करना चाहिए.
+        lock_out_message: आप भी बहुत से असफल लॉगिन के कारण बाहर बंद कर दिया गया है.
+        same_as_old_pw: पुराने पासवर्ड के रूप में ही है
+        same_old_pw_hint: आपके पिछले %{Ci} पासवर्ड से अलग होना चाहिए
+      metadata_field:
+        value_already_taken: "'%{pinee}' पहले ही लिया जा चुका है"
+        max_length_not_int: क्षेत्र '%{label_ni}' का अधिकतम लंबाई एक पूर्णांक ही होना
+          चाहिए
+        max_length_bounds: क्षेत्र '%{llabel_ni}' का अधिकतम लंबाई 1 और %{max} के बीच
+          होना चाहिए
+        valid_option_list: "'%{label_ni}' के लिए एक वैध विकल्प सूची की आवश्यकता है"
+        valid_date_format: "'%{label_nm}' के लिए वैध तिथि प्रारूप की आवश्यकता है"
+        cannot_be_blank: "%{label_nY} खाली नहीं किया जा सकता है"
+        error_decoding: 'मेटाडाटा डिकोडिंग करने में त्रुटि: %{metac}'
+      metadata_profile:
+        all_fields_length_error: सभी क्षेत्रों की कुल अधिकतम लंबाई (लेबल, विकल्प और
+          तिथि क्षेत्र सहित) my_max_YM अक्षरों से कम होना चाहिए
+        field_blank_error: "%{rar_label} खाली नहीं होना चाहिए"
+        field_illegal_char_error: 'निम्नलिखित अक्षर में से कोई भी नहीं होना चाहिए:
+          %{llegal}'
+        field_length_error: "%{rar_label} होना चाहिए %{max} अक्षर या कम"
+        field_options_error: 'इन विकल्पों में से एक को शामिल करना चाहिए: %{list}'
+        invalid_JSON_error: लेयर_YM एक वैध JSON होना चाहिए
+        invalid_share_id_error: के लिए अवैध शेयर आईडी %{er_vale}
+        invalid_user_error: Emy_er_label_YM के लिए अमान्य उपयोगकर्ता %{er_user}
+        invalid_value_error: के लिए अमान्य मान (_r)
+        max_length_reset_error: अधिकतम लंबाई क्षेत्र डिफ़ॉल्ट रूप से रीसेट कर दिया
+          गया है
+        must_be_list_error: "%{rar_label} को साझा करने की सूची होनी चाहिए"
+        no_fields_error: मेटाडेटा प्रोफ़ाइल कम से कम एक क्षेत्र होना चाहिए
+        note_invalid_char_error: 'नोट में निम्न अक्षर शामिल नहीं होना चाहिए: # {अवैध}'
+        note_length_bounds_error: नोट की अधिकतम लंबाई 1 और %{max} के बीच होनी चाहिए
+        note_length_error: नोट %{MAY} अक्षर या कम होना चाहिए
+        note_length_int_error: नोट की अधिकतम लंबाई एक पूर्णांक ही होना चाहिए
+        note_length_specified_error: नोट की अधिकतम लंबाई निर्दिष्ट की जानी चाहिए
+        specified_error: "%{err_label} को निर्दिष्ट करना चाहिए"
+        title_invalid_char_error: 'शीर्षक में निम्न अक्षर नहीं होना चाहिए: %{llegal}'
+        title_length_bounds_error: शीर्षक की अधिकतम लंबाई 1 और %{max} के बीच होनी
+          चाहिए
+        title_length_error: शीर्षक %{MAY} अक्षर या कम होना चाहिए
+        title_length_int_error: शीर्षक की अधिकतम लंबाई एक पूर्णांक ही होना चाहिए
+        title_length_specified_error: शीर्षक की अधिकतम लंबाई निर्दिष्ट की जानी चाहिए
+      post_process:
+        all_uploaded_pkgs: "[सभी अपलोड पैकेज]"
+      saml_configuration:
+        unspecified: अनिर्दिष्ट
+        transient: क्षणिक
+        persistent: निरंतर
+        email_address: ईमेल पता
+      send_package_request:
+        from_name_error: '"प्रेषक" नाम सत्यापित उपयोगकर्ता नहीं करता है'
+        invalid_recipient_error: अवैध प्राप्तकर्ता
+        parse_xml_error: निवेदन के विश्लेषण में असमर्थ
+        validate_sender_error: अपलोड करने के लिए अधिकृत नहीं
+        too_many_elements: तत्व %{path} को %{max} से अधिक नहीं होना चाहिए
+        too_few_elements: तत्व %{path} को कम से कम %{min} होना चाहिए
+      user:
+        passwordable:
+          requirements: कम से कम छह अक्षर लंबा होना चाहिए
+          strong_requirements: कम से कम छह अक्षर लंबा होना चाहिए, कम से कम एक अक्षर,
+            एक नंबर, और एक प्रतीक
+        status:
+          saml_disabled: एसएएमएल विन्यास अक्षम
+          pending: लंबित अनुमोदन
+          active: सक्रिय
+          locked: तालाबंद
+          inactive: निष्क्रिय
+  config:
+    account_navigation:
+      preferences: वरीयताएं
+      change_password: पासवर्ड बदलें
+      contacts: संपर्क संपादित करें
+      distribution_lists: वितरण सूची संपादित करें
+      sender_quota: भेजने वाले का कोटा
+    initializers:
+      will_paginate:
+        laq_prev: Laquo; पिछला (&L)
+        lar_prev: पिछला (&L); पिछला
+        raq_next: अगला (&rquo;)
+        rar_next: अगला (&r);
+    license:
+      paste_license: अपने लाइसेंस की सामग्री को यहाँ चिपकाएं
+      update_license: लाइसेंस अद्यतन करें
+      decoded_license: डीकोड लाइसेंस
+    navigation:
+      account_approved: स्वीकृत खाता
+      account_denied: खाता अस्वीकृत
+      accounts: खाता
+      authentication: प्रमाणीकरण
+      configuration: विन्यास
+      directory_service_groups: निर्देशिका सेवा समूह
+      directory_services: निर्देशिका सेवाएं
+      display_settings: प्रदर्शक विन्यास
+      dropbox_invitation: ड्रॉपबॉक्स आमंत्रण
+      dropbox_submit: ड्रॉपबॉक्स सबमिट
+      email_configuration: ई मेल विन्यास
+      entitlement: पात्रता
+      external_users: बाहरी उपयोक्ता
+      forgot_password: पासवर्ड भूल गया
+      forward_error_cc: रिले त्रुटि सीसी
+      forward_finished_cc: रिले समाप्त CC
+      forward_started_cc: रिले शुरू किया गया CC
+      global_distribution_lists: वैश्विक वितरण सूची
+      license: लाइसेंस
+      login_announcement: लॉगिन घोषणा
+      metadata: मेटाडाटा
+      new_package: नया पैकेज
+      notifications: अधिसूचनाएं
+      package_cc_receipt_on_received: पैकेज प्राप्त CC
+      package_cc_receipt_on_sent: पैकेज भेजा गया सीसी
+      package_downloaded: पैकेज डाउनलोड किया गया
+      package_downloaded_cc: पैकेज डाउनलोड किया गया
+      package_instructions: पैकेज अनुदेश
+      package_received: प्राप्त पैकेज
+      package_storage: पैकेज भंडारण
+      package_validation_failed_recipient: पैकेज वेलिडेशन प्राप्तकर्ता असफल
+      package_validation_failed_sender: पैकेज वेलिडेशन को विफल
+      packages: पैकेज
+      pending_registrations: लंबित पंजीकरण
+      personal_invitation: व्यक्तिगत निमंत्रण
+      personal_submit: व्यक्तिगत सबमिट
+      post_processes: पश्च-प्रक्रमण
+      received: प्राप्त
+      saml_groups: एसएएमएल समूह
+      saml_integration: एसएएमएल इंटीग्रेशन
+      save_restore: सहेजें/पुनर्स्थापित करें
+      security: प्रतिभूति
+      sent: भेजा गया
+      server: सर्वर
+      shares: फ़ाइल भंडारण
+      transfer_options: हस्तांतरण विकल्प
+      upload_result: अपलोड परिणाम
+      upload_result_cc: अपलोड परिणाम CC
+      user_profile: उपयोगकर्ता प्रोफ़ाइल
+      users: उपयोक्ता
+      web_server: वेब सर्वर
+      welcome_email: आपका स्वागत है
+      workgroup_package: कार्यसमूह पैकेज
+      workgroups: कार्यसमूह
+  common:
+    allow: अनुमति दें
+    deny: इनकार करना
+    default: डिफ़ॉल्ट
+    server_default: सर्वर डिफ़ॉल्ट (%{server_default})
+    are_you_sure: क्या आप सुनिश्चित हैं?
+    days_from_now: अब से दिन
+  date:
+    abbr_day_names:
+    - Sun
+    - Mon
+    - Tue
+    - Wed
+    - Thu
+    - Fri
+    - Sat
+    abbr_month_names:
+    - 
+    - Jan
+    - Feb
+    - Mar
+    - Apr
+    - May
+    - Jun
+    - Jul
+    - Aug
+    - Sep
+    - Oct
+    - Nov
+    - Dec
+    day_names:
+    - Sunday
+    - Monday
+    - Tuesday
+    - Wednesday
+    - Thursday
+    - Friday
+    - Saturday
+    formats:
+      default: "%Y-%m-%d"
+      long: "%B %d, %Y"
+      short: "%b %d"
+    month_names:
+    - 
+    - January
+    - February
+    - March
+    - April
+    - May
+    - June
+    - July
+    - August
+    - September
+    - October
+    - November
+    - December
+    order:
+    - :year
+    - :month
+    - :day
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: लगभग 1 घंटे
+        other: "%{count} घंटे के बारे में"
+      about_x_months:
+        one: लगभग 1 महीना
+        other: "%{count} महीने के बारे में"
+      about_x_years:
+        one: लगभग 1 वर्ष
+        other: "%{count} वर्षों के बारे में"
+      almost_x_years:
+        one: लगभग 1 वर्ष
+        other: लगभग %{count} वर्ष
+      half_a_minute: आधा मिनट
+      less_than_x_seconds:
+        zero: 1 सेकंड से कम
+        one: 1 सेकंड से कम
+        other: "%{count} सेकंड से कम"
+      less_than_x_minutes:
+        zero: एक मिनट से भी कम
+        one: एक मिनट से भी कम
+        other: "%{count} मिनट से कम"
+      over_x_years:
+        one: 1 साल के
+        other: "%{count} वर्षों में"
+      x_seconds:
+        one: 1 सेकण्ड
+        other: "%{count} सेकंड"
+      x_minutes:
+        one: 1 मिनट
+        other: "%{count} मिनट"
+      x_days:
+        one: 1 दिन
+        other: "%{count} दिन (_s)"
+      x_months:
+        one: 1 महीना
+        other: "%{count} माह (_s)"
+      x_years:
+        one: 1 वर्ष
+        other: "%{count} वर्ष (_s)"
+    prompts:
+      second: सेकण्ड
+      minute: मिनिट
+      hour: घंटा
+      day: दिन
+      month: माह
+      year: वर्ष
+  helpers:
+    application:
+      archive: अभिलेखागार
+      back: पीछे
+      cloud_storage_referencing: क्लाउड भंडारण संदर्भित इस भंडारण के द्वारा समर्थित
+        है.
+      connect_install_message: अधिकतम %{direction} गति का उपयोग करने के लिए, कृपया
+        %{stiaa} ब्राउज़र प्लगइन स्थापित करें.
+      connect_upgrade_message: अधिकतम %{direction} गति का उपयोग करने के लिए, कृपया
+        अपने %{Auraa} ब्राउज़र प्लगइन का उन्नयन करें.
+      confirm: क्या आप निश्चित हैं कि आप मियो_pack_wend_YM द्वारा भेजे गए पैकेज %{pack_ye}
+        के लिए फ़ाइलों को नष्ट करना चाहते हैं?
+      copy: क्लिपबोर्ड में नक़ल करें
+      delete: मिटाएँ
+      delete_confirm: क्या आप निश्चित हैं कि आप मियो_pack_wend_YM द्वारा भेजे गए पैकेज
+        %{pack_ye} के लिए फ़ाइलों को नष्ट करना चाहते हैं?
+      delete_confirm_forward: यह एक और पैकेज की बात है. मूल और सभी अग्रेषित हटा दिया
+        जाएगा.
+      delete_confirm_has_forwards: इस पैकेज के अग्रेषित किए जा रहे हैं. मूल और सभी
+        अग्रेषित हटा दिया जाएगा.
+      enable_hst_dl: Aspera के साथ उच्च गति हस्तांतरण सक्षम करने के लिए, कृपया MY_डाउनलोड
+        कनेक्ट करें ब्राउज़र प्लगिन.
+      enable_hst_dl_enable: Aspera के साथ उच्च गति हस्तांतरण सक्षम करने के लिए, कृपया
+        %{Fload} और %{enable} कनेक्ट ब्राउज़र प्लगइन को सक्षम करें.
+      local_transfer_message: आप वर्तमान में निम्न गति HTTP का उपयोग कर रहे हैं. Aspera
+        के साथ उच्च गति हस्तांतरण सक्षम करने के लिए, कृपया कनेक्ट ब्राउज़र प्लगइन
+        सक्षम/डाउनलोड करने के लिए %{enable} का दौरा करें.
+      no_cloud_storage_referencing: क्लाउड भंडारण संदर्भ इस भंडारण के द्वारा समर्थित
+        नहीं है.
+      no_transfer_dl: बिना Aspera कनेक्ट के विज्ञापनों की निष्पादन सीमाएं होती हैं.
+        इस सीमा को दूर करने के लिए और Aspera के साथ उच्च गति हस्तांतरण सक्षम करने
+        के लिए, कृपया %{download} कनेक्ट ब्राउज़र प्लगइन.
+      no_transfer_dl_enable: बिना Aspera कनेक्ट के विज्ञापनों की निष्पादन सीमाएं होती
+        हैं. इस सीमा को दूर करने के लिए और Aspera के साथ उच्च गति हस्तांतरण सक्षम
+        करने के लिए, कृपया %{ploaded} और %{enable} कनेक्ट ब्राउज़र प्लगइन.
+      not_supp_symbolic_links: भंडारण सांकेतिक कड़ी का समर्थन नहीं करता है
+      note: नोट
+      package_details: पैकेज विवरण के लिए यहाँ क्लिक करें.
+      public_url: सार्वजनिक यूआरएलः
+      retry_upload: अपलोड फिर से करें
+      set_now: अब सेट करें
+      stop_upload: अपलोड रोकें
+      supp_symbolic_links: भंडारण सांकेतिक कड़ी समर्थित करता है
+    select:
+      prompt: कृपया चुनें
+    submit:
+      create: "%{cre} बनाएँ"
+      create_without_model: बनाएँ
+      create_and_continue: बनाएँ और %{action}
+      submit: मॉड___YM को सहेजें
+      update_license: अद्यतन और वेलिडेट लाइसेंस
+      update: "%{मॉड} को अद्यतन करें"
+  login:
+    new:
+      login: लॉग इन
+      login_using_saml_idp: SAML आईडीपी का उपयोग करके लॉग इन करें
+    logged_out:
+      message: आपको फेपेक्स से लॉग किया गया है; आपको अभी भी अपने कॉर्पोरेट एकल-साइन-ऑन
+        खाते से लॉग आउट करने की जरूरत हो सकती है.
+      log_in_again: फिर से लॉग इन करें
+    errors:
+      saml_not_authorized: आप फापपेक्स का उपयोग करने के लिए अधिकृत नहीं हैं.
+      invalid_saml_response: SAML पहचान प्रदाता से अवैध प्रतिक्रिया.
+      saml_login_failed: लॉगिन असफल.
+      saml_exception: एसएएमएल प्रतिक्रिया त्रुटि. कृपया लॉग की जाँच करें.
+  lib:
+    app:
+      not_pingable: नालायक नहीं
+      not_infoable: सूचना-योग्य नहीं
+      not_browsable: नहीं-जा
+      node_error: नोड त्रुटि
+      host_error: होस्ट त्रुटि
+    app_tar:
+      app:
+        bad_version: असंगत संस्करण संख्या
+        config_save_error: विन्यास सहेजने में त्रुटि.  विवरण के लिए लॉग देखें.
+        upload_saved_config: एक सहेजा विन्यास अपलोड करें
+        restore_config_error: विन्यास बहाल करने में त्रुटि.  विवरण के लिए लॉग देखें.
+        tar_error: Config config My_tar_stat_yM %{tar_but}
+        untar_error: कॉन्फ़िग (UNTARING CONFIG %{UNTAR_STAT})
+    aspera_license_reader:
+      no_license_found: कोई लाइसेंस नहीं मिला या लाइसेंस अच्छी तरह से बनाया नहीं गया
+      license_signature_mismatch: लाइसेंस हस्ताक्षर से मेल नहीं खाता है
+      not_faspex_license: लाइसेंस फाक्स लाइसेंस नहीं है
+      expired_license: लाइसेंस समाप्त हो गया है
+      bad_expiration_license: लाइसेंस के लिए एक बुरा समापन तिथि है
+      valid_license: लाइसेंस वैध है
+      invalid_license: अवैध लाइसेंस
+    directory_services:
+      active_directory:
+        active_directory: सक्रिय निर्देशिका
+        microsoft_active_directory: Microsoft सक्रिय निर्देशिका
+      apple_open_directory:
+        apple_open_directory: एप्पल ओपन निर्देशिका
+        open_directory: निर्देशिका खोलें
+      red_hat:
+        fedora_directory: 389/रेड हैट/फेडोरा निर्देशिका सर्वर
+        red_hat_directory: रेड हैट निर्देशिका सर्वर
+    membership_methods:
+      dropbox_admin: ड्रॉपबॉक्स एडमिन
+      wg_admin: कार्यसमूह एडमिन
+      standard: मानक
+      submit_only: सिर्फ सब्मिट करें
+      set_to_standard_access: मानक पहुँच के लिए उपयोगकर्ता को सेट करें
+      set_to_submit_access: जमा करने के लिए उपयोक्ता सेट करें-केवल पहुँच
+      set_user_as_admin: 'बतौर उपयोगकर्ता # {wg_name} के रूप में सेट करें'
+    packages:
+      package_methods:
+        HTTP_upload_in_progress: HTTP अपलोड प्रगति में है, यह रद्द कर दिया जाएगा यदि
+          आप इस पृष्ठ से नेविगेट करते हैं.
+        new_package: नया पैकेज
+        return_to_history: इतिहास में वापसी
+        return_to_list: सूची में वापस जाएँ
+        send_to_dropbox: 'के लिए भेजें: %{daend_nade}'
+  number:
+    currency:
+      format:
+        delimiter: ","
+        format: "%u%n"
+        precision: 2
+        separator: "."
+        significant: false
+        strip_insignificant_zeros: false
+        unit: "$"
+    format:
+      delimiter: ","
+      precision: 3
+      separator: "."
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: "%n %u"
+        units:
+          billion: अरब
+          million: लाख
+          quadrillion: क्वाड्रिलियन
+          thousand: हजार
+          trillion: ट्रिलियन
+          unit: ''
+      format:
+        delimiter: ''
+        precision: 1
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one: बाइट
+            other: बाइट
+          eb: इब
+          gb: जीबी
+          kb: के बी
+          mb: मेगाबाइट
+          pb: PB
+          tb: क्षय रोग
+    percentage:
+      format:
+        delimiter: ''
+        format: "%n%"
+    precision:
+      format:
+        delimiter: ''
+  public:
+    javascripts:
+      admin:
+        authorization_domains:
+          form:
+            save: सहेजें
+            save_and_test: सहेजें और जाँच
+  support:
+    array:
+      last_word_connector: ", और "
+      two_words_connector: " और "
+      words_connector: ", "
+  time:
+    am: पूर्वाह्न
+    formats:
+      default: "%a, %d %b %Y %H:%M:%S %z"
+      long: "%B %d, %Y %H:%M"
+      short: "%d %b %H:%M"
+    pm: पूर्वाह्न

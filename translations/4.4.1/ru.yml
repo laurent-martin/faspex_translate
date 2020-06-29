@@ -1,0 +1,3027 @@
+---
+ru:
+  activerecord:
+    models:
+      node: Узел
+      share: Хранение файлов
+      distribution_list: Список рассылки
+      authorization_domain: Служба каталогов
+      metadata_profile: Профиль метаданных
+      metadata_field: Поле метаданных
+    attributes:
+      authorization_domain:
+        host: Адрес сервера
+        port: Порт
+        treebase: Требразы
+        login: Вход
+        password: Пароль
+      c_configuration:
+        encrypt_transfers: Шифрование передач
+        c_ssh_tcp_port: Порт TCP SSH
+        c_fasp_udp_port: порт Fasp UDP
+        http_fallback_port: Резервный порт HTTP
+        c_kbps_initial_target_upload_rate: Начальная скорость закачки
+        c_kbps_initial_target_download_rate: Начальная скорость загрузки
+        c_kbps_max_target_upload_rate: Максимальная скорость передачи
+        c_kbps_max_target_download_rate: Максимальная скорость загрузки
+        c_lock_minrate_policy: Минимальная ставка и стратегия блокировки
+        c_relay_outgoing_bandwidth: Пропускная способность
+        c_relay_incoming_bandwidth: Пропускная способность ретрансляции
+        min_connect_version_major: Минимальная версия Connect
+        min_connect_version_minor: Минимальная версия Connect
+        min_connect_version_point: Минимальная версия Connect
+        http_fallback_enabled: Включить резервные копии HTTP
+        downloads_during_transfers_enabled: Включить загрузку во время передачи
+      m_configuration:
+        email_from_email: Faspex "From:" email
+        m_smtp_server_port: Порт сервера
+        m_smtp_auth_type: Аутентификация SMTP
+        m_smtp_server: Почтовый сервер SMTP
+        use_tls: Использовать TLS, если доступен
+        m_smtp_helo_domain: Домен
+        m_smtp_username: Пользователь (включить домен)
+        smtp_password: Пароль
+        email_from: Faspex "From:" name
+        package_received_notifications_from: Получатель пакетов "От"
+      e_configuration:
+        ad_proxy_host: Хост прокси Active Directory
+        ad_proxy_port: Порт прокси Active Directory
+        announcement: Сообщение
+        dbox_can_override_ear: Разрешить выпадающие списки иметь собственные параметры
+          шифрования
+        can_override_ear_per_personal_invite: Разрешить пользовательские параметры
+          шифрования для внешних приглашений отправителей
+        e_http_port: Порт HTTP
+        e_https_port: Порт HTTPS
+        e_server_address: Внешний адрес или имя сервера
+        e_server_enable_alternate_address: Включить альтернативный адрес
+        e_server_emails_include_alternate_address: Электронная почта включает альтернативный
+          адрес
+        email_passcode_expires: Срок действия ссылки на пакет
+        email_passcode_days_valid: Срок действия после
+        email_passcode_expire_after_download: Срок действия после полного скачивания
+          пакета
+        registration_type: Саморегистрация
+        registration_approval_ccs: Уведомить об утверждении следующих сообщений электронной
+          почты
+        registration_external_use_default: Использовать политику регистрации по умолчанию
+          для внешних пользователей
+        registration_type_external: Политика регистрации для внешних пользователей
+        registration_approval_ccs_external: Уведомлять следующие электронные сообщения
+          об утверждении внешних пользователей
+        tos_external: Условия службы для внешних пользователей
+        package_instructions: Сообщение
+        tos: Условия службы
+        use_strong_password: Использовать строчные пароли
+        force_password_reset_for_new_users: Требовать от новых пользователей изменения
+          пароля при первом входе в систему
+        allow_users_to_unlock: Разрешить заблокированным пользователям разблокировать
+          себя
+        session_timeout: Тайм-аут сеансов после
+        allow_send_to_email: Разрешить отправку на внешние адреса электронной почты
+        allow_request_from_email: Разрешить приглашения
+        registered_users_have_mutual_scope: Самозарегистрированные пользователи могут
+          отправлять друг на друга
+        inviting_allowed: Разрешить приглашать внешних отправителей
+        hide_user_dir_default: Сохранить пользовательский каталог по умолчанию
+        public_url_allowed: Разрешить общедоступные URL передачи
+        dbox_can_override_public_url: Разрешить выпадающие списки для отдельных включения/выключения
+          собственных общих URL
+        public_url_home_server_id: Домашний сервер для общих URL
+        automatically_login_using_saml_idp: Вход в систему с использованием провайдера
+          идентификации SAML
+        saml_idp_sso_target_url: URL единой регистрации IdP
+        saml_idp_slo_target_url: URL для одного журнала IdP
+        saml_idp_cert_fingerprint: Отпечаток сертификата IDP
+        saml_idp_cert: Сертификат IdP
+        can_see_global_distribution_lists_default: По умолчанию пользователи могут
+          видеть глобальные списки рассылки
+        tos_for_sending: Условия службы для отправки
+        remove_ds_users_on_inactivity: Удалить пользователей DS
+        remove_saml_users_on_inactivity: Удалить пользователей SAML
+      e_workgroup:
+        e_wg_name: Имя
+        e_wg_desc: Описание
+        workgroup_received_notification_cc: Отправить копию квитанция по электронной
+          почте на эти адреса
+        destination_share_id: Входящие по умолчанию
+      invitation:
+        expires_at: Дней до истечения срока действия
+      node:
+        alternate_address: Вторичный адрес или имя
+        alternate_address_client_filter: Использовать, если адреса реквестера совпадают
+        alternate_address_server_filter: Использовать, если имя хоста браузера совпадает
+        api_password: Пароль
+        api_port: Порт
+        api_username: Имя пользователя
+        enable_alternate_address: Включить дополнительный адрес
+        encrypted_api_password: Пароль
+        host: Хост
+        name: Имя
+        primary_address: Основной адрес передачи или имя
+        ssl: Использовать SSL?
+        verify_ssl: Проверить сертификат SSL?
+      share:
+        kbps_initial_target_upload_rate: Начальная скорость закачки
+        kbps_initial_target_download_rate: Начальная скорость загрузки
+        lock_minrate_policy: Минимальная ставка и стратегия блокировки
+        kbps_max_target_upload_rate: Максимальная скорость передачи
+        kbps_max_target_download_rate: Максимальная скорость загрузки
+        relay_incoming_bandwidth: Частота входящих ретрансляции
+        relay_outgoing_bandwidth: Скорость исходящего ретрансляции
+      e_package:
+        e_package_name: Название
+      delivery:
+        metadata: 'Недопустимые метаданные: '
+        sources: ''
+        ear_passphrase: Фраза-пароль
+        tos_for_sending: Условия службы
+      registration:
+        name: Вход
+        email: Электронная почта
+        first_name: Имя
+        last_name: Фамилия
+        tos_agreement: Я принимаю условия службы
+      metadata_field:
+        label: Метка
+      post_process:
+        active: Активно
+        name: Имя
+        script_path: Путь к сценарию на сервере
+        package_name: Имя пакета
+        sender_name: Имя отправителя
+        sender_email: Электронная почта отправителя
+        recipient_name: Список получателей
+        recipient_email: Список электронной почты получателя
+        package_note: Примечание для пакета
+      ad_group:
+        kbps_initial_target_upload_rate: Начальная скорость закачки (кбит/с)
+        kbps_initial_target_download_rate: Начальная скорость загрузки (кбит/с)
+        kbps_max_target_upload_rate: Максимальная скорость выгрузки (кбит/с)
+        kbps_max_target_download_rate: Максимальная скорость загрузки (кбит/с)
+        lock_minrate_policy: Минимальная ставка и стратегия блокировки
+        can_invite: Разрешить приглашать внешних отправителей
+        dn: DN
+      directory_service_group:
+        kbps_initial_target_upload_rate: Начальная скорость закачки (кбит/с)
+        kbps_initial_target_download_rate: Начальная скорость загрузки (кбит/с)
+        kbps_max_target_upload_rate: Максимальная скорость выгрузки (кбит/с)
+        kbps_max_target_download_rate: Максимальная скорость загрузки (кбит/с)
+        lock_minrate_policy: Минимальная ставка и стратегия блокировки
+      user:
+        name: Вход
+        email: Электронная почта
+        password: Пароль
+        password_confirmation: Подтверждение пароля
+        kbps_initial_target_upload_rate: Начальная скорость закачки (кбит/с)
+        kbps_initial_target_download_rate: Начальная скорость загрузки (кбит/с)
+        kbps_max_target_upload_rate: Максимальная скорость выгрузки (кбит/с)
+        kbps_max_target_download_rate: Максимальная скорость загрузки (кбит/с)
+        lock_minrate_policy: Минимальная ставка и стратегия блокировки
+        rows_per_page: Максимальное число строк на странице
+        disable_connect: Выключить модуль Aspera Connect
+        account_activated: Счет активирован
+        account_expires: Срок действия счета
+        self_destructs: Автоматическое удаление учетной записи
+        destruction_date: Дата удаления
+        received_notification_cc: Отправить копию квитанция по электронной почте на
+          эти адреса
+        allow_receipt_cc_edit: Разрешить изменение адресов получения при создании
+          пакета
+        uploads_allowed: Закачать пакеты
+        downloads_allowed: Загрузить пакеты
+        forwarding_allowed: Пересыть
+        can_create_from_remote: Создание пакетов из удаленных источников
+        can_send_to_all_faspex_users: Может отправлять всем пользователям Faspex
+        can_send_to_external_email: Может отправлять на внешнюю электронную почту
+        can_invite: Разрешить приглашать внешних отправителей
+        notify_on_receive: Отправить мне по электронной почте, когда я получу пакет
+        notify_on_validation_failure_if_sender: Отправить мне сообщение электронной
+          почты, если проверка не выполнена на отправленных
+        notify_on_validation_failure_if_recipient: Отправить мне сообщение электронной
+          почты, если проверка не выполнена на полученных
+        notify_downloader_on_download: Отправить мне по электронной почте, когда я
+          загружу пакет
+        notify_on_workgroup_package_if_sender: Включить меня в уведомления рабочей
+          группы для отправки пакетов I
+        suppress_connect_install_dialog: Подавить запрос на установку/обновление
+        allowed_ip_addresses_for_login: Допустимые IP-адреса для входа в систему
+        allowed_ip_addresses_for_download: Разрешенные IP-адреса для загрузки
+        allowed_ip_addresses_for_upload: Разрешенные IP-адреса для закачки
+        last_remote_addr: Адрес клиента последней регистрации
+        last_server_addr: Адрес последнего сервера входа в систему
+        override_transfer_parameters: Переопределить параметры по умолчанию
+        override_server_delete_after_download: Переопределить системное значение по
+          умолчанию
+        welcome_email: Отправить приветственное сообщение
+        created_at: Создано в
+        updated_at: Обновлено
+        type: Тип пользователя
+        description: Комментарии
+        allow_user_specified_delete_after_download: Разрешить пользователю устанавливать
+          собственные параметры удаления на основе пакета
+        enable_public_url: Включить общедоступный URL
+        can_have_public_url: Разрешить общедоступные URL передачи
+      local_user:
+        password_expiration_interval: Срок действия пароля истекает каждые
+      template_user:
+        days_til_expiration: Срок действия новых учетных записей
+        days_til_destruction: Новые учетные записи будут удалены
+      home_server_rule:
+        email_pattern: Регулярное выражение адреса электронной почты
+        user_name_pattern: Регулярное выражение имени пользователя
+        ad_group_pattern: Регулярное выражение группы службы каталогов
+        ad_dn_pattern: Регулярное выражение службы каталогов
+        ldap_field_pattern1: Регулярное выражение поля LDAP
+        ldap_field_pattern2: Регулярное выражение поля LDAP
+        ldap_field_pattern3: Регулярное выражение поля LDAP
+      send:
+        upload_cc: Эти получатели будут уведомлены, когда пакет будет выгрузиться
+        download_cc: Эти получатели будут уведомлены, когда получатель загрузится
+          с этим пакетом
+        receipt_cc: Эти получатели будут Cc в пакете получателей, полученное по электронной
+          почте
+    errors:
+      format: "%{attribute} %{message}"
+      e_configuration:
+        idp_cert_and_idp_cert_fingerprint_blank: Должен быть предоставлен один из
+          "шаблонов идентификации IdP" или "Сертификат IdP".
+      models:
+        delivery:
+          attributes:
+            title:
+              blank: Заголовок не может быть пустым
+        distribution_list:
+          attributes:
+            name:
+              blank: Имя не может быть пустым
+            contacts:
+              blank: Контакты не могут быть пустыми
+        e_configuration:
+          attributes:
+            max_title_length_in_storage_paths:
+              not_a_number: Максимальная длина заголовка в путях хранения не является
+                числом
+            days_until_packages_expire:
+              not_a_number: Число дней до истечения срока действия пакетов не является
+                числом
+        saml_configuration:
+          attributes:
+            allowed_clock_drift_in_ms:
+              not_a_number: Разрешенный дрейф часов в мс-это не число
+      messages:
+        accepted: должен быть принят
+        blank: не может быть пустым
+        confirmation: не соответствует %{attribute}
+        empty: не может быть пустым
+        equal_to: должно быть равно %{count}
+        even: должен быть даже
+        exclusion: зарезервировано
+        greater_than: должно быть больше %{count}
+        greater_than_or_equal_to: должно быть больше или равно %{count}
+        inclusion: не включен в список
+        invalid: является недопустимым
+        less_than: должно быть меньше %{count}
+        less_than_or_equal_to: должно быть меньше или равно %{count}
+        model_invalid: 'Проверка завершилась неудачно: %{errors}'
+        not_a_number: не является числом
+        not_an_integer: должно быть целым числом
+        odd: должно быть странно
+        other_than: не должно быть %{count}
+        present: должен быть пустым
+        record_invalid: 'Проверка завершилась неудачно: %{errors}'
+        restrict_dependent_destroy:
+          has_many: Невозможно удалить запись, так как существует зависимая %{record}
+          has_one: Невозможно удалить запись, так как существует зависимая %{record}
+        required: должен существовать
+        taken: уже принято
+        too_long:
+          one: слишком длинный (максимум-1 символ)
+          other: слишком длинное (максимальное число символов %{count})
+        too_short:
+          one: слишком короткий (минимум-1 символ)
+          other: слишком короткий (минимальное число символов %{count})
+        wrong_length:
+          one: "-неверная длина (должен быть 1 символ)"
+          other: "-неверная длина (символы %{count})"
+      template:
+        body: 'Возникли неполадки в следующих полях:'
+        header:
+          one: 1 ошибка не была сохранена в %{model}
+          other: Ошибки %{count} запрещают сохранение %{model}
+      user:
+        groups_are_inactive: Группы, в которых вы являетесь, неактивны
+        user_is_inactive: Пользователь неактивен
+        username_conflicts_with_existing_user: Имя пользователя конфликтует с существующей
+          учетной записью пользователя.
+  admin:
+    saml:
+      edit:
+        saml: SAML
+        automatically_login_using_saml_idp_hint: Автоматически регистрирутся при помощи
+          провайдера идентификации SAML.  %{url} можно использовать для непосредственного
+          входа в Faspex, даже если включен автоматический вход в систему с использованием
+          SAML.
+    saml_configurations:
+      edit:
+        domain_url_hint: "(Необязательно) При обращении к этому домену Faspex пользователи
+          будут автоматически направляться на вход в систему через этот провайдер
+          SAML (переопределяет значение по умолчанию)"
+        publicly_visible_hint: Разрешить пользователям доступ к этой конфигурации
+          SAML с локальной страницы входа в систему
+      test_warning: |-
+        Предупреждение: Это действие положит конец текущему сеансу Faspex и приведет вас к странице входа в систему для этого провайдера SAML.
+
+        Чтобы избежать завершения текущего сеанса, можно открыть эту ссылку в частном окне или в другом браузере, чтобы протестировать эту конфигурацию.
+  app:
+    controllers:
+      account:
+        ad_groups_controller:
+          added_group: Добавлена группа %{group_name} в рабочую группу
+          sync_group: Синхронизация %{group_name}
+          updated_grp_prov: Обновлена политика предоставления доступа к группам.
+          updated_grp_import: Изменена стратегия импорта групп.
+          updated_error: Ошибка при сохранении конфигурации группы %{group_name}:<br/>
+          removed_group: Удалена группа %{group_name} из рабочей группы.
+          wg_not_found: Рабочая группа не найдена
+          no_groups_selected: Группы не выбраны
+          group_sched_activated: "%{group_name} запланирован для активации"
+          group_sched_deactivated: "%{group_name} планируется деактивировать"
+          group_sched_removed: "%{group_name} планируется удалить"
+        memberships_controller:
+          added_wg: Добавлен шаблон пользователя в рабочую группу-%{wg_name}
+          added_wg_fail: Не удалось добавить пользователя шаблона в рабочую группу-%{wg_name}
+          remove_wg: Удален пользователь шаблона из рабочей группы-%{wg_name}
+          remove_wg_fail: Не удалось удалить пользователя шаблона из рабочей группы-%{wg_name}
+        saml_groups_controller:
+          added_group: Добавлена группа %{group_name}
+        users_controller:
+          no_wg_found: Не удалось найти рабочую группу *%{wg_name}
+          add_to_wg_fail: 'Ошибка при добавлении в рабочую группу: %{error}'
+          removed_from_wg: Удален из рабочей группы.
+          removed_from_wg_fail: 'Ошибка при удалении пользователя из рабочей группы:
+            %{error}'
+          user_membership_updated: Членство пользователя обновлено.
+          error_editing_membership: 'Ошибка при редактировании членства: %{error}'
+          created_user: Успешно создан пользователь %{user_name}
+          created_user_fail: Не удалось добавить пользователя.
+          updated_user: Успешно обновлен пользователь %{user_name}
+          permission_error: У вас нет разрешения на изменение пользователя %{user_name}
+          activated: Активированный %{user}
+          disabled_saml_user_note: "<br>Примечание: Пользователи, связанные с отключенной
+            конфигурацией SAML, будут оставаться неактивными"
+          deactivated: Деактивирован %{user}
+          removed: Удален %{user}
+          removed_external: Удален %{user}
+          no_users_selected: Пользователи не выбраны
+          active_users: Активные пользователи
+          all_users: Все пользователи
+          inactive_users: Неактивные пользователи
+      admin:
+        authorization_domains_controller:
+          updated: Конфигурация обновлена.
+        nodes_controller:
+          deleted: Удалено %{name}
+          deleted_fail: Нет прав на удаление %{name}
+          connection_fail: "%{message}<br />%{status}<br />%{status_message}"
+          connection_success: "%{message} <br /> Соединение выполнено успешно!"
+        notifications:
+          login_announcements_controller:
+            updated: Обновленное объявление регистрации
+          package_instructions_controller:
+            updated: Обновленные инструкции по пакету
+        packages_controller:
+          invalid_num_days: Недопустимое число дней
+          no_older_pkgs: Нет пакетов старше %{max}
+        post_processes_controller:
+          activated: Активировано %{script_name}
+          activated_error: Ошибка при активации %{script_name}
+          created: Сценарий постобработки %{script_name} успешно создан
+          deleted: Удален сценарий постобработки %{script_name}
+          inactivated: Inactivated %{script_name}
+          inactivated_error: Ошибка при деактивации %{script_name}
+          updated: Успешно обновлен сценарий %{script_name}
+        saml_configurations_controller:
+          create_success: 'Конфигурация SAML успешно создана<br>ПРИМЕЧАНИЕ: Перед
+            тем как войти в систему, необходимо обновить метаданные на сервере SAML.'
+          update_success: 'Конфигурация SAML успешно обновлена<br>ПРИМЕЧАНИЕ: Перед
+            тем как войти в систему, вам может потребоваться обновить метаданные на
+            сервере SAML.'
+        settings:
+          display_settings_controller:
+            file_too_large: Файл слишком большой. Максимальный размер файла-5 МБ
+            remove_logo_fail: Не удалось удалить пользовательский файл эмблемы
+            remove_logo_success: Успешно удален пользовательский файл эмблемы
+            unsupported_file_type: Неподдерживаемый тип файла для пользовательского
+              логотипа. Файл должен представлять собой образ jpeg, gif или png.
+            updated_settings: Обновленные параметры отображения
+          entitlement_controller:
+            invalid_license: Недопустимая лицензия на право
+            successful_entitlement: Успешно предоставляемое право
+            unable_to_register: Не удалось зарегистрировать
+          global_distribution_lists_controller:
+            created: Создан глобальный список рассылки %{name}
+            deleted: Удален глобальный список рассылки
+            updated: Обновленные глобальные списки рассылки
+            updated_fail: Ошибка при обновлении одного или нескольких глобальных списков
+              рассылки
+          license_controller:
+            license_upload_fail: Не удалось закачать лицензию
+            only_text_allowed: Разрешены только текстовые файлы
+            updated_license: Обновленная лицензия
+          package_storage_controller:
+            updated_settings: Обновленные параметры хранилища пакетов
+          save_restore_config_controller:
+            config_restored: Конфигурация восстановлена. Для завершения этого процесса
+              необходимо перезапустить Faspex.
+          security_controller:
+            updated_settings: Обновленные параметры защиты
+          transfer_options_controller:
+            updated_settings: Обновленные параметры опций передачи
+          web_server_controller:
+            updated_settings: Обновленные параметры веб-сервера
+        share_membership_controller:
+          deleted: Удалено %{mem_name}
+          deleted_fail: Не удалось удалить %{mem_name}
+        shares_controller:
+          add_term_fail: Не удалось добавить %{term}
+          added_term: Добавлено %{term}
+          created: Создано %{share} %{share_name}
+          deleted: Удалено %{share}
+          find_fail: Не удалось найти %{term}
+          updated: Обновлено %{share} %{share_name}
+          updated_default: Обновление ящика входящих по умолчанию
+      authenticated_controller:
+        expired: Срок действия вашего сеанса истек. Для продолжения войдите в систему.
+        new_session: Запущен другой сеанс для пользователя %{username} (%{remote})
+        timed_out: Истек тайм-аут вашего сеанса. Для продолжения войдите в систему.
+      entitlement_controller:
+        success: Успешно предоставляемое право
+      external:
+        submissions_controller:
+          send_to_recipient: Отправить в %{name}
+      invitations_controller:
+        invitation_failed: Приглашение не выполнено. Повторите попытку позже.
+        invitation_created: Приглашение для %{email} создано
+        reinvited: Приглашение повторно пригласить в %{name}
+        reinvited_fail: Не удалось повторно пригласить. Повторите попытку позже.
+        resend_invitation_failed: Не удалось повторно отправить приглашение. Повторите
+          попытку позже.
+        resent_invitation: Повторно отправить приглашение в %{name}
+        deleted_invitation: Удалено приглашение
+        deleted_invitation_try_again: Не удалось удалить приглашение. Повторите попытку
+          позже.
+      login_base_controller:
+        login_error_message: Ваш вход в систему не выполнен. Повторите попытку. Если
+          вы сталкиваетесь с неоднократными неудачами входа в систему, щелкните по
+          ссылке 'Забыли пароль', чтобы переустановить пароль.
+      login_controller:
+        connect_enabled: IBM Aspera Connect включен!
+        login_URL_change: URL входа в систему изменен. Обновите свою закладку в браузере.
+        session_already_disconnected: Этот сеанс уже отключен
+      m_configuration_controller:
+        updated: Конфигурация почты обновлена.
+      m_template_controller:
+        loaded: Параметры по умолчанию успешно загружены
+        updated: Успешно обновлено уведомление по электронной почте %{template}
+      metadata_profiles_controller:
+        cannot_delete_profile: Невозможно удалить профиль, он используется обычными
+          пакетами.
+        cannot_delete_profile_dropbox: Невозможно удалить профиль, он используется
+          в выпадающем списке %{db_name}.
+        created: Созданные метаданные %{profile}
+        profile_deleted: Профиль удален.
+        save_success: Профайл метаданных успешно сохранен
+        updated: Обновлено
+      ms_admin_controller:
+        home_server_rules_changed: Правила домашнего сервера изменились. Пересчитайте
+          домашние серверы для применения изменений.
+        updated_rule: Измененные правила
+        deleted_rule: Удаленное правило
+        added_new_rule: Добавлено новое правило
+        error_finding_home_server: Ошибка при поиске домашнего сервера для удаления
+        removed_server: Удаленный сервер
+        updated_home_server_settings: Обновленные параметры домашнего сервера
+        updated_attributes: Обновлено %{attribute}
+        access_denied: Доступ запрещен.
+      pending_controller:
+        archived: Пакет "%{pkg_name}" заархивирован
+        archived_fail: Ошибка при архивировании пакета. Повторите попытку позже.
+        deleted: Пакет "%{pkg_name}" удален
+        deleted_fail: Ошибка при удалении пакета. Повторите попытку позже.
+      received_controller:
+        package_archived: Пакет %{p_name} заархивирован
+        package_archived_fail: Ошибка при архивировании пакета. Повторите попытку
+          позже.
+      registrations_controller:
+        failed_registration: Регистрация завершилась неудачно. Повторите попытку позже.
+      reset_password_tokens_controller:
+        no_account_exists: Эта учетная запись больше не существует.
+        expired_pw_link: Ссылка на сброс пароля уже была использована или просрочена
+          и больше не действительна.
+        reset_success: Ваш пароль успешно сброшен!
+        reset_submitted: Отправлен запрос на сброс пароля. Если вы не получите сообщение
+          электронной почты в ближайшее время, обратитесь за помощью к администратору.
+      saml_controller:
+        does_not_exist: Запрошенный поставщик SAML не существует
+        disabled: Запрошенный поставщик SAML выключен
+        invalid_metadata: Недопустимый URL метаданных
+      sent_controller:
+        archived: Пакет "%{pkg_name}" заархивирован
+        archived_fail: Ошибка при архивировании пакета. Повторите попытку позже.
+        deleted: Пакет "%{pkg_name}" удален
+        deleted_fail: Ошибка при удалении пакета. Повторите попытку позже.
+        relay: Пересылка для совместного использования %{share}
+        relay_fail: Ошибка перезапуска реле. Повторите попытку позже.
+      settings:
+        distribution_lists_controller:
+          created: Создан список рассылки %{dist_list_name}
+          deleted: Удален список рассылки
+          updated: Обновленные списки рассылки
+          error_updating: Ошибка при обновлении одного или нескольких списков рассылки
+        passwords_controller:
+          success: Пароль успешно изменен.
+        preferences_controller:
+          updated: Параметры обновлены
+      user_profile_fields_controller:
+        max_field_check_fail: Вы можете использовать только поля пользовательского
+          профайла %{max}
+        saved: Поля пользовательского профайла успешно сохранены
+      workgroup:
+        workgroups_controller:
+          activate: Активировать
+          activated_members: Активировано mY_counts_YM member%{plural}. %{msg}
+          add_ds: Не удалось добавить группу DS. Повторите попытку позже.
+          add_ds_fail: Добавлена группа DS %{group} в рабочую группу %{name}
+          add_member: Добавлено %{name} в %{box}
+          add_member_fail: Не удалось добавить элемент. Повторите попытку позже.
+          create_success: 'Успешно создан '
+          deactivate: Деактивировать
+          deactivated_success: Деактивирован %{counts} member%{plural}. %{msg}%{admin}
+          deleted_success: Удалено %{type} %{name}
+          external_email_no_standard_access: Пользователям электронной почты не может
+            быть предоставлен стандартный доступ. Изменения не внесены.
+          external_email_deactivated_fail: Внешние пользователи электронной почты
+            не могут быть деактивированы, только удалены. Изменения не внесены.
+          members_actions: Действия участников ...
+          no_ds_selected: Не выбраны группы DS
+          no_members_selected: Не выбрано ни одного участника
+          remove: Удалить
+          remove_member: Удален %{member} из рабочей группы.
+          remove_member_fail: Невозможно удалить элемент. Повторите попытку позже.
+          remove_ds_group: Удален %{count} из рабочей группы.
+          remove_ds_group_fail: Не удалось удалить группу DS. Повторите попытку позже.
+          set_admin: Задайте %{member} в качестве администратора %{name}.
+          set_admin_fail: Внешние пользователи электронной почты не могут быть admins
+            dropbox. Изменения не внесены.
+          set_ds_access: Задайте %{group} в качестве доступа %{level}.
+          set_ds_access_fail: Не удалось задать %{level} доступ к группам DS. Повторите
+            попытку позже.
+          set_regular_access: Задайте %{member} в качестве обычного доступа.
+          set_regular_access_fail: Не удалось задать регулярный доступ к членам. Повторите
+            попытку позже.
+          set_standard_access: Задать стандартный доступ
+          set_submit_only: Задайте %{member} как submit.
+          set_submit_only_fail: Не удалось задать права доступа только для передачи
+            в члены. Повторите попытку позже.
+          set_submit_only_access: Задать доступ только для передачи
+          set_wg_admin: Задать как администратор %{wg_name}
+          skipped_sys_admin: Пропущено системных администраторов %{size}
+          updated_wg: Обновлено %{type}
+          user_not_found: Пользователь не найден
+    views:
+      account:
+        ad_groups:
+          ad_group:
+            error: Ошибка
+            invalid: Недопустимый
+            pending: Ожидание %{methodop}
+          additional_permissions:
+            edit_add_perm: Изменить дополнительные права доступа
+          forms:
+            group_import:
+              save: Сохранить
+            import_users:
+              full_name: Полное имя
+              import_date: Дата импорта
+              status: Состояние
+              sync_now: Синхронизировать сейчас
+              user_name: Имя пользователя
+            wg_member:
+              actions: Действия
+              add_to: Добавить в ...
+              date_added: Дата добавления
+              remove: Удалить
+              wg_name: Имя рабочей группы
+          user_ad_group:
+            active: Активно
+            inactive: Неактивно
+        directory_service_groups:
+          edit:
+            back: Назад
+            edit_dir_group: 'Изменить группу службы каталогов: %{groupname}'
+            group_import: Стратегия импорта групп
+            imported_users: Импортированные пользователи (%{mem_count})
+            workgroup_memberships: Членство в рабочей группе (%{mem_count})
+          index:
+            activate: Активировать
+            date_added: Дата добавления
+            deactivate: Деактивировать
+            directory_service: Служба каталогов
+            group_name: Имя группы
+            members: Члены
+            new_group: " Новая группа"
+            remove: Удалить
+            status: Состояние
+            sync: Синхронизация
+            view_op_history: Просмотреть хронологию операций
+          new:
+            back: Назад
+            cancel: Отмена
+            dir_services: 'Служба каталогов:'
+            import: Импорт
+            import_dir_serv: Импортировать группу из службы каталогов
+            search_dir_service: 'Служба каталогов поиска:'
+        directory_service_users:
+          additional_permissions:
+            edit_add_perm: Изменить дополнительные права доступа
+          index:
+            back: Назад
+            directory_service: 'Служба каталогов:'
+            import: Импорт
+            import_user_from_dir_serv: Импортировать пользователя из службы каталогов
+            search: Поиск
+            search_term: 'Условие поиска:'
+            searches_limit: Поиск ограничен 20 результатами.
+            searching: Поиск
+            usr_not_found: Пользователи не найдены
+        memberships:
+          actions: Действия
+          add_to: Добавить в ...
+          back: Назад
+          name: Имя
+          remove: Удалить
+          self_reg_added: 'Самозарегистрированные пользователи будут добавлены в следующие
+            рабочие группы:'
+          template_user_workgroups: Рабочие группы пользователей шаблона
+        passwords:
+          back_to_edit: Вернуться к изменению
+          cancel: Отмена
+          password: Изменить пароль для %{local_name}
+          reset_confirm: Вы действительно хотите сбросить пароль этого пользователя?
+            Этому пользователю будет отправлено уведомление по электронной почте,
+            позволяющее им войти в систему и изменить пароль.
+          reset_password: Сбросить пароль
+          update_password: Обновить пароль
+        registrations:
+          form:
+            email: Электронная почта
+            first: Первая
+            last: Последний
+            login: Вход
+          index:
+            approve: Утвердить
+            deny: Запретить
+            faspex_reg_type: Функция Faspex настроена с регистрацией %{type}.
+            new_message: Это означает, что для вновь созданных учетных записей требуется
+              утверждение %{not}.
+            not: не
+            self_reg_users: Самозарегистрированные пользователи наследуют права доступа
+              к %{template_user} и автоматически станут членами следующих %{workgroups}.
+        saml_groups:
+          edit:
+            back: Назад
+            edit_saml: 'Изменить группу SAML: %{groupname}'
+            group_prov_policy: Стратегия предоставления доступа к группам
+            users: Пользователи (%{mem_count})
+            workgroup_memberships: Членство в рабочей группе (%{mem_count})
+          index:
+            activate: Активировать
+            date_added: Дата добавления
+            deactivate: Деактивировать
+            group_name: Имя группы
+            members: Члены
+            new_group: " Новая группа"
+            remove: Удалить
+            saml_config: Конфигурации SAML
+            status: Состояние
+          new:
+            back: Назад
+            cancel: Отмена
+            create: Создать
+            create_new_saml: Создать новую группу SAML
+            group_name: 'Имя группы (DN):'
+            saml_config: Конфигурация SAML
+        template_users:
+          account_details: Сведения о счете
+          cancel: Отмена
+          edit_template_user: Изменить пользователя шаблона
+          form:
+            workgroup_memberships:
+              date_added: Дата добавления
+              remove: Удалить
+              workgroup_name: Имя рабочей группы
+              workgroups: Рабочие группы
+          update: Обновить
+        users:
+          add_permissions:
+            edit_add_perm: Изменить дополнительные права доступа
+          edit:
+            change_password: Изменить/Сбросить пароль
+            edit_user: 'Изменить пользователя: %{user}'
+            return_to_user_list: Вернуться к списку пользователей
+            type: "(тип: %{user_type})"
+            workgroup_memberships: Членство в рабочей группе
+          edit_form:
+            cancel: Отмена
+            update_user: Обновить пользователя
+          edit_wg:
+            add_user: Добавить пользователя в рабочую группу
+            back_to_edit: Вернуться к редактирум
+            remove: Удалить
+            workgroup_mem_for: Членство в рабочей группе для %{user}
+            workgroup_name: Имя рабочей группы
+          external_users:
+            accounts: Счета
+            remove: Удалить
+          fieldsets:
+            account_details:
+              account_details: Сведения о счете
+              active: Активно
+              admin_hint: Администраторы могут добавлять и удалять пользователей и
+                управлять конфигурацией сервера.
+              inactive: Неактивно
+              manager_hint: Менеджеры могут добавлять/удалять пользователей
+              never: Никогда
+              role: 'Роль:'
+              text_area_hint: введите адреса электронной почты через запятую, точку
+                с запятой или пробел
+              user_hint: Обычные пользователи могут отправлять и принимать пакеты
+                Faspex
+            advanced_transfer:
+              adv_trans_setting: Дополнительные параметры передачи
+              checked: проверено
+              initial_transfer: Первоначальная скорость передачи
+              max_rate: Максимальная разрешенная частота
+              minrate_hint: 'Если эта опция выбрана, то клиенты не смогут корректировать
+                свою политику передачи или минимальную скорость передачи (по умолчанию:
+                %{config})'
+              server_to_user: 'сервер к пользователю (по умолчанию: %{config})'
+              transfer_alert: |-
+                Faspex по умолчанию будет использовать параметры передачи из раздела Aspera Central Server.
+                Однако здесь можно задать параметры передачи, которые будут иметь приоритет перед параметрами сервера.
+              unchecked: непроверченные
+              user_to_server: 'пользователь на сервере (по умолчанию: %{config})'
+            ds_history:
+              action: Действие
+              ds_history: Хронология DS (%{dom_name})
+              notes: Примечания
+              operation: Операция
+              show_all: Показать все
+              time: Время
+            package_deletion:
+              after_download: 'После загрузки:'
+              allow_user_delete: 'Разрешить пользователю устанавливать собственные
+                параметры удаления на основе пакета:'
+              delete_files_after: Удалять файлы после того, как <strong>любой получатель</strong>
+                загрузит все файлы
+              delete_files_all: Удалить файлы после загрузки всех файлов <strong>всех
+                получателей</strong>
+              do_nothing: Ничего не делать
+              package_deletion: Удаление пакета
+              server_delete: 'По умолчанию: %{config}'
+            password_policy:
+              custom_pw_policy: Стратегия пользовательского пароля
+              pw_expires: Срок действия пароля
+              prevent_pw_reuse: Запретить повторное использование пароля
+              every_x_days: каждый %{x} день (ы)
+              never: Никогда
+            permissions:
+              affirm: Да
+              allow_inviting_external: 'Разрешить приглашать внешних отправителей:'
+              allow_public_submission: 'Разрешить общедоступные url для передачи:'
+              allowed_to: 'Разрешено:'
+              can_see_global_dist_lists: 'Могут просматривать глобальные списки рассылки:'
+              control_hint: Если эта опция не выбрана, пользователь не сможет отправлять
+                пользователей или отправлять их в выпадающие списки/рабочие группы
+              create_drop_packages: Если эта опция выключена, то пользователь сможет
+                создавать только пакеты dropbox, если они являются элементом любых
+                выпадающих меню.
+              create_normal: 'Может создавать обычные пакеты:'
+              external_email: 'Может отправлять на внешнюю электронную почту:'
+              ip_addr_hint: введите адреса/диапазоны, разделенные запятыми, например,
+                <b>10.0. *, 192.168.1.1</b>
+              keep_dir_private: 'Сохранить пользовательский каталог private:'
+              neg: Нет
+              permissions: Разрешения
+              see_global_dis_list: 'Могут просматривать глобальные списки рассылки:'
+              send_to_all: 'Может отправлять всем пользователям Faspex:'
+              send_to_all_send_to_wg: Если это разрешено, то пользователь может отправлять
+                всем пользователям Faspex. В противном случае пользователь может отправлять
+                только другим участникам рабочей группы.
+              user_server_def: 'Пользовательский сервер по умолчанию (в настоящее
+                время: %{def})'
+            personal_details:
+              first_name: Имя
+              last_name: Фамилия
+              personal_details: Личные сведения
+            sender_quota:
+              sender_hint: Переопределить предел квоты отправителя по умолчанию
+              sender_quota: Квота отправителя
+              sender_quota_hint: Общий размер данных, отправленные во время прокрутки
+              sender_quota_leg: 'Квота отправителя:'
+            user_history:
+              last_login_time: Время последнего входа в систему
+              user_history: Хронология пользователей
+            welcome_email:
+              welcome: Приветственное письмо
+          index:
+            accounts: Счета
+            activate: Активировать
+            deactivate: Деактивировать
+            remove: Удалить
+          menus:
+            add_account:
+              add_account: 'Добавить учетную запись '
+              dir_serv_user: Пользователь службы каталога
+              faspex_user: Пользователь Faspex
+              new_user: " Новый пользователь"
+            toggle_users:
+              active_users: Активные пользователи
+              all_users: Все пользователи
+              inactive_users: Неактивные пользователи
+          new:
+            back: Назад
+            user_account: Новая учетная запись пользователя
+          new_form:
+            cancel: Отмена
+            confirm_password: Подтверждение пароля
+            create_account: Создать учетную запись
+            first_name: Имя
+            last_name: Фамилия
+            or: " или "
+            password: Пароль
+            set_password: Задать пароль
+          user:
+            invalid: Недопустимый
+            same_as_login: "(то же, что и в системе"
+          user_list:
+            check_all_users: Проверять всех пользователей
+            check_user: Проверить пользователя
+            date_added: Дата добавления
+            email: электронная почта
+            first: Первая
+            home_server: Домашний сервер
+            last: Последний
+            last_login: Последний вход
+            login: Вход
+            status: Состояние
+            type: тип
+      active: Активно
+      ad_admin:
+        ad_users_list_rows:
+          active: Активно
+          full_name: Полное имя
+          import_date: Дата импорта
+          inactive: Неактивно
+          invalid: Недопустимый
+          user_name: Имя пользователя
+        edit_config:
+          and_test: " и тестирование"
+          anonymous: Анонимный
+          dir_service_details: Сведения о службе каталогов
+          dir_service_type: 'Тип службы каталога:'
+          enable_dir_service: 'Включить службу каталогов:'
+          ex_dir_service: Служба внешних каталогов
+          login: 'Вход:'
+          login_method: 'Метод входа в систему:'
+          password: 'Пароль:'
+          port: 'Порт:'
+          provide_credentials: Предоставить идентификационные данные
+          save: Сохранить
+          save_and_test: Сохранить и протестировать
+          server: 'Сервер:'
+          treebase: 'Требразы:'
+          use_tls: 'Использовать защищенный режим (TLS):'
+        operation_hist:
+          details: Сведения
+          dir_service_op_history: Хронология операций службы каталогов
+          no_op: Не выполнено ни одной операции
+          operation: Операция
+          time: Время
+          view: Вид
+        status: Состояние
+      ad_group_membership:
+        active: Активно
+        inactive: Неактивно
+      ad_groups:
+        error: Ошибка
+        invalid: Недопустимый
+        pending: 'Ожидание '
+      admin:
+        auth_domain:
+          edit:
+            edit_name: Изменить %{name}
+          form:
+            anonymous: Анонимный
+            dir_service_details: Сведения о службе каталогов
+            dir_service_name: 'Имя службы каталогов:'
+            dir_service_type: 'Тип службы каталога:'
+            dn_message: Как правило, отличительное имя (DN)
+            enable_dir_service: 'Включить службу каталогов:'
+            login: 'Вход:'
+            login_method: 'Метод входа в систему:'
+            password: 'Пароль:'
+            port: 'Порт:'
+            provide_cred: Предоставить идентификационные данные
+            save: Сохранить
+            save_and_test: Сохранить и протестировать
+            secure_tls: 'Использовать защищенный режим (TLS):'
+            server: 'Сервер:'
+            treebase: 'Требразы:'
+            username_attr: 'Атрибут имени пользователя:'
+          index:
+            add_new: Добавить новое %{name}
+            disabled: Выключено
+            enabled: Включено
+            server: Сервер
+            status: Состояние
+            type: Тип
+          new: Новое %{name}
+        fasp_nodes:
+          fasp_nodes:
+            active_sessions: Активные сеансы
+            address: Адрес
+            errors: Ошибки
+            last_poll: Время последнего успешного опроса
+            node_id: ID узла
+            cluster_id: ID кластера
+            polling_strategy: Стратегия опроса
+            os: ОС
+            status: Состояние
+        nodes:
+          edit:
+            cancel: Отмена
+            edit_name: Изменить %{user}-%{node}
+          form:
+            advanced_config: Advanced</i>Расширенная конфигурация
+            basic_config: Базовая конфигурация
+            config_message: Приведенная ниже конфигурация должна указывать на сервер,
+              на котором находится сервер Aspera Enterprise Server. Адрес используется
+              веб-приложением для сбора статистики передачи. Если сервер Aspera Enterprise
+              Server работает на том же компьютере, что и веб-приложение, то правильный
+              адрес-127.0.0.1.
+            sec_add_message: Ниже приводится адрес, который потребуется пользователям
+              для начала передачи данных. Если у вас есть группа пользователей, которым
+              нужно использовать другой адрес (например, из-за сетевых условий), задайте
+              диапазон IP-адресов в полях 'Вспомогательной адрес'. Обратите внимание,
+              что вторичный адрес не применяется для передачи реле.
+            storage_error: В настоящее время эта файловая память используется в качестве
+              системы входящих по умолчанию. При ее редактировании все существующие
+              пакеты будут недоступны для пользователей.
+            test_connect: Проверить соединение
+          index:
+            add_new: Добавить новое %{name}
+            default_inbox: Входящие по умолчанию
+            location: Расположение
+            name: Имя
+            source: Источник
+            shares: Хранение файлов
+            status: Состояние
+            update: Обновить
+          new:
+            cancel: Отмена
+            new_name: Новое %{name}
+          test: Соединение успешно установлено!
+        notifications:
+          login_announce:
+            edit:
+              ann_hint: Это сообщение появится на экране входа в систему
+              update: Обновить
+          package_inst:
+            pkg_hint: Это сообщение появится на экране отправки
+            update: Обновить
+        packages:
+          delete:
+            age_days: Возраст<br/>(в днях)
+            cancel: Отмена
+            delete_confirm: |-
+              Вы действительно хотите удалить файлы для этих пакетов?
+              Вы не сможете отменить это действие.
+            delete_files: Удалить файлы
+            files: Файлы
+            files_on_server: Файлы на сервере<br/>?
+            full_downloads: Полная загрузка<br/>
+            recipients: Получатели
+            sender: Отправитель
+            size: Размер
+            status: Состояние
+            title: Название
+            upload_completion: Закачать завершение<br/>
+            warning: 'ЭТО ДЕЙСТВИЕ УДАЛИТ ФАЙЛЫ ДЛЯ СЛЕДУЮЩИХ ПАКЕТОВ:'
+          index:
+            action: Действие
+            all_packages: Все пакеты
+            days_or_older: дней или старше
+            delete_files: Удалить файлы ...
+            download: Загрузка <br/Full/Partial
+            for_packages: Для пакетов
+            files: Файлы
+            files_on_server: Файлы на сервере?
+            package_created: Созданный пакет<br>
+            recipients: Получатели
+            relays: Реле
+            search: Поиск
+            sender: Отправитель
+            size: Размер
+            status: Состояние
+            title: Название
+            upload_completed: Закачка<br>завершена
+          relays:
+            all_packages: Все пакеты
+            completed_relays: Общие реле
+            failed_relays: Неудачные реле
+            files: Файлы
+            incomplete_relays: Неполные реле
+            ip_relays: В промежуточных реле
+            package_created: Созданный пакет<br>
+            recipients: Получатели
+            relays: Реле
+            search: Поиск
+            sender: Отправитель
+            size: Размер
+            status: Состояние
+            title: Название
+            upload_completed: Закачка<br>завершена
+          show_details:
+            full: Полный
+            full_partial: Полная/Частичная
+            ip_addr: IP-адрес
+            package_download_details: Сведения о загрузке пакета
+            partial: Частично
+            start: Время начала
+            stop: Время остановки
+            time_elapsed: Истекшее время
+            username: Имя пользователя
+        post_processes:
+          edit:
+            cancel: Отмена
+            edit_script: Изменить сценарий %{name}
+            update: Обновить
+          env_var_help:
+            description: Описание
+            faspex_meta<field>: значение поля метаданных с именем &lt;field&gt; с
+              заглавными буквами, заменено символами нижнего регистра и символами
+              подчеркивания
+            faspex_metadata_fields: список разделенных запятыми полей метаданных,
+              определенных для пакета
+            faspex_pkg_delivery_id: ИД доставки пакета (отличается от ИД пакета и
+              UUID пакета)
+            faspex_pkg_dir: путь к пакету
+            faspex_pkg_id: ID пакета
+            faspex_pkg_is_forward: 1 для переадресованных пакетов и 0 для исходных
+              пакетов
+            faspex_pkg_name: заголовок пакета
+            faspex_pkg_note: пакетное примечание
+            faspex_pkg_total_bytes: размер пакета в байтах
+            faspex_pkg_total_files: число файлов в пакете
+            faspex_pkg_uuid: UUID пакета
+            faspex_recipient_count: число получателей (например, "3")
+            faspex_recipient_i: Имя и фамилия получателя
+            faspex_recipient_list: список получателей через запятую (например, "admin,
+              johndoe")
+            faspex_sender_email: электронная почта отправителя
+            faspex_sender_id: ИД отправителя
+            faspex_sender_name: имя отправителя
+            variable: Переменная
+          form:
+            env_var_help: Справка по переменной среды
+            exact_match: Точное совпадение
+            execution_crit: Критерии выполнения
+            high: высокая
+            low: Низкая
+            package_date_end: Конечная дата пакета
+            package_date_start: Начальная дата пакета
+            package_file_count: Число файлов пакета
+            package_file_hint: Введите диапазон для числа файлов в пакете
+            package_name: Имя пакета
+            package_note: Примечание для пакета
+            package_size: Размер пакета
+            range_hint: Введите здесь диапазон для размера пакета
+            recipient_email_list: Список электронной почты получателя
+            recipient_list: Список получателей
+            script_to_run: Сценарий для запуска
+            sender_email: Электронная почта отправителя
+            sender_name: Имя отправителя
+          index:
+            action: Действие
+            create_new: Создать новое
+            execution_criteria: Критерии выполнения
+            log: Журнал
+            name: Имя
+            post_processing: Постобработка
+            script: Сценарий
+          new:
+            add_new_script: Добавить новый сценарий
+            cancel: Отмена
+            create: Создать
+          show_events:
+            back: Назад
+            exec_criteria: Критерии выполнения<br/>
+            package_name: Имя пакета
+            package_sender: Отправитель пакета<br/>
+            package_uuid: UUID
+            post_processing_exec_log: 'Постобработка: журнал выполнения для %{name}'
+            time_of_exec: Время выполнения <br/>
+        saml:
+          edit:
+            saml_integration: Интеграция SAML
+            update: Обновить
+        saml_configurations:
+          edit:
+            allowable_clock_drift: Допустимый дрейф часов (мс)
+            attribute_mapping: Отображение атрибутов
+            browse: Обзор ...
+            certificate: Сертификат
+            create_saml_config: Создать конфигурацию SAML
+            default_saml_config: Конфигурация SAML по умолчанию
+            domain_url: URL домена
+            fingerprint: Цифровая программа Emprinete
+            fingerprint_alg: Алгоритм идентификации
+            hide: Скрыть
+            import_from_file: 'Импорт из файла: '
+            import_from_text: 'Импорт из текста: '
+            import_from_url: 'Импорт из URL: '
+            import_metadata_settings: Импортировать параметры из текста
+            import_metadata_settings_url: Импортировать параметры из URL метаданных
+            import_settings: Импортировать параметры из метаданных %{dir}
+            name: Имя
+            name_id_format: Формат ИД имени
+            new: Новый
+            public_login_inst: Общие инструкции по регистрации
+            publicly_visible: Общедоступный
+            redirect_saml: Перенаправление на страницу выхода из системы SAML при
+              выходе из системы
+            restrict_login_groups: Ограничить доступ к известным группам
+            restrict_login_groups_hint: Если эта опция выбрана, вход в Faspex разрешен
+              только членам групп SAML, добавленных в Faspex.
+            restrict_login_users: Ограничить доступ к известным пользователям
+            restrict_login_users_hint: Если эта опция выбрана, вход в систему будет
+              разрешен только существующим пользователям SAML, добавленным в Faspex.
+            saml_config: Конфигурация SAML
+            saml_config_details: Сведения о конфигурации SAML
+            SAML_metadata_server: Метаданные сервера SAML
+            SAML_metadata_server_url: URL метаданных сервера SAML ...
+            saml_settings: Параметры SAML
+            show: Показать
+            SSO_target_URL: 'URL назначения SSO:'
+            update: Обновить
+            update_saml_config: Обновить конфигурацию SAML
+          index:
+            actions: Действия
+            add_new_config: Добавить новую конфигурацию SAML
+            default: " (по умолчанию)"
+            disable: Выключить
+            disable_title: Выключить
+            disabled: " (отключено)"
+            domain_url: URL домена
+            enable: включить
+            enable_title: Включить
+            make_default: Сделать по умолчанию
+            metadata: Метаданные
+            name: Имя
+            remove_default: Удалить по умолчанию
+            saml_config: Конфигурации SAML
+            saml_confirm: Вы действительно хотите включить эту конфигурацию SAML?
+            saml_confirm_disable: Вы действительно хотите отключить эту конфигурацию
+              SAML?
+            test: Тест
+          user_profile:
+            name: Имя
+            remove: Удалить это поле профиля
+            remove_confirm: Вы действительно хотите удалить это поле профиля пользователя?
+          user_profile_fields:
+            add_local_field: Добавить поле локального профайла
+            default_profile_fields: Поля профиля по умолчанию
+            enabled: Включено
+            fields_required: Поля, необходимые для всех пользователей Faspex
+            global_cust_message: Пользовательские поля, заданные на вкладке Профиль
+              пользователя
+            global_cust_prof_fields: Поля глобального пользовательского профайла
+            local_cust_message: Поля пользовательского профайла, относящиеся к данной
+              конфигурации SAML
+            local_cust_prof_fields: Поля локального пользовательского профайла
+            name: Имя
+            required: Обязательный
+            saml_name: Имя SAML
+            save_note: 'Примечание: Пока вы не щелкнете по ''Обновить конфигурацию
+              SAML'', никакие изменения не будут сохранены'
+        settings:
+          display_settings:
+            date_format:
+              format: Формат
+              meaning: Значение
+              perc_a: Сокращенное название дня недели (Sun)
+              perc_A: Полное название дня недели (воскресенье)
+              perc_b: Сокращенное название месяца (Jan)
+              perc_B: Полное название месяца (январь)
+              perc_d: День месяца (01 .. 31)
+              perc_j: День года (01 .. 366)
+              perc_m: Месяц года (01 .. 12)
+              perc_Y: Год с веком
+              perc_y: Год без века (00 ... 99)
+            edit:
+              acc_display_format: Формат имени для вывода учетной записи
+              custom_logo: 'Пользовательский логотип:'
+              date_format: Формат даты
+              date_formatting_help: Справка по формату даты
+              default_logo_help: 'Логотип по умолчанию-295x51 '
+              display_settings: Параметры отображения
+              examples: Примеры
+              local_login_inst: Инструкции локального входа в систему
+              login_page_header: Заголовок страницы входа в систему
+              remove_confirm: Вы действительно хотите удалить текущий пользовательский
+                логотип?
+              remove_logo: Удалить пользовательский логотип
+              update: Обновить
+          entitlement:
+            edit:
+              customer_id: 'ИД клиента:'
+              entitlement_license: Лицензия на право
+              faspex_enabled: 'Faspex Разрешено:'
+              key: 'Ключ:'
+              max_active_users: 'Максимальное число активных пользователей:'
+              save: Сохранить
+          global_dist_lists:
+            index:
+              add_new_list: Добавить новый список рассылки
+              contacts: Контакты
+              global_dist: Глобальные списки рассылки
+              name: имя
+              no_list_alert: Нет глобальных списков рассылки.
+              update_dist_lists: Обновить списки рассылки
+            new:
+              new_global_list: Создать глобальный список рассылки
+          license:
+            edit:
+              OR: ИЛИ
+          package_storage:
+            edit:
+              after_pkg_dl: После загрузки пакетов
+              after_upload_ends: после закачивания концов
+              characters: персонажи
+              days: дн.
+              delete_files_all: Удалить файлы после загрузки всех файлов <strong>всех
+                получателей</strong>
+              delete_files_any: Удалять файлы после того, как <strong>любой получатель</strong>
+                загрузит все файлы
+              do_nothing: Ничего не делать
+              max_pkg_title: Максимальная длина заголовка пакета в путях хранения
+              package_storage: Хранилище пакетов
+              packages_expire: Срок действия пакетов
+              pkg_by_pkg_del: Разрешить всем пользователям задавать свои собственные
+                параметры удаления на основе пакета
+              update: Обновить
+          save_restore:
+            index:
+              dl: Загрузить
+              dl_curr_config: Загрузить текущую конфигурацию
+              faspex_config_help: Папка конфигурации Faspex и база данных будут сохранены
+              restore: Восстановить
+              restore_config: Восстановить конфигурацию
+              save_restore: Сохранение/восстановление
+              upload_help: Закачать и применить сохраненный файл конфигурации (*.tar.gz)
+              version_help: 'Примечание: версия восстановления должна соответствовать
+                текущей версии faspex'
+          security:
+            edit:
+              act_dir_hint: Пользователи службы каталогов не будут заблокированы или
+                деактивированы
+              affirm: Да
+              after: После
+              after_x_days: После %{num} дней
+              after_inactivity: После %{len} дни простоя
+              after_one_success: После одной успешной закачки
+              allow_custom_link: Разрешить пользователям задавать стратегию истечения
+                срока действия пользовательской ссылки
+              allow_email_change: Разрешить пользователям изменять свой адрес электронной
+                почты
+              allow_external_pkg_hint: Если эта опция включена, пакеты, отправленные
+                пользователям Faspex с (внешним) флагом, будут разрешены
+              allow_external_pkg_to_faspex: Разрешить пользователям Faspex внешние
+                пакеты
+              allow_usrs_create: Разрешить пользователям создавать обычные пакеты
+              allow_usrs_create_hint: Если эта опция выключена, то пользователи смогут
+                создавать только пакеты, если они являются элементом всех выпадающих
+                меню.
+              allow_usrs_send: Разрешить всем пользователям отправлять всем другим
+                пользователям Faspex
+              always: Всегда
+              allow_unlock: Разрешить заблокированным пользователям разблокировать
+                себя
+              allow_send_email: Разрешить отправку на внешние адреса электронной почты
+              appr_recipient_domains: Утвержденные домены получателей
+              appr_sender_domains: Утвержденные домены отправителей
+              block_email_domain: Блокировать следующие домены электронной почты от
+                саморегистрации
+              can_override_ear_hint: пользователь может выбрать, когда приглашать
+                внешних отправителей, независимо от того, следует ли применять шифрование
+              can_see_dist_list: По умолчанию пользователи могут видеть глобальные
+                списки рассылки
+              cipher: Шифр FASP
+              days: дн.
+              dbox_override: Разрешить выпадающие списки иметь собственные параметры
+                шифрования
+              def_pw_expire: Срок действия пароля по умолчанию
+              default: По умолчанию
+              disable: Выключить
+              disable_hint: Скользятное окно квоты отправителей, продолжительность
+                в часах
+              ds_users: Пользователи DS после %{int} дней простоя
+              email_expire_after_download: Срок действия после полного скачивания
+                пакета
+              enable: Включить
+              encrypt_hint: Если эта опция включена, резервные передачи HTTP будут
+                также зашифрованы
+              encrypt_transfers: Шифрование передач
+              encryption: Шифрование
+              enforce_pw_hist: Не может повторно использовать предыдущий
+              every: каждый
+              faspex_acc: Счета Faspex
+              force_pw_reset: Требовать от новых пользователей изменения пароля при
+                первом входе в систему
+              hours: ч.
+              inviting_allowed: Разрешить приглашать внешних отправителей
+              ignore_invalid_recipients: Игнорировать недопустимых получателей
+              ignore_invalid_recipients_hint: Если этот переключатель включен, отправка
+                пакета не будет выполнена, если пакет адресовывается неверным получателям
+              inv_link_expires: Срок действия ссылки на приглашение
+              inv_link_help: Задайте стратегию истечения срока действия для приглашений
+                как для личного, так и для dropbox.
+              keep_usr_dir: Сохранить пользовательский каталог
+              list_hint: введите адреса электронной почты через запятую, точку с запятой
+                или пробел
+              local_users: Локальные пользователи после %{int} дней простоя.
+              lock_hint: После неудачной попытки входа в систему %{login_count}
+              lock_users: Заблокировать пользователей
+              minutes: мин.
+              neg: Нет
+              never: Никогда
+              new_user_pw: Новые пароли пользователей %{req}. Существующие пароли
+                останутся допустимыми %{warn}
+              obfuscation: Запутанность
+              optional: Необязательный
+              optional_hint: Пользователь может указать, следует ли шифровать
+              otfv: Проверка файлов вне передачи (OTFV)
+              outside_email_add: Внешние адреса электронной почты
+              package_link_expires: Срок действия ссылки на пакет
+              package_link_help: Если эта опция включена, пакет будет загрузиться
+                только один раз %{master_warn}
+              passwords: пароль (ы)
+              passwords_expire: Срок действия паролей
+              public_url_allowed: Разрешить общедоступные URL передачи
+              prevent_pw_reuse: Запретить повторное использование пароля
+              prev_conc: Запретить параллельный вход
+              pw_reset_hint: Перезагрузка пароля будет отправлрована и учетная запись
+                будет разблокирована после изменения пароля
+              quota_limit: Общий размер данных, отправленные во время прокрутки
+              reg_hint: 'Необязательно: Если текст задан, пользователи должны будут
+                принять оператор для регистрации'
+              reg_users_mutual: Самозарегистрированные пользователи могут отправлять
+                друг на друга
+              registration_instructions: Инструкции по регистрации
+              registration_type: Саморегистрация
+              registrations: Регистрации
+              remove_users: Удалить пользователей
+              req_external_reg: Требовать регистрации внешних пользователей
+              require_external_hint: Если эта опция включена, внешние пользователи
+                должны зарегистрировать учетную запись Faspex для загрузки пакетов.
+              saml_users: Пользователи SAML после %{int} дней простоя.
+              security: Безопасность
+              send_welcome_email: Отправить приветственное сообщение всем новым пользователям
+              sender_quota: Квота отправителя
+              sender_quota_hint: 'Пакеты, отправленные пользователям в этих доменах,
+                не учитываются в квоте отправителя. Для разделения доменов электронной
+                почты используйте запятые (,), точку с запятой (;) или пробел. Пример:
+                @aspera.com; @ibm.com'
+              sender_quota_option: Опция квоты отправителя
+              sender_quota_duration: Продолжительность квоты отправителя
+              sender_quota_limit: Ограничение квоты отправителей
+              session_timeout: Тайм-аут сеанса после
+              slave_hint: Если эта опция включена, то пользователи могут одновременно
+                находиться в одном клиенте с одного клиента
+              strong_pw: Использовать строчные пароли
+              timeout_hint: Сеансы будут истекаться после указанного числа минут бездействия
+              tos: Условия службы для отправки
+              tos_hint: 'Необязательно: Если текст задан, пользователи должны принять
+                оператор, чтобы отправить пакет'
+              update: Обновить
+              use_encryption_at_rest: Использовать шифрование-at-Rest
+              use_obf: Использование запутываний в именах файлов
+              use_obf_hint: Шифрование имени файла необратимо!
+              enforce_expiration_policy: Всегда применять максимальное время для политики
+                истечения срока действия
+          transfer_options:
+            edit:
+              aspera_connect_sett: Параметры соединения Aspera
+              def_max_rate: Максимальная разрешенная частота по умолчанию
+              dl_dur_trans: Загрузка во время передачи
+              dl_over_http: Загрузить по HTTP
+              http_gateway_hint: Для того чтобы начать передачу через http-gateway,
+                необходимо, чтобы этот адрес был ниже.
+              http_gateway_url: URL шлюза HTTP
+              initial_def_trans_rate: Начальная скорость передачи по умолчанию
+              local_host_connect: Локальное соединение хоста
+              local_host_hint: Если этот переключатель включен, Faspex не будет использовать
+                CDN Aspera для обслуживания Connect, а вместо этого будет использовать
+                локальный SDK Connect, доступный в Faspex.
+              local_to_remote: локальный сервер на удаленный сервер
+              lock_connect_sdk: Lock Connect SDK-версия
+              lock_connect_sdk_hint: 'Запретить Faspex обновлять локальный SDK Connect,
+                если станет доступна новая версия. Этот параметр сохраняется при обновлении.
+                Примечание: Faspex периодически проверяет наличие обновлений и не
+                сразу скачивает новую версию, если эта опция выключена'
+              min_connect_version: Минимальная версия Connect
+              minrate_hint: Если эта опция включена, клиенты не смогут корректировать
+                свою политику передачи или минимальную скорость передачи
+              prefer_http_connect: Предпочесть http через расширение
+              prefer_http_connect_hint: Если эта опция включена, Faspex будет использовать
+                браузер для использования метода http для связи с клиентом Connect
+                Desktop, вместо использования расширения браузера (доступно только
+                в браузере Chrome)
+              serv_to_serv_relay_trans_sett: Параметры передачи между сервером и сервером
+              server_to_user: сервер для пользователя
+              transfer_options: Опции передачи
+              update: Обновить
+              user_to_server: пользователь на сервере
+              http_gwy_connection_success: Соединение успешно установлено
+              http_gwy_connection_error: Ошибка при установлении соединения с IBM
+                Aspera HTTP Gateway
+          web_server:
+            alt_address_fields:
+              remove_addr: Удалить этот альтернативный адрес
+            edit:
+              add_alt_address: Добавить альтернативный адрес
+              address_name: Имя адреса
+              alternate_addr_hint: использовать, если вам нужны разные адреса серверов
+                для определенных пользователей
+              desc_email: Описание электронных сообщений
+              http_port_hint: определяется конфигурацией apache
+              https_port_hint: для зашифрованного содержимого по SSL, определенного
+                в конфигурации apache
+              remove: Удалить
+              show_emails: Показать в электронной почте
+              update: Обновить
+              web_server: Веб-сервер
+        shares:
+          edit:
+            cancel: Отмена
+            custom_access_control: Управление пользовательским доступом
+            edit: Изменить %{name}-%{share}
+          edit_warning:
+            alert_error_1: |-
+              В настоящее время эта файловая память используется в качестве расположения настраиваемых входящих и промежуточных файлов для определенных рабочих групп.
+              При его редактировании все существующие пакеты в этих рабочих группах будут недоступны для пользователей и изменить назначение ретрансляции.
+            alert_error_2: |-
+              Эта файловая память в настоящий момент используется как пользовательское расположение входящих для определенных рабочих групп.
+              При редактировании все существующие пакеты в этих рабочих группах будут недоступны для пользователей.
+            alert_error_3: |-
+              В настоящее время это хранилище файлов используется в качестве расположения ретрансляции для определенных рабочих групп.
+              Изменение будет преобразовываться в пункт назначения ретрансляции.
+          form:
+            dir_serv_groups:
+              add_group: Добавить группу
+              date_added: Дата добавления
+              dir_service_groups: Группы служб каталогов
+              DN: DN
+              members: Члены
+              name: Имя
+              status: Состояние
+            dir_serv_group_member:
+              active: Активно
+              delete: Удалить
+              inactive: Неактивно
+            users:
+              add_user: Добавить пользователя
+              full_name: Полное имя
+              member_since: Участник с момента
+              name: Имя
+              status: Состояние
+              type: Тип
+              users: Пользователи
+            user_membership:
+              delete: Удалить
+          form_file:
+            browse: Обзор ...
+            default_max_allowed_rate: Максимальная разрешенная частота по умолчанию
+            directory: Каталог
+            enable_cloud_referencing: Включить облачные ссылки
+            enable_linking: Включить компоновку
+            initial_default_rate: Начальная скорость передачи по умолчанию
+            limited: Ограниченный
+            loading: Загрузка
+            lock_minrate_hint: при проверке, клиенты не с# могут корректировать свою
+              трансферную политику или минимальную скорость передачи
+            name: Имя
+            node: Узел
+            override_default: Переопределить параметры передачи по умолчанию
+            private: Частный
+            public: Общедоступный
+            read_perm: Права на чтение
+            relay_transfer_rate: Скорость передачи ретрансляции
+            server_to_user: сервер для пользователя
+            user_to_server: пользователь на сервере
+          new:
+            alert_no_node: Нет созданного %{nodes}. %{admin_node} перед тем, как сделать
+              %{name}.
+            cancel: Отмена
+            create_one: Создать один
+            new: Новое %{name}
+      background_processes:
+        index:
+          action: Действие
+          background_processes: Фоновые процессы
+          log_file: Файл журнала
+          log_level: Уровень журнала
+          name: Имя
+          status: Состояние
+        log:
+          lines: Линии
+          refresh: Обновлять каждые
+          submit: Передать
+      credits:
+        show:
+          java: Совместимые Java
+      directory_items:
+        file:
+          error: Ошибка
+      dropbox:
+        dropboxes:
+          metadata_profile: 'Профиль метаданных: '
+          options:
+            after_pac_downl: 'После загрузки пакетов:'
+            allow_submission_via_pub_URL: 'Разрешить передачу по общедоступному URL:'
+            always: Всегда
+            custom_exp_policy: Стратегия истечения срока действия пользовательского
+              пакета
+            custom_inv_policy: Стратегия истечения срока действия пользовательской
+              ссылки на приглашение
+            day_after_sending_inv: дней после отправки приглашения по электронной
+              почте
+            day_after_upload: дней после окончания передачи на сервер
+            http_downloads_not_allowed: Загрузка HTTP для этого пакета недопустима.
+            delete_after_all: Удалите файлы после того, как <strong>все члены этого
+              выпадающего списка</strong> скачивали все файлы.
+            delete_after_first: Удалите файлы после того, как <strong>любой элемент
+              этого выпадающего списка</strong> загружает все файлы.
+            do_nothing: Ничего не делать
+            inv_link_expire: 'Срок действия ссылок на приглашение:'
+            never: Никогда
+            optional: Необязательный
+            package_expires: 'Срок действия пакетов:'
+            require_encrypt: 'Требуется шифрование-at-rest:'
+            save_message: aspera-metadata.xml будет сохранен в корневом каталоге каждого
+              пакета
+            save_metadata: 'Сохранить метаданные в файле:'
+            success: После одной успешной закачки
+            use_server_default: 'Использовать сервер по умолчанию (в настоящее время:
+              %{server})'
+          perm:
+            add_rem_dir_serv_groups: Добавить/удалить группы служб каталогов в качестве
+              членов
+            add_remove_users: Добавить существующие пользователи Faspex/удалить членов-администраторов
+            dropbox_admin_can: Администраторы dropbox могут ...
+            invite_outside_submitters: Пригласить внешних подателей
+            invite_remove_users: Приглашение/удаление внешних подателей
+            member_manage: Управление членами
+            reg_users_as_mem: Создать/изменить/удалить/удалить новых зарегистрированных
+              пользователей в качестве членов
+            standard_can: Стандартные пользователи могут ...
+        users:
+          cancel: Отмена
+          description: Описание
+          email_address: Адрес электронной почты
+          invite: 'Пригласить для отправки в Dropbox Outside Submitter: %{wgname}'
+          invite_html:
+            require_encryption: 'Требовать шифрования при остальном:'
+            yes_ear: Да
+            no_ear: Нет
+            optional: Необязательный
+          submit_save: Сохранить (отправить приглашение по электронной почте)
+      e_error:
+        default: Сервер обнаружил ошибку при попытке обработать запрос. Это может
+          быть связано с недостаточными разрешениями, неполадкой конфигурации, прерыванием
+          сети, ошибкой или сбоем аппаратного обеспечения.
+        default_2: Другие команды, кроме той, которую вы пытались выполнить, могут
+          еще работать. Попробуйте нажать кнопку "Назад" или одну из других вкладок
+          выше.
+      external:
+        sub_stat:
+          show:
+            safe: |-
+              Закрыть эту веб-страницу безопасно, ваша передача не будет затронута.
+              Вам послано по электронной почте ссылку, чтобы вернуться на этот экран.
+            send_to: Отправить в %{recipient}
+            send_to_dropbox: 'Отправить в Dropbox: %{dropname}'
+            status: На этой странице можно просмотреть состояние представленного пакета,
+              а также повторить передачу, если она не выполнена.
+          submission_stat:
+            date_submit: Дата отправки
+            files: Файлы
+            size: Размер
+            status: Состояние
+            title: Название
+        to:
+          email_address: Адрес электронной почты
+          please_enter_email: Введите свой адрес электронной почты для получения доступа.
+          request_access: Доступ к запросу
+          send_to: Отправить в %{recipient_name}
+      inactive: Неактивно
+      invitations:
+        edit:
+          cancel: Отмена
+          reinvite: Повторное приглашение (отправка приглашения по электронной почте)
+          reinvite_sender: Повторно пригласить отправителя
+        fieldsets:
+          sub_link_expires:
+            after: После
+            after_one_success: После одной успешной закачки
+            after_one_up: После одной закачки
+            custom_inv_policy: 'Стратегия истечения срока действия пользовательской
+              ссылки на приглашение:'
+            day_after_sending_inv: дней после отправки приглашения по электронной
+              почте
+            help: Вы можете дополнительно ограничить эти параметры, но не можете превышать
+              значения по умолчанию
+            inv_link_expires: Срок действия ссылки на приглашение
+          prevent_http_upload:
+            package_upload: Закачка пакета
+            prevent_http_upload: Запретить загрузку HTTP для этого пакета
+        index:
+          access_url: См. URL Access
+          actions: Действия
+          confirm: Вы уверены?
+          delete: Удалить
+          description: Описание
+          email: Электронная почта
+          expiration: Срок действия
+          invitations: Приглашения
+          new: Новый
+          reinvite: Повторное приглашение
+          resend: Повторная
+          status: Состояние
+        new:
+          cancel: Отмена
+          description: Описание
+          email_address: Адрес электронной почты
+          invite_sender: Пригласить отправителя
+          no_ear: Нет
+          optional: Необязательный
+          require_encryption: 'Требовать шифрования при остальном:'
+          save: Сохранить (отправить приглашение по электронной почте)
+          yes_ear: Да
+      layouts:
+        aspera_faspex: Aspera Faspex
+        footer:
+          copyright: Copyright IBM Corp. 2009,
+          credits: Кредиты и замечания
+          patch: Уровень исправления %{level}
+        header:
+          account: Счет
+          enable_connect: Включить IBM Aspera Connect
+          help: Справка
+          not_logged_in: Не выполнен вход в систему.
+          sign_out: Выйти из системы
+          skip_to_main: Перейти к главному
+        main_tabs:
+          accounts: Счета
+          new_package: Новый пакет
+          pending: Ожидание
+          received: Получено
+          sent: Отправлено
+          server: Сервер
+          view_package_options: Щелкните для просмотра новых опций пакета
+          workgroups: Рабочие группы
+        node_error:
+          warning: ВНИМАНИЕ!
+          errors_detected: Обнаружены ошибки сервера передачи, передача может работать
+            неправильно.
+      login:
+        entitlement:
+          customer_id: ИД клиента
+          entitle_info: 'Чтобы начать работу, введите информацию о предоставляемых
+            правах:'
+          entitle_question: По вопросам или проблемам, касающимся прав, просьба обращаться
+            к %{aspera}
+          entitlement: ID разрешения
+          submit: Передать
+        new:
+          anouncement: Объявление
+          enter_password: Введите пароль Faspex
+          enter_username: Введите имя пользователя Faspex
+          forgot_password: Забыт пароль
+          password: Пароль
+          username: Имя пользователя
+          or_log: или войти в систему
+      m_configuration:
+        edit:
+          faspex: Faspex
+          sender: Отправитель
+          sender_via_faspex: Отправитель через Faspex
+          sender_email: Электронная почта отправителя
+          mail_configuration: Конфигурация почты
+          save: Сохранить
+          savetest_email: Сохранить и протестировать электронную почту
+          to: 'на:'
+      m_template:
+        edit:
+          body: 'Тело:'
+          cancel: Отмена
+          edit_email_html: Изменить %{name} E-mail HTML
+          save: Сохранить
+          subject: 'Тема:'
+        show:
+          advanced: " (дополнительно)"
+          customize: Настроить с помощью шаблона
+          edit_html: Изменить HTML
+          preview: "%{description} Предварительный просмотр показан ниже. Его можно
+            настроить либо с помощью шаблона, либо путем непосредственного редактирования
+            HTML."
+          preview_email_notif: Предварительный просмотр уведомления по электронной
+            почте %{name}
+      metadata_profiles:
+        edit:
+          add_field: Добавить поле
+          add_new_field: 'Добавить новое поле: '
+          edit_metadata: Изменить профиль метаданных
+          enabled: 'Включено: '
+          error_fields_not_saved: 'Примечание: Поля с ошибками НЕ сохранены'
+          illegal_characters: 'Недопустимы символы: '
+          max_length: 'Максимальная длина: '
+          note: Примечание
+          note_no_save: 'Примечание: Пока вы не сохраните профиль метаданных, никакие
+            изменения не будут сохранены'
+          preview: Предварительный просмотр
+          profile_name: 'Имя профиля: '
+          profile_name_placeholder: Имя профайла ...
+          save: Сохранить
+          save_and_prev: Сохранить и просмотреть
+          title: Название
+        date_format:
+          any_other_value: Любое другое значение
+          any_other_value_hint: Текст литерала
+          at: Отметка времени Unix (мс с 01.01.1970)
+          capital_D_hint: Имя дня (краткое)
+          capital_DD_hint: Имя дня (длинное)
+          capital_M_hint: Имя месяца (краткое)
+          capital_MM_hint: Имя месяца (длинное)
+          d_hint: День месяца (без ведущего нулевого значения)
+          dd_hint: День месяца (две цифры)
+          description: Описание
+          ellipses: Текст литерала
+          exclamation: Клещи Windows (100нс с 01/01/0001)
+          m_hint: Месяц года (без лидирующих нулей)
+          mm_hint: Месяц года (две цифры)
+          o_hint: День года (без начальных нулей)
+          oo_hint: День года (три цифры)
+          single_quote: Одиночные кавычки
+          variable: Переменная
+          y_hint: Год (две цифры)
+          yy_hint: Год (четыре цифры)
+        metadata_field:
+          characters: персонажи
+          date_format: 'Формат даты: '
+          date_format_help: Справка по формату даты
+          illegal_chars: 'Недопустимы символы: '
+          illegal_chars_placeholder: Нелегальные хортеры ...
+          label: 'Метка: '
+          label_placeholder: Метка ...
+          max_length: 'Максимальная длина: '
+          options: 'Опции: '
+          required: 'Требуется: '
+        index:
+          add_profile: Добавить новый профайл
+          confirm: Вы действительно хотите удалить профиль метаданных %{account}?
+          delete: Удалить
+          edit: Изменить
+          metadata_profiles: Профили метаданных
+          name: Имя
+          profile_for_norm: 'Профиль для обычных пакетов:'
+          save_metadata: 'Сохранить метаданные в файле: '
+        new:
+          cancel: Отмена
+          create: Создать
+          name: Имя
+          new_profile: Создать профиль метаданных
+      mobile:
+        landing:
+          app_redirect: Для лучшего опыта используйте приложение Aspera Faspex Mobile.
+          no_app_prompt: У дона есть приложение? Получить его <a href='<%= @app_store_url
+            %>'>здесь</a>
+          open_in_app: ОТКРЫТЬ В ПРИЛОЖЕНИИ
+          use_web_version: ИСПОЛЬЗОВАТЬ ВЕБ-ВЕРСИЮ
+      ms_admin:
+        convert_to_slave:
+          back: Назад
+          convert: Преобразовать
+          convert_server: Преобразовать сервер в подчин
+          master_ip: 'Главный IP: '
+        edit:
+          connecting: Подключение к %{hostname} ...
+          server_list: Список серверов Faspex
+          working: Все еще работает ...
+        edit_server:
+          alternate_address: 'Альтернативный адрес: '
+          Back: Назад
+          host_name: 'Имя хоста или IP-адрес:'
+          https_port: 'Порт HTTPS: '
+          master_ip: 'Главный IP:'
+          name: 'Имя: '
+          save: Сохранить
+          server_list: 'Список серверов Faspex: Правка %{name}'
+          url_namespace: 'Пространство имен URL: '
+        list_rules:
+          create_new: Создать новое
+          default_user_server: 'Сервер Faspex/DS по умолчанию:'
+          home_server_rules: Правила домашнего сервера
+          name: Имя
+          note: 'Примечание: Если вы не зададите правила для внешних отправителей,
+            они будут направлены на домашний сервер отправителя для загрузки пакетов.
+            Аналогичным образом, внешние передающие пакеты должны делать это с домашнего
+            сервера inviter.'
+          rule: Правило
+          save: Сохранить
+          server: Сервер
+          sort: Сортировать
+        new_edit_rule:
+          add: Добавить
+          back: Назад
+          create: Создать
+          create_new: Создать новое
+          dir_DN_regex: 'Регулярное выражение службы каталогов:'
+          dir_regex: 'Регулярное выражение группы службы каталогов:'
+          edit: Изменить
+          email_regex: 'Регулярное выражение адреса электронной почты:'
+          external_users: 'Внешние пользователи/податели:'
+          home_server: 'Домашний сервер:'
+          home_server_rules: 'Правила домашнего сервера: Правило %{mod}'
+          ldap_field: 'Имя поля LDAP:'
+          ldap_regex: 'Регулярное выражение поля LDAP:'
+          regex_help: Справка по Regex
+          remove: Удалить
+          rule_name: 'Имя правила:'
+          save: Сохранить
+          username_regex: 'Регулярное выражение имени пользователя:'
+        new_server:
+          alternate_address: 'Альтернативный адрес:'
+          back: Назад
+          create: Создать
+          hostname: 'Имя хоста или IP-адрес:'
+          http_port: 'Порт HTTPS:'
+          name: 'Имя:'
+          server_list_new_server: 'Список серверов Faspex: Новый удаленный сервер'
+          url_namespace: 'Пространство имен URL:'
+        regex_help:
+          a*: Ноль или более.
+          a+: Один или несколько.
+          a-z: Любой одиночный символ в диапазоне a-z.
+          a-zA-z: Любой одиночный символ в диапазоне a-z или A-Z.
+          abc: 'Один символ: a, b или c.'
+          ataslash_com: 'Пример: совпадает со строками, заканчивавшими строку ''a.com'''
+          a|b: a или b
+          expression: Выражение
+          meaning: Значение
+          period: Любой символ.
+          slash: Символ Escape.
+          slashA: Начало строки.
+          slashAa-m: 'Пример: строки, начинающие с буквы ''a'' и ''m''.'
+          slashAperiod*z: 'Ex: соответствует строкам, начинающие с символа ''a'' и
+            заканчиваютe ''z'''
+          slashz: Конец строки.
+      nodes:
+        columns:
+          dropdown:
+            add: Добавить %{share_name}
+            delete: Удалить
+            delete_confirm: Вы уверены? При этом будет удален любой %{share_name},
+              использующий данный %{node_name}.
+            edit: Изменить
+          shares:
+            dropdown:
+              confirm: Вы действительно хотите продолжить?
+              custom_inbox_confirm: В настоящее время этот %{name} используется как
+                пользовательское расположение входящих для определенных рабочих групп.
+              default_hint: В настоящее время этот %{name} используется в качестве
+                входящих в систему по умолчанию и не может быть удален.
+              delete: Удалить
+              delete_warning: 'При удалении все существующие пакеты в этих рабочих
+                группах будут недоступны для пользователей. '
+              edit: Изменить
+              relay_hint: В настоящее время этот %{name} используется в качестве расположения
+                ретрансляции для определенных рабочих групп.
+              rolled_back_warning: 'Для этих рабочих групп также будет выполнен откат,
+                чтобы использовать системный блок входящих по умолчанию. '
+      packages:
+        browser:
+          all: Все
+          download_selected: Загрузить выбранное
+          name: Имя
+          none: Нет
+          select: Выбрать
+          size: Размер
+          validation_error: Ошибка проверки?
+          warning: Ошибка
+        package:
+          browse_and_download_contents: Обзор и скачивание содержимого
+          browse_contents: Обзор содержимого
+          cc_on_delivery: 'CC (по доставке):'
+          cc_on_download: 'CC (on download):'
+          cc_on_recipient: 'CC (получатель):'
+          completed_relays: 'Завершенные реле:'
+          date_sent: Дата отправки
+          http_downloads_not_allowed: Загрузка HTTP для этого пакета недопустима
+          delete_after_all_message: Этот пакет будет автоматически удален после того,
+            как все получатели загрузили все файлы пакета.
+          delete_after_first_message: Этот пакет будет автоматически удален после
+            того, как любой получатель загрузит все файлы пакета.
+          edit: Изменить
+          error_release_date: Ошибка при обновлении даты выпуска
+          failed_relays: 'Невыполненные реле:'
+          forward: Вперед
+          from: 'От:'
+          in_progress_relays: 'Промежуточные реле:'
+          incomplete_relays: 'Неполные реле:'
+          none_set: Нет набора
+          note_disabled: Пакет не присутствует в текущем хранилище файлов.
+          package: Пакет
+          release_now: Освободить сейчас
+          save: Сохранить
+          send_date: Дата отправки
+          to: 'До:'
+          to_private: 'В (закрытое):'
+          upload_date: 'Дата закачки:'
+        show_stats:
+          more_details: Дополнительные сведения
+        stats:
+          active_downloads:
+            active_downloads: 'Активные загрузки: %{num}'
+          completed_package:
+            avg_rate: 'Средняя скорость: %{rate}'
+            elapsed: 'Истекшее время: %{time}'
+            files: 'Файлы: %{num}'
+            size: Размер %{num}
+            upload_stats: 'Статистика закачивания:'
+            uploaded_from: 'Загружен из:'
+          failed_package:
+            avg_rate: 'Средняя скорость: %{rate}'
+            elapsed: 'Истекшее время: %{time}'
+            files: 'Файлы: %{num}'
+            size: Размер %{num}
+            upload_stats: 'Статистика закачивания:'
+            uploaded_from: 'Загружен из:'
+          full_download:
+            full_pkg_dl: 'Загрузка полного пакета: %{completed}'
+          package_details:
+            pkg_details: Сведения о пакете
+            status: Состояние %{package}
+            http_downloads_not_allowed: Загрузка HTTP для этого пакета недопустима
+          partial_package:
+            partial_pkg_dl: 'Частичные загрузки пакета: %{total}'
+          transfer_package:
+            avg_rate: 'Средняя скорость:'
+            elapsed: 'Прошло:'
+            files: 'Файлы: %{num}'
+            loading: загрузка ...
+            size: Размер %{num}
+      pending:
+        action: Действие
+        files: Файлы
+        history:
+          back_to_normal_view: Вернуться к нормальному представлению
+          file_on_server: Файлы на сервере?
+          pending_package_hist: Хронология ожидающих пакетов
+        index:
+          archive_all: Архивировать все
+          pending_packages: Ожидающие пакеты
+          view_full_history: Просмотреть полную хронологию
+          warning: Предупреждение
+        recipients: Получатели
+        search: Поиск
+        send_date: Дата отправки
+        size: Размер
+        status: Состояние
+        title: Название
+        transfer_retries: Повторные попытки передачи
+        upload_date: Дата закачивания
+      received:
+        action: Действие
+        date_sent: Дата отправки
+        download_available: Загрузить доступное
+        files: Файлы
+        history:
+          back_to_normal_view: Вернуться к нормальному представлению
+          files_on_server: Файлы на сервере?
+          received_package_hist: Хронология полученных пакетов
+        index:
+          archive_all: Архивировать все
+          invitations: Приглашения
+          received_packages: Полученные пакеты
+          view_full_history: Просмотреть полную хронологию
+        search: Поиск
+        sender: Отправитель
+        size: Размер
+        status: Состояние
+        title: Название
+      registrations:
+        confirmation:
+          back_to_login: Вернуться к регистрации
+        edit_password:
+          set_password: Задать пароль
+        new:
+          back_to_login: Вернуться к регистрации
+          email: Электронная почта
+          first_name: Имя
+          last_name: Фамилия
+          name: Имя
+          tos_accept: Я принимаю %{tos}.
+      reset_password_tokens:
+        edit:
+          alert_error: Ваш логин Faspex устал от учетной записи службы каталогов.
+          alert_error_contact: Обратитесь в службу поддержки или к администратору
+            сети, чтобы изменить пароль.
+          reset_password: Сбросить пароль
+        new:
+          back_to_login: Вернуться к регистрации
+          enter_user_or_email: Введите имя пользователя или адрес электронной почты
+          forgot_password: Забыли пароль?
+          send_email: Отправить электронную почту
+      search: Поиск получателей, заголовков пакетов и примечаний.
+      send:
+        fieldsets:
+          encryption:
+            encryption: 'Шифрование:'
+            use_encrypt_at_rest: Использовать шифрование-at-rest
+        form:
+          dropbox:
+            send_package: Отправить пакет
+          external:
+            send_package: Отправить пакет
+          fieldsets:
+            encryption:
+              encryption: 'Шифрование:'
+              use_encrypt_at_rest: Использовать шифрование-at-rest
+            expiration_policy:
+              after_pkg_dl: После загрузки пакета
+              delete_after_all: Удалить после загрузки всех файлов <strong>всех получателей</strong>
+                .
+              delete_after_any: Удалить после того, как <strong>любой получатель</strong>
+                загрузит все файлы
+              do_nothing: Ничего не делать
+              expiration: 'Срок действия:'
+            prevent_http_download:
+              prevent_http_download: Запретить загрузку HTTP для этого пакета
+              package_download: Загрузка пакета
+            metadata:
+              maximum_length: 'Максимальная длина: %{max} символов &nbsp&nbsp'
+              illegal_chars: 'Недопустимы символы: %{illegal}'
+              required: Обязательный
+              optional: необязательные
+            note:
+              note: Примечание:<br><span class='dim'><small>необязательный</small></span>
+              maximum_length: 'Максимальная длина: %{max} символов &nbsp&nbsp'
+              illegal_chars: 'Недопустимы символы: %{illegal}'
+            notifications:
+              cc: CC
+              cc_on_download: CC on download
+              cc_on_receipt: CC при получении
+              cc_on_upload: CC при закачке
+              download: 'Загрузить:'
+              notifications_help: Уведомления отправляются после первой закачки или
+                загрузки
+              receipt: 'Получение:'
+              upload: 'Закачать:'
+            obfuscation:
+              obfuscation: 'Запутанность:'
+              use_obf: Использовать запутывать имена файлов
+            release_policy:
+              release_date: 'Дата выпуска:'
+              release_later_date_later: Выпуск позже-Задать дату позже
+              release_later_date_now: Выпуск позже-Установить дату сейчас
+              release_now: Освободить сейчас
+              release_policy: 'Стратегия выпуска:'
+            transfer_options:
+              transfer_through: 'Передача с:'
+              http_uploads_not_allowed: Закачки HTTP не разрешены для этого пакета
+            source_shares:
+              contents: 'Содержание *:'
+              ear_cloud_warning: Шифрование на уровне rest используется для всех передач,
+                но не поддерживается для передач, использующих облачные ссылки. Эта
+                передача не будет использовать шифрование для отдыха.
+              remove_all: Удалить все
+              source: 'Источник:'
+              warning: 'Предупреждение:'
+            title:
+              title: 'Название *:'
+              maximum_length: 'Максимальная длина: %{max} символов &nbsp&nbsp'
+              illegal_chars: 'Недопустимы символы: %{illegal}'
+            tos:
+              tos: 'Условия службы:'
+              tos_accept: Я принимаю %{tos}
+          forward:
+            contents: 'Содержание:'
+            forward_package: Переслать
+            fwd: 'Fwd: %{ftitle}'
+            original_sender: 'Исходный отправитель:'
+            received: 'Получено:'
+          misc:
+            actions:
+              confirmation: 'Подтверждение:'
+              enter_passphrase: Введите фразу-пароль для защиты файлов.<br>Требуется
+                фраза-пароль.
+              passphrase: 'Фраза-пароль:'
+            connect_transfer:
+              browse_for_files: Обзор файлов &hellip;
+              browse_for_folders: Обзор папок &hellip;
+              or: ИЛИ
+            instruct:
+              instructions: Инструкции
+            remote_share:
+              loading: Загрузка
+              browse_for_files: Обзор файлов &hellip;
+            show_hide_controls:
+              show_private_recip: Показать частных получателей
+          normal:
+            send_package: Отправить пакет
+        http_gateway_submit:
+          completed: Завершено
+          current_file: 'Текущий файл:'
+          current_file_name: 'Текущее имя файла:'
+          invalid_status: Недопустимое состояние
+          failed: Сбой
+          file_count: 'Число файлов:'
+          initiating: Инициирование
+          running: Выполняется
+          total: 'Итого:'
+          transfer_status: 'Передача:'
+      sent:
+        action: Действие
+        date_sent: Дата отправки
+        files: Файлы
+        history:
+          sent_package_hist: Хронология отправленных пакетов
+          back_to_normal_view: Вернуться к нормальному представлению
+          files_on_server: Файлы на сервере?
+        index:
+          archive_all: Архивировать все
+          sent_packages: Отправленные пакеты
+          view_full_history: Просмотреть полную хронологию
+          warning: Предупреждение
+        recipients: Получатели
+        search: Поиск
+        show_details:
+          full_partial: Полный/Частичный &nbsp;
+          ip_addr: IP-адрес &nbsp;
+          pkg_download_details: Сведения о загрузке пакета
+          start_time: Время начала &nbsp;
+          stop_time: Время остановки &nbsp;
+          time_elapsed: Истекшее время &nbsp;
+          user_name: Имя пользователя &nbsp;
+        size: Размер
+        status: Состояние
+        title: Название
+        transfer_retries: Повторные попытки передачи
+      settings:
+        contacts:
+          contact:
+            external: "(внешние)"
+            remove: Удалить
+          index:
+            contacts: Контакты
+            edit_alert: У вас нет изменяемых контактов.
+            edit_contacts: Изменить контакты
+        dist_lists:
+          index:
+            add_new_dist_list: Добавить новый список рассылки
+            alert_dist: У вас нет списков рассылки.
+            contacts: Контакты
+            global_dist_lists: Глобальные списки рассылки
+            name: Имя
+            pers_dist_lists: Личные списки рассылки
+            update_dist_list: Обновить списки рассылки
+          new:
+            new_dist_list: Новый список рассылки
+        passwords:
+          edit:
+            change_password: Изменить пароль
+            current_password: 'Текущий пароль:'
+            password: Пароль
+            confirm_pw: Подтверждение пароля
+        preferences:
+          edit:
+            download_connect: Загрузить подключаемый модуль Connect
+            download_hint: Для того чтобы изменения вступили в силу, может занять
+              несколько минут
+            download_notif: Загрузить уведомления
+            download_notif_hint: Отправить по электронной почте эти адреса, когда
+              каждый получатель сначала загружает пакет
+            email_settings: Параметры электронной почты
+            locales: Локали
+            locale: Локаль
+            misc: Misc
+            preferences: Параметры
+            update_pref: Параметры обновления
+            upload_notif: Закачать уведомления
+            upload_notif_hint: Отправить по электронной почте эти адреса в результате
+              передачи
+            received_page_option: Показать только завершенные пакеты на странице 'Получено'
+        sender_quota:
+          index:
+            sender_alert_1: Достигнут предел квоты отправителя %{quota} МБ
+            sender_alert_2: Доступно %{quota} МБ. Для вашего ограничения квоты отправителей
+              задано значение %{limit} MB.
+            sender_quota: Квота отправителя
+      shared:
+        browser:
+          filter:
+            from: От
+            hide_filters: Скрыть фильтры
+            include_sub: Включить подкаталоги
+            max: Макс.
+            min: Мин.
+            mod_time: Время изменения
+            search: Поиск
+            search_for_files: Поиск файлов или каталогов &hellip;
+            show_filters: Показать фильтры
+            size: Размер
+            to: В
+          par_dir_item:
+            parent_dir: Родительский каталог
+        dist_lists:
+          dist_lists:
+            delete: Удалить
+            duplicate: Дублировать
+            import_contacts: Импортировать контакты из CSV
+          form:
+            name: Имя
+            browse: Обзор ...
+            contacts: Контакты (до %{num})
+            import_from_csv: 'Импорт из CSV:'
+        filter:
+          filter: Фильтр &hellip;
+      user_profile_fields:
+        add_user_profile_field: Добавить поле пользовательского профайла
+        enabled: Включено
+        name: Имя
+        note_no_changes: 'Примечание: Изменения не будут сохранены, пока вы не щелкнете
+          по ''Сохранить поля'''
+        onclick_confirm: Вы действительно хотите удалить это поле профиля пользователя?
+        remove: Удалите это поле профайла.
+        required: Обязательный
+        save_fields: Сохранить поля
+        user_profile: Пользовательский профайл
+      workgroup:
+        deliveries:
+          history:
+            date_sent: Дата<br>отправки
+            download_retry: Доступно для загрузки или повтора
+            files: Файлы
+            files_on_server: Файлы на сервере<br>Server?
+            package_history: Хронология пакетов
+            search: Поиск
+            sender: Отправитель
+            size: Размер
+            status: Состояние
+            title: Название
+          index:
+            action: Действие
+            date_sent: Дата<br>отправки
+            download_retry: Доступно для загрузки или повтора
+            files: Файлы
+            packages: Пакеты
+            search: Поиск
+            sender: Отправитель
+            size: Размер
+            status: Состояние
+            title: Название
+          misc:
+            links:
+              invite_outside: Пригласить наружу
+        file_relay_req:
+          index:
+            back: Назад
+            relay_stat: Состояние ретрансляции
+          table:
+            date_sent: Дата отправки
+            file_storage: Хранение файлов
+            files: Файлы
+            node: Узел
+            size: Размер
+            status: Состояние
+        forwards:
+          complete: Выполнено
+          enable_relay: Включить промежуточный сервер
+          enabled_message: Если эта опция включена, все файлы пакетов будут пересылаться
+            на дополнительные узлы.
+          error: Ошибка
+          notify_users: Уведомить пользователей о ...
+          overwrite: Перезаписать
+          relay: Реле
+          start: Начало
+        name: Имя
+        nodes:
+          default_inbox: Входящие по умолчанию
+          direct_upload: Выгрузить непосредственно в пользовательскую коробку входящих.
+          direct_upload_default_check: Если этот переключатель включен, пакеты не
+            будут загружены в ящик входящих по умолчанию, если эта рабочая группа
+            является единственным получателем.
+          inbox_destination: Назначение входящих
+          location: Расположение
+          status: Состояние
+        users:
+          edit:
+            edit_user: 'Изменить пользователя: %{name}'
+          new:
+            new_user: Новая учетная запись пользователя для %{wg} %{wgname}
+        workgroups:
+          details:
+            created_on: 'Создано:'
+            description: 'Описание:'
+            inst_for_sub: 'Инструкции для подателей: '
+            name: 'Name* </font>Имя:'
+            updated_on: 'Обновлено:'
+            wg_details: Сведения о %{wgtype} &nbsp;
+          ds_group:
+            all: Все
+            none: Нет
+            ok: OK
+            remove_selected: Удалить выбранное
+            select: 'Выберите: '
+          ds_group_member:
+            add_group: Добавить группу
+          ds_group_table:
+            access: Доступ
+            date_added: Дата добавления
+            dir_serv_group: Группы служб каталогов
+            DN: DN
+            members: Члены
+            name: Имя
+            status: Состояние
+          edit:
+            back: Назад
+            back_to_list: Вернуться к списку
+            editing: 'Изменение %{wgtype}: %{wgname}'
+            or: " или "
+            save: Сохранить
+          forwards:
+            complete: Выполнено
+            enable_relay: Включить промежуточный сервер
+            error: Ошибка
+            if_enabled: Если эта опция включена, все файлы пакетов будут пересылаться
+              на дополнительные узлы.
+            name: Имя
+            notify_users: Уведомить пользователей о ...
+            overwrite: Перезаписать
+            relay: Реле
+            start: Начало
+          index:
+            create_new: Создать новое
+            dropbox: Выпадающий список
+            flash_message: Для создания, удаления или изменения рабочих групп (кроме
+              добавления или удаления элементов) необходимо войти на главный сервер.
+            view_all: Показать все
+            view_mine: Просмотреть мой
+            workgroup: Рабочая группа
+            workgroups: Рабочие группы
+          member_table:
+            access: Доступ
+            active: Активно
+            add_user: Добавить пользователя
+            alert: Не выбраны элементы для удаления.
+            all: Все
+            expires: Срок действия
+            full_name: Полное имя
+            inactive: Неактивно
+            inv_outside_submit: Пригласить наружу
+            member_since: Участник с момента
+            members: Члены
+            name: Имя
+            none: Нет
+            ok: OK
+            remove_selected: Удалить выбранное
+            select: 'Выберите:'
+            status: Состояние
+            type: Тип
+          new:
+            cancel: Отмена
+            create: Создать
+            create_new: Создать новый %{wgtype}
+            or: " или "
+          nodes:
+            custom: Пользовательский
+            default_inbox: Входящие по умолчанию
+            inbox_dest: Назначение входящих
+            location: Расположение
+            name: Имя
+            server_default: Сервер по умолчанию
+            status: Состояние
+            upload_directly: Загрузить непосредственно в пользовательский ящик входящих
+            upload_message: Если эта рабочая группа является единственным получателем,
+              пакеты не будут загружены в список входящих по умолчанию
+          show:
+            view_packages: Просмотреть пакеты
+          wg_permissions:
+            add_dir_serv_groups_as_members_hint: Добавить/удалить группы служб каталогов
+              в качестве членов
+            add_existing_users_hint: Добавить существующие пользователи Faspex/удалить
+              нерабочие группы администраторов
+            edit_new_users_hint: Создать/изменить/удалить/удалить новых пользователей
+              в качестве участников
+            full: " Полная:"
+            full_hint: Члены организации предоставили разрешение на то, чтобы они
+              могли видеть и отправлять друг другу
+            member_management: Управление членами
+            moderated: " Контролируемое:"
+            moderated_hint: Только администратор рабочей группы может отправить в
+              эту рабочую группу
+            open: " Открыть:"
+            open_hint: Любой пользователь может отправить в эту рабочую группу
+            private: " Частный:"
+            private_hint: Только участники могут отправлять в эту рабочую группу
+            restricted: " Ограничено:"
+            restricted_hint: Никто не может отправить в эту рабочую группу
+            restricted_hint_2: Только рабочие группы получают разрешение на то, чтобы
+              просматривать или отправлять отдельных членов рабочей группы
+            send_to_eachother: 'Члены рабочей группы, отправляющие друг другу:'
+            sending_to_itself: 'Отправка в саму рабочую группу:'
+            wg_admins_only: " Только администраторы рабочей группы:"
+            wg_admins_only_hint: Участники предоставили разрешение на доступ к администраторам
+              рабочих групп и их отправку в них
+            workgroup_admins_can: Администраторы рабочей группы могут ...
+            workgroup_permissions: Разрешения рабочей группы
+          workgroup_list:
+            description: Описание
+            dropbox: Выпадающий список
+            latest: Последние
+            member_warning: В настоящее время вы не являетесь членом какой-либо рабочей
+              группы.
+            members: Члены
+            no_wg: Нет рабочих групп.
+            packages: Пакеты
+            type: Тип
+            workgroup: Рабочая группа
+          workgroup_members_form:
+            wg_members_title: Члены %{wg_name} &nbsp;
+    helpers:
+      account:
+        users:
+          admin: " -администратор"
+          expir_date: Для активного пользователя должно быть задано %{date}.
+          manager: " -руководитель"
+          neg: Нет
+          pos: Да
+          set_admin: Задать администратор
+          set_non_admin: Задать non-admin
+          taken_name: "%{name} уже принят"
+        bootstrap_content_helper:
+          actions: Действия
+          close: Закрыть
+      admin:
+        nodes_helper:
+          browse_fail: Ошибка при просмотре источника удаленного файла
+        post_processes_helper:
+          activate: активировать
+          confirm: Вы действительно хотите удалить сценарий постобработки %{script_name}?
+          deactivate: деактивировать
+          remove: удалить
+          view_log: Просмотреть журнал выполнения
+      application_helper:
+        browse: Обзор ...
+        path: 'Путь:'
+      login_helper:
+        create_account: Создать учетную запись
+        request_account: Затребовать учетную запись
+      metadata_profiles_helper:
+        date_field: Поле даты
+        option_list: Список опций
+        text_area: Текстовая область
+        text_field: Текстовое поле
+      packages_helper:
+        entire: Загрузить весь пакет
+        partial: Загрузить частичный пакет
+        return_to_history: Вернуться к хронологии
+        return_to_list: Вернуться к списку
+      registrations_helper:
+        create_account: Создать учетную запись
+        request_account: Учетная запись запроса
+      send_helper:
+        hide: скрытие
+        hide_cc: Скрыть Копию
+        show: показать
+        show_cc: Показать Копия
+      sent_helper:
+        delete: Удалить
+      source_shares_helper:
+        browse_fail: Ошибка при просмотре источника удаленного файла
+      workgroup:
+        deliveries_helper:
+          back_to_normal_view: Вернуться к нормальному представлению
+          delete: Удалить
+          view_full_history: Просмотреть полную хронологию
+          view_members: Просмотреть элементы
+        users_helper:
+          create_new_user: Создать нового пользователя
+        workgroups_helper:
+          delete: Удалить
+          delete_confirm: Вы уверены, что хотите удалить %{wg_type} "%{wg_name}"?
+          delete_wg: Удалить %{wg_name}
+          dropbox: Выпадающий список
+          edit: Изменить
+          edit_wg: Изменить %{wg_type_name}
+          names_placeholder: Введите имена пользователей или адреса электронной почты
+          view_all: Показать все
+          view_mine: Просмотреть мой
+          view_packages: Просмотреть пакеты
+          workgroup: Рабочая группа
+    models:
+      c_configuration:
+        cant_be_blank: Поля не могут быть пустыми.
+      delivery:
+        send_fail_quota_limit: Не удалось отправить пакет, достигнуто ограничение
+          на квоту %{limit} МБ
+        send_fail_permissions: Вам не разрешено создавать обычные пакеты
+        send_fail_invalid_recipients: Нет допустимых получателей
+        send_fail_dropbox_only: Получатель dropbox должен быть единственным получателем
+        send_fail_invalid_recipient_specific: 'Недопустимый получатель: %{recipient_name}'
+        send_fail_permissions_multiple: Вам не разрешено отправлять одного или нескольких
+          указанных получателей
+        send_fail_invalid_cc: 'Недопустимый CC (в закачке): %{cc_name}'
+        send_fail_invalid_ccs_upload: Вы не можете использовать CC один или несколько
+          получателей в поле выгрузки
+        send_fail_invalid_ccs_download: Нельзя использовать CC один или несколько
+          получателей в поле загрузки
+        send_fail_invalid_ccs_receipt: Вы не можете использовать CC один или несколько
+          получателей в поле получения
+        send_fail_must_have_one_source: Должен иметь ровно один источник
+        send_fail_unknown_share_id: Неизвестный ИД общего ресурса %{share_id}
+        send_fail_source_not_authorized: Источник не разрешен
+        send_fail_no_items_to_upload: Нет элементов для закачивания!
+        send_fail_unique_filenames: Имена файлов должны быть уникальными
+        send_fail_ear_must_be_specified: должен быть указан
+        send_fail_ear_not_allowed: не разрешено
+        send_fail_ear_disabled_message: Функция encryption-at-rest отключена, фраза-пароль
+          недопустима.
+        send_fail_sendershareid_forwarding: Не удалось изменить SenderShareId для
+          переадресованных пакетов
+        send_fail_invalid_release_policy: 'Недопустимая политика выпуска: %{rp}'
+        send_fail_policy_date_future: Дата выпуска должна быть в будущем
+        send_fail_expiration_date_future: Дата истечения срока действия должна быть
+          в будущем
+      directory_service_user:
+        login_error_message: Ваш вход в систему не выполнен. Повторите попытку. Если
+          вы сталкиваетесь с неоднократными неудачами входа в систему, щелкните по
+          ссылке 'Забыли пароль', чтобы переустановить пароль.
+      e_membership:
+        status:
+          expired: Просрочено
+          active: Активно
+          inactive: Неактивно
+      local_user:
+        cannot_be_blank: не может быть пустым
+        is_incorrect: является неправильным
+        login_error_message: Ваш вход в систему не выполнен. Повторите попытку. Если
+          вы сталкиваетесь с неоднократными неудачами входа в систему, щелкните по
+          ссылке 'Забыли пароль', чтобы переустановить пароль.
+        lock_out_message: Вы заблокированы из-за слишком большого числа неудачных
+          попыток входа в систему.
+        same_as_old_pw: совпадает с прежним паролем
+        same_old_pw_hint: должно отличаться от предыдущих паролей %{limit}
+      metadata_field:
+        value_already_taken: "'%{value}' уже был принят"
+        max_length_not_int: Максимальная длина поля '%{label_name}' должна быть целым
+          числом
+        max_length_bounds: Максимальная длина поля '%{label_name}' должна быть от
+          1 до %{max}
+        valid_option_list: Для '%{label_name}' требуется допустимый список опций
+        valid_date_format: Для '%{label_name}' требуется допустимый формат даты
+        cannot_be_blank: "%{label_name} не может быть пустым"
+        error_decoding: 'Ошибка при расшифровке метаданных: %{meta}'
+      metadata_profile:
+        all_fields_length_error: Общая максимальная длина всех полей (включая метки,
+          опции и поля даты) должна быть меньше %{max} символов
+        field_blank_error: "%{err_label} не может быть пустым"
+        field_illegal_char_error: "%{err_label} не может содержать ни одного из следующих
+          символов: %{illegal}"
+        field_length_error: "%{err_label} должно быть %{max} или меньше"
+        field_options_error: "%{err_label} должен содержать одну из следующих опций:
+          %{list}"
+        invalid_JSON_error: "%{err_label} должен быть допустимым JSON"
+        invalid_share_id_error: Недопустимый ID общего ресурса %{err_value} для %{err_label}
+        invalid_user_error: Недопустимый пользователь %{err_user} для %{err_label}
+        invalid_value_error: Недопустимое значение для %{err_label}
+        max_length_reset_error: Для полей максимальной длины было установлено значение
+          по умолчанию
+        must_be_list_error: "%{err_label} должен быть списком ID общих ресурсов"
+        no_fields_error: У профиля метаданных должно быть хотя бы одно поле
+        note_invalid_char_error: 'Примечание не должно содержать ни одного из следующих
+          символов: # { neft }'
+        note_length_bounds_error: Максимальная длина примечания должна быть от 1 до
+          %{max}
+        note_length_error: Значение должно быть %{max} или меньше
+        note_length_int_error: Максимальная длина примечания должна быть целым числом
+        note_length_specified_error: Должна быть указана максимальная длина примечания
+        specified_error: "%{err_label} должен быть указан"
+        title_invalid_char_error: 'Заголовок не должен содержать ни одного из следующих
+          символов: %{illegal}'
+        title_length_bounds_error: Максимальная длина заголовка должна быть от 1 до
+          %{max}
+        title_length_error: Заголовок должен быть %{max} или меньше
+        title_length_int_error: Максимальная длина заголовка должна быть целым числом
+        title_length_specified_error: Должна быть указана максимальная длина заголовка
+      post_process:
+        all_uploaded_pkgs: "[ все загруженные пакеты]"
+      saml_configuration:
+        unspecified: Не указано
+        transient: Переходные
+        persistent: Постоянный
+        email_address: Адрес электронной почты
+      send_package_request:
+        from_name_error: Имя "From" не совпадает с идентифицированным пользователем
+        invalid_recipient_error: недопустимый получатель
+        parse_xml_error: Не удалось проанализировать запрос XML
+        validate_sender_error: Нет прав доступа для передачи
+        too_many_elements: Элемент %{path} должен иметь значение не больше %{max}
+        too_few_elements: Элемент %{path} должен иметь место по крайней мере %{min}
+      user:
+        passwordable:
+          requirements: Должно быть не менее шести символов
+          strong_requirements: Должно быть не менее шести символов длиной, с хотя
+            бы одним буквой, одним числом и одним символом
+        status:
+          saml_disabled: Конфигурация SAML выключена
+          pending: Ожидает утверждения
+          active: Активно
+          locked: Заблокировано
+          inactive: Неактивно
+  config:
+    account_navigation:
+      preferences: Параметры
+      change_password: Изменить пароль
+      contacts: Изменить контакты
+      distribution_lists: Изменить списки рассылки
+      sender_quota: Квота отправителя
+    initializers:
+      will_paginate:
+        laq_prev: "&laquo; Предыдущее"
+        lar_prev: "&arrr; Предыдущая"
+        raq_next: Следующее &raquo;
+        rar_next: Следующий &rarr;
+    license:
+      paste_license: Вставьте здесь содержимое вашей лицензии
+      update_license: Обновить лицензию
+      decoded_license: Декодированная лицензия
+    navigation:
+      account_approved: Учетная запись утверждена
+      account_denied: Учетная запись отклонилась
+      accounts: Счета
+      authentication: Аутентификация
+      configuration: Конфигурация
+      directory_service_groups: Группы служб каталогов
+      directory_services: Службы каталогов
+      display_settings: Параметры отображения
+      dropbox_invitation: Приглашение для выпадающего списка
+      dropbox_submit: Раскрывающийся список
+      email_configuration: Конфигурация электронной почты
+      entitlement: Квота
+      external_users: Внешние пользователи
+      forgot_password: Забыт пароль
+      forward_error_cc: Ошибка связи промежуточного агента
+      forward_finished_cc: Ретранслятор завершенный CC
+      forward_started_cc: Реле-начало CC
+      global_distribution_lists: Глобальные списки рассылки
+      license: Лицензия
+      login_announcement: Вход в систему
+      metadata: Метаданные
+      new_package: Новый пакет
+      notifications: Уведомления
+      package_cc_receipt_on_received: Пакет получен CC
+      package_cc_receipt_on_sent: Отправленная копия пакета
+      package_downloaded: Загруженный пакет
+      package_downloaded_cc: Пакет загружен CC
+      package_instructions: Инструкции для пакета
+      package_received: Пакет получен
+      package_storage: Хранилище пакетов
+      package_validation_failed_recipient: Неудачный получатель проверки пакета
+      package_validation_failed_sender: Неудачный отправитель проверки пакета
+      packages: Пакеты
+      pending_registrations: Ожидающие регистрации
+      personal_invitation: Личное приглашение
+      personal_submit: Личная передача
+      post_processes: Постобработка
+      received: Получено
+      saml_groups: Группы SAML
+      saml_integration: Интеграция SAML
+      save_restore: Сохранение/восстановление
+      security: Безопасность
+      sent: Отправлено
+      server: Сервер
+      shares: Хранение файлов
+      transfer_options: Опции передачи
+      upload_result: Результат загрузки
+      upload_result_cc: Закачать результат CC
+      user_profile: Пользовательский профайл
+      users: Пользователи
+      web_server: Веб-сервер
+      welcome_email: Приветственное письмо
+      workgroup_package: Пакет рабочей группы
+      workgroups: Рабочие группы
+  common:
+    allow: Разрешить
+    deny: Запретить
+    default: По умолчанию
+    server_default: Сервер по умолчанию (%{server_default})
+    are_you_sure: Вы уверены?
+    days_from_now: дней с настоящего момента
+  date:
+    abbr_day_names:
+    - Sun
+    - Mon
+    - Tue
+    - Wed
+    - Thu
+    - Fri
+    - Sat
+    abbr_month_names:
+    - 
+    - Jan
+    - Feb
+    - Mar
+    - Apr
+    - May
+    - Jun
+    - Jul
+    - Aug
+    - Sep
+    - Oct
+    - Nov
+    - Dec
+    day_names:
+    - Sunday
+    - Monday
+    - Tuesday
+    - Wednesday
+    - Thursday
+    - Friday
+    - Saturday
+    formats:
+      default: "%Y-%m-%d"
+      long: "%B %d, %Y"
+      short: "%b %d"
+    month_names:
+    - 
+    - January
+    - February
+    - March
+    - April
+    - May
+    - June
+    - July
+    - August
+    - September
+    - October
+    - November
+    - December
+    order:
+    - :year
+    - :month
+    - :day
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: около 1 часа
+        other: сведения о %{count} часов
+      about_x_months:
+        one: около 1 месяца
+        other: сведения о %{count} месяцев
+      about_x_years:
+        one: около 1 года
+        other: сведения о %{count} лет
+      almost_x_years:
+        one: почти 1 год
+        other: почти %{count} years
+      half_a_minute: полминуты
+      less_than_x_seconds:
+        zero: менее 1 секунды
+        one: менее 1 секунды
+        other: меньше %{count} секунд
+      less_than_x_minutes:
+        zero: меньше минуты
+        one: меньше минуты
+        other: меньше %{count} минут
+      over_x_years:
+        one: более 1 года
+        other: "%{count} years"
+      x_seconds:
+        one: 1 секунда
+        other: "%{count} секунд"
+      x_minutes:
+        one: 1 минута
+        other: "%{count} минут"
+      x_days:
+        one: 1 день
+        other: Число дней %{count}
+      x_months:
+        one: 1 месяц
+        other: "%{count} месяцев"
+      x_years:
+        one: 1 год
+        other: Годы %{count}
+    prompts:
+      second: Вторая
+      minute: Минута
+      hour: Час
+      day: День
+      month: Месяц
+      year: Год
+  helpers:
+    application:
+      archive: Архив
+      back: Назад
+      cloud_storage_referencing: Эта память поддерживается в облачной памяти.
+      connect_install_message: Чтобы использовать максимальную скорость %{direction},
+        установите модуль браузера %{aspera}.
+      connect_upgrade_message: Чтобы использовать максимальную скорость %{direction},
+        обновите модуль браузера %{aspera}.
+      confirm: Вы действительно хотите удалить файлы для пакета %{package_name}, отправленные
+        %{package_sender}?
+      copy: Скопировать в буфер обмена
+      delete: Удалить
+      delete_confirm: Вы действительно хотите удалить файлы для пакета %{package_name},
+        отправленные %{package_sender}?
+      delete_confirm_forward: Это пересылку другого пакета. Исходный и все форвардные
+        будут удалены.
+      delete_confirm_has_forwards: Этот пакет уже существует. Исходный и все форвардные
+        будут удалены.
+      enable_hst_dl: Чтобы включить высокоскоростные передачи с Aspera, пожалуйста,
+        %{download}, подключаемый модуль браузера Connect.
+      enable_hst_dl_enable: Чтобы включить высокоскоростные передачи с Aspera, пожалуйста,
+        %{download} и %{enable} подключаемый модуль браузера Connect.
+      local_transfer_message: В настоящее время используется низкоскоростной HTTP.
+        Чтобы включить высокоскоростную передачу с Aspera, пожалуйста, посетите %{enable},
+        чтобы включить/загрузить подключаемый модуль браузера Connect.
+      no_cloud_storage_referencing: Эта память не поддерживается в облачной памяти.
+      no_transfer_dl: Загрузка без Aspera Connect имеет ограничения производительности.
+        Чтобы снять это ограничение и включить высокоскоростную передачу с Aspera,
+        пожалуйста, %{download} подключаемый модуль браузера Connect.
+      no_transfer_dl_enable: Загрузка без Aspera Connect имеет ограничения производительности.
+        Чтобы снять это ограничение и включить высокоскоростные передачи с Aspera,
+        пожалуйста, %{download} и %{enable} подключаемый модуль браузера Connect.
+      not_supp_symbolic_links: Память не поддерживает символические ссылки
+      note: Примечание
+      package_details: Щелкните здесь, чтобы получить сведения о пакете.
+      public_url: 'Общедоступный URL:'
+      retry_upload: Повторить передачу
+      set_now: Задать сейчас
+      stop_upload: Остановить закачку
+      supp_symbolic_links: Память поддерживает символьные связи
+    select:
+      prompt: Выберите
+    submit:
+      create: Создать %{model}
+      create_without_model: Создать
+      create_and_continue: Создать и %{action}
+      submit: Сохранить %{model}
+      update_license: Обновить и проверить лицензию
+      update: Обновить %{model}
+  login:
+    new:
+      login: Вход в систему
+      login_using_saml_idp: Вход в систему с помощью IdP SAML
+    logged_out:
+      message: Вы вышли из системы Faspex; вам может потребоваться выйти из учетной
+        записи корпоративного единого входа в систему.
+      log_in_again: Снова войти в систему
+    errors:
+      saml_not_authorized: У вас нет прав на использование Faspex.
+      invalid_saml_response: Недопустимый ответ от провайдера идентификации SAML.
+      saml_login_failed: Регистрация Завершилась Неудачно.
+      saml_exception: Ошибка ответа SAML. Проверьте журналы.
+  lib:
+    app:
+      not_pingable: не может быть pingable
+      not_infoable: не может быть
+      not_browsable: не просматриваться
+      node_error: ошибка узла
+      host_error: ошибка хоста
+    app_tar:
+      app:
+        bad_version: Несовместимые номера версий
+        config_save_error: Ошибка при сохранении конфигурации.  Подробности смотрите
+          в журнале.
+        upload_saved_config: Закачать сохраненную конфигурацию
+        restore_config_error: Ошибка при восстановлении конфигурации.  Подробности
+          смотрите в журнале.
+        tar_error: Ошибка в конфигурации конфигурации %{tar_status} %{tar_out}
+        untar_error: Ошибка untarring config %{untar_status} %{untar_stdout}
+    aspera_license_reader:
+      no_license_found: Не найдена лицензия или не создана лицензия
+      license_signature_mismatch: Подпись лицензии не соответствует содержимому
+      not_faspex_license: Лицензия не является лицензией Faspex
+      expired_license: Срок действия лицензии истек
+      bad_expiration_license: У лицензии есть неверная дата истечения срока действия
+      valid_license: Лицензия действительна
+      invalid_license: Недопустимая лицензия
+    directory_services:
+      active_directory:
+        active_directory: Active Directory
+        microsoft_active_directory: Microsoft Active Directory
+      apple_open_directory:
+        apple_open_directory: Открытый каталог Apple
+        open_directory: Открыть каталог
+      red_hat:
+        fedora_directory: 389/Red Hat/Fedora Directory Server
+        red_hat_directory: Red Hat Directory Server
+    membership_methods:
+      dropbox_admin: Администратор выпадающего списка
+      wg_admin: Администратор рабочей группы
+      standard: Стандартный
+      submit_only: Отправить-Только
+      set_to_standard_access: Задать для пользователя стандартный доступ
+      set_to_submit_access: Задать пользователя для доступа только для отправки
+      set_user_as_admin: 'Задать пользователя как # { wg_name } admin'
+    packages:
+      package_methods:
+        HTTP_upload_in_progress: Выполняется закачка HTTP, она будет отменена, если
+          вы отойдете от этой страницы.
+        new_package: Новый пакет
+        return_to_history: Вернуться к хронологии
+        return_to_list: Вернуться к списку
+        send_to_dropbox: 'Отправить в Dropbox: %{d_addr_name}'
+  number:
+    currency:
+      format:
+        delimiter: ","
+        format: "%u%n"
+        precision: 2
+        separator: "."
+        significant: false
+        strip_insignificant_zeros: false
+        unit: "$"
+    format:
+      delimiter: ","
+      precision: 3
+      separator: "."
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: "%n %u"
+        units:
+          billion: Млрд.
+          million: Миллион
+          quadrillion: Квадриллион
+          thousand: Тысяча
+          trillion: Триллион
+          unit: ''
+      format:
+        delimiter: ''
+        precision: 1
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one: Байт
+            other: Байты
+          eb: EB
+          gb: ГБ
+          kb: КБ
+          mb: МБ
+          pb: PB
+          tb: ТБ
+    percentage:
+      format:
+        delimiter: ''
+        format: "%n%"
+    precision:
+      format:
+        delimiter: ''
+  public:
+    javascripts:
+      admin:
+        authorization_domains:
+          form:
+            save: Сохранить
+            save_and_test: Сохранить и протестировать
+  support:
+    array:
+      last_word_connector: ", и "
+      two_words_connector: " и "
+      words_connector: ", "
+  time:
+    am: am
+    formats:
+      default: "%a, %d %b %Y %H:%M:%S %z"
+      long: "%B %d, %Y %H:%M"
+      short: "%d %b %H:%M"
+    pm: pm

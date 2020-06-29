@@ -1,0 +1,2979 @@
+---
+ar:
+  activerecord:
+    models:
+      node: عقدة
+      share: مساحة تخزين الملف
+      distribution_list: كشف التوزيع
+      authorization_domain: خدمة الدليل
+      metadata_profile: ملف مواصفات Metadata
+      metadata_field: مجال بيانات التوصيف
+    attributes:
+      authorization_domain:
+        host: عنوان وحدة الخدمة
+        port: المنفذ
+        treebase: تريباسي
+        login: بدء الاتصال
+        password: كلمة السرية
+      c_configuration:
+        encrypt_transfers: تشفير عمليات النقل
+        c_ssh_tcp_port: منفذ SSH TCP
+        c_fasp_udp_port: منفذ fasp UDP
+        http_fallback_port: منفذ HTTP fallback
+        c_kbps_initial_target_upload_rate: معدل التحميل المبدئي
+        c_kbps_initial_target_download_rate: معدل التحميل المبدئي
+        c_kbps_max_target_upload_rate: الحد الأقصى لمعدل التحميل
+        c_kbps_max_target_download_rate: الحد الأقصى لمعدل التحميل
+        c_lock_minrate_policy: اقفال الحد الأدنى للمعدل والسياسة
+        c_relay_outgoing_bandwidth: عرض النطاق الترددي الخارجي
+        c_relay_incoming_bandwidth: اعادة اطلاق Bandwidth وارد
+        min_connect_version_major: الحد الأدنى لنسخة الاتصال
+        min_connect_version_minor: الحد الأدنى لنسخة الاتصال
+        min_connect_version_point: الحد الأدنى لنسخة الاتصال
+        http_fallback_enabled: اتاحة اعادة HTTP
+        downloads_during_transfers_enabled: اتاحة التحميل أثناء عمليات النقل
+      m_configuration:
+        email_from_email: 'البريد الالكتروني From: "From:"'
+        m_smtp_server_port: منفذ وحدة الخدمة
+        m_smtp_auth_type: توثيق SMTP
+        m_smtp_server: وحدة خدمة بريد SMTP
+        use_tls: استخدم TLS اذا كان متاحا
+        m_smtp_helo_domain: النطاق
+        m_smtp_username: مستخدم (تضمين نطاق)
+        smtp_password: كلمة السرية
+        email_from: اسم FromName "From:"
+        package_received_notifications_from: يتم Packages Recipient "من"
+      e_configuration:
+        ad_proxy_host: نظام Active Directory proxy
+        ad_proxy_port: منفذ Active Directory proxy
+        announcement: الرسالة
+        dbox_can_override_ear: السماح بوجود محددات التشفير الخاصة بهم
+        can_override_ear_per_personal_invite: السماح بمحددات التشفير المهيأة لدعوات
+          الراسل الخارجية
+        e_http_port: منفذ HTTP
+        e_https_port: منفذ HTTPS
+        e_server_address: عنوان أو عنوان خارجي لوحدة الخدمة
+        e_server_enable_alternate_address: اتاحة العنوان البديل
+        e_server_emails_include_alternate_address: رسائل البريد تتضمن عنوان بديل
+        email_passcode_expires: انتهاء وصلة مجموعة البرامج
+        email_passcode_days_valid: انتهاء الصلاحية بعد
+        email_passcode_expire_after_download: انتهاء الصلاحية بعد تحميل مجموعة البرامج
+          بالكامل
+        registration_type: التسجيل الذاتي
+        registration_approval_ccs: اعلام البريد الالكتروني التالي بالموافقة عليه
+        registration_external_use_default: استخدام سياسة التسجيل المفترضة للمستخدمين
+          الخارجيين
+        registration_type_external: سياسة التسجيل للمستخدمين الخارجيين
+        registration_approval_ccs_external: اعلام البريد الالكتروني التالي للموافقة
+          على المستخدمين الخارجيين
+        tos_external: شروط الخدمة للمستخدمين الخارجيين
+        package_instructions: الرسالة
+        tos: شروط الخدمة
+        use_strong_password: استخدام كلمات السرية القوية
+        force_password_reset_for_new_users: طلب مستخدمين جدد لتغيير كلمة السرية عند
+          بدء الاتصال الأول
+        allow_users_to_unlock: السماح للمستخدمين الذين تم اقفالهم بالغاء اقفال أنفسهم
+        session_timeout: انتهاء وقت الجلسات بعد
+        allow_send_to_email: السماح بالارسال الى عناوين بريد الكتروني خارجية
+        allow_request_from_email: السماح بالدعوات الى
+        registered_users_have_mutual_scope: يمكن للمستخدمين المسجلين ذاتيا أن يتم
+          ارسالهم الى بعضهم البعض
+        inviting_allowed: السماح بدعوة مرسلين خارجيين
+        hide_user_dir_default: الاحتفاظ بدليل المستخدم الخاص افتراضيا
+        public_url_allowed: السماح بعناوين URL للعرض العام
+        dbox_can_override_public_url: السماح لمربعات الكشف باتاحة / الغاء اتاحة عناوين
+          URL العامة الخاصة بها
+        public_url_home_server_id: وحدة الخدمة الرئيسية لعناوين URL العامة
+        automatically_login_using_saml_idp: بدء الاتصال باستخدام مانح هوية SAML
+        saml_idp_sso_target_url: عنوان URL لبدء الاتصال المنفرد
+        saml_idp_slo_target_url: عنوان URL الى IdP Single Log Off
+        saml_idp_cert_fingerprint: طباعة IdP Certificate Fingerprint
+        saml_idp_cert: شهادة IdP
+        can_see_global_distribution_lists_default: يمكن أن يقوم المستخدمين بمشاهدة
+          كشوف التوزيع الشاملة افتراضيا
+        tos_for_sending: شروط الخدمة للارسال
+        remove_ds_users_on_inactivity: ازالة مستخدمي DS
+        remove_saml_users_on_inactivity: ازالة مستخدمي SAML
+      e_workgroup:
+        e_wg_name: الاسم
+        e_wg_desc: الوصف
+        workgroup_received_notification_cc: ارسال نسخة من البريد الالكتروني للايصال
+          الى العناوين
+        destination_share_id: صندوق الوارد المفترض
+      invitation:
+        expires_at: الأيام حتى الانتهاء
+      node:
+        alternate_address: العنوان أو الاسم الثانوي
+        alternate_address_client_filter: استخدام اذا تم مطابقة عنوان وحدة الطلب
+        alternate_address_server_filter: الاستخدام اذا كان النظام الرئيسي لبرنامج
+          الاستعراض يتطابق
+        api_password: كلمة السرية
+        api_port: المنفذ
+        api_username: اسم المستخدم
+        enable_alternate_address: اتاحة العنوان الثانوي
+        encrypted_api_password: كلمة السرية
+        host: النظام الرئيسي
+        name: الاسم
+        primary_address: عنوان أو اسم النقل الأساسي
+        ssl: استخدام SSL ؟
+        verify_ssl: التحقق من شهادة SSL ؟
+      share:
+        kbps_initial_target_upload_rate: معدل التحميل المبدئي
+        kbps_initial_target_download_rate: معدل التحميل المبدئي
+        lock_minrate_policy: اقفال الحد الأدنى للمعدل والسياسة
+        kbps_max_target_upload_rate: الحد الأقصى لمعدل التحميل
+        kbps_max_target_download_rate: الحد الأقصى لمعدل التحميل
+        relay_incoming_bandwidth: معدل الترحيل الوارد
+        relay_outgoing_bandwidth: معدل relay الصادر
+      e_package:
+        e_package_name: العنوان
+      delivery:
+        metadata: 'بيانات توصيف غير صحيحة : '
+        sources: ''
+        ear_passphrase: عبارة المرور
+        tos_for_sending: شروط الخدمة
+      registration:
+        name: بدء الاتصال
+        email: البريد الإلكتروني
+        first_name: الاسم الأول
+        last_name: الاسم الأخير
+        tos_agreement: أقبل شروط الخدمة
+      metadata_field:
+        label: التسمية
+      post_process:
+        active: فعال
+        name: الاسم
+        script_path: مسار الى البرنامج النصي على وحدة الخدمة
+        package_name: اسم مجموعة البرامج
+        sender_name: اسم الراسل
+        sender_email: البريد الالكتروني لوحدة الارسال
+        recipient_name: كشف المستلمين
+        recipient_email: كشف البريد الالكتروني المستلمين
+        package_note: مذكرة مجموعة البرامج
+      ad_group:
+        kbps_initial_target_upload_rate: معدل التحميل المبدئي (kbps)
+        kbps_initial_target_download_rate: معدل التحميل الأولي (kbps)
+        kbps_max_target_upload_rate: الحد الأقصى لمعدل التحميل (kbps)
+        kbps_max_target_download_rate: الحد الأقصى لمعدل التحميل (kbps)
+        lock_minrate_policy: اقفال الحد الأدنى للمعدل والسياسة
+        can_invite: السماح بدعوة مرسلين خارجيين
+        dn: ND
+      directory_service_group:
+        kbps_initial_target_upload_rate: معدل التحميل المبدئي (kbps)
+        kbps_initial_target_download_rate: معدل التحميل الأولي (kbps)
+        kbps_max_target_upload_rate: الحد الأقصى لمعدل التحميل (kbps)
+        kbps_max_target_download_rate: الحد الأقصى لمعدل التحميل (kbps)
+        lock_minrate_policy: اقفال الحد الأدنى للمعدل والسياسة
+      user:
+        name: بدء الاتصال
+        email: البريد الإلكتروني
+        password: كلمة السرية
+        password_confirmation: تأكيد كلمة السرية
+        kbps_initial_target_upload_rate: معدل التحميل المبدئي (kbps)
+        kbps_initial_target_download_rate: معدل التحميل الأولي (kbps)
+        kbps_max_target_upload_rate: الحد الأقصى لمعدل التحميل (kbps)
+        kbps_max_target_download_rate: الحد الأقصى لمعدل التحميل (kbps)
+        lock_minrate_policy: اقفال الحد الأدنى للمعدل والسياسة
+        rows_per_page: الحد الأقصى للصفوف بالصفحة
+        disable_connect: الغاء اتاحة البرنامج المساعد Aspera Connect
+        account_activated: تم تشغيل الحساب
+        account_expires: انتهاء صلاحية الحساب
+        self_destructs: حذف آلي للحساب
+        destruction_date: تاريخ الحذف
+        received_notification_cc: ارسال نسخة من البريد الالكتروني للايصال الى العناوين
+        allow_receipt_cc_edit: السماح بتحرير عناوين الايصال عند تكوين مجموعة البرامج
+        uploads_allowed: تحميل مجموعات البرامج
+        downloads_allowed: تحميل مجموعات البرامج
+        forwarding_allowed: حزم اعادة التوجيه
+        can_create_from_remote: تكوين مجموعات البرامج من المصادر عن بعد
+        can_send_to_all_faspex_users: يمكن ارساله الى كل مستخدمي Faspex
+        can_send_to_external_email: يمكن ارساله الى بريد الكتروني خارجي
+        can_invite: السماح بدعوة مرسلين خارجيين
+        notify_on_receive: ارسال بريد الكتروني لي عند استلام مجموعة برامج
+        notify_on_validation_failure_if_sender: ارسال بريد الكتروني لي اذا فشلت عملية
+          التحقق من الصلاحية في مجموعات البرامج
+        notify_on_validation_failure_if_recipient: ارسال بريد الكتروني لي اذا فشلت
+          عملية التحقق عند استلام مجموعات البرامج
+        notify_downloader_on_download: ارسال بريد الكتروني لي عند تحميل مجموعة برامج
+        notify_on_workgroup_package_if_sender: تضمين لي في اعلامات مجموعة العمل لمجموعات
+          البرامج التي تم ارسالها
+        suppress_connect_install_dialog: منع ظهور طلبات التركيب / التحديث
+        allowed_ip_addresses_for_login: عناوين IP المسموح بها لبدء الاتصال
+        allowed_ip_addresses_for_download: عناوين IP المسموح بها للتحميل
+        allowed_ip_addresses_for_upload: عناوين IP المسموح بها للتحميل
+        last_remote_addr: عنوان الوحدة التابعة لبدء الاتصال الأخير
+        last_server_addr: عنوان وحدة خدمة بدء الاتصال الأخير
+        override_transfer_parameters: احلال المحددات المفترضة
+        override_server_delete_after_download: احلال النظام المفترض
+        welcome_email: ارسال رسالة الترحيب
+        created_at: تكوين في
+        updated_at: تحديث في
+        type: نوع المستخدم
+        description: التعليقات
+        allow_user_specified_delete_after_download: السماح للمستخدم بتحديد محددات
+          الحذف الخاصة بالمجموعة على أساس مجموعة البرامج
+        enable_public_url: اتاحة عنوان URL العام
+        can_have_public_url: السماح بعناوين URL للعرض العام
+      local_user:
+        password_expiration_interval: انتهاء صلاحية كلمة السرية كل
+      template_user:
+        days_til_expiration: ستنتهي صلاحية الحسابات الجديدة
+        days_til_destruction: سيتم حذف حسابات جديدة
+      home_server_rule:
+        email_pattern: regex لعنوان البريد الالكتروني
+        user_name_pattern: اسم المستخدم regex
+        ad_group_pattern: regex لمجموعة خدمات الدليل
+        ad_dn_pattern: regex DN لخدمة الدليل
+        ldap_field_pattern1: regex لمجال LDAP
+        ldap_field_pattern2: regex لمجال LDAP
+        ldap_field_pattern3: regex لمجال LDAP
+      send:
+        upload_cc: سيتم اعلام هؤلاء المستلمين عند الانتهاء من تحميل مجموعة البرامج
+          هذه
+        download_cc: سيتم اعلام هؤلاء المستلمين عند قيام مستلم بتحميل مجموعة البرامج
+          هذه
+        receipt_cc: سيكون هؤلاء المستلمين Cc' d على مجموعة برامج الاستلام التي تم
+          استلامها بالبريد الالكتروني
+    errors:
+      format: "%{attribute} %{message}"
+      e_configuration:
+        idp_cert_and_idp_cert_fingerprint_blank: يجب توفير واحد من "IdP Certificate
+          Fingerprint" أو "شهادة IdP".
+      models:
+        delivery:
+          attributes:
+            title:
+              blank: لا يمكن أن يكون العنوان خاليا
+        distribution_list:
+          attributes:
+            name:
+              blank: لا يمكن أن يكون الاسم خاليا
+            contacts:
+              blank: لا يمكن أن تكون جهات الاتصال خالية
+        e_configuration:
+          attributes:
+            max_title_length_in_storage_paths:
+              not_a_number: الحد الأقصى لطول العنوان في مسارات التخزين ليس رقم
+            days_until_packages_expire:
+              not_a_number: أيام حتى انتهاء مجموعات البرامج لا تعد رقم
+        saml_configuration:
+          attributes:
+            allowed_clock_drift_in_ms:
+              not_a_number: الانحراف عن المنحرف المسموح به للساعة في ملي ثانية ليس
+                رقما
+      messages:
+        accepted: يجب قبوله
+        blank: لا يمكن أن يكون خاليا
+        confirmation: لا يتطابق مع %{attribute}
+        empty: لا يمكن أن يكون فارغا
+        equal_to: يجب أن يكون مساويا ل %{count}
+        even: يجب أن يكون حتى
+        exclusion: تم حجزه
+        greater_than: يجب أن يكون أكبر من %{count}
+        greater_than_or_equal_to: يجب أن يكون أكبر من أو يساوي %{count}
+        inclusion: غير متضمن في الكشف
+        invalid: غير صحيح
+        less_than: يجب أن يكون أقل من %{count}
+        less_than_or_equal_to: يجب أن يكون أقل من أو يساوي %{count}
+        model_invalid: 'فشلت عملية التحقق من الصلاحية : %{errors}'
+        not_a_number: ليس رقم
+        not_an_integer: يجب أن يكون رقم صحيح
+        odd: يجب أن يكون غريبا
+        other_than: يجب أن يكون خلاف %{count}
+        present: يجب أن يكون خاليا
+        record_invalid: 'فشلت عملية التحقق من الصلاحية : %{errors}'
+        restrict_dependent_destroy:
+          has_many: لا يمكن حذف السجل بسبب وجود %{record} غير موجود
+          has_one: لا يمكن حذف السجل لوجود %{record} تابع
+        required: يجب أن يكون موجودا
+        taken: تم أخذها بالفعل
+        too_long:
+          one: طويل جدا (الحد الأقصى هو 1 حرف)
+          other: طويل جدا (الحد الأقصى هو %{count} حرفا)
+        too_short:
+          one: قصير جدا (الحد الأدنى هو 1 حرف)
+          other: قصير جدا (الحد الأدنى هو %{count} حرفا)
+        wrong_length:
+          one: هو الطول غير صحيح (يجب أن يكون حرف واحد)
+          other: هو الطول الخطأ (يجب أن يكون عبارة عن حروف %{count})
+      template:
+        body: 'كانت هناك مشاكل في المجالات التالية :'
+        header:
+          one: 1 خطأ يمنع هذا %{model} من أن يتم حفظه
+          other: أخطاء %{count} محظورة هذا %{model} من أن يتم حفظها
+      user:
+        groups_are_inactive: المجموعات التي أنت عضو فيها غير فعالة
+        user_is_inactive: المستخدم غير فعال
+        username_conflicts_with_existing_user: يتعارض اسم المستخدم مع حساب مستخدم
+          موجود.
+  admin:
+    saml:
+      edit:
+        saml: SAML
+        automatically_login_using_saml_idp_hint: بدء الاتصال آليا باستخدام SAML Identity
+          Provider.  يمكن استخدام %{url} لبدء الاتصال مباشرة الى Fpex حتى عند اتاحة
+          بدء الاتصال الآلي باستخدام SAML.
+    saml_configurations:
+      edit:
+        domain_url_hint: "(اختياريا) عند التوصل لنطاق Fpex هذا ، سيتم توجيه المستخدمين
+          آليا لبدء الاتصال من خلال مانح SAML هذا (احلال المفترض)"
+        publicly_visible_hint: السماح للمستخدمين بالتوصل الى توصيف SAML هذا من صفحة
+          بدء الاتصال المحلي
+      test_warning: |-
+        تحذير : سيقوم هذا التصرف بانهاء جلسة Fpex الحالية الخاصة بك وتوجيهك الى صفحة بدء الاتصال لجهة اتاحة SAML هذه.
+
+        لتجنب انهاء الجلسة الحالية الخاصة بك ، يمكنك فتح هذه الوصلة في نافذة خاصة أو في برنامج استعراض مختلف لاختبار هذا التوصيف.
+  app:
+    controllers:
+      account:
+        ad_groups_controller:
+          added_group: تم اضافة مجموعة %{group_name} الى مجموعة العمل
+          sync_group: تركيب %{group_name}
+          updated_grp_prov: تم تعديل سياسة اعداد المجموعة.
+          updated_grp_import: مجموعة قواعد استقبال المجموعة التي تم تعديلها.
+          updated_error: حدث خطأ أثناء حفظ توصيف مجموعة %{group_name} :<br/>
+          removed_group: تم ازالة مجموعة %{group_name} من مجموعة العمل.
+          wg_not_found: لم يتم ايجاد مجموعة العمل
+          no_groups_selected: لم يتم تحديد مجموعات
+          group_sched_activated: "%{group_name} مجدول لكي يتم تشغيله"
+          group_sched_deactivated: "%{group_name} مجدول ليتم الغاء تشغيله"
+          group_sched_removed: "%{group_name} تم جدولته ليتم ازالته"
+        memberships_controller:
+          added_wg: مستخدم القالب الذي تم اضافته الى مجموعة العمل-%{wg_name}
+          added_wg_fail: لا يمكن اضافة مستخدم القالب الى مجموعة العمل-%{wg_name}
+          remove_wg: مستخدم القالب الذي تم ازالته من مجموعة العمل-%{wg_name}
+          remove_wg_fail: لا يمكن ازالة مستخدم القالب من مجموعة العمل-%{wg_name}
+        saml_groups_controller:
+          added_group: المجموعة التي تم اضافتها %{group_name}
+        users_controller:
+          no_wg_found: لا يمكن ايجاد مجموعة العمل *%{wg_name}
+          add_to_wg_fail: 'خطأ في الاضافة الى مجموعة العمل : %{error}'
+          removed_from_wg: تم ازالته من مجموعة العمل.
+          removed_from_wg_fail: 'خطأ في ازالة المستخدم من مجموعة العمل : %{error}'
+          user_membership_updated: تم تعديل عضوية المستخدم.
+          error_editing_membership: 'خطأ في تحرير العضوية : %{error}'
+          created_user: تم بنجاح تكوين مستخدم %{user_name}
+          created_user_fail: لا يمكن اضافة مستخدم.
+          updated_user: تم بنجاح تعديل المستخدم %{user_name}
+          permission_error: انك لا تمتلك التصريح الذي يمكنك من تعديل المستخدم %{user_name}
+          activated: تشغيل %{user}
+          disabled_saml_user_note: "<br>ملحوظة : المستخدمين الذين تم ارفاقهم مع توصيفات
+            SAML الغير متاحة سيظل غير فعال"
+          deactivated: الغاء تشغيل %{user}
+          removed: تم ازالة %{user}
+          removed_external: تم ازالة %{user}
+          no_users_selected: لم يتم تحديد مستخدمين
+          active_users: المستخدمين الفعالين
+          all_users: كل المستخدمين
+          inactive_users: مستخدمين غير فاعلان
+      admin:
+        authorization_domains_controller:
+          updated: تم تعديل التوصيف.
+        nodes_controller:
+          deleted: تم حذف %{name}
+          deleted_fail: غير مصرح لك بحذف %{name}
+          connection_fail: "%{message}<br />%{status}<br />%{status_message}"
+          connection_success: "%{message} <br /> تم الاتصال بنجاح !"
+        notifications:
+          login_announcements_controller:
+            updated: اعلان بدء الاتصال المعدل
+          package_instructions_controller:
+            updated: تعليمات تحديث مجموعة البرامج
+        packages_controller:
+          invalid_num_days: عدد غير صحيح من الأيام
+          no_older_pkgs: لا توجد مجموعات برامج أقدم من %{max}
+        post_processes_controller:
+          activated: تم تشغيل %{script_name}
+          activated_error: حدث خطأ أثناء تشغيل %{script_name}
+          created: تم بنجاح تكوين البرنامج النصي لعملية ما بعد التشغيل %{script_name}
+          deleted: تم ازالة البرنامج النصي لمعالجة ما بعد التشغيل %{script_name}
+          inactivated: "%{script_name} غير فعال"
+          inactivated_error: حدث خطأ أثناء الغاء تشغيل %{script_name}
+          updated: تم تعديل النص %{script_name} بنجاح
+        saml_configurations_controller:
+          create_success: 'تم بنجاح تكوين توصيف SAML<br>ملحوظة : يجب أن تقوم بتعديل
+            بيانات التوصيف على وحدة خدمة SAML قبل بدء الاتصال.'
+          update_success: 'تم تعديل توصيف SAML بنجاح<br>ملحوظة : قد تحتاج الى تعديل
+            بيانات التوصيف على وحدة خدمة SAML قبل بدء الاتصال.'
+        settings:
+          display_settings_controller:
+            file_too_large: الملف كبير جدا. الحد الأقصى لحجم الملف هو 5MB
+            remove_logo_fail: لا يمكن حذف ملف الشعار المعدل
+            remove_logo_success: تم بنجاح ازالة ملف الشعار المهيأ
+            unsupported_file_type: نوع ملف غير مدعم للشعار المهيأ. يجب أن يكون الملف
+              عبارة عن صورة jpeg أو gif أو png.
+            updated_settings: محددات عرض تم تعديلها
+          entitlement_controller:
+            invalid_license: ترخيص Entitlement غير صحيح
+            successful_entitlement: استحقاق ناجح
+            unable_to_register: لا يمكن التسجيل
+          global_distribution_lists_controller:
+            created: تم تكوين كشف توزيع شامل %{name}
+            deleted: كشف التوزيع الشامل المحذوف
+            updated: تحديث قوائم التوزيع العالمية
+            updated_fail: حدث خطأ أثناء تعديل واحد أو أكثر من كشوف التوزيع الشاملة
+          license_controller:
+            license_upload_fail: فشل تحميل الترخيص
+            only_text_allowed: يسمح بملفات النص فقط
+            updated_license: ترخيص تم تعديله
+          package_storage_controller:
+            updated_settings: محددات تخزين مجموعة برامج تم تعديلها
+          save_restore_config_controller:
+            config_restored: تم استعادة التوصيف. تأكد من اعادة بدء Faspex لاستكمال
+              هذه العملية.
+          security_controller:
+            updated_settings: محددات سرية تم تعديلها
+          transfer_options_controller:
+            updated_settings: محددات اختيارات التحويل التي تم تحديثها
+          web_server_controller:
+            updated_settings: محددات تحديث وحدة خدمة الانترنت
+        share_membership_controller:
+          deleted: تم حذف %{mem_name}
+          deleted_fail: لا يمكن حذف %{mem_name}
+        shares_controller:
+          add_term_fail: لا يمكن اضافة %{term}
+          added_term: تم اضافة %{term}
+          created: تم تكوين %{share} %{share_name}
+          deleted: تم حذف %{share}
+          find_fail: لا يمكن ايجاد %{term}
+          updated: تم تعديل %{share} %{share_name}
+          updated_default: صندوق الوارد المفترض الذي تم تعديله
+      authenticated_controller:
+        expired: انتهت صلاحية الجلسة الخاصة بك. برجاء بدء الاتصال مرة أخرى للاستمرار.
+        new_session: جلسة أخرى للمستخدم %{username} تم بدءها من (%{remote})
+        timed_out: انتهى وقت الجلسة الخاصة بك. برجاء بدء الاتصال مرة أخرى للاستمرار.
+      entitlement_controller:
+        success: استحقاق ناجح
+      external:
+        submissions_controller:
+          send_to_recipient: ارسال الى %{name}
+      invitations_controller:
+        invitation_failed: فشل الدعوة. برجاء اعادة المحاولة فيما بعد.
+        invitation_created: تم تكوين دعوة الى %{email}
+        reinvited: دعوة تم دعوتها الى %{name}
+        reinvited_fail: فشل اعادة الاستدعاء. برجاء اعادة المحاولة فيما بعد.
+        resend_invitation_failed: فشلت عملية اعادة توجيه الدعوة. برجاء اعادة المحاولة
+          فيما بعد.
+        resent_invitation: اعادة توجيه دعوة الى %{name}
+        deleted_invitation: دعوة تم حذفها
+        deleted_invitation_try_again: فشل في حذف دعوة. برجاء اعادة المحاولة فيما بعد.
+      login_base_controller:
+        login_error_message: بدء الاتصال الخاص بك كان غير ناجح. برجاء اعادة المحاولة
+          مرة أخرى. اذا كنت تقوم باختبار فشل بدء الاتصال المتكرر ، يجب أن تقوم بالضغط
+          على وصلة 'Forwset Password' لارجاع كلمة السرية الخاصة بك.
+      login_controller:
+        connect_enabled: تم اتاحة IBM Aspera Connect !
+        login_URL_change: تم تغيير عنوان URL الخاص ببدء الاتصال. برجاء تحديث علامة
+          توقف برنامج الاستعراض الخاص بك.
+        session_already_disconnected: تم قطع اتصال هذه الجلسة بالفعل
+      m_configuration_controller:
+        updated: تم تعديل توصيف البريد.
+      m_template_controller:
+        loaded: تم تحميل المحددات المفترضة بنجاح
+        updated: تم تعديل اعلام البريد الالكتروني %{template} بنجاح
+      metadata_profiles_controller:
+        cannot_delete_profile: لا يمكن حذف ملف المواصفات ، يتم استخدامه بواسطة مجموعات
+          البرامج العادية.
+        cannot_delete_profile_dropbox: لا يمكن حذف ملف المواصفات ، ويتم استخدامه بواسطة
+          المربع المسقط %{db_name}.
+        created: بيانات التوصيف التي تم تكوينها %{profile}
+        profile_deleted: تم حذف ملف المواصفات.
+        save_success: تم حفظ ملف مواصفات metadata
+        updated: تم التعديل
+      ms_admin_controller:
+        home_server_rules_changed: تم تغيير قواعد وحدة الخدمة الرئيسية. قم باعادة
+          حساب وحدات الخدمة الرئيسية لتطبيق التغييرات.
+        updated_rule: قاعدة تم تعديلها
+        deleted_rule: قاعدة تم حذفها
+        added_new_rule: قاعدة جديدة تم اضافتها
+        error_finding_home_server: خطأ في ايجاد وحدة الخدمة الرئيسية المطلوب حذفها
+        removed_server: وحدة خدمة تم ازالتها
+        updated_home_server_settings: تعديل محددات وحدة الخدمة الرئيسية
+        updated_attributes: تم تعديل %{attribute}
+        access_denied: الوصول مرفوض
+      pending_controller:
+        archived: مجموعة البرامج "%{pkg_name}" التي تم تخزينها
+        archived_fail: خطأ في تخزين مجموعة البرامج. برجاء اعادة المحاولة فيما بعد.
+        deleted: تم حذف مجموعة البرامج "%{pkg_name}"
+        deleted_fail: حدث خطأ أثناء حذف مجموعة البرامج. برجاء اعادة المحاولة فيما
+          بعد.
+      received_controller:
+        package_archived: مجموعة البرامج %{p_name} التي تم تخزينها
+        package_archived_fail: خطأ في تخزين مجموعة البرامج. برجاء اعادة المحاولة فيما
+          بعد.
+      registrations_controller:
+        failed_registration: فشلت عملية التسجيل. برجاء اعادة المحاولة فيما بعد.
+      reset_password_tokens_controller:
+        no_account_exists: لم يعد هذا الحساب موجودا.
+        expired_pw_link: تم بالفعل استخدام وصلة اعادة ضبط كلمة السرية الخاصة بك أو
+          انتهت صلاحيتها ولم تعد صحيحة.
+        reset_success: تم ارجاع كلمة السرية بنجاح !
+        reset_submitted: تم احالة طلب اعادة ضبط كلمة السرية. اذا لم يتم استلام بريد
+          الكتروني قريبا ، اتصل بموجه النظام الخاص بك للحصول على مساعدة.
+      saml_controller:
+        does_not_exist: مانح SAML المطلوب غير موجود
+        disabled: تم الغاء اتاحة SAML Provider المطلوب
+        invalid_metadata: URL بيانات التوصيف غير صحيح
+      sent_controller:
+        archived: مجموعة البرامج "%{pkg_name}" التي تم تخزينها
+        archived_fail: خطأ في تخزين مجموعة البرامج. برجاء اعادة المحاولة فيما بعد.
+        deleted: تم حذف مجموعة البرامج "%{pkg_name}"
+        deleted_fail: حدث خطأ أثناء حذف مجموعة البرامج. برجاء اعادة المحاولة فيما
+          بعد.
+        relay: تم بدء Relay لمشاركة %{share}
+        relay_fail: خطأ في اعادة بدء التتابع. برجاء اعادة المحاولة فيما بعد.
+      settings:
+        distribution_lists_controller:
+          created: كشف التوزيع الذي تم تكوينه %{dist_list_name}
+          deleted: كشف التوزيع الذي تم حذفه
+          updated: كشوف توزيع تم تعديلها
+          error_updating: حدث خطأ أثناء تعديل واحد أو أكثر من كشوف التوزيع
+        passwords_controller:
+          success: تم تغيير كلمة السرية بنجاح.
+        preferences_controller:
+          updated: تم تعديل التفضيلات
+      user_profile_fields_controller:
+        max_field_check_fail: قد يكون لديك حتى مجالات ملف مواصفات مستخدم %{max} فقط
+        saved: تم بنجاح حفظ مجالات ملف مواصفات المستخدم
+      workgroup:
+        workgroups_controller:
+          activate: تشغيل
+          activated_members: تم تشغيل m%{count} member%{unal}. %{msg}
+          add_ds: لا يمكن اضافة مجموعة DS. برجاء اعادة المحاولة فيما بعد.
+          add_ds_fail: تم اضافة مجموعة DS %{group} الى مجموعة العمل %{name}
+          add_member: تم اضافة %{name} الى %{box}
+          add_member_fail: لا يمكن اضافة عضو. برجاء اعادة المحاولة فيما بعد.
+          create_success: 'تم بنجاح تكوين '
+          deactivate: الغاء تشغيل
+          deactivated_success: تم الغاء تفعيل %{counts.YM memberlMY_unsal}. %{msg}%{admin}
+          deleted_success: تم حذف %{type} %{name}
+          external_email_no_standard_access: لا يمكن منح مستخدمي البريد الالكتروني
+            الخارجي امكانية توصل قياسية. لم يتم عمل تغييرات.
+          external_email_deactivated_fail: لا يمكن الغاء تشغيل مستخدمي البريد الالكتروني
+            الخارجي ، سيتم ازالتهم فقط. لم يتم عمل تغييرات.
+          members_actions: وظائف الأعضاء ...
+          no_ds_selected: لم يتم تحديد مجموعات DS
+          no_members_selected: لم يتم تحديد أعضاء
+          remove: ازالة
+          remove_member: تم ازالة %{member} من مجموعة العمل.
+          remove_member_fail: لا يمكن ازالة العنصر. برجاء اعادة المحاولة فيما بعد.
+          remove_ds_group: تم ازالة %{count} من مجموعة العمل.
+          remove_ds_group_fail: لا يمكن ازالة مجموعة DS. برجاء اعادة المحاولة فيما
+            بعد.
+          set_admin: قم بتحديد %{member} على أنه %{name} admin.
+          set_admin_fail: لا يمكن جعل مستخدمي البريد الالكتروني الخارجي adminbox admins
+            admins. لم يتم عمل تغييرات.
+          set_ds_access: تحديد اتصال %{group} على أنه %{level} access.
+          set_ds_access_fail: لا يمكن تحديد امكانية التوصل %{level} لمجموعات DS. برجاء
+            اعادة المحاولة فيما بعد.
+          set_regular_access: تحديد %{member} كامكانية توصل عادية.
+          set_regular_access_fail: لا يمكن تحديد امكانية توصل منتظمة للأعضاء. برجاء
+            اعادة المحاولة فيما بعد.
+          set_standard_access: تحديد امكانية التوصل القياسية
+          set_submit_only: تحديد %{member} كاحالة للتشغيل-فقط.
+          set_submit_only_fail: لا يمكن تحديد امكانية توصل-فقط للأعضاء. برجاء اعادة
+            المحاولة فيما بعد.
+          set_submit_only_access: تحديد امكانية توصل للتشغيل-فقط
+          set_wg_admin: تحديد على أنه %{wg_name} admin
+          skipped_sys_admin: تم تخطي %{size} على النظام (موجهي النظام)
+          updated_wg: تم تعديل %{type}
+          user_not_found: لم يتم ايجاد المستخدم
+    views:
+      account:
+        ad_groups:
+          ad_group:
+            error: خطأ
+            invalid: غير صحيح
+            pending: بانتظار %{methodop}
+          additional_permissions:
+            edit_add_perm: تحرير تصاريح اضافية
+          forms:
+            group_import:
+              save: حفظ
+            import_users:
+              full_name: الاسم بالكامل
+              import_date: تاريخ الاستقبال
+              status: الحالة
+              sync_now: اجراء تزامن الآن
+              user_name: اسم المستخدم
+            wg_member:
+              actions: التصرفات
+              add_to: اضافة الى ...
+              date_added: تاريخ مضاف
+              remove: ازالة
+              wg_name: اسم مجموعة العمل
+          user_ad_group:
+            active: فعال
+            inactive: غير فعال
+        directory_service_groups:
+          edit:
+            back: للخلف
+            edit_dir_group: 'تحرير مجموعة خدمات الدليل : %{groupname}'
+            group_import: سياسة استقبال المجموعة
+            imported_users: المستخدمين الذي تم استقبالهم (%{mem_count})
+            workgroup_memberships: عضويات مجموعة العمل (%{mem_count})
+          index:
+            activate: تشغيل
+            date_added: تاريخ مضاف
+            deactivate: الغاء تشغيل
+            directory_service: خدمة الدليل
+            group_name: اسم المجموعة
+            members: 'الأعضاء :'
+            new_group: " مجموعة جديدة"
+            remove: ازالة
+            status: الحالة
+            sync: تزامن
+            view_op_history: مشاهدة السجل التاريخي للعملية
+          new:
+            back: للخلف
+            cancel: الغاء
+            dir_services: 'خدمة الدليل :'
+            import: استقبال
+            import_dir_serv: استقبال مجموعة من خدمة الدليل
+            search_dir_service: 'خدمة دليل البحث :'
+        directory_service_users:
+          additional_permissions:
+            edit_add_perm: تحرير تصاريح اضافية
+          index:
+            back: للخلف
+            directory_service: 'خدمة الدليل :'
+            import: استقبال
+            import_user_from_dir_serv: استقبال مستخدم من خدمة الدليل
+            search: بحث
+            search_term: 'مصطلح البحث :'
+            searches_limit: وتقتصر عمليات البحث على 20 نتيجة.
+            searching: جاري البحث
+            usr_not_found: لم يتم ايجاد مستخدمين
+        memberships:
+          actions: التصرفات
+          add_to: اضافة الى ...
+          back: للخلف
+          name: الاسم
+          remove: ازالة
+          self_reg_added: 'سيتم اضافة المستخدمين المسجلين ذاتيا الى مجموعات العمل
+            التالية :'
+          template_user_workgroups: مجموعات عمل مستخدم القالب
+        passwords:
+          back_to_edit: العودة الى التحرير
+          cancel: الغاء
+          password: تغيير كلمة السرية الى %{local_name}
+          reset_confirm: هل أنت متأكد من أنك تريد اعادة تحديد كلمة السرية الخاصة بهذا
+            المستخدم ؟ سيتم ارسال اعلام بريد الكتروني الى هذا المستخدم يسمح لهم ببدء
+            الاتصال وتغيير كلمة السرية الخاصة بهم.
+          reset_password: ارجاع كلمة السرية
+          update_password: تعديل كلمة السرية
+        registrations:
+          form:
+            email: البريد الالكتروني
+            first: الأولى
+            last: الأخير
+            login: بدء الاتصال
+          index:
+            approve: موافقة
+            deny: رفض
+            faspex_reg_type: تم توصيف Fapex مع تسجيل %{type}.
+            new_message: هذا يعني أن الحسابات التي تم تكوينها حديثا ستتطلب الموافقة
+              على %{not}.
+            not: لا
+            self_reg_users: سيقوم المستخدمين المسجلين ذاتيا بتوارث تصاريح %{template_user}
+              وسيصبحون آليا أعضاء في %{workgroups} التالية.
+        saml_groups:
+          edit:
+            back: للخلف
+            edit_saml: 'تحرير مجموعة SAML : %{groupname}'
+            group_prov_policy: سياسة اعداد المجموعة
+            users: المستخدمين (%{mem_count})
+            workgroup_memberships: عضويات مجموعة العمل (%{mem_count})
+          index:
+            activate: تشغيل
+            date_added: تاريخ مضاف
+            deactivate: الغاء تشغيل
+            group_name: اسم المجموعة
+            members: 'الأعضاء :'
+            new_group: " مجموعة جديدة"
+            remove: ازالة
+            saml_config: توصيفات SAML
+            status: الحالة
+          new:
+            back: للخلف
+            cancel: الغاء
+            create: تكوين
+            create_new_saml: تكوين مجموعة SAML جديدة
+            group_name: 'اسم المجموعة (DN) :'
+            saml_config: توصيف SAML
+        template_users:
+          account_details: تفاصيل الحساب
+          cancel: الغاء
+          edit_template_user: تحرير مستخدم القالب
+          form:
+            workgroup_memberships:
+              date_added: تاريخ مضاف
+              remove: ازالة
+              workgroup_name: اسم مجموعة العمل
+              workgroups: مجموعات العمل
+          update: تعديل
+        users:
+          add_permissions:
+            edit_add_perm: تحرير تصاريح اضافية
+          edit:
+            change_password: تغيير / ارجاع كلمة السرية
+            edit_user: 'تحرير مستخدم : %{user}'
+            return_to_user_list: العودة الى كشف المستخدمين
+            type: "(النوع : %{user_type})"
+            workgroup_memberships: عضويات مجموعة العمل
+          edit_form:
+            cancel: الغاء
+            update_user: تعديل مستخدم
+          edit_wg:
+            add_user: اضافة مستخدم الى مجموعة العمل
+            back_to_edit: العودة الى التحرير
+            remove: ازالة
+            workgroup_mem_for: عضويات مجموعة العمل الى %{user}
+            workgroup_name: اسم مجموعة العمل
+          external_users:
+            accounts: الحسابات
+            remove: ازالة
+          fieldsets:
+            account_details:
+              account_details: تفاصيل الحساب
+              active: فعال
+              admin_hint: يستطيع موجهي النظام اضافة / ازالة المستخدمين وادارة توصيف
+                وحدة الخدمة.
+              inactive: غير فعال
+              manager_hint: يستطيع المديرين اضافة / ازالة مستخدمين
+              never: أبدا
+              role: 'الوظيفة :'
+              text_area_hint: أدخل عناوين بريد الكتروني مفصولة بفاصلة أو فاصلة منقوطة
+                أو مسافة خالية
+              user_hint: يمكن للمستخدمين العاديين ارسال واستلام مجموعات برامج Frapex
+            advanced_transfer:
+              adv_trans_setting: محددات النقل المتقدمة
+              checked: تم تعليمه
+              initial_transfer: معدل النقل المبدئي
+              max_rate: الحد الأقصى المسموح به
+              minrate_hint: 'في حالة تحديده ، لن يتمكن Clients من ضبط أسلوب النقل
+                الخاص بهم أو الحد الأدنى من معدل النقل (المفترض : %{config})'
+              server_to_user: 'وحدة خدمة الى مستخدم (المفترض : %{config})'
+              transfer_alert: |-
+                سيقوم FApex باستخدام محددات النقل من الجزء Aspera Central Server بصفة مفترضة.
+                ولكن ، هنا يمكنك تحديد محددات النقل الخاصة بالمستخدم ، والتي ستكون لها الأولوية على المحددات الخاصة بوحدة الخدمة.
+              unchecked: غير معلم
+              user_to_server: 'مستخدم لوحدة خدمة (المفترض : %{config})'
+            ds_history:
+              action: الإجراء
+              ds_history: تاريخ DS (%{dom_name})
+              notes: Notes
+              operation: عملية
+              show_all: عرض الكل
+              time: الوقت
+            package_deletion:
+              after_download: 'بعد التحميل :'
+              allow_user_delete: 'السماح للمستخدم بتحديد محددات الحذف الخاصة به على
+                أساس -package-by-package :'
+              delete_files_after: حذف الملفات بعد <strong>أي مستلم</strong> تحميل
+                كل الملفات
+              delete_files_all: حذف الملفات بعد تحميل <strong>كل المستلمين</strong>
+                تحميل كل الملفات
+              do_nothing: لا تفعل شيئا
+              package_deletion: حذف مجموعة البرامج
+              server_delete: 'المفترض : %{config}'
+            password_policy:
+              custom_pw_policy: سياسة كلمة السرية المهيأة
+              pw_expires: انتهاء صلاحية كلمة السرية
+              prevent_pw_reuse: تجنب اعادة استخدام كلمة السرية
+              every_x_days: كل يوم (أيام) %{x}
+              never: أبدا
+            permissions:
+              affirm: نعم.
+              allow_inviting_external: 'السماح بدعوة المرسلين الخارجيين :'
+              allow_public_submission: 'السماح بعناوين احالة عامة :'
+              allowed_to: 'مسموح به :'
+              can_see_global_dist_lists: 'يمكن مشاهدة كشوف التوزيع الشاملة :'
+              control_hint: اذا لم يتم تعليمه ، لن يتمكن المستخدم من ارساله الى المستخدمين
+                أو ارساله الى كشف مسقط / مجموعات عمل
+              create_drop_packages: اذا تم الغاء اتاحة هذا الاختيار ، سيتمكن المستخدم
+                فقط من تكوين مجموعات برامج مسقط ، اذا كانت عبارة عن عنصر من أي من
+                مربعات الكشف المسقط.
+              create_normal: 'يمكن تكوين مجموعات برامج عادية :'
+              external_email: 'يمكن ارساله الى بريد الكتروني خارجي :'
+              ip_addr_hint: أدخل عناوين / نطاقات مفصولة بفاصلات ، على سبيل المثال
+                ، <b>10.0. * ، 192.168.1.1</b>
+              keep_dir_private: 'الاحتفاظ بدليل المستخدم الخاص :'
+              neg: لا
+              permissions: التصاريح
+              see_global_dis_list: 'يمكن مشاهدة كشوف التوزيع الشاملة :'
+              send_to_all: 'يمكن ارساله الى كل مستخدمي Faspex :'
+              send_to_all_send_to_wg: اذا كان مسموح به ، يمكن أن يقوم المستخدم بالارسال
+                الى كل مستخدمي Faspex. خلاف ذلك ، يمكن أن يقوم المستخدم بالارسال الى
+                أعضاء مجموعة العمل الآخرين فقط.
+              user_server_def: 'مفترضات وحدة خدمة المستخدم (حاليا : %{def})'
+            personal_details:
+              first_name: الاسم الأول
+              last_name: الاسم الأخير
+              personal_details: تفاصيل شخصية
+            sender_quota:
+              sender_hint: احلال حد علامات Sender Quota المفترضة
+              sender_quota: Sender Quota
+              sender_quota_hint: اجمالي حجم البيانات الذي تم ارساله خلال نافذة التصفح
+              sender_quota_leg: 'سنايدر كوتا :'
+            user_history:
+              last_login_time: وقت تسجيل الدخول الأخير
+              user_history: السجل التاريخي للمستخدم
+            welcome_email:
+              welcome: مرحبا بالبريد الالكتروني
+          index:
+            accounts: الحسابات
+            activate: تشغيل
+            deactivate: الغاء تشغيل
+            remove: ازالة
+          menus:
+            add_account:
+              add_account: 'اضافة حساب '
+              dir_serv_user: مستخدم خدمة الدليل
+              faspex_user: مستخدم Fpex
+              new_user: " مستخدم جديد"
+            toggle_users:
+              active_users: المستخدمين الفعالين
+              all_users: كل المستخدمين
+              inactive_users: مستخدمين غير فاعلان
+          new:
+            back: للخلف
+            user_account: حساب مستخدم جديد
+          new_form:
+            cancel: الغاء
+            confirm_password: تأكيد كلمة السرية
+            create_account: تكوين حساب
+            first_name: الاسم الأول
+            last_name: الاسم الأخير
+            or: " أو "
+            password: كلمة السرية
+            set_password: تحديد كلمة السرية
+          user:
+            invalid: غير صحيح
+            same_as_login: "(مثل بدء الاتصال)"
+          user_list:
+            check_all_users: التحقق من كل المستخدمين
+            check_user: التحقق من المستخدم
+            date_added: تاريخ مضاف
+            email: بريد الكتروني
+            first: الأولى
+            home_server: وحدة الخدمة الرئيسية
+            last: الأخير
+            last_login: آخر بدء اتصال
+            login: بدء الاتصال
+            status: الحالة
+            type: نوع
+      active: فعال
+      ad_admin:
+        ad_users_list_rows:
+          active: فعال
+          full_name: الاسم بالكامل
+          import_date: تاريخ الاستقبال
+          inactive: غير فعال
+          invalid: غير صحيح
+          user_name: اسم المستخدم
+        edit_config:
+          and_test: " واختبار"
+          anonymous: غير معروف
+          dir_service_details: تفاصيل خدمة الدليل
+          dir_service_type: 'نوع خدمة الدليل :'
+          enable_dir_service: 'اتاحة خدمة الدليل :'
+          ex_dir_service: خدمة الدليل الخارجي
+          login: 'بدء الاتصال :'
+          login_method: 'طريقة بدء الاتصال :'
+          password: 'كلمة السرية :'
+          port: 'المنفذ :'
+          provide_credentials: أدخل بيانات الاعتماد
+          save: حفظ
+          save_and_test: حفظ واختبار
+          server: 'وحدة الخدمة :'
+          treebase: 'تسريبا :'
+          use_tls: 'استخدام Secure Mode (TLS) :'
+        operation_hist:
+          details: التفاصيل
+          dir_service_op_history: السجل التاريخي لعملية خدمة الدليل
+          no_op: لم يتم تنفيذ أي عمليات
+          operation: عملية
+          time: الوقت
+          view: مشاهدة
+        status: الحالة
+      ad_group_membership:
+        active: فعال
+        inactive: غير فعال
+      ad_groups:
+        error: خطأ
+        invalid: غير صحيح
+        pending: 'معلق '
+      admin:
+        auth_domain:
+          edit:
+            edit_name: تحرير %{name}
+          form:
+            anonymous: غير معروف
+            dir_service_details: تفاصيل خدمة الدليل
+            dir_service_name: 'اسم خدمة الدليل :'
+            dir_service_type: 'نوع خدمة الدليل :'
+            dn_message: عادة اسم مميز (DN)
+            enable_dir_service: 'اتاحة خدمة الدليل :'
+            login: 'بدء الاتصال :'
+            login_method: 'طريقة بدء الاتصال :'
+            password: 'كلمة السرية :'
+            port: 'المنفذ :'
+            provide_cred: أدخل بيانات الاعتماد
+            save: حفظ
+            save_and_test: حفظ واختبار
+            secure_tls: 'استخدام Secure Mode (TLS) :'
+            server: 'وحدة الخدمة :'
+            treebase: 'تسريبا :'
+            username_attr: 'الخاصية المميزة لاسم المستخدم :'
+          index:
+            add_new: اضافة %{name} جديد
+            disabled: غير متاح
+            enabled: متاح
+            server: وحدة الخدمة
+            status: الحالة
+            type: النوع
+          new: "%{name} جديد"
+        fasp_nodes:
+          fasp_nodes:
+            active_sessions: الجلسات الفعالة
+            address: العنوان
+            errors: أخطاء
+            last_poll: وقت آخر اقتراع ناجح
+            node_id: كود العقدة
+            cluster_id: هوية نظام المجموعة
+            polling_strategy: استراتيجية الاقتراع
+            os: OSS
+            status: الحالة
+        nodes:
+          edit:
+            cancel: الغاء
+            edit_name: تحرير %{user}-%{node}
+          form:
+            advanced_config: <i class="icon-plus"></i>التوصيف المتقدم
+            basic_config: التوصيف الأساسي
+            config_message: يجب أن تشير المواصفات التالية الى وحدة الخدمة التي تستضيف
+              وحدة خدمة Aspera Enterprise Server. يتم استخدام العنوان بواسطة تطبيق
+              web لتجميع احصائيات النقل. اذا كانت Aspera Enterprise Server تعمل على
+              نفس الجهاز مثل تطبيق web ، فان العنوان الصحيح هو 127.0.0.1.
+            sec_add_message: العنوان التالي هو ما سيحتاج اليه المستخدمين من أجل بدء
+              عمليات النقل. اذا كان لديك مجموعة من المستخدمين الذين يحتاجون الى استخدام
+              عنوان مختلف (على سبيل المثال ، بسبب شروط شبكة الاتصال) ، قم باستخدام
+              مجالات 'العنوان الثانوي' لتحديد مدى IP. يجب ملاحظة أن العنوان الثانوي
+              لا ينطبق على نقل المرحلات.
+            storage_error: يتم استخدام مساحة تخزين الملف حاليا على أنها صندوق الوارد
+              المفترض للنظام. تحريره سيجعل كل مجموعات البرامج الموجودة غير متاحة للمستخدمين.
+            test_connect: اختبار الوصلة
+          index:
+            add_new: اضافة %{name} جديد
+            default_inbox: صندوق الوارد المفترض
+            location: الموقع
+            name: الاسم
+            source: المصدر
+            shares: مساحة تخزين الملف
+            status: الحالة
+            update: تعديل
+          new:
+            cancel: الغاء
+            new_name: "%{name} جديد"
+          test: نجاح الاتصال !
+        notifications:
+          login_announce:
+            edit:
+              ann_hint: ستظهر هذه الرسالة في شاشة بدء الاتصال
+              update: تعديل
+          package_inst:
+            pkg_hint: ستظهر هذه الرسالة في شاشة الارسال
+            update: تعديل
+        packages:
+          delete:
+            age_days: العمر<br/>(أيام)
+            cancel: الغاء
+            delete_confirm: |-
+              هل أنت متأكد من أنك تريد حذف الملفات لمجموعات البرامج هذه ؟
+              لن يمكنك التراجع عن هذا التصرف.
+            delete_files: حذف ملفات
+            files: الملفات
+            files_on_server: الملفات على وحدة خدمة<br/>؟
+            full_downloads: عمليات تحميل<br/>كاملة
+            recipients: المستلمين
+            sender: المرسل
+            size: الحجم
+            status: الحالة
+            title: العنوان
+            upload_completion: قم بتحميل<br/>اتمام
+            warning: 'سيقوم هذا التصرف بحذف الملفات لمجموعات البرامج التالية :'
+          index:
+            action: الإجراء
+            all_packages: كل مجموعات البرامج
+            days_or_older: أيام أو أكثر
+            delete_files: حذف الملفات ...
+            download: تحميل <br/Full / جزئي
+            for_packages: لمجموعات البرامج
+            files: الملفات
+            files_on_server: الملفات على وحدة الخدمة ؟
+            package_created: تم تكوين مجموعة البرامج<br>
+            recipients: المستلمين
+            relays: Relays
+            search: بحث
+            sender: المرسل
+            size: الحجم
+            status: الحالة
+            title: العنوان
+            upload_completed: تحميل<br>اتمام
+          relays:
+            all_packages: كل مجموعات البرامج
+            completed_relays: مرحلات شائعة
+            failed_relays: عمليات الاسترخاء الفاشلة
+            files: الملفات
+            incomplete_relays: المرحلات غير التامة
+            ip_relays: في المرحلات المرحلية
+            package_created: تم تكوين مجموعة البرامج<br>
+            recipients: المستلمين
+            relays: Relays
+            search: بحث
+            sender: المرسل
+            size: الحجم
+            status: الحالة
+            title: العنوان
+            upload_completed: تحميل<br>اتمام
+          show_details:
+            full: بالكامل
+            full_partial: كامل / جزئي
+            ip_addr: عنوان IP
+            package_download_details: تفاصيل تحميل مجموعة البرامج
+            partial: جزئي
+            start: وقت البدء
+            stop: وقت التوقف
+            time_elapsed: الوقت المنقضي
+            username: اسم المستخدم
+        post_processes:
+          edit:
+            cancel: الغاء
+            edit_script: تحرير النص %{name}
+            update: تعديل
+          env_var_help:
+            description: الوصف
+            faspex_meta<field>: قيمة مجال بيانات التوصيف التي تسمى &lt;field&gt; بحروف
+              علوية يتم استبدالها بحروف سفلية ومسافات تم استبدالها بحرف التسطير
+            faspex_metadata_fields: كشف مفصول بفاصلات لمجالات بيانات التوصيف التي
+              تم تعريفها لمجموعة البرامج
+            faspex_pkg_delivery_id: كود التسليم الخاص بمجموعة البرامج (مختلف عن كود
+              مجموعة البرامج وكود UUID لمجموعة البرامج)
+            faspex_pkg_dir: مسار الى مجموعة البرامج
+            faspex_pkg_id: كود مجموعة البرامج
+            faspex_pkg_is_forward: 1 لمجموعات المواد المرسلة و 0 لمجموعات البرامج
+              الأصلية
+            faspex_pkg_name: عنوان المجموعة
+            faspex_pkg_note: مذكرة مجموعة
+            faspex_pkg_total_bytes: حجم مجموعة البرامج بالبايت
+            faspex_pkg_total_files: عدد الملفات في المجموعة
+            faspex_pkg_uuid: UUID لمجموعة البرامج
+            faspex_recipient_count: عدد المستلمين (على سبيل المثال ، "3")
+            faspex_recipient_i: اسم مستلم i-th
+            faspex_recipient_list: كشف المستلمين الذي يتم فصله بفاصلة (على سبيل المثال
+              ، "admin, johndoe")
+            faspex_sender_email: بريد الكتروني للراسل
+            faspex_sender_id: الكود الخاص بالراسل
+            faspex_sender_name: اسم الراسل
+            variable: متغير
+          form:
+            env_var_help: مساعدة عن متغير بيئة التشغيل
+            exact_match: تطابق بالضبط
+            execution_crit: معايير التنفيذ
+            high: عالية
+            low: منخفض
+            package_date_end: نهاية تاريخ مجموعة البرامج
+            package_date_start: بدء تاريخ مجموعة البرامج
+            package_file_count: عدد ملفات مجموعة البرامج
+            package_file_hint: قم بادخال مدى لعدد الملفات في مجموعة البرامج هنا
+            package_name: اسم مجموعة البرامج
+            package_note: مذكرة مجموعة البرامج
+            package_size: حجم المجموعة
+            range_hint: قم بادخال مدى لحجم المجموعة هنا
+            recipient_email_list: كشف البريد الالكتروني المستلمين
+            recipient_list: كشف المستلمين
+            script_to_run: البرنامج النصي للتشغيل
+            sender_email: البريد الالكتروني للراسل
+            sender_name: اسم المرسل
+          index:
+            action: الإجراء
+            create_new: تكوين جديد
+            execution_criteria: معيار التنفيذ
+            log: السجل
+            name: الاسم
+            post_processing: ما بعد التشغيل
+            script: البرنامج النصى
+          new:
+            add_new_script: اضافة برنامج نصي جديد
+            cancel: الغاء
+            create: تكوين
+          show_events:
+            back: للخلف
+            exec_criteria: معايير التنفيذ<br/>
+            package_name: اسم مجموعة البرامج
+            package_sender: الراسل<br/>الراسل
+            package_uuid: UUID مجموعة البرامج
+            post_processing_exec_log: 'Post-Processing : سجل التنفيذ بالنسبة الى %{name}'
+            time_of_exec: وقت تنفيذ <br/>
+        saml:
+          edit:
+            saml_integration: تكامل SAML
+            update: تعديل
+        saml_configurations:
+          edit:
+            allowable_clock_drift: انحراف الساعة المسموح به (ms)
+            attribute_mapping: تناظر الخصائص المميزة
+            browse: استعراض ...
+            certificate: شهادة
+            create_saml_config: تكوين توصيف SAML
+            default_saml_config: توصيف SAML المفترض
+            domain_url: عنوان URL للنطاق
+            fingerprint: هضم Empretinte
+            fingerprint_alg: لوغاريتم Fingerprint
+            hide: اخفاء
+            import_from_file: 'استقبال من ملف : '
+            import_from_text: 'استقبال من نص : '
+            import_from_url: 'استقبال من عنوان URL : '
+            import_metadata_settings: استقبال محددات من نص
+            import_metadata_settings_url: استقبال محددات من Metadata URL
+            import_settings: استقبال محددات من Metadata %{dir}
+            name: الاسم
+            name_id_format: نسق هوية الاسم
+            new: جديدة
+            public_login_inst: تعليمات بدء الاتصال العام
+            publicly_visible: مرئي بشكل علني
+            redirect_saml: اعادة التوجيه الى صفحة انهاء اتصال SAML في انهاء الاتصال
+            restrict_login_groups: تقييد الوصول إلى المجموعات المعروفة
+            restrict_login_groups_hint: اذا تم تعليمه ، سيسمح للأعضاء فقط من مجموعات
+              SAML التي تم اضافتها الى فابكس ببدء الاتصال.
+            restrict_login_users: تقييد الوصول إلى المستخدمين المعروفين
+            restrict_login_users_hint: اذا تم تعليمه ، سيتم السماح لمستخدمي SAML الموجودين
+              فقط الذين تم اضافتهم الى Fepex ببدء الاتصال.
+            saml_config: توصيف SAML
+            saml_config_details: تفاصيل توصيف SAML
+            SAML_metadata_server: توصيف وحدة خدمة SAML
+            SAML_metadata_server_url: عنوان URL لبيانات توصيف SAML ...
+            saml_settings: محددات SAML
+            show: عرض
+            SSO_target_URL: 'عنوان URL المستهدف الى SSO :'
+            update: تعديل
+            update_saml_config: تعديل توصيف SAML
+          index:
+            actions: التصرفات
+            add_new_config: اضافة توصيف SAML جديد
+            default: " (مفترض)"
+            disable: الغاء اتاحة
+            disable_title: الغاء اتاحة
+            disabled: " (غير متاح)"
+            domain_url: عنوان URL للنطاق
+            enable: اتاحة
+            enable_title: اتاحة
+            make_default: جعل المفترض
+            metadata: بيانات التوصيف
+            name: الاسم
+            remove_default: ازالة المفترض
+            saml_config: توصيفات SAML
+            saml_confirm: هل أنت متأكد من أنك ترغب في اتاحة توصيف SAML هذا ؟
+            saml_confirm_disable: هل أنت متأكد من أنك ترغب في الغاء اتاحة توصيف SAML
+              هذا ؟
+            test: اختبار
+          user_profile:
+            name: الاسم
+            remove: ازالة مجال ملف المواصفات هذا
+            remove_confirm: هل أنت متأكد من أنك ترغب في ازالة مجال ملف مواصفات المستخدم
+              هذا ؟
+          user_profile_fields:
+            add_local_field: اضافة مجال ملف مواصفات محلي
+            default_profile_fields: مجالات ملف المواصفات المفترضة
+            enabled: متاح
+            fields_required: المجالات المطلوبة لكل مستخدمي Sepex
+            global_cust_message: تم تعريف المجالات المهيأة في علامة التبويب ملف مواصفات
+              المستخدم
+            global_cust_prof_fields: مجالات ملف مواصفات مهيأ شامل
+            local_cust_message: مجالات ملف مواصفات المستخدم المحددة لتوصيف SAML هذا
+            local_cust_prof_fields: مجالات ملف المواصفات المهيأ المحلي
+            name: الاسم
+            required: مطلوب
+            saml_name: اسم SAML
+            save_note: 'ملحوظة : لن يتم حفظ أي تغييرات حتى تقوم بالضغط على ''تعديل
+              توصيف SAML'''
+        settings:
+          display_settings:
+            date_format:
+              format: النسق
+              meaning: المعنى
+              perc_a: الاسم المختصر ليوم الأسبوع (Sun)
+              perc_A: اسم يوم الأسبوع الكامل (الأحد)
+              perc_b: اسم الشهر المختصر (Jan)
+              perc_B: اسم الشهر بالكامل (يناير)
+              perc_d: يوم من الشهر (01 .. 31)
+              perc_j: يوم من السنة (01 .. 366)
+              perc_m: شهر من السنة (01 .. 12)
+              perc_Y: السنة مع القرن
+              perc_y: سنة بدون قرن (00 ... 99)
+            edit:
+              acc_display_format: نسق اسم عرض الحساب
+              custom_logo: 'شعار مهيأ :'
+              date_format: نسق التاريخ
+              date_formatting_help: مساعدة عن تنسيق التاريخ
+              default_logo_help: 'الشعار المفترض هو 295x51 '
+              display_settings: محددات العرض
+              examples: أمثلة
+              local_login_inst: تعليمات بدء الاتصال المحلي
+              login_page_header: نص رأس صفحة بدء الاتصال
+              remove_confirm: هل أنت متأكد من أنك تريد ازالة شعار المعدل الحالي ؟
+              remove_logo: ازالة شعار مهيأ
+              update: تعديل
+          entitlement:
+            edit:
+              customer_id: 'كود العميل :'
+              entitlement_license: ترخيص الاستحقاق
+              faspex_enabled: 'اتاحة Fepex :'
+              key: 'المفتاح :'
+              max_active_users: 'الحد الأقصى لعدد المستخدمين الفعالين :'
+              save: حفظ
+          global_dist_lists:
+            index:
+              add_new_list: اضافة كشف توزيع جديد
+              contacts: جهات الاتصال
+              global_dist: كشوف التوزيع الشاملة
+              name: الاسم
+              no_list_alert: لا توجد قوائم توزيع شاملة.
+              update_dist_lists: تعديل كشوف التوزيع
+            new:
+              new_global_list: كشف توزيع شامل جديد
+          license:
+            edit:
+              OR: أو
+          package_storage:
+            edit:
+              after_pkg_dl: بعد تحميل مجموعات البرامج
+              after_upload_ends: بعد انتهاء التحميل
+              characters: حروف
+              days: يوم (أيام)
+              delete_files_all: حذف الملفات بعد تحميل <strong>كل المستلمين</strong>
+                تحميل كل الملفات
+              delete_files_any: حذف الملفات بعد <strong>أي مستلم</strong> تحميل كل
+                الملفات
+              do_nothing: لا تفعل شيئا
+              max_pkg_title: أقصى طول لعنوان الحزمة في مسارات التخزين
+              package_storage: تخزين مجموعة البرامج
+              packages_expire: انتهاء مجموعات البرامج
+              pkg_by_pkg_del: السماح لكل المستخدمين بتحديد محددات الحذف الخاصة بهم
+                على أساس package-by-package
+              update: تعديل
+          save_restore:
+            index:
+              dl: تحميل
+              dl_curr_config: تحميل التوصيف الحالي
+              faspex_config_help: سيتم حفظ حافظة توصيف الشكل السابق وقاعدة البيانات
+              restore: استعادة
+              restore_config: استعادة التوصيف
+              save_restore: حفظ / استعادة
+              upload_help: قم بتحميل وتطبيق ملف التوصيف الذي تم حفظه (*.tar.gz)
+              version_help: 'ملحوظة : يجب أن تكون نسخة الاستعادة مطابقة للنسخة الحالية
+                من faspex'
+          security:
+            edit:
+              act_dir_hint: لن يتم اقفال أو الغاء تشغيل مستخدمي خدمات الدليل
+              affirm: نعم.
+              after: بعد
+              after_x_days: بعد أيام %{num}
+              after_inactivity: بعد أيام عدم الفعالية %{len}
+              after_one_success: بعد عملية تحميل ناجحة واحدة
+              allow_custom_link: السماح للمستخدمين بتحديد سياسة انتهاء الوصلة المهيأة
+              allow_email_change: السماح للمستخدمين بتغيير عنوان البريد الالكتروني
+                الخاص بهم
+              allow_external_pkg_hint: اذا تم تعليمه ، سيتم السماح بمجموعات البرامج
+                التي تم ارسالها الى مستخدمي فاسكس باستخدام الشارة (الخارجية)
+              allow_external_pkg_to_faspex: اتاحة مجموعات برامج خارجية لمستخدمي sepex
+              allow_usrs_create: السماح للمستخدمين بتكوين مجموعات برامج عادية
+              allow_usrs_create_hint: اذا تم الغاء الاتاحة ، سيتمكن المستخدمين فقط
+                من تكوين مجموعات برامج مسقط ، اذا كانوا أعضاء في أي من مربعات الكشف
+                المسقط.
+              allow_usrs_send: السماح لكل المستخدمين بالارسال الى كل مستخدمي Faspx
+                الآخرين
+              always: دائما
+              allow_unlock: السماح للمستخدمين الذين تم اقفالهم بالغاء اقفال أنفسهم
+              allow_send_email: السماح بالارسال الى عناوين بريد الكتروني خارجية
+              appr_recipient_domains: نطاقات المستلمين المعتمدة
+              appr_sender_domains: نطاقات الراسل المعتمدة
+              block_email_domain: تجميع نطاقات البريد الالكتروني التالية من التسجيل
+                الذاتي
+              can_override_ear_hint: يمكن أن يقوم المستخدم بالاختيار عند دعوة مرسلين
+                خارجيين اذا كان سيتم فرض التشفير أم لا
+              can_see_dist_list: يمكن أن يقوم المستخدمين بمشاهدة كشوف التوزيع الشاملة
+                افتراضيا
+              cipher: FASP Cipher
+              days: يوم (أيام)
+              dbox_override: السماح بوجود محددات التشفير الخاصة بهم
+              def_pw_expire: فترة انتهاء صلاحية كلمة السرية المفترضة
+              default: المفترض
+              disable: الغاء اتاحة
+              disable_hint: نافذة التصفح الخاصة بحصة الراسل ، المدة بالساعات
+              ds_users: مستخدمي DS بعد %{int} أيام عدم الفعالية
+              email_expire_after_download: انتهاء الصلاحية بعد تحميل مجموعة البرامج
+                بالكامل
+              enable: اتاحة
+              encrypt_hint: اذا تم اتاحته ، سيتم تشفير تحويلات HTTP fallback أيضا
+              encrypt_transfers: تشفير عمليات النقل
+              encryption: تشفير
+              enforce_pw_hist: لم يتم اعادة استخدام سابق
+              every: كل
+              faspex_acc: حسابات فاكس
+              force_pw_reset: طلب مستخدمين جدد لتغيير كلمة السرية عند بدء الاتصال
+                الأول
+              hours: ساعة
+              inviting_allowed: السماح بدعوة مرسلين خارجيين
+              ignore_invalid_recipients: تجاهل المستلمين غير الصحيحة
+              ignore_invalid_recipients_hint: اذا تم تعليمه ، لن تفشل عملية ارسال
+                مجموعة البرامج عندما يتم توجيه مجموعة برامج الى مستلمين غير صحيحين
+              inv_link_expires: انتهاء وصلة الدعوة
+              inv_link_help: تحديد سياسة انتهاء الوصلة للدعوات الخاصة بكل من دعوات
+                الكشف الشخصية والاسقاط.
+              keep_usr_dir: الاحتفاظ بدليل المستخدم الخاص
+              list_hint: أدخل عناوين بريد الكتروني مفصولة بفاصلة أو فاصلة منقوطة أو
+                مسافة خالية
+              local_users: المستخدمين المحليين بعد أيام عدم الفعالية %{int}.
+              lock_hint: بعد %{login_count} فشل محاولات بدء الاتصال داخل
+              lock_users: اقفال المستخدمين
+              minutes: دقائق
+              neg: لا
+              never: أبدا
+              new_user_pw: كلمات سرية مستخدم جديد %{req}. كلمات السرية الموجودة ستظل
+                صحيحة %{warn}
+              obfuscation: مراقبة Obfuscation
+              optional: اختياري
+              optional_hint: قد يختار المستخدم في وقت الارسال ما اذا كان سيتم التشفير
+                أم لا
+              otfv: التحقق من صلاحية ملف Out-Transfer File (OTFV)
+              outside_email_add: عناوين البريد الالكتروني الخارجية
+              package_link_expires: انتهاء وصلة مجموعة البرامج
+              package_link_help: اذا تم تعليمه ، سيتم تحميل مجموعة البرامج مرة واحدة
+                فقط %{master_warn}
+              passwords: كلمة (كلمات)
+              passwords_expire: انتهاء صلاحية كلمات السرية
+              public_url_allowed: السماح بعناوين URL للعرض العام
+              prevent_pw_reuse: تجنب اعادة استخدام كلمة السرية
+              prev_conc: تجنب بدء الاتصال المتزامن
+              pw_reset_hint: سيتم ارسال البريد الالكتروني لارجاع كلمة السرية وسيتم
+                الغاء اقفال الحساب بعد تغيير كلمة السرية
+              quota_limit: اجمالي حجم البيانات الذي تم ارساله خلال نافذة التصفح
+              reg_hint: 'اختياريا : اذا تم تحديد النص ، سيطلب من المستخدمين الموافقة
+                على العبارة لكي يتم التسجيل'
+              reg_users_mutual: يمكن للمستخدمين المسجلين ذاتيا أن يتم ارسالهم الى
+                بعضهم البعض
+              registration_instructions: تعليمات التسجيل
+              registration_type: التسجيل الذاتي
+              registrations: تسجيلات
+              remove_users: ازالة مستخدمين
+              req_external_reg: طلب تسجيل المستخدمين الخارجيين
+              require_external_hint: اذا تم تعليمه ، يجب أن يقوم المستخدمين الخارجيين
+                بتسجيل حساب FIpex لكي يتم تحميل مجموعات البرامج.
+              saml_users: مستخدمي SAML بعد أيام عدم الفعالية %{int}.
+              security: الأمن
+              send_welcome_email: ارسال بريد الكتروني مرحب به الى كل المستخدمين الجدد
+              sender_quota: Sender Quota
+              sender_quota_hint: 'مجموعات البرامج التي تم ارسالها الى المستخدمين في
+                هذه النطاقات لا تعتمد على حصة الراسل. يمكنك استخدام الفاصلات (,) أو
+                شبه-collons (;) أو البيضاء للفصل بين نطاقات البريد الالكتروني. على
+                سبيل المثال : @aspera.com; @ibm.com'
+              sender_quota_option: اختيار حصة الراسل
+              sender_quota_duration: مدة حصة الراسل
+              sender_quota_limit: حد حصة الراسل
+              session_timeout: انتهاء وقت الجلسة بعد
+              slave_hint: اذا تم تعليمه ، فان المستخدمين يمكن أن يكونوا loggin فقط
+                من وحدة تابعة واحدة في المرة الواحدة
+              strong_pw: استخدام كلمات السرية القوية
+              timeout_hint: سيتم انقضاء الوقت المحدد للجلسات بعد عدد الدقائق المحدد
+                من عدم الفعالية
+              tos: شروط الخدمة للارسال
+              tos_hint: 'اختياريا : اذا تم تحديد نص ، سيطلب من المستخدمين الموافقة
+                على العبارة لارسال مجموعة برامج'
+              update: تعديل
+              use_encryption_at_rest: استخدام Encryption-at-Rest
+              use_obf: استخدام obfuscation على أسماء الملفات
+              use_obf_hint: عملية obfuscation لا رجعة فيها !
+              enforce_expiration_policy: فرض دائما كأقصى فترة زمنية لأسلوب انتهاء
+                الصلاحية
+          transfer_options:
+            edit:
+              aspera_connect_sett: محددات اتصال Aspera
+              def_max_rate: الحد الأقصى المفترض للمعدل المسموح به
+              dl_dur_trans: عمليات التحميل أثناء عمليات النقل
+              dl_over_http: تحميل أكثر من HTTP
+              http_gateway_hint: العنوان التالي هو ما سيحتاج اليه المستخدمين من أجل
+                بدء عمليات النقل من خلال http-gateway.
+              http_gateway_url: عنوان URL منفذ HTTP
+              initial_def_trans_rate: معدل النقل المفترض المبدئي
+              local_host_connect: اتصال نظام رئيسي محلي
+              local_host_hint: اذا تم تعليمه ، فان sppex لن يقوم باستخدام AsnIa CDN
+                لخدمة Connect ، ولكنه سيقوم بدلا من ذلك باستخدام الوصلة المحلية SDK
+                المحلية المتاحة على Flapex.
+              local_to_remote: وحدة خدمة محلية لوحدة خدمة عن بعد
+              lock_connect_sdk: اقفال نسخة Connect SDK
+              lock_connect_sdk_hint: 'قم بمنع Flapex من تعديل CK Connect المحلي اذا
+                أصبحت نسخة جديدة متاحة. تستمر هذه المحددات عبر التحديثات. ملحوظة :
+                يقوم فاسكس بالتحقق من التعديلات بصفة دورية ولا يقوم بتحميل نسخة جديدة
+                في الحال اذا تم الغاء اتاحة هذا الاختيار.'
+              min_connect_version: الحد الأدنى لنسخة الاتصال
+              minrate_hint: اذا تم تعليمه ، لن يتمكن Clients من ضبط أسلوب النقل الخاص
+                بهم أو الحد الأدنى لمعدل النقل
+              prefer_http_connect: Prefer http على اللاحقة
+              prefer_http_connect_hint: اذا تم تعليمه ، سيقوم فاسكس بتطبيق برنامج
+                الاستعراض لاستخدام طريقة http للاتصال مع Client Desktop Client ، بدلا
+                من استخدام وصلة برنامج التصفح (متاح فقط مع برنامج تصفح الكروم)
+              serv_to_serv_relay_trans_sett: محددات نقل Relay Server-to-Server
+              server_to_user: وحدة خدمة للمستخدم
+              transfer_options: اختيارات التحويل
+              update: تعديل
+              user_to_server: مستخدم لوحدة خدمة
+              http_gwy_connection_success: تم الاتصال بنجاح
+              http_gwy_connection_error: خطأ في اقامة اتصال مع IBM Aspera HTTP Gateway
+          web_server:
+            alt_address_fields:
+              remove_addr: ازالة هذا العنوان البديل
+            edit:
+              add_alt_address: اضافة عنوان بديل
+              address_name: اسم العنوان
+              alternate_addr_hint: استخدم اذا كنت بحاجة الى عناوين وحدة خدمة مختلفة
+                لمستخدمين محددين
+              desc_email: الوصف الخاص بالبريد الالكتروني
+              http_port_hint: تم تحديده بواسطة توصيف pache
+              https_port_hint: للمحتويات المشفرة على SSL المحدد بواسطة توصيف apache
+              remove: ازالة
+              show_emails: عرض في البريد الالكتروني
+              update: تعديل
+              web_server: وحدة خدمة الانترنت
+        shares:
+          edit:
+            cancel: الغاء
+            custom_access_control: التحكم في التوصل المهيأ
+            edit: تحرير %{name}-%{share}
+          edit_warning:
+            alert_error_1: |-
+              يتم استخدام مساحة تخزين الملف في الوقت الحالي على أنها incustom inbox و relay location لمجموعات عمل معينة.
+              سيؤدي التحرير الى جعل كل مجموعات البرامج الموجودة في مجموعات العمل هذه غير متاحة للمستخدمين وتغيير الوجهة المستهدفة للترحيل.
+            alert_error_2: |-
+              يتم استخدام مساحة تخزين الملف هذه في الوقت الحالي على أنها مكان صندوق الوارد المخصص لمجموعات عمل معينة.
+              تحريره سيجعل كل مجموعات البرامج الموجودة في مجموعات العمل هذه غير متاحة للمستخدمين.
+            alert_error_3: |-
+              يتم استخدام تخزين الملف هذا حاليا على أنه مكان relay لمجموعات عمل معينة.
+              تحريره سيؤدي الى تغيير الوجهة المستهدفة للترحيل.
+          form:
+            dir_serv_groups:
+              add_group: اضافة مجموعة
+              date_added: تاريخ مضاف
+              dir_service_groups: مجموعات خدمة الدليل
+              DN: ND
+              members: 'الأعضاء :'
+              name: الاسم
+              status: الحالة
+            dir_serv_group_member:
+              active: فعال
+              delete: حذف
+              inactive: غير فعال
+            users:
+              add_user: اضافة مستخدم
+              full_name: الاسم بالكامل
+              member_since: عضو منذ
+              name: الاسم
+              status: الحالة
+              type: النوع
+              users: المستخدمين
+            user_membership:
+              delete: حذف
+          form_file:
+            browse: استعراض ...
+            default_max_allowed_rate: الحد الأقصى المفترض للمعدل المسموح به
+            directory: الدليل
+            enable_cloud_referencing: اتاحة الاشارة الى السحاب
+            enable_linking: اتاحة الاتصال
+            initial_default_rate: معدل النقل المفترض المبدئي
+            limited: محدود
+            loading: تحميل
+            lock_minrate_hint: اذا تم تعليمه ، لن يكون Clients قادرين على ضبط أسلوب
+              النقل الخاص بهم أو الحد الأدنى لمعدل النقل
+            name: الاسم
+            node: عقدة
+            override_default: احلال محددات التحويل المفترضة
+            private: خاص
+            public: عام
+            read_perm: تصريح القراءة
+            relay_transfer_rate: معدل النقل المرحل
+            server_to_user: وحدة خدمة للمستخدم
+            user_to_server: مستخدم لوحدة خدمة
+          new:
+            alert_no_node: لم يتم تكوين %{nodes}. %{admin_node} قبل عمل %{name}.
+            cancel: الغاء
+            create_one: تكوين واحد
+            new: "%{name} جديد"
+      background_processes:
+        index:
+          action: الإجراء
+          background_processes: عمليات الخلفية
+          log_file: ملف السجل
+          log_level: مستوى السجل
+          name: الاسم
+          status: الحالة
+        log:
+          lines: خطوط
+          refresh: تجديد كل
+          submit: احالة
+      credits:
+        show:
+          java: متوافق مع Java
+      directory_items:
+        file:
+          error: خطأ
+      dropbox:
+        dropboxes:
+          metadata_profile: 'ملف مواصفات Metadata : '
+          options:
+            after_pac_downl: 'بعد تحميل مجموعات البرامج :'
+            allow_submission_via_pub_URL: 'السماح بالاحالة بواسطة عنوان URL العام
+              :'
+            always: دائما
+            custom_exp_policy: سياسة انتهاء صلاحية مجموعة البرامج المهيأة
+            custom_inv_policy: سياسة انتهاء وصلة الدعوة المهيأة
+            day_after_sending_inv: يوم (أيام) بعد ارسال البريد الالكتروني للدعوة
+            day_after_upload: يوم (أيام) بعد انتهاء التحميل
+            http_downloads_not_allowed: غير مسموح بتحميل HTTP لمجموعة البرامج هذه.
+            delete_after_all: قم بحذف الملفات بعد أن يقوم <strong>كل أعضاء هذا المربع
+              المسقط</strong> بتحميل كل الملفات.
+            delete_after_first: قم بحذف الملفات بعد أن يقوم <strong>أي عضو في هذا
+              المربع المسقط</strong> بتحميل كل الملفات.
+            do_nothing: لا تفعل شيئا
+            inv_link_expire: 'انتهاء وصلات دعوة :'
+            never: أبدا
+            optional: اختياري
+            package_expires: 'انتهاء مجموعات البرامج :'
+            require_encrypt: 'يتطلب عملية تشفير عند الاستراحة :'
+            save_message: سيتم حفظ asper-metadata.xml الى الدليل الرئيسي لكل مجموعة
+            save_metadata: 'حفظ بيانات التوصيف للملف :'
+            success: بعد عملية تحميل ناجحة واحدة
+            use_server_default: 'استخدام وحدة الخدمة المفترضة (حاليا : %{server})'
+          perm:
+            add_rem_dir_serv_groups: اضافة / ازالة مجموعات خدمات الدليل كعناصر
+            add_remove_users: اضافة مستخدمين Waspex الحاليين / ازالة أعضاء الادارة
+              غير الاسقاط
+            dropbox_admin_can: يمكن لموجه نظام Dropbox ...
+            invite_outside_submitters: دعوة مقدمي طلبات خارجيين
+            invite_remove_users: دعوة / إزالة من هم خارج المقدمة
+            member_manage: ادارة العنصر
+            reg_users_as_mem: تكوين / تحرير / حذف / ازالة مستخدمين مسجلين جدد كأعضاء
+            standard_can: يمكن للمستخدمين القياسي ...
+        users:
+          cancel: الغاء
+          description: الوصف
+          email_address: عنوان البريد الالكتروني
+          invite: 'دعوة احالة للخارج لارسالها الى Dropbox : %{wgname}'
+          invite_html:
+            require_encryption: 'طلب التشفير بالاستراحة :'
+            yes_ear: نعم.
+            no_ear: لا
+            optional: اختياري
+          submit_save: حفظ (ارسال بريد الكتروني للدعوة)
+      e_error:
+        default: قامت وحدة الخدمة باكتشاف مشكلة أثناء محاولة تشغيل الطلب الخاص بك.
+          قد يكون ذلك بسبب عدم كفاية التصاريح ، أو مشكلة في التوصيف ، أو فشل في شبكة
+          الاتصال ، أو فشل في الجهاز أو الجهاز.
+        default_2: قد لا تزال هناك أوامر أخرى بالاضافة الى الأوامر التي حاولت تنفيذها.
+          حاول الضغط على الاختيار "للخلف" أو أحد علامات التبويب الأخرى بأعلى.
+      external:
+        sub_stat:
+          show:
+            safe: |-
+              سيكون من الأمان اغلاق صفحة الانترنت هذه ، لن تتأثر عملية النقل الخاصة بك.
+              تم ارسال بريد الكتروني اليك مع وصلة للعودة الى هذه الشاشة.
+            send_to: ارسال الى %{Wiipient}
+            send_to_dropbox: 'ارسال الى Dropbox : %{ropname}'
+            status: تسمح لك هذه الصفحة بمشاهدة حالة مجموعة البرامج التي قمت باحالتها
+              ، بالاضافة الى اعادة محاولة عملية النقل اذا فشلت.
+          submission_stat:
+            date_submit: تاريخ الاحالة
+            files: الملفات
+            size: الحجم
+            status: الحالة
+            title: العنوان
+        to:
+          email_address: عنوان البريد الالكتروني
+          please_enter_email: برجاء ادخال عنوان البريد الالكتروني الخاص بك للتوصل
+            اليه.
+          request_access: طلب امكانية توصل
+          send_to: ارسال الى %{Wiipient_name}
+      inactive: غير فعال
+      invitations:
+        edit:
+          cancel: الغاء
+          reinvite: اعادة دعوة (ارسال بريد الكتروني للدعوة)
+          reinvite_sender: اعادة دعوة الراسل
+        fieldsets:
+          sub_link_expires:
+            after: بعد
+            after_one_success: بعد عملية تحميل ناجحة واحدة
+            after_one_up: بعد تحميل واحد
+            custom_inv_policy: 'أسلوب انتهاء صلاحية وصلة الدعوة المهيأة :'
+            day_after_sending_inv: يوم (أيام) بعد ارسال البريد الالكتروني للدعوة
+            help: يمكنك تحديد هذه المحددات بمزيد من القيود ولكن لا يمكنك تعدي القيمة
+              المفترضة
+            inv_link_expires: انتهاء وصلة الدعوة
+          prevent_http_upload:
+            package_upload: تحميل مجموعة البرامج
+            prevent_http_upload: تجنب تحميل HTTP لمجموعة البرامج هذه
+        index:
+          access_url: أنظر عنوان URL للتوصل
+          actions: التصرفات
+          confirm: هل أنت متأكد ؟
+          delete: حذف
+          description: الوصف
+          email: البريد الالكتروني
+          expiration: انتهاء الصلاحية
+          invitations: الدعوات
+          new: جديدة
+          reinvite: اعادة دعوة
+          resend: اعادة الانتهاء
+          status: الحالة
+        new:
+          cancel: الغاء
+          description: الوصف
+          email_address: عنوان البريد الالكتروني
+          invite_sender: دعوة الراسل
+          no_ear: لا
+          optional: اختياري
+          require_encryption: 'طلب التشفير بالاستراحة :'
+          save: حفظ (ارسال بريد الكتروني للدعوة)
+          yes_ear: نعم.
+      layouts:
+        aspera_faspex: Aspera Fpex
+        footer:
+          copyright: حقوق النشر لشركة IBM ، 2009 ،
+          credits: الاعتمادات والإشعارات
+          patch: مستوى Patch %{level}
+        header:
+          account: الحساب
+          enable_connect: اتاحة IBM Aspera Connect
+          help: مساعدة
+          not_logged_in: لم يتم بدء الاتصال.
+          sign_out: تسجيل الخروج
+          skip_to_main: تخطي الى رئيسي
+        main_tabs:
+          accounts: الحسابات
+          new_package: مجموعة برامج جديدة
+          pending: معلق
+          received: استقبل
+          sent: ارسال
+          server: وحدة الخدمة
+          view_package_options: اضغط لمشاهدة اختيارات مجموعة البرامج الجديدة
+          workgroups: مجموعات العمل
+        node_error:
+          warning: تحذير !
+          errors_detected: تم اكتشاف أخطاء في وحدة خدمة النقل ، قد لا تعمل عمليات
+            النقل بطريقة صحيحة.
+      login:
+        entitlement:
+          customer_id: كود العميل
+          entitle_info: 'برجاء اتاحة معلومات الاستحقاق الخاصة بك ليتم بدءها :'
+          entitle_question: بالنسبة للأسئلة أو المخاوف المتعلقة بالاستحقاق ، برجاء
+            الاتصال ب %{aspera}
+          entitlement: كود الاستحقاق
+          submit: احالة
+        new:
+          anouncement: اشعارات
+          enter_password: أدخل كلمة سرية Fpex الخاصة بك
+          enter_username: أدخل اسم مستخدم Fpex الخاص بك
+          forgot_password: نسيت كلمة السرية
+          password: كلمة السرية
+          username: اسم المستخدم
+          or_log: أو بدء الاتصال مع
+      m_configuration:
+        edit:
+          faspex: فاسكس
+          sender: المرسل
+          sender_via_faspex: المرسل عبر فاسكس
+          sender_email: البريد الالكتروني للراسل
+          mail_configuration: توصيف البريد
+          save: حفظ
+          savetest_email: حفظ واختبار البريد الالكتروني
+          to: 'الى :'
+      m_template:
+        edit:
+          body: 'النص :'
+          cancel: الغاء
+          edit_email_html: تحرير %{name} البريد الالكتروني
+          save: حفظ
+          subject: 'الموضوع :'
+        show:
+          advanced: " (متقدم)"
+          customize: تهيئة استخدام قالب
+          edit_html: تحرير HTML
+          preview: يتم عرض الشكل النهائي %{description} بأسفل. يمكن تهيئته اما باستخدام
+            القالب أو بواسطة تحرير HTML مباشرة.
+          preview_email_notif: مراجعة اشعار البريد الالكتروني %{name}
+      metadata_profiles:
+        edit:
+          add_field: اضافة مجال
+          add_new_field: 'اضافة مجال جديد : '
+          edit_metadata: تحرير ملف مواصفات بيانات التوصيف
+          enabled: 'متاح : '
+          error_fields_not_saved: 'ملحوظة : لا يتم حفظ المجالات التي لها أخطاء'
+          illegal_characters: 'حروف غير صحيحة : '
+          max_length: 'أقصى طول : '
+          note: ملحوظة
+          note_no_save: 'ملحوظة : لن يتم حفظ أي تغييرات حتى تقوم بحفظ ملف مواصفات
+            بيانات التوصيف'
+          preview: معاينة
+          profile_name: 'اسم ملف المواصفات : '
+          profile_name_placeholder: اسم ملف المواصفات ...
+          save: حفظ
+          save_and_prev: حفظ ومعاينة
+          title: العنوان
+        date_format:
+          any_other_value: أي قيمة أخرى
+          any_other_value_hint: نص حرفي
+          at: خاتم وقت Unix (ms منذ 01/01/1970)
+          capital_D_hint: اسم اليوم (قصير)
+          capital_DD_hint: اسم اليوم (طويل)
+          capital_M_hint: اسم الشهر (قصير)
+          capital_MM_hint: اسم الشهر (طويل)
+          d_hint: اليوم من الشهر (لا يوجد صفر في البداية)
+          dd_hint: يوم من الشهر (رقمين)
+          description: الوصف
+          ellipses: نص حرفي
+          exclamation: علامات Windows (100s منذ 01/01/0001)
+          m_hint: الشهر من السنة (لا يوجد صفر في البداية)
+          mm_hint: شهر من السنة (رقمين)
+          o_hint: اليوم من السنة (لا توجد أصفار في البداية)
+          oo_hint: اليوم من السنة (ثلاثة أرقام)
+          single_quote: علامة تنصيص مفردة
+          variable: متغير
+          y_hint: السنة (رقمين)
+          yy_hint: السنة (أربعة أرقام)
+        metadata_field:
+          characters: حروف
+          date_format: 'نسق التاريخ : '
+          date_format_help: مساعدة عن نسق التاريخ
+          illegal_chars: 'حروف غير مسموح بها : '
+          illegal_chars_placeholder: متسابلين غير شرعيين ...
+          label: 'العلامة المميزة : '
+          label_placeholder: العلامة المميزة ...
+          max_length: 'أقصى طول : '
+          options: 'اختيارات : '
+          required: 'مطلوب : '
+        index:
+          add_profile: اضافة ملف مواصفات جديد
+          confirm: هل أنت متأكد من أنك ترغب في حذف ملف مواصفات metadata %{account}
+            ?
+          delete: حذف
+          edit: تحرير
+          metadata_profiles: ملفات مواصفات بيانات التوصيف
+          name: الاسم
+          profile_for_norm: 'ملف مواصفات مجموعات البرامج العادية :'
+          save_metadata: 'حفظ بيانات التوصيف للملف : '
+        new:
+          cancel: الغاء
+          create: تكوين
+          name: الاسم
+          new_profile: ملف مواصفات بيانات التوصيف الجديد
+      mobile:
+        landing:
+          app_redirect: للحصول على أفضل تجربة ، استخدم تطبيق Aspera Mopex Mobile.
+          no_app_prompt: "(دون) لديه التطبيق ؟ احصل عليه <a href='<%= @app_store_url
+            %>'>هنا</a>"
+          open_in_app: فتح في التطبيق
+          use_web_version: استخدام نسخة WEB
+      ms_admin:
+        convert_to_slave:
+          back: للخلف
+          convert: تحويل
+          convert_server: تحويل وحدة الخدمة الى Slave
+          master_ip: 'IP الرئيسي : '
+        edit:
+          connecting: جاري الاتصال ب ـ %{hostname} ...
+          server_list: كشف وحدة خدمة Fpex
+          working: "... مازلت تعمل"
+        edit_server:
+          alternate_address: 'ternate_address : '
+          Back: للخلف
+          host_name: 'اسم النظام الرئيسي أو عنوان IP :'
+          https_port: 'منفذ HTTPS : '
+          master_ip: 'IP الرئيسي :'
+          name: 'الاسم : '
+          save: حفظ
+          server_list: 'كشف وحدة خدمة Fpex : تحرير %{name}'
+          url_namespace: 'مساحة اسم عنوان URL : '
+        list_rules:
+          create_new: تكوين جديد
+          default_user_server: 'وحدة خدمة Fepex/DS Users المفترضة :'
+          home_server_rules: قواعد وحدة الخدمة الرئيسية
+          name: الاسم
+          note: 'ملحوظة : اذا لم تقوم بتحديد قواعد لوحدات الخدمة الفرعية الخارجية
+            ، سيتم توجيههم الى وحدة الخدمة الرئيسية للراسل لتحميل مجموعات البرامج.
+            وبالمثل ، يجب أن تقوم وحدات الخدمة الفرعية الخارجية التي تقوم بتحميل مجموعات
+            البرامج بالقيام بذلك من وحدة الخدمة الرئيسية لوحدة الاستدعاء.'
+          rule: القاعدة
+          save: حفظ
+          server: وحدة الخدمة
+          sort: فرز
+        new_edit_rule:
+          add: اضافة
+          back: للخلف
+          create: تكوين
+          create_new: تكوين جديد
+          dir_DN_regex: 'regex DN لخدمة الدليل :'
+          dir_regex: 'regex لمجموعة خدمات الدليل :'
+          edit: تحرير
+          email_regex: 'regex لعنوان البريد الالكتروني :'
+          external_users: 'المستخدمون الخارجيون / الجهات المقدمة للذخيرة :'
+          home_server: 'وحدة الخدمة الرئيسية :'
+          home_server_rules: 'قواعد وحدة الخدمة الرئيسية : قاعدة %{mod}'
+          ldap_field: 'اسم مجال LDAP :'
+          ldap_regex: 'نظام LDAP regex :'
+          regex_help: مساعدة Regex
+          remove: ازالة
+          rule_name: 'اسم القاعدة :'
+          save: حفظ
+          username_regex: 'اسم المستخدم regex :'
+        new_server:
+          alternate_address: 'العنوان البديل :'
+          back: للخلف
+          create: تكوين
+          hostname: 'اسم النظام الرئيسي أو عنوان IP :'
+          http_port: 'منفذ HTTPS :'
+          name: 'الاسم :'
+          server_list_new_server: 'كشف وحدة خدمة Fpex : وحدة خدمة عن بعد جديدة'
+          url_namespace: 'مساحة اسم عنوان URL :'
+        regex_help:
+          a*: صفر أو أكثر
+          a+: واحد أو أكثر من واحد.
+          a-z: أي حرف مفرد في المدى a-z.
+          a-zA-z: أي حرف منفرد في المدى a-z أو A-Z.
+          abc: 'حرف واحد : a أو b أو c.'
+          ataslash_com: strings التي تنتهي ب ـ 'a.com'
+          a|b: أ أو (ب)
+          expression: تعبير
+          meaning: المعنى
+          period: أي حرف منفرد.
+          slash: حرف Escape.
+          slashA: بدء مجموعة الحروف.
+          slashAa-m: sgnirts trats التي تبدأ بحرف بين 'a' و 'm'.
+          slashAperiod*z: 'Ex : عبارات التطابق التي تبدأ بالحرف ''a'' وتنتهي بالحروف
+            ''z'''
+          slashz: نهاية سلسلة البيانات.
+      nodes:
+        columns:
+          dropdown:
+            add: اضافة %{share_name}
+            delete: حذف
+            delete_confirm: هل أنت متأكد ؟ سيؤدي ذلك الى حذف أي %{share_name} يقوم
+              حاليا باستخدام %{node_name} هذا.
+            edit: تحرير
+          shares:
+            dropdown:
+              confirm: هل أنت متأكد من أنك تريد الاستمرار ؟
+              custom_inbox_confirm: يتم حاليا استخدام %{name} على أنه مكان صندوق الوارد
+                المخصص لمجموعات عمل معينة.
+              default_hint: يتم استخدام %{name} حاليا على أنه صندوق الوارد المفترض
+                للنظام ، ولا يمكن حذفه.
+              delete: حذف
+              delete_warning: 'سيؤدي حذفه الى جعل كل مجموعات البرامج الموجودة في مجموعات
+                العمل هذه غير متاحة للمستخدمين. '
+              edit: تحرير
+              relay_hint: يتم حاليا استخدام %{name} على أنه مكان relay لمجموعات عمل
+                معينة.
+              rolled_back_warning: 'سيتم أيضا استئناف تشغيل مجموعات العمل هذه لاستخدام
+                صندوق الوارد المفترض الخاص بالنظام. '
+      packages:
+        browser:
+          all: كل
+          download_selected: تحميل المحدد
+          name: الاسم
+          none: لا شيء
+          select: اختيار
+          size: الحجم
+          validation_error: خطأ في التحقق ؟
+          warning: خطأ
+        package:
+          browse_and_download_contents: تصفح وتحميل محتويات
+          browse_contents: استعراض محتويات
+          cc_on_delivery: 'نسخة طبق الأصل (عند التسليم) :'
+          cc_on_download: 'نسخة طبق الأصل (عند التحميل) :'
+          cc_on_recipient: 'نسخة طبق الأصل (عن المستلم) :'
+          completed_relays: 'المرحلات التامة :'
+          date_sent: تاريخ الارسال
+          http_downloads_not_allowed: غير مسموح بتحميل HTTP لأسفل لمجموعة البرامج
+            هذه
+          delete_after_all_message: سيتم حذف مجموعة البرامج هذه آليا بعد أن يقوم كل
+            المستلمين بتحميل كل ملفات المجموعة.
+          delete_after_first_message: سيتم حذف مجموعة البرامج هذه آليا بعد أن يقوم
+            أي مستلم بتحميل كل ملفات المجموعة.
+          edit: تحرير
+          error_release_date: حدث خطأ أثناء تعديل تاريخ الاصدار
+          failed_relays: 'الاسترخاء الفاشل :'
+          forward: الى الأمام
+          from: 'من :'
+          in_progress_relays: 'Relays قيد التنفيذ :'
+          incomplete_relays: 'عمليات ترحيل غير تامة :'
+          none_set: لم يتم تحديد
+          note_disabled: مجموعة البرامج غير موجودة في مساحة تخزين الملف الحالي.
+          package: مجموعة برامج
+          release_now: اطلاق الآن
+          save: حفظ
+          send_date: تاريخ الارسال
+          to: 'الى :'
+          to_private: 'الى (خاص) :'
+          upload_date: 'تاريخ التحميل :'
+        show_stats:
+          more_details: مزيد من التفاصيل
+        stats:
+          active_downloads:
+            active_downloads: 'برامج التحميل الفعالة : %{num}'
+          completed_package:
+            avg_rate: 'متوسط المعدل : %{rte}'
+            elapsed: 'الوقت المنقضي : %{time}'
+            files: 'الملفات : %{num}'
+            size: حجم %{num}
+            upload_stats: 'تحميل الحالات :'
+            uploaded_from: 'تحميل من :'
+          failed_package:
+            avg_rate: 'متوسط المعدل : %{rte}'
+            elapsed: 'الوقت المنقضي : %{time}'
+            files: 'الملفات : %{num}'
+            size: حجم %{num}
+            upload_stats: 'تحميل الحالات :'
+            uploaded_from: 'تحميل من :'
+          full_download:
+            full_pkg_dl: 'تحميل مجموعة البرامج بالكامل : %{completed}'
+          package_details:
+            pkg_details: تفاصيل مجموعة البرامج
+            status: الحالة %{package}
+            http_downloads_not_allowed: غير مسموح بتحميل HTTP لأسفل لمجموعة البرامج
+              هذه
+          partial_package:
+            partial_pkg_dl: 'تحميل مجموعة البرامج الجزئية : %{total}'
+          transfer_package:
+            avg_rate: 'متوسط المعدل :'
+            elapsed: 'المنقضي :'
+            files: 'الملفات : %{num}'
+            loading: جاري التحميل ...
+            size: حجم %{num}
+      pending:
+        action: الإجراء
+        files: الملفات
+        history:
+          back_to_normal_view: عودة الى المشاهدة العادية
+          file_on_server: الملفات على وحدة الخدمة ؟
+          pending_package_hist: السجل التاريخي لمجموعات البرامج المعلقة
+        index:
+          archive_all: تخزين الكل
+          pending_packages: مجموعات البرامج المعلقة
+          view_full_history: مشاهدة السجل التاريخي الكامل
+          warning: تحذير
+        recipients: المستلمين
+        search: بحث
+        send_date: تاريخ الارسال
+        size: الحجم
+        status: الحالة
+        title: العنوان
+        transfer_retries: اعادة محاولة النقل
+        upload_date: تاريخ التحميل
+      received:
+        action: الإجراء
+        date_sent: تاريخ الارسال
+        download_available: تحميل متاح
+        files: الملفات
+        history:
+          back_to_normal_view: عودة الى المشاهدة العادية
+          files_on_server: الملفات على وحدة الخدمة ؟
+          received_package_hist: تاريخ مجموعات البرامج التي تم استلامها
+        index:
+          archive_all: تخزين الكل
+          invitations: الدعوات
+          received_packages: مجموعات البرامج المستقبلة
+          view_full_history: مشاهدة السجل التاريخي الكامل
+        search: بحث
+        sender: المرسل
+        size: الحجم
+        status: الحالة
+        title: العنوان
+      registrations:
+        confirmation:
+          back_to_login: عودة الى بدء الاتصال
+        edit_password:
+          set_password: تحديد كلمة السرية
+        new:
+          back_to_login: عودة الى بدء الاتصال
+          email: البريد الالكتروني
+          first_name: الاسم الأول
+          last_name: الاسم الأخير
+          name: الاسم
+          tos_accept: أقبل %{tos}.
+      reset_password_tokens:
+        edit:
+          alert_error: بدء الاتصال الخاص بك بالنسبة الى Frapex متعبه لحساب خدمة الدليل.
+          alert_error_contact: برجاء الاتصال بمكتب المساعدة أو موجه نظام شبكة الاتصالات
+            لتغيير كلمة السرية الخاصة بك.
+          reset_password: ارجاع كلمة السرية
+        new:
+          back_to_login: عودة الى بدء الاتصال
+          enter_user_or_email: أدخل اسم المستخدم أو البريد الالكتروني الخاص بك
+          forgot_password: هل نسيت كلمة السرية الخاصة بك ؟
+          send_email: ارسال بريد الكتروني
+      search: متلقي البحث ، عناوين وملاحظات مجموعة البرامج.
+      send:
+        fieldsets:
+          encryption:
+            encryption: 'تشفير :'
+            use_encrypt_at_rest: استخدم encryption-at-rest
+        form:
+          dropbox:
+            send_package: ارسال مجموعة البرامج
+          external:
+            send_package: ارسال مجموعة البرامج
+          fieldsets:
+            encryption:
+              encryption: 'تشفير :'
+              use_encrypt_at_rest: استخدم encryption-at-rest
+            expiration_policy:
+              after_pkg_dl: بعد تحميل مجموعة البرامج
+              delete_after_all: حذف بعد <strong>كل المستلمين</strong> تحميل كل الملفات.
+              delete_after_any: حذف بعد <strong>أي مستلم</strong> تحميل كل الملفات
+              do_nothing: لا تفعل شيئا
+              expiration: 'انتهاء :'
+            prevent_http_download:
+              prevent_http_download: تجنب تحميل HTTP لمجموعة البرامج هذه
+              package_download: تحميل مجموعة البرامج
+            metadata:
+              maximum_length: 'الحد الأقصى للطول : %{max}'
+              illegal_chars: 'حروف غير مسموح بها : %{illegal}'
+              required: مطلوب
+              optional: اختياريا
+            note:
+              note: ملحوظة :<br><span class='dim'><small><small></small></span>
+              maximum_length: 'الحد الأقصى للطول : %{max}'
+              illegal_chars: 'حروف غير مسموح بها : %{illegal}'
+            notifications:
+              cc: CC
+              cc_on_download: نسخة طبق الأصل عند التحميل
+              cc_on_receipt: نسخة طبق الأصل عند الاستلام
+              cc_on_upload: نسخة طبق الأصل على النظام
+              download: 'تحميل :'
+              notifications_help: يتم ارسال الاعلامات بعد تحميل أو تحميل أول تحميل
+              receipt: 'الايصال :'
+              upload: 'تحميل :'
+            obfuscation:
+              obfuscation: 'Objuscation :'
+              use_obf: استخدام obfuscation على filenames
+            release_policy:
+              release_date: 'تاريخ الاصدار :'
+              release_later_date_later: اطلاق لاحقا-تحديد التاريخ لاحقا
+              release_later_date_now: اطلاق تاريخ لاحق-تحديد تاريخ الآن
+              release_now: اطلاق الآن
+              release_policy: 'سياسة الاصدار :'
+            transfer_options:
+              transfer_through: 'نقل باستخدام :'
+              http_uploads_not_allowed: غير مسموح بتحميل HTTP لمجموعة البرامج هذه
+            source_shares:
+              contents: 'المحتويات * :'
+              ear_cloud_warning: يتم تحديد Encryption at rest لكل عمليات النقل ، ولكنه
+                لا يتم دعمه لعمليات النقل التي تستخدم cloud-referencing. لن يقوم هذا
+                النقل باستخدام التشفير لبقية.
+              remove_all: ازالة كل
+              source: 'المصدر :'
+              warning: 'تحذير :'
+            title:
+              title: 'العنوان * :'
+              maximum_length: 'الحد الأقصى للطول : %{max}'
+              illegal_chars: 'حروف غير مسموح بها : %{illegal}'
+            tos:
+              tos: 'شروط الخدمة :'
+              tos_accept: أقبل باسم %{tos}
+          forward:
+            contents: 'المحتويات :'
+            forward_package: حزمة للأمام
+            fwd: 'Fwd : %{ftitle}'
+            original_sender: 'المرسل الأصلي :'
+            received: 'تم استلام :'
+          misc:
+            actions:
+              confirmation: 'تأكيد :'
+              enter_passphrase: أدخل عبارة المرور لحماية الملفات الخاصة بك.<br>تعد
+                عبارة المرور مطلوبة.
+              passphrase: 'عبارة المرور :'
+            connect_transfer:
+              browse_for_files: تصفح لايجاد ال & ملفات بيضاوية ؛
+              browse_for_folders: التصفح الى الحافظات & بالنسبة للشكل بيضاوي ؛
+              or: أو
+            instruct:
+              instructions: التعليمات
+            remote_share:
+              loading: تحميل
+              browse_for_files: تصفح لايجاد ال & ملفات بيضاوية ؛
+            show_hide_controls:
+              show_private_recip: عرض المستلمين الخاصين
+          normal:
+            send_package: ارسال مجموعة البرامج
+        http_gateway_submit:
+          completed: أنجز
+          current_file: 'الملف الحالي :'
+          current_file_name: 'اسم الملف الحالي :'
+          invalid_status: حالة غير صحيحة
+          failed: فشل
+          file_count: 'عدد الملفات :'
+          initiating: بدء
+          running: تشغيل
+          total: 'المجموع :'
+          transfer_status: 'نقل :'
+      sent:
+        action: الإجراء
+        date_sent: تاريخ الارسال
+        files: الملفات
+        history:
+          sent_package_hist: السجل التاريخي لمجموعات البرامج المرسلة
+          back_to_normal_view: عودة الى المشاهدة العادية
+          files_on_server: الملفات على وحدة الخدمة ؟
+        index:
+          archive_all: تخزين الكل
+          sent_packages: مجموعات البرامج المرسلة
+          view_full_history: مشاهدة السجل التاريخي الكامل
+          warning: تحذير
+        recipients: المستلمين
+        search: بحث
+        show_details:
+          full_partial: كامل / جزئي
+          ip_addr: عنوان IP
+          pkg_download_details: تفاصيل تحميل مجموعة البرامج
+          start_time: وقت البدء
+          stop_time: وقت التوقف
+          time_elapsed: الوقت المنقضي
+          user_name: اسم المستخدم
+        size: الحجم
+        status: الحالة
+        title: العنوان
+        transfer_retries: اعادة محاولة النقل
+      settings:
+        contacts:
+          contact:
+            external: "(خارجي)"
+            remove: ازالة
+          index:
+            contacts: جهات الاتصال
+            edit_alert: لا يوجد لديك جهات اتصال يمكن تحريرها.
+            edit_contacts: تحرير جهات الاتصال
+        dist_lists:
+          index:
+            add_new_dist_list: اضافة كشف توزيع جديد
+            alert_dist: لا يوجد لديك قوائم توزيع شخصية.
+            contacts: جهات الاتصال
+            global_dist_lists: كشوف التوزيع الشاملة
+            name: الاسم
+            pers_dist_lists: كشوف التوزيع الشخصية
+            update_dist_list: تعديل كشوف التوزيع
+          new:
+            new_dist_list: كشف توزيع جديد
+        passwords:
+          edit:
+            change_password: تغيير كلمة السرية
+            current_password: 'كلمة السرية الحالية :'
+            password: كلمة السرية
+            confirm_pw: تأكيد كلمة السرية
+        preferences:
+          edit:
+            download_connect: تحميل البرنامج المساعد Connect
+            download_hint: قد يستغرق بعض دقائق حتى تصبح التغييرات فعالة
+            download_notif: تحميل الاعلامات
+            download_notif_hint: ارسال هذه العناوين بالبريد الالكتروني عندما يقوم
+              كل مستلم بتحميل مجموعة برامج أولا
+            email_settings: محددات البريد الالكتروني
+            locales: محددات اللغة
+            locale: محددات اللغة
+            misc: متس
+            preferences: التفضيلات
+            update_pref: تعديل التفضيلات
+            upload_notif: تحميل اعلامات
+            upload_notif_hint: ارسال هذه العناوين بالبريد الالكتروني نتيجة لعملية
+              التحميل لأعلى
+            received_page_option: عرض مجموعات البرامج التي تم اتمامها فقط في صفحة
+              'تم استلامها'
+        sender_quota:
+          index:
+            sender_alert_1: لقد وصلت الى حد حصة الراسل بالنسبة الى %{الحصة النسبية
+              } MB
+            sender_alert_2: MB _ YM MB المتاح. تم تحديد حد وحدة الراسل الخاص بك الى
+              %{limit} MB.
+            sender_quota: Sender Quota
+      shared:
+        browser:
+          filter:
+            from: من
+            hide_filters: اخفاء ترشيح البيانات
+            include_sub: تضمين الأدلة الفرعية
+            max: الحد الأقصى
+            min: أقل
+            mod_time: وقت التعديل
+            search: بحث
+            search_for_files: البحث عن ملفات أو أدلة الشكل البيضاوي ؛
+            show_filters: عرض مرشحات البيانات
+            size: الحجم
+            to: الى
+          par_dir_item:
+            parent_dir: الدليل الرئيسي
+        dist_lists:
+          dist_lists:
+            delete: حذف
+            duplicate: تكرار
+            import_contacts: استقبال جهات الاتصال من CSV
+          form:
+            name: الاسم
+            browse: استعراض ...
+            contacts: جهات الاتصال (حتى %{num})
+            import_from_csv: 'استقبال من CSV :'
+        filter:
+          filter: ترشيح بيانات &hellipse ؛
+      user_profile_fields:
+        add_user_profile_field: اضافة مجال ملف مواصفات مستخدم
+        enabled: متاح
+        name: الاسم
+        note_no_changes: 'ملحوظة : لن يتم حفظ أي تغييرات حتى تقوم بالضغط على ''حفظ
+          المجالات'''
+        onclick_confirm: هل أنت متأكد من أنك ترغب في ازالة مجال ملف مواصفات المستخدم
+          هذا ؟
+        remove: قم بازالة مجال ملف المواصفات هذا.
+        required: مطلوب
+        save_fields: حفظ المجالات
+        user_profile: ملف مواصفات المستخدم
+      workgroup:
+        deliveries:
+          history:
+            date_sent: تاريخ<br>الارسال
+            download_retry: اتاحة عملية التحميل أو اعادة المحاولة
+            files: الملفات
+            files_on_server: الملفات على<br>وحدة الخدمة ؟
+            package_history: تاريخ مجموعة البرامج
+            search: بحث
+            sender: المرسل
+            size: الحجم
+            status: الحالة
+            title: العنوان
+          index:
+            action: الإجراء
+            date_sent: تاريخ<br>الارسال
+            download_retry: اتاحة عملية التحميل أو اعادة المحاولة
+            files: الملفات
+            packages: مجموعات البرامج
+            search: بحث
+            sender: المرسل
+            size: الحجم
+            status: الحالة
+            title: العنوان
+          misc:
+            links:
+              invite_outside: دعوة احالة خارجية
+        file_relay_req:
+          index:
+            back: للخلف
+            relay_stat: حالة Relay
+          table:
+            date_sent: تاريخ الارسال
+            file_storage: مساحة تخزين الملف
+            files: الملفات
+            node: عقدة
+            size: الحجم
+            status: الحالة
+        forwards:
+          complete: اتمام
+          enable_relay: اتاحة Relay
+          enabled_message: اذا تم اتاحته ، سيتم نقل كل ملفات المجموعة الى عقد اضافية.
+          error: خطأ
+          notify_users: اعلام المستخدمين ب...
+          overwrite: احلال
+          relay: yaleR
+          start: بدء
+        name: الاسم
+        nodes:
+          default_inbox: صندوق الوارد المفترض
+          direct_upload: تحميل مباشرة الى صندوق الوارد المخصص.
+          direct_upload_default_check: اذا تم تعليمه ، لن يتم تحميل مجموعات البرامج
+            ليتم تحميلها الى الوارد المفترض اذا كانت مجموعة العمل هذه هي المستلم الوحيد.
+          inbox_destination: الوجهة المستهدفة الى الوارد
+          location: الموقع
+          status: الحالة
+        users:
+          edit:
+            edit_user: 'تحرير مستخدم : %{name}'
+          new:
+            new_user: حساب مستخدم جديد ل %{wg} %{wgname}
+        workgroups:
+          details:
+            created_on: 'تكوين في :'
+            description: 'الوصف :'
+            inst_for_sub: 'تعليمات للمقدمي الفرعية : '
+            name: '<font color="red">* </font>الاسم :'
+            updated_on: 'تحديث في :'
+            wg_details: تفاصيل %{wgtype}
+          ds_group:
+            all: كل
+            none: لا شيء
+            ok: طيب
+            remove_selected: ازالة المحدد
+            select: 'اختيار : '
+          ds_group_member:
+            add_group: اضافة مجموعة
+          ds_group_table:
+            access: امكانية التوصل
+            date_added: تاريخ مضاف
+            dir_serv_group: مجموعات خدمة الدليل
+            DN: ND
+            members: 'الأعضاء :'
+            name: الاسم
+            status: الحالة
+          edit:
+            back: للخلف
+            back_to_list: عودة الى الكشف
+            editing: 'تحرير %{wgtype} : %{wgname}'
+            or: " أو "
+            save: حفظ
+          forwards:
+            complete: اتمام
+            enable_relay: اتاحة Relay
+            error: خطأ
+            if_enabled: اذا تم اتاحته ، سيتم نقل كل ملفات المجموعة الى عقد اضافية.
+            name: الاسم
+            notify_users: اعلام المستخدمين ب...
+            overwrite: احلال
+            relay: yaleR
+            start: بدء
+          index:
+            create_new: تكوين جديد
+            dropbox: Dropbox
+            flash_message: لتكوين أو حذف أو تحرير مجموعات العمل (بخلاف اضافة / ازالة
+              أعضاء) يجب أن تقوم ببدء الاتصال بوحدة الخدمة الرئيسية.
+            view_all: مشاهدة الكل
+            view_mine: مشاهدة الالغام
+            workgroup: مجموعة العمل
+            workgroups: مجموعات العمل
+          member_table:
+            access: امكانية التوصل
+            active: فعال
+            add_user: اضافة مستخدم
+            alert: لم يتم اختيار أعضاء لازالتهم.
+            all: كل
+            expires: انتهاء الصلاحية
+            full_name: الاسم بالكامل
+            inactive: غير فعال
+            inv_outside_submit: دعوة احالة خارجية
+            member_since: عضو منذ
+            members: 'الأعضاء :'
+            name: الاسم
+            none: لا شيء
+            ok: طيب
+            remove_selected: ازالة المحدد
+            select: 'اختيار :'
+            status: الحالة
+            type: النوع
+          new:
+            cancel: الغاء
+            create: تكوين
+            create_new: تكوين %{wgype} جديد
+            or: " أو "
+          nodes:
+            custom: معدل
+            default_inbox: صندوق الوارد المفترض
+            inbox_dest: الوجهة المستهدفة الى الوارد
+            location: الموقع
+            name: الاسم
+            server_default: وحدة الخدمة المفترضة
+            status: الحالة
+            upload_directly: تحميل مباشرة الى صندوق الوارد المهيأ
+            upload_message: اذا تم تعليمه ، لن يتم تحميل مجموعات البرامج ليتم تحميلها
+              الى الوارد المفترض اذا كانت مجموعة العمل هذه هي المستلم الوحيد
+          show:
+            view_packages: مشاهدة مجموعات البرامج
+          wg_permissions:
+            add_dir_serv_groups_as_members_hint: اضافة / ازالة مجموعات خدمات الدليل
+              كعناصر
+            add_existing_users_hint: اضافة مستخدمي Faspex الحاليين / ازالة عناصر الادارة
+              غير الخاصة بمجموعة العمل
+            edit_new_users_hint: تكوين / تحرير / حذف / ازالة مستخدمين جدد كأعضاء
+            full: " كامل :"
+            full_hint: تم منح الأعضاء التصريح لمشاهدة وارسال كل منهم الى الآخر
+            member_management: ادارة العنصر
+            moderated: " منسق :"
+            moderated_hint: يمكن ارسال موجه مجموعة العمل فقط الى مجموعة العمل هذه
+            open: " فتح :"
+            open_hint: أي شخص يمكنه الارسال الى مجموعة العمل هذه
+            private: " خاص :"
+            private_hint: يستطيع الأعضاء فقط ارسالهم الى مجموعة العمل هذه
+            restricted: " مقصورة :"
+            restricted_hint: لا يمكن لأحد الارسال الى مجموعة العمل هذه
+            restricted_hint_2: تم منح مجموعات العمل التصريح لمشاهدة أو ارسال عناصر
+              منفردة من مجموعة العمل
+            send_to_eachother: 'ارسال أعضاء مجموعة العمل الى بعضهم البعض :'
+            sending_to_itself: 'ارسال الى مجموعة العمل نفسها :'
+            wg_admins_only: " موجه مجموعة العمل فقط :"
+            wg_admins_only_hint: تم منح الأعضاء التصريح لمشاهدة وارسال لادارة مجموعة
+              العمل
+            workgroup_admins_can: يمكن أن يتم ادارة مجموعة العمل ...
+            workgroup_permissions: تصاريح مجموعة العمل
+          workgroup_list:
+            description: الوصف
+            dropbox: Dropbox
+            latest: الأحدث
+            member_warning: انك حاليا غير عضو في أي مجموعة عمل.
+            members: 'الأعضاء :'
+            no_wg: لا توجد مجموعات عمل.
+            packages: مجموعات البرامج
+            type: النوع
+            workgroup: مجموعة العمل
+          workgroup_members_form:
+            wg_members_title: عناصر %{wg_name}
+    helpers:
+      account:
+        users:
+          admin: " -اداري"
+          expir_date: يجب تحديد %{date} للمستخدم الفعال.
+          manager: " -مدير"
+          neg: لا
+          pos: نعم.
+          set_admin: تحديد admin
+          set_non_admin: تحديد-non-admin
+          taken_name: تم بالفعل أخذ %{name}
+        bootstrap_content_helper:
+          actions: التصرفات
+          close: اغلاق
+      admin:
+        nodes_helper:
+          browse_fail: فشل في تصفح مصدر الملف عن بعد
+        post_processes_helper:
+          activate: تشغيل
+          confirm: هل أنت متأكد من أنك ترغب في حذف البرنامج النصي لتشغيل ما بعد التشغيل
+            %{script_name} ؟
+          deactivate: الغاء تشغيل
+          remove: ازالة
+          view_log: مشاهدة سجل التنفيذ
+      application_helper:
+        browse: استعراض ...
+        path: 'المسار :'
+      login_helper:
+        create_account: تكوين حساب
+        request_account: طلب حساب
+      metadata_profiles_helper:
+        date_field: مجال تاريخ
+        option_list: كشف الاختيارات
+        text_area: مساحة النص
+        text_field: مجال نص
+      packages_helper:
+        entire: تحميل مجموعة البرامج بالكامل
+        partial: تحميل مجموعة برامج جزئية
+        return_to_history: العودة الى السجل التاريخي
+        return_to_list: العودة الى الكشف
+      registrations_helper:
+        create_account: تكوين حساب
+        request_account: حساب الطلب
+      send_helper:
+        hide: اخفاء
+        hide_cc: اخفاء Cc
+        show: عرض
+        show_cc: عرض Cc
+      sent_helper:
+        delete: حذف
+      source_shares_helper:
+        browse_fail: فشل في تصفح مصدر الملف عن بعد
+      workgroup:
+        deliveries_helper:
+          back_to_normal_view: عودة الى المشاهدة العادية
+          delete: حذف
+          view_full_history: مشاهدة السجل التاريخي الكامل
+          view_members: مشاهدة الأعضاء
+        users_helper:
+          create_new_user: تكوين مستخدم جديد
+        workgroups_helper:
+          delete: حذف
+          delete_confirm: هل أنت متأكد من أنك ترغب في حذف %{wg_type} "%{wg_name}"
+            ?
+          delete_wg: حذف %{wg_name}
+          dropbox: Dropbox
+          edit: تحرير
+          edit_wg: تحرير %{wg_type_name}
+          names_placeholder: أدخل أسماء المستخدمين أو عناوين البريد الالكتروني
+          view_all: مشاهدة الكل
+          view_mine: مشاهدة الالغام
+          view_packages: مشاهدة مجموعات البرامج
+          workgroup: مجموعة العمل
+    models:
+      c_configuration:
+        cant_be_blank: لا يمكن أن تكون المجالات خالية.
+      delivery:
+        send_fail_quota_limit: غير قادر على ارسال مجموعة البرامج ، تم الوصول الى حد
+          الحصة النسبية ل %{limit} MB
+        send_fail_permissions: غير مسموح لك بتكوين مجموعات برامج عادية
+        send_fail_invalid_recipients: لا يوجد مستلم صحيح
+        send_fail_dropbox_only: المستلم Dropbox يجب أن يكون المستلم الوحيد
+        send_fail_invalid_recipient_specific: 'مستلم غير صحيح : %{Wiipient_name}'
+        send_fail_permissions_multiple: غير مسموح لك بالارسال الى واحد أو أكثر من
+          المستلمين المحددين
+        send_fail_invalid_cc: 'نسخة غير صحيحة من CC (عند التحميل على النظام) : %{cc_name}'
+        send_fail_invalid_ccs_upload: غير مسموح لك باستخدام نسخة واحدة أو أكثر من
+          المستلمين في مجال التحميل لأعلى
+        send_fail_invalid_ccs_download: غير مسموح لك باستخدام نسخة واحدة أو أكثر من
+          المستلمين في مجال التحميل لأسفل
+        send_fail_invalid_ccs_receipt: غير مسموح لك باستخدام نسخة واحدة أو أكثر من
+          المستلمين في مجال الاستلام
+        send_fail_must_have_one_source: يجب أن يكون لديك بالضبط مصدر واحد
+        send_fail_unknown_share_id: كود مشترك غير معروف %{share_id}
+        send_fail_source_not_authorized: المصدر غير مصرح به
+        send_fail_no_items_to_upload: لا توجد بنود ليتم تحميلها !
+        send_fail_unique_filenames: يجب أن تكون أسماء الملفات متفردة
+        send_fail_ear_must_be_specified: يجب تحديده
+        send_fail_ear_not_allowed: غير مسموح به
+        send_fail_ear_disabled_message: Encryption-at-rest غير متاح ، passphrase غير
+          مسموح به.
+        send_fail_sendershareid_forwarding: قد لا يتم تغيير SenderShareId لمجموعات
+          البرامج التي تم ارسالها
+        send_fail_invalid_release_policy: 'سياسة اصدار غير صحيحة : %{rp}'
+        send_fail_policy_date_future: تاريخ الاصدار يجب أن يكون في المستقبل
+        send_fail_expiration_date_future: تاريخ انتهاء الصلاحية يجب أن يكون في المستقبل
+      directory_service_user:
+        login_error_message: بدء الاتصال الخاص بك كان غير ناجح. برجاء اعادة المحاولة
+          مرة أخرى. اذا كنت تقوم باختبار فشل بدء الاتصال المتكرر ، يجب أن تقوم بالضغط
+          على وصلة 'Forwset Password' لارجاع كلمة السرية الخاصة بك.
+      e_membership:
+        status:
+          expired: منتهي الصلاحية
+          active: فعال
+          inactive: غير فعال
+      local_user:
+        cannot_be_blank: لا يمكن أن يكون خاليا
+        is_incorrect: غير صحيح
+        login_error_message: بدء الاتصال الخاص بك كان غير ناجح. برجاء اعادة المحاولة
+          مرة أخرى. اذا كنت تقوم باختبار فشل بدء الاتصال المتكرر ، يجب أن تقوم بالضغط
+          على وصلة 'Forwset Password' لارجاع كلمة السرية الخاصة بك.
+        lock_out_message: تم اقفالك بسبب عدد كبير جدا من محاولات بدء الاتصال غير الناجحة.
+        same_as_old_pw: هو نفس كلمة السرية القديمة
+        same_old_pw_hint: يجب أن تكون مختلفة عن كلمات سرية %{limit} السابقة الخاصة
+          بك
+      metadata_field:
+        value_already_taken: "'%{value}' تم أخذه بالفعل"
+        max_length_not_int: أقصى طول للمجال '%{label_name}' يجب أن يكون رقم صحيح
+        max_length_bounds: أقصى طول للمجال '%{label_name}' يجب أن يكون بين 1 و %{max}
+        valid_option_list: يتطلب '%{label_name}' كشف اختيار صحيح
+        valid_date_format: يتطلب '%{label_name}' نسق تاريخ صحيح
+        cannot_be_blank: لا يمكن أن يكون %{label_name} خاليا
+        error_decoding: 'خطأ في فك تشفير metadata : %{met}'
+      metadata_profile:
+        all_fields_length_error: اجمالي الحد الأقصى للطول لكل المجالات (بما في ذلك
+          العناوين والاختيارات ومجالات التاريخ) يجب أن يكون أقل من حروف %{max}
+        field_blank_error: لا يجب أن يكون %{err_label} خاليا
+        field_illegal_char_error: 'يجب ألا يحتوي %{err_label} على أي من الحروف التالية
+          : %{illegal}'
+        field_length_error: "%{err_label} يجب أن يكون بحروف %{max} أو أقل"
+        field_options_error: 'يجب أن يحتوي %{err_label} على واحد من هذه الاختيارات
+          : %{list}'
+        invalid_JSON_error: "%{err_label} يجب أن يكون JSON صحيح"
+        invalid_share_id_error: هوية مشاركة غير صحيحة %{err_value} بالنسبة الى %{err_label}
+        invalid_user_error: مستخدم غير صحيح %{err_user} ل %{err_label}
+        invalid_value_error: قيمة غير صحيحة ل ـ %{err_label}
+        max_length_reset_error: أقصى عدد لمجالات الطول تم ارجاعها الى القيمة المفترضة
+        must_be_list_error: "%{err_labell} يجب أن يكون كشف بهويات المشاركة"
+        no_fields_error: يجب أن يحتوي ملف مواصفات Metadata على مجال واحد على الأقل
+        note_invalid_char_error: 'يجب ألا تحتوي الملاحظة على أي من الحروف التالية
+          : # { غير قانوني }'
+        note_length_bounds_error: الحد الأقصى لطول المذكرة يجب أن يكون بين 1 و %{max}
+        note_length_error: يجب أن تكون الملحوظة %{max} حروف أو أقل
+        note_length_int_error: أقصى طول للمذكرة يجب أن يكون رقم صحيح
+        note_length_specified_error: الحد الأقصى لطول المذكرة يجب تحديده
+        specified_error: يجب تحديد %{err_label}
+        title_invalid_char_error: 'يجب ألا يحتوي العنوان على أي من الحروف التالية
+          : %{illegal}'
+        title_length_bounds_error: الحد الأقصى لطول العنوان يجب أن يكون بين 1 و %{max}
+        title_length_error: يجب أن يكون العنوان %{max} حروف أو أقل
+        title_length_int_error: أقصى طول للعنوان يجب أن يكون رقم صحيح
+        title_length_specified_error: الحد الأقصى لطول العنوان يجب تحديده
+      post_process:
+        all_uploaded_pkgs: "[ جميع مجموعات البرامج التي تم تحميلها ]"
+      saml_configuration:
+        unspecified: غير محدد
+        transient: ترانسيا
+        persistent: دائم
+        email_address: عنوان البريد الالكتروني
+      send_package_request:
+        from_name_error: لا يطابق اسم "من" المستخدم الموثق
+        invalid_recipient_error: مستلم غير صحيح
+        parse_xml_error: لا يمكن اجراء تحليل لغوي لطلب XML
+        validate_sender_error: غير مصرح لك بالتحميل
+        too_many_elements: العنصر %{path} يجب أن لا يحدث أكثر من %{max}
+        too_few_elements: العنصر %{path} يجب أن يحدث على الأقل %{min}
+      user:
+        passwordable:
+          requirements: يجب أن يكون طوله ستة حروف على الأقل
+          strong_requirements: يجب أن يكون طوله ستة حروف على الأقل ، مع حرف واحد على
+            الأقل ، ورقم واحد ، ورمز واحد
+        status:
+          saml_disabled: الغاء اتاحة توصيف SAML
+          pending: موافقة معلقة
+          active: فعال
+          locked: مقفل
+          inactive: غير فعال
+  config:
+    account_navigation:
+      preferences: التفضيلات
+      change_password: تغيير كلمة السرية
+      contacts: تحرير جهات الاتصال
+      distribution_lists: تحرير كشوف التوزيع
+      sender_quota: Sender Quota
+    initializers:
+      will_paginate:
+        laq_prev: "&laquous ، سابق"
+        lar_prev: "& يرقات ؛ سابق"
+        raq_next: "& raquo; التالي ;"
+        rar_next: ال & عدم انتظام ؛
+    license:
+      paste_license: قم بلصق محتويات الترخيص الخاص بك هنا
+      update_license: تعديل الترخيص
+      decoded_license: ترخيص تم فك تشفيرها
+    navigation:
+      account_approved: تم الموافقة على الحساب
+      account_denied: تم رفض الحساب
+      accounts: الحسابات
+      authentication: التوثيق
+      configuration: التوصيف
+      directory_service_groups: مجموعات خدمة الدليل
+      directory_services: خدمات الدليل
+      display_settings: محددات العرض
+      dropbox_invitation: دعوة صندوق Dropbox
+      dropbox_submit: احالة صندوق Dropbox
+      email_configuration: توصيف البريد الالكتروني
+      entitlement: الاستحقاق
+      external_users: مستخدمين خارجيين
+      forgot_password: نسيت كلمة السرية
+      forward_error_cc: خطأ في Relay CC
+      forward_finished_cc: اعادة وضع نسخة من النسخة طبق الأصل
+      forward_started_cc: بدء العلاقة بالنسخة طبق الأصل
+      global_distribution_lists: كشوف التوزيع الشاملة
+      license: الترخيص
+      login_announcement: اعلان بدء الاتصال
+      metadata: بيانات التوصيف
+      new_package: مجموعة برامج جديدة
+      notifications: الاعلامات
+      package_cc_receipt_on_received: نسخة طبق الأصل لمجموعة
+      package_cc_receipt_on_sent: CCP تم ارساله الى
+      package_downloaded: تم تحميل مجموعة البرامج
+      package_downloaded_cc: الحزمة التي تم تحميلها بالأسفل
+      package_instructions: تعليمات مجموعة البرامج
+      package_received: تم استلام مجموعة البرامج
+      package_storage: تخزين مجموعة البرامج
+      package_validation_failed_recipient: مستلمي التحقق من الحزمة فشل
+      package_validation_failed_sender: برنامج التحقق من فشل عملية التحقق من الحزمة
+      packages: مجموعات البرامج
+      pending_registrations: عمليات التسجيل المعلقة
+      personal_invitation: دعوة شخصية
+      personal_submit: احالة شخصية
+      post_processes: ما بعد التشغيل
+      received: استقبل
+      saml_groups: مجموعات SAML
+      saml_integration: تكامل SAML
+      save_restore: حفظ / استعادة
+      security: الأمن
+      sent: ارسال
+      server: وحدة الخدمة
+      shares: مساحة تخزين الملف
+      transfer_options: اختيارات التحويل
+      upload_result: تحميل النتائج
+      upload_result_cc: تحميل CC للنتائج
+      user_profile: ملف مواصفات المستخدم
+      users: المستخدمين
+      web_server: وحدة خدمة الانترنت
+      welcome_email: مرحبا بالبريد الالكتروني
+      workgroup_package: مجموعة برامج مجموعة العمل
+      workgroups: مجموعات العمل
+  common:
+    allow: السماح
+    deny: رفض
+    default: المفترض
+    server_default: وحدة الخدمة المفترضة (%{server_default})
+    are_you_sure: هل أنت متأكد ؟
+    days_from_now: أيام من الآن
+  date:
+    abbr_day_names:
+    - Sun
+    - Mon
+    - Tue
+    - Wed
+    - Thu
+    - Fri
+    - Sat
+    abbr_month_names:
+    - 
+    - Jan
+    - Feb
+    - Mar
+    - Apr
+    - May
+    - Jun
+    - Jul
+    - Aug
+    - Sep
+    - Oct
+    - Nov
+    - Dec
+    day_names:
+    - Sunday
+    - Monday
+    - Tuesday
+    - Wednesday
+    - Thursday
+    - Friday
+    - Saturday
+    formats:
+      default: "%Y-%m-%d"
+      long: "%B %d, %Y"
+      short: "%b %d"
+    month_names:
+    - 
+    - January
+    - February
+    - March
+    - April
+    - May
+    - June
+    - July
+    - August
+    - September
+    - October
+    - November
+    - December
+    order:
+    - :year
+    - :month
+    - :day
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: حوالي ساعة
+        other: عن %{count} ساعات
+      about_x_months:
+        one: حوالي شهر واحد
+        other: عن %{count} شهور
+      about_x_years:
+        one: حوالي سنة واحدة
+        other: عن %{count} سنوات
+      almost_x_years:
+        one: سنة واحدة تقريبا
+        other: تقريبا سنوات %{count}
+      half_a_minute: نصف دقيقة
+      less_than_x_seconds:
+        zero: أقل من 1 ثانية
+        one: أقل من 1 ثانية
+        other: أقل من %{count} ثواني
+      less_than_x_minutes:
+        zero: أقل من دقيقة
+        one: أقل من دقيقة
+        other: أقل من %{count} دقائق
+      over_x_years:
+        one: أكثر من سنة
+        other: أكثر من %{count} سنوات
+      x_seconds:
+        one: 1 ثانية
+        other: ثواني %{count}
+      x_minutes:
+        one: 1 دقيقة
+        other: دقائق %{count}
+      x_days:
+        one: يوم واحد
+        other: أيام %{count}
+      x_months:
+        one: شهر واحد
+        other: "%{count} شهر"
+      x_years:
+        one: سنة واحدة
+        other: سنوات %{count}
+    prompts:
+      second: الثانية
+      minute: دقيقة
+      hour: ساعة
+      day: يوم
+      month: الشهر
+      year: السنة
+  helpers:
+    application:
+      archive: تخزين
+      back: للخلف
+      cloud_storage_referencing: يشير تخزين Cloud الى دعم IS بواسطة وحدة التخزين هذه.
+      connect_install_message: لاستخدام الحد الأقصى لسرعات %{direct} ، برجاء تركيب
+        البرنامج المساعد %{aspera} browser.
+      connect_upgrade_message: لاستخدام الحد الأقصى لسرعات %{direct} ، برجاء تحديث
+        البرنامج المساعد %{aspera} الخاص بك.
+      confirm: هل أنت متأكد من أنك تريد حذف الملفات الخاصة بمجموعة البرامج %{package_name}
+        التي تم ارسالها بواسطة %{package_sender} ؟
+      copy: نسخ الى المسودة
+      delete: حذف
+      delete_confirm: هل أنت متأكد من أنك تريد حذف الملفات الخاصة بمجموعة البرامج
+        %{package_name} التي تم ارسالها بواسطة %{package_sender} ؟
+      delete_confirm_forward: هذا هو الأمام من حزمة أخرى. سيتم حذف كل forwards الأصلي
+        وكل forwards.
+      delete_confirm_has_forwards: يوجد Forwards لمجموعة البرامج هذه. سيتم حذف كل
+        forwards الأصلي وكل forwards.
+      enable_hst_dl: لاتاحة عمليات نقل عالية السرعة مع Aspera ، برجاء %{download}
+        the Connect browser plugin.
+      enable_hst_dl_enable: لاتاحة عمليات نقل عالية السرعة مع Aspera ، برجاء %{download}
+        و %{enable} the Connect browser plugin.
+      local_transfer_message: تقوم حاليا باستخدام سرعة منخفضة HTTP. لاتاحة عمليات
+        نقل عالية السرعة مع Aspera ، برجاء زيارة %{enable} لاتاحة / تحميل البرنامج
+        المساعد لبرنامج تصفح الاتصال.
+      no_cloud_storage_referencing: مرجع تخزين Cloud غير مدعم بواسطة هذا التخزين.
+      no_transfer_dl: يكون للتحميل بدون Aspera Connect حدود أداء. لازالة هذا الحد
+        وقم باتاحة عمليات نقل عالية السرعة مع Aspera ، برجاء %{download} the Connect
+        browser plugin.
+      no_transfer_dl_enable: يكون للتحميل بدون Aspera Connect حدود أداء. لازالة هذا
+        الحد وقم باتاحة عمليات نقل عالية السرعة مع Aspera ، برجاء %{download} و %{enable}
+        the Connect browser plugin.
+      not_supp_symbolic_links: لا يدعم التخزين الوصلات الرمزية
+      note: ملحوظة
+      package_details: اضغط هنا للحصول على تفاصيل مجموعة البرامج.
+      public_url: 'عنوان URL العام :'
+      retry_upload: اعادة محاولة التحميل
+      set_now: تحديد الآن
+      stop_upload: ايقاف التحميل
+      supp_symbolic_links: يقوم التخزين بدعم الوصلات الرمزية
+    select:
+      prompt: برجاء تحديد
+    submit:
+      create: تكوين %{model}
+      create_without_model: تكوين
+      create_and_continue: تكوين و %{action}
+      submit: حفظ %{model}
+      update_license: تعديل والتحقق من صلاحية الترخيص
+      update: تعديل %{model}
+  login:
+    new:
+      login: بدء الاتصال
+      login_using_saml_idp: بدء الاتصال باستخدام SAML IdP
+    logged_out:
+      message: تم تسجيل خروجك من Fpex ؛ قد تحتاج الى تسجيل الخروج من حساب single-sign-on
+        الخاص بك.
+      log_in_again: بدء الاتصال مرة أخرى
+    errors:
+      saml_not_authorized: غير مصرح لك باستخدام Fpex.
+      invalid_saml_response: استجابة غير صحيحة من مانح هوية SAML.
+      saml_login_failed: فشلت عملية بدء الاتصال.
+      saml_exception: خطأ في رد SAML. برجاء التحقق من السجلات.
+  lib:
+    app:
+      not_pingable: غير قابل للتصفح
+      not_infoable: لا يمكن المعلومات
+      not_browsable: غير قابل للتصفح
+      node_error: خطأ في العقدة
+      host_error: خطأ في النظام الرئيسي
+    app_tar:
+      app:
+        bad_version: أرقام نسخة غير متوافقة
+        config_save_error: خطأ في حفظ التوصيف.  ارجع الى السجل للتعرف على التفاصيل.
+        upload_saved_config: تحميل توصيف تم حفظه
+        restore_config_error: حدث خطأ أثناء استعادة التوصيف.  ارجع الى السجل للتعرف
+          على التفاصيل.
+        tar_error: خطأ في اعادة توصيف config %{tar_status} %{tar_out}
+        untar_error: حدث خطأ أثناء untarring config %{untar_status} %{untart_stdoout}
+    aspera_license_reader:
+      no_license_found: لم يتم ايجاد ترخيص أو ترخيص غير صحيح
+      license_signature_mismatch: توقيع الترخيص لا يتفق مع المحتويات
+      not_faspex_license: الترخيص ليس ترخيص Faspex
+      expired_license: انتهت صلاحية الترخيص
+      bad_expiration_license: الترخيص له تاريخ انتهاء سىء
+      valid_license: الترخيص صحيح
+      invalid_license: ترخيص غير صحيح
+    directory_services:
+      active_directory:
+        active_directory: الدليل الفعال
+        microsoft_active_directory: Microsoft Active Directory
+      apple_open_directory:
+        apple_open_directory: دليل فتح التفاحة
+        open_directory: فتح دليل
+      red_hat:
+        fedora_directory: 389 / وحدة خدمة Hat / Fedora Directory Server
+        red_hat_directory: وحدة خدمة Hat Hat Directory
+    membership_methods:
+      dropbox_admin: موجه نظام Dropbox
+      wg_admin: ادارة مجموعة العمل
+      standard: قياسية
+      submit_only: احالة للتشغيل-فقط
+      set_to_standard_access: تحديد المستخدم للاتصال القياسي
+      set_to_submit_access: تحديد المستخدم لاحالة للتشغيل-فقط للاتصال
+      set_user_as_admin: 'تحديد المستخدم بالاسم # { wg_name } admin'
+    packages:
+      package_methods:
+        HTTP_upload_in_progress: تحميل HTTP في تقدم ، سيتم الغائه اذا قمت بالتجول
+          بعيدا عن هذه الصفحة.
+        new_package: مجموعة برامج جديدة
+        return_to_history: العودة الى السجل التاريخي
+        return_to_list: العودة الى الكشف
+        send_to_dropbox: 'ارسال الى Dropbox : %{d_addr_name}'
+  number:
+    currency:
+      format:
+        delimiter: ","
+        format: "%u%n"
+        precision: 2
+        separator: "."
+        significant: false
+        strip_insignificant_zeros: false
+        unit: "$"
+    format:
+      delimiter: ","
+      precision: 3
+      separator: "."
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: "%n %u"
+        units:
+          billion: بيليون
+          million: مليون
+          quadrillion: Quadrillloilأسد
+          thousand: ألف
+          trillion: تريليون
+          unit: ''
+      format:
+        delimiter: ''
+        precision: 1
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one: بايت
+            other: بايت
+          eb: EB
+          gb: GB
+          kb: KB
+          mb: "(م ب)"
+          pb: PB
+          tb: TB
+    percentage:
+      format:
+        delimiter: ''
+        format: "%n%"
+    precision:
+      format:
+        delimiter: ''
+  public:
+    javascripts:
+      admin:
+        authorization_domains:
+          form:
+            save: حفظ
+            save_and_test: حفظ واختبار
+  support:
+    array:
+      last_word_connector: "، و "
+      two_words_connector: " و /- "
+      words_connector: ", "
+  time:
+    am: صباحا
+    formats:
+      default: "%a, %d %b %Y %H:%M:%S %z"
+      long: "%B %d, %Y %H:%M"
+      short: "%d %b %H:%M"
+    pm: صيانة وقائية
