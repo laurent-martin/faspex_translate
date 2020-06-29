@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 # Laurent Martin 2014, updated jan 2020 Faspex 4.4.0
 require 'yaml' # same as psych, see module Psych
+
 require 'json'
 require 'asperalm/rest'
 require 'asperalm/log'
@@ -92,8 +93,12 @@ def translate_dictionary(a_orig_dict,a_sentences_paths,a_translator,a_src_lang,a
   return {a_dst_lang=>new_dict[a_src_lang]}
 end
 
-def lang_file(folder,lang)
-  return File.join(folder,lang)+'.yml'
+def get_file_language(path)
+  language = File.basename(path,'.yml')
+  if !language.match(/^[a-z][a-z]$/)
+    raise "Error: language #{language} does not match two letters"
+  end
+  return language
 end
 
 if ARGV.length != 3
@@ -115,15 +120,8 @@ watson_trans_creds_file=ARGV[0]
 original_file=ARGV[1]
 translated_file=ARGV[2]
 
-src_language=File.basename(original_file,'.yml')
-dest_language=File.basename(translated_file,'.yml')
-
-[src_language,dest_language].each do |l|
-  if !l.match(/^[a-z][a-z]$/)
-    print "Error: language #{l} does not match two letters\n"
-    Process.exit(1)
-  end
-end
+src_language=get_file_language(original_file)
+dest_language=get_file_language(translated_file)
 
 print "Translate #{src_language} to #{dest_language}\n"
 
