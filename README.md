@@ -56,10 +56,10 @@ asctl faspex:restart
 * create a translation service on IBM Cloud
 * get tyranslation service URL and API Key
 * it shows the "getting started"
-* save credentials (full JSON) in a file name: my_creds
+* save credentials (full JSON) in a file name: my_watson_trans_creds
 
 ```
-$ cat my_creds
+$ cat my_watson_trans_creds
 {
   "apikey": "xxxxxxxxxxxxxx",
   "iam_apikey_description": "Auto-generated for key xxxxxxx",
@@ -74,7 +74,7 @@ $ cat my_creds
 
 ```
 MY_KEY=xxxxxxxxxxxxxxxx
-MY_KEY=$(jq -r .apikey < norepo/my_translation_service_creds)
+MY_KEY=$(jq -r .apikey < norepo/my_watson_trans_creds)
 curl -u apikey:$MY_KEY -H 'Accept: application/json' -H 'Content-Type: application/json' 'https://gateway-lon.watsonplatform.net/language-translator/api/v3/translate?version=2018-05-01' -d '{"model_id":"en-cs","text":["There are MY_count_ users."]}'
 ```
 
