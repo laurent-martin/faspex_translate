@@ -82,7 +82,7 @@ he:
         saml_idp_slo_target_url: URL של יציאה יחידה של IdP
         saml_idp_cert_fingerprint: טביעת אצבע של תעודת הסמכה של IdP
         saml_idp_cert: תעודת הסמכה של IdP
-        can_see_global_distribution_lists_default: משתמשים יכולים לראות רשימות תפוצה גלובליות כברירת מחדל
+        can_see_global_distribution_lists_default: משתמשים יכולים לראות רשימות הפצה גלובליות כברירת מחדל
         tos_for_sending: תנאי שירות לשליחה
         remove_ds_users_on_inactivity: סילוק משתמשים של DS
         remove_saml_users_on_inactivity: סילוק משתמשי SAML
@@ -203,7 +203,7 @@ he:
       local_user:
         password_expiration_interval: תוקף הסיסמה פג בכל
       template_user:
-        days_til_expiration: תוקף חשבונות חדשים יפוג.
+        days_til_expiration: תוקף חשבונות חדשים יפוג
         days_til_destruction: חשבונות חדשים יימחקו
       home_server_rule:
         email_pattern: כתובת דוא " ל regex
@@ -306,7 +306,7 @@ he:
         ad_groups_controller:
           added_group: Added IBM_group_name_YM לקבוצת עבודה
           sync_group: סינכרון my_group_name_YM
-          updated_grp_prov: מדיניות אספקת השירות הקבוצבית.
+          updated_grp_prov: מדיניות אספקת שירות קבוצתית מעודכנת.
           updated_grp_import: מדיניות יבוא של קבוצה מעודכנת.
           updated_error: שגיאה בשמירת התצורה של קבוצת my_group_name_YM:<br/>
           removed_group: העבירו את קבוצת IBM_group_name_YM מקבוצת העבודה.
@@ -438,7 +438,7 @@ he:
         updated: תצורת הדואר עודכנה.
       m_template_controller:
         loaded: הגדרות ברירת המחדל נטענו בהצלחה.
-        updated: ההודעה %{template} עודכנה בהצלחה
+        updated: הודעת דואל my_template_YM עודכנה בהצלחה
       metadata_profiles_controller:
         cannot_delete_profile: לא ניתן למחוק את הפרופיל, הוא נמצא בשימוש של חבילות רגילות.
         cannot_delete_profile_dropbox: לא ניתן למחוק את הפרופיל, הוא נמצא בשימוש על-ידי תיבת נפתחת %{db_name}.
@@ -591,7 +591,7 @@ he:
             back: חזרה
             directory_service: 'שירות מדריך:'
             import: יבוא
-            import_user_from_dir_serv: יבוא משתמש משירות מדריכים
+            import_user_from_dir_serv: יבוא משתמש משירות המדריכים
             search: חיפוש
             search_term: 'מונח חיפוש:'
             searches_limit: חיפושים מוגבלים לעשרים תוצאות.
@@ -869,7 +869,7 @@ he:
             server: שרת
             status: סטטוס
             type: סוג
-          new: My_name_YM חדש
+          new: New my_name_YM
         fasp_nodes:
           fasp_nodes:
             active_sessions: מהלכי עבודה פעילים
@@ -907,7 +907,7 @@ he:
             update: עדכון
           new:
             cancel: ביטול
-            new_name: My_name_YM חדש
+            new_name: New my_name_YM
           test: החיבור הצליח!
         notifications:
           login_announce:
@@ -1177,7 +1177,7 @@ he:
               delete_files_any: מחיקת קבצים אחרי <strong>כל נמען</strong> מוריד את כל הקבצים
               do_nothing: לא לעשות דבר
               max_pkg_title: אורך מרבי של כותרת חבילה בנתיבי אחסון
-              package_storage: אחסון חבילה
+              package_storage: אחסון מארז
               packages_expire: תפוגת מארזים
               pkg_by_pkg_del: לאפשר לכל המשתמשים להגדיר את הגדרות המחיקה שלהם על בסיס חבילה-לפי-חבילה
               update: עדכון
@@ -1213,7 +1213,7 @@ he:
               appr_sender_domains: מיתחמי שולח מאושרים
               block_email_domain: חסימת מיתחמי הדואל הבאים מהרישום העצמי
               can_override_ear_hint: המשתמש עשוי לבחור בעת הזמנת שולחים חיצוניים אם לאכוף הצפנה או לא
-              can_see_dist_list: משתמשים יכולים לראות רשימות תפוצה גלובליות כברירת מחדל
+              can_see_dist_list: משתמשים יכולים לראות רשימות הפצה גלובליות כברירת מחדל
               cipher: סייפר של FASP
               days: ימים
               dbox_override: לאפשר לקופסאות לעזוב את הגדרות ההצפנה שלהן.
@@ -1389,10 +1389,10 @@ he:
             server_to_user: שרת למשתמש
             user_to_server: משתמש לשרת
           new:
-            alert_no_node: לא יצרתם my_nodes_YM. _admin_node_YM לפני ביצוע my_name_YM.
+            alert_no_node: לא יצרתם my_nodes_YM. My_admin_node_YM לפני ביצוע my_name_YM.
             cancel: ביטול
             create_one: יצירת אחד
-            new: My_name_YM חדש
+            new: New my_name_YM
       background_processes:
         index:
           action: פעולה
@@ -1465,7 +1465,7 @@ he:
               זה בטוח לסגור דף אינטרנט זה, ההעברה שלך לא תושפע.
               דואל נשלח אליכם עם קישור כדי לחזור למסך זה.
             send_to: משלוח אל %{enent}
-            send_to_dropbox: 'שליחה ל-Dropbox: %{dropname}'
+            send_to_dropbox: 'שליחה ל-Dropbox: my_dropname_YM'
             status: דף זה מאפשר לכם לראות את מצב החבילה שהגשתם, וכן לבצע שוב את ההעברה אם היא נכשלת.
           submission_stat:
             date_submit: תאריך הגשה
@@ -2346,7 +2346,7 @@ he:
         send_fail_invalid_recipients: אין נמענים חוקיים
         send_fail_dropbox_only: מנמען Dropbox חייב להיות המקבל היחיד
         send_fail_invalid_recipient_specific: 'נמען לא חוקי: %{resourceent_name}'
-        send_fail_permissions_multiple: אינכם מורשים לשלוח אל אחד או יותר מהנמענים שצוינו.
+        send_fail_permissions_multiple: אינכם מורשים לשלוח לאחד או יותר מהנמענים שצוינו.
         send_fail_invalid_cc: 'עותק לא חוקי (לטעינה): %{cc_name}'
         send_fail_invalid_ccs_upload: אינכם מורשים לשלוח עותק של אחד או יותר מהנמענים בשדה הטעינה.
         send_fail_invalid_ccs_download: אינכם מורשים לשלוח עותק של אחד או יותר מהנמענים בשדה ' הורדה '
@@ -2480,7 +2480,7 @@ he:
       package_downloaded_cc: עותק מוסתר של החבילה
       package_instructions: הוראות חבילה
       package_received: התקבל חבילה
-      package_storage: אחסון חבילה
+      package_storage: אחסון מארז
       package_validation_failed_recipient: נמען של תיקוף חבילה נכשל
       package_validation_failed_sender: השולח נכשל של תיקוף חבילה
       packages: חבילות
@@ -2522,7 +2522,7 @@ he:
     - Fri
     - Sat
     abbr_month_names:
-    - 
+    -
     - Jan
     - Feb
     - Mar
@@ -2548,7 +2548,7 @@ he:
       long: "%B %d, %Y"
       short: "%b %d"
     month_names:
-    - 
+    -
     - January
     - February
     - March
@@ -2631,7 +2631,7 @@ he:
       local_transfer_message: אתם משתמשים כעת ב-HTTP מהירות נמוכה. כדי להפעיל העברות מהירות גבוהה עם Aspera, בקרו ב-%{enable} כדי לאפשר/הורידו את תוסף הדפדפן של Connect.
       no_cloud_storage_referencing: אחסון בענן המפנה אינו נתמך על ידי אחסון זה.
       no_transfer_dl: טעינות ללא Aspera Connect יש מגבלות ביצועים. כדי לסלק מגבלה זו ואפשרו העברות מהירות גבוהה עם Aspera, my_download_YM התוסף של הדפדפן.
-      no_transfer_dl_enable: טעינות ללא Aspera Connect יש מגבלות ביצועים. כדי לסלק מגבלה זו ואפשרו העברות מהירות גבוהה עם Aspera, my_download_YM ו-%{enable} התוסף
+      no_transfer_dl_enable: טעינות ללא Aspera Connect יש מגבלות ביצועים. כדי לסלק מגבלה זו ואפשרו העברות מהירות גבוהה עם Aspera, אנא my_download_YM ו-%{enable} התוסף
         של הדפדפן.
       not_supp_symbolic_links: האחסון אינו תומך בקישורים סימבוליים
       note: הערה
@@ -2661,7 +2661,7 @@ he:
       saml_not_authorized: אינכם מורשים להשתמש בפספקס.
       invalid_saml_response: תגובה לא חוקית מספק SAML Identity Provider.
       saml_login_failed: ההתחברות נכשלה.
-      saml_exception: שגיאת תגובת SAML. בדקו את היומנים.
+      saml_exception: שגיאת תגובת SAML. נא לבדוק את היומנים.
   lib:
     app:
       not_pingable: לא ניתן pingable
@@ -2675,12 +2675,18 @@ he:
         config_save_error: שגיאה בשמירת התצורה.  ראו פרטים ביומן.
         upload_saved_config: טעינת תצורה שמורה
         restore_config_error: שגיאה בשחזור התצורה.  ראו פרטים ביומן.
-        tar_error: שגיאה בtarring config %{tar_status} %{tar_out}
-        untar_error: שגיאה untarring config %{untar_status} %{untar_stdout}
+        tar_error: |-
+          שגיאה בtarring config
+          My_tar_status_YM
+          My_tar_out_YM
+        untar_error: |-
+          שגיאה בביטול תצורה של config
+          My_untar_status_YM
+          My_untar_stdout_YM
     aspera_license_reader:
       no_license_found: לא נמצאו רישיון או רישיון לא במבנה תקין.
       license_signature_mismatch: חתימת הרשיון אינה תואמת לתוכן.
-      not_faspex_license: הרשיון אינו רשיון של פקס.
+      not_faspex_license: הרשיון אינו רשיון של פקס
       expired_license: פג תוקפו של הרשיון
       bad_expiration_license: הרשיון כולל תאריך תפוגה שגוי.
       valid_license: הרשיון חוקי

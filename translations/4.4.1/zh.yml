@@ -207,7 +207,7 @@ zh:
         days_til_destruction: 将删除新帐户
       home_server_rule:
         email_pattern: 电子邮件地址重新发送
-        user_name_pattern: 用户名重新创建
+        user_name_pattern: 用户名重新进行
         ad_group_pattern: 目录服务组重新热
         ad_dn_pattern: 目录服务 DN 重新进行
         ldap_field_pattern1: LDAP 字段重新进行
@@ -220,7 +220,7 @@ zh:
     errors:
       format: "%{attribute} %{message}"
       e_configuration:
-        idp_cert_and_idp_cert_fingerprint_blank: 必须提供一个 "IdP 证书指纹 " 或 " IdP 证书 " 。
+        idp_cert_and_idp_cert_fingerprint_blank: 必须提供 "IdP 证书指纹 " 或 " IdP 证书 " 。
       models:
         delivery:
           attributes:
@@ -237,7 +237,7 @@ zh:
             max_title_length_in_storage_paths:
               not_a_number: 存储路径中的最大标题长度不是数字
             days_until_packages_expire:
-              not_a_number: 软件包到期的天数不是数字
+              not_a_number: 软件包到期之前的天数不是数字
         saml_configuration:
           attributes:
             allowed_clock_drift_in_ms:
@@ -283,15 +283,14 @@ zh:
           one: 1 个错误禁止保存 %{model}
           other: "%{count} 错误禁止保存此 %{model}"
       user:
-        groups_are_inactive: 您是不活动的成员的组
+        groups_are_inactive: 您是非活动成员的组
         user_is_inactive: 用户处于不活动状态
         username_conflicts_with_existing_user: 用户名与现有用户帐户冲突。
   admin:
     saml:
       edit:
         saml: SAML
-        automatically_login_using_saml_idp_hint: 使用 SAML 身份提供者自动登录。  即使启用了使用 SAML
-          的自动登录， %{url} 也可用于直接登录到 Faspex 。
+        automatically_login_using_saml_idp_hint: 使用 SAML 身份提供者自动登录。  即使启用了使用 SAML 的自动登录， %{url} 也可用于直接登录到 Faspex 。
     saml_configurations:
       edit:
         domain_url_hint: "(可选) 当访问此 Faspex 域时，用户将自动引导通过此 SAML 提供程序进行登录 (覆盖缺省值 )"
@@ -713,7 +712,7 @@ zh:
               time: 时间
             package_deletion:
               after_download: '下载后 :'
-              allow_user_delete: '允许用户按程序包设置自己的删除设置 :'
+              allow_user_delete: '允许用户根据包包设置自己的删除设置 :'
               delete_files_after: 在 <strong>任何接收方</strong> 下载所有文件后删除文件
               delete_files_all: 在 <strong>所有收件人</strong> 下载所有文件后删除文件
               do_nothing: 不做任何事
@@ -732,8 +731,7 @@ zh:
               allowed_to: '允许 :'
               can_see_global_dist_lists: '可以查看全局分发列表:'
               control_hint: 如果未选中，那么用户将无法发送给用户或提交给 dropbox/workgroups
-              create_drop_packages: 如果禁用此选项，那么用户将只能创建 dropbox 软件包 ( 如果它们是任何 dropbox的成员
-                ) 。
+              create_drop_packages: 如果禁用此选项，那么用户将只能创建 dropbox 软件包 ( 如果它们是任何 dropbox的成员 ) 。
               create_normal: '可以创建正常数据包:'
               external_email: '可以发送到外部电子邮件:'
               ip_addr_hint: 输入以逗号分隔的地址/范围，例如 <b>10.0.*， 192.168.1.1</b>
@@ -889,10 +887,8 @@ zh:
           form:
             advanced_config: <i class="icon-plus"></i>高级配置
             basic_config: 基本配置
-            config_message: 以下配置必须指向主管 Aspera Enterprise Server的服务器。 该地址由 Web 应用程序用于收集传输统计信息。
-              如果 Aspera Enterprise Server 与 Web 应用程序在同一台机器上运行，那么正确的地址为 127.0.0.1。
-            sec_add_message: 以下地址是您的用户为了启动传输所需要的内容。 如果您有一组用户需要使用其他地址 (例如，由于网络条件 )
-              ，请使用 "辅助地址" 字段来指定 IP 范围。 请注意，辅助地址不适用于传输中继系统。
+            config_message: 以下配置必须指向主管 Aspera Enterprise Server的服务器。 该地址由 Web 应用程序用于收集传输统计信息。 如果 Aspera Enterprise Server 与 Web 应用程序在同一台机器上运行，那么正确的地址为 127.0.0.1。
+            sec_add_message: 下面的地址是用户为了开始传输而需要的内容。 如果您有一组用户需要使用其他地址 (例如，由于网络条件 ) ，请使用 "辅助地址" 字段来指定 IP 范围。 请注意，辅助地址不适用于传输中继系统。
             storage_error: 此文件存储器当前用作系统缺省收件箱。 编辑它将使所有现有包不可供用户使用。
             test_connect: 测试连接
           index:
@@ -1203,8 +1199,7 @@ zh:
               allow_external_pkg_hint: 如果选中，将允许向 Faspex 用户发送具有 (外部) 标志的软件包
               allow_external_pkg_to_faspex: 允许 Faspex 用户的外部包
               allow_usrs_create: 允许用户创建正常数据包
-              allow_usrs_create_hint: 如果禁用，用户将只能创建 dropbox 软件包 ( 如果它们是任何 dropbox的成员
-                ) 。
+              allow_usrs_create_hint: 如果禁用，用户将只能创建 dropbox 软件包 ( 如果它们是任何 dropbox的成员 ) 。
               allow_usrs_send: 允许所有用户发送给所有其他 Faspex 用户
               always: 总是
               allow_unlock: 允许锁定用户解锁自己
@@ -1272,8 +1267,7 @@ zh:
               security: 保安
               send_welcome_email: 向所有新用户发送欢迎电子邮件
               sender_quota: 发送方限额
-              sender_quota_hint: '发送给这些域中的用户的数据包不会计入发送方限额。 使用逗号 (，)，分号 ( ; )或空格来分隔电子邮件域。
-                例如 : @aspera.com; @ibm.com'
+              sender_quota_hint: '发送给这些域中的用户的数据包不会计入发送方限额。 使用逗号 (，)，分号 ( ; )或空格来分隔电子邮件域。 例如 : @aspera.com; @ibm.com'
               sender_quota_option: 发送方限额选项
               sender_quota_duration: 发送方配额持续时间
               sender_quota_limit: 发送方限额限制
@@ -1298,17 +1292,14 @@ zh:
               http_gateway_url: HTTP 网关 URL
               initial_def_trans_rate: 初始缺省传输速率
               local_host_connect: 本地主机连接
-              local_host_hint: 如果选中， Faspex 将不会使用 Aspera CDN 来服务 Connect ，而是使用 Faspex
-                上可用的本地 Connect SDK 。
+              local_host_hint: 如果选中， Faspex 将不会使用 Aspera CDN 来服务 Connect ，而是使用 Faspex 上可用的本地 Connect SDK 。
               local_to_remote: 本地服务器到远程服务器
               lock_connect_sdk: 锁定 Connect SDK 版本
-              lock_connect_sdk_hint: '如果新版本可用，请防止 Faspex 更新本地 Connect SDK 。 此设置持续跨升级。
-                注: Faspex 定期检查更新，如果禁用此选项，那么不会立即下载新版本'
+              lock_connect_sdk_hint: '如果新版本可用，请防止 Faspex 更新本地 Connect SDK 。 此设置持续跨升级。 注: Faspex 定期检查更新，如果禁用此选项，那么不会立即下载新版本'
               min_connect_version: 最低连接版本
               minrate_hint: 如果选中，客户机将无法调整其传输策略或最小传输速率
               prefer_http_connect: 首选 HTTP 扩展扩展
-              prefer_http_connect_hint: 如果选中， Faspex 将强制浏览器使用 HTTP 方法与 Connect Desktop
-                Client 进行通信，而不是使用浏览器扩展 ( 仅适用于 Chrome 浏览器)
+              prefer_http_connect_hint: 如果选中， Faspex 将强制浏览器使用 HTTP 方法与 Connect Desktop Client 进行通信，而不是使用浏览器扩展 ( 仅适用于 Chrome 浏览器)
               serv_to_serv_relay_trans_sett: 服务器到服务器中继设备传输设置
               server_to_user: 服务器到用户
               transfer_options: 传输选项
@@ -1720,7 +1711,7 @@ zh:
           meaning: 意思
           period: 任何单个字符。
           slash: 转义字符。
-          slashA: 开始字符串。
+          slashA: 字符串的开始。
           slashAa-m: 'Ex: 匹配以 "a" 和 " m" 之间的字母开头的字符串。'
           slashAperiod*z: 'Ex: 匹配以 "a" 开头并以 "z" 结尾的字符串'
           slashz: 字符串结束。
@@ -2045,7 +2036,7 @@ zh:
         sender_quota:
           index:
             sender_alert_1: 已达到 %{quota} MB 的发送方限额限制
-            sender_alert_2: "%{quota} MB 可用。 您的发送方限额限制设置为 %{limit} MB。"
+            sender_alert_2: "%{quota} MB 可用。 发送方限额限制设置为 %{limit} MB。"
             sender_quota: 发送方限额
       shared:
         browser:
@@ -2386,7 +2377,7 @@ zh:
         all_fields_length_error: 所有字段的最大总长度 (包括标签，选项和日期字段 ) 必须小于 %{max} 字符
         field_blank_error: "%{err_label} 不能为空"
         field_illegal_char_error: "%{err_label} 不得包含以下任何字符 :%{illegal}"
-        field_length_error: "%{err_label} 必须为 %{max} 字符或更少"
+        field_length_error: "%{err_label} 必须是 %{max} 字符或更少"
         field_options_error: "%{err_label} 必须包含以下某个选项:%{list}"
         invalid_JSON_error: "%{err_label} 必须是有效的 JSON"
         invalid_share_id_error: mY_err_label_YM 的共享标识 %{err_value} 无效
@@ -2403,7 +2394,7 @@ zh:
         specified_error: 必须指定 %{err_label}
         title_invalid_char_error: 标题不得包含以下任何字符:%{illegal}
         title_length_bounds_error: 标题的最大长度必须在 1 和 %{max} 之间
-        title_length_error: 标题必须为 %{max} 字符或更少
+        title_length_error: 标题必须是 %{max} 字符或更少
         title_length_int_error: 标题的最大长度必须是整数
         title_length_specified_error: 必须指定标题的最大长度
       post_process:
@@ -2519,7 +2510,7 @@ zh:
     - Fri
     - Sat
     abbr_month_names:
-    - 
+    -
     - Jan
     - Feb
     - Mar
@@ -2545,7 +2536,7 @@ zh:
       long: "%B %d, %Y"
       short: "%b %d"
     month_names:
-    - 
+    -
     - January
     - February
     - March
@@ -2617,21 +2608,18 @@ zh:
       cloud_storage_referencing: 此存储器支持的引用 IS 的云存储器。
       connect_install_message: 要使用最大 %{direction} 速度，请安装 MY_Aspera YM 浏览器插件。
       connect_upgrade_message: 要利用最大 %{direction} 速度，请升级 MY_Aspera YM 浏览器插件。
-      confirm: 是否确定要删除 %{package_sender} 发送的软件包 %{package_name} 的文件 ?
+      confirm: 确定要删除 %{package_sender} 发送的软件包 %{package_name} 的文件吗 ?
       copy: 复制到剪贴板
       delete: 删除
-      delete_confirm: 是否确定要删除 %{package_sender} 发送的软件包 %{package_name} 的文件 ?
+      delete_confirm: 确定要删除 %{package_sender} 发送的软件包 %{package_name} 的文件吗 ?
       delete_confirm_forward: 这是另一个包的转发。 将删除原始和所有转发。
       delete_confirm_has_forwards: 此程序包的转发存在。 将删除原始和所有转发。
       enable_hst_dl: 要启用 Aspera 的高速传输，请使用 %{download} Connect 浏览器插件。
       enable_hst_dl_enable: 要启用 Aspera 的高速传输，请使用 %{download} 和 %{enable} 连接浏览器插件。
-      local_transfer_message: 您当前正在使用低速 HTTP。 要启用 Aspera 的高速传输，请访问 %{enable} 以启用/下载
-        Connect 浏览器插件。
+      local_transfer_message: 您当前正在使用低速 HTTP。 要启用 Aspera 的高速传输，请访问 %{enable} 以启用/下载 Connect 浏览器插件。
       no_cloud_storage_referencing: 此存储器不支持引用云存储器。
-      no_transfer_dl: 在没有 Aspera Connect 的情况下进行上载具有性能限制。 要除去此限制并启用 Aspera 的高速传输，请使用
-        %{download} Connect 浏览器插件。
-      no_transfer_dl_enable: 在没有 Aspera Connect 的情况下进行上载具有性能限制。 要除去此限制并启用 Aspera 的高速传输，请使用
-        %{download} 和 %{enable} 连接浏览器插件。
+      no_transfer_dl: 在没有 Aspera Connect 的情况下进行上载具有性能限制。 要除去此限制并启用 Aspera 的高速传输，请使用 %{download} Connect 浏览器插件。
+      no_transfer_dl_enable: 在没有 Aspera Connect 的情况下进行上载具有性能限制。 要除去此限制并启用 Aspera 的高速传输，请使用 %{download} 和 %{enable} 连接浏览器插件。
       not_supp_symbolic_links: 存储器不支持符号链接
       note: '注 :'
       package_details: 单击此处以获取软件包详细信息。
@@ -2674,8 +2662,14 @@ zh:
         config_save_error: 保存配置时出错。  请参阅日志以获取详细信息。
         upload_saved_config: 上载已保存的配置
         restore_config_error: 恢复配置时出错。  请参阅日志以获取详细信息。
-        tar_error: 错误 tarring config %{tar_status} %{tar_out}
-        untar_error: 错误取消配置 %{untar_status} %{untar_stdout}
+        tar_error: |-
+          错误 tarring 配置
+          %{tar_status}
+          %{tar_out}
+        untar_error: |-
+          错误取消环配置
+          %{untar_status}
+          %{untar_stdout}
     aspera_license_reader:
       no_license_found: 未找到许可证或许可证格式不正确
       license_signature_mismatch: 许可证签名不匹配内容

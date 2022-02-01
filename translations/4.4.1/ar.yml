@@ -48,8 +48,7 @@ ar:
         ad_proxy_port: منفذ Active Directory proxy
         announcement: الرسالة
         dbox_can_override_ear: السماح بوجود محددات التشفير الخاصة بهم
-        can_override_ear_per_personal_invite: السماح بمحددات التشفير المهيأة لدعوات
-          الراسل الخارجية
+        can_override_ear_per_personal_invite: السماح بمحددات التشفير المهيأة لدعوات الراسل الخارجية
         e_http_port: منفذ HTTP
         e_https_port: منفذ HTTPS
         e_server_address: عنوان أو عنوان خارجي لوحدة الخدمة
@@ -57,56 +56,47 @@ ar:
         e_server_emails_include_alternate_address: رسائل البريد تتضمن عنوان بديل
         email_passcode_expires: انتهاء وصلة مجموعة البرامج
         email_passcode_days_valid: انتهاء الصلاحية بعد
-        email_passcode_expire_after_download: انتهاء الصلاحية بعد تحميل مجموعة البرامج
-          بالكامل
+        email_passcode_expire_after_download: انتهاء الصلاحية بعد تحميل مجموعة البرامج بالكامل
         registration_type: التسجيل الذاتي
         registration_approval_ccs: اعلام البريد الالكتروني التالي بالموافقة عليه
-        registration_external_use_default: استخدام سياسة التسجيل المفترضة للمستخدمين
-          الخارجيين
+        registration_external_use_default: استخدام سياسة التسجيل المفترضة للمستخدمين الخارجيين
         registration_type_external: سياسة التسجيل للمستخدمين الخارجيين
-        registration_approval_ccs_external: اعلام البريد الالكتروني التالي للموافقة
-          على المستخدمين الخارجيين
+        registration_approval_ccs_external: اعلام البريد الالكتروني التالي للموافقة على المستخدمين الخارجيين
         tos_external: شروط الخدمة للمستخدمين الخارجيين
         package_instructions: الرسالة
         tos: شروط الخدمة
         use_strong_password: استخدام كلمات السرية القوية
-        force_password_reset_for_new_users: طلب مستخدمين جدد لتغيير كلمة السرية عند
-          بدء الاتصال الأول
+        force_password_reset_for_new_users: طلب مستخدمين جدد لتغيير كلمة السرية عند بدء الاتصال الأول
         allow_users_to_unlock: السماح للمستخدمين الذين تم اقفالهم بالغاء اقفال أنفسهم
         session_timeout: انتهاء وقت الجلسات بعد
         allow_send_to_email: السماح بالارسال الى عناوين بريد الكتروني خارجية
         allow_request_from_email: السماح بالدعوات الى
-        registered_users_have_mutual_scope: يمكن للمستخدمين المسجلين ذاتيا أن يتم
-          ارسالهم الى بعضهم البعض
+        registered_users_have_mutual_scope: يمكن للمستخدمين المسجلين ذاتيا أن يتم ارسالهم الى بعضهم البعض
         inviting_allowed: السماح بدعوة مرسلين خارجيين
         hide_user_dir_default: الاحتفاظ بدليل المستخدم الخاص افتراضيا
         public_url_allowed: السماح بعناوين URL للعرض العام
-        dbox_can_override_public_url: السماح لمربعات الكشف باتاحة / الغاء اتاحة عناوين
-          URL العامة الخاصة بها
+        dbox_can_override_public_url: السماح لمربعات الكشف باتاحة / الغاء اتاحة عناوين URL العامة الخاصة بها
         public_url_home_server_id: وحدة الخدمة الرئيسية لعناوين URL العامة
         automatically_login_using_saml_idp: بدء الاتصال باستخدام مانح هوية SAML
         saml_idp_sso_target_url: عنوان URL لبدء الاتصال المنفرد
         saml_idp_slo_target_url: عنوان URL الى IdP Single Log Off
         saml_idp_cert_fingerprint: طباعة IdP Certificate Fingerprint
         saml_idp_cert: شهادة IdP
-        can_see_global_distribution_lists_default: يمكن أن يقوم المستخدمين بمشاهدة
-          كشوف التوزيع الشاملة افتراضيا
+        can_see_global_distribution_lists_default: يمكن أن يقوم المستخدمين بمشاهدة كشوف التوزيع الشاملة افتراضيا
         tos_for_sending: شروط الخدمة للارسال
         remove_ds_users_on_inactivity: ازالة مستخدمي DS
         remove_saml_users_on_inactivity: ازالة مستخدمي SAML
       e_workgroup:
         e_wg_name: الاسم
         e_wg_desc: الوصف
-        workgroup_received_notification_cc: ارسال نسخة من البريد الالكتروني للايصال
-          الى العناوين
+        workgroup_received_notification_cc: ارسال نسخة من البريد الالكتروني للايصال الى العناوين
         destination_share_id: صندوق الوارد المفترض
       invitation:
         expires_at: الأيام حتى الانتهاء
       node:
         alternate_address: العنوان أو الاسم الثانوي
         alternate_address_client_filter: استخدام اذا تم مطابقة عنوان وحدة الطلب
-        alternate_address_server_filter: الاستخدام اذا كان النظام الرئيسي لبرنامج
-          الاستعراض يتطابق
+        alternate_address_server_filter: الاستخدام اذا كان النظام الرئيسي لبرنامج الاستعراض يتطابق
         api_password: كلمة السرية
         api_port: المنفذ
         api_username: اسم المستخدم
@@ -190,13 +180,10 @@ ar:
         can_send_to_external_email: يمكن ارساله الى بريد الكتروني خارجي
         can_invite: السماح بدعوة مرسلين خارجيين
         notify_on_receive: ارسال بريد الكتروني لي عند استلام مجموعة برامج
-        notify_on_validation_failure_if_sender: ارسال بريد الكتروني لي اذا فشلت عملية
-          التحقق من الصلاحية في مجموعات البرامج
-        notify_on_validation_failure_if_recipient: ارسال بريد الكتروني لي اذا فشلت
-          عملية التحقق عند استلام مجموعات البرامج
+        notify_on_validation_failure_if_sender: ارسال بريد الكتروني لي اذا فشلت عملية التحقق من الصلاحية في مجموعات البرامج
+        notify_on_validation_failure_if_recipient: ارسال بريد الكتروني لي اذا فشلت عملية التحقق عند استلام مجموعات البرامج
         notify_downloader_on_download: ارسال بريد الكتروني لي عند تحميل مجموعة برامج
-        notify_on_workgroup_package_if_sender: تضمين لي في اعلامات مجموعة العمل لمجموعات
-          البرامج التي تم ارسالها
+        notify_on_workgroup_package_if_sender: تضمين لي في اعلامات مجموعة العمل لمجموعات البرامج التي تم ارسالها
         suppress_connect_install_dialog: منع ظهور طلبات التركيب / التحديث
         allowed_ip_addresses_for_login: عناوين IP المسموح بها لبدء الاتصال
         allowed_ip_addresses_for_download: عناوين IP المسموح بها للتحميل
@@ -210,8 +197,7 @@ ar:
         updated_at: تحديث في
         type: نوع المستخدم
         description: التعليقات
-        allow_user_specified_delete_after_download: السماح للمستخدم بتحديد محددات
-          الحذف الخاصة بالمجموعة على أساس مجموعة البرامج
+        allow_user_specified_delete_after_download: السماح للمستخدم بتحديد محددات الحذف الخاصة بالمجموعة على أساس مجموعة البرامج
         enable_public_url: اتاحة عنوان URL العام
         can_have_public_url: السماح بعناوين URL للعرض العام
       local_user:
@@ -228,17 +214,13 @@ ar:
         ldap_field_pattern2: regex لمجال LDAP
         ldap_field_pattern3: regex لمجال LDAP
       send:
-        upload_cc: سيتم اعلام هؤلاء المستلمين عند الانتهاء من تحميل مجموعة البرامج
-          هذه
-        download_cc: سيتم اعلام هؤلاء المستلمين عند قيام مستلم بتحميل مجموعة البرامج
-          هذه
-        receipt_cc: سيكون هؤلاء المستلمين Cc' d على مجموعة برامج الاستلام التي تم
-          استلامها بالبريد الالكتروني
+        upload_cc: سيتم اعلام هؤلاء المستلمين عند الانتهاء من تحميل مجموعة البرامج هذه
+        download_cc: سيتم اعلام هؤلاء المستلمين عند قيام مستلم بتحميل مجموعة البرامج هذه
+        receipt_cc: سيقوم هؤلاء المستلمين بعمل Cc' d على مجموعة برامج الاستلام التي تم استلامها بالبريد الالكتروني
     errors:
       format: "%{attribute} %{message}"
       e_configuration:
-        idp_cert_and_idp_cert_fingerprint_blank: يجب توفير واحد من "IdP Certificate
-          Fingerprint" أو "شهادة IdP".
+        idp_cert_and_idp_cert_fingerprint_blank: يجب توفير واحد من "IdP Certificate Fingerprint" أو "شهادة IdP".
       models:
         delivery:
           attributes:
@@ -259,8 +241,7 @@ ar:
         saml_configuration:
           attributes:
             allowed_clock_drift_in_ms:
-              not_a_number: الانحراف عن المنحرف المسموح به للساعة في ملي ثانية ليس
-                رقما
+              not_a_number: الانحراف عن المنحرف المسموح به للساعة في ملي ثانية ليس رقما
       messages:
         accepted: يجب قبوله
         blank: لا يمكن أن يكون خاليا
@@ -299,28 +280,24 @@ ar:
       template:
         body: 'كانت هناك مشاكل في المجالات التالية :'
         header:
-          one: 1 خطأ يمنع هذا %{model} من أن يتم حفظه
+          one: خطأ 1 تم منع هذا %{model} من أن يتم حفظه
           other: أخطاء %{count} محظورة هذا %{model} من أن يتم حفظها
       user:
         groups_are_inactive: المجموعات التي أنت عضو فيها غير فعالة
         user_is_inactive: المستخدم غير فعال
-        username_conflicts_with_existing_user: يتعارض اسم المستخدم مع حساب مستخدم
-          موجود.
+        username_conflicts_with_existing_user: يتعارض اسم المستخدم مع حساب مستخدم موجود.
   admin:
     saml:
       edit:
         saml: SAML
-        automatically_login_using_saml_idp_hint: بدء الاتصال آليا باستخدام SAML Identity
-          Provider.  يمكن استخدام %{url} لبدء الاتصال مباشرة الى Fpex حتى عند اتاحة
+        automatically_login_using_saml_idp_hint: بدء الاتصال آليا باستخدام SAML Identity Provider.  يمكن استخدام %{url} لبدء الاتصال مباشرة الى Fpex حتى عند اتاحة
           بدء الاتصال الآلي باستخدام SAML.
     saml_configurations:
       edit:
-        domain_url_hint: "(اختياريا) عند التوصل لنطاق Fpex هذا ، سيتم توجيه المستخدمين
-          آليا لبدء الاتصال من خلال مانح SAML هذا (احلال المفترض)"
-        publicly_visible_hint: السماح للمستخدمين بالتوصل الى توصيف SAML هذا من صفحة
-          بدء الاتصال المحلي
+        domain_url_hint: "(اختياريا) عند التوصل لنطاق Fpex هذا ، سيتم توجيه المستخدمين آليا لبدء الاتصال من خلال مانح SAML هذا (احلال المفترض)"
+        publicly_visible_hint: السماح للمستخدمين بالتوصل الى توصيف SAML هذا من صفحة بدء الاتصال المحلي
       test_warning: |-
-        تحذير : سيقوم هذا التصرف بانهاء جلسة Fpex الحالية الخاصة بك وتوجيهك الى صفحة بدء الاتصال لجهة اتاحة SAML هذه.
+        تحذير : سيؤدي هذا التصرف الى انهاء جلسة Fpex الحالية الخاصة بك وتوجيهك الى صفحة بدء الاتصال لجهة اتاحة SAML هذه.
 
         لتجنب انهاء الجلسة الحالية الخاصة بك ، يمكنك فتح هذه الوصلة في نافذة خاصة أو في برنامج استعراض مختلف لاختبار هذا التوصيف.
   app:
@@ -357,8 +334,7 @@ ar:
           updated_user: تم بنجاح تعديل المستخدم %{user_name}
           permission_error: انك لا تمتلك التصريح الذي يمكنك من تعديل المستخدم %{user_name}
           activated: تشغيل %{user}
-          disabled_saml_user_note: "<br>ملحوظة : المستخدمين الذين تم ارفاقهم مع توصيفات
-            SAML الغير متاحة سيظل غير فعال"
+          disabled_saml_user_note: "<br>ملحوظة : المستخدمين الذين تم ارفاقهم مع توصيفات SAML الغير متاحة سيظل غير فعال"
           deactivated: الغاء تشغيل %{user}
           removed: تم ازالة %{user}
           removed_external: تم ازالة %{user}
@@ -391,17 +367,14 @@ ar:
           inactivated_error: حدث خطأ أثناء الغاء تشغيل %{script_name}
           updated: تم تعديل النص %{script_name} بنجاح
         saml_configurations_controller:
-          create_success: 'تم بنجاح تكوين توصيف SAML<br>ملحوظة : يجب أن تقوم بتعديل
-            بيانات التوصيف على وحدة خدمة SAML قبل بدء الاتصال.'
-          update_success: 'تم تعديل توصيف SAML بنجاح<br>ملحوظة : قد تحتاج الى تعديل
-            بيانات التوصيف على وحدة خدمة SAML قبل بدء الاتصال.'
+          create_success: 'تم بنجاح تكوين توصيف SAML<br>ملحوظة : يجب أن تقوم بتعديل بيانات التوصيف على وحدة خدمة SAML قبل بدء الاتصال.'
+          update_success: 'تم تعديل توصيف SAML بنجاح<br>ملحوظة : قد تحتاج الى تعديل بيانات التوصيف على وحدة خدمة SAML قبل بدء الاتصال.'
         settings:
           display_settings_controller:
             file_too_large: الملف كبير جدا. الحد الأقصى لحجم الملف هو 5MB
             remove_logo_fail: لا يمكن حذف ملف الشعار المعدل
             remove_logo_success: تم بنجاح ازالة ملف الشعار المهيأ
-            unsupported_file_type: نوع ملف غير مدعم للشعار المهيأ. يجب أن يكون الملف
-              عبارة عن صورة jpeg أو gif أو png.
+            unsupported_file_type: نوع ملف غير مدعم للشعار المهيأ. يجب أن يكون الملف عبارة عن صورة jpeg أو gif أو png.
             updated_settings: محددات عرض تم تعديلها
           entitlement_controller:
             invalid_license: ترخيص Entitlement غير صحيح
@@ -419,8 +392,7 @@ ar:
           package_storage_controller:
             updated_settings: محددات تخزين مجموعة برامج تم تعديلها
           save_restore_config_controller:
-            config_restored: تم استعادة التوصيف. تأكد من اعادة بدء Faspex لاستكمال
-              هذه العملية.
+            config_restored: تم استعادة التوصيف. تأكد من اعادة بدء Faspex لاستكمال هذه العملية.
           security_controller:
             updated_settings: محددات سرية تم تعديلها
           transfer_options_controller:
@@ -452,19 +424,17 @@ ar:
         invitation_created: تم تكوين دعوة الى %{email}
         reinvited: دعوة تم دعوتها الى %{name}
         reinvited_fail: فشل اعادة الاستدعاء. برجاء اعادة المحاولة فيما بعد.
-        resend_invitation_failed: فشلت عملية اعادة توجيه الدعوة. برجاء اعادة المحاولة
-          فيما بعد.
+        resend_invitation_failed: فشلت عملية اعادة توجيه الدعوة. برجاء اعادة المحاولة فيما بعد.
         resent_invitation: اعادة توجيه دعوة الى %{name}
         deleted_invitation: دعوة تم حذفها
         deleted_invitation_try_again: فشل في حذف دعوة. برجاء اعادة المحاولة فيما بعد.
       login_base_controller:
-        login_error_message: بدء الاتصال الخاص بك كان غير ناجح. برجاء اعادة المحاولة
-          مرة أخرى. اذا كنت تقوم باختبار فشل بدء الاتصال المتكرر ، يجب أن تقوم بالضغط
-          على وصلة 'Forwset Password' لارجاع كلمة السرية الخاصة بك.
+        login_error_message: >-
+          بدء الاتصال الخاص بك كان غير ناجح. برجاء اعادة المحاولة مرة أخرى. اذا كنت تقوم باختبار فشل بدء الاتصال المتكرر ، يجب أن تقوم بالضغط على وصلة 'Forwset Password'
+          لارجاع كلمة السرية الخاصة بك.
       login_controller:
         connect_enabled: تم اتاحة IBM Aspera Connect !
-        login_URL_change: تم تغيير عنوان URL الخاص ببدء الاتصال. برجاء تحديث علامة
-          توقف برنامج الاستعراض الخاص بك.
+        login_URL_change: تم تغيير عنوان URL الخاص ببدء الاتصال. برجاء تحديث علامة توقف برنامج الاستعراض الخاص بك.
         session_already_disconnected: تم قطع اتصال هذه الجلسة بالفعل
       m_configuration_controller:
         updated: تم تعديل توصيف البريد.
@@ -472,17 +442,14 @@ ar:
         loaded: تم تحميل المحددات المفترضة بنجاح
         updated: تم تعديل اعلام البريد الالكتروني %{template} بنجاح
       metadata_profiles_controller:
-        cannot_delete_profile: لا يمكن حذف ملف المواصفات ، يتم استخدامه بواسطة مجموعات
-          البرامج العادية.
-        cannot_delete_profile_dropbox: لا يمكن حذف ملف المواصفات ، ويتم استخدامه بواسطة
-          المربع المسقط %{db_name}.
+        cannot_delete_profile: لا يمكن حذف ملف المواصفات ، يتم استخدامه بواسطة مجموعات البرامج العادية.
+        cannot_delete_profile_dropbox: لا يمكن حذف ملف المواصفات ، ويتم استخدامه بواسطة المربع المسقط %{db_name}.
         created: بيانات التوصيف التي تم تكوينها %{profile}
         profile_deleted: تم حذف ملف المواصفات.
         save_success: تم حفظ ملف مواصفات metadata
         updated: تم التعديل
       ms_admin_controller:
-        home_server_rules_changed: تم تغيير قواعد وحدة الخدمة الرئيسية. قم باعادة
-          حساب وحدات الخدمة الرئيسية لتطبيق التغييرات.
+        home_server_rules_changed: تم تغيير قواعد وحدة الخدمة الرئيسية. قم باعادة حساب وحدات الخدمة الرئيسية لتطبيق التغييرات.
         updated_rule: قاعدة تم تعديلها
         deleted_rule: قاعدة تم حذفها
         added_new_rule: قاعدة جديدة تم اضافتها
@@ -495,21 +462,17 @@ ar:
         archived: مجموعة البرامج "%{pkg_name}" التي تم تخزينها
         archived_fail: خطأ في تخزين مجموعة البرامج. برجاء اعادة المحاولة فيما بعد.
         deleted: تم حذف مجموعة البرامج "%{pkg_name}"
-        deleted_fail: حدث خطأ أثناء حذف مجموعة البرامج. برجاء اعادة المحاولة فيما
-          بعد.
+        deleted_fail: خطأ في حذف مجموعة البرامج. برجاء اعادة المحاولة فيما بعد.
       received_controller:
         package_archived: مجموعة البرامج %{p_name} التي تم تخزينها
-        package_archived_fail: خطأ في تخزين مجموعة البرامج. برجاء اعادة المحاولة فيما
-          بعد.
+        package_archived_fail: خطأ في تخزين مجموعة البرامج. برجاء اعادة المحاولة فيما بعد.
       registrations_controller:
         failed_registration: فشلت عملية التسجيل. برجاء اعادة المحاولة فيما بعد.
       reset_password_tokens_controller:
         no_account_exists: لم يعد هذا الحساب موجودا.
-        expired_pw_link: تم بالفعل استخدام وصلة اعادة ضبط كلمة السرية الخاصة بك أو
-          انتهت صلاحيتها ولم تعد صحيحة.
+        expired_pw_link: تم بالفعل استخدام وصلة اعادة ضبط كلمة السرية الخاصة بك أو انتهت صلاحيتها ولم تعد صحيحة.
         reset_success: تم ارجاع كلمة السرية بنجاح !
-        reset_submitted: تم احالة طلب اعادة ضبط كلمة السرية. اذا لم يتم استلام بريد
-          الكتروني قريبا ، اتصل بموجه النظام الخاص بك للحصول على مساعدة.
+        reset_submitted: تم احالة طلب اعادة ضبط كلمة السرية. اذا لم يتم استلام بريد الكتروني قريبا ، اتصل بموجه النظام الخاص بك للحصول على مساعدة.
       saml_controller:
         does_not_exist: مانح SAML المطلوب غير موجود
         disabled: تم الغاء اتاحة SAML Provider المطلوب
@@ -518,8 +481,7 @@ ar:
         archived: مجموعة البرامج "%{pkg_name}" التي تم تخزينها
         archived_fail: خطأ في تخزين مجموعة البرامج. برجاء اعادة المحاولة فيما بعد.
         deleted: تم حذف مجموعة البرامج "%{pkg_name}"
-        deleted_fail: حدث خطأ أثناء حذف مجموعة البرامج. برجاء اعادة المحاولة فيما
-          بعد.
+        deleted_fail: خطأ في حذف مجموعة البرامج. برجاء اعادة المحاولة فيما بعد.
         relay: تم بدء Relay لمشاركة %{share}
         relay_fail: خطأ في اعادة بدء التتابع. برجاء اعادة المحاولة فيما بعد.
       settings:
@@ -547,10 +509,8 @@ ar:
           deactivate: الغاء تشغيل
           deactivated_success: تم الغاء تفعيل %{counts.YM memberlMY_unsal}. %{msg}%{admin}
           deleted_success: تم حذف %{type} %{name}
-          external_email_no_standard_access: لا يمكن منح مستخدمي البريد الالكتروني
-            الخارجي امكانية توصل قياسية. لم يتم عمل تغييرات.
-          external_email_deactivated_fail: لا يمكن الغاء تشغيل مستخدمي البريد الالكتروني
-            الخارجي ، سيتم ازالتهم فقط. لم يتم عمل تغييرات.
+          external_email_no_standard_access: لا يمكن منح مستخدمي البريد الالكتروني الخارجي امكانية توصل قياسية. لم يتم عمل تغييرات.
+          external_email_deactivated_fail: لا يمكن الغاء تشغيل مستخدمي البريد الالكتروني الخارجي ، سيتم ازالتهم فقط. لم يتم عمل تغييرات.
           members_actions: وظائف الأعضاء ...
           no_ds_selected: لم يتم تحديد مجموعات DS
           no_members_selected: لم يتم تحديد أعضاء
@@ -558,21 +518,16 @@ ar:
           remove_member: تم ازالة %{member} من مجموعة العمل.
           remove_member_fail: لا يمكن ازالة العنصر. برجاء اعادة المحاولة فيما بعد.
           remove_ds_group: تم ازالة %{count} من مجموعة العمل.
-          remove_ds_group_fail: لا يمكن ازالة مجموعة DS. برجاء اعادة المحاولة فيما
-            بعد.
+          remove_ds_group_fail: لا يمكن ازالة مجموعة DS. برجاء اعادة المحاولة فيما بعد.
           set_admin: قم بتحديد %{member} على أنه %{name} admin.
-          set_admin_fail: لا يمكن جعل مستخدمي البريد الالكتروني الخارجي adminbox admins
-            admins. لم يتم عمل تغييرات.
+          set_admin_fail: لا يمكن جعل مستخدمي البريد الالكتروني الخارجي adminbox admins admins. لم يتم عمل تغييرات.
           set_ds_access: تحديد اتصال %{group} على أنه %{level} access.
-          set_ds_access_fail: لا يمكن تحديد امكانية التوصل %{level} لمجموعات DS. برجاء
-            اعادة المحاولة فيما بعد.
+          set_ds_access_fail: لا يمكن تحديد امكانية التوصل %{level} لمجموعات DS. برجاء اعادة المحاولة فيما بعد.
           set_regular_access: تحديد %{member} كامكانية توصل عادية.
-          set_regular_access_fail: لا يمكن تحديد امكانية توصل منتظمة للأعضاء. برجاء
-            اعادة المحاولة فيما بعد.
+          set_regular_access_fail: لا يمكن تحديد اتصال منتظم للأعضاء. برجاء اعادة المحاولة فيما بعد.
           set_standard_access: تحديد امكانية التوصل القياسية
           set_submit_only: تحديد %{member} كاحالة للتشغيل-فقط.
-          set_submit_only_fail: لا يمكن تحديد امكانية توصل-فقط للأعضاء. برجاء اعادة
-            المحاولة فيما بعد.
+          set_submit_only_fail: لا يمكن تحديد امكانية توصل-فقط للأعضاء. برجاء اعادة المحاولة فيما بعد.
           set_submit_only_access: تحديد امكانية توصل للتشغيل-فقط
           set_wg_admin: تحديد على أنه %{wg_name} admin
           skipped_sys_admin: تم تخطي %{size} على النظام (موجهي النظام)
@@ -650,16 +605,15 @@ ar:
           back: للخلف
           name: الاسم
           remove: ازالة
-          self_reg_added: 'سيتم اضافة المستخدمين المسجلين ذاتيا الى مجموعات العمل
-            التالية :'
+          self_reg_added: 'سيتم اضافة المستخدمين المسجلين ذاتيا الى مجموعات العمل التالية :'
           template_user_workgroups: مجموعات عمل مستخدم القالب
         passwords:
           back_to_edit: العودة الى التحرير
           cancel: الغاء
           password: تغيير كلمة السرية الى %{local_name}
-          reset_confirm: هل أنت متأكد من أنك تريد اعادة تحديد كلمة السرية الخاصة بهذا
-            المستخدم ؟ سيتم ارسال اعلام بريد الكتروني الى هذا المستخدم يسمح لهم ببدء
-            الاتصال وتغيير كلمة السرية الخاصة بهم.
+          reset_confirm: >-
+            هل أنت متأكد من أنك تريد اعادة تحديد كلمة السرية الخاصة بهذا المستخدم ؟ سيتم ارسال اعلام بريد الكتروني الى هذا المستخدم يسمح لهم ببدء الاتصال وتغيير كلمة
+            السرية الخاصة بهم.
           reset_password: ارجاع كلمة السرية
           update_password: تعديل كلمة السرية
         registrations:
@@ -672,11 +626,9 @@ ar:
             approve: موافقة
             deny: رفض
             faspex_reg_type: تم توصيف Fapex مع تسجيل %{type}.
-            new_message: هذا يعني أن الحسابات التي تم تكوينها حديثا ستتطلب الموافقة
-              على %{not}.
+            new_message: هذا يعني أن الحسابات التي تم تكوينها حديثا ستتطلب موافقة %{not}.
             not: لا
-            self_reg_users: سيقوم المستخدمين المسجلين ذاتيا بتوارث تصاريح %{template_user}
-              وسيصبحون آليا أعضاء في %{workgroups} التالية.
+            self_reg_users: سيقوم المستخدمين المسجلين ذاتيا بتوارث تصاريح %{template_user} وسيصبحون آليا أعضاء في %{workgroups} التالية.
         saml_groups:
           edit:
             back: للخلف
@@ -737,22 +689,19 @@ ar:
             account_details:
               account_details: تفاصيل الحساب
               active: فعال
-              admin_hint: يستطيع موجهي النظام اضافة / ازالة المستخدمين وادارة توصيف
-                وحدة الخدمة.
+              admin_hint: يستطيع موجهي النظام اضافة / ازالة المستخدمين وادارة توصيف وحدة الخدمة.
               inactive: غير فعال
               manager_hint: يستطيع المديرين اضافة / ازالة مستخدمين
               never: أبدا
               role: 'الوظيفة :'
-              text_area_hint: أدخل عناوين بريد الكتروني مفصولة بفاصلة أو فاصلة منقوطة
-                أو مسافة خالية
+              text_area_hint: أدخل عناوين بريد الكتروني مفصولة بفاصلة أو فاصلة منقوطة أو مسافة خالية
               user_hint: يمكن للمستخدمين العاديين ارسال واستلام مجموعات برامج Frapex
             advanced_transfer:
               adv_trans_setting: محددات النقل المتقدمة
               checked: تم تعليمه
               initial_transfer: معدل النقل المبدئي
               max_rate: الحد الأقصى المسموح به
-              minrate_hint: 'في حالة تحديده ، لن يتمكن Clients من ضبط أسلوب النقل
-                الخاص بهم أو الحد الأدنى من معدل النقل (المفترض : %{config})'
+              minrate_hint: 'في حالة تحديده ، لن يتمكن Clients من ضبط أسلوب النقل الخاص بهم أو الحد الأدنى من معدل النقل (المفترض : %{config})'
               server_to_user: 'وحدة خدمة الى مستخدم (المفترض : %{config})'
               transfer_alert: |-
                 سيقوم FApex باستخدام محددات النقل من الجزء Aspera Central Server بصفة مفترضة.
@@ -768,12 +717,9 @@ ar:
               time: الوقت
             package_deletion:
               after_download: 'بعد التحميل :'
-              allow_user_delete: 'السماح للمستخدم بتحديد محددات الحذف الخاصة به على
-                أساس -package-by-package :'
-              delete_files_after: حذف الملفات بعد <strong>أي مستلم</strong> تحميل
-                كل الملفات
-              delete_files_all: حذف الملفات بعد تحميل <strong>كل المستلمين</strong>
-                تحميل كل الملفات
+              allow_user_delete: 'السماح للمستخدم بتحديد محددات الحذف الخاصة به على أساس -package-by-package :'
+              delete_files_after: حذف الملفات بعد <strong>أي مستلم</strong> تحميل كل الملفات
+              delete_files_all: حذف الملفات بعد تحميل <strong>كل المستلمين</strong> تحميل كل الملفات
               do_nothing: لا تفعل شيئا
               package_deletion: حذف مجموعة البرامج
               server_delete: 'المفترض : %{config}'
@@ -789,23 +735,19 @@ ar:
               allow_public_submission: 'السماح بعناوين احالة عامة :'
               allowed_to: 'مسموح به :'
               can_see_global_dist_lists: 'يمكن مشاهدة كشوف التوزيع الشاملة :'
-              control_hint: اذا لم يتم تعليمه ، لن يتمكن المستخدم من ارساله الى المستخدمين
-                أو ارساله الى كشف مسقط / مجموعات عمل
-              create_drop_packages: اذا تم الغاء اتاحة هذا الاختيار ، سيتمكن المستخدم
-                فقط من تكوين مجموعات برامج مسقط ، اذا كانت عبارة عن عنصر من أي من
-                مربعات الكشف المسقط.
+              control_hint: اذا لم يتم تعليمه ، لن يتمكن المستخدم من ارساله الى المستخدمين أو ارساله الى مربعات الكشف / مجموعات العمل
+              create_drop_packages: اذا تم الغاء اتاحة هذا الاختيار ، سيتمكن المستخدم فقط من تكوين مجموعات برامج مسقط ، اذا كانت عبارة عن عنصر من أي من مربعات الكشف
+                المسقط.
               create_normal: 'يمكن تكوين مجموعات برامج عادية :'
               external_email: 'يمكن ارساله الى بريد الكتروني خارجي :'
-              ip_addr_hint: أدخل عناوين / نطاقات مفصولة بفاصلات ، على سبيل المثال
-                ، <b>10.0. * ، 192.168.1.1</b>
+              ip_addr_hint: أدخل عناوين / نطاقات مفصولة بفاصلات ، على سبيل المثال ، <b>10.0. * ، 192.168.1.1</b>
               keep_dir_private: 'الاحتفاظ بدليل المستخدم الخاص :'
               neg: لا
               permissions: التصاريح
               see_global_dis_list: 'يمكن مشاهدة كشوف التوزيع الشاملة :'
               send_to_all: 'يمكن ارساله الى كل مستخدمي Faspex :'
-              send_to_all_send_to_wg: اذا كان مسموح به ، يمكن أن يقوم المستخدم بالارسال
-                الى كل مستخدمي Faspex. خلاف ذلك ، يمكن أن يقوم المستخدم بالارسال الى
-                أعضاء مجموعة العمل الآخرين فقط.
+              send_to_all_send_to_wg: اذا كان مسموح به ، يمكن أن يقوم المستخدم بالارسال الى كل مستخدمي FIpex. خلاف ذلك ، يمكن أن يقوم المستخدم بالارسال الى أعضاء
+                مجموعة العمل الآخرين فقط.
               user_server_def: 'مفترضات وحدة خدمة المستخدم (حاليا : %{def})'
             personal_details:
               first_name: الاسم الأول
@@ -883,7 +825,7 @@ ar:
           login_method: 'طريقة بدء الاتصال :'
           password: 'كلمة السرية :'
           port: 'المنفذ :'
-          provide_credentials: أدخل بيانات الاعتماد
+          provide_credentials: اتاحة اعتمادات
           save: حفظ
           save_and_test: حفظ واختبار
           server: 'وحدة الخدمة :'
@@ -919,7 +861,7 @@ ar:
             login_method: 'طريقة بدء الاتصال :'
             password: 'كلمة السرية :'
             port: 'المنفذ :'
-            provide_cred: أدخل بيانات الاعتماد
+            provide_cred: اتاحة اعتمادات
             save: حفظ
             save_and_test: حفظ واختبار
             secure_tls: 'استخدام Secure Mode (TLS) :'
@@ -952,17 +894,13 @@ ar:
           form:
             advanced_config: <i class="icon-plus"></i>التوصيف المتقدم
             basic_config: التوصيف الأساسي
-            config_message: يجب أن تشير المواصفات التالية الى وحدة الخدمة التي تستضيف
-              وحدة خدمة Aspera Enterprise Server. يتم استخدام العنوان بواسطة تطبيق
-              web لتجميع احصائيات النقل. اذا كانت Aspera Enterprise Server تعمل على
-              نفس الجهاز مثل تطبيق web ، فان العنوان الصحيح هو 127.0.0.1.
-            sec_add_message: العنوان التالي هو ما سيحتاج اليه المستخدمين من أجل بدء
-              عمليات النقل. اذا كان لديك مجموعة من المستخدمين الذين يحتاجون الى استخدام
-              عنوان مختلف (على سبيل المثال ، بسبب شروط شبكة الاتصال) ، قم باستخدام
-              مجالات 'العنوان الثانوي' لتحديد مدى IP. يجب ملاحظة أن العنوان الثانوي
-              لا ينطبق على نقل المرحلات.
-            storage_error: يتم استخدام مساحة تخزين الملف حاليا على أنها صندوق الوارد
-              المفترض للنظام. تحريره سيجعل كل مجموعات البرامج الموجودة غير متاحة للمستخدمين.
+            config_message: >-
+              يجب أن تشير المواصفات التالية الى وحدة الخدمة التي تستضيف وحدة خدمة Aspera Enterprise Server. يتم استخدام العنوان بواسطة تطبيق web لتجميع احصائيات النقل.
+              اذا كانت Aspera Enterprise Server تعمل على نفس الجهاز مثل تطبيق web ، فان العنوان الصحيح هو 127.0.0.1.
+            sec_add_message: >-
+              العنوان التالي هو ما سيحتاج اليه المستخدمين من أجل بدء عمليات النقل. اذا كان لديك مجموعة من المستخدمين الذين يحتاجون الى استخدام عنوان مختلف (على سبيل
+              المثال ، بسبب شروط شبكة الاتصال) ، قم باستخدام مجالات 'العنوان الثانوي' لتحديد مدى IP. يجب ملاحظة أن العنوان الثانوي لا ينطبق على نقل المرحلات.
+            storage_error: يتم استخدام مساحة تخزين الملف حاليا على أنها صندوق الوارد المفترض للنظام. تحريره سيجعل كل مجموعات البرامج الموجودة غير متاحة للمستخدمين.
             test_connect: اختبار الوصلة
           index:
             add_new: اضافة %{name} جديد
@@ -1054,16 +992,12 @@ ar:
             update: تعديل
           env_var_help:
             description: الوصف
-            faspex_meta<field>: قيمة مجال بيانات التوصيف التي تسمى &lt;field&gt; بحروف
-              علوية يتم استبدالها بحروف سفلية ومسافات تم استبدالها بحرف التسطير
-            faspex_metadata_fields: كشف مفصول بفاصلات لمجالات بيانات التوصيف التي
-              تم تعريفها لمجموعة البرامج
-            faspex_pkg_delivery_id: كود التسليم الخاص بمجموعة البرامج (مختلف عن كود
-              مجموعة البرامج وكود UUID لمجموعة البرامج)
+            faspex_meta<field>: قيمة مجال بيانات التوصيف التي تسمى &lt;field&gt; بحروف علوية يتم استبدالها بحروف سفلية ومسافات تم استبدالها بحرف التسطير
+            faspex_metadata_fields: كشف مفصول بفاصلات لمجالات بيانات التوصيف التي تم تعريفها لمجموعة البرامج
+            faspex_pkg_delivery_id: كود التسليم الخاص بمجموعة البرامج (مختلف عن كود مجموعة البرامج وكود UUID لمجموعة البرامج)
             faspex_pkg_dir: مسار الى مجموعة البرامج
             faspex_pkg_id: كود مجموعة البرامج
-            faspex_pkg_is_forward: 1 لمجموعات المواد المرسلة و 0 لمجموعات البرامج
-              الأصلية
+            faspex_pkg_is_forward: 1 لمجموعات المواد المرسلة و 0 لمجموعات البرامج الأصلية
             faspex_pkg_name: عنوان المجموعة
             faspex_pkg_note: مذكرة مجموعة
             faspex_pkg_total_bytes: حجم مجموعة البرامج بالبايت
@@ -1071,8 +1005,7 @@ ar:
             faspex_pkg_uuid: UUID لمجموعة البرامج
             faspex_recipient_count: عدد المستلمين (على سبيل المثال ، "3")
             faspex_recipient_i: اسم مستلم i-th
-            faspex_recipient_list: كشف المستلمين الذي يتم فصله بفاصلة (على سبيل المثال
-              ، "admin, johndoe")
+            faspex_recipient_list: كشف المستلمين مفصول بفاصلات (على سبيل المثال ، "admin, johndoe")
             faspex_sender_email: بريد الكتروني للراسل
             faspex_sender_id: الكود الخاص بالراسل
             faspex_sender_name: اسم الراسل
@@ -1145,11 +1078,9 @@ ar:
             publicly_visible: مرئي بشكل علني
             redirect_saml: اعادة التوجيه الى صفحة انهاء اتصال SAML في انهاء الاتصال
             restrict_login_groups: تقييد الوصول إلى المجموعات المعروفة
-            restrict_login_groups_hint: اذا تم تعليمه ، سيسمح للأعضاء فقط من مجموعات
-              SAML التي تم اضافتها الى فابكس ببدء الاتصال.
+            restrict_login_groups_hint: اذا تم تعليمه ، سيسمح للأعضاء فقط من مجموعات SAML التي تم اضافتها الى فابكس ببدء الاتصال.
             restrict_login_users: تقييد الوصول إلى المستخدمين المعروفين
-            restrict_login_users_hint: اذا تم تعليمه ، سيتم السماح لمستخدمي SAML الموجودين
-              فقط الذين تم اضافتهم الى Fepex ببدء الاتصال.
+            restrict_login_users_hint: اذا تم تعليمه ، سيتم السماح لمستخدمي SAML الموجودين فقط الذين تم اضافتهم الى فابكس ببدء الاتصال.
             saml_config: توصيف SAML
             saml_config_details: تفاصيل توصيف SAML
             SAML_metadata_server: توصيف وحدة خدمة SAML
@@ -1175,29 +1106,25 @@ ar:
             remove_default: ازالة المفترض
             saml_config: توصيفات SAML
             saml_confirm: هل أنت متأكد من أنك ترغب في اتاحة توصيف SAML هذا ؟
-            saml_confirm_disable: هل أنت متأكد من أنك ترغب في الغاء اتاحة توصيف SAML
-              هذا ؟
+            saml_confirm_disable: هل أنت متأكد من أنك تريد الغاء اتاحة توصيف SAML هذا ؟
             test: اختبار
           user_profile:
             name: الاسم
             remove: ازالة مجال ملف المواصفات هذا
-            remove_confirm: هل أنت متأكد من أنك ترغب في ازالة مجال ملف مواصفات المستخدم
-              هذا ؟
+            remove_confirm: هل أنت متأكد من أنك ترغب في ازالة مجال ملف مواصفات المستخدم هذا ؟
           user_profile_fields:
             add_local_field: اضافة مجال ملف مواصفات محلي
-            default_profile_fields: مجالات ملف المواصفات المفترضة
+            default_profile_fields: مجالات ملف المواصفات المفترض
             enabled: متاح
             fields_required: المجالات المطلوبة لكل مستخدمي Sepex
-            global_cust_message: تم تعريف المجالات المهيأة في علامة التبويب ملف مواصفات
-              المستخدم
+            global_cust_message: تم تعريف المجالات المهيأة في علامة التبويب ملف مواصفات المستخدم
             global_cust_prof_fields: مجالات ملف مواصفات مهيأ شامل
             local_cust_message: مجالات ملف مواصفات المستخدم المحددة لتوصيف SAML هذا
             local_cust_prof_fields: مجالات ملف المواصفات المهيأ المحلي
             name: الاسم
             required: مطلوب
             saml_name: اسم SAML
-            save_note: 'ملحوظة : لن يتم حفظ أي تغييرات حتى تقوم بالضغط على ''تعديل
-              توصيف SAML'''
+            save_note: 'ملحوظة : لن يتم حفظ أي تغييرات حتى تقوم بالضغط على ''تعديل توصيف SAML'''
         settings:
           display_settings:
             date_format:
@@ -1252,16 +1179,13 @@ ar:
               after_upload_ends: بعد انتهاء التحميل
               characters: حروف
               days: يوم (أيام)
-              delete_files_all: حذف الملفات بعد تحميل <strong>كل المستلمين</strong>
-                تحميل كل الملفات
-              delete_files_any: حذف الملفات بعد <strong>أي مستلم</strong> تحميل كل
-                الملفات
+              delete_files_all: حذف الملفات بعد تحميل <strong>كل المستلمين</strong> تحميل كل الملفات
+              delete_files_any: حذف الملفات بعد <strong>أي مستلم</strong> تحميل كل الملفات
               do_nothing: لا تفعل شيئا
               max_pkg_title: أقصى طول لعنوان الحزمة في مسارات التخزين
               package_storage: تخزين مجموعة البرامج
               packages_expire: انتهاء مجموعات البرامج
-              pkg_by_pkg_del: السماح لكل المستخدمين بتحديد محددات الحذف الخاصة بهم
-                على أساس package-by-package
+              pkg_by_pkg_del: السماح لكل المستخدمين بتحديد محددات الحذف الخاصة بهم على أساس package-by-package
               update: تعديل
           save_restore:
             index:
@@ -1272,8 +1196,7 @@ ar:
               restore_config: استعادة التوصيف
               save_restore: حفظ / استعادة
               upload_help: قم بتحميل وتطبيق ملف التوصيف الذي تم حفظه (*.tar.gz)
-              version_help: 'ملحوظة : يجب أن تكون نسخة الاستعادة مطابقة للنسخة الحالية
-                من faspex'
+              version_help: 'ملحوظة : يجب أن تكون نسخة الاستعادة مطابقة للنسخة الحالية من faspex'
           security:
             edit:
               act_dir_hint: لن يتم اقفال أو الغاء تشغيل مستخدمي خدمات الدليل
@@ -1283,28 +1206,20 @@ ar:
               after_inactivity: بعد أيام عدم الفعالية %{len}
               after_one_success: بعد عملية تحميل ناجحة واحدة
               allow_custom_link: السماح للمستخدمين بتحديد سياسة انتهاء الوصلة المهيأة
-              allow_email_change: السماح للمستخدمين بتغيير عنوان البريد الالكتروني
-                الخاص بهم
-              allow_external_pkg_hint: اذا تم تعليمه ، سيتم السماح بمجموعات البرامج
-                التي تم ارسالها الى مستخدمي فاسكس باستخدام الشارة (الخارجية)
+              allow_email_change: السماح للمستخدمين بتغيير عنوان البريد الالكتروني الخاص بهم
+              allow_external_pkg_hint: اذا تم تعليمه ، سيتم السماح بمجموعات البرامج التي تم ارسالها الى مستخدمي فاسكس باستخدام الشارة (الخارجية)
               allow_external_pkg_to_faspex: اتاحة مجموعات برامج خارجية لمستخدمي sepex
               allow_usrs_create: السماح للمستخدمين بتكوين مجموعات برامج عادية
-              allow_usrs_create_hint: اذا تم الغاء الاتاحة ، سيتمكن المستخدمين فقط
-                من تكوين مجموعات برامج مسقط ، اذا كانوا أعضاء في أي من مربعات الكشف
-                المسقط.
-              allow_usrs_send: السماح لكل المستخدمين بالارسال الى كل مستخدمي Faspx
-                الآخرين
+              allow_usrs_create_hint: اذا تم الغاء الاتاحة ، سيتمكن المستخدمين فقط من تكوين مجموعات برامج مسقط ، اذا كانوا أعضاء في أي من مربعات الكشف المسقط.
+              allow_usrs_send: السماح لكل المستخدمين بالارسال الى كل مستخدمي Faspx الآخرين
               always: دائما
               allow_unlock: السماح للمستخدمين الذين تم اقفالهم بالغاء اقفال أنفسهم
               allow_send_email: السماح بالارسال الى عناوين بريد الكتروني خارجية
               appr_recipient_domains: نطاقات المستلمين المعتمدة
               appr_sender_domains: نطاقات الراسل المعتمدة
-              block_email_domain: تجميع نطاقات البريد الالكتروني التالية من التسجيل
-                الذاتي
-              can_override_ear_hint: يمكن أن يقوم المستخدم بالاختيار عند دعوة مرسلين
-                خارجيين اذا كان سيتم فرض التشفير أم لا
-              can_see_dist_list: يمكن أن يقوم المستخدمين بمشاهدة كشوف التوزيع الشاملة
-                افتراضيا
+              block_email_domain: تجميع نطاقات البريد الالكتروني التالية من التسجيل الذاتي
+              can_override_ear_hint: يمكن أن يقوم المستخدم بالاختيار عند دعوة مرسلين خارجيين اذا كان سيتم فرض التشفير أم لا
+              can_see_dist_list: يمكن أن يقوم المستخدمين بمشاهدة كشوف التوزيع الشاملة افتراضيا
               cipher: FASP Cipher
               days: يوم (أيام)
               dbox_override: السماح بوجود محددات التشفير الخاصة بهم
@@ -1313,8 +1228,7 @@ ar:
               disable: الغاء اتاحة
               disable_hint: نافذة التصفح الخاصة بحصة الراسل ، المدة بالساعات
               ds_users: مستخدمي DS بعد %{int} أيام عدم الفعالية
-              email_expire_after_download: انتهاء الصلاحية بعد تحميل مجموعة البرامج
-                بالكامل
+              email_expire_after_download: انتهاء الصلاحية بعد تحميل مجموعة البرامج بالكامل
               enable: اتاحة
               encrypt_hint: اذا تم اتاحته ، سيتم تشفير تحويلات HTTP fallback أيضا
               encrypt_transfers: تشفير عمليات النقل
@@ -1322,108 +1236,87 @@ ar:
               enforce_pw_hist: لم يتم اعادة استخدام سابق
               every: كل
               faspex_acc: حسابات فاكس
-              force_pw_reset: طلب مستخدمين جدد لتغيير كلمة السرية عند بدء الاتصال
-                الأول
+              force_pw_reset: طلب مستخدمين جدد لتغيير كلمة السرية عند بدء الاتصال الأول
               hours: ساعة
               inviting_allowed: السماح بدعوة مرسلين خارجيين
               ignore_invalid_recipients: تجاهل المستلمين غير الصحيحة
-              ignore_invalid_recipients_hint: اذا تم تعليمه ، لن تفشل عملية ارسال
-                مجموعة البرامج عندما يتم توجيه مجموعة برامج الى مستلمين غير صحيحين
+              ignore_invalid_recipients_hint: اذا تم تعليمه ، لن تفشل عملية ارسال مجموعة البرامج عندما يتم توجيه مجموعة برامج الى مستلمين غير صحيحين
               inv_link_expires: انتهاء وصلة الدعوة
-              inv_link_help: تحديد سياسة انتهاء الوصلة للدعوات الخاصة بكل من دعوات
-                الكشف الشخصية والاسقاط.
+              inv_link_help: تحديد سياسة انتهاء الوصلة للدعوات الخاصة بكل من دعوات مربع الاختيار.
               keep_usr_dir: الاحتفاظ بدليل المستخدم الخاص
-              list_hint: أدخل عناوين بريد الكتروني مفصولة بفاصلة أو فاصلة منقوطة أو
-                مسافة خالية
+              list_hint: أدخل عناوين بريد الكتروني مفصولة بفاصلة أو فاصلة منقوطة أو مسافة خالية
               local_users: المستخدمين المحليين بعد أيام عدم الفعالية %{int}.
               lock_hint: بعد %{login_count} فشل محاولات بدء الاتصال داخل
               lock_users: اقفال المستخدمين
               minutes: دقائق
               neg: لا
               never: أبدا
-              new_user_pw: كلمات سرية مستخدم جديد %{req}. كلمات السرية الموجودة ستظل
-                صحيحة %{warn}
+              new_user_pw: كلمات سرية مستخدم جديد %{req}. كلمات السرية الموجودة ستظل صحيحة %{warn}
               obfuscation: مراقبة Obfuscation
               optional: اختياري
-              optional_hint: قد يختار المستخدم في وقت الارسال ما اذا كان سيتم التشفير
-                أم لا
+              optional_hint: قد يختار المستخدم في وقت الارسال ما اذا كان سيتم التشفير أم لا
               otfv: التحقق من صلاحية ملف Out-Transfer File (OTFV)
               outside_email_add: عناوين البريد الالكتروني الخارجية
               package_link_expires: انتهاء وصلة مجموعة البرامج
-              package_link_help: اذا تم تعليمه ، سيتم تحميل مجموعة البرامج مرة واحدة
-                فقط %{master_warn}
+              package_link_help: اذا تم تعليمه ، سيتم تحميل مجموعة البرامج مرة واحدة فقط %{master_warn}
               passwords: كلمة (كلمات)
               passwords_expire: انتهاء صلاحية كلمات السرية
               public_url_allowed: السماح بعناوين URL للعرض العام
               prevent_pw_reuse: تجنب اعادة استخدام كلمة السرية
               prev_conc: تجنب بدء الاتصال المتزامن
-              pw_reset_hint: سيتم ارسال البريد الالكتروني لارجاع كلمة السرية وسيتم
-                الغاء اقفال الحساب بعد تغيير كلمة السرية
+              pw_reset_hint: سيتم ارسال البريد الالكتروني لارجاع كلمة السرية وسيتم الغاء اقفال الحساب بعد تغيير كلمة السرية
               quota_limit: اجمالي حجم البيانات الذي تم ارساله خلال نافذة التصفح
-              reg_hint: 'اختياريا : اذا تم تحديد النص ، سيطلب من المستخدمين الموافقة
-                على العبارة لكي يتم التسجيل'
-              reg_users_mutual: يمكن للمستخدمين المسجلين ذاتيا أن يتم ارسالهم الى
-                بعضهم البعض
+              reg_hint: 'اختياريا : اذا تم تحديد النص ، سيطلب من المستخدمين الموافقة على العبارة لكي يتم التسجيل'
+              reg_users_mutual: يمكن للمستخدمين المسجلين ذاتيا أن يتم ارسالهم الى بعضهم البعض
               registration_instructions: تعليمات التسجيل
               registration_type: التسجيل الذاتي
               registrations: تسجيلات
               remove_users: ازالة مستخدمين
               req_external_reg: طلب تسجيل المستخدمين الخارجيين
-              require_external_hint: اذا تم تعليمه ، يجب أن يقوم المستخدمين الخارجيين
-                بتسجيل حساب FIpex لكي يتم تحميل مجموعات البرامج.
+              require_external_hint: اذا تم تعليمه ، يجب أن يقوم المستخدمين الخارجيين بتسجيل حساب FIpex لكي يتم تحميل مجموعات البرامج.
               saml_users: مستخدمي SAML بعد أيام عدم الفعالية %{int}.
               security: الأمن
               send_welcome_email: ارسال بريد الكتروني مرحب به الى كل المستخدمين الجدد
               sender_quota: Sender Quota
-              sender_quota_hint: 'مجموعات البرامج التي تم ارسالها الى المستخدمين في
-                هذه النطاقات لا تعتمد على حصة الراسل. يمكنك استخدام الفاصلات (,) أو
-                شبه-collons (;) أو البيضاء للفصل بين نطاقات البريد الالكتروني. على
-                سبيل المثال : @aspera.com; @ibm.com'
+              sender_quota_hint: >-
+                مجموعات البرامج التي تم ارسالها الى المستخدمين في هذه النطاقات لا تعتمد على حصة الراسل. يمكنك استخدام الفاصلات (,) أو شبه-collons (;) أو البيضاء للفصل
+                بين نطاقات البريد الالكتروني. على سبيل المثال : @aspera.com; @ibm.com
               sender_quota_option: اختيار حصة الراسل
               sender_quota_duration: مدة حصة الراسل
               sender_quota_limit: حد حصة الراسل
               session_timeout: انتهاء وقت الجلسة بعد
-              slave_hint: اذا تم تعليمه ، فان المستخدمين يمكن أن يكونوا loggin فقط
-                من وحدة تابعة واحدة في المرة الواحدة
+              slave_hint: اذا تم تعليمه ، فان المستخدمين يمكن أن يكونوا loggin فقط من وحدة تابعة واحدة في المرة الواحدة
               strong_pw: استخدام كلمات السرية القوية
-              timeout_hint: سيتم انقضاء الوقت المحدد للجلسات بعد عدد الدقائق المحدد
-                من عدم الفعالية
+              timeout_hint: سيتم انقضاء الوقت المحدد للجلسات بعد عدد الدقائق المحدد من عدم الفعالية
               tos: شروط الخدمة للارسال
-              tos_hint: 'اختياريا : اذا تم تحديد نص ، سيطلب من المستخدمين الموافقة
-                على العبارة لارسال مجموعة برامج'
+              tos_hint: 'اختياريا : اذا تم تحديد النص ، سيكون ضروريا أن يقوم المستخدمين بقبول العبارة لكي يتم ارسال مجموعة برامج'
               update: تعديل
               use_encryption_at_rest: استخدام Encryption-at-Rest
               use_obf: استخدام obfuscation على أسماء الملفات
               use_obf_hint: عملية obfuscation لا رجعة فيها !
-              enforce_expiration_policy: فرض دائما كأقصى فترة زمنية لأسلوب انتهاء
-                الصلاحية
+              enforce_expiration_policy: فرض دائما كأقصى فترة زمنية لأسلوب انتهاء الصلاحية
           transfer_options:
             edit:
               aspera_connect_sett: محددات اتصال Aspera
               def_max_rate: الحد الأقصى المفترض للمعدل المسموح به
               dl_dur_trans: عمليات التحميل أثناء عمليات النقل
               dl_over_http: تحميل أكثر من HTTP
-              http_gateway_hint: العنوان التالي هو ما سيحتاج اليه المستخدمين من أجل
-                بدء عمليات النقل من خلال http-gateway.
+              http_gateway_hint: العنوان التالي هو ما سيحتاج اليه المستخدمين من أجل بدء عمليات النقل من خلال http-gateway.
               http_gateway_url: عنوان URL منفذ HTTP
               initial_def_trans_rate: معدل النقل المفترض المبدئي
               local_host_connect: اتصال نظام رئيسي محلي
-              local_host_hint: اذا تم تعليمه ، فان sppex لن يقوم باستخدام AsnIa CDN
-                لخدمة Connect ، ولكنه سيقوم بدلا من ذلك باستخدام الوصلة المحلية SDK
-                المحلية المتاحة على Flapex.
+              local_host_hint: اذا تم تعليمه ، فان sppex لن يستخدم Aspera CDN لخدمة Connect ، ولكن سيقوم بدلا من ذلك باستخدام CK Connect المحلي المتاح على Flapex.
               local_to_remote: وحدة خدمة محلية لوحدة خدمة عن بعد
               lock_connect_sdk: اقفال نسخة Connect SDK
-              lock_connect_sdk_hint: 'قم بمنع Flapex من تعديل CK Connect المحلي اذا
-                أصبحت نسخة جديدة متاحة. تستمر هذه المحددات عبر التحديثات. ملحوظة :
-                يقوم فاسكس بالتحقق من التعديلات بصفة دورية ولا يقوم بتحميل نسخة جديدة
-                في الحال اذا تم الغاء اتاحة هذا الاختيار.'
+              lock_connect_sdk_hint: >-
+                قم بمنع Flapex من تعديل CK Connect المحلي اذا أصبحت نسخة جديدة متاحة. تستمر هذه المحددات عبر التحديثات. ملحوظة : يتم التحقق من Faspex بصفة دورية للحصول
+                على التعديلات ولا يقوم بتحميل نسخة جديدة مباشرة اذا تم الغاء اتاحة هذا الاختيار
               min_connect_version: الحد الأدنى لنسخة الاتصال
-              minrate_hint: اذا تم تعليمه ، لن يتمكن Clients من ضبط أسلوب النقل الخاص
-                بهم أو الحد الأدنى لمعدل النقل
+              minrate_hint: اذا تم تعليمه ، لن يتمكن Clients من ضبط أسلوب النقل الخاص بهم أو الحد الأدنى لمعدل النقل
               prefer_http_connect: Prefer http على اللاحقة
-              prefer_http_connect_hint: اذا تم تعليمه ، سيقوم فاسكس بتطبيق برنامج
-                الاستعراض لاستخدام طريقة http للاتصال مع Client Desktop Client ، بدلا
-                من استخدام وصلة برنامج التصفح (متاح فقط مع برنامج تصفح الكروم)
+              prefer_http_connect_hint: >-
+                اذا تم تعليمه ، سيقوم فاسكس بتطبيق برنامج الاستعراض لاستخدام طريقة http للاتصال مع Client Desktop Client ، بدلا من استخدام وصلة برنامج التصفح (متاح
+                فقط مع برنامج تصفح الكروم)
               serv_to_serv_relay_trans_sett: محددات نقل Relay Server-to-Server
               server_to_user: وحدة خدمة للمستخدم
               transfer_options: اختيارات التحويل
@@ -1437,8 +1330,7 @@ ar:
             edit:
               add_alt_address: اضافة عنوان بديل
               address_name: اسم العنوان
-              alternate_addr_hint: استخدم اذا كنت بحاجة الى عناوين وحدة خدمة مختلفة
-                لمستخدمين محددين
+              alternate_addr_hint: استخدم اذا كنت بحاجة الى عناوين وحدة خدمة مختلفة لمستخدمين محددين
               desc_email: الوصف الخاص بالبريد الالكتروني
               http_port_hint: تم تحديده بواسطة توصيف pache
               https_port_hint: للمحتويات المشفرة على SSL المحدد بواسطة توصيف apache
@@ -1493,8 +1385,7 @@ ar:
             initial_default_rate: معدل النقل المفترض المبدئي
             limited: محدود
             loading: تحميل
-            lock_minrate_hint: اذا تم تعليمه ، لن يكون Clients قادرين على ضبط أسلوب
-              النقل الخاص بهم أو الحد الأدنى لمعدل النقل
+            lock_minrate_hint: اذا تم تعليمه ، لن يكون Clients قادرين على ضبط أسلوب النقل الخاص بهم أو الحد الأدنى لمعدل النقل
             name: الاسم
             node: عقدة
             override_default: احلال محددات التحويل المفترضة
@@ -1532,18 +1423,15 @@ ar:
           metadata_profile: 'ملف مواصفات Metadata : '
           options:
             after_pac_downl: 'بعد تحميل مجموعات البرامج :'
-            allow_submission_via_pub_URL: 'السماح بالاحالة بواسطة عنوان URL العام
-              :'
+            allow_submission_via_pub_URL: 'السماح بالاحالة بواسطة عنوان URL العام :'
             always: دائما
             custom_exp_policy: سياسة انتهاء صلاحية مجموعة البرامج المهيأة
             custom_inv_policy: سياسة انتهاء وصلة الدعوة المهيأة
             day_after_sending_inv: يوم (أيام) بعد ارسال البريد الالكتروني للدعوة
             day_after_upload: يوم (أيام) بعد انتهاء التحميل
             http_downloads_not_allowed: غير مسموح بتحميل HTTP لمجموعة البرامج هذه.
-            delete_after_all: قم بحذف الملفات بعد أن يقوم <strong>كل أعضاء هذا المربع
-              المسقط</strong> بتحميل كل الملفات.
-            delete_after_first: قم بحذف الملفات بعد أن يقوم <strong>أي عضو في هذا
-              المربع المسقط</strong> بتحميل كل الملفات.
+            delete_after_all: قم بحذف الملفات بعد أن يقوم <strong>كل أعضاء هذا المربع المسقط</strong> بتحميل كل الملفات.
+            delete_after_first: قم بحذف الملفات بعد أن يقوم <strong>أي عضو في هذا المربع المسقط</strong> بتحميل كل الملفات.
             do_nothing: لا تفعل شيئا
             inv_link_expire: 'انتهاء وصلات دعوة :'
             never: أبدا
@@ -1556,8 +1444,7 @@ ar:
             use_server_default: 'استخدام وحدة الخدمة المفترضة (حاليا : %{server})'
           perm:
             add_rem_dir_serv_groups: اضافة / ازالة مجموعات خدمات الدليل كعناصر
-            add_remove_users: اضافة مستخدمين Waspex الحاليين / ازالة أعضاء الادارة
-              غير الاسقاط
+            add_remove_users: اضافة مستخدمين Waspex الحاليين / ازالة أعضاء الادارة غير الاسقاط
             dropbox_admin_can: يمكن لموجه نظام Dropbox ...
             invite_outside_submitters: دعوة مقدمي طلبات خارجيين
             invite_remove_users: دعوة / إزالة من هم خارج المقدمة
@@ -1576,11 +1463,10 @@ ar:
             optional: اختياري
           submit_save: حفظ (ارسال بريد الكتروني للدعوة)
       e_error:
-        default: قامت وحدة الخدمة باكتشاف مشكلة أثناء محاولة تشغيل الطلب الخاص بك.
-          قد يكون ذلك بسبب عدم كفاية التصاريح ، أو مشكلة في التوصيف ، أو فشل في شبكة
-          الاتصال ، أو فشل في الجهاز أو الجهاز.
-        default_2: قد لا تزال هناك أوامر أخرى بالاضافة الى الأوامر التي حاولت تنفيذها.
-          حاول الضغط على الاختيار "للخلف" أو أحد علامات التبويب الأخرى بأعلى.
+        default: >-
+          قامت وحدة الخدمة باكتشاف مشكلة أثناء محاولة تشغيل الطلب الخاص بك. قد يكون ذلك بسبب عدم كفاية التصاريح ، أو مشكلة في التوصيف ، أو فشل في شبكة الاتصال ، أو
+          فشل في الجهاز أو الجهاز.
+        default_2: قد لا تزال هناك أوامر أخرى بالاضافة الى الأوامر التي حاولت تنفيذها. حاول الضغط على الاختيار "للخلف" أو أحد علامات التبويب الأخرى بأعلى.
       external:
         sub_stat:
           show:
@@ -1589,8 +1475,7 @@ ar:
               تم ارسال بريد الكتروني اليك مع وصلة للعودة الى هذه الشاشة.
             send_to: ارسال الى %{Wiipient}
             send_to_dropbox: 'ارسال الى Dropbox : %{ropname}'
-            status: تسمح لك هذه الصفحة بمشاهدة حالة مجموعة البرامج التي قمت باحالتها
-              ، بالاضافة الى اعادة محاولة عملية النقل اذا فشلت.
+            status: تسمح لك هذه الصفحة بمشاهدة حالة مجموعة البرامج التي قمت باحالتها ، بالاضافة الى اعادة محاولة عملية النقل اذا فشلت.
           submission_stat:
             date_submit: تاريخ الاحالة
             files: الملفات
@@ -1599,8 +1484,7 @@ ar:
             title: العنوان
         to:
           email_address: عنوان البريد الالكتروني
-          please_enter_email: برجاء ادخال عنوان البريد الالكتروني الخاص بك للتوصل
-            اليه.
+          please_enter_email: برجاء ادخال عنوان البريد الالكتروني الخاص بك للتوصل اليه.
           request_access: طلب امكانية توصل
           send_to: ارسال الى %{Wiipient_name}
       inactive: غير فعال
@@ -1616,8 +1500,7 @@ ar:
             after_one_up: بعد تحميل واحد
             custom_inv_policy: 'أسلوب انتهاء صلاحية وصلة الدعوة المهيأة :'
             day_after_sending_inv: يوم (أيام) بعد ارسال البريد الالكتروني للدعوة
-            help: يمكنك تحديد هذه المحددات بمزيد من القيود ولكن لا يمكنك تعدي القيمة
-              المفترضة
+            help: يمكنك تحديد هذه المحددات بمزيد من القيود ولكن لا يمكنك تعدي القيمة المفترضة
             inv_link_expires: انتهاء وصلة الدعوة
           prevent_http_upload:
             package_upload: تحميل مجموعة البرامج
@@ -1669,14 +1552,12 @@ ar:
           workgroups: مجموعات العمل
         node_error:
           warning: تحذير !
-          errors_detected: تم اكتشاف أخطاء في وحدة خدمة النقل ، قد لا تعمل عمليات
-            النقل بطريقة صحيحة.
+          errors_detected: تم اكتشاف أخطاء في وحدة خدمة النقل ، قد لا تعمل عمليات النقل بطريقة صحيحة.
       login:
         entitlement:
           customer_id: كود العميل
           entitle_info: 'برجاء اتاحة معلومات الاستحقاق الخاصة بك ليتم بدءها :'
-          entitle_question: بالنسبة للأسئلة أو المخاوف المتعلقة بالاستحقاق ، برجاء
-            الاتصال ب %{aspera}
+          entitle_question: بالنسبة للأسئلة أو المخاوف المتعلقة بالاستحقاق ، برجاء الاتصال ب %{aspera}
           entitlement: كود الاستحقاق
           submit: احالة
         new:
@@ -1708,8 +1589,7 @@ ar:
           advanced: " (متقدم)"
           customize: تهيئة استخدام قالب
           edit_html: تحرير HTML
-          preview: يتم عرض الشكل النهائي %{description} بأسفل. يمكن تهيئته اما باستخدام
-            القالب أو بواسطة تحرير HTML مباشرة.
+          preview: يتم عرض الشكل النهائي %{description} بأسفل. يمكن تهيئته اما باستخدام القالب أو بواسطة تحرير HTML مباشرة.
           preview_email_notif: مراجعة اشعار البريد الالكتروني %{name}
       metadata_profiles:
         edit:
@@ -1721,8 +1601,7 @@ ar:
           illegal_characters: 'حروف غير صحيحة : '
           max_length: 'أقصى طول : '
           note: ملحوظة
-          note_no_save: 'ملحوظة : لن يتم حفظ أي تغييرات حتى تقوم بحفظ ملف مواصفات
-            بيانات التوصيف'
+          note_no_save: 'ملحوظة : لن يتم حفظ أي تغييرات حتى تقوم بحفظ ملف مواصفات بيانات التوصيف'
           preview: معاينة
           profile_name: 'اسم ملف المواصفات : '
           profile_name_placeholder: اسم ملف المواصفات ...
@@ -1763,8 +1642,7 @@ ar:
           required: 'مطلوب : '
         index:
           add_profile: اضافة ملف مواصفات جديد
-          confirm: هل أنت متأكد من أنك ترغب في حذف ملف مواصفات metadata %{account}
-            ?
+          confirm: هل أنت متأكد من أنك ترغب في حذف ملف مواصفات metadata %{account} ?
           delete: حذف
           edit: تحرير
           metadata_profiles: ملفات مواصفات بيانات التوصيف
@@ -1779,8 +1657,7 @@ ar:
       mobile:
         landing:
           app_redirect: للحصول على أفضل تجربة ، استخدم تطبيق Aspera Mopex Mobile.
-          no_app_prompt: "(دون) لديه التطبيق ؟ احصل عليه <a href='<%= @app_store_url
-            %>'>هنا</a>"
+          no_app_prompt: "(دون) لديه التطبيق ؟ احصل عليه <a href='<%= @app_store_url %>'>هنا</a>"
           open_in_app: فتح في التطبيق
           use_web_version: استخدام نسخة WEB
       ms_admin:
@@ -1808,10 +1685,9 @@ ar:
           default_user_server: 'وحدة خدمة Fepex/DS Users المفترضة :'
           home_server_rules: قواعد وحدة الخدمة الرئيسية
           name: الاسم
-          note: 'ملحوظة : اذا لم تقوم بتحديد قواعد لوحدات الخدمة الفرعية الخارجية
-            ، سيتم توجيههم الى وحدة الخدمة الرئيسية للراسل لتحميل مجموعات البرامج.
-            وبالمثل ، يجب أن تقوم وحدات الخدمة الفرعية الخارجية التي تقوم بتحميل مجموعات
-            البرامج بالقيام بذلك من وحدة الخدمة الرئيسية لوحدة الاستدعاء.'
+          note: >-
+            ملحوظة : اذا لم تقوم بتحديد قواعد لوحدات الخدمة الفرعية الخارجية ، سيتم توجيههم الى وحدة الخدمة الرئيسية للراسل لتحميل مجموعات البرامج. وبالمثل ، يجب
+            أن تقوم وحدات الخدمة الفرعية الخارجية التي تقوم بتحميل مجموعات البرامج بالقيام بذلك من وحدة الخدمة الرئيسية لوحدة الاستدعاء.
           rule: القاعدة
           save: حفظ
           server: وحدة الخدمة
@@ -1858,32 +1734,25 @@ ar:
           slash: حرف Escape.
           slashA: بدء مجموعة الحروف.
           slashAa-m: sgnirts trats التي تبدأ بحرف بين 'a' و 'm'.
-          slashAperiod*z: 'Ex : عبارات التطابق التي تبدأ بالحرف ''a'' وتنتهي بالحروف
-            ''z'''
+          slashAperiod*z: 'Ex : عبارات التطابق التي تبدأ بالحرف ''a'' وتنتهي بالحروف ''z'''
           slashz: نهاية سلسلة البيانات.
       nodes:
         columns:
           dropdown:
             add: اضافة %{share_name}
             delete: حذف
-            delete_confirm: هل أنت متأكد ؟ سيؤدي ذلك الى حذف أي %{share_name} يقوم
-              حاليا باستخدام %{node_name} هذا.
+            delete_confirm: هل أنت متأكد ؟ سيؤدي ذلك الى حذف أي %{share_name} يقوم حاليا باستخدام %{node_name} هذا.
             edit: تحرير
           shares:
             dropdown:
               confirm: هل أنت متأكد من أنك تريد الاستمرار ؟
-              custom_inbox_confirm: يتم حاليا استخدام %{name} على أنه مكان صندوق الوارد
-                المخصص لمجموعات عمل معينة.
-              default_hint: يتم استخدام %{name} حاليا على أنه صندوق الوارد المفترض
-                للنظام ، ولا يمكن حذفه.
+              custom_inbox_confirm: يتم حاليا استخدام %{name} على أنه مكان صندوق الوارد المخصص لمجموعات عمل معينة.
+              default_hint: يتم استخدام %{name} حاليا على أنه صندوق الوارد المفترض للنظام ، ولا يمكن حذفه.
               delete: حذف
-              delete_warning: 'سيؤدي حذفه الى جعل كل مجموعات البرامج الموجودة في مجموعات
-                العمل هذه غير متاحة للمستخدمين. '
+              delete_warning: 'سيؤدي حذفه الى جعل كل مجموعات البرامج الموجودة في مجموعات العمل هذه غير متاحة للمستخدمين. '
               edit: تحرير
-              relay_hint: يتم حاليا استخدام %{name} على أنه مكان relay لمجموعات عمل
-                معينة.
-              rolled_back_warning: 'سيتم أيضا استئناف تشغيل مجموعات العمل هذه لاستخدام
-                صندوق الوارد المفترض الخاص بالنظام. '
+              relay_hint: يتم حاليا استخدام %{name} على أنه مكان relay لمجموعات عمل معينة.
+              rolled_back_warning: 'سيتم أيضا استئناف تشغيل مجموعات العمل هذه لاستخدام صندوق الوارد المفترض الخاص بالنظام. '
       packages:
         browser:
           all: كل
@@ -1902,12 +1771,9 @@ ar:
           cc_on_recipient: 'نسخة طبق الأصل (عن المستلم) :'
           completed_relays: 'المرحلات التامة :'
           date_sent: تاريخ الارسال
-          http_downloads_not_allowed: غير مسموح بتحميل HTTP لأسفل لمجموعة البرامج
-            هذه
-          delete_after_all_message: سيتم حذف مجموعة البرامج هذه آليا بعد أن يقوم كل
-            المستلمين بتحميل كل ملفات المجموعة.
-          delete_after_first_message: سيتم حذف مجموعة البرامج هذه آليا بعد أن يقوم
-            أي مستلم بتحميل كل ملفات المجموعة.
+          http_downloads_not_allowed: غير مسموح بتحميل HTTP Downloads لمجموعة البرامج هذه
+          delete_after_all_message: سيتم حذف مجموعة البرامج هذه آليا بعد أن يقوم كل المستلمين بتحميل كل ملفات المجموعة.
+          delete_after_first_message: سيتم حذف مجموعة البرامج هذه آليا بعد أن يقوم أي مستلم بتحميل كل ملفات المجموعة.
           edit: تحرير
           error_release_date: حدث خطأ أثناء تعديل تاريخ الاصدار
           failed_relays: 'الاسترخاء الفاشل :'
@@ -1948,8 +1814,7 @@ ar:
           package_details:
             pkg_details: تفاصيل مجموعة البرامج
             status: الحالة %{package}
-            http_downloads_not_allowed: غير مسموح بتحميل HTTP لأسفل لمجموعة البرامج
-              هذه
+            http_downloads_not_allowed: غير مسموح بتحميل HTTP Downloads لمجموعة البرامج هذه
           partial_package:
             partial_pkg_dl: 'تحميل مجموعة البرامج الجزئية : %{total}'
           transfer_package:
@@ -2012,8 +1877,7 @@ ar:
       reset_password_tokens:
         edit:
           alert_error: بدء الاتصال الخاص بك بالنسبة الى Frapex متعبه لحساب خدمة الدليل.
-          alert_error_contact: برجاء الاتصال بمكتب المساعدة أو موجه نظام شبكة الاتصالات
-            لتغيير كلمة السرية الخاصة بك.
+          alert_error_contact: برجاء الاتصال بمكتب المساعدة أو موجه نظام شبكة الاتصالات لتغيير كلمة السرية الخاصة بك.
           reset_password: ارجاع كلمة السرية
         new:
           back_to_login: عودة الى بدء الاتصال
@@ -2076,9 +1940,8 @@ ar:
               http_uploads_not_allowed: غير مسموح بتحميل HTTP لمجموعة البرامج هذه
             source_shares:
               contents: 'المحتويات * :'
-              ear_cloud_warning: يتم تحديد Encryption at rest لكل عمليات النقل ، ولكنه
-                لا يتم دعمه لعمليات النقل التي تستخدم cloud-referencing. لن يقوم هذا
-                النقل باستخدام التشفير لبقية.
+              ear_cloud_warning: يتم تحديد Encryption at rest لكل عمليات النقل ، ولكنه لا يتم دعمه لعمليات النقل التي تستخدم cloud-referencing. لن يقوم هذا النقل
+                باستخدام التشفير لبقية.
               remove_all: ازالة كل
               source: 'المصدر :'
               warning: 'تحذير :'
@@ -2098,8 +1961,7 @@ ar:
           misc:
             actions:
               confirmation: 'تأكيد :'
-              enter_passphrase: أدخل عبارة المرور لحماية الملفات الخاصة بك.<br>تعد
-                عبارة المرور مطلوبة.
+              enter_passphrase: أدخل عبارة المرور لحماية الملفات الخاصة بك.<br>تعد عبارة المرور مطلوبة.
               passphrase: 'عبارة المرور :'
             connect_transfer:
               browse_for_files: تصفح لايجاد ال & ملفات بيضاوية ؛
@@ -2183,8 +2045,7 @@ ar:
             download_connect: تحميل البرنامج المساعد Connect
             download_hint: قد يستغرق بعض دقائق حتى تصبح التغييرات فعالة
             download_notif: تحميل الاعلامات
-            download_notif_hint: ارسال هذه العناوين بالبريد الالكتروني عندما يقوم
-              كل مستلم بتحميل مجموعة برامج أولا
+            download_notif_hint: ارسال هذه العناوين بالبريد الالكتروني عندما يقوم كل مستلم بتحميل مجموعة برامج أولا
             email_settings: محددات البريد الالكتروني
             locales: محددات اللغة
             locale: محددات اللغة
@@ -2192,16 +2053,12 @@ ar:
             preferences: التفضيلات
             update_pref: تعديل التفضيلات
             upload_notif: تحميل اعلامات
-            upload_notif_hint: ارسال هذه العناوين بالبريد الالكتروني نتيجة لعملية
-              التحميل لأعلى
-            received_page_option: عرض مجموعات البرامج التي تم اتمامها فقط في صفحة
-              'تم استلامها'
+            upload_notif_hint: ارسال هذه العناوين بالبريد الالكتروني نتيجة لعملية التحميل لأعلى
+            received_page_option: عرض مجموعات البرامج التي تم اتمامها فقط في صفحة 'تم استلامها'
         sender_quota:
           index:
-            sender_alert_1: لقد وصلت الى حد حصة الراسل بالنسبة الى %{الحصة النسبية
-              } MB
-            sender_alert_2: MB _ YM MB المتاح. تم تحديد حد وحدة الراسل الخاص بك الى
-              %{limit} MB.
+            sender_alert_1: لقد وصلت الى حد حصة الراسل بالنسبة الى %{الحصة النسبية } MB
+            sender_alert_2: MB _ YM MB المتاح. تم تحديد حد وحدة الراسل الخاص بك الى %{limit} MB.
             sender_quota: Sender Quota
       shared:
         browser:
@@ -2235,10 +2092,8 @@ ar:
         add_user_profile_field: اضافة مجال ملف مواصفات مستخدم
         enabled: متاح
         name: الاسم
-        note_no_changes: 'ملحوظة : لن يتم حفظ أي تغييرات حتى تقوم بالضغط على ''حفظ
-          المجالات'''
-        onclick_confirm: هل أنت متأكد من أنك ترغب في ازالة مجال ملف مواصفات المستخدم
-          هذا ؟
+        note_no_changes: 'ملحوظة : لن يتم حفظ أي تغييرات حتى تقوم بالضغط على ''حفظ المجالات'''
+        onclick_confirm: هل أنت متأكد من أنك ترغب في ازالة مجال ملف مواصفات المستخدم هذا ؟
         remove: قم بازالة مجال ملف المواصفات هذا.
         required: مطلوب
         save_fields: حفظ المجالات
@@ -2294,8 +2149,7 @@ ar:
         nodes:
           default_inbox: صندوق الوارد المفترض
           direct_upload: تحميل مباشرة الى صندوق الوارد المخصص.
-          direct_upload_default_check: اذا تم تعليمه ، لن يتم تحميل مجموعات البرامج
-            ليتم تحميلها الى الوارد المفترض اذا كانت مجموعة العمل هذه هي المستلم الوحيد.
+          direct_upload_default_check: اذا تم تعليمه ، لن يتم تحميل مجموعات البرامج ليتم تحميلها الى الوارد المفترض اذا كانت مجموعة العمل هذه هي المستلم الوحيد.
           inbox_destination: الوجهة المستهدفة الى الوارد
           location: الموقع
           status: الحالة
@@ -2347,8 +2201,7 @@ ar:
           index:
             create_new: تكوين جديد
             dropbox: Dropbox
-            flash_message: لتكوين أو حذف أو تحرير مجموعات العمل (بخلاف اضافة / ازالة
-              أعضاء) يجب أن تقوم ببدء الاتصال بوحدة الخدمة الرئيسية.
+            flash_message: لتكوين أو حذف أو تحرير مجموعات العمل (بخلاف اضافة / ازالة أعضاء) يجب أن تقوم ببدء الاتصال بوحدة الخدمة الرئيسية.
             view_all: مشاهدة الكل
             view_mine: مشاهدة الالغام
             workgroup: مجموعة العمل
@@ -2386,15 +2239,12 @@ ar:
             server_default: وحدة الخدمة المفترضة
             status: الحالة
             upload_directly: تحميل مباشرة الى صندوق الوارد المهيأ
-            upload_message: اذا تم تعليمه ، لن يتم تحميل مجموعات البرامج ليتم تحميلها
-              الى الوارد المفترض اذا كانت مجموعة العمل هذه هي المستلم الوحيد
+            upload_message: اذا تم تعليمه ، لن يتم تحميل مجموعات البرامج ليتم تحميلها الى الوارد المفترض اذا كانت مجموعة العمل هذه هي المستلم الوحيد
           show:
             view_packages: مشاهدة مجموعات البرامج
           wg_permissions:
-            add_dir_serv_groups_as_members_hint: اضافة / ازالة مجموعات خدمات الدليل
-              كعناصر
-            add_existing_users_hint: اضافة مستخدمي Faspex الحاليين / ازالة عناصر الادارة
-              غير الخاصة بمجموعة العمل
+            add_dir_serv_groups_as_members_hint: اضافة / ازالة مجموعات خدمات الدليل كعناصر
+            add_existing_users_hint: اضافة مستخدمي Faspex الحاليين / ازالة عناصر الادارة غير الخاصة بمجموعة العمل
             edit_new_users_hint: تكوين / تحرير / حذف / ازالة مستخدمين جدد كأعضاء
             full: " كامل :"
             full_hint: تم منح الأعضاء التصريح لمشاهدة وارسال كل منهم الى الآخر
@@ -2407,13 +2257,11 @@ ar:
             private_hint: يستطيع الأعضاء فقط ارسالهم الى مجموعة العمل هذه
             restricted: " مقصورة :"
             restricted_hint: لا يمكن لأحد الارسال الى مجموعة العمل هذه
-            restricted_hint_2: تم منح مجموعات العمل التصريح لمشاهدة أو ارسال عناصر
-              منفردة من مجموعة العمل
+            restricted_hint_2: تم منح مجموعات العمل التصريح لمشاهدة أو ارسال عناصر منفردة من مجموعة العمل
             send_to_eachother: 'ارسال أعضاء مجموعة العمل الى بعضهم البعض :'
             sending_to_itself: 'ارسال الى مجموعة العمل نفسها :'
             wg_admins_only: " موجه مجموعة العمل فقط :"
-            wg_admins_only_hint: تم منح الأعضاء التصريح لمشاهدة وارسال لادارة مجموعة
-              العمل
+            wg_admins_only_hint: تم منح الأعضاء التصريح لمشاهدة وارسال لادارة مجموعة العمل
             workgroup_admins_can: يمكن أن يتم ادارة مجموعة العمل ...
             workgroup_permissions: تصاريح مجموعة العمل
           workgroup_list:
@@ -2447,8 +2295,7 @@ ar:
           browse_fail: فشل في تصفح مصدر الملف عن بعد
         post_processes_helper:
           activate: تشغيل
-          confirm: هل أنت متأكد من أنك ترغب في حذف البرنامج النصي لتشغيل ما بعد التشغيل
-            %{script_name} ؟
+          confirm: هل أنت متأكد من أنك ترغب في حذف البرنامج النصي لتشغيل ما بعد التشغيل %{script_name} ؟
           deactivate: الغاء تشغيل
           remove: ازالة
           view_log: مشاهدة سجل التنفيذ
@@ -2490,8 +2337,7 @@ ar:
           create_new_user: تكوين مستخدم جديد
         workgroups_helper:
           delete: حذف
-          delete_confirm: هل أنت متأكد من أنك ترغب في حذف %{wg_type} "%{wg_name}"
-            ?
+          delete_confirm: هل أنت متأكد من أنك ترغب في حذف %{wg_type} "%{wg_name}" ?
           delete_wg: حذف %{wg_name}
           dropbox: Dropbox
           edit: تحرير
@@ -2505,21 +2351,16 @@ ar:
       c_configuration:
         cant_be_blank: لا يمكن أن تكون المجالات خالية.
       delivery:
-        send_fail_quota_limit: غير قادر على ارسال مجموعة البرامج ، تم الوصول الى حد
-          الحصة النسبية ل %{limit} MB
+        send_fail_quota_limit: غير قادر على ارسال مجموعة البرامج ، تم الوصول الى حد الحصة النسبية ل %{limit} MB
         send_fail_permissions: غير مسموح لك بتكوين مجموعات برامج عادية
         send_fail_invalid_recipients: لا يوجد مستلم صحيح
         send_fail_dropbox_only: المستلم Dropbox يجب أن يكون المستلم الوحيد
-        send_fail_invalid_recipient_specific: 'مستلم غير صحيح : %{Wiipient_name}'
-        send_fail_permissions_multiple: غير مسموح لك بالارسال الى واحد أو أكثر من
-          المستلمين المحددين
+        send_fail_invalid_recipient_specific: 'مستلم غير صحيح : %{fuipient_name}'
+        send_fail_permissions_multiple: غير مسموح لك بالارسال الى واحد أو أكثر من المستلمين المحددين
         send_fail_invalid_cc: 'نسخة غير صحيحة من CC (عند التحميل على النظام) : %{cc_name}'
-        send_fail_invalid_ccs_upload: غير مسموح لك باستخدام نسخة واحدة أو أكثر من
-          المستلمين في مجال التحميل لأعلى
-        send_fail_invalid_ccs_download: غير مسموح لك باستخدام نسخة واحدة أو أكثر من
-          المستلمين في مجال التحميل لأسفل
-        send_fail_invalid_ccs_receipt: غير مسموح لك باستخدام نسخة واحدة أو أكثر من
-          المستلمين في مجال الاستلام
+        send_fail_invalid_ccs_upload: غير مسموح لك باستخدام نسخة واحدة أو أكثر من المستلمين في مجال التحميل لأعلى
+        send_fail_invalid_ccs_download: غير مسموح لك باستخدام نسخة واحدة أو أكثر من المستلمين في مجال التحميل لأسفل
+        send_fail_invalid_ccs_receipt: غير مسموح لك باستخدام نسخة واحدة أو أكثر من المستلمين في مجال الاستلام
         send_fail_must_have_one_source: يجب أن يكون لديك بالضبط مصدر واحد
         send_fail_unknown_share_id: كود مشترك غير معروف %{share_id}
         send_fail_source_not_authorized: المصدر غير مصرح به
@@ -2527,17 +2368,15 @@ ar:
         send_fail_unique_filenames: يجب أن تكون أسماء الملفات متفردة
         send_fail_ear_must_be_specified: يجب تحديده
         send_fail_ear_not_allowed: غير مسموح به
-        send_fail_ear_disabled_message: Encryption-at-rest غير متاح ، passphrase غير
-          مسموح به.
-        send_fail_sendershareid_forwarding: قد لا يتم تغيير SenderShareId لمجموعات
-          البرامج التي تم ارسالها
+        send_fail_ear_disabled_message: Encryption-at-rest غير متاح ، passphrase غير مسموح به.
+        send_fail_sendershareid_forwarding: قد لا يتم تغيير SenderShareId لمجموعات البرامج التي تم ارسالها
         send_fail_invalid_release_policy: 'سياسة اصدار غير صحيحة : %{rp}'
         send_fail_policy_date_future: تاريخ الاصدار يجب أن يكون في المستقبل
         send_fail_expiration_date_future: تاريخ انتهاء الصلاحية يجب أن يكون في المستقبل
       directory_service_user:
-        login_error_message: بدء الاتصال الخاص بك كان غير ناجح. برجاء اعادة المحاولة
-          مرة أخرى. اذا كنت تقوم باختبار فشل بدء الاتصال المتكرر ، يجب أن تقوم بالضغط
-          على وصلة 'Forwset Password' لارجاع كلمة السرية الخاصة بك.
+        login_error_message: >-
+          بدء الاتصال الخاص بك كان غير ناجح. برجاء اعادة المحاولة مرة أخرى. اذا كنت تقوم باختبار فشل بدء الاتصال المتكرر ، يجب أن تقوم بالضغط على وصلة 'Forwset Password'
+          لارجاع كلمة السرية الخاصة بك.
       e_membership:
         status:
           expired: منتهي الصلاحية
@@ -2546,13 +2385,12 @@ ar:
       local_user:
         cannot_be_blank: لا يمكن أن يكون خاليا
         is_incorrect: غير صحيح
-        login_error_message: بدء الاتصال الخاص بك كان غير ناجح. برجاء اعادة المحاولة
-          مرة أخرى. اذا كنت تقوم باختبار فشل بدء الاتصال المتكرر ، يجب أن تقوم بالضغط
-          على وصلة 'Forwset Password' لارجاع كلمة السرية الخاصة بك.
+        login_error_message: >-
+          بدء الاتصال الخاص بك كان غير ناجح. برجاء اعادة المحاولة مرة أخرى. اذا كنت تقوم باختبار فشل بدء الاتصال المتكرر ، يجب أن تقوم بالضغط على وصلة 'Forwset Password'
+          لارجاع كلمة السرية الخاصة بك.
         lock_out_message: تم اقفالك بسبب عدد كبير جدا من محاولات بدء الاتصال غير الناجحة.
         same_as_old_pw: هو نفس كلمة السرية القديمة
-        same_old_pw_hint: يجب أن تكون مختلفة عن كلمات سرية %{limit} السابقة الخاصة
-          بك
+        same_old_pw_hint: يجب أن تكون مختلفة عن كلمات سرية %{limit} السابقة الخاصة بك
       metadata_field:
         value_already_taken: "'%{value}' تم أخذه بالفعل"
         max_length_not_int: أقصى طول للمجال '%{label_name}' يجب أن يكون رقم صحيح
@@ -2562,14 +2400,11 @@ ar:
         cannot_be_blank: لا يمكن أن يكون %{label_name} خاليا
         error_decoding: 'خطأ في فك تشفير metadata : %{met}'
       metadata_profile:
-        all_fields_length_error: اجمالي الحد الأقصى للطول لكل المجالات (بما في ذلك
-          العناوين والاختيارات ومجالات التاريخ) يجب أن يكون أقل من حروف %{max}
+        all_fields_length_error: اجمالي الحد الأقصى للطول لكل المجالات (متضمنة العلامات المميزة والاختيارات ومجالات التاريخ) يجب أن يكون أقل من حروف %{max}
         field_blank_error: لا يجب أن يكون %{err_label} خاليا
-        field_illegal_char_error: 'يجب ألا يحتوي %{err_label} على أي من الحروف التالية
-          : %{illegal}'
+        field_illegal_char_error: 'يجب ألا يحتوي %{err_label} على أي من الحروف التالية : %{illegal}'
         field_length_error: "%{err_label} يجب أن يكون بحروف %{max} أو أقل"
-        field_options_error: 'يجب أن يحتوي %{err_label} على واحد من هذه الاختيارات
-          : %{list}'
+        field_options_error: 'يجب أن يحتوي %{err_label} على واحد من هذه الاختيارات : %{list}'
         invalid_JSON_error: "%{err_label} يجب أن يكون JSON صحيح"
         invalid_share_id_error: هوية مشاركة غير صحيحة %{err_value} بالنسبة الى %{err_label}
         invalid_user_error: مستخدم غير صحيح %{err_user} ل %{err_label}
@@ -2577,15 +2412,13 @@ ar:
         max_length_reset_error: أقصى عدد لمجالات الطول تم ارجاعها الى القيمة المفترضة
         must_be_list_error: "%{err_labell} يجب أن يكون كشف بهويات المشاركة"
         no_fields_error: يجب أن يحتوي ملف مواصفات Metadata على مجال واحد على الأقل
-        note_invalid_char_error: 'يجب ألا تحتوي الملاحظة على أي من الحروف التالية
-          : # { غير قانوني }'
+        note_invalid_char_error: 'يجب ألا تحتوي الملاحظة على أي من الحروف التالية : # { غير قانوني }'
         note_length_bounds_error: الحد الأقصى لطول المذكرة يجب أن يكون بين 1 و %{max}
         note_length_error: يجب أن تكون الملحوظة %{max} حروف أو أقل
         note_length_int_error: أقصى طول للمذكرة يجب أن يكون رقم صحيح
         note_length_specified_error: الحد الأقصى لطول المذكرة يجب تحديده
         specified_error: يجب تحديد %{err_label}
-        title_invalid_char_error: 'يجب ألا يحتوي العنوان على أي من الحروف التالية
-          : %{illegal}'
+        title_invalid_char_error: 'يجب ألا يحتوي العنوان على أي من الحروف التالية : %{illegal}'
         title_length_bounds_error: الحد الأقصى لطول العنوان يجب أن يكون بين 1 و %{max}
         title_length_error: يجب أن يكون العنوان %{max} حروف أو أقل
         title_length_int_error: أقصى طول للعنوان يجب أن يكون رقم صحيح
@@ -2607,8 +2440,7 @@ ar:
       user:
         passwordable:
           requirements: يجب أن يكون طوله ستة حروف على الأقل
-          strong_requirements: يجب أن يكون طوله ستة حروف على الأقل ، مع حرف واحد على
-            الأقل ، ورقم واحد ، ورمز واحد
+          strong_requirements: يجب أن يكون طوله ستة حروف على الأقل ، مع حرف واحد على الأقل ، ورقم واحد ، ورمز واحد
         status:
           saml_disabled: الغاء اتاحة توصيف SAML
           pending: موافقة معلقة
@@ -2704,7 +2536,7 @@ ar:
     - Fri
     - Sat
     abbr_month_names:
-    - 
+    -
     - Jan
     - Feb
     - Mar
@@ -2730,7 +2562,7 @@ ar:
       long: "%B %d, %Y"
       short: "%b %d"
     month_names:
-    - 
+    -
     - January
     - February
     - March
@@ -2800,34 +2632,24 @@ ar:
       archive: تخزين
       back: للخلف
       cloud_storage_referencing: يشير تخزين Cloud الى دعم IS بواسطة وحدة التخزين هذه.
-      connect_install_message: لاستخدام الحد الأقصى لسرعات %{direct} ، برجاء تركيب
-        البرنامج المساعد %{aspera} browser.
-      connect_upgrade_message: لاستخدام الحد الأقصى لسرعات %{direct} ، برجاء تحديث
-        البرنامج المساعد %{aspera} الخاص بك.
-      confirm: هل أنت متأكد من أنك تريد حذف الملفات الخاصة بمجموعة البرامج %{package_name}
-        التي تم ارسالها بواسطة %{package_sender} ؟
+      connect_install_message: لاستخدام الحد الأقصى لسرعات %{direct} ، برجاء تركيب البرنامج المساعد %{aspera} browser.
+      connect_upgrade_message: لاستخدام الحد الأقصى لسرعات %{direct} ، برجاء تحديث البرنامج المساعد %{aspera} الخاص بك.
+      confirm: هل أنت متأكد من أنك تريد حذف الملفات الخاصة بمجموعة البرامج %{package_name} التي تم ارسالها بواسطة %{package_sender} ؟
       copy: نسخ الى المسودة
       delete: حذف
-      delete_confirm: هل أنت متأكد من أنك تريد حذف الملفات الخاصة بمجموعة البرامج
-        %{package_name} التي تم ارسالها بواسطة %{package_sender} ؟
-      delete_confirm_forward: هذا هو الأمام من حزمة أخرى. سيتم حذف كل forwards الأصلي
-        وكل forwards.
-      delete_confirm_has_forwards: يوجد Forwards لمجموعة البرامج هذه. سيتم حذف كل
-        forwards الأصلي وكل forwards.
-      enable_hst_dl: لاتاحة عمليات نقل عالية السرعة مع Aspera ، برجاء %{download}
-        the Connect browser plugin.
-      enable_hst_dl_enable: لاتاحة عمليات نقل عالية السرعة مع Aspera ، برجاء %{download}
-        و %{enable} the Connect browser plugin.
-      local_transfer_message: تقوم حاليا باستخدام سرعة منخفضة HTTP. لاتاحة عمليات
-        نقل عالية السرعة مع Aspera ، برجاء زيارة %{enable} لاتاحة / تحميل البرنامج
-        المساعد لبرنامج تصفح الاتصال.
+      delete_confirm: هل أنت متأكد من أنك تريد حذف الملفات الخاصة بمجموعة البرامج %{package_name} التي تم ارسالها بواسطة %{package_sender} ؟
+      delete_confirm_forward: هذا هو الأمام من حزمة أخرى. سيتم حذف كل forwards الأصلي وكل forwards.
+      delete_confirm_has_forwards: يوجد Forwards لمجموعة البرامج هذه. سيتم حذف كل forwards الأصلي وكل forwards.
+      enable_hst_dl: لاتاحة عمليات نقل عالية السرعة مع Aspera ، برجاء %{download} the Connect browser plugin.
+      enable_hst_dl_enable: لاتاحة عمليات نقل عالية السرعة مع Aspera ، برجاء %{download} و %{enable} the Connect browser plugin.
+      local_transfer_message: تقوم حاليا باستخدام سرعة منخفضة HTTP. لاتاحة عمليات نقل عالية السرعة مع Aspera ، برجاء زيارة %{enable} لاتاحة / تحميل البرنامج المساعد
+        لبرنامج تصفح الاتصال.
       no_cloud_storage_referencing: مرجع تخزين Cloud غير مدعم بواسطة هذا التخزين.
-      no_transfer_dl: يكون للتحميل بدون Aspera Connect حدود أداء. لازالة هذا الحد
-        وقم باتاحة عمليات نقل عالية السرعة مع Aspera ، برجاء %{download} the Connect
+      no_transfer_dl: يكون للتحميل بدون Aspera Connect حدود أداء. لازالة هذا التحديد واتاحة عمليات النقل للسرعة العالية مع Aspera ، برجاء %{download} the Connect
         browser plugin.
-      no_transfer_dl_enable: يكون للتحميل بدون Aspera Connect حدود أداء. لازالة هذا
-        الحد وقم باتاحة عمليات نقل عالية السرعة مع Aspera ، برجاء %{download} و %{enable}
-        the Connect browser plugin.
+      no_transfer_dl_enable: >-
+        يكون للتحميل بدون Aspera Connect حدود أداء. لازالة هذا الحد وقم باتاحة عمليات نقل عالية السرعة مع Aspera ، برجاء %{download} و %{enable} the Connect browser
+        plugin.
       not_supp_symbolic_links: لا يدعم التخزين الوصلات الرمزية
       note: ملحوظة
       package_details: اضغط هنا للحصول على تفاصيل مجموعة البرامج.
@@ -2850,8 +2672,7 @@ ar:
       login: بدء الاتصال
       login_using_saml_idp: بدء الاتصال باستخدام SAML IdP
     logged_out:
-      message: تم تسجيل خروجك من Fpex ؛ قد تحتاج الى تسجيل الخروج من حساب single-sign-on
-        الخاص بك.
+      message: تم تسجيل خروجك من Fpex ؛ قد تحتاج الى تسجيل الخروج من حساب single-sign-on الخاص بك.
       log_in_again: بدء الاتصال مرة أخرى
     errors:
       saml_not_authorized: غير مصرح لك باستخدام Fpex.
@@ -2870,10 +2691,15 @@ ar:
         bad_version: أرقام نسخة غير متوافقة
         config_save_error: خطأ في حفظ التوصيف.  ارجع الى السجل للتعرف على التفاصيل.
         upload_saved_config: تحميل توصيف تم حفظه
-        restore_config_error: حدث خطأ أثناء استعادة التوصيف.  ارجع الى السجل للتعرف
-          على التفاصيل.
-        tar_error: خطأ في اعادة توصيف config %{tar_status} %{tar_out}
-        untar_error: حدث خطأ أثناء untarring config %{untar_status} %{untart_stdoout}
+        restore_config_error: حدث خطأ أثناء استعادة التوصيف.  ارجع الى السجل للتعرف على التفاصيل.
+        tar_error: |-
+          حدث خطأ أثناء محاولة توصيف المواصفات
+          %{tar_status}
+          %{tar_out}
+        untar_error: |-
+          خطأ في untaring config
+          %{untar_status}
+          %{untar_stdoout}
     aspera_license_reader:
       no_license_found: لم يتم ايجاد ترخيص أو ترخيص غير صحيح
       license_signature_mismatch: توقيع الترخيص لا يتفق مع المحتويات
@@ -2902,8 +2728,7 @@ ar:
       set_user_as_admin: 'تحديد المستخدم بالاسم # { wg_name } admin'
     packages:
       package_methods:
-        HTTP_upload_in_progress: تحميل HTTP في تقدم ، سيتم الغائه اذا قمت بالتجول
-          بعيدا عن هذه الصفحة.
+        HTTP_upload_in_progress: تحميل HTTP في تقدم ، سيتم الغائه اذا قمت بالتجول بعيدا عن هذه الصفحة.
         new_package: مجموعة برامج جديدة
         return_to_history: العودة الى السجل التاريخي
         return_to_list: العودة الى الكشف

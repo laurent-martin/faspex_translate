@@ -33,7 +33,7 @@ el:
         http_fallback_enabled: Ενεργοποίηση επαναφοράς HTTP
         downloads_during_transfers_enabled: Ενεργοποίηση λήψεων κατά τη μεταφορά
       m_configuration:
-        email_from_email: Φάσο "From:" email
+        email_from_email: Faspex "From:" email
         m_smtp_server_port: Θύρα εξυπηρετητή
         m_smtp_auth_type: Έλεγχος ταυτότητας SMTP
         m_smtp_server: Εξυπηρετητής αλληλογραφίας SMTP
@@ -92,7 +92,7 @@ el:
         workgroup_received_notification_cc: Αποστολή αντιγράφου του e-mail απόδειξης σε αυτές τις διευθύνσεις
         destination_share_id: Προεπιλεγμένα Εισερχόμενα
       invitation:
-        expires_at: "-Μέρες μέχρι"
+        expires_at: Μέρες μέχρι να
       node:
         alternate_address: Δευτερεύον διεύθυνση ή όνομα
         alternate_address_client_filter: Χρήση αν συμφωνεί η διεύθυνση του αιτούντα
@@ -386,7 +386,7 @@ el:
             created: Δημιουργήθηκε η γενική λίστα διανομής %{name}
             deleted: Διαγραφή καθολικού καταλόγου διανομής
             updated: Ενημερώθηκαν καθολικές λίστες διανομής
-            updated_fail: Σφάλμα κατά την ενημέρωση ενός ή περισσότερων γενικών λιστών διανομής
+            updated_fail: Σφάλμα ενημέρωσης ενός ή περισσότερων γενικών λιστών διανομής
           license_controller:
             license_upload_fail: Αποτυχία αποστολής άδειας χρήσης
             only_text_allowed: Μόνο αρχεία κειμένου επιτρέπονται.
@@ -614,8 +614,8 @@ el:
           cancel: Ακύρωση.
           password: Αλλαγή κωδικού πρόσβασης για %{local_name}
           reset_confirm: >-
-            Είστε βέβαιοι ότι θέλετε να επαναφέρετε τον κωδικό πρόσβασης του χρήστη; Θα σταλεί μια ειδοποίηση μέσω e-mail σε αυτό το χρήστη που θα τους επιτρέπει
-            να συνδεθούν και να αλλάξουν τον κωδικό πρόσβασης.
+            Είστε βέβαιοι ότι θέλετε να επαναφέρετε τον κωδικό πρόσβασης του χρήστη; Θα σταλεί ειδοποίηση μέσω email σε αυτό το χρήστη που θα τους επιτρέπει να συνδεθούν
+            και να αλλάξουν τον κωδικό πρόσβασης.
           reset_password: Κωδικός πρόσβασης επαναφοράς
           update_password: Ενημέρωση κωδικού πρόσβασης
         registrations:
@@ -759,7 +759,7 @@ el:
             sender_quota:
               sender_hint: Αντικατάσταση προεπιλεγμένης ορίου μεγέθους Sender
               sender_quota: Αποστολέας Quota
-              sender_quota_hint: Συνολικό μέγεθος δεδομένων που εστάλη κατά το τροχαίο.
+              sender_quota_hint: Συνολικό μέγεθος δεδομένων που εστάλη κατά το τροχαίο παράθυρο.
               sender_quota_leg: 'Αποστολέας Ποσόστωση:'
             user_history:
               last_login_time: 'Ώρα τελευταίας σύνδεσης:'
@@ -1083,7 +1083,7 @@ el:
             new: "-Νέο"
             public_login_inst: Δημόσιες οδηγίες σύνδεσης
             publicly_visible: 'Διαφημιστικό:'
-            redirect_saml: Ανακατεύθυνση στη σελίδα αποσύνδεσης SAML σε αποσύνδεση
+            redirect_saml: Ανακατεύθυνση στη σελίδα αποσύνδεσης SAML για logouts
             restrict_login_groups: 'Περιορισμός πρόσβασης σε γνωστές ομάδες:'
             restrict_login_groups_hint: Αν ενεργοποιηθεί, μόνο τα μέλη των ομάδων SAML που προστίθενται στο Faspex θα μπορούν να συνδεθούν.
             restrict_login_users: Περιορισμός πρόσβασης σε γνωστούς χρήστες
@@ -1142,7 +1142,7 @@ el:
               perc_b: Το σύντομο όνομα μήνα (Ιαν)
               perc_B: Όνομα πλήρους μήνα (Ιανουάριος)
               perc_d: Ημέρα του μήνα (01 .. 31)
-              perc_j: Ημέρα του χρόνου (01 .. 366)
+              perc_j: Ημέρα του έτους (01 .. 366)
               perc_m: Μήνας του έτους (01 .. 12)
               perc_Y: Έτος με τον αιώνα
               perc_y: Έτος χωρίς έναν αιώνα (00 ... 99)
@@ -1170,7 +1170,7 @@ el:
           global_dist_lists:
             index:
               add_new_list: Προσθήκη νέου καταλόγου διανομής
-              contacts: "' Επαφές"
+              contacts: 'Επαφές:'
               global_dist: Λίστες καθολικής διανομής
               name: 'όνομα:'
               no_list_alert: Δεν υπάρχουν καθολικές λίστες διανομής.
@@ -1211,7 +1211,7 @@ el:
               after: 'Μετά:'
               after_x_days: Μετά από %{num} ημέρες
               after_inactivity: Μετά τη %{len} ημέρες αδράνειας
-              after_one_success: Μετά από μια επιτυχημένη αποστολή.
+              after_one_success: Μετά από μία επιτυχημένη αποστολή.
               allow_custom_link: Δυνατότητα ορισμού πολιτικής λήξης προσαρμοσμένων διασυνδέσεων
               allow_email_change: Δυνατότητα αλλαγής της διεύθυνσης email τους
               allow_external_pkg_hint: Αν ενεργοποιηθεί, τα πακέτα που αποστέλλονται στους χρήστες του Faspex με τη (εξωτερική) σημαία θα επιτρέπονται
@@ -1272,7 +1272,7 @@ el:
               prevent_pw_reuse: Αποτροπή επαναχρησιμοποίησης κωδικού πρόσβασης
               prev_conc: Αποτροπή ταυτόχρονης σύνδεσης.
               pw_reset_hint: Το μήνυμα email επαναφοράς κωδικού πρόσβασης θα σταλεί και θα ξεκλειδωθεί μετά την αλλαγή του κωδικού πρόσβασης
-              quota_limit: Συνολικό μέγεθος δεδομένων που εστάλη κατά το τροχαίο.
+              quota_limit: Συνολικό μέγεθος δεδομένων που εστάλη κατά το τροχαίο παράθυρο.
               reg_hint: 'Προαιρετικά: Αν έχει οριστεί κείμενο, οι χρήστες θα πρέπει να αποδεχτούν τη δήλωση προκειμένου να εγγραφείτε.'
               reg_users_mutual: Οι αυτοεγγεγραμμένοι χρήστες μπορούν να στείλουν ο ένας στον άλλο.
               registration_instructions: 'Οδηγίες κυκλοφορίας:'
@@ -1294,7 +1294,7 @@ el:
               session_timeout: Προθεσμία συνεδρίας μετά
               slave_hint: Αν ενεργοποιηθεί, οι χρήστες μπορούν να συνδέονται μόνο από έναν πελάτη κάθε φορά
               strong_pw: Χρήση ισχυρών κωδικών πρόσβασης
-              timeout_hint: Λήξη προθεσμίας λήξης προθεσμίας μετά τον καθορισμένο αριθμό λεπτών αδράνειας
+              timeout_hint: Οι συνεδρίες λήξης προθεσμίας μετά τον καθορισμένο αριθμό λεπτών αδράνειας
               tos: Όροι υπηρεσίας για αποστολή
               tos_hint: 'Προαιρετικά: Αν το κείμενο έχει οριστεί, οι χρήστες θα πρέπει να αποδεχτούν τη δήλωση προκειμένου να στείλουν ένα πακέτο'
               update: 'Ενημέρωση:'
@@ -1435,7 +1435,7 @@ el:
             allow_submission_via_pub_URL: 'Δυνατότητα υποβολής μέσω δημόσιας διεύθυνσης URL:'
             always: 'Πάντα:'
             custom_exp_policy: Πολιτική λήξης προσαρμοσμένος πακέτου
-            custom_inv_policy: Πολιτική λήξης της διασύνδεσης προσαρμοσμένος πρόσκλησης
+            custom_inv_policy: Πολιτική λήξης της διασύνδεσης προσαρμοσμένος πρόσκληση
             day_after_sending_inv: ημέρα (- ες) μετά την αποστολή e-mail πρόσκλησης
             day_after_upload: ημέρα (- ες) μετά τη λήξη
             http_downloads_not_allowed: Δεν επιτρέπονται μεταφορτώσεις HTTP για αυτό το πακέτο.
@@ -1449,7 +1449,7 @@ el:
             require_encrypt: 'Απαίτηση κρυπτογράφησης-at-rest:'
             save_message: Το aspera-metadata.xml θα αποθηκευτεί στον κεντρικό κατάλογο κάθε πακέτου
             save_metadata: 'Αποθήκευση μεταδεδομένων σε αρχείο:'
-            success: Μετά από μια επιτυχημένη αποστολή.
+            success: Μετά από μία επιτυχημένη αποστολή.
             use_server_default: 'Χρήση προεπιλογής εξυπηρετητή (τρέχουσα: %{server})'
           perm:
             add_rem_dir_serv_groups: Προσθήκη/αφαίρεση ομάδων υπηρεσιών καταλόγου ως μελών
@@ -1505,7 +1505,7 @@ el:
         fieldsets:
           sub_link_expires:
             after: 'Μετά:'
-            after_one_success: Μετά από μια επιτυχημένη αποστολή.
+            after_one_success: Μετά από μία επιτυχημένη αποστολή.
             after_one_up: Μετά από ένα ...
             custom_inv_policy: 'Πολιτική λήξης προσαρμοσμένος δεσμός πρόσκλησης:'
             day_after_sending_inv: ημέρα (- ες) μετά την αποστολή e-mail πρόσκλησης
@@ -1720,7 +1720,7 @@ el:
           remove: 'Αφαίρεση:'
           rule_name: 'Όνομα κανόνα:'
           save: 'Αποθήκευση:'
-          username_regex: 'Όνομα χρήστη:'
+          username_regex: 'Όνομα χρήστη regex:'
         new_server:
           alternate_address: 'Εναλλακτική διεύθυνση:'
           back: Πίσω!
@@ -2031,14 +2031,14 @@ el:
             external: "(εξωτερικά)"
             remove: 'Αφαίρεση:'
           index:
-            contacts: "' Επαφές"
+            contacts: 'Επαφές:'
             edit_alert: Δεν έχετε τροποποιήσιμες επαφές.
             edit_contacts: 'Τροποποίηση επαφών:'
         dist_lists:
           index:
             add_new_dist_list: Προσθήκη νέου καταλόγου διανομής
             alert_dist: Δεν έχετε προσωπικές λίστες διανομής.
-            contacts: "' Επαφές"
+            contacts: 'Επαφές:'
             global_dist_lists: Λίστες καθολικής διανομής
             name: "' Ονομα"
             pers_dist_lists: Λίστες προσωπικών κατανομής
@@ -2054,7 +2054,7 @@ el:
         preferences:
           edit:
             download_connect: Πρόσθετο σύνδεσης μεταφόρτωσης
-            download_hint: Μπορεί να χρειαστούν μερικά λεπτά για την αλλαγή.
+            download_hint: Μπορεί να χρειαστούν μερικά λεπτά για να αλλάξει η αλλαγή.
             download_notif: 'Λήψη ειδοποιήσεων:'
             download_notif_hint: Email σε αυτές τις διευθύνσεις όταν κάθε παραλήπτης πρώτα μεταφορτώνει ένα πακέτο
             email_settings: Ρυθμίσεις email
@@ -2068,8 +2068,8 @@ el:
             received_page_option: Εμφάνιση μόνο ολοκληρωμένων πακέτων στη σελίδα ' Received '
         sender_quota:
           index:
-            sender_alert_1: Συμπληρώσατε το όριο μεγέθους αποστολέα %{quota} MB
-            sender_alert_2: "%{quota} MB διαθέσιμη. Το όριο μεγέθους του αποστολέα έχει οριστεί σε %{limit} MB."
+            sender_alert_1: Συμπληρώσατε το όριο μεγέθους του αποστολέα %{quo} MB
+            sender_alert_2: "%{quota} MB διαθέσιμη. Το όριο μεγέθους του αποστολέα ορίζεται σε %{limit} MB."
             sender_quota: Αποστολέας Quota
       shared:
         browser:
@@ -2550,7 +2550,7 @@ el:
     - Fri
     - Sat
     abbr_month_names:
-    - 
+    -
     - Jan
     - Feb
     - Mar
@@ -2576,7 +2576,7 @@ el:
       long: "%B %d, %Y"
       short: "%b %d"
     month_names:
-    - 
+    -
     - January
     - February
     - March
@@ -2709,8 +2709,14 @@ el:
         config_save_error: Σφάλμα κατά την αποθήκευση ρυθμίσεων.  Ανατρέξτε στο ημερολόγιο για λεπτομέρειες.
         upload_saved_config: Μεταφόρτωση αποθηκευμένων ρυθμίσεων.
         restore_config_error: Σφάλμα αποκατάστασης ρυθμίσεων.  Ανατρέξτε στο ημερολόγιο για λεπτομέρειες.
-        tar_error: Σφάλμα κατά την εκκαθάριση των ρυθμίσεων %{tar_status} %{tar_out}
-        untar_error: Σφάλμα untarring config %{untar_status} %{untar_stdout}
+        tar_error: |-
+          Σφάλμα tarring config
+          %{tar_status}
+          %{tar_out}
+        untar_error: |-
+          Σφάλμα untarring config
+          MY_untar_status-YM
+          %{untar_stdout}
     aspera_license_reader:
       no_license_found: Δεν βρέθηκε καμία άδεια χρήσης ή άδεια χρήσης.
       license_signature_mismatch: Η υπογραφή άδειας χρήσης δεν συμφωνεί με το περιεχόμενο

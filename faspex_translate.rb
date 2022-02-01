@@ -3,22 +3,48 @@
 require 'yaml' # same as psych, see module Psych
 
 require 'json'
-require 'asperalm/rest'
-require 'asperalm/log'
+require 'aspera/rest'
+require 'aspera/log'
 
 class IBMCloudWatsonTranslator
   def initialize(url,apikey,source,destination)
     @model="#{source}-#{destination}"
-    @wt_api=Asperalm::Rest.new({
+    @wt_api=Aspera::Rest.new({
       base_url: url,
       auth: {:type=>:basic,:username=>'apikey',:password=>apikey},
       session_cb: lambda {|http| http.read_timeout=300}
     })
   end
+  # maximum number of translation in one batch
+  WATSON_MAX_REQUEST_BYTES=10000
 
+  # @param origs an array of strings to translate
   def translate_sentences(origs)
-    result=@wt_api.create('v3/translate?version=2018-05-01',{'model_id'=>@model,'text'=>origs})[:data]
-    return result['translations'].map{|i|i['translation']}
+    remain=origs.clone
+    translated=[]
+    while !remain.empty?
+      to_translate=[]
+      total_size=0
+      while total_size<WATSON_MAX_REQUEST_BYTES and !remain.empty?
+        current=remain.shift
+        to_translate.push(current)
+        total_size+=current.length
+      end
+      Aspera::Log.log.debug("SIZE: #{total_size}")
+      try_count=0
+      begin
+        result=@wt_api.create('v3/translate?version=2018-05-01',{'model_id'=>@model,'text'=>to_translate})[:data]
+      rescue Aspera::RestCallError => e
+        try_count+=1
+        if try_count <= 2
+          Aspera::Log.log.error("An error occured, retrying: #{e}")
+          retry
+        end
+        raise e
+      end
+      translated.concat(result['translations'].map{|i|i['translation']})
+    end
+    return translated
   end
 end
 
@@ -45,7 +71,7 @@ def faspex_message_occurences(faspex_strings_hash)
       when String
         # lets skip strings that contain only formatting, this will need manual adjustment
         if v.gsub(/%[A-Za-z]/,'').gsub(/%\{[^}]+\}/,'').gsub(/[^[A-Za-z]]/,'').empty?
-          Asperalm::Log.log.debug("skip: #{v}")
+          Aspera::Log.log.debug("skip: #{v}")
           next
         end
         # add or create occurrence to list for this sentence.
@@ -56,13 +82,13 @@ def faspex_message_occurences(faspex_strings_hash)
       when Array
         inside_types=v.map{|i|i.class}.uniq
         if inside_types.eql?([Symbol])
-          Asperalm::Log.log.debug("skip array: #{v}")
+          Aspera::Log.log.debug("skip array: #{v}")
           next
         end
         raise "unexpected array: #{v} at #{current_path}" unless [[String],[NilClass,String]].include?(inside_types)
         # TODO: translate array
-        Asperalm::Log.log.debug("todo: #{v}")
-      else Asperalm::Log.log.debug("skip: #{v.class} at #{current_path}");
+        Aspera::Log.log.debug("todo: #{v}")
+      else Aspera::Log.log.debug("skip: #{v.class} at #{current_path}");
       end
     end
   end
@@ -112,8 +138,8 @@ end
 # global stuff
 Encoding.default_internal = Encoding::UTF_8
 Encoding.default_external = Encoding::UTF_8
-Asperalm::Log.instance.level=:warn
-Asperalm::Rest.debug=false
+Aspera::Log.instance.level=:debug
+Aspera::Rest.debug=false
 
 # get command line args
 watson_trans_creds_file=ARGV[0]

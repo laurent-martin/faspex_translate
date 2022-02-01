@@ -47,70 +47,56 @@ de:
         ad_proxy_host: Active Directory-Proxy-Host
         ad_proxy_port: Active Directory-Proxy-Port
         announcement: Nachricht
-        dbox_can_override_ear: Dropboxen für eigene Verschlüsselungseinstellungen
-          zulassen
-        can_override_ear_per_personal_invite: Angepasste Verschlüsselungseinstellungen
-          für externe Sendereinladungen zulassen
+        dbox_can_override_ear: Dropboxen für eigene Verschlüsselungseinstellungen zulassen
+        can_override_ear_per_personal_invite: Angepasste Verschlüsselungseinstellungen für externe Sendereinladungen zulassen
         e_http_port: HTTP-Port
         e_https_port: HTTPS-Port
         e_server_address: Externe Adresse oder Name des Servers
         e_server_enable_alternate_address: Alternative Adresse aktivieren
-        e_server_emails_include_alternate_address: E-Mails schließen alternative Adresse
-          ein
+        e_server_emails_include_alternate_address: E-Mails schließen alternative Adresse ein
         email_passcode_expires: Paketlink läuft ab
         email_passcode_days_valid: Verfallen nach
         email_passcode_expire_after_download: Ablauf nach dem vollständigen Paketdownload
         registration_type: Selbstregistrierung
-        registration_approval_ccs: Die folgenden E-Mails benachrichtigen, damit sie
-          genehmigt werden
-        registration_external_use_default: Standardregistrierungspolitik für externe
-          Benutzer verwenden
+        registration_approval_ccs: Die folgenden E-Mails benachrichtigen, damit sie genehmigt werden
+        registration_external_use_default: Standardregistrierungspolitik für externe Benutzer verwenden
         registration_type_external: Registrierungsrichtlinie für externe Benutzer
-        registration_approval_ccs_external: Die folgenden E-Mails für die Genehmigung
-          externer Benutzer benachrichtigen
+        registration_approval_ccs_external: Die folgenden E-Mails für die Genehmigung externer Benutzer benachrichtigen
         tos_external: Nutzungsbedingungen für externe Benutzer
         package_instructions: Nachricht
         tos: Nutzungsbedingungen
         use_strong_password: Starke Kennwörter verwenden
-        force_password_reset_for_new_users: Neue Benutzer benötigen, um das Kennwort
-          bei der ersten Anmeldung zu ändern
+        force_password_reset_for_new_users: Neue Benutzer benötigen, um das Kennwort bei der ersten Anmeldung zu ändern
         allow_users_to_unlock: Gesperrte Benutzer freigeben, um sich selbst zu entsperren
         session_timeout: Zeitlimit für Sitzungen nach
         allow_send_to_email: Senden an externe E-Mail-Adressen zulassen
         allow_request_from_email: Einladungen zulassen
-        registered_users_have_mutual_scope: Selbst registrierte Benutzer können sich
-          an eine andere
+        registered_users_have_mutual_scope: Selbst registrierte Benutzer können sich an eine andere
         inviting_allowed: Einladende externe Absender zulassen
         hide_user_dir_default: Benutzerverzeichnis standardmäßig privat halten
         public_url_allowed: URLs für die öffentliche Übergabe zulassen
-        dbox_can_override_public_url: Dropboxen ermöglichen, ihre eigenen öffentlichen
-          URLs einzeln zu aktivieren/zu inaktivieren
+        dbox_can_override_public_url: Dropboxen ermöglichen, ihre eigenen öffentlichen URLs einzeln zu aktivieren/zu inaktivieren
         public_url_home_server_id: Home-Server für öffentliche URLs
-        automatically_login_using_saml_idp: Bei Verwendung eines SAML-Identitätsproviders
-          anmelden
+        automatically_login_using_saml_idp: Bei Verwendung eines SAML-Identitätsproviders anmelden
         saml_idp_sso_target_url: IdP-Single Sign-On-URL
         saml_idp_slo_target_url: IdP-URL für Einzelabmeldung
         saml_idp_cert_fingerprint: IdP-Zertifikat-Fingerabdruck
         saml_idp_cert: IdP-Zertifikat
-        can_see_global_distribution_lists_default: Benutzer können globale Verteilerlisten
-          standardmäßig anzeigen.
+        can_see_global_distribution_lists_default: Benutzer können globale Verteilerlisten standardmäßig anzeigen.
         tos_for_sending: Nutzungsbedingungen für das Senden
         remove_ds_users_on_inactivity: DS-Benutzer entfernen
         remove_saml_users_on_inactivity: SAML-Benutzer entfernen
       e_workgroup:
         e_wg_name: Name
         e_wg_desc: Beschreibung
-        workgroup_received_notification_cc: Kopie der Eingangs-E-Mail an diese Adressen
-          senden
+        workgroup_received_notification_cc: Kopie der Eingangs-E-Mail an diese Adressen senden
         destination_share_id: Standardeingang
       invitation:
         expires_at: Tage bis Ablauf
       node:
         alternate_address: Sekundäre Adresse oder Name
-        alternate_address_client_filter: Verwenden, wenn die Adresse des Anforderers
-          übereinstimmt
-        alternate_address_server_filter: Verwenden, wenn der Hostname des Browsers
-          übereinstimmt
+        alternate_address_client_filter: Verwenden, wenn die Adresse des Anforderers übereinstimmt
+        alternate_address_server_filter: Verwenden, wenn der Hostname des Browsers übereinstimmt
         api_password: Kennwort
         api_port: Port
         api_username: Benutzername
@@ -185,8 +171,7 @@ de:
         self_destructs: Automatische Löschvorgänge für Account
         destruction_date: Löschdatum
         received_notification_cc: Kopie der Eingangs-E-Mail an diese Adressen senden
-        allow_receipt_cc_edit: Bearbeitung von Quittungsadressen bei der Paketerstellung
-          zulassen
+        allow_receipt_cc_edit: Bearbeitung von Quittungsadressen bei der Paketerstellung zulassen
         uploads_allowed: Pakete hochladen
         downloads_allowed: Pakete herunterladen
         forwarding_allowed: Forward-Pakete
@@ -195,15 +180,11 @@ de:
         can_send_to_external_email: Kann an externe E-Mail gesendet werden
         can_invite: Einladende externe Absender zulassen
         notify_on_receive: Senden Sie mir eine E-Mail, wenn ich ein Paket bekomme
-        notify_on_validation_failure_if_sender: E-Mail an mich senden, wenn die Validierung
-          bei gesendeten Paketen fehlschlägt
-        notify_on_validation_failure_if_recipient: E-Mail an mich senden, wenn die
-          Validierung bei empfangenen Paketen fehlschlägt
+        notify_on_validation_failure_if_sender: E-Mail an mich senden, wenn die Validierung bei gesendeten Paketen fehlschlägt
+        notify_on_validation_failure_if_recipient: E-Mail an mich senden, wenn die Validierung bei empfangenen Paketen fehlschlägt
         notify_downloader_on_download: Mailen Sie mir, wenn ich ein Paket herunterladen
-        notify_on_workgroup_package_if_sender: Mich in Workgroup-Benachrichtigungen
-          für Pakete einschließen, die ich senden
-        suppress_connect_install_dialog: Installation/Upgrade-Eingabeaufforderungen
-          unterdrücken
+        notify_on_workgroup_package_if_sender: Mich in Workgroup-Benachrichtigungen für Pakete einschließen, die ich senden
+        suppress_connect_install_dialog: Installation/Upgrade-Eingabeaufforderungen unterdrücken
         allowed_ip_addresses_for_login: Zulässige IP-Adressen für Anmeldung
         allowed_ip_addresses_for_download: Zulässige IP-Adressen zum Herunterladen
         allowed_ip_addresses_for_upload: Zulässige IP-Adressen für Upload
@@ -216,8 +197,7 @@ de:
         updated_at: Aktualisiert am
         type: Benutzertyp
         description: Kommentare
-        allow_user_specified_delete_after_download: Benutzer erlauben, eigene Löscheinstellungen
-          auf Paket-nach-Package-Basis festzulegen
+        allow_user_specified_delete_after_download: Benutzer erlauben, eigene Löscheinstellungen auf Paket-nach-Package-Basis festzulegen
         enable_public_url: Öffentliche URL aktivieren
         can_have_public_url: URLs für die öffentliche Übergabe zulassen
       local_user:
@@ -234,17 +214,13 @@ de:
         ldap_field_pattern2: LDAP-Feld regex
         ldap_field_pattern3: LDAP-Feld regex
       send:
-        upload_cc: Diese Empfänger werden benachrichtigt, wenn dieses Paket das Hochladen
-          abgeschlossen hat.
-        download_cc: Diese Empfänger werden benachrichtigt, wenn ein Empfänger dieses
-          Paket heruntergeladen hat.
-        receipt_cc: Diese Empfänger werden Cc' d auf dem Empfänger-Paket erhalten
-          E-Mail erhalten
+        upload_cc: Diese Empfänger werden benachrichtigt, wenn dieses Paket das Hochladen abgeschlossen hat.
+        download_cc: Diese Empfänger werden benachrichtigt, wenn ein Empfänger dieses Paket heruntergeladen hat.
+        receipt_cc: Diese Empfänger werden Cc' d auf dem Empfänger-Paket erhalten E-Mail erhalten
     errors:
       format: "%{attribute} %{message}"
       e_configuration:
-        idp_cert_and_idp_cert_fingerprint_blank: Eine von "IdP Certificate Fingerprint"
-          oder "IdP Certificate" muss angegeben werden.
+        idp_cert_and_idp_cert_fingerprint_blank: Eine von "IdP Certificate Fingerprint" oder "IdP Certificate" muss angegeben werden.
       models:
         delivery:
           attributes:
@@ -288,10 +264,8 @@ de:
         present: muss leer sein
         record_invalid: 'Validierung fehlgeschlagen: %{errors}'
         restrict_dependent_destroy:
-          has_many: Datensatz kann nicht gelöscht werden, weil abhängige %{record}
-            vorhanden sind
-          has_one: Datensatz kann nicht gelöscht werden, weil ein abhängiges %{record}
-            vorhanden ist
+          has_many: Datensatz kann nicht gelöscht werden, weil abhängige %{record} vorhanden sind
+          has_one: Datensatz kann nicht gelöscht werden, weil ein abhängiges %{record} vorhanden ist
         required: muss vorhanden sein
         taken: wurde bereits
         too_long:
@@ -306,28 +280,25 @@ de:
       template:
         body: 'Es gab Probleme mit den folgenden Feldern:'
         header:
-          one: 1 Fehler untersagte, dass %{model} gesichert wurde
+          one: 1 Fehler bei der Speicherung dieses %{model}.
           other: "%{count}-Fehler untersagten, dass %{model} gesichert wurde."
       user:
-        groups_are_inactive: Die Gruppen, von denen Sie Mitglied sind, sind inaktiv.
+        groups_are_inactive: Die Gruppen, deren Mitglied Sie sind, sind inaktiv.
         user_is_inactive: Benutzer ist inaktiv
-        username_conflicts_with_existing_user: Benutzername steht in Konflikt mit
-          einem vorhandenen Benutzerkonto.
+        username_conflicts_with_existing_user: Benutzername steht in Konflikt mit einem vorhandenen Benutzerkonto.
   admin:
     saml:
       edit:
         saml: SAML
-        automatically_login_using_saml_idp_hint: Melden Sie sich automatisch mit dem
-          SAML-Identitätsprovider an.  %{url} kann verwendet werden, um sich direkt
-          bei Faspex anzumelden, selbst wenn die automatische Anmeldung mit SAML aktiviert
-          ist.
+        automatically_login_using_saml_idp_hint: >-
+          Melden Sie sich automatisch mit dem SAML-Identitätsprovider an.  %{url} kann verwendet werden, um sich direkt bei Faspex anzumelden, selbst wenn die automatische
+          Anmeldung mit SAML aktiviert ist.
     saml_configurations:
       edit:
-        domain_url_hint: "(Optional) Wenn Sie auf diese Faspex-Domäne zugreifen, werden
-          die Benutzer automatisch über diesen SAML-Provider an die Anmeldung weitergeleitet
-          (Überschreibungen werden außer Kraft gesetzt)."
-        publicly_visible_hint: Benutzern den Zugriff auf diese SAML-Konfiguration
-          über die lokale Anmeldeseite ermöglichen
+        domain_url_hint: >-
+          (Optional) Wenn Sie auf diese Faspex-Domäne zugreifen, werden die Benutzer automatisch über diesen SAML-Provider an die Anmeldung weitergeleitet (Überschreibungen
+          werden außer Kraft gesetzt).
+        publicly_visible_hint: Benutzern den Zugriff auf diese SAML-Konfiguration über die lokale Anmeldeseite ermöglichen
       test_warning: |-
         Warnung: Diese Aktion beendet Ihre aktuelle Faspex-Sitzung und führt Sie direkt zur Anmeldeseite für diesen SAML-Provider.
 
@@ -340,8 +311,7 @@ de:
           sync_group: Syncing %{group_name}
           updated_grp_prov: Die Einrichtungsrichtlinie der Gruppe wurde aktualisiert.
           updated_grp_import: Die Importrichtlinie der Gruppe wurde aktualisiert.
-          updated_error: Fehler beim Speichern der Gruppenkonfiguration der Gruppe
-            '%{group_name}':<br/>
+          updated_error: Fehler beim Speichern der Gruppenkonfiguration der Gruppe '%{group_name}':<br/>
           removed_group: Die Gruppe '%{group_name}' aus der Arbeitsgruppe wurde entfernt.
           wg_not_found: Arbeitsgruppe nicht gefunden
           no_groups_selected: Keine Gruppen ausgewählt
@@ -350,29 +320,24 @@ de:
           group_sched_removed: "%{group_name} soll entfernt werden"
         memberships_controller:
           added_wg: Schablonenbenutzer zur Arbeitsgruppe hinzugefügt-%{wg_name}
-          added_wg_fail: Der Schablonenbenutzer konnte der Arbeitsgruppe nicht hinzugefügt
-            werden-%{wg_name}
+          added_wg_fail: Der Schablonenbenutzer konnte der Arbeitsgruppe nicht hinzugefügt werden-%{wg_name}
           remove_wg: Schablonenbenutzer aus der Arbeitsgruppe entfernt-%{wg_name}
-          remove_wg_fail: Der Schablonenbenutzer konnte nicht aus der Arbeitsgruppe
-            entfernt werden-%{wg_name}
+          remove_wg_fail: Der Schablonenbenutzer konnte nicht aus der Arbeitsgruppe entfernt werden-%{wg_name}
         saml_groups_controller:
           added_group: Hinzugefügte Gruppe '%{group_name}'
         users_controller:
           no_wg_found: Workgroup *%{wg_name} konnte nicht gefunden werden
           add_to_wg_fail: 'Fehler beim Hinzufügen zur Arbeitsgruppe: %{error}'
           removed_from_wg: Aus der Arbeitsgruppe entfernt.
-          removed_from_wg_fail: 'Fehler beim Entfernen des Benutzers aus der Arbeitsgruppe:
-            %{error}'
+          removed_from_wg_fail: 'Fehler beim Entfernen des Benutzers aus der Arbeitsgruppe: %{error}'
           user_membership_updated: Die Benutzerzugehörigkeit wurde aktualisiert.
           error_editing_membership: 'Fehler beim Bearbeiten der Mitgliedschaft: %{error}'
           created_user: Benutzer '%{user_name}' wurde erfolgreich erstellt
           created_user_fail: Benutzer konnte nicht hinzugefügt werden.
           updated_user: Der Benutzer %{user_name} wurde erfolgreich aktualisiert.
-          permission_error: Sie verfügen nicht über die Berechtigung zum Ändern des
-            Benutzers %{user_name}
+          permission_error: Sie verfügen nicht über die Berechtigung zum Ändern des Benutzers %{user_name}
           activated: Aktiviertes %{user}
-          disabled_saml_user_note: "<br>Hinweis: Benutzer, die mit inaktivierten SAML-Konfigurationen
-            verknüpft sind, bleiben inaktiv."
+          disabled_saml_user_note: "<br>Hinweis: Benutzer, die mit inaktivierten SAML-Konfigurationen verknüpft sind, bleiben inaktiv."
           deactivated: Inaktiviertes %{user}
           removed: Entferntes %{user}
           removed_external: Entferntes %{user}
@@ -401,22 +366,18 @@ de:
           activated_error: Fehler beim Aktivieren von %{script_name}
           created: Das Nachverarbeitungsscript %{script_name} wurde erfolgreich erstellt.
           deleted: Nachverarbeitungs-Script '%{script_name}' wurde entfernt
-          inactivated: Inaktivierter %{script_name}
+          inactivated: Inaktiviertes %{script_name}
           inactivated_error: Fehler beim Inaktivieren von %{script_name}
           updated: Script %{script_name} erfolgreich aktualisiert
         saml_configurations_controller:
-          create_success: 'SAML-Konfiguration erfolgreich erstellt<br>HINWEIS: Sie
-            müssen die Metadaten auf dem SAML-Server aktualisieren, bevor Sie sich
-            anmelden.'
-          update_success: 'Die SAML-Konfiguration<br>HINWEIS: Sie müssen möglicherweise
-            die Metadaten auf dem SAML-Server aktualisieren, bevor Sie sich anmelden.'
+          create_success: 'SAML-Konfiguration erfolgreich erstellt<br>HINWEIS: Sie müssen die Metadaten auf dem SAML-Server aktualisieren, bevor Sie sich anmelden.'
+          update_success: 'Die SAML-Konfiguration<br>HINWEIS: Möglicherweise müssen Sie die Metadaten auf dem SAML-Server aktualisieren, bevor Sie sich anmelden.'
         settings:
           display_settings_controller:
             file_too_large: Die Datei ist zu groß. Die maximale Dateigröße ist 5MB.
             remove_logo_fail: Benutzerdefinierte Logodatei kann nicht gelöscht werden
             remove_logo_success: Angepasste Logodatei wurde erfolgreich entfernt
-            unsupported_file_type: Nicht unterstützter Dateityp für angepasstes Logo.
-              Die Datei muss ein jpeg-, gif-oder png-Image sein.
+            unsupported_file_type: Nicht unterstützter Dateityp für angepasstes Logo. Die Datei muss ein jpeg-, gif-oder png-Image sein.
             updated_settings: Aktualisierte Anzeigeeinstellungen
           entitlement_controller:
             invalid_license: Ungültige Nutzungsrechtlizenz
@@ -434,8 +395,7 @@ de:
           package_storage_controller:
             updated_settings: Aktualisierte Paketspeichereinstellungen
           save_restore_config_controller:
-            config_restored: Konfiguration wiederhergestellt. Stellen Sie sicher,
-              dass Faspex erneut gestartet wird, um diesen Prozess abzuschließen.
+            config_restored: Konfiguration wiederhergestellt. Stellen Sie sicher, dass Faspex erneut gestartet wird, um diesen Prozess abzuschließen.
           security_controller:
             updated_settings: Aktualisierte Sicherheitseinstellungen
           transfer_options_controller:
@@ -455,36 +415,29 @@ de:
           updated_default: Standardinbox aktualisiert
       authenticated_controller:
         expired: Ihre Sitzung ist abgelaufen. Melden Sie sich erneut an, um fortzufahren.
-        new_session: Eine weitere Sitzung für den Benutzer %{username} wurde von (%{remote})
-          gestartet.
-        timed_out: Ihre Sitzung hat das zulässige Zeitlimit überschritten. Melden
-          Sie sich erneut an, um fortzufahren.
+        new_session: Eine weitere Sitzung für den Benutzer %{username} wurde von (%{remote}) gestartet.
+        timed_out: Ihre Sitzung hat das zulässige Zeitlimit überschritten. Melden Sie sich erneut an, um fortzufahren.
       entitlement_controller:
         success: Erfolgreiches Nutzungsrecht
       external:
         submissions_controller:
           send_to_recipient: An %{name} senden
       invitations_controller:
-        invitation_failed: Die Einladung ist fehlgeschlagen. Versuchen Sie es später
-          erneut.
+        invitation_failed: Die Einladung ist fehlgeschlagen. Versuchen Sie es später erneut.
         invitation_created: Einladung für %{email} erstellt
         reinvited: Einladung zu %{name} erneut eingeladen
-        reinvited_fail: Die erneute Einladung ist fehlgeschlagen. Versuchen Sie es
-          später erneut.
-        resend_invitation_failed: Das erneute Senden der Einladung ist fehlgeschlagen.
-          Versuchen Sie es später erneut.
+        reinvited_fail: Die erneute Einladung ist fehlgeschlagen. Versuchen Sie es später erneut.
+        resend_invitation_failed: Das erneute Senden der Einladung ist fehlgeschlagen. Versuchen Sie es später erneut.
         resent_invitation: Einladung an %{name} erneut senden
         deleted_invitation: Gelöschte Einladung
-        deleted_invitation_try_again: Löschen der Einladung fehlgeschlagen. Versuchen
-          Sie es später erneut.
+        deleted_invitation_try_again: Löschen der Einladung fehlgeschlagen. Versuchen Sie es später erneut.
       login_base_controller:
-        login_error_message: Ihre Anmeldung war nicht erfolgreich. Versuchen Sie es
-          erneut. Wenn Sie bei wiederholten Anmeldefehlern auftreten, klicken Sie
-          auf den Link 'Kennwort vergessen', um Ihr Kennwort zurückzusetzen.
+        login_error_message: >-
+          Ihre Anmeldung war nicht erfolgreich. Versuchen Sie es erneut. Bei wiederholten Anmeldefehlern sollten Sie auf den Link "Passwort vergessen" klicken, um
+          Ihr Passwort zurückzusetzen.
       login_controller:
         connect_enabled: IBM Aspera Connect wurde aktiviert!
-        login_URL_change: Die Anmelde-URL wurde geändert. Bitte aktualisieren Sie
-          Ihr Browser-Lesezeichen.
+        login_URL_change: Die Anmelde-URL wurde geändert. Bitte aktualisieren Sie Ihr Browser-Lesezeichen.
         session_already_disconnected: Diese Sitzung wurde bereits getrennt.
       m_configuration_controller:
         updated: Die Mailkonfiguration wurde aktualisiert.
@@ -492,17 +445,14 @@ de:
         loaded: Standardeinstellungen erfolgreich geladen
         updated: "%{template}-E-Mail-Benachrichtigung erfolgreich aktualisiert"
       metadata_profiles_controller:
-        cannot_delete_profile: Profil kann nicht gelöscht werden, es wird von normalen
-          Paketen verwendet.
-        cannot_delete_profile_dropbox: Das Profil kann nicht gelöscht werden, es wird
-          von dropbox %{db_name} verwendet.
+        cannot_delete_profile: Profil kann nicht gelöscht werden, es wird von normalen Paketen verwendet.
+        cannot_delete_profile_dropbox: Das Profil kann nicht gelöscht werden, es wird von dropbox %{db_name} verwendet.
         created: Erstellte Metadaten %{profile}
         profile_deleted: Profil gelöscht.
         save_success: Metadatenprofil erfolgreich gespeichert
         updated: Aktualisiert
       ms_admin_controller:
-        home_server_rules_changed: Die Home-Server-Regeln haben sich geändert. Sie
-          können die Home-Server neu berechnen, um Änderungen anzuwenden.
+        home_server_rules_changed: Die Home-Server-Regeln haben sich geändert. Sie können die Home-Server neu berechnen, um Änderungen anzuwenden.
         updated_rule: Aktualisierte Regel
         deleted_rule: Gelöschte Regel
         added_new_rule: Neue Regel hinzugefügt
@@ -513,33 +463,28 @@ de:
         access_denied: Zugriff verweigert.
       pending_controller:
         archived: Paket "%{pkg_name}" archiviert
-        archived_fail: Fehler beim Archivieren von Paketen. Versuchen Sie es später
-          erneut.
+        archived_fail: Fehler beim Archivieren von Paketen. Versuchen Sie es später erneut.
         deleted: Paket "%{pkg_name}" gelöscht
         deleted_fail: Fehler beim Löschen des Pakets. Versuchen Sie es später erneut.
       received_controller:
         package_archived: Paket %{p_name} archiviert
-        package_archived_fail: Fehler beim Archivieren von Paketen. Versuchen Sie
-          es später erneut.
+        package_archived_fail: Fehler beim Archivieren von Paketen. Versuchen Sie es später erneut.
       registrations_controller:
-        failed_registration: Registrierung ist fehlgeschlagen. Versuchen Sie es später
-          erneut.
+        failed_registration: Registrierung ist fehlgeschlagen. Versuchen Sie es später erneut.
       reset_password_tokens_controller:
         no_account_exists: Dieses Konto ist nicht mehr vorhanden.
-        expired_pw_link: Ihr Link zum Zurücksetzen des Kennworts wurde bereits verwendet
-          oder ist abgelaufen und ist nicht mehr gültig.
+        expired_pw_link: Ihr Link zum Zurücksetzen des Kennworts wurde bereits verwendet oder ist abgelaufen und ist nicht mehr gültig.
         reset_success: Ihr Kennwort wurde erfolgreich zurückgesetzt!
-        reset_submitted: Anforderung zum Zurücksetzen des Kennworts übergeben. Wenn
-          Sie in Kürze keine E-Mail erhalten, wenden Sie sich an Ihren Administrator,
-          um Unterstützung zu erhalten.
+        reset_submitted: >-
+          Anforderung zum Zurücksetzen des Kennworts übergeben. Wenn Sie in Kürze keine E-Mail erhalten, wenden Sie sich an Ihren Administrator, um Unterstützung
+          zu erhalten.
       saml_controller:
         does_not_exist: Der angeforderte SAML-Provider ist nicht vorhanden.
         disabled: Der angeforderte SAML-Provider wurde inaktiviert.
         invalid_metadata: Ungültige Metadaten-URL
       sent_controller:
         archived: Paket "%{pkg_name}" archiviert
-        archived_fail: Fehler beim Archivieren von Paketen. Versuchen Sie es später
-          erneut.
+        archived_fail: Fehler beim Archivieren von Paketen. Versuchen Sie es später erneut.
         deleted: Paket "%{pkg_name}" gelöscht
         deleted_fail: Fehler beim Löschen des Pakets. Versuchen Sie es später erneut.
         relay: Relais zur Freigabe von %{share} gestartet
@@ -561,46 +506,36 @@ de:
         workgroups_controller:
           activate: Aktivieren
           activated_members: Aktiviert %{counts} member%{plural}. %{msg}
-          add_ds: DS-Gruppe kann nicht hinzugefügt werden. Versuchen Sie es später
-            erneut.
+          add_ds: DS-Gruppe kann nicht hinzugefügt werden. Versuchen Sie es später erneut.
           add_ds_fail: DS-Gruppe %{group} zu Workgroup %{name} hinzugefügt
           add_member: Hinzufügen von %{name} zu %{box}
-          add_member_fail: Mitglied kann nicht hinzugefügt werden. Versuchen Sie es
-            später erneut.
+          add_member_fail: Mitglied kann nicht hinzugefügt werden. Versuchen Sie es später erneut.
           create_success: 'Erfolgreich erstellt '
           deactivate: Inaktivieren
           deactivated_success: Inaktiviertes %{counts} member%{plural}. %{msg}%{admin}
           deleted_success: Gelöscht %{type} %{name}
-          external_email_no_standard_access: Externen E-Mail-Benutzern kann kein Standardzugriff
-            gewährt werden. Keine Änderungen vorgenommen.
-          external_email_deactivated_fail: Externe E-Mail-Benutzer können nicht inaktiviert
-            werden, sondern nur entfernt werden. Keine Änderungen vorgenommen.
+          external_email_no_standard_access: Externen E-Mail-Benutzern kann kein Standardzugriff gewährt werden. Es wurden keine Änderungen vorgenommen.
+          external_email_deactivated_fail: Externe E-Mail-Benutzer können nicht inaktiviert werden, sondern nur entfernt werden. Es wurden keine Änderungen vorgenommen.
           members_actions: Mitglieder-Aktionen ...
           no_ds_selected: Keine DS-Gruppen ausgewählt
           no_members_selected: Keine Mitglieder ausgewählt
           remove: Entfernen
-          remove_member: Entfernen von %{member} aus der Arbeitsgruppe.
-          remove_member_fail: Member kann nicht entfernt werden. Versuchen Sie es
-            später erneut.
+          remove_member: "%{member} wurde aus der Arbeitsgruppe entfernt."
+          remove_member_fail: Member kann nicht entfernt werden. Versuchen Sie es später erneut.
           remove_ds_group: Entfernen von %{count} aus der Arbeitsgruppe.
-          remove_ds_group_fail: DS-Gruppe kann nicht entfernt werden. Versuchen Sie
-            es später erneut.
+          remove_ds_group_fail: DS-Gruppe kann nicht entfernt werden. Versuchen Sie es später erneut.
           set_admin: Setzen Sie %{member} als %{name}-Administrator.
-          set_admin_fail: Außerhalb der E-Mail-Benutzer können keine Dropbox-Administratoren
-            erstellt werden. Keine Änderungen vorgenommen.
+          set_admin_fail: Außerhalb der E-Mail-Benutzer können keine Dropbox-Administratoren erstellt werden. Es wurden keine Änderungen vorgenommen.
           set_ds_access: Setzen Sie %{group} als Zugriff auf %{level}.
-          set_ds_access_fail: Der %{level}-Zugriff auf DS-Gruppen kann nicht festgelegt
-            werden. Versuchen Sie es später erneut.
+          set_ds_access_fail: Der %{level}-Zugriff auf DS-Gruppen kann nicht festgelegt werden. Versuchen Sie es später erneut.
           set_regular_access: Setzen Sie %{member} als regulären Zugriff auf.
-          set_regular_access_fail: Der reguläre Zugriff auf die Mitglieder kann nicht
-            festgelegt werden. Versuchen Sie es später erneut.
+          set_regular_access_fail: Der reguläre Zugriff auf die Mitglieder kann nicht festgelegt werden. Versuchen Sie es später erneut.
           set_standard_access: Standardzugriff festlegen
           set_submit_only: Setzen Sie '%{member}' als 'Übergabe-only'.
-          set_submit_only_fail: Der Zugriff auf die Mitglieder konnte nicht festgelegt
-            werden. Versuchen Sie es später erneut.
+          set_submit_only_fail: Der Zugriff auf die Mitglieder konnte nicht festgelegt werden. Versuchen Sie es später erneut.
           set_submit_only_access: Nur Übergabezugriff festlegen
           set_wg_admin: Als %{wg_name}-Administrator festlegen
-          skipped_sys_admin: Übersprungene Systemadministratoren von %{size} (n)
+          skipped_sys_admin: Übersprungene %{size}-Systemadministratoren wurden übersprungen
           updated_wg: Aktualisierter %{type}
           user_not_found: Benutzer nicht gefunden
     views:
@@ -675,16 +610,15 @@ de:
           back: Zurück
           name: Name
           remove: Entfernen
-          self_reg_added: 'Selbst registrierte Benutzer werden zu den folgenden Arbeitsgruppen
-            hinzugefügt:'
+          self_reg_added: 'Selbst registrierte Benutzer werden zu den folgenden Arbeitsgruppen hinzugefügt:'
           template_user_workgroups: Vorlagenbenutzerarbeitsgruppen
         passwords:
           back_to_edit: Zurück zum Bearbeiten
           cancel: Abbrechen
           password: Kennwort für %{local_name} ändern
-          reset_confirm: Sind Sie sicher, dass Sie das Kennwort dieses Benutzers zurücksetzen
-            möchten? An diesen Benutzer wird eine E-Mail-Benachrichtigung gesendet,
-            die es ihnen ermöglicht, sich anzumelden und ihr Kennwort zu ändern.
+          reset_confirm: >-
+            Sind Sie sicher, dass Sie das Kennwort dieses Benutzers zurücksetzen möchten? An diesen Benutzer wird eine E-Mail-Benachrichtigung gesendet, die es ihnen
+            ermöglicht, sich anzumelden und ihr Kennwort zu ändern.
           reset_password: Kennwort zurücksetzen
           update_password: Kennwort aktualisieren
         registrations:
@@ -697,12 +631,9 @@ de:
             approve: Genehmigen
             deny: Verweigern
             faspex_reg_type: Faspex wird mit der Registrierung von %{type} konfiguriert.
-            new_message: Dies bedeutet, dass neu erstellte Accounts die Genehmigung
-              von %{not} benötigen.
+            new_message: Dies bedeutet, dass neu erstellte Accounts die Genehmigung von %{not} benötigen.
             not: Nicht
-            self_reg_users: Selbst registrierte Benutzer erben die Berechtigungen
-              des %{template_user} und werden automatisch Mitglieder des folgenden
-              %{workgroups}.
+            self_reg_users: Selbst registrierte Benutzer erben die Berechtigungen des %{template_user} und werden automatisch Mitglieder des folgenden %{workgroups}.
         saml_groups:
           edit:
             back: Zurück
@@ -763,23 +694,20 @@ de:
             account_details:
               account_details: Kontodetails
               active: Aktiv
-              admin_hint: Administratoren können Benutzer hinzufügen/entfernen und
-                die Serverkonfiguration verwalten.
+              admin_hint: Administratoren können Benutzer hinzufügen/entfernen und die Serverkonfiguration verwalten.
               inactive: Inaktiv
               manager_hint: Manager können Benutzer hinzufügen/entfernen
               never: Nie
               role: 'Rolle:'
-              text_area_hint: E-Mail-Adressen durch Kommas, Semikolon oder Leerzeichen
-                trennen
+              text_area_hint: E-Mail-Adressen durch Kommas, Semikolon oder Leerzeichen trennen
               user_hint: Reguläre Benutzer können Faspex-Pakete senden und empfangen
             advanced_transfer:
               adv_trans_setting: Erweiterte Übertragungseinstellungen
               checked: Geprüft
               initial_transfer: Anfangsübertragungsrate
               max_rate: Maximal zulässige Rate
-              minrate_hint: 'Wenn diese Option aktiviert ist, können Clients ihre
-                Übertragungsrichtlinie oder Mindestübertragungsrate nicht anpassen
-                (Standardwert: %{config}).'
+              minrate_hint: 'Wenn diese Option aktiviert ist, können Clients ihre Übertragungsrichtlinie oder Mindestübertragungsrate nicht anpassen (Standardwert:
+                %{config}).'
               server_to_user: 'Server an Benutzer (Standardwert: %{config})'
               transfer_alert: |-
                 Faspex verwendet standardmäßig die Übertragungseinstellungen aus dem Aspera Central Server-Abschnitt.
@@ -795,12 +723,9 @@ de:
               time: Zeit
             package_deletion:
               after_download: 'Nach dem Download:'
-              allow_user_delete: 'Benutzer können eigene Löscheinstellungen auf Paket-nach-Package-Basis
-                festlegen:'
-              delete_files_after: Dateien löschen, nachdem <strong>jeder Empfänger</strong>
-                alle Dateien heruntergeladen hat
-              delete_files_all: Dateien löschen, nachdem <strong>alle Empfänger</strong>
-                alle Dateien heruntergeladen haben
+              allow_user_delete: 'Benutzer können eigene Löscheinstellungen auf Paket-nach-Package-Basis festlegen:'
+              delete_files_after: Dateien löschen, nachdem <strong>jeder Empfänger</strong> alle Dateien heruntergeladen hat
+              delete_files_all: Dateien löschen, nachdem <strong>alle Empfänger</strong> alle Dateien heruntergeladen haben
               do_nothing: Nichts tun
               package_deletion: Paketlöschung
               server_delete: 'Standardwert: %{config}'
@@ -815,26 +740,20 @@ de:
               allow_inviting_external: 'Einladende externe Absender zulassen:'
               allow_public_submission: 'Öffentliche Einreichungen zulassen:'
               allowed_to: 'Zulässig für:'
-              can_see_global_dist_lists: 'Die globalen Verteilerlisten können angezeigt
-                werden:'
-              control_hint: Wenn diese Option nicht aktiviert ist, kann der Benutzer
-                nicht an Benutzer senden oder an Dropboxen/Arbeitsgruppen übergeben.
-              create_drop_packages: Wenn diese Option inaktiviert ist, kann der Benutzer
-                nur Dropbox-Pakete erstellen, wenn es sich um ein Mitglied von Dropboxen
+              can_see_global_dist_lists: 'Die globalen Verteilerlisten können angezeigt werden:'
+              control_hint: Wenn diese Option nicht aktiviert ist, kann der Benutzer nicht an Benutzer senden oder an Dropboxen/Arbeitsgruppen übergeben.
+              create_drop_packages: Wenn diese Option inaktiviert ist, kann der Benutzer nur Dropbox-Pakete erstellen, wenn es sich um ein Mitglied von Dropboxen
                 handelt.
               create_normal: 'Kann normale Pakete erstellen:'
               external_email: 'Kann an externe E-Mails senden:'
-              ip_addr_hint: Durch Kommas getrennte Adressen/Bereiche eingeben, z.
-                B. <b>10.0. *, 192.168.1.1</b>
+              ip_addr_hint: Durch Kommas getrennte Adressen/Bereiche eingeben, z. B. <b>10.0. *, 192.168.1.1</b>
               keep_dir_private: 'Benutzerverzeichnis privat halten:'
               neg: Nein
               permissions: Berechtigungen
-              see_global_dis_list: 'Die globalen Verteilerlisten können angezeigt
-                werden:'
+              see_global_dis_list: 'Die globalen Verteilerlisten können angezeigt werden:'
               send_to_all: 'Kann an alle Faspex-Benutzer senden:'
-              send_to_all_send_to_wg: Wenn dies zulässig ist, kann der Benutzer an
-                alle Faspex-Benutzer senden. Andernfalls kann der Benutzer nur an
-                andere Workgroup-Mitglieder senden.
+              send_to_all_send_to_wg: Wenn dies zulässig ist, kann der Benutzer an alle Faspex-Benutzer senden. Andernfalls kann der Benutzer nur an andere Workgroup-Mitglieder
+                senden.
               user_server_def: 'Benutzerserverstandardwert (aktuell: %{def})'
             personal_details:
               first_name: Vorname
@@ -843,8 +762,7 @@ de:
             sender_quota:
               sender_hint: Standardgrenzwert für Senderkontingent überschreiben
               sender_quota: Senderkontingent
-              sender_quota_hint: Gesamte Datengröße, die während des Rollfensters
-                gesendet wurde
+              sender_quota_hint: Gesamte Datengröße, die während des Rollfensters gesendet wurde
               sender_quota_leg: 'Senderkontingent:'
             user_history:
               last_login_time: Letzte Anmeldezeit
@@ -982,20 +900,17 @@ de:
           form:
             advanced_config: <i class="icon-plus"></i>Erweiterte Konfiguration
             basic_config: Basiskonfiguration
-            config_message: Die folgende Konfiguration muss auf den Server verweisen,
-              auf dem sich der Aspera Enterprise Server befindet. Die Adresse wird
-              von der Webanwendung verwendet, um Übertragungsstatistikdaten zu erfassen.
-              Wenn Aspera Enterprise Server auf derselben Maschine wie die Webanwendung
-              ausgeführt wird, lautet die richtige Adresse 127.0.0.1.
-            sec_add_message: Die unten stehende Adresse ist das, was Ihre Benutzer
-              benötigen, um Transfers zu starten. Wenn Sie eine Gruppe von Benutzern
-              verwenden, die eine andere Adresse verwenden müssen (z. B. aufgrund
-              von Netzbedingungen), verwenden Sie die Felder "Sekundäre Adresse",
-              um einen IP-Bereich anzugeben. Beachten Sie, dass die sekundäre Adresse
-              nicht für Übertragungsrelays gilt.
-            storage_error: Dieser Dateispeicher wird derzeit als Systemstandardeingang
-              verwendet. Durch die Bearbeitung werden alle vorhandenen Pakete für
-              Benutzer nicht verfügbar gemacht.
+            config_message: >-
+              Die folgende Konfiguration muss auf den Server verweisen, auf dem sich der Aspera Enterprise Server befindet. Die Adresse wird von der Webanwendung
+              verwendet, um Übertragungsstatistikdaten zu erfassen. Wenn Aspera Enterprise Server auf derselben Maschine wie die Webanwendung ausgeführt wird, lautet
+              die richtige Adresse 127.0.0.1.
+            sec_add_message: >-
+              Die unten stehende Adresse ist das, was Ihre Benutzer benötigen, um Transfers zu starten. Wenn Sie eine Gruppe von Benutzern verwenden, die eine andere
+              Adresse verwenden müssen (z. B. aufgrund von Netzbedingungen), verwenden Sie die Felder "Sekundäre Adresse", um einen IP-Bereich anzugeben. Beachten
+              Sie, dass die sekundäre Adresse nicht für Übertragungsrelays gilt.
+            storage_error: >-
+              Dieser Dateispeicher wird derzeit als Systemstandardeingang verwendet. Durch die Bearbeitung werden alle vorhandenen Pakete für Benutzer nicht verfügbar
+              gemacht.
             test_connect: Verbindung testen
           index:
             add_new: Neuen %{name} hinzufügen
@@ -1087,13 +1002,10 @@ de:
             update: Aktualisieren
           env_var_help:
             description: Beschreibung
-            faspex_meta<field>: Der Wert des Metadatenfelds mit dem Namen &lt;field&gt;
-              mit Großbuchstaben ersetzt durch Kleinbuchstaben und Leerzeichen durch
-              Unterstreichungszeichen ersetzt
-            faspex_metadata_fields: Durch Kommas getrennte Liste der Metadatenfelder,
-              die für das Paket definiert sind
-            faspex_pkg_delivery_id: Bereitstellungs-ID des Pakets (anders als Paket-ID
-              und Paket-UUID)
+            faspex_meta<field>: Der Wert des Metadatenfelds mit dem Namen &lt;field&gt; mit Großbuchstaben ersetzt durch Kleinbuchstaben und Leerzeichen durch Unterstreichungszeichen
+              ersetzt
+            faspex_metadata_fields: Durch Kommas getrennte Liste der Metadatenfelder, die für das Paket definiert sind
+            faspex_pkg_delivery_id: Bereitstellungs-ID des Pakets (anders als Paket-ID und Paket-UUID)
             faspex_pkg_dir: Pfad zum Paket
             faspex_pkg_id: Paket-ID
             faspex_pkg_is_forward: 1 für weitergeleitete Pakete und 0 für Originalpakete
@@ -1104,8 +1016,7 @@ de:
             faspex_pkg_uuid: UUID des Pakets
             faspex_recipient_count: Anzahl der Empfänger (z. B. "3")
             faspex_recipient_i: Name des i-ten Empfängers
-            faspex_recipient_list: Durch Kommas getrennte Liste von Empfängern (z.
-              B. "admin, johndoe")
+            faspex_recipient_list: Durch Kommas getrennte Liste von Empfängern (z. B. "admin, johndoe")
             faspex_sender_email: E-Mail des Absenders
             faspex_sender_id: ID des Absenders
             faspex_sender_name: Name des Absenders
@@ -1119,8 +1030,7 @@ de:
             package_date_end: Enddatum des Pakets
             package_date_start: Startdatum des Pakets
             package_file_count: Anzahl der Paketdateien
-            package_file_hint: Bereich für die Anzahl der hier im Paket angegebenen
-              Dateien eingeben
+            package_file_hint: Bereich für die Anzahl der hier im Paket angegebenen Dateien eingeben
             package_name: Paketname
             package_note: Paketvermerk
             package_size: Paketgröße
@@ -1179,11 +1089,9 @@ de:
             publicly_visible: Öffentlich sichtbar
             redirect_saml: Auf die SAML-Abmeldeseite für Abmeldungen umleiten
             restrict_login_groups: Zugriff auf bekannte Gruppen beschränken
-            restrict_login_groups_hint: Wenn diese Option aktiviert ist, können sich
-              nur Mitglieder von SAML-Gruppen, die Faspex hinzugefügt haben, anmelden.
+            restrict_login_groups_hint: Wenn diese Option aktiviert ist, können sich nur Mitglieder von SAML-Gruppen, die Faspex hinzugefügt haben, anmelden.
             restrict_login_users: Zugriff auf bekannte Benutzer beschränken
-            restrict_login_users_hint: Wenn diese Option aktiviert ist, können sich
-              nur vorhandene SAML-Benutzer, die Faspex hinzugefügt haben, anmelden.
+            restrict_login_users_hint: Wenn diese Option aktiviert ist, können sich nur vorhandene SAML-Benutzer, die Faspex hinzugefügt haben, anmelden.
             saml_config: SAML-Konfiguration
             saml_config_details: SAML-Konfigurationsdetails
             SAML_metadata_server: Metadaten des SAML-Servers
@@ -1208,32 +1116,26 @@ de:
             name: Name
             remove_default: Standard entfernen
             saml_config: SAML-Konfigurationen
-            saml_confirm: Sind Sie sicher, dass diese SAML-Konfiguration aktiviert
-              werden soll?
-            saml_confirm_disable: Sind Sie sicher, dass diese SAML-Konfiguration inaktiviert
-              werden soll?
+            saml_confirm: Sind Sie sicher, dass diese SAML-Konfiguration aktiviert werden soll?
+            saml_confirm_disable: Sind Sie sicher, dass diese SAML-Konfiguration inaktiviert werden soll?
             test: Test
           user_profile:
             name: Name
             remove: Dieses Profilfeld entfernen
-            remove_confirm: Sind Sie sicher, dass dieses Benutzerprofil entfernt werden
-              soll?
+            remove_confirm: Sind Sie sicher, dass dieses Benutzerprofil entfernt werden soll?
           user_profile_fields:
             add_local_field: Lokales Profilfeld hinzufügen
             default_profile_fields: Standardprofilfelder
             enabled: Aktiviert
             fields_required: Felder, die für alle Faspex-Benutzer erforderlich sind
-            global_cust_message: Benutzerdefinierte Felder, die auf der Registerkarte
-              "Benutzerprofil" definiert sind
+            global_cust_message: Benutzerdefinierte Felder, die auf der Registerkarte "Benutzerprofil" definiert sind
             global_cust_prof_fields: Felder für globale angepasste Profile
-            local_cust_message: Benutzerprofilfelder, die für diese SAML-Konfiguration
-              spezifisch sind
+            local_cust_message: Benutzerprofilfelder, die für diese SAML-Konfiguration spezifisch sind
             local_cust_prof_fields: Felder für lokale angepasste Profile
             name: Name
             required: Erforderlich
             saml_name: SAML-Name
-            save_note: 'Hinweis: Es werden keine Änderungen gespeichert, bis Sie auf
-              ''SAML-Konfiguration aktualisieren'' klicken.'
+            save_note: 'Hinweis: Es werden keine Änderungen gespeichert, bis Sie auf ''SAML-Konfiguration aktualisieren'' klicken.'
         settings:
           display_settings:
             date_format:
@@ -1258,8 +1160,7 @@ de:
               examples: Beispiele
               local_login_inst: Lokale Anmeldeanweisungen
               login_page_header: Header für Anmeldeseite
-              remove_confirm: Sind Sie sicher, dass Sie das aktuelle benutzerdefinierte
-                Logo entfernen möchten?
+              remove_confirm: Sind Sie sicher, dass Sie das aktuelle benutzerdefinierte Logo entfernen möchten?
               remove_logo: Angepasstes Logo entfernen
               update: Aktualisieren
           entitlement:
@@ -1276,7 +1177,7 @@ de:
               contacts: Kontakt
               global_dist: Globale Verteilerlisten
               name: Name
-              no_list_alert: Es sind keine globalen Verteilerlisten vorhanden.
+              no_list_alert: Es gibt keine globalen Verteilerlisten.
               update_dist_lists: Verteilerlisten aktualisieren
             new:
               new_global_list: Neue globale Verteilerliste
@@ -1289,65 +1190,47 @@ de:
               after_upload_ends: nach dem Hochladen beendet
               characters: Zeichen
               days: Tag (n)
-              delete_files_all: Dateien löschen, nachdem <strong>alle Empfänger</strong>
-                alle Dateien heruntergeladen haben
-              delete_files_any: Dateien löschen, nachdem <strong>jeder Empfänger</strong>
-                alle Dateien heruntergeladen hat
+              delete_files_all: Dateien löschen, nachdem <strong>alle Empfänger</strong> alle Dateien heruntergeladen haben
+              delete_files_any: Dateien löschen, nachdem <strong>jeder Empfänger</strong> alle Dateien heruntergeladen hat
               do_nothing: Nichts tun
               max_pkg_title: Maximale Länge des Pakettitels in Speicherpfaden
               package_storage: Paketspeicher
               packages_expire: Pakete verfallen
-              pkg_by_pkg_del: Ermöglichen Sie allen Benutzern, ihre eigenen Löscheinstellungen
-                auf Paket-nach-Paket-Basis festzulegen.
+              pkg_by_pkg_del: Ermöglichen Sie allen Benutzern, ihre eigenen Löscheinstellungen auf Paket-nach-Paket-Basis festzulegen.
               update: Aktualisieren
           save_restore:
             index:
               dl: Herunterladen
               dl_curr_config: Aktuelle Konfiguration herunterladen
-              faspex_config_help: Der Faspex-Konfigurationsordner und die Datenbank
-                werden gespeichert.
+              faspex_config_help: Der Faspex-Konfigurationsordner und die Datenbank werden gespeichert.
               restore: Wiederherstellen
               restore_config: Konfiguration wiederherstellen
               save_restore: Speichern/Wiederherstellen
-              upload_help: Hochladen und Anwenden einer gespeicherten Konfigurationsdatei
-                (*.tar.gz)
-              version_help: 'Hinweis: Die Wiederherstellungsversion sollte mit der
-                aktuellen Version von faspex übereinstimmen.'
+              upload_help: Hochladen und Anwenden einer gespeicherten Konfigurationsdatei (*.tar.gz)
+              version_help: 'Hinweis: Die Wiederherstellungsversion sollte mit der aktuellen Version von faspex übereinstimmen.'
           security:
             edit:
-              act_dir_hint: Verzeichnisservicebenutzer werden nicht gesperrt oder
-                inaktiviert
+              act_dir_hint: Verzeichnisservicebenutzer werden nicht gesperrt oder inaktiviert
               affirm: Ja
               after: Nach
               after_x_days: Nach %{num} Tagen
               after_inactivity: Nach %{len} Tagen der Inaktivität
               after_one_success: Nach einem erfolgreichen Upload
-              allow_custom_link: Benutzern die Möglichkeit geben, die Verfallsrichtlinie
-                für angepasste Links festzulegen
-              allow_email_change: Benutzern die Möglichkeit geben, ihre E-Mail-Adresse
-                zu ändern
-              allow_external_pkg_hint: Wenn diese Option aktiviert ist, sind Pakete,
-                die an Faspex-Benutzer mit der (externen) Markierung gesendet werden,
-                zulässig.
+              allow_custom_link: Benutzern ermöglichen, die Verfallsrichtlinie für den angepassten Link festzulegen
+              allow_email_change: Benutzern die Möglichkeit geben, ihre E-Mail-Adresse zu ändern
+              allow_external_pkg_hint: Wenn diese Option aktiviert ist, sind Pakete, die an Faspex-Benutzer mit der (externen) Markierung gesendet werden, zulässig.
               allow_external_pkg_to_faspex: Externe Pakete an Faspex-Benutzer zulassen
               allow_usrs_create: Benutzer können normale Pakete erstellen
-              allow_usrs_create_hint: Wenn diese Option inaktiviert ist, können Benutzer
-                nur Dropbox-Pakete erstellen, wenn sie Mitglied in beliebigen Dropboxen
-                sind.
-              allow_usrs_send: Alle Benutzer können an alle anderen Faspex-Benutzer
-                gesendet werden
+              allow_usrs_create_hint: Wenn diese Option inaktiviert ist, können Benutzer nur Dropbox-Pakete erstellen, wenn sie Mitglied in beliebigen Dropboxen sind.
+              allow_usrs_send: Alle Benutzer können an alle anderen Faspex-Benutzer gesendet werden
               always: Immer
               allow_unlock: Gesperrte Benutzer freigeben, um sich selbst zu entsperren
               allow_send_email: Senden an externe E-Mail-Adressen zulassen
               appr_recipient_domains: Genehmigte Empfängerdomänen
               appr_sender_domains: Genehmigte Senderdomänen
-              block_email_domain: Blockieren Sie die folgenden E-Mail-Domänen von
-                der Selbstregistrierung
-              can_override_ear_hint: Der Benutzer kann wählen, wann externe Absender
-                eingeladen werden, ob die Verschlüsselung erzwungen werden soll oder
-                nicht.
-              can_see_dist_list: Benutzer können globale Verteilerlisten standardmäßig
-                anzeigen.
+              block_email_domain: Blockieren Sie die folgenden E-Mail-Domänen von der Selbstregistrierung
+              can_override_ear_hint: Der Benutzer kann wählen, wann externe Absender eingeladen werden, ob die Verschlüsselung erzwungen werden soll oder nicht.
+              can_see_dist_list: Benutzer können globale Verteilerlisten standardmäßig anzeigen.
               cipher: FASP-Verschlüsselung
               days: Tag (n)
               dbox_override: Dropboxen für eigene Verschlüsselungseinstellungen zulassen
@@ -1358,140 +1241,113 @@ de:
               ds_users: DS-Benutzer nach %{int}-Tagen der Inaktivität
               email_expire_after_download: Ablauf nach dem vollständigen Paketdownload
               enable: Aktivieren
-              encrypt_hint: Wenn diese Option aktiviert ist, werden auch HTTP-Fallback-Übertragungen
-                verschlüsselt.
+              encrypt_hint: Wenn diese Option aktiviert ist, werden auch HTTP-Fallback-Übertragungen verschlüsselt.
               encrypt_transfers: Übertragungen verschlüsseln
               encryption: Verschlüsselung
               enforce_pw_hist: Kann zuvor nicht wiederverwendet werden
               every: Alle
               faspex_acc: Faspex-Konten
-              force_pw_reset: Neue Benutzer benötigen, um das Kennwort bei der ersten
-                Anmeldung zu ändern
+              force_pw_reset: Neue Benutzer benötigen, um das Kennwort bei der ersten Anmeldung zu ändern
               hours: Stunden
               inviting_allowed: Einladende externe Absender zulassen
               ignore_invalid_recipients: Ungültige Empfänger ignorieren
-              ignore_invalid_recipients_hint: Wenn diese Option aktiviert ist, schlägt
-                das Senden von Paketen nicht fehl, wenn ein Paket an ungültige Empfänger
-                adressiert ist.
+              ignore_invalid_recipients_hint: Wenn diese Option aktiviert ist, schlägt das Senden von Paketen nicht fehl, wenn ein Paket an ungültige Empfänger adressiert
+                ist.
               inv_link_expires: Einladungslink läuft ab
-              inv_link_help: Legen Sie eine Linkverfallrichtlinie für persönliche
-                und Dropbox-Einladungen fest.
+              inv_link_help: Legen Sie eine Linkverfallrichtlinie für persönliche und Dropbox-Einladungen fest.
               keep_usr_dir: Benutzerverzeichnis privat halten
-              list_hint: E-Mail-Adressen durch Kommas, Semikolon oder Leerzeichen
-                trennen
+              list_hint: E-Mail-Adressen durch Kommas, Semikolon oder Leerzeichen trennen
               local_users: Lokale Benutzer nach %{int} Tagen der Inaktivität.
-              lock_hint: Nach fehlgeschlagenen Anmeldeversuchen von %{login_count}
-                innerhalb
+              lock_hint: Nach fehlgeschlagenen Anmeldeversuchen von %{login_count} innerhalb
               lock_users: Benutzer sperren
               minutes: Minuten
               neg: Nein
               never: Nie
-              new_user_pw: Neue Benutzerkennwörter %{req}. Vorhandene Kennwörter bleiben
-                gültig %{warn}
+              new_user_pw: Neue Benutzerkennwörter %{req}. Vorhandene Kennwörter bleiben gültig %{warn}
               obfuscation: Obfuskation
               optional: Optional
-              optional_hint: Der Benutzer kann zur Sendezeit auswählen, ob er verschlüsselt
-                werden soll oder nicht.
+              optional_hint: Der Benutzer kann zur Sendezeit auswählen, ob er verschlüsselt werden soll oder nicht.
               otfv: Unübertragungs-Dateivalidierung (OTFV)
               outside_email_add: Externe E-Mail-Adressen
               package_link_expires: Paketlink läuft ab
-              package_link_help: Wenn diese Option aktiviert ist, kann das Paket nur
-                einmal heruntergeladen werden %{master_warn}
+              package_link_help: Wenn diese Option aktiviert ist, kann das Paket nur einmal heruntergeladen werden %{master_warn}
               passwords: Kennwort (en)
               passwords_expire: Kennwörter verfallen
               public_url_allowed: URLs für die öffentliche Übergabe zulassen
               prevent_pw_reuse: Wiederverwendung des Kennworts verhindern
               prev_conc: Gleichzeitige Anmeldung verhindern
-              pw_reset_hint: Die E-Mail wird gesendet und der Account wird nach der
-                Kennwortänderung entsperrt.
-              quota_limit: Gesamte Datengröße, die während des Rollfensters gesendet
-                wurde
-              reg_hint: 'Optional: Wenn der Text festgelegt ist, müssen die Benutzer
-                die Anweisung akzeptieren, damit sie registriert werden können.'
+              pw_reset_hint: Die E-Mail wird gesendet und der Account wird nach der Kennwortänderung entsperrt.
+              quota_limit: Gesamte Datengröße, die während des Rollfensters gesendet wurde
+              reg_hint: 'Optional: Wenn der Text festgelegt ist, müssen die Benutzer die Anweisung akzeptieren, damit sie registriert werden können.'
               reg_users_mutual: Selbst registrierte Benutzer können sich an eine andere
               registration_instructions: Registrierungsanweisungen
               registration_type: Selbstregistrierung
               registrations: Registrierungen
               remove_users: Benutzer entfernen
               req_external_reg: Registrierung von externen Benutzern erforderlich
-              require_external_hint: Wenn diese Option aktiviert ist, müssen externe
-                Benutzer ein Faspex-Konto registrieren, um Pakete herunterladen zu
-                können.
+              require_external_hint: Wenn diese Option aktiviert ist, müssen externe Benutzer ein Faspex-Konto registrieren, um Pakete herunterladen zu können.
               saml_users: SAML-Benutzer nach %{int}-Tagen der Inaktivität.
               security: Sicherheit
               send_welcome_email: Begrüßungs-E-Mail an alle neuen Benutzer senden
               sender_quota: Senderkontingent
-              sender_quota_hint: 'Pakete, die an Benutzer in diesen Domänen gesendet
-                werden, zählen nicht zum Senderkontingent. Verwenden Sie Kommas (,),
-                Semikolons (;) oder Leerzeichen als separate E-Mail-Domänen. Beispiel:
-                @aspera.com; @ibm.com'
+              sender_quota_hint: >-
+                Pakete, die an Benutzer in diesen Domänen gesendet werden, zählen nicht zum Senderkontingent. Verwenden Sie Kommas (,), Semikolons (;) oder Leerzeichen
+                als separate E-Mail-Domänen. Beispiel: @aspera.com; @ibm.com
               sender_quota_option: Senderkontingentoption
               sender_quota_duration: Dauer der Senderkontingent
               sender_quota_limit: Grenzwert für Senderkontingent
               session_timeout: Sitzungszeitlimit nach
-              slave_hint: Wenn diese Option aktiviert ist, können Benutzer nur von
-                einem Client zu einer Zeit in der Anmeldung
+              slave_hint: Wenn diese Option aktiviert ist, können Benutzer nur von einem Client zu einer Zeit in der Anmeldung
               strong_pw: Starke Kennwörter verwenden
-              timeout_hint: Die Sitzungen werden nach der angegebenen Anzahl Minuten
-                Inaktivität überschritten.
+              timeout_hint: Die Sitzungen werden nach der angegebenen Anzahl Minuten Inaktivität überschritten.
               tos: Bedingungen für das Senden von Service
-              tos_hint: 'Optional: Wenn Text festgelegt wird, müssen die Benutzer
-                die Anweisung akzeptieren, um ein Paket zu senden.'
+              tos_hint: 'Optional: Wenn Text festgelegt wird, müssen die Benutzer die Anweisung akzeptieren, um ein Paket zu senden.'
               update: Aktualisieren
               use_encryption_at_rest: Verschlüsselung-at-Rest verwenden
               use_obf: Obfuskation bei Dateinamen verwenden
               use_obf_hint: Die Verschleierung des Dateinamens ist irreversibel!
-              enforce_expiration_policy: Immer als maximale Dauer für Ablaufrichtlinie
-                durchsetzen
+              enforce_expiration_policy: Immer als maximale Dauer für Verfallsrichtlinie erzwingen
           transfer_options:
             edit:
               aspera_connect_sett: Aspera Connect-Einstellungen
               def_max_rate: Maximale zulässige maximale Rate
               dl_dur_trans: Downloads bei Übertragungen
               dl_over_http: Über HTTP herunterladen
-              http_gateway_hint: Die unten stehende Adresse ist das, was Ihre Benutzer
-                benötigen, um Übertragungen über http-gateway zu starten.
+              http_gateway_hint: Die unten stehende Adresse ist das, was Ihre Benutzer benötigen, um Übertragungen über http-gateway zu starten.
               http_gateway_url: HTTP-Gateway-URL
               initial_def_trans_rate: Anfängliche Standardübertragungsrate
               local_host_connect: Lokale Host-Verbindung
-              local_host_hint: Wenn diese Option aktiviert ist, verwendet Faspex nicht
-                das Aspera CDN, um Connect zu bedienen, sondern verwendet stattdessen
-                das lokale Connect SDK, das auf Faspex verfügbar ist.
+              local_host_hint: >-
+                Wenn diese Option aktiviert ist, verwendet Faspex nicht das Aspera CDN, um Connect zu bedienen, sondern verwendet stattdessen das lokale Connect SDK,
+                das auf Faspex verfügbar ist.
               local_to_remote: Lokaler Server zum fernen Server
               lock_connect_sdk: Lock Connect SDK-Version
-              lock_connect_sdk_hint: 'Verhindern Sie Faspex, das lokale Connect SDK
-                zu aktualisieren, wenn eine neue Version verfügbar wird. Diese Einstellung
-                bleibt bei Upgrades bestehen. Hinweis: Faspex prüft regelmäßig nach
-                Updates und lädt nicht sofort eine neue Version herunter, wenn diese
-                Option deaktiviert ist.'
+              lock_connect_sdk_hint: >-
+                Verhindern Sie Faspex, das lokale Connect SDK zu aktualisieren, wenn eine neue Version verfügbar wird. Diese Einstellung bleibt bei Upgrades bestehen.
+                Hinweis: Faspex prüft regelmäßig nach Updates und lädt nicht sofort eine neue Version herunter, wenn diese Option deaktiviert ist.
               min_connect_version: Minimale Verbindungsversion
-              minrate_hint: Wenn diese Option aktiviert ist, können die Clients ihre
-                Übertragungsrichtlinie oder die Mindestübertragungsrate nicht anpassen.
+              minrate_hint: Wenn diese Option aktiviert ist, können die Clients ihre Übertragungsrichtlinie oder die Mindestübertragungsrate nicht anpassen.
               prefer_http_connect: Http-over-Erweiterung bevorzugen
-              prefer_http_connect_hint: Wenn diese Option aktiviert ist, wird Faspex
-                den Browser für die Verwendung der HTTP-Methode für die Kommunikation
-                mit dem Connect Desktop Client durchsetzen, anstatt eine Browsererweiterung
-                (nur mit Chrome-Browser verfügbar) zu verwenden.
+              prefer_http_connect_hint: >-
+                Wenn diese Option aktiviert ist, wird Faspex den Browser für die Verwendung der HTTP-Methode für die Kommunikation mit dem Connect Desktop Client
+                durchsetzen, anstatt eine Browsererweiterung (nur mit Chrome-Browser verfügbar) zu verwenden.
               serv_to_serv_relay_trans_sett: Einstellungen für Server-zu-Server-Relay-Übertragungen
               server_to_user: Server für Benutzer
               transfer_options: Übertragungsoptionen
               update: Aktualisieren
               user_to_server: Benutzer zum Server
               http_gwy_connection_success: Verbindung erfolgreich
-              http_gwy_connection_error: Fehler beim Herstellen der Verbindung zu
-                IBM Aspera HTTP Gateway
+              http_gwy_connection_error: Fehler beim Herstellen der Verbindung zu IBM Aspera HTTP Gateway
           web_server:
             alt_address_fields:
               remove_addr: Diese alternative Adresse entfernen
             edit:
               add_alt_address: Alternative Adresse hinzufügen
               address_name: Adressname
-              alternate_addr_hint: Verwenden, wenn für bestimmte Benutzer unterschiedliche
-                Serveradressen erforderlich sind
+              alternate_addr_hint: Verwenden, wenn für bestimmte Benutzer unterschiedliche Serveradressen erforderlich sind
               desc_email: Beschreibung für E-Mails
               http_port_hint: bestimmt durch Apache-Konfiguration
-              https_port_hint: für verschlüsselten Inhalt über SSL, der von der Apache-Konfiguration
-                bestimmt wird
+              https_port_hint: für verschlüsselten Inhalt über SSL, der von der Apache-Konfiguration bestimmt wird
               remove: Entfernen
               show_emails: In E-Mails anzeigen
               update: Aktualisieren
@@ -1543,8 +1399,7 @@ de:
             initial_default_rate: Anfängliche Standardübertragungsrate
             limited: Begrenzt
             loading: Laden
-            lock_minrate_hint: Wenn diese Option aktiviert ist, können die Clients
-              ihre Übertragungs-oder Mindestübertragungsrate nicht anpassen.
+            lock_minrate_hint: Wenn diese Option aktiviert ist, können die Clients ihre Übertragungs-oder Mindestübertragungsrate nicht anpassen.
             name: Name
             node: Knoten
             override_default: Standardübertragungseinstellungen überschreiben
@@ -1555,8 +1410,7 @@ de:
             server_to_user: Server für Benutzer
             user_to_server: Benutzer zum Server
           new:
-            alert_no_node: Sie haben keine %{nodes} erstellt. %{admin_node}, bevor
-              ein %{name} erstellt wird.
+            alert_no_node: Sie haben keine %{nodes} erstellt. %{admin_node}, bevor ein %{name} erstellt wird.
             cancel: Abbrechen
             create_one: Eine erstellen
             new: Neuer %{name}
@@ -1589,27 +1443,22 @@ de:
             custom_inv_policy: Verfallsrichtlinie für angepasste Einladungsverknüpfungen
             day_after_sending_inv: Tag (n) nach Versand der Einladungs-E
             day_after_upload: Tag (n) nach dem Hochladen
-            http_downloads_not_allowed: HTTP-Downloads sind für dieses Paket nicht
-              zulässig.
-            delete_after_all: Löschen Sie Dateien, nachdem <strong>alle Mitglieder
-              dieses Dropbox-s</strong> alle Dateien heruntergeladen haben.
-            delete_after_first: Löschen Sie Dateien, nachdem <strong>jedes Mitglied
-              dieses Dropbox</strong> alle Dateien heruntergeladen hat.
+            http_downloads_not_allowed: HTTP-Downloads sind für dieses Paket nicht zulässig.
+            delete_after_all: Löschen Sie Dateien, nachdem <strong>alle Mitglieder dieses Dropbox-s</strong> alle Dateien heruntergeladen haben.
+            delete_after_first: Löschen Sie Dateien, nachdem <strong>jedes Mitglied dieses Dropbox</strong> alle Dateien heruntergeladen hat.
             do_nothing: Nichts tun
             inv_link_expire: 'Einladungslinks verfallen:'
             never: Nie
             optional: Optional
             package_expires: 'Pakete verfallen:'
             require_encrypt: 'Verschlüsselung-at-rest erforderlich:'
-            save_message: aspera-metadata.xml wird in das Stammverzeichnis jedes Pakets
-              gespeichert.
+            save_message: aspera-metadata.xml wird in das Stammverzeichnis jedes Pakets gespeichert.
             save_metadata: 'Metadaten in Datei speichern:'
             success: Nach einem erfolgreichen Upload
             use_server_default: 'Serverstandardwert verwenden (aktuell: %{server})'
           perm:
             add_rem_dir_serv_groups: Verzeichnisservicegruppen als Mitglieder hinzufügen/entfernen
-            add_remove_users: Vorhandene Faspex-Benutzer hinzufügen/Nicht-dropbox-Verwaltungsmitglieder
-              entfernen
+            add_remove_users: Vorhandene Faspex-Benutzer hinzufügen/Nicht-dropbox-Verwaltungsmitglieder entfernen
             dropbox_admin_can: Dropbox-Admins können ...
             invite_outside_submitters: Außerhalb der übergebenden Benutzer einladen
             invite_remove_users: Externe übergebende Benutzer einladen/entfernen
@@ -1620,8 +1469,7 @@ de:
           cancel: Abbrechen
           description: Beschreibung
           email_address: E-Mail-Adresse
-          invite: 'Außerhalb des übergebenden Benutzers einladen, um an Dropbox zu
-            senden: %{wgname}'
+          invite: 'Außerhalb des übergebenden Benutzers einladen, um an Dropbox zu senden: %{wgname}'
           invite_html:
             require_encryption: 'Verschlüsselung im Ruhezustand erforderlich machen:'
             yes_ear: Ja
@@ -1629,12 +1477,12 @@ de:
             optional: Optional
           submit_save: Speichern (E-Mail-Einladung senden)
       e_error:
-        default: Der Server hat beim Versuch, Ihre Anforderung zu verarbeiten, ein
-          Problem festgestellt. Dies kann auf unzureichende Berechtigungen, ein Konfigurationsproblem,
+        default: >-
+          Der Server hat beim Versuch, Ihre Anforderung zu verarbeiten, ein Problem festgestellt. Dies kann auf unzureichende Berechtigungen, ein Konfigurationsproblem,
           Netzunterbrechung, Fehler-oder Hardwarefehler zurückzuführen sein.
-        default_2: Andere Befehle, außer der, die Sie ausprobiert haben, können noch
-          funktionieren. Klicken Sie auf die Schaltfläche "Zurück" oder auf eine der
-          anderen oben genannten Registerkarten.
+        default_2: >-
+          Andere Befehle, außer der, die Sie ausprobiert haben, können noch funktionieren. Klicken Sie auf die Schaltfläche "Zurück" oder auf eine der anderen oben
+          genannten Registerkarten.
       external:
         sub_stat:
           show:
@@ -1643,9 +1491,7 @@ de:
               Es wurde eine E-Mail mit einem Link an Sie gesendet, um wieder auf diesen Bildschirm zu gelangen.
             send_to: An %{recipient} senden
             send_to_dropbox: 'An Dropbox senden: %{dropname}'
-            status: Auf dieser Seite können Sie den Status des Pakets anzeigen, das
-              Sie übergeben haben, und die Übertragung wiederholen, wenn die Übergabe
-              fehlschlägt.
+            status: Auf dieser Seite können Sie den Status des Pakets anzeigen, das Sie übergeben haben, und die Übertragung wiederholen, wenn die Übergabe fehlschlägt.
           submission_stat:
             date_submit: Datum der Übergabe
             files: Dateien
@@ -1654,8 +1500,7 @@ de:
             title: Titel
         to:
           email_address: E-Mail-Adresse
-          please_enter_email: Bitte geben Sie Ihre E-Mail-Adresse ein, um Zugang zu
-            erhalten.
+          please_enter_email: Bitte geben Sie Ihre E-Mail-Adresse ein, um Zugang zu erhalten.
           request_access: Zugriff anfordern
           send_to: An %{recipient_name} senden
       inactive: Inaktiv
@@ -1671,8 +1516,7 @@ de:
             after_one_up: Nach einem Upload
             custom_inv_policy: 'Verfallsrichtlinie für angepasste Einladungsverknüpfungen:'
             day_after_sending_inv: Tag (n) nach Versand der Einladungs-E
-            help: Sie können diese Einstellungen weiter einschränken, aber Sie können
-              den Standardwert nicht überschreiten.
+            help: Sie können diese Einstellungen weiter einschränken, aber Sie können den Standardwert nicht überschreiten.
             inv_link_expires: Einladungslink läuft ab
           prevent_http_upload:
             package_upload: Paket-Upload
@@ -1724,15 +1568,12 @@ de:
           workgroups: Arbeitsgruppen
         node_error:
           warning: WARNUNG!
-          errors_detected: Übertragungsserverfehler erkannt, Übertragungen können
-            möglicherweise nicht ordnungsgemäß ausgeführt werden.
+          errors_detected: Übertragungsserverfehler erkannt, Übertragungen können möglicherweise nicht ordnungsgemäß ausgeführt werden.
       login:
         entitlement:
           customer_id: Kunden-ID
-          entitle_info: 'Geben Sie Ihre Berechtigungsinformationen an, um gestartet
-            zu werden:'
-          entitle_question: Für Fragen oder Bedenken zum Nutzungsrecht wenden Sie
-            sich bitte an %{aspera}
+          entitle_info: 'Geben Sie Ihre Berechtigungsinformationen an, um gestartet zu werden:'
+          entitle_question: Für Fragen oder Bedenken zum Nutzungsrecht wenden Sie sich bitte an %{aspera}
           entitlement: Berechtigungs-ID
           submit: Übergeben
         new:
@@ -1764,9 +1605,9 @@ de:
           advanced: " (erweitert)"
           customize: Mit Vorlage anpassen
           edit_html: HTML bearbeiten
-          preview: "%{description} Eine Vorschau wird unten angezeigt. Sie kann entweder
-            durch Verwendung der Schablone oder durch direkte Bearbeitung des HTML-Codes
-            angepasst werden."
+          preview: >-
+            %{description} Eine Vorschau wird unten angezeigt. Sie kann entweder durch Verwendung der Schablone oder durch direkte Bearbeitung des HTML-Codes angepasst
+            werden.
           preview_email_notif: Vorschau %{name}-E-Mail-Benachrichtigung
       metadata_profiles:
         edit:
@@ -1778,8 +1619,7 @@ de:
           illegal_characters: 'Unzulässige Zeichen: '
           max_length: 'Max. Länge: '
           note: Hinweis
-          note_no_save: 'Anmerkung: Es werden keine Änderungen gespeichert, bis Sie
-            das Metadatenprofil speichern.'
+          note_no_save: 'Anmerkung: Es werden keine Änderungen gespeichert, bis Sie das Metadatenprofil speichern.'
           preview: Vorschau
           profile_name: 'Profilname: '
           profile_name_placeholder: Profilname ...
@@ -1820,8 +1660,7 @@ de:
           required: 'Erforderlich: '
         index:
           add_profile: Neues Profil hinzufügen
-          confirm: Sind Sie sicher, dass das Metadatenprofil %{account} gelöscht werden
-            soll?
+          confirm: Sind Sie sicher, dass das Metadatenprofil %{account} gelöscht werden soll?
           delete: Löschen
           edit: Bearbeiten
           metadata_profiles: Metadatenprofile
@@ -1836,8 +1675,7 @@ de:
       mobile:
         landing:
           app_redirect: Für die beste Erfahrung verwenden Sie die Aspera Faspex Mobile-Anwendung.
-          no_app_prompt: Haben Sie die App? <a href='<%= @app_store_url %>'>hier</a>
-            abrufen
+          no_app_prompt: Haben Sie die App? <a href='<%= @app_store_url %>'>hier</a> abrufen
           open_in_app: ÖFFNEN IN APP
           use_web_version: WEB VERSION verwenden
       ms_admin:
@@ -1865,10 +1703,9 @@ de:
           default_user_server: 'Standard-Faspex/DS-Benutzer-Server:'
           home_server_rules: Home-Server-Regeln
           name: Name
-          note: 'Hinweis: Wenn Sie keine Regeln für externe übergebende Benutzer festlegen,
-            werden sie an den Home-Server des Absenders gerichtet, um Pakete herunterzuladen.
-            In ähnlicher Weise müssen externe übergebende Benutzer, die Pakete hochladen,
-            dies vom Home-Server des Eindringers tun.'
+          note: >-
+            Hinweis: Wenn Sie keine Regeln für externe übergebende Benutzer festlegen, werden sie an den Home-Server des Absenders gerichtet, um Pakete herunterzuladen.
+            In ähnlicher Weise müssen externe übergebende Benutzer, die Pakete hochladen, dies vom Home-Server des Eindringers tun.
           rule: Regel
           save: Speichern
           server: Server
@@ -1914,34 +1751,26 @@ de:
           period: Irgendein einzelnes Zeichen.
           slash: Escapezeichen.
           slashA: Start einer Zeichenfolge.
-          slashAa-m: 'Ex: entspricht Zeichenfolgen, die mit einem Buchstaben zwischen
-            ''a'' und ''m'' beginnen.'
-          slashAperiod*z: 'Ex: entspricht Zeichenfolgen, die mit ''a'' beginnen und
-            enden mit ''z'''
+          slashAa-m: 'Ex: entspricht Zeichenfolgen, die mit einem Buchstaben zwischen ''a'' und ''m'' beginnen.'
+          slashAperiod*z: 'Ex: entspricht Zeichenfolgen, die mit ''a'' beginnen und enden mit ''z'''
           slashz: Ende der Zeichenfolge.
       nodes:
         columns:
           dropdown:
             add: "%{share_name} hinzufügen"
             delete: Löschen
-            delete_confirm: Sind Sie sicher? Dadurch werden alle %{share_name} gelöscht,
-              die derzeit diesen %{node_name} verwenden.
+            delete_confirm: Sind Sie sicher? Dadurch werden alle %{share_name} gelöscht, die derzeit diesen %{node_name} verwenden.
             edit: Bearbeiten
           shares:
             dropdown:
               confirm: Sind Sie sicher, dass Sie fortfahren möchten?
-              custom_inbox_confirm: Dieser %{name} wird derzeit als angepasste Posteingangsposition
-                für bestimmte Arbeitsgruppen verwendet.
-              default_hint: Dieser %{name} wird derzeit als Systemstandardeinlauf
-                verwendet und kann nicht gelöscht werden.
+              custom_inbox_confirm: Dieser %{name} wird derzeit als angepasste Posteingangsposition für bestimmte Arbeitsgruppen verwendet.
+              default_hint: Dieser %{name} wird derzeit als Systemstandardeinlauf verwendet und kann nicht gelöscht werden.
               delete: Löschen
-              delete_warning: 'Durch das Löschen werden alle vorhandenen Pakete in
-                diesen Arbeitsgruppen den Benutzern nicht zur Verfügung stehen. '
+              delete_warning: 'Durch das Löschen werden alle vorhandenen Pakete in diesen Arbeitsgruppen den Benutzern nicht zur Verfügung stehen. '
               edit: Bearbeiten
-              relay_hint: Dieser %{name} wird derzeit als Relaisstandort für bestimmte
-                Arbeitsgruppen verwendet.
-              rolled_back_warning: 'Diese Arbeitsgruppen werden auch für die Verwendung
-                des Systemstandardinkastens rückgängig gemacht. '
+              relay_hint: Dieser %{name} wird derzeit als Relaisstandort für bestimmte Arbeitsgruppen verwendet.
+              rolled_back_warning: 'Diese Arbeitsgruppen werden auch für die Verwendung des Systemstandardinkastens rückgängig gemacht. '
       packages:
         browser:
           all: Alle
@@ -1961,10 +1790,8 @@ de:
           completed_relays: 'Zurückgestellte Relais:'
           date_sent: Sendedatum
           http_downloads_not_allowed: HTTP-Downloads sind für dieses Paket nicht zulässig.
-          delete_after_all_message: Dieses Paket wird automatisch gelöscht, nachdem
-            ALLE der Empfänger alle Paketdateien heruntergeladen haben.
-          delete_after_first_message: Dieses Paket wird automatisch gelöscht, nachdem
-            jeder Empfänger alle Paketdateien heruntergeladen hat.
+          delete_after_all_message: Dieses Paket wird automatisch gelöscht, nachdem ALLE der Empfänger alle Paketdateien heruntergeladen haben.
+          delete_after_first_message: Dieses Paket wird automatisch gelöscht, nachdem jeder Empfänger alle Paketdateien heruntergeladen hat.
           edit: Bearbeiten
           error_release_date: Fehler beim Aktualisieren des Freigabedatum
           failed_relays: 'Fehlgeschlagene Relais:'
@@ -2005,8 +1832,7 @@ de:
           package_details:
             pkg_details: Paketdetails
             status: Status %{package}
-            http_downloads_not_allowed: HTTP-Downloads sind für dieses Paket nicht
-              zulässig.
+            http_downloads_not_allowed: HTTP-Downloads sind für dieses Paket nicht zulässig.
           partial_package:
             partial_pkg_dl: 'Partielle Paketdownloads: %{total}'
           transfer_package:
@@ -2069,8 +1895,7 @@ de:
       reset_password_tokens:
         edit:
           alert_error: Ihr Faspex-Login ist müde zu einem Verzeichnisdienst-Account.
-          alert_error_contact: Bitte wenden Sie sich an Ihren Helpdesk oder Netzwerkadministrator,
-            um Ihr Passwort zu ändern.
+          alert_error_contact: Bitte wenden Sie sich an Ihren Helpdesk oder Netzwerkadministrator, um Ihr Passwort zu ändern.
           reset_password: Kennwort zurücksetzen
         new:
           back_to_login: Zurück zur Anmeldung
@@ -2094,10 +1919,8 @@ de:
               use_encrypt_at_rest: Verschlüsselung-at-rest verwenden
             expiration_policy:
               after_pkg_dl: Nach dem Herunterladen des Pakets
-              delete_after_all: Löschen Sie nach dem Herunterladen aller Dateien nach
-                <strong>alle Empfänger</strong> .
-              delete_after_any: Löschen nach <strong>jeder Empfänger</strong> lädt
-                alle Dateien herunter.
+              delete_after_all: Löschen Sie nach dem Herunterladen aller Dateien nach <strong>alle Empfänger</strong> .
+              delete_after_any: Löschen nach <strong>jeder Empfänger</strong> lädt alle Dateien herunter.
               do_nothing: Nichts tun
               expiration: 'Ablauf:'
             prevent_http_download:
@@ -2118,8 +1941,7 @@ de:
               cc_on_receipt: CC bei Empfang
               cc_on_upload: CC beim Hochladen
               download: 'Download:'
-              notifications_help: Benachrichtigungen werden nach dem ersten Upload
-                oder Download gesendet
+              notifications_help: Benachrichtigungen werden nach dem ersten Upload oder Download gesendet
               receipt: 'Eingang:'
               upload: 'Hochladen:'
             obfuscation:
@@ -2136,10 +1958,9 @@ de:
               http_uploads_not_allowed: HTTP-Uploads sind für dieses Paket nicht zulässig.
             source_shares:
               contents: 'Inhalt *:'
-              ear_cloud_warning: Für alle Übertragungen wird eine Verschlüsselungsverschlüsselung
-                verwendet, die jedoch nicht für Übertragungen unterstützt wird, die
-                eine Cloud-Referenzierung verwenden. Diese Übertragung verwendet keine
-                Verschlüsselung im Ruhezustand.
+              ear_cloud_warning: >-
+                Für alle Übertragungen wird eine Verschlüsselungsverschlüsselung verwendet, die jedoch nicht für Übertragungen unterstützt wird, die eine Cloud-Referenzierung
+                verwenden. Diese Übertragung verwendet keine Verschlüsselung im Ruhezustand.
               remove_all: Alle entfernen
               source: 'Quelle:'
               warning: 'Warnung:'
@@ -2159,8 +1980,7 @@ de:
           misc:
             actions:
               confirmation: 'Bestätigung:'
-              enter_passphrase: Geben Sie eine Kennphrase ein, um Ihre Dateien zu
-                schützen.<br>Eine Passphrase ist erforderlich.
+              enter_passphrase: Geben Sie eine Passphrase ein, um Ihre Dateien zu schützen.<br>Eine Kennphrase ist erforderlich.
               passphrase: 'Kennphrase:'
             connect_transfer:
               browse_for_files: Nach Dateien suchen &hellip;
@@ -2207,7 +2027,7 @@ de:
           pkg_download_details: Details zum Paket-Download
           start_time: Startzeit &nbsp;
           stop_time: Stoppzeit &nbsp;
-          time_elapsed: Verstrichene Zeit &nbsp;
+          time_elapsed: Abgelaufene Zeit &nbsp;
           user_name: Benutzername &nbsp;
         size: Größe
         status: Status
@@ -2244,8 +2064,7 @@ de:
             download_connect: Verbindungs-Plug-in herunterladen
             download_hint: Kann einige Minuten dauern, bis die Änderung wirksam wird
             download_notif: Benachrichtigungen herunterladen
-            download_notif_hint: Diese Adressen per E-Mail senden, wenn jeder Empfänger
-              zuerst ein Paket herunterlädt
+            download_notif_hint: Diese Adressen per E-Mail senden, wenn jeder Empfänger zuerst ein Paket herunterlädt
             email_settings: E-Mail-Einstellungen
             locales: Locales
             locale: Ländereinstellung
@@ -2254,15 +2073,11 @@ de:
             update_pref: Benutzervorgaben aktualisieren
             upload_notif: Benachrichtigungen hochladen
             upload_notif_hint: Senden Sie diese Adressen mit dem Ergebnis des Uploads
-              per E-Mail
-            received_page_option: Nur abgeschlossene Pakete auf der Seite 'Empfangen'
-              anzeigen
+            received_page_option: Nur abgeschlossene Pakete auf der Seite 'Empfangen' anzeigen
         sender_quota:
           index:
-            sender_alert_1: Sie haben die Absenderkontingentgrenze von %{quota} MB
-              erreicht.
-            sender_alert_2: "%{quota} MB verfügbar. Der Grenzwert für den Senderkontingent
-              wird auf '%{limit} MB' gesetzt."
+            sender_alert_1: Sie haben die Absenderkontingentgrenze von %{quota} MB erreicht.
+            sender_alert_2: "%{quota} MB verfügbar. Der Grenzwert für den Senderkontingent wird auf %{limit} MB gesetzt."
             sender_quota: Senderkontingent
       shared:
         browser:
@@ -2296,10 +2111,8 @@ de:
         add_user_profile_field: Benutzerprofilfeld hinzufügen
         enabled: Aktiviert
         name: Name
-        note_no_changes: 'Anmerkung: Es werden keine Änderungen gespeichert, bis Sie
-          auf "Felder speichern" klicken.'
-        onclick_confirm: Sind Sie sicher, dass dieses Benutzerprofil entfernt werden
-          soll?
+        note_no_changes: 'Anmerkung: Es werden keine Änderungen gespeichert, bis Sie auf "Felder speichern" klicken.'
+        onclick_confirm: Sind Sie sicher, dass dieses Benutzerprofil entfernt werden soll?
         remove: Entfernen Sie dieses Profilfeld.
         required: Erforderlich
         save_fields: Felder speichern
@@ -2345,8 +2158,7 @@ de:
         forwards:
           complete: Vollständig
           enable_relay: Relais aktivieren
-          enabled_message: Wenn diese Option aktiviert ist, werden alle Paketdateien
-            an zusätzliche Knoten weitergeleitet.
+          enabled_message: Wenn diese Option aktiviert ist, werden alle Paketdateien an zusätzliche Knoten weitergeleitet.
           error: Fehler
           notify_users: Benutzer benachrichtigen auf ...
           overwrite: Überschreiben
@@ -2356,9 +2168,8 @@ de:
         nodes:
           default_inbox: Standardeingang
           direct_upload: Direkt in den angepassten Posteingang hochladen.
-          direct_upload_default_check: Wenn diese Option aktiviert ist, werden die
-            Pakete nicht in den Standardeingang hochgeladen, wenn dieser Workgroup
-            der einzige Empfänger ist.
+          direct_upload_default_check: Wenn diese Option aktiviert ist, werden die Pakete nicht in den Standardeingang hochgeladen, wenn dieser Workgroup der einzige
+            Empfänger ist.
           inbox_destination: Inbox-Ziel
           location: Position
           status: Status
@@ -2401,8 +2212,7 @@ de:
             complete: Vollständig
             enable_relay: Relais aktivieren
             error: Fehler
-            if_enabled: Wenn diese Option aktiviert ist, werden alle Paketdateien
-              an zusätzliche Knoten weitergeleitet.
+            if_enabled: Wenn diese Option aktiviert ist, werden alle Paketdateien an zusätzliche Knoten weitergeleitet.
             name: Name
             notify_users: Benutzer benachrichtigen auf ...
             overwrite: Überschreiben
@@ -2411,8 +2221,7 @@ de:
           index:
             create_new: Neu erstellen
             dropbox: Dropbox
-            flash_message: Um Arbeitsgruppen zu erstellen, zu löschen oder zu bearbeiten
-              (andere als das Hinzufügen/Entfernen von Membern), müssen Sie am Master-Server
+            flash_message: Um Arbeitsgruppen zu erstellen, zu löschen oder zu bearbeiten (andere als das Hinzufügen/Entfernen von Membern), müssen Sie am Master-Server
               angemeldet sein.
             view_all: Alle anzeigen
             view_mine: Mine anzeigen
@@ -2451,38 +2260,30 @@ de:
             server_default: Serverstandardwert
             status: Status
             upload_directly: Direkt in den angepassten Posteingang hochladen
-            upload_message: Wenn diese Option aktiviert ist, werden die Pakete nicht
-              in den Standardeingang hochgeladen, wenn diese Arbeitsgruppe der einzige
-              Empfänger ist.
+            upload_message: Wenn diese Option aktiviert ist, werden die Pakete nicht in den Standardeingang hochgeladen, wenn diese Arbeitsgruppe der einzige Empfänger
+              ist.
           show:
             view_packages: Pakete anzeigen
           wg_permissions:
-            add_dir_serv_groups_as_members_hint: Verzeichnisservicegruppen als Mitglieder
-              hinzufügen/entfernen
-            add_existing_users_hint: Vorhandene Faspex-Benutzer hinzufügen/Nicht-Arbeitsgruppenadministratormitglieder
-              entfernen
+            add_dir_serv_groups_as_members_hint: Verzeichnisservicegruppen als Mitglieder hinzufügen/entfernen
+            add_existing_users_hint: Vorhandene Faspex-Benutzer hinzufügen/Nicht-Arbeitsgruppenadministratormitglieder entfernen
             edit_new_users_hint: Neue Benutzer als Mitglieder erstellen/bearbeiten/entfernen
             full: " Voll:"
-            full_hint: Mitglieder, denen die Erlaubnis erteilt wurde, sich gegenseitig
-              zu sehen und zu senden
+            full_hint: Mitglieder, denen die Erlaubnis erteilt wurde, sich gegenseitig zu sehen und zu senden
             member_management: Mitglied-Management
             moderated: " Moderiert:"
-            moderated_hint: Nur der Workgroup-Administrator kann an diese Arbeitsgruppe
-              senden.
+            moderated_hint: Nur der Workgroup-Administrator kann an diese Arbeitsgruppe senden.
             open: " Öffnen:"
             open_hint: Jeder kann an diese Arbeitsgruppe senden
             private: " Privat:"
-            private_hint: Nur Member können an diese Arbeitsgruppe gesendet werden.
+            private_hint: Nur Mitglieder können an diese Arbeitsgruppe senden
             restricted: " Eingeschränkt:"
             restricted_hint: Keine kann an diese Arbeitsgruppe gesendet werden
-            restricted_hint_2: Nur Arbeitsgruppen, denen die Berechtigung zum Anzeigen
-              oder Senden an einzelne Mitglieder der Arbeitsgruppe erteilt wurde
-            send_to_eachother: 'Mitglieder der Arbeitsgruppe, die sich gegenseitig
-              senden:'
+            restricted_hint_2: Nur Arbeitsgruppen, denen die Berechtigung zum Anzeigen oder Senden an einzelne Mitglieder der Arbeitsgruppe erteilt wurde
+            send_to_eachother: 'Mitglieder der Arbeitsgruppe, die sich gegenseitig senden:'
             sending_to_itself: 'Senden an die Arbeitsgruppe selbst:'
             wg_admins_only: " Nur Workgroup Admins:"
-            wg_admins_only_hint: Die Mitglieder haben die Berechtigung zum Anzeigen
-              und Senden an Workgroup-Administratoren erteilt.
+            wg_admins_only_hint: Die Mitglieder haben die Berechtigung zum Anzeigen und Senden an die Arbeitsgruppe Admins erteilt.
             workgroup_admins_can: Workgroup-Administratoren können ...
             workgroup_permissions: Arbeitsgruppenberechtigungen
           workgroup_list:
@@ -2516,8 +2317,7 @@ de:
           browse_fail: Die ferne Dateiquelle ist fehlgeschlagen.
         post_processes_helper:
           activate: Aktivieren
-          confirm: Sind Sie sicher, dass das Nachverarbeitungsscript %{script_name}
-            gelöscht werden soll?
+          confirm: Sind Sie sicher, dass das Nachverarbeitungsscript %{script_name} gelöscht werden soll?
           deactivate: Inaktivieren
           remove: Entfernen
           view_log: Ausführungsprotokoll anzeigen
@@ -2559,8 +2359,7 @@ de:
           create_new_user: Neuen Benutzer erstellen
         workgroups_helper:
           delete: Löschen
-          delete_confirm: Sind Sie sicher, dass %{wg_type} "%{wg_name}" gelöscht werden
-            soll?
+          delete_confirm: Sind Sie sicher, dass %{wg_type} "%{wg_name}" gelöscht werden soll?
           delete_wg: "%{wg_name} löschen"
           dropbox: Dropbox
           edit: Bearbeiten
@@ -2574,21 +2373,16 @@ de:
       c_configuration:
         cant_be_blank: Felder dürfen nicht leer sein.
       delivery:
-        send_fail_quota_limit: Paket kann nicht gesendet werden, Quota-Grenzwert von
-          %{limit} MB erreicht
+        send_fail_quota_limit: Paket kann nicht gesendet werden, Quota-Grenzwert von %{limit} MB erreicht
         send_fail_permissions: Sie sind nicht berechtigt, normale Pakete zu erstellen.
         send_fail_invalid_recipients: Keine gültigen Empfänger
         send_fail_dropbox_only: Dropbox-Empfänger muss der einzige Empfänger sein
         send_fail_invalid_recipient_specific: 'Ungültiger Empfänger: %{recipient_name}'
-        send_fail_permissions_multiple: Es ist nicht zulässig, an einen oder mehrere
-          der angegebenen Empfänger zu senden.
+        send_fail_permissions_multiple: Es ist nicht zulässig, an einen oder mehrere der angegebenen Empfänger zu senden.
         send_fail_invalid_cc: 'Ungültige CC (beim Hochladen): %{cc_name}'
-        send_fail_invalid_ccs_upload: Sie sind nicht berechtigt, einen oder mehrere
-          Empfänger im Upload-Feld zu CC zu verwenden.
-        send_fail_invalid_ccs_download: Sie sind nicht berechtigt, einen oder mehrere
-          Empfänger im Download-Feld zu CC zu verwenden.
-        send_fail_invalid_ccs_receipt: Sie sind nicht berechtigt, einen oder mehrere
-          Empfänger im Wareneingangsfeld zu CC zu verwenden.
+        send_fail_invalid_ccs_upload: Sie sind nicht berechtigt, einen oder mehrere Empfänger im Uploadfeld zu CC zu verwenden.
+        send_fail_invalid_ccs_download: Sie sind nicht berechtigt, einen oder mehrere Empfänger im Download-Feld zu CC zu verwenden.
+        send_fail_invalid_ccs_receipt: Sie sind nicht berechtigt, einen oder mehrere Empfänger im Wareneingangsfeld zu CC zu verwenden.
         send_fail_must_have_one_source: Muss genau eine Quelle haben
         send_fail_unknown_share_id: Unbekannte Quellenfreigabe-ID %{share_id}
         send_fail_source_not_authorized: Quelle nicht autorisiert
@@ -2596,18 +2390,15 @@ de:
         send_fail_unique_filenames: Dateinamen müssen eindeutig sein
         send_fail_ear_must_be_specified: muss angegeben werden
         send_fail_ear_not_allowed: nicht zulässig
-        send_fail_ear_disabled_message: Verschlüsselung-at-rest ist inaktiviert, Passphrase
-          ist nicht zulässig.
-        send_fail_sendershareid_forwarding: SenderShareId kann für weitergeleitete
-          Pakete nicht geändert werden
+        send_fail_ear_disabled_message: Verschlüsselung-at-rest ist inaktiviert, Passphrase ist nicht zulässig.
+        send_fail_sendershareid_forwarding: SenderShareId kann für weitergeleitete Pakete nicht geändert werden
         send_fail_invalid_release_policy: 'Ungültige Releaserichtlinie: %{rp}'
-        send_fail_policy_date_future: Das Veröffentlichungsdatum muss in der Zukunft
-          liegen.
+        send_fail_policy_date_future: Das Veröffentlichungsdatum muss in der Zukunft liegen.
         send_fail_expiration_date_future: Verfallsdatum muss in der Zukunft liegen
       directory_service_user:
-        login_error_message: Ihre Anmeldung war nicht erfolgreich. Versuchen Sie es
-          erneut. Wenn Sie bei wiederholten Anmeldefehlern auftreten, klicken Sie
-          auf den Link 'Kennwort vergessen', um Ihr Kennwort zurückzusetzen.
+        login_error_message: >-
+          Ihre Anmeldung war nicht erfolgreich. Versuchen Sie es erneut. Bei wiederholten Anmeldefehlern sollten Sie auf den Link "Passwort vergessen" klicken, um
+          Ihr Passwort zurückzusetzen.
       e_membership:
         status:
           expired: Abgelaufen
@@ -2616,56 +2407,44 @@ de:
       local_user:
         cannot_be_blank: kann nicht leer sein
         is_incorrect: ist falsch
-        login_error_message: Ihre Anmeldung war nicht erfolgreich. Versuchen Sie es
-          erneut. Wenn Sie bei wiederholten Anmeldefehlern auftreten, klicken Sie
-          auf den Link 'Kennwort vergessen', um Ihr Kennwort zurückzusetzen.
-        lock_out_message: Sie wurden aufgrund zu vieler nicht erfolgreicher Anmeldungen
-          gesperrt.
+        login_error_message: >-
+          Ihre Anmeldung war nicht erfolgreich. Versuchen Sie es erneut. Bei wiederholten Anmeldefehlern sollten Sie auf den Link "Passwort vergessen" klicken, um
+          Ihr Passwort zurückzusetzen.
+        lock_out_message: Sie wurden aufgrund zu vieler nicht erfolgreicher Anmeldungen gesperrt.
         same_as_old_pw: ist mit dem alten Kennwort identisch.
         same_old_pw_hint: muss sich von den vorherigen %{limit}-Kennwörtern unterscheiden
       metadata_field:
         value_already_taken: "'%{value}' wurde bereits ausgeführt"
-        max_length_not_int: Max. Länge des Feldes '%{label_name}' muss eine ganze
-          Zahl sein
-        max_length_bounds: Max. Länge des Feldes '%{label_name}' muss zwischen 1 und
-          %{max} liegen
+        max_length_not_int: Max. Länge des Feldes '%{label_name}' muss eine ganze Zahl sein
+        max_length_bounds: Max. Länge des Feldes '%{label_name}' muss zwischen 1 und %{max} liegen
         valid_option_list: Für '%{label_name}' ist eine gültige Optionsliste erforderlich.
         valid_date_format: "'%{label_name}' erfordert ein gültiges Datumsformat."
         cannot_be_blank: "%{label_name} darf nicht leer sein"
         error_decoding: 'Fehler beim Decodieren der Metadaten: %{meta}'
       metadata_profile:
-        all_fields_length_error: Die gesamte maximale Länge aller Felder (einschließlich
-          Beschriftungen, Optionen und Datumsfelder) muss kleiner als %{max}-Zeichen
+        all_fields_length_error: Die gesamte maximale Länge aller Felder (einschließlich Beschriftungen, Optionen und Datumsfelder) muss kleiner als %{max}-Zeichen
           sein.
         field_blank_error: "%{err_label} darf nicht leer sein"
-        field_illegal_char_error: "%{err_label} darf keines der folgenden Zeichen
-          enthalten: %{illegal}"
-        field_length_error: "%{err_label} muss %{max} Zeichen oder weniger sein"
-        field_options_error: "%{err_label} muss eine der folgenden Optionen enthalten:
-          %{list}"
+        field_illegal_char_error: "%{err_label} darf keines der folgenden Zeichen enthalten: %{illegal}"
+        field_length_error: "%{err_label} muss %{max}-Zeichen oder weniger sein"
+        field_options_error: "%{err_label} muss eine der folgenden Optionen enthalten: %{list}"
         invalid_JSON_error: "%{err_label} muss ein gültiges JSON sein"
         invalid_share_id_error: Ungültige Share-ID %{err_value} für %{err_label}
         invalid_user_error: Ungültiger Benutzer %{err_user} für %{err_label}
         invalid_value_error: Ungültiger Wert für %{err_label}
         max_length_reset_error: Max. Längenfelder wurden auf den Standardwert zurückgesetzt
-        must_be_list_error: "%{err_label} muss eine Liste mit gemeinsam mit den IDs
-          angegebenen IDs sein."
+        must_be_list_error: "%{err_label} muss eine Liste mit gemeinsam mit den IDs angegebenen IDs sein."
         no_fields_error: Das Metadatenprofil muss über mindestens ein Feld verfügen.
-        note_invalid_char_error: 'Hinweis darf keines der folgenden Zeichen enthalten:
-          # {illegal}'
-        note_length_bounds_error: Die maximale Länge der Notiz muss zwischen 1 und
-          %{max} liegen.
+        note_invalid_char_error: 'Hinweis darf keines der folgenden Zeichen enthalten: # {illegal}'
+        note_length_bounds_error: Die maximale Länge der Notiz muss zwischen 1 und %{max} liegen.
         note_length_error: Beachten Sie, dass %{max}-Zeichen oder weniger
         note_length_int_error: Die maximale Länge der Notiz muss eine ganze Zahl sein.
         note_length_specified_error: Die maximale Länge der Notiz muss angegeben werden.
         specified_error: "%{err_label} muss angegeben werden"
-        title_invalid_char_error: 'Der Titel darf keines der folgenden Zeichen enthalten:
-          %{illegal}'
-        title_length_bounds_error: Max. Länge des Titels muss zwischen 1 und %{max}
-          liegen
+        title_invalid_char_error: 'Der Titel darf keines der folgenden Zeichen enthalten: %{illegal}'
+        title_length_bounds_error: Max. Länge des Titels muss zwischen 1 und %{max} liegen
         title_length_error: Der Titel muss %{max}-Zeichen oder weniger sein
-        title_length_int_error: Die maximale Länge des Titels muss eine ganze Zahl
-          sein.
+        title_length_int_error: Die maximale Länge des Titels muss eine ganze Zahl sein.
         title_length_specified_error: Max. Länge des Titels muss angegeben werden
       post_process:
         all_uploaded_pkgs: "[alle hochgeladenen Pakete]"
@@ -2675,18 +2454,16 @@ de:
         persistent: Persistent
         email_address: E-Mail-Adresse
       send_package_request:
-        from_name_error: Der Name "Von" stimmt nicht mit dem authentifizierten Benutzer
-          überein.
+        from_name_error: Der Name "Von" stimmt nicht mit dem authentifizierten Benutzer überein.
         invalid_recipient_error: Ungültiger Empfänger
         parse_xml_error: Anforderung-XML kann nicht syntaktisch analysiert werden
         validate_sender_error: Keine Berechtigung zum Hochladen
         too_many_elements: Element '%{path}' darf nicht mehr als '%{max}' auftreten.
-        too_few_elements: Element '%{path}' muss mindestens '%{min}' auftreten
+        too_few_elements: Das Element '%{path}' muss mindestens '%{min}' auftreten.
       user:
         passwordable:
           requirements: Muss mindestens sechs Zeichen lang sein
-          strong_requirements: Muss mindestens sechs Zeichen lang sein, mit mindestens
-            einem Buchstaben, einer Nummer und einem Symbol.
+          strong_requirements: Muss mindestens sechs Zeichen lang sein, mit mindestens einem Buchstaben, einer Nummer und einem Symbol.
         status:
           saml_disabled: SAML-Konfiguration inaktiviert
           pending: Anstehende Genehmigung
@@ -2782,7 +2559,7 @@ de:
     - Fri
     - Sat
     abbr_month_names:
-    - 
+    -
     - Jan
     - Feb
     - Mar
@@ -2808,7 +2585,7 @@ de:
       long: "%B %d, %Y"
       short: "%b %d"
     month_names:
-    - 
+    -
     - January
     - February
     - March
@@ -2877,37 +2654,27 @@ de:
     application:
       archive: Archiv
       back: Zurück
-      cloud_storage_referencing: Cloudspeicher, der auf IS verweist, wird von diesem
-        Speicher unterstützt.
-      connect_install_message: Um maximale %{direction}-Geschwindigkeiten zu nutzen,
-        installieren Sie bitte das %{aspera} Browser-Plugin.
-      connect_upgrade_message: Um maximale %{direction}-Geschwindigkeiten zu nutzen,
-        aktualisieren Sie bitte Ihr %{aspera}-Browser-Plugin.
-      confirm: Sind Sie sicher, dass Sie Dateien für das Paket %{package_name} löschen
-        möchten, das von %{package_sender} gesendet wurde?
+      cloud_storage_referencing: Cloudspeicher, der auf IS verweist, wird von diesem Speicher unterstützt.
+      connect_install_message: Um maximale %{direction}-Geschwindigkeiten zu nutzen, installieren Sie bitte das %{aspera} Browser-Plugin.
+      connect_upgrade_message: Um maximale %{direction}-Geschwindigkeiten zu nutzen, aktualisieren Sie bitte Ihr %{aspera}-Browser-Plugin.
+      confirm: Sind Sie sicher, dass Sie Dateien für das Paket %{package_name} löschen möchten, das von %{package_sender} gesendet wurde?
       copy: In Zwischenablage kopieren
       delete: Löschen
-      delete_confirm: Sind Sie sicher, dass Sie Dateien für das Paket %{package_name}
-        löschen möchten, das von %{package_sender} gesendet wurde?
-      delete_confirm_forward: Dies ist ein Vorlauf eines anderen Pakets. Das Original
-        und alle Forwards werden gelöscht.
-      delete_confirm_has_forwards: Weiterleitungen dieses Pakets sind vorhanden. Das
-        Original und alle Forwards werden gelöscht.
-      enable_hst_dl: Um Hochgeschwindigkeits-Übertragungen mit Aspera zu ermöglichen,
-        bitten Sie %{download} das Connect-Browser-Plug-in.
-      enable_hst_dl_enable: Um Hochgeschwindigkeitsübertragungen mit Aspera zu ermöglichen,
+      delete_confirm: Sind Sie sicher, dass Sie Dateien für das Paket %{package_name} löschen möchten, das von %{package_sender} gesendet wurde?
+      delete_confirm_forward: Dies ist ein Vorlauf eines anderen Pakets. Das Original und alle Forwards werden gelöscht.
+      delete_confirm_has_forwards: Weiterleitungen dieses Pakets sind vorhanden. Das Original und alle Forwards werden gelöscht.
+      enable_hst_dl: Um Hochgeschwindigkeits-Übertragungen mit Aspera zu ermöglichen, bitten Sie %{download} das Connect-Browser-Plug-in.
+      enable_hst_dl_enable: Um Hochgeschwindigkeitsübertragungen mit Aspera zu ermöglichen, bitten Sie %{download} und %{enable} um das Connect-Browser-Plug-in.
+      local_transfer_message: >-
+        Sie verwenden derzeit HTTP mit niedriger Geschwindigkeit. Um Hochgeschwindigkeitsübertragungen mit Aspera zu ermöglichen, besuchen Sie bitte %{enable}, um
+        das Connect-Browser-Plugin zu aktivieren/herunterzuladen.
+      no_cloud_storage_referencing: Die Cloud-Speicherreferenzierung wird von diesem Speicher NICHT unterstützt.
+      no_transfer_dl: >-
+        Uploads ohne Aspera Connect weisen Leistungseinschränkungen auf. Um diese Einschränkung zu entfernen und Hochgeschwindigkeitsübertragungen mit Aspera zu ermöglichen,
+        bitten Sie %{download} um das Connect-Browser-Plug-in.
+      no_transfer_dl_enable: >-
+        Uploads ohne Aspera Connect weisen Leistungseinschränkungen auf. Um diese Einschränkung zu entfernen und Hochgeschwindigkeitsübertragungen mit Aspera zu ermöglichen,
         bitten Sie %{download} und %{enable} um das Connect-Browser-Plug-in.
-      local_transfer_message: Sie verwenden derzeit HTTP mit niedriger Geschwindigkeit.
-        Um Hochgeschwindigkeitsübertragungen mit Aspera zu ermöglichen, besuchen Sie
-        bitte %{enable}, um das Connect-Browser-Plugin zu aktivieren/herunterzuladen.
-      no_cloud_storage_referencing: Die Cloud-Speicherreferenzierung wird von diesem
-        Speicher NICHT unterstützt.
-      no_transfer_dl: Uploads ohne Aspera Connect weisen Leistungseinschränkungen
-        auf. Um diese Einschränkung zu entfernen und Hochgeschwindigkeitsübertragungen
-        mit Aspera zu ermöglichen, bitten Sie %{download} um das Connect-Browser-Plug-in.
-      no_transfer_dl_enable: Uploads ohne Aspera Connect weisen Leistungseinschränkungen
-        auf. Um diese Einschränkung zu entfernen und Hochgeschwindigkeitsübertragungen
-        mit Aspera zu ermöglichen, bitten Sie %{download} und %{enable} um das Connect-Browser-Plug-in.
       not_supp_symbolic_links: Speicher unterstützt keine symbolischen Links
       note: Hinweis
       package_details: Klicken Sie hier für Paketdetails.
@@ -2930,8 +2697,7 @@ de:
       login: Anmelden
       login_using_saml_idp: Melden Sie sich mit SAML-IdP an
     logged_out:
-      message: Sie wurden von Faspex abgemeldet; Sie müssen sich möglicherweise noch
-        aus Ihrem Corporate-Single-Sign-on-Konto abmelden.
+      message: Sie wurden von Faspex abgemeldet; Sie müssen sich möglicherweise noch aus Ihrem Corporate-Single-Sign-on-Konto abmelden.
       log_in_again: Erneut anmelden
     errors:
       saml_not_authorized: Sie sind nicht berechtigt, Faspex zu verwenden.
@@ -2948,13 +2714,17 @@ de:
     app_tar:
       app:
         bad_version: Inkompatible Versionsnummern
-        config_save_error: Fehler beim Speichern der Konfiguration.  Details finden
-          Sie im Protokoll.
+        config_save_error: Fehler beim Speichern der Konfiguration.  Details finden Sie im Protokoll.
         upload_saved_config: Gespeicherte Konfiguration hochladen
-        restore_config_error: Fehler beim Wiederherstellen der Konfiguration.  Details
-          finden Sie im Protokoll.
-        tar_error: Fehler tarring config %{tar_status} %{tar_out}
-        untar_error: Fehler beim Enttarnen der Konfiguration %{untar_status} %{untar_stdout}
+        restore_config_error: Fehler beim Wiederherstellen der Konfiguration.  Details finden Sie im Protokoll.
+        tar_error: |-
+          Fehler-Tarring-Konfiguration
+          %{tar_status}
+          %{tar_out}
+        untar_error: |-
+          Fehler beim Enttarnen der Konfiguration
+          %{untar_status}
+          %{untar_stdout}
     aspera_license_reader:
       no_license_found: Keine Lizenz gefunden oder Lizenz nicht gut gebildet
       license_signature_mismatch: Lizenzsignatur stimmt nicht mit Inhalt überein
@@ -2983,8 +2753,7 @@ de:
       set_user_as_admin: 'Benutzer als # {wg_name} admin festlegen'
     packages:
       package_methods:
-        HTTP_upload_in_progress: Der HTTP-Upload ist in Bearbeitung, es wird abgebrochen,
-          wenn Sie von dieser Seite wegnavigieren.
+        HTTP_upload_in_progress: Der HTTP-Upload ist in Bearbeitung, es wird abgebrochen, wenn Sie von dieser Seite wegnavigieren.
         new_package: Neues Paket
         return_to_history: Zurück zur Historie
         return_to_list: Zurück zur Liste

@@ -53,10 +53,10 @@ ja:
         e_https_port: HTTPS ポート
         e_server_address: サーバーの外部アドレスまたは名前
         e_server_enable_alternate_address: 代替アドレスを有効
-        e_server_emails_include_alternate_address: メールに代替アドレスが含まれる
+        e_server_emails_include_alternate_address: E メールに代替アドレスを含める
         email_passcode_expires: パッケージ・リンク有効
         email_passcode_days_valid: 後で期限切れ
-        email_passcode_expire_after_download: フルパッケージ・ダウンロード後の有効期限切れ
+        email_passcode_expire_after_download: 完全パッケージ・ダウンロード後の有効期限切れ
         registration_type: 自己登録
         registration_approval_ccs: 次の E メールを承認して承認してください
         registration_external_use_default: 外部ユーザーにデフォルトの登録ポリシーを使用する
@@ -220,8 +220,7 @@ ja:
     errors:
       format: "%{attribute} %{message}"
       e_configuration:
-        idp_cert_and_idp_cert_fingerprint_blank: "「 IdP 証明書の Fingerprint」または「IdP 証明書」の
-          1 つを指定する必要があります。"
+        idp_cert_and_idp_cert_fingerprint_blank: "「 IdP 証明書の Fingerprint」または「IdP 証明書」の 1 つを指定する必要があります。"
       models:
         delivery:
           attributes:
@@ -291,17 +290,15 @@ ja:
     saml:
       edit:
         saml: サムル
-        automatically_login_using_saml_idp_hint: SAML ID プロバイダーを使用して自動的にログインします。  %{url}
-          は、 SAML を使用した自動ログインが使用可能になっている場合でも、 Faspex に直接ログインするために使用できます。
+        automatically_login_using_saml_idp_hint: SAML ID プロバイダーを使用して自動的にログインします。  %{url} は、 SAML を使用した自動ログインが使用可能になっている場合でも、 Faspex に直接ログインするために使用できます。
     saml_configurations:
       edit:
-        domain_url_hint: "(オプション) この Faspex ドメインにアクセスすると、ユーザーはこの SAML プロバイダー経由で自動的にログインするように誘導されます
-          ( デフォルトはオーバーライド ) 。"
+        domain_url_hint: "(オプション) この Faspex ドメインにアクセスすると、ユーザーはこの SAML プロバイダー経由で自動的にログインするように誘導されます ( デフォルトはオーバーライド )"
         publicly_visible_hint: ユーザーがローカル・ログイン・ページからこの SAML 構成にアクセスできるようにする
       test_warning: |-
         警告: このアクションを実行すると、現在の Faspex セッションが終了し、この SAML プロバイダーのログイン・ページが表示されます。
 
-        現在のセッションを終了しないようにするには、このリンクをプライベート・ウィンドウで開くか、別のブラウザーでこの構成をテストすることができます。
+        現行セッションを終了しないようにするには、このリンクをプライベート・ウィンドウで開くか、別のブラウザーで開いてこの構成をテストすることができます。
   app:
     controllers:
       account:
@@ -376,8 +373,7 @@ ja:
             file_too_large: ファイルが大きすぎます。 最大ファイル・サイズは 5MB
             remove_logo_fail: カスタムロゴファイルを削除できません
             remove_logo_success: カスタム・ロゴ・ファイルの削除
-            unsupported_file_type: カスタム・ロゴに対してサポートされないファイル・タイプ ファイルは jpeg、 gif、または
-              png のイメージでなければなりません。
+            unsupported_file_type: カスタム・ロゴに対してサポートされないファイル・タイプ ファイルは jpeg、 gif、または png のイメージでなければなりません。
             updated_settings: 更新表示設定
           entitlement_controller:
             invalid_license: 無効な資格ライセンス
@@ -444,8 +440,7 @@ ja:
         updated: "%{template} E メール通知が正常に更新されました"
       metadata_profiles_controller:
         cannot_delete_profile: プロファイルは削除できません。通常のパッケージで使用されます。
-        cannot_delete_profile_dropbox: プロファイルを削除できません。このプロファイルは、 dropbox %{db_name}
-          によって使用されます。
+        cannot_delete_profile_dropbox: プロファイルを削除できません。このプロファイルは、 dropbox %{db_name} によって使用されます。
         created: 作成されたメタデータ %{profile}
         profile_deleted: プロファイルの削除。
         save_success: メタデータ・プロファイルを正常に保存
@@ -497,7 +492,7 @@ ja:
         preferences_controller:
           updated: 設定の更新
       user_profile_fields_controller:
-        max_field_check_fail: "%{max} ユーザー・プロファイル・フィールドのみを使用することができます。"
+        max_field_check_fail: "%{max} ユーザー・プロファイル・フィールドのみを使用できます。"
         saved: ユーザー・プロファイル・フィールドの保存
       workgroup:
         workgroups_controller:
@@ -628,8 +623,7 @@ ja:
             faspex_reg_type: Faspex は %{type} の登録を使用して構成されます。
             new_message: これは、新規に作成されたアカウントが %{not} に承認を必要とすることを
             not: しない
-            self_reg_users: 自己登録ユーザーは、 %{template_user} の許可を継承し、自動的に以下の %{workgroups}
-              のメンバーになります。
+            self_reg_users: 自己登録ユーザーは、 %{template_user} の許可を継承し、自動的に以下の %{workgroups} のメンバーになります。
         saml_groups:
           edit:
             back: バック
@@ -702,14 +696,13 @@ ja:
               checked: チェック
               initial_transfer: 初期転送速度
               max_rate: 最大許容速度
-              minrate_hint: 'チェック・マークを付けた場合、クライアントは転送ポリシーまたは最小転送速度を調整できません (デフォルト:
-                %{config})'
+              minrate_hint: 'チェック・マークを付けた場合、クライアントは転送ポリシーまたは最小転送速度を調整できません (デフォルト: %{config})'
               server_to_user: 'サーバーからユーザーへ ( デフォルト: %{config})'
               transfer_alert: |-
                 Faspex は、デフォルトで Aspera Central Server セクションからの転送設定を使用します。
                 ただし、ここでは、サーバー全体の設定よりも優先される、ユーザー固有の転送設定を設定できます。
               unchecked: チェックなし
-              user_to_server: 'ユーザーからサーバーへ ( デフォルト: %{config})'
+              user_to_server: 'サーバーへのユーザーの移動 (デフォルト: %{config})'
             ds_history:
               action: アクション
               ds_history: DS ヒストリー (%{dom_name})
@@ -738,7 +731,7 @@ ja:
               allowed_to: '許可 :'
               can_see_global_dist_lists: グローバル配布リストを表示できます。
               control_hint: チェック・マークを外した場合、ユーザーはユーザーに送信したり、ドロップ・ボックス/ワークグループに送信したりすることができなくなります
-              create_drop_packages: このオプションが使用不可の場合、ユーザーはいずれかのドロップダウン・パッケージのメンバーである場合にのみ、ドロップ・ボックス・パッケージを作成することができます。
+              create_drop_packages: このオプションが使用不可の場合、ユーザーはいずれかのドロップダウン・パッケージのメンバーである場合にのみ、ドロップ・ボックス・パッケージを作成できます。
               create_normal: '通常のパッケージを作成できる :'
               external_email: '外部 E メールに送信可能 :'
               ip_addr_hint: 'コンマで区切られたアドレス/範囲をコンマで区切って入力します。例 : <b>10.0.*、 192.168.1.1</b>'
@@ -894,11 +887,10 @@ ja:
           form:
             advanced_config: <i class="icon-plus"></i>拡張構成
             basic_config: 基本構成
-            config_message: 以下の構成は、 Aspera Enterprise Server をホストするサーバーを指している必要があります。
-              このアドレスは、転送統計を収集するために Web アプリケーションで使用されます。 Aspera Enterprise Server が
-              Web アプリケーションと同じマシン上で実行されている場合、正しいアドレスは 127.0.0.1です。
-            sec_add_message: 以下のアドレスは、転送を開始するためにユーザーが必要とするものです。 異なるアドレスを使用する必要のあるユーザーのグループがある場合
-              ( 例えば、ネットワーク条件のために ) 、「2 次アドレス」フィールドを使用して IP 範囲を指定します。 2 次アドレスは転送リレーには適用されないことに注意してください。
+            config_message: >-
+              以下の構成は、 Aspera Enterprise Server をホストするサーバーを指している必要があります。 このアドレスは、転送統計を収集するために Web アプリケーションで使用されます。 Aspera Enterprise Server が Web アプリケーションと同じマシン上で実行されている場合、正しいアドレスは
+              127.0.0.1です。
+            sec_add_message: 以下のアドレスは、転送を開始するためにユーザーが必要とするものです。 異なるアドレスを使用する必要のあるユーザーのグループがある場合 ( 例えば、ネットワーク条件のために ) 、「2 次アドレス」フィールドを使用して IP 範囲を指定します。 2 次アドレスは転送リレーには適用されないことに注意してください。
             storage_error: このファイル・ストレージは、現在システム・デフォルト・受信トレイとして使用されてい 編集すると、既存のパッケージがすべてユーザーに使用できなくなります
             test_connect: 接続のテスト
           index:
@@ -1130,14 +1122,14 @@ ja:
               format: 形式
               meaning: 意味
               perc_a: 短縮曜日名 (Sun)
-              perc_A: 曜日の完全な名前 (日曜日)
+              perc_A: 曜日の完全な名前 ( 日曜日)
               perc_b: 短縮月名 (1 月)
               perc_B: 完全な月名 (1 月)
               perc_d: その月の日 (01..31)
               perc_j: その年の日 (01..366)
               perc_m: 年の月 ( 01..12)
               perc_Y: 世紀のある年
-              perc_y: 1 世紀なしの年 (00...99)
+              perc_y: 1 世紀のない年 (00...99)
             edit:
               acc_display_format: アカウント表示名の形式
               custom_logo: 'カスタム・ロゴ:'
@@ -1195,7 +1187,7 @@ ja:
               restore_config: 構成の復元
               save_restore: 保存/復元
               upload_help: 保存された構成ファイル (*.tar.gz) をアップロードして適用します
-              version_help: '注: 復元バージョンは現在のファスプレクスのバージョンと一致している'
+              version_help: '注: 復元バージョンは現在のファスプレクスのバージョンに一致している'
           security:
             edit:
               act_dir_hint: ディレクトリー・サービス・ユーザーはロックまたは非活動化され
@@ -1203,7 +1195,7 @@ ja:
               after: アフター
               after_x_days: "%{num} 日後"
               after_inactivity: "%{len} 日の非アクティブ後"
-              after_one_success: アップロードが成功した後
+              after_one_success: 1 回アップロードした後
               allow_custom_link: ユーザーにカスタム・リンク有効期限ポリシーの設定を許可
               allow_email_change: ユーザーに E メール・アドレスの変更を許可
               allow_external_pkg_hint: チェック・マークを付けると、 (外部) フラグを使用して Faspex ユーザーに送信されるパッケージが許可されます
@@ -1227,7 +1219,7 @@ ja:
               disable: 無効化
               disable_hint: 送信者割り当て量のローリング・ウィンドウ、所要時間
               ds_users: "%{int} 日の非アクティブ状態の後の DS ユーザー"
-              email_expire_after_download: フルパッケージ・ダウンロード後の有効期限切れ
+              email_expire_after_download: 完全パッケージ・ダウンロード後の有効期限切れ
               enable: 有効
               encrypt_hint: 有効になっている場合は、 HTTP フォールバック転送も暗号化されます
               encrypt_transfers: 転送の暗号化
@@ -1272,14 +1264,12 @@ ja:
               registrations: 登録
               remove_users: ユーザーの削除
               req_external_reg: 外部ユーザーが登録を必要とする
-              require_external_hint: チェック・マークを付けると、外部ユーザーはパッケージをダウンロードするために Faspex
-                アカウントを登録する必要があります
+              require_external_hint: チェック・マークを付けると、外部ユーザーはパッケージをダウンロードするために Faspex アカウントを登録する必要があります
               saml_users: 非アクティブ状態の MY__YM 日後の SAML ユーザー。
               security: セキュリティ
               send_welcome_email: ようこそメールをすべての新規ユーザーに送信
               sender_quota: 送信者割り当て量
-              sender_quota_hint: 'これらのドメインのユーザーに送信されるパッケージは送信側の割り当て量にカウントされ E メール・ドメインを区切るには、コンマ
-                (,)、セミコロン ( ; )、または空白文字を使用します。 例 : @aspera.com; @ibm.com'
+              sender_quota_hint: 'これらのドメインのユーザーに送信されるパッケージは送信側の割り当て量にカウントされ E メール・ドメインを区切るには、コンマ (,)、セミコロン ( ; )、または空白文字を使用します。 例 : @aspera.com; @ibm.com'
               sender_quota_option: 送信者割り当て量オプション
               sender_quota_duration: 送信者割り当て量期間
               sender_quota_limit: 送信側割り当て量制限
@@ -1304,17 +1294,14 @@ ja:
               http_gateway_url: HTTP ゲートウェイ URL
               initial_def_trans_rate: 初期デフォルト転送速度
               local_host_connect: ローカル・ホスト接続
-              local_host_hint: チェック・マークを付けると、 Faspex は Aspera CDN を使用して Connectにサービスを提供しませんが、代わりに、
-                Faspex上で使用可能なローカル接続 SDK を使用します。
+              local_host_hint: チェック・マークを付けると、 Faspex は Aspera CDN を使用して Connectにサービスを提供しませんが、代わりに、 Faspex上で使用可能なローカル接続 SDK を使用します。
               local_to_remote: ローカル・サーバーからリモート・サーバー
               lock_connect_sdk: 接続 SDK バージョンのロック
-              lock_connect_sdk_hint: '新規バージョンが使用可能になった場合に、 Faspex がローカル Connect SDK
-                を更新しないようにします。 この設定は、アップグレードの間も持続 注: Faspex が更新を定期的に検査し、このオプションが使用不可の場合には新規バージョンを即時にダウンロードしない'
+              lock_connect_sdk_hint: '新規バージョンが使用可能になった場合に、 Faspex がローカル Connect SDK を更新しないようにします。 この設定は、アップグレードの間も持続 注: Faspex は定期的に更新の有無を検査し、このオプションが無効の場合は新規バージョンを直ちにダウンロードしません。'
               min_connect_version: 最小接続バージョン
               minrate_hint: これにチェック・マークを付けると、クライアントは転送ポリシーまたは最小転送速度を調整できなくなります。
               prefer_http_connect: http の拡張を優先します
-              prefer_http_connect_hint: チェック・マークが付いている場合、 Faspex はブラウザーを使用して、ブラウザーの拡張機能を使用せずに、
-                Connect デスクトップ・クライアントと通信するために http メソッドを使用します ( Chrome ブラウザーでのみ使用可能
+              prefer_http_connect_hint: チェック・マークが付いている場合、 Faspex はブラウザーを使用して、ブラウザーの拡張機能を使用せずに、 Connect デスクトップ・クライアントと通信するために http メソッドを使用します ( Chrome ブラウザーでのみ使用可能
                 ) 。
               serv_to_serv_relay_trans_sett: サーバーからサーバーへのリレー転送設定
               server_to_user: サーバーからユーザー
@@ -1439,7 +1426,7 @@ ja:
             require_encrypt: '保存時に暗号化が必要 :'
             save_message: aspera-metadata.xml が各パッケージのルート・ディレクトリーに保存されます。
             save_metadata: 'メタデータをファイルに保存 :'
-            success: アップロードが成功した後
+            success: 1 回アップロードした後
             use_server_default: 'サーバー・デフォルトを使用 (現在: %{server})'
           perm:
             add_rem_dir_serv_groups: ディレクトリー・サービス・グループをメンバーとして追加/除去
@@ -1454,9 +1441,9 @@ ja:
           cancel: キャンセル
           description: 解説
           email_address: メールアドレス
-          invite: '外部サブミッターを Dropboxに送信するための招待 : %{wgname}'
+          invite: '外部サブミッターを Dropbox に送信するための招待 : %{wgname}'
           invite_html:
-            require_encryption: '保存時に暗号化が必要 :'
+            require_encryption: 保存するには暗号化が必要です。
             yes_ear: そうだ
             no_ear: 違う。
             optional: オプション
@@ -1493,7 +1480,7 @@ ja:
         fieldsets:
           sub_link_expires:
             after: アフター
-            after_one_success: アップロードが成功した後
+            after_one_success: 1 回アップロードした後
             after_one_up: アップロード後
             custom_inv_policy: 'カスタム招待リンクの有効期限ポリシー:'
             day_after_sending_inv: 招待メールを送信した後の日(1 日 )
@@ -1522,7 +1509,7 @@ ja:
           invite_sender: 送信側の招待
           no_ear: 違う。
           optional: オプション
-          require_encryption: '保存時に暗号化が必要 :'
+          require_encryption: 保存するには暗号化が必要です。
           save: 保存 ( 招待メールを送信 )
           yes_ear: そうだ
       layouts:
@@ -1617,10 +1604,10 @@ ja:
           dd_hint: 月の日 (2 桁)
           description: 解説
           ellipses: リテラル・テキスト
-          exclamation: Windows ティック ( 01/01/0001以降 100ns )
+          exclamation: Windows ティック ( 01/01/0001以降、 100ns )
           m_hint: 月 ( 先行ゼロなし )
           mm_hint: 月 ( 2 桁)
-          o_hint: 年の日 ( 先行ゼロはありません )
+          o_hint: その年の日 ( 先行ゼロはありません )
           oo_hint: その年の日 (3 桁)
           single_quote: 単一引用符
           variable: 変数
@@ -1654,8 +1641,7 @@ ja:
       mobile:
         landing:
           app_redirect: 最良の経験を得るために、 Aspera Faspex Mobile アプリケーションを使用してください。
-          no_app_prompt: ドンがアプリを持ってるのか ? これを <a href='<%= @app_store_url %>'>ここ</a>
-            に取得
+          no_app_prompt: ドンがアプリを持ってるのか ? これを <a href='<%= @app_store_url %>'>ここ</a> に取得
           open_in_app: アプリケーションで開く
           use_web_version: WEB バージョンの使用
       ms_admin:
@@ -1701,7 +1687,7 @@ ja:
           home_server: 'ホームサーバー:'
           home_server_rules: 'ホーム・サーバー・ルール: %{mod} ルール'
           ldap_field: 'LDAP フィールド名:'
-          ldap_regex: 'LDAP フィールド正規表現 :'
+          ldap_regex: 'LDAP フィールド regex:'
           regex_help: 正規表現のヘルプ
           remove: 削除
           rule_name: 'ルール名:'
@@ -1722,7 +1708,7 @@ ja:
           a-z: a からzまでの範囲内の任意の単一文字。
           a-zA-z: a-z または A-Z の範囲内の任意の 1 文字。
           abc: 1 文字の a 、b 、または cのいずれか。
-          ataslash_com: 'Ex: 「 a.com」で終わるストリングに一致します。'
+          ataslash_com: 'Ex: 「 a.com」で終わるストリングと一致します。'
           a|b: a または b
           expression: 式
           meaning: 意味
@@ -1737,8 +1723,7 @@ ja:
           dropdown:
             add: "%{share_name} の追加"
             delete: 削除
-            delete_confirm: "- 確かか ? これにより、現在この %{node_name}を使用している %{share_name}
-              が削除されます。"
+            delete_confirm: "- 確かか ? これにより、現在この %{node_name}を使用している %{share_name} が削除されます。"
             edit: 編集
           shares:
             dropdown:
@@ -1937,8 +1922,7 @@ ja:
               http_uploads_not_allowed: このパッケージでは HTTP アップロードは許可されていません
             source_shares:
               contents: '内容*:'
-              ear_cloud_warning: 保存時の暗号化はすべての転送に使用されるように設定されていますが、クラウド参照を使用する転送ではサポートされていません。
-                この転送では、暗号化は使用されません
+              ear_cloud_warning: 保存時の暗号化はすべての転送に使用されるように設定されていますが、クラウド参照を使用する転送ではサポートされていません。 この転送では、暗号化は使用されません
               remove_all: すべて削除
               source: '出典:'
               warning: '警告:'
@@ -2355,7 +2339,7 @@ ja:
         send_fail_invalid_recipient_specific: '受信者が無効です : %{recipient_name}'
         send_fail_permissions_multiple: 指定された 1 つ以上の受信者への送信を許可されていません
         send_fail_invalid_cc: 'CC ( アップロード時 )が無効です : %{cc_name}'
-        send_fail_invalid_ccs_upload: アップロード・フィールドの 1 つ以上の受信者に CC を使用することはできません
+        send_fail_invalid_ccs_upload: アップロード・フィールドに 1 つ以上の受信者を CC することはできません。
         send_fail_invalid_ccs_download: ダウンロード・フィールド内の 1 つ以上の受信者に CC を使用することはできません
         send_fail_invalid_ccs_receipt: 受領フィールドの 1 つ以上の受信者に CC を使用することはできません。
         send_fail_must_have_one_source: 1 つのソースが必要です。
@@ -2393,8 +2377,7 @@ ja:
         cannot_be_blank: "%{label_name} をブランクにすることはできません"
         error_decoding: 'メタデータのデコード・エラー : %{meta}'
       metadata_profile:
-        all_fields_length_error: すべてのフィールドの合計最大長 ( ラベル、オプション、および日付フィールドを含む ) は、 %{max}
-          文字より小さくなければなりません。
+        all_fields_length_error: すべてのフィールドの合計最大長 ( ラベル、オプション、および日付フィールドを含む ) は、 %{max} 文字より小さくなければなりません。
         field_blank_error: "%{err_label} をブランクにすることはできません"
         field_illegal_char_error: "%{err_label} には、以下の文字が含まれていてはなりません : %{illegal}"
         field_length_error: "%{err_label} は %{max} 文字以下でなければなりません"
@@ -2530,7 +2513,7 @@ ja:
     - Fri
     - Sat
     abbr_month_names:
-    - 
+    -
     - Jan
     - Feb
     - Mar
@@ -2556,7 +2539,7 @@ ja:
       long: "%B %d, %Y"
       short: "%b %d"
     month_names:
-    - 
+    -
     - January
     - February
     - March
@@ -2628,23 +2611,18 @@ ja:
       cloud_storage_referencing: このストレージでサポートされる IS を参照するクラウド・ストレージ
       connect_install_message: 最大 %{direction} の速度を使用するには、 %{aspera} ブラウザー・プラグインをインストールしてください。
       connect_upgrade_message: 最大 %{direction} の速度を使用するには、 %{aspera} ブラウザー・プラグインをアップグレードしてください。
-      confirm: "%{package_sender} によって送信されたパッケージ %{package_name} のファイルを削除してもよろしいですか
-        ?"
+      confirm: "%{package_sender} によって送信されたパッケージ %{package_name} のファイルを削除してもよろしいですか ?"
       copy: クリップボードにコピー
       delete: 削除
-      delete_confirm: "%{package_sender} によって送信されたパッケージ %{package_name} のファイルを削除してもよろしいですか
-        ?"
+      delete_confirm: "%{package_sender} によって送信されたパッケージ %{package_name} のファイルを削除してもよろしいですか ?"
       delete_confirm_forward: これは別のパッケージの転送です。 元の転送およびすべての転送が削除されます。
       delete_confirm_has_forwards: このパッケージの転送は存在します。 元の転送およびすべての転送が削除されます。
       enable_hst_dl: Asperaを使用して高速転送を有効にするには、 %{download} ( 接続ブラウザー・プラグイン ) を使用してください。
       enable_hst_dl_enable: Asperaを使用して高速転送を有効にするには、 %{download} および %{enable} を接続ブラウザー・プラグインとして使用してください。
-      local_transfer_message: 現在、低速 HTTPを使用しています。 Asperaを使用する高速転送を有効にするには、 %{enable}
-        にアクセスして、 Connect ブラウザー・プラグインを使用可能/ダウンロードしてください。
+      local_transfer_message: 現在、低速 HTTPを使用しています。 Asperaを使用する高速転送を有効にするには、 %{enable} にアクセスして、 Connect ブラウザー・プラグインを使用可能/ダウンロードしてください。
       no_cloud_storage_referencing: IS NOT を参照しているクラウド・ストレージはこのストレージによってサポート
-      no_transfer_dl: Aspera Connect を使用しないアップロードには、パフォーマンスの制限が この制限を削除し、 Asperaを使用して高速転送を有効にするには、
-        %{download} ( 接続ブラウザー・プラグイン ) をお願いします。
-      no_transfer_dl_enable: Aspera Connect を使用しないアップロードには、パフォーマンスの制限が この制限を解除し、 Asperaを使用して高速転送を有効にするには、
-        %{download} および %{enable} を接続ブラウザー・プラグインとして使用してください。
+      no_transfer_dl: Aspera Connect のないアップロードには、パフォーマンスの制限があります この制限を削除し、 Asperaを使用して高速転送を有効にするには、 %{download} ( 接続ブラウザー・プラグイン ) をお願いします。
+      no_transfer_dl_enable: Aspera Connect のないアップロードには、パフォーマンスの制限があります この制限を削除し、 Asperaを使用して高速転送を有効にするには、 %{download} および %{enable} を接続ブラウザー・プラグインとして使用してください。
       not_supp_symbolic_links: ストレージがシンボリック・リンクをサポートしない
       note: 備考
       package_details: パッケージの詳細についてはここをクリック
@@ -2687,8 +2665,14 @@ ja:
         config_save_error: 構成の保存エラーです。  詳しくはログを参照してください
         upload_saved_config: 保存された構成のアップロード
         restore_config_error: 構成復元中のエラー。  詳しくはログを参照してください
-        tar_error: 構成 %{tar_status} %{tar_out} のターゲット・ターゲットを指定してエラーが発生しました
-        untar_error: 構成 %{untar_status} %{untar_stdout} の非ターゲット化エラー
+        tar_error: |-
+          構成エラーのエラー
+          %{tar_status}
+          %{tar_out}
+        untar_error: |-
+          構成の非ターゲット化エラー
+          %{untar_status}
+          %{untar_stdout}
     aspera_license_reader:
       no_license_found: ライセンスが見つからないか、ライセンスの形式が正しくあり
       license_signature_mismatch: ライセンス・シグニチャーが内容と一致しない
@@ -2714,7 +2698,7 @@ ja:
       submit_only: 送信専用
       set_to_standard_access: ユーザーを標準アクセスに設定
       set_to_submit_access: ユーザーを送信専用アクセスに設定
-      set_user_as_admin: 'ユーザーを #{wg_name} 管理者として設定'
+      set_user_as_admin: 'ユーザーを #{wg_name} 管理者に設定'
     packages:
       package_methods:
         HTTP_upload_in_progress: HTTP アップロードが進行中です。このページから移動すると、そのアップロードはキャンセルされます。

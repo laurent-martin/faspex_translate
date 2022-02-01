@@ -31,7 +31,7 @@ es:
         min_connect_version_minor: Versión de Connect mínima
         min_connect_version_point: Versión de Connect mínima
         http_fallback_enabled: Habilitar reserva HTTP
-        downloads_during_transfers_enabled: Habilitar descargas durante las transferencias
+        downloads_during_transfers_enabled: Habilitar descargas durante transferencias
       m_configuration:
         email_from_email: Faspex "From:" email
         m_smtp_server_port: Puerto de servidor
@@ -523,7 +523,7 @@ es:
           remove_member: Se ha eliminado %{member} del grupo de trabajo.
           remove_member_fail: No se puede eliminar el miembro. Vuelva a intentarlo más tarde.
           remove_ds_group: Se ha eliminado %{count} del grupo de trabajo.
-          remove_ds_group_fail: No se puede eliminar el grupo DS. Vuelva a intentarlo más tarde.
+          remove_ds_group_fail: No se puede eliminar el grupo de DS. Vuelva a intentarlo más tarde.
           set_admin: Establezca %{member} como administrador de %{name}.
           set_admin_fail: Los usuarios de correo electrónico externos no pueden ser administradores de dropbox. No se han realizado cambios.
           set_ds_access: Establezca %{group} como acceso MI_level_YM.
@@ -630,7 +630,7 @@ es:
           index:
             approve: Aprobar
             deny: Denegar
-            faspex_reg_type: Faspex se configura con el registro %{type}.
+            faspex_reg_type: Faspex está configurado con el registro %{type}.
             new_message: Esto significa que las cuentas recién creadas %{not} requieren aprobación.
             not: 'no'
             self_reg_users: Los usuarios registrados automáticamente heredarán los permisos de %{template_user} y se convertirán automáticamente en miembros del siguiente
@@ -700,7 +700,7 @@ es:
               manager_hint: Los gestores pueden añadir/eliminar usuarios
               never: Nunca
               role: 'Función:'
-              text_area_hint: introducir direcciones de correo electrónico separadas por comas, punto y coma o espacios en blanco
+              text_area_hint: especificar direcciones de correo electrónico separadas por comas, punto y coma o espacios en blanco
               user_hint: Los usuarios habituales pueden enviar y recibir paquetes de Faspex
             advanced_transfer:
               adv_trans_setting: Configuración avanzada de transferencia
@@ -714,7 +714,7 @@ es:
                 Faspex utilizará los valores de transferencia de la sección Aspera Central Server de forma predeterminada.
                 Sin embargo, aquí puede establecer valores de transferencia específicos del usuario, que tendrán prioridad sobre los valores de todo el servidor.
               unchecked: desmarcado
-              user_to_server: 'usuario en servidor (valor predeterminado: %{config})'
+              user_to_server: 'usuario al servidor (valor predeterminado: %{config})'
             ds_history:
               action: Acción
               ds_history: Historial de DS (%{dom_name})
@@ -1056,7 +1056,7 @@ es:
             exec_criteria: Criterios de ejecución de<br/>
             package_name: Nombre del paquete
             package_sender: Paquete<br/>Sender
-            package_uuid: UUID de paquete
+            package_uuid: Paquete UUID
             post_processing_exec_log: 'Post-Proceso: Registro de ejecución para %{name}'
             time_of_exec: Tiempo de ejecución de <br/>
         saml:
@@ -1099,7 +1099,7 @@ es:
             show: Mostrar
             SSO_target_URL: 'URL de destino SSO:'
             update: Actualización
-            update_saml_config: Actualizar configuración de SAML
+            update_saml_config: Actualizar configuración SAML
           index:
             actions: Acciones
             add_new_config: Añadir nueva configuración de SAML
@@ -1158,7 +1158,7 @@ es:
               display_settings: Valores de visualización
               examples: Ejemplos
               local_login_inst: Instrucciones de inicio de sesión
-              login_page_header: Cabecera de página de inicio
+              login_page_header: Página de inicio de sesión
               remove_confirm: "¿Está seguro de que desea eliminar el logotipo personalizado actual?"
               remove_logo: Eliminar el logotipo personalizado
               update: Actualización
@@ -1254,7 +1254,7 @@ es:
               inv_link_expires: El enlace de invitación caduca
               inv_link_help: Establezca una política de caducidad de enlaces para las invitaciones tanto personales como de dropbox.
               keep_usr_dir: Mantener el directorio de usuario privado
-              list_hint: introducir direcciones de correo electrónico separadas por comas, punto y coma o espacios en blanco
+              list_hint: especificar direcciones de correo electrónico separadas por comas, punto y coma o espacios en blanco
               local_users: Usuarios locales después de My_int_YM días de inactividad.
               lock_hint: Después de que %{login_count} haya fallado los intentos de inicio de sesión en
               lock_users: Usuarios de bloqueo
@@ -1439,7 +1439,7 @@ es:
             custom_exp_policy: Política de caducidad de paquetes personalizados
             custom_inv_policy: Política de caducidad de enlaces de invitación personalizada
             day_after_sending_inv: día (s) después de enviar el correo electrónico de invitación
-            day_after_upload: día (s) después de que finalice la carga
+            day_after_upload: día (s) después de finalizar la carga
             http_downloads_not_allowed: Las descargas HTTP no están permitidas para este paquete.
             delete_after_all: Suprima los archivos después de que <strong>todos los miembros de este dropbox</strong> descarguen todos los archivos.
             delete_after_first: Suprima los archivos después de que <strong>cualquier miembro de este dropbox</strong> descargue todos los archivos.
@@ -1484,7 +1484,7 @@ es:
             safe: |-
               Es seguro cerrar esta página web, su transferencia no se verá afectada.
               Se le ha enviado un correo electrónico con un enlace para volver a esta pantalla.
-            send_to: Enviar a %{Apilient}
+            send_to: Enviar a %{recipient}
             send_to_dropbox: 'Enviar a Dropbox: %{dropname}'
             status: Esta página le permite ver el estado del paquete que ha enviado, así como volver a intentar la transferencia si falla.
           submission_stat:
@@ -1503,7 +1503,7 @@ es:
         edit:
           cancel: Cancelar
           reinvite: Volver a invitar (envía correo electrónico de invitación)
-          reinvite_sender: Volver a invitar al remitente
+          reinvite_sender: Reinvitar al remitente
         fieldsets:
           sub_link_expires:
             after: Después
@@ -1952,8 +1952,8 @@ es:
             source_shares:
               contents: 'Contenido *:'
               ear_cloud_warning: >-
-                El cifrado en el resto se establece para que se utilice para todas las transferencias, pero no está soportado para las transferencias que utilizan
-                la referencia a la nube. Esta transferencia no utilizará el cifrado en reposo.
+                El cifrado en el resto se establece para utilizarse para todas las transferencias, pero no está soportado para las transferencias que utilizan la
+                referencia a la nube. Esta transferencia no utilizará el cifrado en reposo.
               remove_all: Eliminar todo
               source: 'Fuente:'
               warning: 'Advertencia:'
@@ -2163,7 +2163,7 @@ es:
           direct_upload: Subir directamente a la bandeja de entrada personalizada.
           direct_upload_default_check: Si está seleccionado, los paquetes no se subirán a la bandeja de entrada predeterminada si este grupo de trabajo es el único
             destinatario.
-          inbox_destination: Destino de entrada
+          inbox_destination: Destino Inbox
           location: Ubicación
           status: Estado
         users:
@@ -2246,7 +2246,7 @@ es:
           nodes:
             custom: Personalizado
             default_inbox: Entrada predeterminada
-            inbox_dest: Destino de entrada
+            inbox_dest: Destino Inbox
             location: Ubicación
             name: Nombre
             server_default: Predeterminado del servidor
@@ -2426,13 +2426,13 @@ es:
         max_length_reset_error: Los campos de longitud máxima se han restablecido en el valor predeterminado
         must_be_list_error: "%{err_label} debe ser una lista de ID de compartimiento"
         no_fields_error: El perfil de metadatos debe tener al menos un campo
-        note_invalid_char_error: 'La nota no debe contener ninguno de los caracteres siguientes: # {ilegal}'
+        note_invalid_char_error: 'La nota no debe contener ninguno de los caracteres siguientes: # {illegal}'
         note_length_bounds_error: La longitud máxima de la nota debe estar entre 1 y %{max}
         note_length_error: La nota debe ser de caracteres %{max} o menos
         note_length_int_error: La longitud máxima de la nota debe ser un entero
         note_length_specified_error: Se debe especificar la longitud máxima de la nota
         specified_error: Se debe especificar %{err_label}
-        title_invalid_char_error: 'El título no debe contener ninguno de los caracteres siguientes: %{illegal}'
+        title_invalid_char_error: 'El título no debe contener ninguno de los siguientes caracteres: %{ilegal}'
         title_length_bounds_error: La longitud máxima del título debe estar entre 1 y %{max}
         title_length_error: El título debe ser %{max} o menos
         title_length_int_error: La longitud máxima del título debe ser un entero
@@ -2550,7 +2550,7 @@ es:
     - Fri
     - Sat
     abbr_month_names:
-    - 
+    -
     - Jan
     - Feb
     - Mar
@@ -2576,7 +2576,7 @@ es:
       long: "%B %d, %Y"
       short: "%b %d"
     month_names:
-    - 
+    -
     - January
     - February
     - March
@@ -2708,8 +2708,14 @@ es:
         config_save_error: Error al guardar la configuración.  Consulte el registro para obtener detalles.
         upload_saved_config: Cargar una configuración guardada
         restore_config_error: Error al restaurar la configuración.  Consulte el registro para obtener detalles.
-        tar_error: Error al ejecutar la configuración %{tar_status} %{tar_out}
-        untar_error: Error untarring config %{untar_status} %{untar_stdout}
+        tar_error: |-
+          Error al ejecutar la configuración
+          %{tar_status}
+          %{tar_out}
+        untar_error: |-
+          Error untarring config
+          %{untar_status}
+          %{untar_stdout}
     aspera_license_reader:
       no_license_found: No se ha encontrado ninguna licencia o no se ha formado bien
       license_signature_mismatch: La firma de licencia no coincide con el contenido
@@ -2735,7 +2741,7 @@ es:
       submit_only: Enviar-Sólo
       set_to_standard_access: Establecer el usuario en el acceso estándar
       set_to_submit_access: Establecer acceso de usuario a sólo envío
-      set_user_as_admin: 'Establecer el usuario como # {wg_name} admin'
+      set_user_as_admin: 'Establecer usuario como # {wg_name} admin'
     packages:
       package_methods:
         HTTP_upload_in_progress: La carga HTTP está en curso, se cancelará si navega fuera de esta página.

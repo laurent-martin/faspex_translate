@@ -25,7 +25,7 @@ export PATH=/opt/aspera/faspex/vendor/ruby/bin:$PATH
 then:
 
 ```
-gem install asperalm
+gem install aspera-cli
 ```
 
 # Usage
@@ -55,13 +55,19 @@ asctl faspex:restart
 
 # Setup of IBM Cloud Watson translate
 
-* create a translation service on IBM Cloud
-* get tyranslation service URL and API Key
-* it shows the "getting started"
-* save credentials (full JSON) in a file name: my_watson_trans_creds
+* If you do not already have one, create an account on: [IBM Cloud](https://www.ibm.com/cloud) (There is a free tier)
+* Navigate to the [Translation Service](https://cloud.ibm.com/catalog/services/language-translator)
+* Create a translation service
+* Navigate to `Service credentials`
+* save credentials (JSON) in file: `local/my_translation_service_creds.json`
 
+(The script uses the API Key and URL from the credential file)
+
+```bash
+cat local/my_translation_service_creds.json
 ```
-$ cat my_watson_trans_creds
+
+```output
 {
   "apikey": "xxxxxxxxxxxxxx",
   "iam_apikey_description": "Auto-generated for key xxxxxxx",
@@ -75,8 +81,8 @@ $ cat my_watson_trans_creds
 # Example of command line use of Watson
 
 ```
-MY_KEY=xxxxxxxxxxxxxxxx
-MY_KEY=$(jq -r .apikey < norepo/my_watson_trans_creds)
-curl -u apikey:$MY_KEY -H 'Accept: application/json' -H 'Content-Type: application/json' 'https://gateway-lon.watsonplatform.net/language-translator/api/v3/translate?version=2018-05-01' -d '{"model_id":"en-cs","text":["There are MY_count_ users."]}'
+LANGUAGE_TRANSLATOR_APIKEY=$(jq -r .apikey < local/my_translation_service_creds.json)
+LANGUAGE_TRANSLATOR_URL=$(jq -r .url < local/my_translation_service_creds.json)
+curl -u apikey:$LANGUAGE_TRANSLATOR_APIKEY -H 'Accept: application/json' -H 'Content-Type: application/json' ${LANGUAGE_TRANSLATOR_URL}'/v3/translate?version=2018-05-01' -d '{"model_id":"en-cs","text":["There are MY_count_ users."]}'
 ```
 

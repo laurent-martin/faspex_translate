@@ -47,10 +47,8 @@ cs:
         ad_proxy_host: Hostitel serveru proxy služby Active Directory
         ad_proxy_port: Port proxy služby Active Directory
         announcement: Zpráva
-        dbox_can_override_ear: Povolit, aby funkce dropboxes měla své vlastní nastavení
-          šifrování
-        can_override_ear_per_personal_invite: Povolit vlastní nastavení šifrování
-          pro externí pozvánky odesilatele
+        dbox_can_override_ear: Povolit, aby funkce dropboxes měla své vlastní nastavení šifrování
+        can_override_ear_per_personal_invite: Povolit vlastní nastavení šifrování pro externí pozvánky odesilatele
         e_http_port: Port HTTP
         e_https_port: Port HTTPS
         e_server_address: Externí adresa nebo název serveru
@@ -61,54 +59,44 @@ cs:
         email_passcode_expire_after_download: Ukončit platnost po úplném stažení balíku
         registration_type: Vlastní registrace
         registration_approval_ccs: Oznámit schválení následujících e-mailů
-        registration_external_use_default: Použít výchozí zásadu registrace pro externí
-          uživatele
+        registration_external_use_default: Použít výchozí zásadu registrace pro externí uživatele
         registration_type_external: Zásada registrace pro externí uživatele
-        registration_approval_ccs_external: Oznámit externím uživatelům následující
-          e-maily
+        registration_approval_ccs_external: Oznámit externím uživatelům následující e-maily
         tos_external: Podmínky poskytování služeb externím uživatelům
         package_instructions: Zpráva
         tos: Podmínky poskytování služeb
         use_strong_password: Použít silná hesla
-        force_password_reset_for_new_users: Vyžadovat, aby noví uživatelé změnili
-          heslo při prvním přihlášení
+        force_password_reset_for_new_users: Vyžadovat, aby noví uživatelé změnili heslo při prvním přihlášení
         allow_users_to_unlock: Povolit zamknutí uživatelů, aby se mohli odemknout
         session_timeout: Časový limit relací po
         allow_send_to_email: Povolit odesílání na externí e-mailové adresy
         allow_request_from_email: Povolit pozvání do
-        registered_users_have_mutual_scope: Samoregistrovaní uživatelé mohou posílat
-          na sebe
+        registered_users_have_mutual_scope: Samoregistrovaní uživatelé mohou posílat na sebe
         inviting_allowed: Povolit pozvání externích odesilatelů
         hide_user_dir_default: Ponechat výchozí adresář uživatele jako soukromý
         public_url_allowed: Povolit adresy URL pro veřejné odeslání
-        dbox_can_override_public_url: Povolit, aby pole dropboxes individuálně zapnuli/vypnuli
-          své vlastní veřejné adresy URL
+        dbox_can_override_public_url: Povolit, aby pole dropboxes individuálně zapnuli/vypnuli své vlastní veřejné adresy URL
         public_url_home_server_id: Domovský server pro veřejné adresy URL
-        automatically_login_using_saml_idp: Přihlaste se pomocí poskytovatele identit
-          SAML
-        saml_idp_sso_target_url: Adresa URL jednotného přihlášení poskytovatele identit
-          (IdP)
+        automatically_login_using_saml_idp: Přihlaste se pomocí poskytovatele identit SAML
+        saml_idp_sso_target_url: Adresa URL jednotného přihlášení poskytovatele identit (IdP)
         saml_idp_slo_target_url: Adresa URL jednotlivého odhlášení IdP
         saml_idp_cert_fingerprint: Otisk certifikátu IdP
         saml_idp_cert: Certifikát IdP
-        can_see_global_distribution_lists_default: Uživatelé mohou standardně vidět
-          globální distribuční seznamy
+        can_see_global_distribution_lists_default: Uživatelé mohou standardně vidět globální distribuční seznamy
         tos_for_sending: Podmínky pro odeslání
         remove_ds_users_on_inactivity: Odebrat uživatele DS
         remove_saml_users_on_inactivity: Odebrat uživatele SAML
       e_workgroup:
         e_wg_name: Název
         e_wg_desc: Popis
-        workgroup_received_notification_cc: Odeslat kopii e-mailu s potvrzením na
-          tyto adresy
+        workgroup_received_notification_cc: Odeslat kopii e-mailu s potvrzením na tyto adresy
         destination_share_id: Výchozí schránka
       invitation:
         expires_at: Dny do vypršení platnosti
       node:
         alternate_address: Sekundární adresa nebo jméno
         alternate_address_client_filter: Použít, pokud adresa žadatele odpovídá
-        alternate_address_server_filter: Použít, pokud název hostitele prohlížeče
-          odpovídá
+        alternate_address_server_filter: Použít, pokud název hostitele prohlížeče odpovídá
         api_password: Heslo
         api_port: Přístav
         api_username: Uživatelské jméno
@@ -183,23 +171,19 @@ cs:
         self_destructs: Účet pro automatické odstranění
         destruction_date: Datum odstranění
         received_notification_cc: Odeslat kopii e-mailu s potvrzením na tyto adresy
-        allow_receipt_cc_edit: Povolit úpravu adres příjmových dokladů při vytváření
-          balíku
+        allow_receipt_cc_edit: Povolit úpravu adres příjmových dokladů při vytváření balíku
         uploads_allowed: Odeslat balíky
         downloads_allowed: Stáhnout sadu programů
         forwarding_allowed: Předat balíčky
         can_create_from_remote: Vytvořit balíky ze vzdálených zdrojů
         can_send_to_all_faspex_users: Může odesílat všem uživatelům Faspex
-        can_send_to_external_email: Může odesílat na externí e-mail
+        can_send_to_external_email: Může odeslat na externí e-mail
         can_invite: Povolit pozvání externích odesilatelů
         notify_on_receive: Zaslat e-mail při přijetí balíku
-        notify_on_validation_failure_if_sender: Zaslat e-mail, pokud dojde k selhání
-          ověření u odeslaných balíků
-        notify_on_validation_failure_if_recipient: Zaslat e-mail, pokud dojde k selhání
-          ověření u přijatých balíků
+        notify_on_validation_failure_if_sender: Zaslat e-mail, pokud dojde k selhání ověření u odeslaných balíků
+        notify_on_validation_failure_if_recipient: Zaslat e-mail, pokud dojde k selhání ověření u přijatých balíků
         notify_downloader_on_download: Odeslat e-mailem při stažení balíku
-        notify_on_workgroup_package_if_sender: Zahrnout mě do oznámení pracovní skupiny
-          pro balíky, které odesílám
+        notify_on_workgroup_package_if_sender: Zahrnout mě do oznámení pracovní skupiny pro balíky, které odesílám
         suppress_connect_install_dialog: Potlačit výzvy k instalaci a upgradu
         allowed_ip_addresses_for_login: Povolené adresy IP pro přihlášení
         allowed_ip_addresses_for_download: Povolené adresy IP ke stažení
@@ -213,8 +197,7 @@ cs:
         updated_at: Aktualizováno dne
         type: Typ uživatele
         description: Komentáře
-        allow_user_specified_delete_after_download: Povolit uživateli nastavit vlastní
-          nastavení odstranění na základě balíku podle balíku
+        allow_user_specified_delete_after_download: Povolit uživateli nastavit vlastní nastavení odstranění na základě balíku podle balíku
         enable_public_url: Povolit veřejnou adresu URL
         can_have_public_url: Povolit adresy URL pro veřejné odeslání
       local_user:
@@ -237,8 +220,7 @@ cs:
     errors:
       format: "%{attribute} %{message}"
       e_configuration:
-        idp_cert_and_idp_cert_fingerprint_blank: Musí být zadán jeden z "Otisk certifikátu
-          IdP" nebo "Certifikát IdP".
+        idp_cert_and_idp_cert_fingerprint_blank: Musí být zadán jeden z "Otisk certifikátu IdP" nebo "Certifikát IdP".
       models:
         delivery:
           attributes:
@@ -303,22 +285,20 @@ cs:
       user:
         groups_are_inactive: Skupiny, které jste členem, jsou neaktivní
         user_is_inactive: Uživatel je neaktivní
-        username_conflicts_with_existing_user: Jméno uživatele je v konfliktu s existujícím
-          účtem uživatele.
+        username_conflicts_with_existing_user: Jméno uživatele je v konfliktu s existujícím účtem uživatele.
   admin:
     saml:
       edit:
-        saml: SAMIER
-        automatically_login_using_saml_idp_hint: Automatické přihlášení pomocí poskytovatele
-          identit SAML.  %{url} lze použít k přihlášení přímo do souboru Faspex, i
-          když je povoleno automatické přihlášení pomocí SAML.
+        saml: SAMI
+        automatically_login_using_saml_idp_hint: >-
+          Automatické přihlášení pomocí poskytovatele identit SAML.  %{url} lze použít k přihlášení přímo do souboru Faspex, i když je povoleno automatické přihlášení
+          pomocí SAML.
     saml_configurations:
       edit:
-        domain_url_hint: "(Volitelné) Při přístupu k této doméně Faspex budou uživatelé
-          automaticky přesměrováni k přihlášení prostřednictvím tohoto poskytovatele
-          SAML (přepíše výchozí nastavení)"
-        publicly_visible_hint: Povolit uživatelům přístup k této konfiguraci SAML
-          z lokální přihlašovací stránky
+        domain_url_hint: >-
+          (Volitelné) Při přístupu k této doméně Faspex budou uživatelé automaticky přesměrováni k přihlášení prostřednictvím tohoto poskytovatele SAML (přepíše výchozí
+          nastavení)
+        publicly_visible_hint: Povolit uživatelům přístup k této konfiguraci SAML z lokální přihlašovací stránky
       test_warning: |-
         Varování: Tato akce ukončí vaši aktuální relaci Faspex a nasměruje vás na přihlašovací stránku tohoto poskytovatele SAML.
 
@@ -349,8 +329,7 @@ cs:
           no_wg_found: Nelze najít pracovní skupinu *%{wg_name}
           add_to_wg_fail: 'Chyba při přidávání do pracovní skupiny: %{error}'
           removed_from_wg: Odstraněno z pracovní skupiny.
-          removed_from_wg_fail: 'Chyba při odebírání uživatele z pracovní skupiny:
-            %{error}'
+          removed_from_wg_fail: 'Chyba při odebírání uživatele z pracovní skupiny: %{error}'
           user_membership_updated: Členství uživatele bylo aktualizováno.
           error_editing_membership: 'Chyba při úpravě členství: %{error}'
           created_user: Uživatel %{user} byl úspěšně vytvořen.
@@ -358,8 +337,7 @@ cs:
           updated_user: Uživatel %{user_name} byl úspěšně aktualizován
           permission_error: Nemáte oprávnění k úpravě uživatele %{user}
           activated: Aktivovaný %{user}
-          disabled_saml_user_note: "<br>Poznámka: Uživatelé přidružení k zakázaným
-            konfiguracím SAML zůstanou neaktivní"
+          disabled_saml_user_note: "<br>Poznámka: Uživatelé přidružení k zakázaným konfiguracím SAML zůstanou neaktivní"
           deactivated: Deaktivovaný %{user}
           removed: Odebraný %{user}
           removed_external: Odebraný %{user}
@@ -392,18 +370,14 @@ cs:
           inactivated_error: Chyba při deaktivaci %{script_name}
           updated: Skript %{script_name} byl úspěšně aktualizován.
         saml_configurations_controller:
-          create_success: 'Konfigurace SAML byla úspěšně vytvořena<br>POZNÁMKA: Než
-            se přihlásíte, musíte aktualizovat metadata na serveru SAML.'
-          update_success: 'Konfigurace SAML byla úspěšně aktualizována<br>POZNÁMKA:
-            Možná budete muset aktualizovat metadata na serveru SAML, než se přihlásíte.'
+          create_success: 'Konfigurace SAML byla úspěšně vytvořena<br>POZNÁMKA: Než se přihlásíte, musíte aktualizovat metadata na serveru SAML.'
+          update_success: 'Konfigurace SAML byla úspěšně aktualizována<br>POZNÁMKA: Možná budete muset aktualizovat metadata na serveru SAML, než se přihlásíte.'
         settings:
           display_settings_controller:
-            file_too_large: Soubor je příliš velký. Maximální velikost souboru je
-              5 MB
+            file_too_large: Soubor je příliš velký. Maximální velikost souboru je 5 MB
             remove_logo_fail: Nelze odstranit vlastní soubor s logem
             remove_logo_success: Vlastní soubor loga byl úspěšně odebrán
-            unsupported_file_type: Nepodporovaný typ souboru pro vlastní logo. Soubor
-              musí být obraz jpeg, gif nebo png.
+            unsupported_file_type: Nepodporovaný typ souboru pro vlastní logo. Soubor musí být obraz jpeg, gif nebo png.
             updated_settings: Aktualizovaná nastavení zobrazení
           entitlement_controller:
             invalid_license: Neplatná licence na nárok
@@ -413,8 +387,7 @@ cs:
             created: Vytvořený globální distribuční seznam %{name}
             deleted: Odstraněný globální distribuční seznam
             updated: Aktualizované globální distribuční seznamy
-            updated_fail: Chyba při aktualizaci jednoho nebo více globálních distribučních
-              seznamů
+            updated_fail: Chyba při aktualizaci jednoho nebo více globálních distribučních seznamů
           license_controller:
             license_upload_fail: Odeslání licence se nezdařilo
             only_text_allowed: Povoleny jsou pouze textové soubory
@@ -422,8 +395,7 @@ cs:
           package_storage_controller:
             updated_settings: Aktualizovaná nastavení úložiště balíku
           save_restore_config_controller:
-            config_restored: Konfigurace byla obnovena. Chcete-li dokončit tento proces,
-              ujistěte se, že jste restartovali Faspex.
+            config_restored: Konfigurace byla obnovena. Chcete-li dokončit tento proces, ujistěte se, že jste restartovali Faspex.
           security_controller:
             updated_settings: Aktualizovaná nastavení zabezpečení
           transfer_options_controller:
@@ -435,18 +407,16 @@ cs:
           deleted_fail: Nelze odstranit %{mem_mem}
         shares_controller:
           add_term_fail: Nebylo možné přidat %{term}
-          added_term: Přidán %{term}
+          added_term: Přidaný %{term}
           created: Vytvořený %{share} %{share_name}
           deleted: Odstraněný %{share}
           find_fail: Nepodařilo se najít %{term}
           updated: Aktualizovaný %{share} %{share_name}
           updated_default: Aktualizovaná výchozí schránka
       authenticated_controller:
-        expired: Platnost vaší relace vypršela. Chcete-li pokračovat, přihlaste se
-          znovu.
+        expired: Platnost vaší relace vypršela. Chcete-li pokračovat, přihlaste se znovu.
         new_session: Jiná relace pro uživatele %{username} byla spuštěna z (%{remote})
-        timed_out: Časový limit vaší relace vypršel. Chcete-li pokračovat, přihlaste
-          se znovu.
+        timed_out: Časový limit vaší relace vypršel. Chcete-li pokračovat, přihlaste se znovu.
       entitlement_controller:
         success: Úspěšné oprávnění
       external:
@@ -457,20 +427,17 @@ cs:
         invitation_created: Pozvání pro %{email} vytvořeno
         reinvited: Pozvánka k pozvání na %{name}
         reinvited_fail: Pozvánka se nezdařila. Zkuste to prosím později.
-        resend_invitation_failed: Opakované pozvání se nezdařilo. Zkuste to prosím
-          později.
+        resend_invitation_failed: Opakované pozvání se nezdařilo. Zkuste to prosím později.
         resent_invitation: Opakované pozvání pro %{name}
         deleted_invitation: Odstraněné pozvání
-        deleted_invitation_try_again: Odstranění pozvánky se nezdařilo. Zkuste to
-          prosím později.
+        deleted_invitation_try_again: Odstranění pozvánky se nezdařilo. Zkuste to prosím později.
       login_base_controller:
-        login_error_message: Přihlášení bylo neúspěšné. Zkuste to prosím znovu. Pokud
-          dochází k opakovaným selháním přihlášení, měli byste klepnout na odkaz 'Zapomenuté
-          heslo', abyste resetovali své heslo.
+        login_error_message: >-
+          Přihlášení bylo neúspěšné. Zkuste to prosím znovu. Pokud dochází k opakovaným selháním přihlášení, měli byste klepnout na odkaz 'Zapomenuté heslo', abyste
+          resetovali své heslo.
       login_controller:
         connect_enabled: Produkt IBM Aspera Connect byl povolen!
-        login_URL_change: Adresa URL pro přihlášení se změnila. Aktualizujte záložku
-          prohlížeče.
+        login_URL_change: Adresa URL pro přihlášení se změnila. Aktualizujte záložku prohlížeče.
         session_already_disconnected: Tato relace již byla odpojena
       m_configuration_controller:
         updated: Konfigurace pošty byla aktualizována.
@@ -479,15 +446,13 @@ cs:
         updated: Oznámení e-mailem %{template} bylo úspěšně aktualizováno
       metadata_profiles_controller:
         cannot_delete_profile: Profil nelze odstranit, je používán běžnými balíky.
-        cannot_delete_profile_dropbox: Profil nelze odstranit, je používán dropboxem
-          %{db_name}.
+        cannot_delete_profile_dropbox: Profil nelze odstranit, je používán dropboxem %{db_name}.
         created: Vytvořená metadata %{profile}
         profile_deleted: Profil odstraněn.
         save_success: Profil metadat byl úspěšně uložen
         updated: Aktualizováno
       ms_admin_controller:
-        home_server_rules_changed: Pravidla domovského serveru se změnila. Přepočítání
-          domovských serverů pro použití změn.
+        home_server_rules_changed: Pravidla domovského serveru se změnila. Přepočítání domovských serverů pro použití změn.
         updated_rule: Aktualizované pravidlo
         deleted_rule: Odstraněné pravidlo
         added_new_rule: Přidané nové pravidlo
@@ -508,11 +473,9 @@ cs:
         failed_registration: Registrace se nezdařila. Zkuste to prosím později.
       reset_password_tokens_controller:
         no_account_exists: Tento účet již neexistuje.
-        expired_pw_link: Váš odkaz na resetování hesla již byl použit nebo vypršel
-          a již není platný.
+        expired_pw_link: Váš odkaz na resetování hesla již byl použit nebo jeho platnost vypršela a již není platný.
         reset_success: Vaše heslo bylo úspěšně resetováno!
-        reset_submitted: Požadavek na resetování hesla byl odeslán. Pokud e-mail nedostanete
-          v krátké době, požádejte o pomoc administrátora.
+        reset_submitted: Požadavek na resetování hesla byl odeslán. Pokud e-mail nedostanete v krátké době, požádejte o pomoc administrátora.
       saml_controller:
         does_not_exist: Požadovaný poskytovatel SAML neexistuje.
         disabled: Požadovaný poskytovatel SAML byl zakázán.
@@ -526,7 +489,7 @@ cs:
         relay_fail: Chyba při restartování přenosu. Zkuste to prosím později.
       settings:
         distribution_lists_controller:
-          created: Vytvořen distribuční seznam %{dist_list}
+          created: Vytvořený distribuční seznam %{dist_list_name}
           deleted: Odstraněný distribuční seznam
           updated: Aktualizované distribuční seznamy
           error_updating: Chyba aktualizace jednoho nebo více distribučních seznamů
@@ -542,17 +505,15 @@ cs:
           activate: Aktivovat
           activated_members: Aktivovaný %{counts} member%{pluri}. %{msg}
           add_ds: Nelze přidat skupinu DS. Zkuste to prosím později.
-          add_ds_fail: Přidána skupina DS Group %{group} do pracovní skupiny MY_YM
+          add_ds_fail: Přidán DS Group %{group} do pracovní skupiny MY_YM
           add_member: Přidán %{name} do %{box}
           add_member_fail: Nelze přidat člena. Zkuste to prosím později.
           create_success: 'Úspěšně vytvořeno '
           deactivate: Deaktivace
           deactivated_success: Deaktivovaný %{counts} member%{pluri}. %{msg}%{admin}
           deleted_success: Odstraněný %{type} %{name}
-          external_email_no_standard_access: Externí uživatelé e-mailu nemohou mít
-            udělen standardní přístup. Nebyly provedeny žádné změny.
-          external_email_deactivated_fail: Externí e-mailové uživatele nelze deaktivovat,
-            pouze odebrat. Nebyly provedeny žádné změny.
+          external_email_no_standard_access: Externí uživatelé e-mailu nemohou mít udělen standardní přístup. Nebyly provedeny žádné změny.
+          external_email_deactivated_fail: Externí e-mailové uživatele nelze deaktivovat, pouze odebrat. Nebyly provedeny žádné změny.
           members_actions: Akce členů ...
           no_ds_selected: Nejsou vybrány žádné skupiny DS
           no_members_selected: Nejsou vybrány žádné členy
@@ -562,18 +523,14 @@ cs:
           remove_ds_group: Odebraný %{count} z pracovní skupiny.
           remove_ds_group_fail: Nelze odebrat skupinu DS. Zkuste to prosím později.
           set_admin: Nastavte %{member} jako %{name} admin.
-          set_admin_fail: Externí uživatelé e-mailu nelze nastavit jako uživatele
-            s rozevíracím políčkem. Nebyly provedeny žádné změny.
+          set_admin_fail: Externí uživatelé e-mailu nelze nastavit jako uživatele s rozevíracím políčkem. Nebyly provedeny žádné změny.
           set_ds_access: Nastavte volbu %{group} jako přístup %{level}.
-          set_ds_access_fail: Nelze nastavit přístup %{level} na skupiny DS. Zkuste
-            to prosím později.
+          set_ds_access_fail: Nelze nastavit přístup %{level} na skupiny DS. Zkuste to prosím později.
           set_regular_access: Nastavte %{member} jako běžný přístup.
-          set_regular_access_fail: Nelze nastavit běžný přístup ke členům. Zkuste
-            to prosím později.
+          set_regular_access_fail: Nelze nastavit běžný přístup ke členům. Zkuste to prosím později.
           set_standard_access: Nastavit standardní přístup
           set_submit_only: Nastavte %{member} jako pouze pro odeslání.
-          set_submit_only_fail: Nelze nastavit přístup pouze pro odeslání ke členům.
-            Zkuste to prosím později.
+          set_submit_only_fail: Nelze nastavit přístup pouze pro odeslání ke členům. Zkuste to prosím později.
           set_submit_only_access: Nastavit přístup pouze pro odeslání
           set_wg_admin: Nastavit jako %{wg_name} admin
           skipped_sys_admin: Přeskočeno %{size} system admin (s)
@@ -651,16 +608,14 @@ cs:
           back: Zadní
           name: Název
           remove: Odebrat
-          self_reg_added: 'Samoregistrovaní uživatelé budou přidáni do následujících
-            pracovních skupin:'
+          self_reg_added: 'Samoregistrovaní uživatelé budou přidáni do následujících pracovních skupin:'
           template_user_workgroups: Uživatelské pracovní skupiny šablon
         passwords:
           back_to_edit: Zpět na úpravu
           cancel: Storno
           password: Změňte heslo pro %{local_name}
-          reset_confirm: Jste si jisti, že chcete resetovat heslo tohoto uživatele?
-            Uživateli se odešle e-mailové oznámení, které jim umožní přihlásit se
-            a změnit jejich heslo.
+          reset_confirm: Jste si jisti, že chcete resetovat heslo tohoto uživatele? Uživateli se odešle e-mailové oznámení, které jim umožní přihlásit se a změnit
+            jejich heslo.
           reset_password: Resetovat heslo
           update_password: Aktualizovat heslo
         registrations:
@@ -672,12 +627,10 @@ cs:
           index:
             approve: Schválit
             deny: Odepřít
-            faspex_reg_type: Soubor Faspex je konfigurován s registrací %{type}.
-            new_message: To znamená, že nově vytvořené účty bude %{not} vyžadovat
-              schválení.
+            faspex_reg_type: Faspex je nakonfigurován s registrací %{type}.
+            new_message: To znamená, že nově vytvořené účty bude %{not} vyžadovat schválení.
             not: ne
-            self_reg_users: Samoregistrovaní uživatelé budou dědit oprávnění %{template_user}
-              a automaticky se stanou členy následujících %{workgroups}.
+            self_reg_users: Samoregistrovaní uživatelé budou dědit oprávnění %{template_user} a automaticky se stanou členy následujících %{workgroups}.
         saml_groups:
           edit:
             back: Zadní
@@ -738,25 +691,22 @@ cs:
             account_details:
               account_details: Podrobnosti o účtu
               active: Aktivní.
-              admin_hint: Administrátoři mohou přidávat/odebírat uživatele a spravovat
-                konfiguraci serveru.
+              admin_hint: Administrátoři mohou přidávat/odebírat uživatele a spravovat konfiguraci serveru.
               inactive: Neaktivní
               manager_hint: Správci mohou přidávat/odebírat uživatele
               never: Nikdy
               role: 'Úloha:'
-              text_area_hint: zadejte e-mailové adresy oddělené čárkami, středníky
-                nebo prázdné znaky.
+              text_area_hint: zadejte e-mailové adresy oddělené čárkami, středníky nebo prázdné znaky.
               user_hint: Běžní uživatelé mohou odesílat a přijímat balíky Faspex
             advanced_transfer:
               adv_trans_setting: Rozšířená nastavení přenosu
               checked: označeno
               initial_transfer: Počáteční přenosová rychlost
               max_rate: Maximální povolená rychlost
-              minrate_hint: 'Je-li zaškrtnuto, klienti nebudou moci upravit svou přenosovou
-                zásadu nebo minimální přenosovou rychlost (výchozí: %{config})'
+              minrate_hint: 'Je-li zaškrtnuto, klienti nebudou moci upravit svou přenosovou zásadu nebo minimální přenosovou rychlost (výchozí: %{config})'
               server_to_user: 'server pro uživatele (výchozí: %{config})'
               transfer_alert: |-
-                Faspex bude při výchozím nastavení používat nastavení přenosu z části Centrálních serverů Aspera Central.
+                Faspex bude při výchozím nastavení používat nastavení přenosu z části Centrálního serveru Aspera.
                 Zde však můžete nastavit uživatelská nastavení přenosu, která budou mít přednost před nastavením v rámci celého serveru.
               unchecked: nekontrolovaný
               user_to_server: 'user to server (výchozí hodnota: %{config})'
@@ -769,12 +719,9 @@ cs:
               time: Čas
             package_deletion:
               after_download: 'Po stažení:'
-              allow_user_delete: 'Povolit uživateli nastavit vlastní nastavení odstranění
-                na základě balíku:'
-              delete_files_after: Odstranit soubory poté, co <strong>libovolný příjemce</strong>
-                stáhne všechny soubory
-              delete_files_all: Odstranit soubory poté, co <strong>všichni příjemci</strong>
-                stahují všechny soubory
+              allow_user_delete: 'Povolit uživateli nastavit vlastní nastavení odstranění na základě balíku:'
+              delete_files_after: Odstranit soubory poté, co <strong>libovolný příjemce</strong> stáhne všechny soubory
+              delete_files_all: Odstranit soubory poté, co <strong>všichni příjemci</strong> stahují všechny soubory
               do_nothing: Neprovádět nic
               package_deletion: Odstranění balíku
               server_delete: 'Předvolba: %{config}'
@@ -790,25 +737,18 @@ cs:
               allow_public_submission: 'Povolit adresy URL pro veřejné odeslání:'
               allowed_to: 'Povoleno pro:'
               can_see_global_dist_lists: 'Může se zobrazit globální distribuční seznamy:'
-              control_hint: Není-li zaškrtnuto, uživatel nebude moci odesílat uživatelům
-                nebo odesílat do souborů dropboxes/workgroups.
-              create_drop_packages: Je-li tato volba zakázána, bude uživatel moci
-                vytvořit balíky dropbox pouze v případě, že jsou členy jakýchkoli
-                dropboxů.
+              control_hint: Není-li zaškrtnuto, uživatel nebude moci odesílat uživatelům nebo odesílat do souborů dropboxes/workgroups.
+              create_drop_packages: Je-li tato volba zakázána, bude uživatel moci vytvořit balíky dropbox pouze v případě, že jsou členy jakýchkoli dropboxů.
               create_normal: 'Lze vytvořit normální balíky:'
               external_email: 'Může odesílat na externí e-mail:'
-              ip_addr_hint: zadejte adresy/rozsahy oddělené čárkami, např. <b>10.0.
-                *, 192.168.1.1</b>
+              ip_addr_hint: zadejte adresy/rozsahy oddělené čárkami, např. <b>10.0. *, 192.168.1.1</b>
               keep_dir_private: 'Uchovat soukromý adresář uživatele:'
               neg: Ne.
               permissions: Oprávnění
               see_global_dis_list: 'Může se zobrazit globální distribuční seznamy:'
               send_to_all: 'Může poslat všem uživatelům Faspex:'
-              send_to_all_send_to_wg: Je-li to povoleno, může uživatel poslat všem
-                uživatelům Faspex. Jinak může uživatel poslat pouze jiné členy pracovní
-                skupiny.
-              user_server_def: 'Výchozí nastavení uživatelského serveru (aktuálně:
-                %{def})'
+              send_to_all_send_to_wg: Je-li to povoleno, může uživatel poslat všem uživatelům Faspex. Jinak může uživatel poslat pouze jiné členy pracovní skupiny.
+              user_server_def: 'Výchozí nastavení uživatelského serveru (aktuálně: %{def})'
             personal_details:
               first_name: Křestní jméno
               last_name: Příjmení
@@ -954,18 +894,14 @@ cs:
           form:
             advanced_config: <i class="icon-plus"></i>Rozšířená konfigurace
             basic_config: Základní konfigurace
-            config_message: Níže uvedená konfigurace musí ukazovat na server, který
-              hostuje server Aspera Enterprise Server. Tato adresa je používána webovou
-              aplikací ke shromažďování statistik přenosu. Je-li server Aspera Enterprise
-              Server spuštěný na stejném počítači jako webová aplikace, správná adresa
-              je 127.0.0.1.
-            sec_add_message: Níže uvedená adresa je to, co budou vaši uživatelé potřebovat,
-              aby mohli začít s přenosy. Máte-li skupinu uživatelů, kteří potřebují
-              používat jinou adresu (např. kvůli síťovým podmínkám), použijte pole
-              'Sekundární adresa' k určení rozsahu IP. Všimněte si, že sekundární
-              adresa se nevztahuje na přenos relé.
-            storage_error: Tato paměť souborů se momentálně používá jako předvolená
-              schránka systému. Při úpravě se všechny existující balíky stanou nedostupnými
+            config_message: >-
+              Níže uvedená konfigurace musí odkazovat na server, který hostuje server Aspera Enterprise Server. Tato adresa je používána webovou aplikací ke shromažďování
+              statistik přenosu. Je-li server Aspera Enterprise Server spuštěný na stejném počítači jako webová aplikace, správná adresa je 127.0.0.1.
+            sec_add_message: >-
+              Níže uvedená adresa je to, co budou vaši uživatelé potřebovat, aby mohli začít s přenosy. Máte-li skupinu uživatelů, kteří potřebují používat jinou
+              adresu (např. kvůli síťovým podmínkám), použijte pole 'Sekundární adresa' k určení rozsahu IP. Všimněte si, že sekundární adresa se nevztahuje na přenos
+              relé.
+            storage_error: Tato paměť souborů se momentálně používá jako předvolená schránka systému. Při úpravě se všechny existující balíky stanou nedostupnými
               pro uživatele.
             test_connect: Test připojení
           index:
@@ -1010,7 +946,7 @@ cs:
           index:
             action: Akce
             all_packages: Všechny balíky
-            days_or_older: dnů nebo starších
+            days_or_older: dny nebo starší
             delete_files: Odstranit soubory ...
             download: Soubory ke stažení <br/úplné/částečné
             for_packages: Pro balíky
@@ -1058,12 +994,9 @@ cs:
             update: Aktualizovat
           env_var_help:
             description: Popis
-            faspex_meta<field>: hodnota pole metadat s názvem &lt;field&gt; velkými
-              písmeny nahrazena malými písmeny a mezerami nahrazenými podtržítky
-            faspex_metadata_fields: Čárkami oddělený seznam polí metadat definovaných
-              pro balík
-            faspex_pkg_delivery_id: ID doručení balíku (liší se od ID balíku a UUID
-              balíku)
+            faspex_meta<field>: hodnota pole metadat s názvem &lt;field&gt; velkými písmeny nahrazena malými písmeny a mezerami nahrazenými podtržítky
+            faspex_metadata_fields: Čárkami oddělený seznam polí metadat definovaných pro balík
+            faspex_pkg_delivery_id: ID doručení balíku (liší se od ID balíku a UUID balíku)
             faspex_pkg_dir: cesta k balíku
             faspex_pkg_id: ID balíku
             faspex_pkg_is_forward: 1 pro předané balíky a 0 pro původní balíky
@@ -1074,8 +1007,7 @@ cs:
             faspex_pkg_uuid: Identifikátor UUID balíku
             faspex_recipient_count: počet příjemců (např. "3")
             faspex_recipient_i: jméno i-té příjemce
-            faspex_recipient_list: seznam příjemců oddělený čárkami (např. "admin,
-              johndoe")
+            faspex_recipient_list: seznam příjemců oddělený čárkami (např. "admin, johndoe")
             faspex_sender_email: E-mail odesílatele
             faspex_sender_id: ID odesilatele
             faspex_sender_name: jméno odesilatele
@@ -1117,8 +1049,7 @@ cs:
             package_name: Název balíku
             package_sender: Odesílatel balíku<br/>
             package_uuid: Klíč UUID balíku
-            post_processing_exec_log: 'Následná zpracování: Protokol provedení pro
-              %{name}'
+            post_processing_exec_log: 'Následná zpracování: Protokol provedení pro %{name}'
             time_of_exec: Čas provedení <br/>
         saml:
           edit:
@@ -1149,11 +1080,9 @@ cs:
             publicly_visible: Veřejně viditelné
             redirect_saml: Přesměrovat na odhlašovací stránku SAML na odhlášení
             restrict_login_groups: Omezit přístup ke známým skupinám
-            restrict_login_groups_hint: Je-li zaškrtnuto, budou se moci přihlásit
-              pouze členové skupin SAML přidaných do třídy Faspx.
+            restrict_login_groups_hint: Je-li zaškrtnuto, budou se moci přihlásit pouze členové skupin SAML přidaných do třídy Faspx.
             restrict_login_users: Omezit přístup ke známým uživatelům
-            restrict_login_users_hint: Je-li toto políčko zaškrtnuto, bude povoleno
-              přihlášení pouze existující uživatelé SAML, kteří byli přidáni do společnosti
+            restrict_login_users_hint: Je-li toto políčko zaškrtnuto, bude povoleno přihlášení pouze existující uživatelé SAML, kteří byli přidáni do společnosti
               Faspex.
             saml_config: Konfigurace SAML
             saml_config_details: Podrobnosti konfigurace SAML
@@ -1180,8 +1109,7 @@ cs:
             remove_default: Odebrat výchozí
             saml_config: Konfigurace SAML
             saml_confirm: Jste si jisti, že chcete povolit tuto konfiguraci SAML?
-            saml_confirm_disable: Jste si jisti, že chcete zakázat tuto konfiguraci
-              SAML?
+            saml_confirm_disable: Jste si jisti, že chcete zakázat tuto konfiguraci SAML?
             test: Test
           user_profile:
             name: Název
@@ -1194,14 +1122,12 @@ cs:
             fields_required: Pole požadovaná pro všechny uživatele typu Faspex
             global_cust_message: Vlastní pole definovaná na kartě Profil uživatele
             global_cust_prof_fields: Pole globálního vlastního profilu
-            local_cust_message: Pole profilu uživatele specifická pro tuto konfiguraci
-              SAML
+            local_cust_message: Pole profilu uživatele specifická pro tuto konfiguraci SAML
             local_cust_prof_fields: Pole lokálního vlastního profilu
             name: Název
             required: Povinní
             saml_name: Název SAML
-            save_note: 'Pozn.: Žádné změny se neuloží, dokud neklepnete na ''Aktualizovat
-              konfiguraci SAML'''
+            save_note: 'Pozn.: Žádné změny se neuloží, dokud neklepnete na ''Aktualizovat konfiguraci SAML'''
         settings:
           display_settings:
             date_format:
@@ -1256,16 +1182,13 @@ cs:
               after_upload_ends: po skončení odeslání
               characters: znaky
               days: den (dny)
-              delete_files_all: Odstranit soubory poté, co <strong>všichni příjemci</strong>
-                stahují všechny soubory
-              delete_files_any: Odstranit soubory poté, co <strong>libovolný příjemce</strong>
-                stáhne všechny soubory
+              delete_files_all: Odstranit soubory poté, co <strong>všichni příjemci</strong> stahují všechny soubory
+              delete_files_any: Odstranit soubory poté, co <strong>libovolný příjemce</strong> stáhne všechny soubory
               do_nothing: Neprovádět nic
               max_pkg_title: Maximální délka názvu balíku v cestách úložiště
               package_storage: Úložiště balíků
               packages_expire: Platnost balíků vyprší
-              pkg_by_pkg_del: Povolit všem uživatelům nastavit vlastní nastavení odstranění
-                na bázi balíku-podle-balíku
+              pkg_by_pkg_del: Povolit všem uživatelům nastavit vlastní nastavení odstranění na bázi balíku-podle-balíku
               update: Aktualizovat
           save_restore:
             index:
@@ -1276,8 +1199,7 @@ cs:
               restore_config: Obnova konfigurace
               save_restore: Uložení/obnova
               upload_help: Odeslat a použít uložený konfigurační soubor (*.tar.gz)
-              version_help: 'Pozn.: Obnova verze by měla odpovídat aktuální verzi
-                souboru faspex'
+              version_help: 'Pozn.: Obnova verze by měla odpovídat aktuální verzi souboru faspex'
           security:
             edit:
               act_dir_hint: Uživatelé adresářové služby nebudou uzamknuty ani deaktivovány.
@@ -1286,32 +1208,24 @@ cs:
               after_x_days: Po %{num} dní
               after_inactivity: Po dnech %{len} z neaktivity
               after_one_success: Po jednom úspěšném odeslání
-              allow_custom_link: Povolit uživatelům nastavit zásadu vypršení platnosti
-                vlastního odkazu
+              allow_custom_link: Povolit uživatelům nastavit zásadu vypršení platnosti vlastního odkazu
               allow_email_change: Povolit uživatelům měnit svou e-mailovou adresu
-              allow_external_pkg_hint: Je-li označeno, budou povoleny balíky odeslané
-                uživateli Faspex s příznakem (externí)
+              allow_external_pkg_hint: Je-li označeno, budou povoleny balíky odeslané uživateli Faspex s příznakem (externí)
               allow_external_pkg_to_faspex: Povolit externí balíky uživatelům Faspex
               allow_usrs_create: Povolit uživatelům vytváření normálních balíků
-              allow_usrs_create_hint: Je-li tato volba zakázána, uživatelé budou moci
-                vytvářet balíky dropbox pouze v případě, že jsou členy jakýchkoli
-                dropboxů.
-              allow_usrs_send: Povolit všem uživatelům odesílání všem ostatním uživatelům
-                produktu Faspex
+              allow_usrs_create_hint: Je-li tato volba zakázána, uživatelé budou moci vytvářet balíky dropbox pouze v případě, že jsou členy jakýchkoli dropboxů.
+              allow_usrs_send: Povolit všem uživatelům odesílání všem ostatním uživatelům produktu Faspex
               always: vždy
               allow_unlock: Povolit zamknutí uživatelů, aby se mohli odemknout
               allow_send_email: Povolit odesílání na externí e-mailové adresy
               appr_recipient_domains: Schválené domény příjemce
               appr_sender_domains: Schválené domény odesilatele
               block_email_domain: Zablokujte následující e-mailové domény ze samoregistrace
-              can_override_ear_hint: Uživatel může při pozvání externích odesilatelů
-                zvolit, zda má či nemá vynutit šifrování.
-              can_see_dist_list: Uživatelé mohou standardně vidět globální distribuční
-                seznamy
+              can_override_ear_hint: Uživatel může při pozvání externích odesilatelů zvolit, zda má či nemá vynutit šifrování.
+              can_see_dist_list: Uživatelé mohou standardně vidět globální distribuční seznamy
               cipher: Šifra FASP
               days: den (dny)
-              dbox_override: Povolit, aby funkce dropboxes měla své vlastní nastavení
-                šifrování
+              dbox_override: Povolit, aby funkce dropboxes měla své vlastní nastavení šifrování
               def_pw_expire: Předvolený interval ukončení platnosti hesla
               default: Výchozí
               disable: Znepřístupnit
@@ -1319,34 +1233,28 @@ cs:
               ds_users: DS po %{int} dny nečinnosti
               email_expire_after_download: Ukončit platnost po úplném stažení balíku
               enable: Povolit
-              encrypt_hint: Je-li tato volba povolena, budou také zašifrovány záložní
-                přenosy HTTP
+              encrypt_hint: Je-li tato volba povolena, budou také zašifrovány záložní přenosy HTTP
               encrypt_transfers: Šifrovat přenosy
               encryption: Šifrování
               enforce_pw_hist: Nelze znovu použít předchozí
               every: každý
               faspex_acc: Faspex účty
-              force_pw_reset: Vyžadovat, aby noví uživatelé změnili heslo při prvním
-                přihlášení
+              force_pw_reset: Vyžadovat, aby noví uživatelé změnili heslo při prvním přihlášení
               hours: hodinách
               inviting_allowed: Povolit pozvání externích odesilatelů
               ignore_invalid_recipients: Ignorovat neplatné příjemce
-              ignore_invalid_recipients_hint: Je-li zaškrtnuto, odeslání balíku se
-                nezdaří, je-li balík adresován neplatnému příjemci
+              ignore_invalid_recipients_hint: Je-li zaškrtnuto, odeslání balíku se nezdaří, je-li balík adresován neplatnému příjemci
               inv_link_expires: Odkaz na pozvání vyprší
-              inv_link_help: Nastavte zásadu vypršení platnosti odkazu pro pozvánky
-                k osobním i rozevíracím poli.
+              inv_link_help: Nastavte zásadu vypršení platnosti odkazu pro pozvánky k osobním i rozevíracím poli.
               keep_usr_dir: Uchovat soukromý adresář uživatele
-              list_hint: zadejte e-mailové adresy oddělené čárkami, středníky nebo
-                prázdné znaky.
+              list_hint: zadejte e-mailové adresy oddělené čárkami, středníky nebo prázdné znaky.
               local_users: Lokální uživatelé po dnech %{int} nečinnosti.
               lock_hint: Po neúspěšných pokusech o přihlášení %{login_count}
-              lock_users: Uzamknout uživatele
+              lock_users: Zamknout uživatele
               minutes: minut
               neg: Ne.
               never: Nikdy
-              new_user_pw: Nová hesla uživatele %{req}. Existující hesla zůstanou
-                platná %{warn}
+              new_user_pw: Nová hesla uživatele %{req}. Existující hesla zůstanou platná %{warn}
               obfuscation: Zamlžit
               optional: Nepovinní
               optional_hint: Uživatel si může zvolit, zda má být zašifrován, či nikoli.
@@ -1359,88 +1267,73 @@ cs:
               public_url_allowed: Povolit adresy URL pro veřejné odeslání
               prevent_pw_reuse: Zabránit opětovnému použití hesla
               prev_conc: Zabránit souběžnému přihlášení
-              pw_reset_hint: E-mail resetování hesla bude odeslán a účet bude odemčen
-                po změně hesla
+              pw_reset_hint: E-mail resetování hesla bude odeslán a účet bude odemčen po změně hesla
               quota_limit: Celková velikost dat odeslaných během posuvného okna
-              reg_hint: 'Volitelné: Je-li nastaven text, uživatelé budou vyzváni,
-                aby přijali příkaz, aby se mohli registrovat'
+              reg_hint: 'Volitelné: Je-li nastaven text, uživatelé budou vyzváni, aby přijali příkaz, aby se mohli registrovat'
               reg_users_mutual: Samoregistrovaní uživatelé mohou posílat na sebe
               registration_instructions: Pokyny k registraci
               registration_type: Vlastní registrace
               registrations: Registrace
               remove_users: Odebrat uživatele
               req_external_reg: Požadovat registraci externích uživatelů
-              require_external_hint: Je-li toto políčko zaškrtnuto, musí externí uživatelé
-                registrovat účet Faspex, aby mohli stahovat balíky.
+              require_external_hint: Je-li toto políčko zaškrtnuto, musí externí uživatelé registrovat účet Faspex, aby mohli stahovat balíky.
               saml_users: Uživatelé SAML po dnech %{int} nečinnosti.
               security: Zabezpečení
               send_welcome_email: Odeslat uvítací e-mail všem novým uživatelům
               sender_quota: Kvóta odesilatele
-              sender_quota_hint: 'Balíky odeslané uživatelům v těchto doménách se
-                nezapočítávají do kvóty odesilatele. Jednotlivé e-mailové domény oddělujte
-                čárkami (,), středníky (;) nebo mezerou. Například: @aspera.com; @ibm.com'
+              sender_quota_hint: >-
+                Balíky odeslané uživatelům v těchto doménách se nezapočítávají do kvóty odesilatele. Jednotlivé e-mailové domény oddělujte čárkami (,), středníky
+                (;) nebo mezerou. Například: @aspera.com; @ibm.com
               sender_quota_option: Volba kvóty odesilatele
               sender_quota_duration: Doba trvání kvóty odesilatele
               sender_quota_limit: Limit kvóty odesílatelů
               session_timeout: Časový limit relace po
-              slave_hint: Je-li zaškrtnuto, uživatelé mohou být přihlašovány pouze
-                z jednoho klienta po druhém
+              slave_hint: Je-li zaškrtnuto, uživatelé mohou být přihlašovány pouze z jednoho klienta po druhém
               strong_pw: Použít silná hesla
               timeout_hint: Relace vyprší po uvedeném počtu minut nečinnosti
               tos: Podmínky pro odeslání
-              tos_hint: 'Volitelné: Je-li nastaven text, uživatelé budou vyzváni k
-                přijetí příkazu, aby mohli odeslat balík'
+              tos_hint: 'Volitelné: Je-li nastaven text, uživatelé budou vyzváni k přijetí příkazu, aby mohli odeslat balík'
               update: Aktualizovat
               use_encryption_at_rest: Použít šifrování-při-Rest
               use_obf: Použít zamaskování v názvech souborů
               use_obf_hint: Zamlžení názvu souboru je nevratné!
-              enforce_expiration_policy: Vždy vynutit jako maximální dobu trvání pro
-                zásadu vypršení platnosti
+              enforce_expiration_policy: Vždy vynutit jako maximální dobu trvání pro zásadu vypršení platnosti
           transfer_options:
             edit:
               aspera_connect_sett: Nastavení připojení Aspera
               def_max_rate: Výchozí maximální povolená rychlost
               dl_dur_trans: Stahování během přenosů
               dl_over_http: Stáhnout přes HTTP
-              http_gateway_hint: Níže uvedená adresa je to, co budou vaši uživatelé
-                potřebovat ke spuštění přenosů přes http-gateway.
+              http_gateway_hint: Níže uvedená adresa je to, co budou vaši uživatelé potřebovat ke spuštění přenosů přes http-gateway.
               http_gateway_url: Adresa URL brány HTTP
               initial_def_trans_rate: Počáteční výchozí přenosová rychlost
               local_host_connect: Lokálně hostitel Connect
-              local_host_hint: Je-li zaškrtnuto, Fespex nebude používat CDN s Aspera
-                k obsluze Connect, ale místo toho použije lokální sadu Connect SDK
-                dostupnou na Faspex.
+              local_host_hint: Je-li zaškrtnuto, Fespex nebude používat CDN s Aspera pro připojení, ale místo toho použije lokální sadu Connect SDK dostupnou na Faspex.
               local_to_remote: lokální server pro vzdálený server
               lock_connect_sdk: Zamknout verzi sady SDK pro připojení
-              lock_connect_sdk_hint: 'Zabraňte Faspex v aktualizaci lokální sady SDK
-                SDK, pokud bude k dispozici nová verze. Toto nastavení přetrvává mezi
-                upgrady. Poznámka: Faspex pravidelně kontroluje aktualizace a nestahuje
-                ihned novou verzi, pokud je tato volba vypnuta'
+              lock_connect_sdk_hint: >-
+                Zabraňte Faspex v aktualizaci lokální sady SDK SDK, pokud bude k dispozici nová verze. Toto nastavení přetrvává mezi upgrady. Poznámka: Faspex pravidelně
+                kontroluje aktualizace a nestahuje ihned novou verzi, pokud je tato volba vypnuta
               min_connect_version: Minimální verze připojení
-              minrate_hint: Je-li zaškrtnuto, klienti nebudou schopni upravit svou
-                přenosovou zásadu nebo minimální přenosovou rychlost
+              minrate_hint: Je-li zaškrtnuto, klienti nebudou schopni upravit svou přenosovou zásadu nebo minimální přenosovou rychlost
               prefer_http_connect: Preferovat protokol HTTP na rozšíření
-              prefer_http_connect_hint: Je-li toto políčko zaškrtnuto, bude program
-                Fespex vynucovat použití metody HTTP pro komunikaci s klientem Connect
-                Desktop Client namísto použití rozšíření prohlížeče (dostupné pouze
-                s prohlížečem Chrome).
-              serv_to_serv_relay_trans_sett: Nastavení přenosu přenosu serveru na
-                server
+              prefer_http_connect_hint: >-
+                Je-li toto políčko zaškrtnuto, bude program Fespex vynucovat použití metody HTTP pro komunikaci s klientem Connect Desktop Client namísto použití
+                rozšíření prohlížeče (dostupné pouze s prohlížečem Chrome).
+              serv_to_serv_relay_trans_sett: Nastavení přenosu přenosu serveru na server
               server_to_user: server pro uživatele
               transfer_options: Volby přenosu
               update: Aktualizovat
               user_to_server: uživatel na server
               http_gwy_connection_success: Úspěšně provedené připojení
-              http_gwy_connection_error: Chyba při vytváření připojení k bráně IBM
-                Aspera HTTP Gateway
+              http_gwy_connection_error: Chyba při vytváření připojení k bráně IBM Aspera HTTP Gateway
           web_server:
             alt_address_fields:
               remove_addr: Odebrat tuto alternativní adresu
             edit:
               add_alt_address: Přidat alternativní adresu
               address_name: Název adresy
-              alternate_addr_hint: použití v případě, že pro určité uživatele potřebujete
-                různé adresy serverů
+              alternate_addr_hint: použití v případě, že pro určité uživatele potřebujete různé adresy serverů
               desc_email: Popis pro e-maily
               http_port_hint: určené konfigurací apache
               https_port_hint: pro šifrovaný obsah přes SSL určený konfigurací apache
@@ -1495,8 +1388,7 @@ cs:
             initial_default_rate: Počáteční výchozí přenosová rychlost
             limited: Omezený
             loading: Načítá se
-            lock_minrate_hint: je-li zaškrtnuto, klienti nebudou schopni upravit svou
-              přenosovou zásadu nebo minimální přenosovou rychlost
+            lock_minrate_hint: je-li zaškrtnuto, klienti nebudou schopni upravit svou přenosovou zásadu nebo minimální přenosovou rychlost
             name: Název
             node: Uzel
             override_default: Přepsat výchozí nastavení přenosu
@@ -1507,8 +1399,7 @@ cs:
             server_to_user: server pro uživatele
             user_to_server: uživatel na server
           new:
-            alert_no_node: Nemáte vytvořeném %{nodes}. %{admin_node} před provedením
-              %{name}.
+            alert_no_node: Nemáte vytvořeném %{nodes}. %{admin_node} před provedením %{name}.
             cancel: Storno
             create_one: Vytvořit jeden
             new: Nový %{name}
@@ -1535,39 +1426,33 @@ cs:
           metadata_profile: 'Profil metadat: '
           options:
             after_pac_downl: 'Po stažení balíků:'
-            allow_submission_via_pub_URL: 'Povolit odeslání prostřednictvím veřejné
-              adresy URL:'
+            allow_submission_via_pub_URL: 'Povolit odeslání prostřednictvím veřejné adresy URL:'
             always: vždy
             custom_exp_policy: Zásada vypršení platnosti vlastního balíku
             custom_inv_policy: Zásada vypršení platnosti odkazu na vlastní pozvánku
             day_after_sending_inv: den (y) po odeslání e-mailu s pozvánkou
             day_after_upload: den (y) po skončení odeslání
             http_downloads_not_allowed: Stahování HTTP není pro tento balík povoleno.
-            delete_after_all: Odstranit soubory za <strong>všemi členy tohoto pole</strong>
-              stahuje všechny soubory.
-            delete_after_first: Odstraňte soubory poté, co <strong>kterýkoli člen
-              tohoto dropboxu</strong> stáhne všechny soubory.
+            delete_after_all: Odstranit soubory za <strong>všemi členy tohoto pole</strong> stahuje všechny soubory.
+            delete_after_first: Odstraňte soubory poté, co <strong>kterýkoli člen tohoto dropboxu</strong> stáhne všechny soubory.
             do_nothing: Neprovádět nic
             inv_link_expire: 'Platnost odkazů na pozvání vyprší:'
             never: Nikdy
             optional: Nepovinní
             package_expires: 'Platnost balíků vyprší:'
             require_encrypt: 'Požadovat šifrování-at-rest:'
-            save_message: Asperametadata.xml bude uložen do kořenového adresáře každého
-              balíku
+            save_message: Asperametadata.xml bude uložen do kořenového adresáře každého balíku
             save_metadata: 'Uložit metadata do souboru:'
             success: Po jednom úspěšném odeslání
             use_server_default: 'Použít výchozí nastavení serveru (aktuálně: %{server})'
           perm:
             add_rem_dir_serv_groups: Přidat/odebrat skupiny služeb adresáře jako členy
-            add_remove_users: Přidat existující uživatele typu Faspex/odebrat členy
-              s oprávněními administrátora, kteří nejsou typu dropbox
+            add_remove_users: Přidat existující uživatele typu Faspex/odebrat členy administrátora, kteří nejsou typu dropbox
             dropbox_admin_can: správci Dropbox mohou ...
             invite_outside_submitters: Pozvat mimo odesílatelů
             invite_remove_users: Pozvánka/odebrání mimo odesílající uživatele
             member_manage: Správa členů
-            reg_users_as_mem: Vytvořit/upravit/odstranit/odebrat nové registrované
-              uživatele jako členy
+            reg_users_as_mem: Vytvořit/upravit/odstranit/odebrat nové registrované uživatele jako členy
             standard_can: Standardní uživatelé mohou ...
         users:
           cancel: Storno
@@ -1581,12 +1466,10 @@ cs:
             optional: Nepovinní
           submit_save: Uložit (odešle e-mail s pozvánkou)
       e_error:
-        default: Server rozpoznal problém při pokusu o zpracování vašeho požadavku.
-          Důvodem může být nedostatečná oprávnění, problém s konfigurací, přerušení
-          sítě, chyba při chybě nebo selhání hardwaru.
-        default_2: Ostatní příkazy kromě toho, které jste se pokusili, mohou stále
-          pracovat. Zkuste klepnout na tlačítko "Zpět" nebo na jednu z výše uvedených
-          karet.
+        default: >-
+          Server rozpoznal problém při pokusu o zpracování vašeho požadavku. Důvodem může být nedostatečná oprávnění, problém s konfigurací, přerušení sítě, chyba
+          při chybě nebo selhání hardwaru.
+        default_2: Ostatní příkazy kromě toho, které jste se pokusili, mohou stále pracovat. Zkuste klepnout na tlačítko "Zpět" nebo na jednu z výše uvedených karet.
       external:
         sub_stat:
           show:
@@ -1595,8 +1478,7 @@ cs:
               E-mail byl odeslán s odkazem pro návrat na tuto obrazovku.
             send_to: Odeslat do %{recipient}
             send_to_dropbox: 'Odeslat do Dropbox: %{dropname}'
-            status: Tato stránka vám umožňuje prohlédnout si stav balíku, který jste
-              odeslali, a také pokus o přenos, pokud selže.
+            status: Tato stránka vám umožňuje zobrazit stav balíku, který jste odeslali, a pokus o přenos znovu, pokud selže.
           submission_stat:
             date_submit: Datum odeslání
             files: Soubory
@@ -1605,8 +1487,7 @@ cs:
             title: Název
         to:
           email_address: Emailová adresa
-          please_enter_email: Zadejte prosím svou e-mailovou adresu, abyste získali
-            přístup.
+          please_enter_email: Zadejte prosím svou e-mailovou adresu, abyste získali přístup.
           request_access: Požadavek na přístup
           send_to: Odeslat do %{recipient_name}
       inactive: Neaktivní
@@ -1620,11 +1501,9 @@ cs:
             after: Po
             after_one_success: Po jednom úspěšném odeslání
             after_one_up: Po jednom odeslání
-            custom_inv_policy: 'Vlastní zásada vypršení platnosti odkazu na vlastní
-              pozvánku:'
+            custom_inv_policy: 'Vlastní zásada vypršení platnosti odkazu na vlastní pozvánku:'
             day_after_sending_inv: den (y) po odeslání e-mailu s pozvánkou
-            help: Tato nastavení můžete dále omezit, ale nemůžete překročit výchozí
-              hodnotu
+            help: Tato nastavení můžete dále omezit, ale nemůžete překročit výchozí hodnotu
             inv_link_expires: Odkaz na pozvání vyprší
           prevent_http_upload:
             package_upload: Odeslání balíku
@@ -1676,14 +1555,12 @@ cs:
           workgroups: Pracovní skupiny
         node_error:
           warning: 'VAROVÁNÍ:'
-          errors_detected: Byly zjištěny chyby serveru přenosu, přenos možná nebude
-            fungovat správně.
+          errors_detected: Byly zjištěny chyby serveru přenosu, přenos možná nebude fungovat správně.
       login:
         entitlement:
           customer_id: ID zákazníka
           entitle_info: 'Poskytněte prosím informace o nároku, abyste mohli začít:'
-          entitle_question: V případě dotazů nebo obav o oprávnění kontaktujte prosím
-            %{aspera}
+          entitle_question: V případě dotazů nebo obav o oprávnění kontaktujte prosím %{aspera}
           entitlement: ID nároku
           submit: Odeslat
         new:
@@ -1715,8 +1592,7 @@ cs:
           advanced: " (rozšířené)"
           customize: Upravit pomocí šablony
           edit_html: Upravit HTML
-          preview: "%{description} Náhled je zobrazen níže. Lze je upravit buď pomocí
-            šablony, nebo přímou úpravou HTML."
+          preview: "%{description} Náhled je zobrazen níže. Lze je upravit buď pomocí šablony, nebo přímou úpravou HTML."
           preview_email_notif: Náhled e-mailového oznámení %{name}
       metadata_profiles:
         edit:
@@ -1728,8 +1604,7 @@ cs:
           illegal_characters: 'Neplatné znaky: '
           max_length: 'Maximální délka: '
           note: Poznámka
-          note_no_save: 'Pozn.: Žádné změny nebudou uloženy, dokud neuložíte profil
-            metadat'
+          note_no_save: 'Pozn.: Žádné změny nebudou uloženy, dokud neuložíte profil metadat'
           preview: Náhled
           profile_name: 'Název profilu: '
           profile_name_placeholder: Název profilu ...
@@ -1785,8 +1660,7 @@ cs:
       mobile:
         landing:
           app_redirect: Pro nejlepší zkušenosti použijte aplikaci Aspera Faspex Mobile.
-          no_app_prompt: Done, máš tu aplikaci? Získejte jej <a href='<%= @app_store_url
-            %>'>zde</a>
+          no_app_prompt: Done, máš tu aplikaci? Získejte jej <a href='<%= @app_store_url %>'>zde</a>
           open_in_app: OTEVŘÍT V APLIKACI
           use_web_version: POUŽÍT WEBOVOU VERZI
       ms_admin:
@@ -1814,10 +1688,9 @@ cs:
           default_user_server: 'Výchozí Faspex/DS Users Server:'
           home_server_rules: Pravidla domovského serveru
           name: Název
-          note: 'Poznámka: Pokud nenastavíte pravidla pro externí odesílajícího uživatele,
-            budou přesměrováni na domovský server odesílatele, aby si stáhli balíky.
-            Podobně i externí odesílatelé, kteří nahrávají balíky, musí to udělat
-            z domovského serveru účastníka.'
+          note: >-
+            Poznámka: Pokud nenastavíte pravidla pro externí odesílajícího uživatele, budou přesměrováni na domovský server odesílatele, aby si stáhli balíky. Podobně
+            i externí odesílatelé, kteří nahrávají balíky, musí to udělat z domovského serveru účastníka.
           rule: Pravidlo
           save: Uložit
           server: Server.
@@ -1835,7 +1708,7 @@ cs:
           home_server: 'Domovský server:'
           home_server_rules: 'Pravidla domovského serveru: %{mod} Rule'
           ldap_field: 'Název pole protokolu LDAP:'
-          ldap_regex: 'Regex pole služby LDAP:'
+          ldap_regex: 'Regex pole LDAP:'
           regex_help: Nápověda pro Regex
           remove: Odebrat
           rule_name: 'Název pravidla:'
@@ -1864,32 +1737,25 @@ cs:
           slash: Řídící znak.
           slashA: Začátek řetězce.
           slashAa-m: 'Např.: odpovídá řetězcům, které začínají písmenem ''a'' a ''m''.'
-          slashAperiod*z: 'Např.: odpovídá řetězcům, které začínají znaky ''a'' a
-            končí řetězcem ''z'''
+          slashAperiod*z: 'Např.: odpovídá řetězcům, které začínají znaky ''a'' a končí řetězcem ''z'''
           slashz: Konec řetězce.
       nodes:
         columns:
           dropdown:
             add: Přidat %{share_name}
             delete: Odstranit
-            delete_confirm: Jsi si jistý? Tímto se odstraní jakýkoli %{share_name},
-              který momentálně používá tento %{node_name}.
+            delete_confirm: Jsi si jistý? Tímto se odstraní libovolný %{share_name}, který aktuálně používá tento %{node_name}.
             edit: Upravit
           shares:
             dropdown:
               confirm: Jste si jisti, že chcete pokračovat?
-              custom_inbox_confirm: Tento %{name} se v současné době používá jako
-                umístění vlastní schránky pro určité pracovní skupiny.
-              default_hint: Tento %{name} se v současné době používá jako systémová
-                výchozí schránka a nelze jej odstranit.
+              custom_inbox_confirm: Tento %{name} se v současné době používá jako umístění vlastní schránky pro určité pracovní skupiny.
+              default_hint: Tento %{name} se momentálně používá jako systémová výchozí schránka a nelze jej odstranit.
               delete: Odstranit
-              delete_warning: 'Při odstranění budou všechny existující balíky v těchto
-                pracovních skupinách nedostupné pro uživatele. '
+              delete_warning: 'Při odstranění budou všechny existující balíky v těchto pracovních skupinách nedostupné pro uživatele. '
               edit: Upravit
-              relay_hint: Tento %{name} se v současné době používá jako umístění přenosu
-                pro určité pracovní skupiny.
-              rolled_back_warning: 'Tyto pracovní skupiny budou také odvolány, aby
-                používaly výchozí došlou poštu systému. '
+              relay_hint: Tento %{name} se v současné době používá jako umístění přenosu pro určité pracovní skupiny.
+              rolled_back_warning: 'Tyto pracovní skupiny budou také odvolány, aby používaly výchozí došlou poštu systému. '
       packages:
         browser:
           all: Vše
@@ -1908,12 +1774,9 @@ cs:
           cc_on_recipient: 'Kopie (na příjemce):'
           completed_relays: 'Dokončená relé:'
           date_sent: Datum odeslání
-          http_downloads_not_allowed: Soubory ke stažení HTTP nejsou pro tento balík
-            povoleny
-          delete_after_all_message: Tento balík bude automaticky odstraněn poté, co
-            VŠECHNY příjemci stáhnou všechny soubory balíku.
-          delete_after_first_message: Tento balík bude automaticky odstraněn poté,
-            co každý příjemce stáhne všechny soubory balíku.
+          http_downloads_not_allowed: Soubory ke stažení HTTP nejsou pro tento balík povoleny
+          delete_after_all_message: Tento balík bude automaticky odstraněn poté, co VŠECHNY příjemci stáhnou všechny soubory balíku.
+          delete_after_first_message: Tento balík bude automaticky odstraněn poté, co každý příjemce stáhne všechny soubory balíku.
           edit: Upravit
           error_release_date: Chyba aktualizace data uvolnění
           failed_relays: 'Neúspěšná relé:'
@@ -1954,8 +1817,7 @@ cs:
           package_details:
             pkg_details: Podrobnosti o balíku
             status: Stav %{package}
-            http_downloads_not_allowed: Soubory ke stažení HTTP nejsou pro tento balík
-              povoleny
+            http_downloads_not_allowed: Soubory ke stažení HTTP nejsou pro tento balík povoleny
           partial_package:
             partial_pkg_dl: 'Částečné stažení balíku: %{total}'
           transfer_package:
@@ -2018,8 +1880,7 @@ cs:
       reset_password_tokens:
         edit:
           alert_error: Vaše přihlášení do Faspex je unavené pro účet adresářové služby.
-          alert_error_contact: Obraťte se na středisko podpory nebo na administrátora
-            sítě a požádejte jej o změnu hesla.
+          alert_error_contact: Obraťte se na středisko podpory nebo na administrátora sítě a požádejte jej o změnu hesla.
           reset_password: Resetovat heslo
         new:
           back_to_login: Zpět na přihlášení
@@ -2043,10 +1904,8 @@ cs:
               use_encrypt_at_rest: Použít šifrování-v-klidu
             expiration_policy:
               after_pkg_dl: Po stažení balíku
-              delete_after_all: Odstranit po <strong>všech příjemcích</strong> stahování
-                všech souborů.
-              delete_after_any: Odstranit po <strong>každém příjemci</strong> stáhne
-                všechny soubory
+              delete_after_all: Odstranit po <strong>všech příjemcích</strong> stahování všech souborů.
+              delete_after_any: Odstranit po <strong>každém příjemci</strong> stáhne všechny soubory
               do_nothing: Neprovádět nic
               expiration: 'Vypršení platnosti:'
             prevent_http_download:
@@ -2063,7 +1922,7 @@ cs:
               illegal_chars: 'Neplatné znaky: %{illegal}'
             notifications:
               cc: KOPIE
-              cc_on_download: Kopie ke stažení
+              cc_on_download: Kopie při stažení
               cc_on_receipt: CC při příjmu
               cc_on_upload: Kopie při odeslání
               download: 'Stáhnout:'
@@ -2080,13 +1939,13 @@ cs:
               release_now: Uvolnit nyní
               release_policy: 'Zásada uvolnění:'
             transfer_options:
-              transfer_through: 'Převést s:'
+              transfer_through: 'Přenést pomocí:'
               http_uploads_not_allowed: Přenosy HTTP nejsou pro tento balík povoleny
             source_shares:
               contents: 'Obsah *:'
-              ear_cloud_warning: Šifrování v klidu je nastaveno na použití pro všechny
-                přenosy, ale není podporováno pro přenosy, které používají cloud-referencing.
-                Tento přenos nebude používat šifrování při odpočinku.
+              ear_cloud_warning: >-
+                Šifrování v klidu je nastaveno na použití pro všechny přenosy, ale není podporováno pro přenosy, které používají cloud-referencing. Tento přenos nebude
+                používat šifrování při odpočinku.
               remove_all: Odebrat všechny
               source: 'Zdroj:'
               warning: 'Varování:'
@@ -2106,8 +1965,7 @@ cs:
           misc:
             actions:
               confirmation: 'Potvrzení:'
-              enter_passphrase: Zadejte heslo pro ochranu vašich souborů.<br>Heslo
-                je povinné.
+              enter_passphrase: Zadejte heslo pro ochranu vašich souborů.<br>Heslo je povinné.
               passphrase: 'Přístupová fráze:'
             connect_transfer:
               browse_for_files: Procházením vyhledejte soubory &hellip;
@@ -2191,8 +2049,7 @@ cs:
             download_connect: Stáhnout modul plug-in Connect
             download_hint: Může trvat několik minut, než se změna projeví
             download_notif: Stáhnout oznámení
-            download_notif_hint: E-mail tyto adresy, když každý příjemce nejprve stáhne
-              balík
+            download_notif_hint: E-mail tyto adresy, když každý příjemce nejprve stáhne balík
             email_settings: Nastavení e-mailu
             locales: Národní prostředí
             locale: Národní prostředí
@@ -2205,8 +2062,7 @@ cs:
         sender_quota:
           index:
             sender_alert_1: Dosáhli jste omezení kvóty odesílatele %{quota} MB
-            sender_alert_2: "%{quota} MB k dispozici. Limit vaší kvóty pro odesilatele
-              je nastaven na %{limit} MB."
+            sender_alert_2: "%{quota} MB k dispozici. Limit vaší kvóty pro odesilatele je nastaven na %{limit} MB."
             sender_quota: Kvóta odesilatele
       shared:
         browser:
@@ -2240,8 +2096,7 @@ cs:
         add_user_profile_field: Přidat pole profilu uživatele
         enabled: Povoleno
         name: Název
-        note_no_changes: 'Pozn.: Žádné změny se neuloží, dokud neklepnete na tlačítko
-          ''Uložit pole'''
+        note_no_changes: 'Pozn.: Žádné změny se neuloží, dokud neklepnete na tlačítko ''Uložit pole'''
         onclick_confirm: Jste si jisti, že chcete odebrat toto pole profilu uživatele?
         remove: Odeberte toto pole profilu.
         required: Povinní
@@ -2288,8 +2143,7 @@ cs:
         forwards:
           complete: Dokončit
           enable_relay: Povolit přenos
-          enabled_message: Je-li tato volba povolena, budou všechny soubory balíku
-            přeneseny do dalších uzlů.
+          enabled_message: Je-li tato volba povolena, budou všechny soubory balíku přeneseny do dalších uzlů.
           error: Chyba
           notify_users: Upozornit uživatele na ...
           overwrite: Přepsat
@@ -2299,8 +2153,7 @@ cs:
         nodes:
           default_inbox: Výchozí schránka
           direct_upload: Odeslat přímo do vlastní schránky.
-          direct_upload_default_check: Je-li zaškrtnuto, balíky nebudou odeslány do
-            výchozí schránky, pokud je tato pracovní skupina jediným příjemcem.
+          direct_upload_default_check: Je-li zaškrtnuto, balíky nebudou odeslány do výchozí schránky, pokud je tato pracovní skupina jediným příjemcem.
           inbox_destination: Cíl příchozí pošty
           location: Umístění
           status: Stav
@@ -2343,8 +2196,7 @@ cs:
             complete: Dokončit
             enable_relay: Povolit přenos
             error: Chyba
-            if_enabled: Je-li tato volba povolena, budou všechny soubory balíku přeneseny
-              do dalších uzlů.
+            if_enabled: Je-li tato volba povolena, budou všechny soubory balíku přeneseny do dalších uzlů.
             name: Název
             notify_users: Upozornit uživatele na ...
             overwrite: Přepsat
@@ -2353,8 +2205,7 @@ cs:
           index:
             create_new: Vytvořit nový
             dropbox: Dropbox
-            flash_message: Chcete-li vytvořit, odstranit nebo upravit pracovní skupiny
-              (jiné než přidávání nebo odebírání členů), musíte být přihlášeni k hlavnímu
+            flash_message: Chcete-li vytvořit, odstranit nebo upravit pracovní skupiny (jiné než přidávání nebo odebírání členů), musíte být přihlášeni k hlavnímu
               serveru.
             view_all: Zobrazit vše
             view_mine: Zobrazit moje
@@ -2393,43 +2244,36 @@ cs:
             server_default: Předvolba serveru
             status: Stav
             upload_directly: Odeslat přímo do vlastní schránky
-            upload_message: Je-li zaškrtnuto, balíky nebudou odeslány do výchozí schránky,
-              pokud je tato pracovní skupina jediným příjemcem
+            upload_message: Je-li zaškrtnuto, balíky nebudou odeslány do výchozí schránky, pokud je tato pracovní skupina jediným příjemcem
           show:
             view_packages: Zobrazit balíky
           wg_permissions:
-            add_dir_serv_groups_as_members_hint: Přidat/odebrat skupiny služeb adresáře
-              jako členy
-            add_existing_users_hint: Přidat existující uživatele typu Faspex/odebrat
-              členy administrátora nepracovních skupin
-            edit_new_users_hint: Vytvořit/upravit/odstranit odstranění/odebrání nových
-              uživatelů jako členů
+            add_dir_serv_groups_as_members_hint: Přidat/odebrat skupiny služeb adresáře jako členy
+            add_existing_users_hint: Přidat existující uživatele typu Faspex/odebrat členy administrátora nepracovních skupin
+            edit_new_users_hint: Vytvořit/upravit/odstranit odstranění/odebrání nových uživatelů jako členů
             full: " Plný:"
             full_hint: Členové, kterým bylo uděleno oprávnění pro zobrazení a odeslání
             member_management: Správa členů
             moderated: " Moderovaná:"
-            moderated_hint: Do této pracovní skupiny může odeslat pouze administrátor
-              pracovní skupiny
+            moderated_hint: Do této pracovní skupiny může odeslat pouze administrátor pracovní skupiny
             open: " Otevřít:"
             open_hint: Do této pracovní skupiny může poslat kdokoli.
             private: " Soukromá:"
             private_hint: Do této pracovní skupiny mohou odesílat pouze členové
             restricted: " Omezeno:"
             restricted_hint: Do této pracovní skupiny nelze odeslat nikdo.
-            restricted_hint_2: Pouze pracovní skupiny udělované oprávnění pro zobrazení
-              nebo odeslání jednotlivým členům pracovní skupiny
+            restricted_hint_2: Pouze pracovní skupiny udělované oprávnění pro zobrazení nebo odeslání jednotlivým členům pracovní skupiny
             send_to_eachother: 'Členové pracovní skupiny si vzájemně posílají:'
             sending_to_itself: 'Odesílání na samotnou pracovní skupinu:'
             wg_admins_only: " Pouze pro administrátory pracovní skupiny:"
-            wg_admins_only_hint: Členové, kterým bylo uděleno oprávnění k zobrazení
-              a odeslání administrátorům pracovních skupin
+            wg_admins_only_hint: Členové, kterým bylo uděleno oprávnění k zobrazení a odeslání administrátorům pracovních skupin
             workgroup_admins_can: Produkt Workgroup admins může ...
             workgroup_permissions: Oprávnění pracovní skupiny
           workgroup_list:
             description: Popis
             dropbox: Dropbox
             latest: Nejnovější
-            member_warning: Aktuálně nejste členem žádné pracovní skupiny.
+            member_warning: V současné době nejste členem žádné pracovní skupiny.
             members: Členové
             no_wg: Neexistují žádné pracovní skupiny.
             packages: Sady programů
@@ -2512,21 +2356,16 @@ cs:
       c_configuration:
         cant_be_blank: pole nemohou být prázdná.
       delivery:
-        send_fail_quota_limit: Nelze odeslat balík, byl dosažen limit kvóty pro %{limit}
-          MB
+        send_fail_quota_limit: Nelze odeslat balík, byl dosažen limit kvóty pro %{limit} MB
         send_fail_permissions: Nemáte povolení k vytváření normálních balíků
         send_fail_invalid_recipients: Žádní platní příjemci
         send_fail_dropbox_only: Příjemce Dropbox musí být jediným příjemcem
         send_fail_invalid_recipient_specific: 'Neplatný příjemce: %{recipient_name}'
-        send_fail_permissions_multiple: Nemáte oprávnění k odeslání jednomu nebo více
-          zadaným příjemcům
+        send_fail_permissions_multiple: Nemáte oprávnění odeslat jednomu nebo více zadaným příjemcům
         send_fail_invalid_cc: 'Neplatné CC (při odeslání): %{cc_name}'
-        send_fail_invalid_ccs_upload: V poli pro odeslání není povoleno u jednoho
-          nebo více příjemců uložit žádné příjemce.
-        send_fail_invalid_ccs_download: V poli pro stažení není povoleno CC jednoho
-          nebo více příjemců.
-        send_fail_invalid_ccs_receipt: V poli příjemky není povoleno CC jednoho nebo
-          více příjemců
+        send_fail_invalid_ccs_upload: V poli pro odeslání není povoleno u jednoho nebo více příjemců uložit žádné příjemce.
+        send_fail_invalid_ccs_download: V poli pro stažení není povoleno CC jednoho nebo více příjemců.
+        send_fail_invalid_ccs_receipt: V poli příjemky není povoleno CC jednoho nebo více příjemců
         send_fail_must_have_one_source: Musí mít přesně jeden zdroj
         send_fail_unknown_share_id: Neznámý zdrojový sdílený ID %{share_id}
         send_fail_source_not_authorized: Zdroj není autorizován
@@ -2534,17 +2373,15 @@ cs:
         send_fail_unique_filenames: Názvy souborů musí být jedinečné
         send_fail_ear_must_be_specified: musí být zadán
         send_fail_ear_not_allowed: nepovoleno
-        send_fail_ear_disabled_message: Šifrování-v-klidu je zakázáno, heslo není
-          povoleno.
-        send_fail_sendershareid_forwarding: Položka SenderShareId nemůže být pro předané
-          balíky změněna.
+        send_fail_ear_disabled_message: Šifrování-v-klidu je zakázáno, heslo není povoleno.
+        send_fail_sendershareid_forwarding: Položka SenderShareId nesmí být pro předané balíky změněna.
         send_fail_invalid_release_policy: 'Neplatná zásada uvolnění: %{rp}'
         send_fail_policy_date_future: Datum vydání musí být v budoucnosti
         send_fail_expiration_date_future: Datum vypršení platnosti musí být v budoucnosti
       directory_service_user:
-        login_error_message: Přihlášení bylo neúspěšné. Zkuste to prosím znovu. Pokud
-          dochází k opakovaným selháním přihlášení, měli byste klepnout na odkaz 'Zapomenuté
-          heslo', abyste resetovali své heslo.
+        login_error_message: >-
+          Přihlášení bylo neúspěšné. Zkuste to prosím znovu. Pokud dochází k opakovaným selháním přihlášení, měli byste klepnout na odkaz 'Zapomenuté heslo', abyste
+          resetovali své heslo.
       e_membership:
         status:
           expired: Vypršení platnosti
@@ -2553,30 +2390,26 @@ cs:
       local_user:
         cannot_be_blank: nesmí být prázdné
         is_incorrect: je chybný
-        login_error_message: Přihlášení bylo neúspěšné. Zkuste to prosím znovu. Pokud
-          dochází k opakovaným selháním přihlášení, měli byste klepnout na odkaz 'Zapomenuté
-          heslo', abyste resetovali své heslo.
+        login_error_message: >-
+          Přihlášení bylo neúspěšné. Zkuste to prosím znovu. Pokud dochází k opakovaným selháním přihlášení, měli byste klepnout na odkaz 'Zapomenuté heslo', abyste
+          resetovali své heslo.
         lock_out_message: Byli jste uzamčeni v důsledku příliš mnoha neúspěšných přihlášení.
         same_as_old_pw: je stejné jako staré heslo
         same_old_pw_hint: musí být odlišné od vašich předchozích hesel %{limit}
       metadata_field:
         value_already_taken: "'%{value}' již bylo přijato"
         max_length_not_int: Maximální délka pole '%{label_name}' musí být celé číslo
-        max_length_bounds: Maximální délka pole '%{label_name}' musí být mezi 1 a
-          %{max}
+        max_length_bounds: Maximální délka pole '%{label_name}' musí být mezi 1 a %{max}
         valid_option_list: "'%{label_name}' vyžaduje platný seznam voleb"
         valid_date_format: "'%{label_name}' vyžaduje platný formát data"
         cannot_be_blank: "%{label_name} nemůže být prázdný"
         error_decoding: 'Chyba při dekódování metadat: %{meta}'
       metadata_profile:
-        all_fields_length_error: Celková maximální délka všech polí (včetně popisků,
-          voleb a datových polí) musí být menší než %{max} znaků
+        all_fields_length_error: Celková maximální délka všech polí (včetně popisků, voleb a datových polí) musí být menší než %{max} znaků
         field_blank_error: "%{err_label} nesmí být prázdný"
-        field_illegal_char_error: "%{err_labe} nesmí obsahovat žádné z následujících
-          znaků: %{illegal}"
+        field_illegal_char_error: "%{err_jmenovka} nesmí obsahovat žádné z následujících znaků: %{illegal}"
         field_length_error: "%{err_label} musí být %{max} znaků nebo méně"
-        field_options_error: "%{err_labe} musí obsahovat jednu z následujících voleb:
-          %{list}"
+        field_options_error: "%{err_labe} musí obsahovat jednu z následujících voleb: %{list}"
         invalid_JSON_error: "%{err_label} musí být platný formát JSON"
         invalid_share_id_error: Neplatné ID sdílení %{err_value} pro %{err_label}
         invalid_user_error: Neplatný uživatel %{err_user} pro %{err_label}
@@ -2584,15 +2417,13 @@ cs:
         max_length_reset_error: Pole maximální délky byly resetovány na výchozí hodnoty
         must_be_list_error: "%{err_label} musí být seznam ID sdílených položek"
         no_fields_error: Profil metadat musí mít alespoň jedno pole
-        note_invalid_char_error: 'Poznámka nesmí obsahovat žádné z následujících znaků:
-          # {illegal}'
+        note_invalid_char_error: 'Poznámka nesmí obsahovat žádné z následujících znaků: # {illegal}'
         note_length_bounds_error: Maximální délka poznámky musí být mezi 1 a %{max}
         note_length_error: Poznámka musí být %{max} znaků nebo méně
         note_length_int_error: Maximální délka poznámky musí být celé číslo
         note_length_specified_error: Musí být uvedena maximální délka poznámky
         specified_error: "%{err_label} musí být zadán"
-        title_invalid_char_error: 'Název nesmí obsahovat žádné z následujících znaků:
-          %{illegal}'
+        title_invalid_char_error: 'Název nesmí obsahovat žádné z následujících znaků: %{illegal}'
         title_length_bounds_error: Maximální délka názvu musí být mezi 1 a %{max}
         title_length_error: Titulek musí být %{max} znaků nebo méně
         title_length_int_error: Maximální délka názvu musí být celé číslo
@@ -2614,8 +2445,7 @@ cs:
       user:
         passwordable:
           requirements: Musí mít délku alespoň šest znaků
-          strong_requirements: Musí mít délku alespoň šest znaků s alespoň jedním
-            písmenem, jedním číslem a jedním symbolem.
+          strong_requirements: Musí mít délku alespoň šest znaků s alespoň jedním písmenem, jedním číslem a jedním symbolem.
         status:
           saml_disabled: Konfigurace SAML zakázána
           pending: Nevyřízené schválení
@@ -2666,7 +2496,7 @@ cs:
       package_cc_receipt_on_received: Balík přijat CC
       package_cc_receipt_on_sent: Skrytá kopie balíku
       package_downloaded: Stažený balík
-      package_downloaded_cc: Balík s stahenou kopií
+      package_downloaded_cc: Zabalit stažené z balíku
       package_instructions: Pokyny balíku
       package_received: Přijatý balík
       package_storage: Úložiště balíků
@@ -2711,7 +2541,7 @@ cs:
     - Fri
     - Sat
     abbr_month_names:
-    - 
+    -
     - Jan
     - Feb
     - Mar
@@ -2737,7 +2567,7 @@ cs:
       long: "%B %d, %Y"
       short: "%b %d"
     month_names:
-    - 
+    -
     - January
     - February
     - March
@@ -2794,7 +2624,7 @@ cs:
         other: "%{count} měsíce"
       x_years:
         one: 1 rok
-        other: "%{count} roky"
+        other: "%{count} let"
     prompts:
       second: Sekunda
       minute: Minut
@@ -2806,37 +2636,27 @@ cs:
     application:
       archive: Archív
       back: Zadní
-      cloud_storage_referencing: Úložiště IS, které je podporováno, je podporováno
-        touto pamětí.
-      connect_install_message: Chcete-li využít maximální rychlosti %{direction},
-        nainstalujte prosím modul plug-in prohlížeče %{aspera}.
-      connect_upgrade_message: Chcete-li využít maximální rychlosti %{direction},
-        přejděte na vyšší verzi modulu plug-in prohlížeče %{aspera}.
-      confirm: Jste si jisti, že chcete odstranit soubory pro balík %{package_name}
-        zaslaný %{package_sender}?
+      cloud_storage_referencing: Úložiště IS, které je podporováno, je podporováno touto pamětí.
+      connect_install_message: Chcete-li využít maximální rychlosti %{direction}, nainstalujte prosím modul plug-in prohlížeče %{aspera}.
+      connect_upgrade_message: Chcete-li využít maximální rychlosti %{direction}, přejděte na vyšší verzi modulu plug-in prohlížeče %{aspera}.
+      confirm: Jste si jisti, že chcete odstranit soubory pro balík %{package_name} zaslaný %{package_sender}?
       copy: Kopírovat do schránky
       delete: Odstranit
-      delete_confirm: Jste si jisti, že chcete odstranit soubory pro balík %{package_name}
-        zaslaný %{package_sender}?
-      delete_confirm_forward: Jedná se o postoupení jiného balíku. Původní a všechny
-        dopředu budou odstraněny.
-      delete_confirm_has_forwards: Směrem k tomuto balíku již existuje. Původní a
-        všechny dopředu budou odstraněny.
-      enable_hst_dl: Chcete-li povolit vysokorychlostní přenosy s Aspera, prosím %{download}
+      delete_confirm: Jste si jisti, že chcete odstranit soubory pro balík %{package_name} zaslaný %{package_sender}?
+      delete_confirm_forward: Jedná se o postoupení jiného balíku. Původní a všechny dopředu budou odstraněny.
+      delete_confirm_has_forwards: Směrem k tomuto balíku již existuje. Původní a všechny dopředu budou odstraněny.
+      enable_hst_dl: Chcete-li povolit vysokorychlostní přenosy s Aspera, prosím %{download} modul plug-in prohlížeče Connect.
+      enable_hst_dl_enable: Chcete-li povolit vysokorychlostní přenosy s Aspera, prosím %{download} a %{enable} modul plug-in prohlížeče Connect.
+      local_transfer_message: >-
+        Nyní používáte nízké rychlosti HTTP. Chcete-li povolit vysokorychlostní přenosy s Aspera, navštivte %{enable} pro povolení/stažení modulu plug-in prohlížeče
+        Connect.
+      no_cloud_storage_referencing: Odkaz na úložiště cloud není v tomto úložišti podporován.
+      no_transfer_dl: >-
+        Odesílání bez zařízení Aspera Connect má omezení výkonu. Chcete-li odstranit toto omezení a povolit vysokorychlostní přenosy s Aspera, prosím %{download}
         modul plug-in prohlížeče Connect.
-      enable_hst_dl_enable: Chcete-li povolit vysokorychlostní přenosy s Aspera, prosím
-        %{download} a %{enable} modul plug-in prohlížeče Connect.
-      local_transfer_message: Nyní používáte nízké rychlosti HTTP. Chcete-li povolit
-        vysokorychlostní přenosy s Aspera, navštivte %{enable} pro povolení/stažení
-        modulu plug-in prohlížeče Connect.
-      no_cloud_storage_referencing: Odkaz na úložiště cloud není v tomto úložišti
-        podporován.
-      no_transfer_dl: Odesílání bez zařízení Aspera Connect má omezení výkonu. Chcete-li
-        odstranit toto omezení a povolit vysokorychlostní přenosy s Aspera, prosím
-        %{download} modul plug-in prohlížeče Connect.
-      no_transfer_dl_enable: Odesílání bez zařízení Aspera Connect má omezení výkonu.
-        Chcete-li odebrat toto omezení a povolit vysokorychlostní přenosy s Aspera,
-        prosím %{download} a %{enable} modul plug-in prohlížeče Connect.
+      no_transfer_dl_enable: >-
+        Odesílání bez zařízení Aspera Connect má omezení výkonu. Chcete-li odebrat toto omezení a povolit vysokorychlostní přenosy s Aspera, prosím %{download} a
+        %{enable} modul plug-in prohlížeče Connect.
       not_supp_symbolic_links: Úložiště nepodporuje symbolické odkazy
       note: Poznámka
       package_details: Klepnutím sem získáte podrobnosti o balíku.
@@ -2859,8 +2679,7 @@ cs:
       login: Přihlášení
       login_using_saml_idp: Přihlásit se pomocí IdP SAML
     logged_out:
-      message: Byli jste odhlášeni od třídy Faspex; možná se budete muset odhlásit
-        od svého podnikového účtu jednotného přihlášení.
+      message: Byli jste odhlášeni z Faspex; možná budete stále muset odhlásit od svého podnikového účtu jednotné přihlášení.
       log_in_again: Přihlaste se znovu
     errors:
       saml_not_authorized: Nejste oprávněni používat Faspex.
@@ -2877,13 +2696,17 @@ cs:
     app_tar:
       app:
         bad_version: Nekompatibilní čísla verzí
-        config_save_error: Chyba při ukládání konfigurace.  Podrobnosti naleznete
-          v protokolu.
+        config_save_error: Chyba při ukládání konfigurace.  Podrobnosti naleznete v protokolu.
         upload_saved_config: Odeslat uloženou konfiguraci
-        restore_config_error: Chyba při obnovování konfigurace.  Podrobnosti naleznete
-          v protokolu.
-        tar_error: Chyba při konfiguraci tarring config %{tar_status} %{tar_out}
-        untar_error: Chyba při rušení zástavu konfigurace %{untar_status} %{untar_stdout}
+        restore_config_error: Chyba při obnovování konfigurace.  Podrobnosti naleznete v protokolu.
+        tar_error: |-
+          Chyba při zastarení konfigurace
+          %{tar_stav}
+          %{tar_out}
+        untar_error: |-
+          Chyba při rozbalení konfigurace prstence
+          %{untar_status}
+          %{untar_stdout}
     aspera_license_reader:
       no_license_found: Nebyla nalezena žádná licence nebo licence není dobře formovaná
       license_signature_mismatch: Podpis licence neodpovídá obsahu
@@ -2912,8 +2735,7 @@ cs:
       set_user_as_admin: 'Nastavit uživatele jako # {wg_name} admin'
     packages:
       package_methods:
-        HTTP_upload_in_progress: Probíhá odesílání protokolu HTTP, bude zrušeno, pokud
-          přecházíte z této stránky.
+        HTTP_upload_in_progress: Probíhá odesílání HTTP, bude zrušeno, pokud přecházíte z této stránky.
         new_package: Nový balík
         return_to_history: Návrat do historie
         return_to_list: Návrat do seznamu
